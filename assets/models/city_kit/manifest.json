@@ -1,0 +1,1046 @@
+{
+ "version": 1,
+ "grid": {
+  "bay_m": 4.4,
+  "ground_floor_m": 5.6,
+  "floor_m": 4.4,
+  "wall_m": 0.3,
+  "axes": "glTF/Godot：沿 +X 展开 0..bay，外立面朝 +Z，Y 向上；原点在左下角墙中心线（塔 / 穹顶 / 亭顶 / 钟层原点在底面中心）",
+  "materials": "K|mtype|RRGGBB|细节贴图|米 → U.kit_mat（ModelProp 自动替换）；*_nocol 子网格不生成碰撞"
+ },
+ "pieces": {
+  "ck_gf_arch_window": {
+   "category": "底层立面",
+   "note": "开间 4.4 × 高 5.6；横缝石 + 拱窗",
+   "size_m": [
+    4.4,
+    0.5,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.35,
+    0.0
+   ],
+   "tris": 1104,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_gf_shop": {
+   "category": "底层立面",
+   "note": "开间 4.4 × 高 5.6；商铺橱窗 + 店招 + 条纹雨篷",
+   "size_m": [
+    4.42,
+    2.13,
+    5.6
+   ],
+   "min_m": [
+    -0.01,
+    -1.77,
+    -0.0
+   ],
+   "tris": 696,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_balc_brick": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；brick 墙 · 法式落地窗 + 铁艺阳台",
+   "size_m": [
+    4.4,
+    1.28,
+    5.1
+   ],
+   "min_m": [
+    0.0,
+    -1.13,
+    -0.7
+   ],
+   "tris": 1600,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "curve_deform",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_pedi_stucco": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；stucco 墙 · 三角山花窗",
+   "size_m": [
+    4.4,
+    0.64,
+    4.51
+   ],
+   "min_m": [
+    0.0,
+    -0.49,
+    0.0
+   ],
+   "tris": 572,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_mansard_pedi": {
+   "category": "屋顶",
+   "note": "长 4.4；芒萨尔 + 三角山花老虎窗",
+   "size_m": [
+    4.4,
+    4.92,
+    4.61
+   ],
+   "min_m": [
+    0.0,
+    -0.67,
+    -0.07
+   ],
+   "tris": 576,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_mansard_corner": {
+   "category": "屋顶",
+   "note": "外转角（旋绕 90°），接两侧芒萨尔段",
+   "size_m": [
+    1.78,
+    1.78,
+    4.47
+   ],
+   "min_m": [
+    -0.67,
+    -0.67,
+    -0.07
+   ],
+   "tris": 268,
+   "methods": [
+    "curve_bevel",
+    "screw"
+   ]
+  },
+  "ck_pavilion_roof": {
+   "category": "屋顶",
+   "note": "8.8 × 8.8 底；帝国式钟形亭顶 + 铁艺花冠",
+   "size_m": [
+    9.22,
+    9.22,
+    9.55
+   ],
+   "min_m": [
+    -4.61,
+    -4.61,
+    0.0
+   ],
+   "tris": 364,
+   "methods": [
+    "array",
+    "mirror",
+    "profile_extrude",
+    "screw"
+   ]
+  },
+  "ck_dome": {
+   "category": "屋顶",
+   "note": "直径 9.4；鼓座 + 穹顶 + 金肋 + 采光亭",
+   "size_m": [
+    9.8,
+    9.8,
+    10.98
+   ],
+   "min_m": [
+    -4.9,
+    -4.9,
+    0.0
+   ],
+   "tris": 2604,
+   "methods": [
+    "array",
+    "curve_bevel",
+    "screw"
+   ]
+  },
+  "ck_turret_body": {
+   "category": "塔楼与地标",
+   "note": "直径 5.2 × 层高 4.4；圆角楼塔身（可叠层）",
+   "size_m": [
+    5.56,
+    5.56,
+    4.4
+   ],
+   "min_m": [
+    -2.78,
+    -2.78,
+    0.0
+   ],
+   "tris": 364,
+   "methods": [
+    "screw"
+   ]
+  },
+  "ck_clock_stage": {
+   "category": "塔楼与地标",
+   "note": "6 × 6 × 6；钟楼钟层（四面钟）",
+   "size_m": [
+    7.72,
+    7.72,
+    6.86
+   ],
+   "min_m": [
+    -3.86,
+    -3.86,
+    0.0
+   ],
+   "tris": 3372,
+   "methods": [
+    "array",
+    "mirror",
+    "profile_extrude",
+    "screw"
+   ]
+  },
+  "ck_portico": {
+   "category": "塔楼与地标",
+   "note": "开间 4.4 × 高 10；双柱门廊段（可横向拼接）",
+   "size_m": [
+    4.74,
+    2.55,
+    10.3
+   ],
+   "min_m": [
+    -0.17,
+    -2.65,
+    -0.3
+   ],
+   "tris": 632,
+   "methods": [
+    "mirror",
+    "profile_extrude",
+    "screw"
+   ]
+  },
+  "ck_gf_arch_door": {
+   "category": "底层立面",
+   "note": "开间 4.4 × 高 5.6；拱门（门扇 + 铁艺扇形窗）",
+   "size_m": [
+    4.4,
+    0.5,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.35,
+    -0.0
+   ],
+   "tris": 1112,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify"
+   ]
+  },
+  "ck_gf_arch_open": {
+   "category": "底层立面",
+   "note": "开间 4.4 × 高 5.6；过街拱 / 拱廊",
+   "size_m": [
+    4.4,
+    0.5,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.35,
+    0.0
+   ],
+   "tris": 684,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_gf_shop_plain": {
+   "category": "底层立面",
+   "note": "开间 4.4 × 高 5.6；商铺（无雨篷）",
+   "size_m": [
+    4.42,
+    0.81,
+    5.6
+   ],
+   "min_m": [
+    -0.01,
+    -0.45,
+    -0.0
+   ],
+   "tris": 448,
+   "methods": [
+    "array",
+    "bridge",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_gf_solid": {
+   "category": "底层立面",
+   "note": "开间 4.4 × 高 5.6；实墙横缝石",
+   "size_m": [
+    4.4,
+    0.44,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.29,
+    0.0
+   ],
+   "tris": 124,
+   "methods": [
+    "array",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_plain_brick": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；brick 墙 · 檐板窗 + 花箱",
+   "size_m": [
+    4.4,
+    0.65,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "tris": 948,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "ck_uf_pedi_brick": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；brick 墙 · 三角山花窗",
+   "size_m": [
+    4.4,
+    0.64,
+    4.51
+   ],
+   "min_m": [
+    0.0,
+    -0.49,
+    0.0
+   ],
+   "tris": 572,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_seg_brick": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；brick 墙 · 弧形山花窗",
+   "size_m": [
+    4.4,
+    0.6,
+    4.42
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "tris": 652,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_solid_brick": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；brick 实墙",
+   "size_m": [
+    4.4,
+    0.3,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "tris": 12,
+   "methods": [
+    "solidify"
+   ]
+  },
+  "ck_uf_plain_stucco": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；stucco 墙 · 檐板窗 + 花箱",
+   "size_m": [
+    4.4,
+    0.65,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "tris": 948,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "ck_uf_seg_stucco": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；stucco 墙 · 弧形山花窗",
+   "size_m": [
+    4.4,
+    0.6,
+    4.42
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "tris": 652,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_balc_stucco": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；stucco 墙 · 法式落地窗 + 铁艺阳台",
+   "size_m": [
+    4.4,
+    1.28,
+    5.1
+   ],
+   "min_m": [
+    0.0,
+    -1.13,
+    -0.7
+   ],
+   "tris": 1600,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "curve_deform",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_solid_stucco": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；stucco 实墙",
+   "size_m": [
+    4.4,
+    0.3,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "tris": 12,
+   "methods": [
+    "solidify"
+   ]
+  },
+  "ck_uf_plain_ashlar": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；ashlar 墙 · 檐板窗 + 花箱",
+   "size_m": [
+    4.4,
+    0.65,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "tris": 948,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "ck_uf_pedi_ashlar": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；ashlar 墙 · 三角山花窗",
+   "size_m": [
+    4.4,
+    0.64,
+    4.51
+   ],
+   "min_m": [
+    0.0,
+    -0.49,
+    0.0
+   ],
+   "tris": 572,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_seg_ashlar": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；ashlar 墙 · 弧形山花窗",
+   "size_m": [
+    4.4,
+    0.6,
+    4.42
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "tris": 652,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_balc_ashlar": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；ashlar 墙 · 法式落地窗 + 铁艺阳台",
+   "size_m": [
+    4.4,
+    1.28,
+    5.1
+   ],
+   "min_m": [
+    0.0,
+    -1.13,
+    -0.7
+   ],
+   "tris": 1600,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "curve_deform",
+    "mirror",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "ck_uf_solid_ashlar": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；ashlar 实墙",
+   "size_m": [
+    4.4,
+    0.3,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "tris": 12,
+   "methods": [
+    "solidify"
+   ]
+  },
+  "ck_oriel": {
+   "category": "标准层立面",
+   "note": "开间 4.4 × 层高 4.4；三面凸窗（贴在实墙段外）",
+   "size_m": [
+    3.3,
+    1.71,
+    5.8
+   ],
+   "min_m": [
+    0.55,
+    -1.51,
+    -0.9
+   ],
+   "tris": 152,
+   "methods": [
+    "mirror",
+    "profile_extrude",
+    "screw"
+   ]
+  },
+  "ck_band": {
+   "category": "线脚与转角",
+   "note": "长 4.4；层间腰线（放在每层楼板线）",
+   "size_m": [
+    4.4,
+    0.24,
+    0.32
+   ],
+   "min_m": [
+    0.0,
+    -0.37,
+    0.0
+   ],
+   "tris": 20,
+   "methods": [
+    "profile_extrude"
+   ]
+  },
+  "ck_cornice": {
+   "category": "线脚与转角",
+   "note": "长 4.4；主檐口（牛腿 + 齿饰），放在墙顶",
+   "size_m": [
+    4.4,
+    0.88,
+    0.86
+   ],
+   "min_m": [
+    0.0,
+    -1.01,
+    0.0
+   ],
+   "tris": 428,
+   "methods": [
+    "array",
+    "profile_extrude"
+   ]
+  },
+  "ck_balustrade": {
+   "category": "线脚与转角",
+   "note": "长 4.4；女儿墙 / 平台栏杆",
+   "size_m": [
+    4.4,
+    0.6,
+    1.2
+   ],
+   "min_m": [
+    0.0,
+    -0.35,
+    0.0
+   ],
+   "tris": 1488,
+   "methods": [
+    "array",
+    "mirror",
+    "profile_extrude",
+    "screw"
+   ]
+  },
+  "ck_quoins": {
+   "category": "线脚与转角",
+   "note": "高 4.4；转角隅石（放在外角）",
+   "size_m": [
+    0.72,
+    0.72,
+    4.31
+   ],
+   "min_m": [
+    -0.36,
+    -0.36,
+    -0.01
+   ],
+   "tris": 96,
+   "methods": [
+    "array",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "ck_pilaster": {
+   "category": "线脚与转角",
+   "note": "高 4.4；壁柱（放在开间分界）",
+   "size_m": [
+    0.8,
+    0.38,
+    4.4
+   ],
+   "min_m": [
+    -0.4,
+    -0.49,
+    0.0
+   ],
+   "tris": 88,
+   "methods": [
+    "array",
+    "profile_extrude"
+   ]
+  },
+  "ck_mansard": {
+   "category": "屋顶",
+   "note": "长 4.4 × 高 4.4；芒萨尔陡坡 + 平顶段",
+   "size_m": [
+    4.4,
+    4.92,
+    4.61
+   ],
+   "min_m": [
+    0.0,
+    -0.67,
+    -0.07
+   ],
+   "tris": 108,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude"
+   ]
+  },
+  "ck_mansard_oculus": {
+   "category": "屋顶",
+   "note": "长 4.4；芒萨尔 + 圆窗老虎窗",
+   "size_m": [
+    4.4,
+    5.46,
+    4.61
+   ],
+   "min_m": [
+    0.0,
+    -1.21,
+    -0.07
+   ],
+   "tris": 664,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify"
+   ]
+  },
+  "ck_mansard_copper": {
+   "category": "屋顶",
+   "note": "长 4.4；青铜屋面芒萨尔（千泉城风格）",
+   "size_m": [
+    4.4,
+    5.46,
+    4.61
+   ],
+   "min_m": [
+    0.0,
+    -1.21,
+    -0.07
+   ],
+   "tris": 664,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify"
+   ]
+  },
+  "ck_pavilion_roof_copper": {
+   "category": "屋顶",
+   "note": "8.8 × 8.8 底；青铜亭顶",
+   "size_m": [
+    9.22,
+    9.22,
+    9.55
+   ],
+   "min_m": [
+    -4.61,
+    -4.61,
+    0.0
+   ],
+   "tris": 364,
+   "methods": [
+    "array",
+    "mirror",
+    "profile_extrude",
+    "screw"
+   ]
+  },
+  "ck_cresting": {
+   "category": "屋顶",
+   "note": "长 4.4；铁艺屋脊花饰",
+   "size_m": [
+    4.4,
+    0.05,
+    0.58
+   ],
+   "min_m": [
+    0.0,
+    -0.03,
+    0.03
+   ],
+   "tris": 2272,
+   "methods": [
+    "array",
+    "curve_bevel"
+   ]
+  },
+  "ck_chimney": {
+   "category": "屋顶",
+   "note": "1.6 × 0.8；砖烟囱 + 陶土烟囱管",
+   "size_m": [
+    1.8,
+    1.0,
+    3.25
+   ],
+   "min_m": [
+    -0.9,
+    -0.5,
+    -0.0
+   ],
+   "tris": 284,
+   "methods": [
+    "array",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "vertex"
+   ]
+  },
+  "ck_turret_cone": {
+   "category": "塔楼与地标",
+   "note": "直径 5.2；角楼尖顶",
+   "size_m": [
+    6.2,
+    6.2,
+    10.4
+   ],
+   "min_m": [
+    -3.1,
+    -3.1,
+    -0.2
+   ],
+   "tris": 332,
+   "methods": [
+    "screw"
+   ]
+  },
+  "ck_temple_pediment": {
+   "category": "塔楼与地标",
+   "note": "宽 13.2；门廊大山花 + 圆窗",
+   "size_m": [
+    13.34,
+    2.54,
+    3.48
+   ],
+   "min_m": [
+    -0.07,
+    -2.65,
+    -0.14
+   ],
+   "tris": 184,
+   "methods": [
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify"
+   ]
+  },
+  "ck_arch_gate": {
+   "category": "塔楼与地标",
+   "note": "宽 8.8 × 高 11；凯旋式拱门段",
+   "size_m": [
+    8.8,
+    2.1,
+    11.0
+   ],
+   "min_m": [
+    0.0,
+    -1.05,
+    -0.0
+   ],
+   "tris": 5348,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify"
+   ]
+  },
+  "ck_wall_lamp": {
+   "category": "街具",
+   "note": "壁灯（离地 3.2 安装）",
+   "size_m": [
+    0.48,
+    0.97,
+    0.93
+   ],
+   "min_m": [
+    -0.24,
+    -1.11,
+    -0.75
+   ],
+   "tris": 144,
+   "methods": [
+    "curve_bevel",
+    "screw"
+   ]
+  },
+  "ck_flower_box": {
+   "category": "街具",
+   "note": "长 1.8；窗前花箱",
+   "size_m": [
+    1.83,
+    0.32,
+    0.52
+   ],
+   "min_m": [
+    0.0,
+    -0.51,
+    0.0
+   ],
+   "tris": 456,
+   "methods": [
+    "array",
+    "profile_extrude",
+    "screw",
+    "vertex"
+   ]
+  },
+  "demo_haussmann_corner": {
+   "category": "示范建筑",
+   "note": "视频里最常见的转角公寓：底层拱券 + 商铺交替，三层红砖（二层阳台、三层三角山花、四层弧形山花），",
+   "size_m": [
+    26.23,
+    17.43,
+    29.0
+   ],
+   "min_m": [
+    -3.1,
+    -3.1,
+    -0.0
+   ],
+   "tris": 79316,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "curve_deform",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "demo_cityhall": {
+   "category": "示范建筑",
+   "note": "第二帝国式市政厅（参考图 4）：中央亭（3 开间方石 + 双柱门廊 + 大山花 + 钟形亭顶 + 钟层），两翼 3 开间芒萨尔。",
+   "size_m": [
+    42.02,
+    20.46,
+    41.0
+   ],
+   "min_m": [
+    -1.21,
+    -6.05,
+    -0.3
+   ],
+   "tris": 104920,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "curve_deform",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "demo_trade_row": {
+   "category": "示范建筑",
+   "note": "千泉城商业街（参考图 2）：5 栋窄面宽商铺连排，青铜芒萨尔与青铜亭顶交替，灰泥 / 方石墙。",
+   "size_m": [
+    46.42,
+    16.18,
+    27.25
+   ],
+   "min_m": [
+    -1.21,
+    -1.77,
+    -0.0
+   ],
+   "tris": 102736,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "curve_deform",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  }
+ }
+}

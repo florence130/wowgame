@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "material_uses": 12,
+  "checks": [
+    {
+      "file": "assemblies\\BellTower.glb",
+      "material": "ABY2_glass",
+      "recipe_key": "glass",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "assemblies\\BellTower.glb",
+      "material": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "assemblies\\Chapel_Open_Interior.glb",
+      "material": "ABY2_glass",
+      "recipe_key": "glass",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "assemblies\\Chapel_Open_Interior.glb",
+      "material": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\apse.glb",
+      "material": "ABY2_glass",
+      "recipe_key": "glass",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\apse.glb",
+      "material": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\rose_window.glb",
+      "material": "ABY2_glass",
+      "recipe_key": "glass",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\rose_window.glb",
+      "material": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\tower_window.glb",
+      "material": "ABY2_glass",
+      "recipe_key": "glass",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\tower_window.glb",
+      "material": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\window_clerestory.glb",
+      "material": "ABY2_glass",
+      "recipe_key": "glass",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    },
+    {
+      "file": "glb\\window_clerestory.glb",
+      "material": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alpha": 0.2800000011920929,
+      "transmission": 0.7200000286102295,
+      "alphaMode": "BLEND",
+      "passed": true
+    }
+  ],
+  "scope": "Actual GLB alpha blend, optical transmission extension, non-emissive lit window materials; rendered proof and Godot import checked separately."
+}

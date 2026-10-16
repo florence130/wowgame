@@ -1,0 +1,14 @@
+{
+  "provider": "Tencent Hunyuan3D",
+  "source": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\raw\\TR06.glb",
+  "sha256": "b85e174b978f29a075bd1efe801b6bf854d87b183d80b56c3672e2f72b31d1ca",
+  "texture_audit": {
+    "images": 0,
+    "textures": 0,
+    "materials": 0,
+    "material_texture_references": [],
+    "material_texture_reference_count": 0,
+    "no_textures_passed": true,
+    "vertex_color_attribute_count": 0
+  }
+}

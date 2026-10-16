@@ -1,0 +1,638 @@
+{
+  "batches": [
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_sandstone",
+      "material_sha256": "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+      "node": "Batch_0_VALE_sandstone",
+      "partition": "0_0_-1",
+      "parts": 16,
+      "triangles": 4546
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_sandstone",
+      "material_sha256": "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+      "node": "Batch_1_VALE_sandstone",
+      "partition": "-1_0_-1",
+      "parts": 16,
+      "triangles": 4514
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_light",
+      "material_sha256": "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+      "node": "Batch_2_VALE_stone_light",
+      "partition": "0_0_-1",
+      "parts": 12,
+      "triangles": 454
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_light",
+      "material_sha256": "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+      "node": "Batch_3_VALE_stone_light",
+      "partition": "-1_0_-1",
+      "parts": 13,
+      "triangles": 498
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_light",
+      "material_sha256": "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+      "node": "Batch_4_VALE_stone_light",
+      "partition": "-1_1_-1",
+      "parts": 4,
+      "triangles": 112
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_cloth",
+      "material_sha256": "0a0736231e9b028815849b79c16e7c13fc573195a0929fd582e36bc0f9fa7ee0",
+      "node": "Batch_5_VALE_cloth",
+      "partition": "0_0_-1",
+      "parts": 1,
+      "triangles": 68
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_6_VALE_wood",
+      "partition": "0_0_-1",
+      "parts": 3,
+      "triangles": 132
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_7_VALE_wood",
+      "partition": "0_1_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_8_VALE_wood",
+      "partition": "0_0_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_thatch_dark",
+      "material_sha256": "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "node": "Batch_9_VALE_thatch_dark",
+      "partition": "0_0_-1",
+      "parts": 8,
+      "triangles": 160
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_thatch_dark",
+      "material_sha256": "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "node": "Batch_10_VALE_thatch_dark",
+      "partition": "0_1_-1",
+      "parts": 2,
+      "triangles": 40
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_11_VALE_timber",
+      "partition": "0_0_0",
+      "parts": 2,
+      "triangles": 88
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_cloth",
+      "material_sha256": "0a0736231e9b028815849b79c16e7c13fc573195a0929fd582e36bc0f9fa7ee0",
+      "node": "Batch_12_VALE_cloth",
+      "partition": "0_-1_-1",
+      "parts": 1,
+      "triangles": 68
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_13_VALE_wood",
+      "partition": "0_-1_-1",
+      "parts": 4,
+      "triangles": 176
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_14_VALE_wood",
+      "partition": "0_-1_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_thatch_dark",
+      "material_sha256": "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "node": "Batch_15_VALE_thatch_dark",
+      "partition": "0_-1_-1",
+      "parts": 6,
+      "triangles": 120
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_cloth",
+      "material_sha256": "0a0736231e9b028815849b79c16e7c13fc573195a0929fd582e36bc0f9fa7ee0",
+      "node": "Batch_16_VALE_cloth",
+      "partition": "-1_-1_-1",
+      "parts": 1,
+      "triangles": 68
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_17_VALE_wood",
+      "partition": "-1_-1_-1",
+      "parts": 3,
+      "triangles": 132
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_18_VALE_wood",
+      "partition": "-1_-2_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_19_VALE_wood",
+      "partition": "-1_-1_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_thatch_dark",
+      "material_sha256": "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "node": "Batch_20_VALE_thatch_dark",
+      "partition": "-1_-1_-1",
+      "parts": 6,
+      "triangles": 120
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_thatch_dark",
+      "material_sha256": "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "node": "Batch_21_VALE_thatch_dark",
+      "partition": "-1_-2_-1",
+      "parts": 2,
+      "triangles": 40
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_22_VALE_timber",
+      "partition": "-1_-1_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_cloth",
+      "material_sha256": "0a0736231e9b028815849b79c16e7c13fc573195a0929fd582e36bc0f9fa7ee0",
+      "node": "Batch_23_VALE_cloth",
+      "partition": "-1_0_-1",
+      "parts": 1,
+      "triangles": 68
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_24_VALE_wood",
+      "partition": "-1_0_-1",
+      "parts": 4,
+      "triangles": 176
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_25_VALE_wood",
+      "partition": "-1_0_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_thatch_dark",
+      "material_sha256": "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "node": "Batch_26_VALE_thatch_dark",
+      "partition": "-1_0_-1",
+      "parts": 8,
+      "triangles": 160
+    },
+    {
+      "branch": "Rotor",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_27_VALE_timber",
+      "partition": "-1_0_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_iron",
+      "material_sha256": "5f3fdabd8eab06a5e6d347fc32929ac37c0b707b07693add6eed7670eaaa020d",
+      "node": "Batch_28_VALE_iron",
+      "partition": "0_0_-1",
+      "parts": 3,
+      "triangles": 184
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_dark",
+      "material_sha256": "1c5ee75721c7aeaf9ca365a0af4b78f61dfbbcbc67974bbd7ec12d50a767e8d5",
+      "node": "Batch_29_VALE_stone_dark",
+      "partition": "-1_0_-1",
+      "parts": 12,
+      "triangles": 648
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_dark",
+      "material_sha256": "1c5ee75721c7aeaf9ca365a0af4b78f61dfbbcbc67974bbd7ec12d50a767e8d5",
+      "node": "Batch_30_VALE_stone_dark",
+      "partition": "0_0_-1",
+      "parts": 12,
+      "triangles": 648
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_31_VALE_wood",
+      "partition": "0_0_-1",
+      "parts": 1,
+      "triangles": 56
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_32_VALE_timber",
+      "partition": "-1_0_-1",
+      "parts": 4,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_33_VALE_timber",
+      "partition": "0_0_-1",
+      "parts": 8,
+      "triangles": 224
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_34_VALE_timber",
+      "partition": "0_1_-1",
+      "parts": 7,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_35_VALE_timber",
+      "partition": "-1_1_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_sandstone",
+      "material_sha256": "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+      "node": "Batch_36_VALE_sandstone",
+      "partition": "0_1_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_plaster",
+      "material_sha256": "12218ecd63d3251e9c60fda610953cc1c8806660499936e9b0661c83d7ee0761",
+      "node": "Batch_37_VALE_plaster",
+      "partition": "0_0_0",
+      "parts": 2,
+      "triangles": 132
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_plaster",
+      "material_sha256": "12218ecd63d3251e9c60fda610953cc1c8806660499936e9b0661c83d7ee0761",
+      "node": "Batch_38_VALE_plaster",
+      "partition": "0_1_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_plaster",
+      "material_sha256": "12218ecd63d3251e9c60fda610953cc1c8806660499936e9b0661c83d7ee0761",
+      "node": "Batch_39_VALE_plaster",
+      "partition": "0_2_0",
+      "parts": 1,
+      "triangles": 28
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_iron",
+      "material_sha256": "5f3fdabd8eab06a5e6d347fc32929ac37c0b707b07693add6eed7670eaaa020d",
+      "node": "Batch_40_VALE_iron",
+      "partition": "0_2_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_iron",
+      "material_sha256": "5f3fdabd8eab06a5e6d347fc32929ac37c0b707b07693add6eed7670eaaa020d",
+      "node": "Batch_41_VALE_iron",
+      "partition": "-1_2_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_wood",
+      "material_sha256": "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "node": "Batch_42_VALE_wood",
+      "partition": "0_1_-1",
+      "parts": 1,
+      "triangles": 48
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_roof",
+      "material_sha256": "6a5e5fdb77830783865dbfe414292571e69efd40fea3fbd7696471b9aab88d06",
+      "node": "Batch_43_VALE_mill_roof",
+      "partition": "0_2_-1",
+      "parts": 19,
+      "triangles": 228
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_roof",
+      "material_sha256": "6a5e5fdb77830783865dbfe414292571e69efd40fea3fbd7696471b9aab88d06",
+      "node": "Batch_44_VALE_mill_roof",
+      "partition": "-1_2_-1",
+      "parts": 19,
+      "triangles": 228
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_light",
+      "material_sha256": "0c6a9d166c9383b4275ebc726bea70bcc754e7831fd4476d4cda57e6312dc483",
+      "node": "Batch_45_VALE_mill_light",
+      "partition": "-1_2_-1",
+      "parts": 5,
+      "triangles": 60
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_roof",
+      "material_sha256": "6a5e5fdb77830783865dbfe414292571e69efd40fea3fbd7696471b9aab88d06",
+      "node": "Batch_46_VALE_mill_roof",
+      "partition": "-1_2_0",
+      "parts": 19,
+      "triangles": 228
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_light",
+      "material_sha256": "0c6a9d166c9383b4275ebc726bea70bcc754e7831fd4476d4cda57e6312dc483",
+      "node": "Batch_47_VALE_mill_light",
+      "partition": "-1_2_0",
+      "parts": 5,
+      "triangles": 60
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_roof",
+      "material_sha256": "6a5e5fdb77830783865dbfe414292571e69efd40fea3fbd7696471b9aab88d06",
+      "node": "Batch_48_VALE_mill_roof",
+      "partition": "0_2_0",
+      "parts": 20,
+      "triangles": 256
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_light",
+      "material_sha256": "0c6a9d166c9383b4275ebc726bea70bcc754e7831fd4476d4cda57e6312dc483",
+      "node": "Batch_49_VALE_mill_light",
+      "partition": "0_2_0",
+      "parts": 5,
+      "triangles": 60
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_mill_light",
+      "material_sha256": "0c6a9d166c9383b4275ebc726bea70bcc754e7831fd4476d4cda57e6312dc483",
+      "node": "Batch_50_VALE_mill_light",
+      "partition": "0_2_-1",
+      "parts": 5,
+      "triangles": 60
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_timber",
+      "material_sha256": "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7",
+      "node": "Batch_51_VALE_timber",
+      "partition": "0_2_0",
+      "parts": 1,
+      "triangles": 48
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_sandstone",
+      "material_sha256": "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+      "node": "Batch_52_VALE_sandstone",
+      "partition": "-1_0_0",
+      "parts": 12,
+      "triangles": 5292
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_light",
+      "material_sha256": "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+      "node": "Batch_53_VALE_stone_light",
+      "partition": "-1_0_0",
+      "parts": 12,
+      "triangles": 516
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_dark",
+      "material_sha256": "1c5ee75721c7aeaf9ca365a0af4b78f61dfbbcbc67974bbd7ec12d50a767e8d5",
+      "node": "Batch_54_VALE_stone_dark",
+      "partition": "-1_0_0",
+      "parts": 12,
+      "triangles": 672
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_sandstone",
+      "material_sha256": "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+      "node": "Batch_55_VALE_sandstone",
+      "partition": "0_0_0",
+      "parts": 12,
+      "triangles": 5292
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_light",
+      "material_sha256": "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+      "node": "Batch_56_VALE_stone_light",
+      "partition": "0_0_0",
+      "parts": 12,
+      "triangles": 516
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_stone_dark",
+      "material_sha256": "1c5ee75721c7aeaf9ca365a0af4b78f61dfbbcbc67974bbd7ec12d50a767e8d5",
+      "node": "Batch_57_VALE_stone_dark",
+      "partition": "0_0_0",
+      "parts": 12,
+      "triangles": 672
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_glass",
+      "material_sha256": "bca98e75ec3a889387c04d4c5efc209822b1c94e42c3499274913c747010e2b2",
+      "node": "Batch_58_VALE_glass",
+      "partition": "0_0_-1",
+      "parts": 1,
+      "triangles": 12
+    },
+    {
+      "branch": "ValeRuntime_windmill",
+      "material": "VALE_glass",
+      "material_sha256": "bca98e75ec3a889387c04d4c5efc209822b1c94e42c3499274913c747010e2b2",
+      "node": "Batch_59_VALE_glass",
+      "partition": "0_1_-1",
+      "parts": 1,
+      "triangles": 12
+    }
+  ],
+  "bounds_max": [
+    7.5,
+    19.3999996185303,
+    3.375
+  ],
+  "bounds_min": [
+    -7.5,
+    -0.00536321103572845,
+    -4.10750007629395
+  ],
+  "collision_cells": 20,
+  "collision_policy": "chunked exact solid triangles; no whole-building box; chapel high triangles >4.2m and visual stair collisions omitted, smooth ramp planes added; moving windmill rotor excluded",
+  "collision_triangles": 26912,
+  "duration_ms": 429,
+  "file": "windmill.scn",
+  "id": "windmill",
+  "lights": [],
+  "material_name_content_counts": {
+    "VALE_cloth": 1,
+    "VALE_glass": 1,
+    "VALE_iron": 1,
+    "VALE_mill_light": 1,
+    "VALE_mill_roof": 1,
+    "VALE_plaster": 1,
+    "VALE_sandstone": 1,
+    "VALE_stone_dark": 1,
+    "VALE_stone_light": 1,
+    "VALE_thatch_dark": 1,
+    "VALE_timber": 1,
+    "VALE_wood": 1
+  },
+  "output_meshes": 60,
+  "pack_error": 0,
+  "passed": true,
+  "ramps": [],
+  "reloaded": {
+    "bounds_max": [
+      7.5,
+      19.3999996185303,
+      3.375
+    ],
+    "bounds_min": [
+      -7.5,
+      -0.00536321103572845,
+      -4.10750007629395
+    ],
+    "dependencies": [],
+    "embedded_texture_content_count": 2,
+    "errors": [],
+    "material_content_count": 12,
+    "material_content_hashes": [
+      "0a0736231e9b028815849b79c16e7c13fc573195a0929fd582e36bc0f9fa7ee0",
+      "0c6a9d166c9383b4275ebc726bea70bcc754e7831fd4476d4cda57e6312dc483",
+      "12218ecd63d3251e9c60fda610953cc1c8806660499936e9b0661c83d7ee0761",
+      "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+      "1c5ee75721c7aeaf9ca365a0af4b78f61dfbbcbc67974bbd7ec12d50a767e8d5",
+      "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+      "5f3fdabd8eab06a5e6d347fc32929ac37c0b707b07693add6eed7670eaaa020d",
+      "6a5e5fdb77830783865dbfe414292571e69efd40fea3fbd7696471b9aab88d06",
+      "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+      "bca98e75ec3a889387c04d4c5efc209822b1c94e42c3499274913c747010e2b2",
+      "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+      "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7"
+    ],
+    "meshes": 60,
+    "passed": true,
+    "triangles": 28880,
+    "windows": []
+  },
+  "rotor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 11.9, -3.65)]",
+  "save_error": 0,
+  "source": "assets/models/vale_kit_v1/build_008/godot/assemblies/VALE_windmill.scn",
+  "source_material_content_hashes": [
+    "0a0736231e9b028815849b79c16e7c13fc573195a0929fd582e36bc0f9fa7ee0",
+    "0c6a9d166c9383b4275ebc726bea70bcc754e7831fd4476d4cda57e6312dc483",
+    "12218ecd63d3251e9c60fda610953cc1c8806660499936e9b0661c83d7ee0761",
+    "13c4b00c292e3a5874caf83a006037dd15bbd2318a4835a6db2dcd8c8df1a624",
+    "1c5ee75721c7aeaf9ca365a0af4b78f61dfbbcbc67974bbd7ec12d50a767e8d5",
+    "42456437f3c904db7bf6e015b11976644e921effc3203ad84c2fe7aac068c313",
+    "5f3fdabd8eab06a5e6d347fc32929ac37c0b707b07693add6eed7670eaaa020d",
+    "6a5e5fdb77830783865dbfe414292571e69efd40fea3fbd7696471b9aab88d06",
+    "967e554bb463971d87d8f15e6447b6b6a12f4a121e4adbd1c076ae92ac1713bb",
+    "bca98e75ec3a889387c04d4c5efc209822b1c94e42c3499274913c747010e2b2",
+    "e5d2684d90acc16a6d2674400c0e6dec4c6b88a2271b6c5fc270c053b641a262",
+    "e7704b23db65a3e9732e5629c484781911e29452ba7e06aa9d72bbc3e7ae09d7"
+  ],
+  "source_material_contents": 12,
+  "source_material_resources": 12,
+  "source_meshes": 261,
+  "source_sha256": "26a9b5f6c4aa2ba9490f565e5042b8eea53e01e6813e5adc6d0a40b965d666b6",
+  "source_surfaces": 349,
+  "source_triangles": 28880,
+  "transparent_surfaces_kept_separate": 0,
+  "visual_bounds_preserved": true
+}

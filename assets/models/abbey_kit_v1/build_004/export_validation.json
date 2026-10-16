@@ -1,0 +1,1347 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "bell_tower_single_scene",
+      "passed": true
+    },
+    {
+      "check": "bell_tower_finite_uv_mesh",
+      "passed": true,
+      "triangles": 6572,
+      "primitives": 277
+    },
+    {
+      "check": "bell_tower_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "bell_tower_unlit",
+      "passed": true
+    },
+    {
+      "check": "bridge_curved_single_scene",
+      "passed": true
+    },
+    {
+      "check": "bridge_curved_finite_uv_mesh",
+      "passed": true,
+      "triangles": 1330,
+      "primitives": 3
+    },
+    {
+      "check": "bridge_curved_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "bridge_curved_unlit",
+      "passed": true
+    },
+    {
+      "check": "chapel_single_scene",
+      "passed": true
+    },
+    {
+      "check": "chapel_finite_uv_mesh",
+      "passed": true,
+      "triangles": 12708,
+      "primitives": 561
+    },
+    {
+      "check": "chapel_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "chapel_unlit",
+      "passed": true
+    },
+    {
+      "check": "chapel_small_single_scene",
+      "passed": true
+    },
+    {
+      "check": "chapel_small_finite_uv_mesh",
+      "passed": true,
+      "triangles": 7588,
+      "primitives": 327
+    },
+    {
+      "check": "chapel_small_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "chapel_small_unlit",
+      "passed": true
+    },
+    {
+      "check": "cloister_single_scene",
+      "passed": true
+    },
+    {
+      "check": "cloister_finite_uv_mesh",
+      "passed": true,
+      "triangles": 5156,
+      "primitives": 192
+    },
+    {
+      "check": "cloister_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "cloister_unlit",
+      "passed": true
+    },
+    {
+      "check": "courtyard_gate_single_scene",
+      "passed": true
+    },
+    {
+      "check": "courtyard_gate_finite_uv_mesh",
+      "passed": true,
+      "triangles": 2996,
+      "primitives": 48
+    },
+    {
+      "check": "courtyard_gate_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "courtyard_gate_unlit",
+      "passed": true
+    },
+    {
+      "check": "arcade_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "arcade_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 308,
+      "primitives": 16
+    },
+    {
+      "check": "arcade_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "arcade_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "balcony_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "balcony_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 100,
+      "primitives": 3
+    },
+    {
+      "check": "balcony_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "balcony_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "bell_single_scene",
+      "passed": true
+    },
+    {
+      "check": "bell_finite_uv_mesh",
+      "passed": true,
+      "triangles": 184,
+      "primitives": 2
+    },
+    {
+      "check": "bell_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "bell_unlit",
+      "passed": true
+    },
+    {
+      "check": "bridge_segment_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "bridge_segment_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 340,
+      "primitives": 6
+    },
+    {
+      "check": "bridge_segment_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "bridge_segment_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "buttress_single_scene",
+      "passed": true
+    },
+    {
+      "check": "buttress_finite_uv_mesh",
+      "passed": true,
+      "triangles": 64,
+      "primitives": 2
+    },
+    {
+      "check": "buttress_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "buttress_unlit",
+      "passed": true
+    },
+    {
+      "check": "chimney_single_scene",
+      "passed": true
+    },
+    {
+      "check": "chimney_finite_uv_mesh",
+      "passed": true,
+      "triangles": 128,
+      "primitives": 4
+    },
+    {
+      "check": "chimney_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "chimney_unlit",
+      "passed": true
+    },
+    {
+      "check": "column_3_single_scene",
+      "passed": true
+    },
+    {
+      "check": "column_3_finite_uv_mesh",
+      "passed": true,
+      "triangles": 232,
+      "primitives": 3
+    },
+    {
+      "check": "column_3_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "column_3_unlit",
+      "passed": true
+    },
+    {
+      "check": "dome_frame_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "dome_frame_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 544,
+      "primitives": 9
+    },
+    {
+      "check": "dome_frame_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "dome_frame_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "dome_glass_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "dome_glass_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 320,
+      "primitives": 1
+    },
+    {
+      "check": "dome_glass_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "dome_glass_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "door_arch_frame_single_scene",
+      "passed": true
+    },
+    {
+      "check": "door_arch_frame_finite_uv_mesh",
+      "passed": true,
+      "triangles": 232,
+      "primitives": 14
+    },
+    {
+      "check": "door_arch_frame_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "door_arch_frame_unlit",
+      "passed": true
+    },
+    {
+      "check": "door_stone_single_scene",
+      "passed": true
+    },
+    {
+      "check": "door_stone_finite_uv_mesh",
+      "passed": true,
+      "triangles": 436,
+      "primitives": 8
+    },
+    {
+      "check": "door_stone_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "door_stone_unlit",
+      "passed": true
+    },
+    {
+      "check": "door_wood_double_single_scene",
+      "passed": true
+    },
+    {
+      "check": "door_wood_double_finite_uv_mesh",
+      "passed": true,
+      "triangles": 504,
+      "primitives": 13
+    },
+    {
+      "check": "door_wood_double_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "door_wood_double_unlit",
+      "passed": true
+    },
+    {
+      "check": "door_wood_plain_single_scene",
+      "passed": true
+    },
+    {
+      "check": "door_wood_plain_finite_uv_mesh",
+      "passed": true,
+      "triangles": 424,
+      "primitives": 7
+    },
+    {
+      "check": "door_wood_plain_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "door_wood_plain_unlit",
+      "passed": true
+    },
+    {
+      "check": "fence_post_single_scene",
+      "passed": true
+    },
+    {
+      "check": "fence_post_finite_uv_mesh",
+      "passed": true,
+      "triangles": 88,
+      "primitives": 2
+    },
+    {
+      "check": "fence_post_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "fence_post_unlit",
+      "passed": true
+    },
+    {
+      "check": "floor_stone_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "floor_stone_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 204,
+      "primitives": 17
+    },
+    {
+      "check": "floor_stone_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "floor_stone_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "floor_wood_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "floor_wood_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 108,
+      "primitives": 2
+    },
+    {
+      "check": "floor_wood_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "floor_wood_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "gable_plain_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "gable_plain_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 96,
+      "primitives": 3
+    },
+    {
+      "check": "gable_plain_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "gable_plain_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "gable_rose_8_single_scene",
+      "passed": true
+    },
+    {
+      "check": "gable_rose_8_finite_uv_mesh",
+      "passed": true,
+      "triangles": 196,
+      "primitives": 3
+    },
+    {
+      "check": "gable_rose_8_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "gable_rose_8_unlit",
+      "passed": true
+    },
+    {
+      "check": "plinth_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "plinth_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 12,
+      "primitives": 1
+    },
+    {
+      "check": "plinth_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "plinth_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_altar_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_altar_finite_uv_mesh",
+      "passed": true,
+      "triangles": 144,
+      "primitives": 4
+    },
+    {
+      "check": "prop_altar_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_altar_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_banner_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_banner_finite_uv_mesh",
+      "passed": true,
+      "triangles": 72,
+      "primitives": 3
+    },
+    {
+      "check": "prop_banner_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_banner_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_barrel_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_barrel_finite_uv_mesh",
+      "passed": true,
+      "triangles": 308,
+      "primitives": 3
+    },
+    {
+      "check": "prop_barrel_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_barrel_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_bench_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_bench_finite_uv_mesh",
+      "passed": true,
+      "triangles": 200,
+      "primitives": 6
+    },
+    {
+      "check": "prop_bench_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_bench_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_crate_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_crate_finite_uv_mesh",
+      "passed": true,
+      "triangles": 68,
+      "primitives": 3
+    },
+    {
+      "check": "prop_crate_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_crate_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_cypress_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_cypress_finite_uv_mesh",
+      "passed": true,
+      "triangles": 184,
+      "primitives": 4
+    },
+    {
+      "check": "prop_cypress_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_cypress_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_dummy_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_dummy_finite_uv_mesh",
+      "passed": true,
+      "triangles": 156,
+      "primitives": 5
+    },
+    {
+      "check": "prop_dummy_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_dummy_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_fountain_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_fountain_finite_uv_mesh",
+      "passed": true,
+      "triangles": 360,
+      "primitives": 3
+    },
+    {
+      "check": "prop_fountain_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_fountain_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_grave_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_grave_finite_uv_mesh",
+      "passed": true,
+      "triangles": 132,
+      "primitives": 3
+    },
+    {
+      "check": "prop_grave_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_grave_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_lamp_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_lamp_finite_uv_mesh",
+      "passed": true,
+      "triangles": 164,
+      "primitives": 8
+    },
+    {
+      "check": "prop_lamp_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_lamp_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_planter_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_planter_finite_uv_mesh",
+      "passed": true,
+      "triangles": 192,
+      "primitives": 2
+    },
+    {
+      "check": "prop_planter_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_planter_unlit",
+      "passed": true
+    },
+    {
+      "check": "prop_rack_single_scene",
+      "passed": true
+    },
+    {
+      "check": "prop_rack_finite_uv_mesh",
+      "passed": true,
+      "triangles": 186,
+      "primitives": 9
+    },
+    {
+      "check": "prop_rack_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "prop_rack_unlit",
+      "passed": true
+    },
+    {
+      "check": "railing_stone_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "railing_stone_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 648,
+      "primitives": 3
+    },
+    {
+      "check": "railing_stone_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "railing_stone_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "railing_wood_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "railing_wood_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 352,
+      "primitives": 8
+    },
+    {
+      "check": "railing_wood_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "railing_wood_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_4x4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_4x4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 200,
+      "primitives": 4
+    },
+    {
+      "check": "roof_gable_4x4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "roof_gable_4x4_unlit",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_8x4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_8x4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 200,
+      "primitives": 4
+    },
+    {
+      "check": "roof_gable_8x4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "roof_gable_8x4_unlit",
+      "passed": true
+    },
+    {
+      "check": "roof_ridge_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "roof_ridge_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 16,
+      "primitives": 1
+    },
+    {
+      "check": "roof_ridge_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "roof_ridge_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "rose_frame_single_scene",
+      "passed": true
+    },
+    {
+      "check": "rose_frame_finite_uv_mesh",
+      "passed": true,
+      "triangles": 160,
+      "primitives": 1
+    },
+    {
+      "check": "rose_frame_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "rose_frame_unlit",
+      "passed": true
+    },
+    {
+      "check": "rose_glass_single_scene",
+      "passed": true
+    },
+    {
+      "check": "rose_glass_finite_uv_mesh",
+      "passed": true,
+      "triangles": 540,
+      "primitives": 18
+    },
+    {
+      "check": "rose_glass_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "rose_glass_unlit",
+      "passed": true
+    },
+    {
+      "check": "sagging_beam_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "sagging_beam_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 68,
+      "primitives": 1
+    },
+    {
+      "check": "sagging_beam_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "sagging_beam_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "sdf_plinth_single_scene",
+      "passed": true
+    },
+    {
+      "check": "sdf_plinth_finite_uv_mesh",
+      "passed": true,
+      "triangles": 2278,
+      "primitives": 1
+    },
+    {
+      "check": "sdf_plinth_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "sdf_plinth_unlit",
+      "passed": true
+    },
+    {
+      "check": "sdf_rock_single_scene",
+      "passed": true
+    },
+    {
+      "check": "sdf_rock_finite_uv_mesh",
+      "passed": true,
+      "triangles": 2400,
+      "primitives": 1
+    },
+    {
+      "check": "sdf_rock_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "sdf_rock_unlit",
+      "passed": true
+    },
+    {
+      "check": "sdf_stone_single_scene",
+      "passed": true
+    },
+    {
+      "check": "sdf_stone_finite_uv_mesh",
+      "passed": true,
+      "triangles": 1308,
+      "primitives": 1
+    },
+    {
+      "check": "sdf_stone_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "sdf_stone_unlit",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 84,
+      "primitives": 2
+    },
+    {
+      "check": "stairs_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "stairs_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "wall_door_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "wall_door_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 132,
+      "primitives": 5
+    },
+    {
+      "check": "wall_door_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "wall_door_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_2_single_scene",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_2_finite_uv_mesh",
+      "passed": true,
+      "triangles": 72,
+      "primitives": 6
+    },
+    {
+      "check": "wall_plain_2_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "wall_plain_2_unlit",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 72,
+      "primitives": 6
+    },
+    {
+      "check": "wall_plain_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "wall_plain_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "wall_window_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "wall_window_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 124,
+      "primitives": 5
+    },
+    {
+      "check": "wall_window_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "wall_window_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "window_arch_frame_single_scene",
+      "passed": true
+    },
+    {
+      "check": "window_arch_frame_finite_uv_mesh",
+      "passed": true,
+      "triangles": 276,
+      "primitives": 15
+    },
+    {
+      "check": "window_arch_frame_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "window_arch_frame_unlit",
+      "passed": true
+    },
+    {
+      "check": "window_arch_glass_single_scene",
+      "passed": true
+    },
+    {
+      "check": "window_arch_glass_finite_uv_mesh",
+      "passed": true,
+      "triangles": 92,
+      "primitives": 4
+    },
+    {
+      "check": "window_arch_glass_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "window_arch_glass_unlit",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "wall_plain_2_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "wall_door_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "wall_window_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "window_arch_frame_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "window_arch_glass_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "door_arch_frame_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "door_wood_double_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "door_wood_plain_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "door_stone_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "rose_frame_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "rose_glass_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "column_3_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "railing_wood_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "railing_stone_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "fence_post_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "arcade_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "roof_gable_8x4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "roof_gable_4x4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "roof_ridge_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "gable_rose_8_basis_bounds",
+      "passed": true,
+      "max_error_m": 3.526707175183219e-07
+    },
+    {
+      "check": "gable_plain_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 2.1168881758626412e-07
+    },
+    {
+      "check": "floor_stone_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "floor_wood_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "plinth_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "stairs_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 3.2549007678017716e-07
+    },
+    {
+      "check": "chimney_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "dome_frame_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "dome_glass_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "bridge_segment_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "balcony_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 1.9678894513930345e-08
+    },
+    {
+      "check": "sagging_beam_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "bell_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "buttress_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "sdf_stone_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "sdf_plinth_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "sdf_rock_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_bench_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_planter_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_crate_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_barrel_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_grave_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_dummy_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_rack_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_altar_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_lamp_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_fountain_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_cypress_basis_bounds",
+      "passed": true,
+      "max_error_m": 0.0
+    },
+    {
+      "check": "prop_banner_basis_bounds",
+      "passed": true,
+      "max_error_m": 4.842877388000488e-08
+    },
+    {
+      "check": "wall_plain_4_actual_interface_match",
+      "passed": true,
+      "max_gap_m": 0.0,
+      "measured_pitch": 4.0
+    },
+    {
+      "check": "roof_gable_8x4_actual_interface_match",
+      "passed": true,
+      "max_gap_m": 0.0,
+      "measured_pitch": 4.0
+    },
+    {
+      "check": "bridge_segment_4_actual_interface_match",
+      "passed": true,
+      "max_gap_m": 0.0,
+      "measured_pitch": 4.0
+    },
+    {
+      "check": "actual_post_to_wood_rail",
+      "passed": true,
+      "gap_m": 0.0
+    },
+    {
+      "check": "stair_rises_towards_door",
+      "passed": true,
+      "tread_top_y_and_mean_z": [
+        [
+          0.225,
+          -0.45000001788139343
+        ],
+        [
+          0.425,
+          -0.15000000596046448
+        ],
+        [
+          0.625,
+          0.15000000596046448
+        ],
+        [
+          0.825,
+          0.45000001788139343
+        ]
+      ]
+    },
+    {
+      "check": "stairs_meet_plinth_plus_floor",
+      "passed": true,
+      "floor_top_m": 0.8250000178813934,
+      "stair_top_m": 0.8250000476837158
+    }
+  ],
+  "basis": "parsed actual GLB mesh positions, node matrices, UV attributes and materials"
+}

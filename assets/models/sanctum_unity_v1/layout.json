@@ -1,0 +1,609 @@
+{
+  "version": "sanctum-unity-v1",
+  "grid": 4,
+  "floor_height": 20,
+  "rooms": [
+    {
+      "id": "R0",
+      "name": "山门前庭",
+      "kind": "start",
+      "center": [
+        200,
+        368
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "theme": "cloister",
+      "mobs": [],
+      "boss": "",
+      "required_flags": [],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_in"
+    },
+    {
+      "id": "R1",
+      "name": "守门回廊",
+      "kind": "trash",
+      "center": [
+        200,
+        320
+      ],
+      "size": [
+        32,
+        40
+      ],
+      "theme": "cloister",
+      "mobs": [
+        "d_bandit",
+        "d_bandit",
+        "d_bandit_gunner"
+      ],
+      "boss": "",
+      "required_flags": [],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_court"
+    },
+    {
+      "id": "R2",
+      "name": "残泉庭院",
+      "kind": "trash",
+      "center": [
+        136,
+        320
+      ],
+      "size": [
+        40,
+        32
+      ],
+      "theme": "cloister",
+      "mobs": [
+        "d_bandit",
+        "d_bandit",
+        "d_bandit_mage"
+      ],
+      "boss": "",
+      "required_flags": [],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r2"
+    },
+    {
+      "id": "R3",
+      "name": "荆棘苗圃",
+      "kind": "trash",
+      "center": [
+        80,
+        276
+      ],
+      "size": [
+        32,
+        40
+      ],
+      "theme": "garden",
+      "mobs": [
+        "d_vine",
+        "d_vine",
+        "d_treant"
+      ],
+      "boss": "",
+      "required_flags": [],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r3"
+    },
+    {
+      "id": "R4",
+      "name": "腐根花园",
+      "kind": "boss",
+      "center": [
+        80,
+        216
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "theme": "garden",
+      "mobs": [],
+      "boss": "boss_rootguard",
+      "required_flags": [],
+      "defeated_flag": "sanctum_ember_root",
+      "poi": "poi_sanctum_garden"
+    },
+    {
+      "id": "R5",
+      "name": "修士旧书室",
+      "kind": "rest",
+      "center": [
+        148,
+        216
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "theme": "cloister",
+      "mobs": [],
+      "boss": "",
+      "required_flags": [
+        "sanctum_ember_root"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r5"
+    },
+    {
+      "id": "R6",
+      "name": "转运库房",
+      "kind": "trash",
+      "center": [
+        208,
+        216
+      ],
+      "size": [
+        40,
+        32
+      ],
+      "theme": "depot",
+      "mobs": [
+        "d_bandit",
+        "d_bandit",
+        "d_bandit_gunner"
+      ],
+      "boss": "",
+      "required_flags": [
+        "sanctum_ember_root"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r6"
+    },
+    {
+      "id": "R7",
+      "name": "灰巾军械院",
+      "kind": "trash",
+      "center": [
+        272,
+        216
+      ],
+      "size": [
+        40,
+        40
+      ],
+      "theme": "depot",
+      "mobs": [
+        "d_bandit",
+        "d_bandit_gunner",
+        "d_bandit_mage"
+      ],
+      "boss": "",
+      "required_flags": [
+        "sanctum_ember_root"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r7"
+    },
+    {
+      "id": "R8",
+      "name": "莱克的补给站",
+      "kind": "boss",
+      "center": [
+        328,
+        152
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "theme": "depot",
+      "mobs": [],
+      "boss": "boss_lake",
+      "required_flags": [
+        "sanctum_ember_root"
+      ],
+      "defeated_flag": "sanctum_ember_lake",
+      "poi": "poi_sanctum_depot"
+    },
+    {
+      "id": "R9",
+      "name": "烛火前厅",
+      "kind": "trash",
+      "center": [
+        256,
+        88
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "theme": "nave",
+      "mobs": [
+        "d_bandit",
+        "d_bandit_mage",
+        "d_gargoyle"
+      ],
+      "boss": "",
+      "required_flags": [
+        "sanctum_ember_lake"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r9"
+    },
+    {
+      "id": "R10",
+      "name": "失声唱诗席",
+      "kind": "trash",
+      "center": [
+        196,
+        88
+      ],
+      "size": [
+        40,
+        32
+      ],
+      "theme": "nave",
+      "mobs": [
+        "d_gargoyle",
+        "d_gargoyle",
+        "d_bandit_mage"
+      ],
+      "boss": "",
+      "required_flags": [
+        "sanctum_ember_lake"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r10"
+    },
+    {
+      "id": "R11",
+      "name": "圣歌正殿",
+      "kind": "boss",
+      "center": [
+        132,
+        88
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "theme": "nave",
+      "mobs": [],
+      "boss": "boss_sanctum_lantern",
+      "required_flags": [
+        "sanctum_ember_lake"
+      ],
+      "defeated_flag": "sanctum_ember_nave",
+      "poi": "poi_sanctum_nave"
+    },
+    {
+      "id": "R12",
+      "name": "三火种圣龛",
+      "kind": "rest",
+      "center": [
+        132,
+        148
+      ],
+      "size": [
+        24,
+        24
+      ],
+      "theme": "bell",
+      "mobs": [],
+      "boss": "",
+      "required_flags": [
+        "sanctum_final_open"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r12"
+    },
+    {
+      "id": "R13",
+      "name": "守钟长廊",
+      "kind": "trash",
+      "center": [
+        196,
+        148
+      ],
+      "size": [
+        32,
+        24
+      ],
+      "theme": "bell",
+      "mobs": [
+        "d_gargoyle",
+        "d_gargoyle"
+      ],
+      "boss": "",
+      "required_flags": [
+        "sanctum_final_open"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_r13"
+    },
+    {
+      "id": "R14",
+      "name": "丧钟终局厅",
+      "kind": "final",
+      "center": [
+        256,
+        148
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "theme": "bell",
+      "mobs": [],
+      "boss": "boss_victor",
+      "required_flags": [
+        "sanctum_final_open"
+      ],
+      "defeated_flag": "",
+      "poi": "poi_sanctum_bell"
+    }
+  ],
+  "connections": [
+    {
+      "id": "C0",
+      "from": "R0",
+      "to": "R1",
+      "points": [
+        [
+          200,
+          356
+        ],
+        [
+          200,
+          340
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C1",
+      "from": "R1",
+      "to": "R2",
+      "points": [
+        [
+          184,
+          320
+        ],
+        [
+          156,
+          320
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C2",
+      "from": "R2",
+      "to": "R3",
+      "points": [
+        [
+          116,
+          320
+        ],
+        [
+          80,
+          320
+        ],
+        [
+          80,
+          296
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C3",
+      "from": "R3",
+      "to": "R4",
+      "points": [
+        [
+          80,
+          256
+        ],
+        [
+          80,
+          240
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C4",
+      "from": "R4",
+      "to": "R5",
+      "points": [
+        [
+          104,
+          216
+        ],
+        [
+          132,
+          216
+        ]
+      ],
+      "width": 8,
+      "door_flag": "sanctum_ember_root",
+      "gate_name": "腐根封印"
+    },
+    {
+      "id": "C5",
+      "from": "R5",
+      "to": "R6",
+      "points": [
+        [
+          164,
+          216
+        ],
+        [
+          188,
+          216
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C6",
+      "from": "R6",
+      "to": "R7",
+      "points": [
+        [
+          228,
+          216
+        ],
+        [
+          252,
+          216
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C7",
+      "from": "R7",
+      "to": "R8",
+      "points": [
+        [
+          272,
+          196
+        ],
+        [
+          272,
+          152
+        ],
+        [
+          304,
+          152
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C8",
+      "from": "R8",
+      "to": "R9",
+      "points": [
+        [
+          328,
+          128
+        ],
+        [
+          328,
+          88
+        ],
+        [
+          272,
+          88
+        ]
+      ],
+      "width": 8,
+      "door_flag": "sanctum_ember_lake",
+      "gate_name": "灰巾封印"
+    },
+    {
+      "id": "C9",
+      "from": "R9",
+      "to": "R10",
+      "points": [
+        [
+          240,
+          88
+        ],
+        [
+          216,
+          88
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C10",
+      "from": "R10",
+      "to": "R11",
+      "points": [
+        [
+          176,
+          88
+        ],
+        [
+          156,
+          88
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C11",
+      "from": "R11",
+      "to": "R12",
+      "points": [
+        [
+          132,
+          112
+        ],
+        [
+          132,
+          136
+        ]
+      ],
+      "width": 8,
+      "door_flag": "sanctum_final_open",
+      "gate_name": "三火种封印"
+    },
+    {
+      "id": "C12",
+      "from": "R12",
+      "to": "R13",
+      "points": [
+        [
+          144,
+          148
+        ],
+        [
+          180,
+          148
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    },
+    {
+      "id": "C13",
+      "from": "R13",
+      "to": "R14",
+      "points": [
+        [
+          212,
+          148
+        ],
+        [
+          232,
+          148
+        ]
+      ],
+      "width": 8,
+      "door_flag": "",
+      "gate_name": ""
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "batches": [
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_0_ABY2_stone",
+      "partition": "0_0_0",
+      "parts": 3,
+      "triangles": 1046
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_1_ABY2_stone_light",
+      "partition": "0_0_0",
+      "parts": 8,
+      "triangles": 1698
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_2_ABY2_stone_dark",
+      "partition": "0_0_0",
+      "parts": 5,
+      "triangles": 220
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_3_ABY2_glass",
+      "partition": "alpha_339352762760_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_4_ABY2_window_glow",
+      "partition": "alpha_339352762760_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_5_ABY2_stone_light_001",
+      "partition": "0_0_-1",
+      "parts": 3,
+      "triangles": 792
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_6_ABY2_stone_light",
+      "partition": "0_0_-1",
+      "parts": 5,
+      "triangles": 1944
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_7_ABY2_timber",
+      "partition": "0_0_-1",
+      "parts": 2,
+      "triangles": 608
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_8_ABY2_glass",
+      "partition": "alpha_339386317194_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_9_ABY2_window_glow",
+      "partition": "alpha_339386317194_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_10_ABY2_stone_light_001",
+      "partition": "0_0_0",
+      "parts": 2,
+      "triangles": 484
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_11_ABY2_timber",
+      "partition": "0_0_0",
+      "parts": 1,
+      "triangles": 304
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_12_ABY2_glass",
+      "partition": "alpha_339419871628_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_13_ABY2_window_glow",
+      "partition": "alpha_339419871628_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_14_ABY2_glass",
+      "partition": "alpha_339453426062_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_15_ABY2_window_glow",
+      "partition": "alpha_339453426062_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_16_ABY2_stone_light_001",
+      "partition": "-1_0_-1",
+      "parts": 2,
+      "triangles": 484
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_17_ABY2_stone_light",
+      "partition": "-1_0_-1",
+      "parts": 3,
+      "triangles": 1214
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_18_ABY2_timber",
+      "partition": "-1_0_-1",
+      "parts": 1,
+      "triangles": 304
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_19_ABY2_plaster",
+      "partition": "-1_0_0",
+      "parts": 2,
+      "triangles": 272
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_20_ABY2_stone_light",
+      "partition": "-1_0_0",
+      "parts": 1,
+      "triangles": 484
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_21_ABY2_stone_light_001",
+      "partition": "-1_0_0",
+      "parts": 1,
+      "triangles": 176
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_22_ABY2_stone_dark",
+      "partition": "-1_0_0",
+      "parts": 2,
+      "triangles": 88
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_23_ABY2_plaster",
+      "partition": "-1_0_-1",
+      "parts": 2,
+      "triangles": 1800
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_24_ABY2_stone_dark",
+      "partition": "-1_0_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_25_ABY2_plaster",
+      "partition": "0_0_0",
+      "parts": 4,
+      "triangles": 2256
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_26_ABY2_plaster",
+      "partition": "0_0_-1",
+      "parts": 4,
+      "triangles": 3784
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_27_ABY2_stone_dark",
+      "partition": "0_0_-1",
+      "parts": 2,
+      "triangles": 88
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_28_ABY2_stone_light",
+      "partition": "0_1_-1",
+      "parts": 4,
+      "triangles": 1528
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_29_ABY2_stone_light_001",
+      "partition": "0_1_-1",
+      "parts": 2,
+      "triangles": 616
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_30_ABY2_stone_dark",
+      "partition": "0_1_-1",
+      "parts": 2,
+      "triangles": 352
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_31_ABY2_stone_light",
+      "partition": "0_1_0",
+      "parts": 4,
+      "triangles": 852
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_32_ABY2_stone_light_001",
+      "partition": "0_1_0",
+      "parts": 1,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_33_ABY2_stone_dark",
+      "partition": "0_1_0",
+      "parts": 1,
+      "triangles": 176
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_34_ABY2_stone_light",
+      "partition": "-1_1_-1",
+      "parts": 2,
+      "triangles": 764
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_35_ABY2_stone_light_001",
+      "partition": "-1_1_-1",
+      "parts": 1,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_36_ABY2_stone_dark",
+      "partition": "-1_1_-1",
+      "parts": 1,
+      "triangles": 176
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_37_ABY2_wood",
+      "partition": "0_2_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_38_ABY2_timber",
+      "partition": "0_2_0",
+      "parts": 2,
+      "triangles": 88
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_39_ABY2_slate",
+      "partition": "0_2_0",
+      "parts": 1,
+      "triangles": 2520
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_40_ABY2_slate_light",
+      "partition": "0_2_0",
+      "parts": 1,
+      "triangles": 600
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_41_ABY2_slate_dark",
+      "partition": "0_2_0",
+      "parts": 2,
+      "triangles": 120
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_42_ABY2_slate_dark",
+      "partition": "0_2_-1",
+      "parts": 1,
+      "triangles": 60
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_43_ABY2_slate_dark",
+      "partition": "-1_2_0",
+      "parts": 2,
+      "triangles": 1758
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_44_ABY2_slate",
+      "partition": "-1_2_0",
+      "parts": 1,
+      "triangles": 8766
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_45_ABY2_slate_light",
+      "partition": "-1_2_0",
+      "parts": 1,
+      "triangles": 3398
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_46_ABY2_timber",
+      "partition": "0_1_0",
+      "parts": 4,
+      "triangles": 464
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_47_ABY2_timber",
+      "partition": "0_1_-1",
+      "parts": 1,
+      "triangles": 188
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_48_ABY2_timber",
+      "partition": "-1_1_0",
+      "parts": 1,
+      "triangles": 188
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_49_ABY2_plaster",
+      "partition": "0_1_-1",
+      "parts": 3,
+      "triangles": 1204
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_50_ABY2_plaster",
+      "partition": "0_1_0",
+      "parts": 3,
+      "triangles": 860
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_51_ABY2_plaster",
+      "partition": "-1_1_0",
+      "parts": 1,
+      "triangles": 172
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_52_ABY2_stone",
+      "partition": "0_1_-1",
+      "parts": 2,
+      "triangles": 952
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_53_ABY2_stone",
+      "partition": "0_1_0",
+      "parts": 1,
+      "triangles": 476
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_54_ABY2_stone",
+      "partition": "-1_1_-1",
+      "parts": 1,
+      "triangles": 476
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_55_ABY2_plaster",
+      "partition": "-1_1_-1",
+      "parts": 1,
+      "triangles": 516
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_56_ABY2_stone",
+      "partition": "0_0_-1",
+      "parts": 2,
+      "triangles": 1388
+    },
+    {
+      "branch": "ValeRuntime_belltower",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_57_ABY2_stone",
+      "partition": "-1_0_-1",
+      "parts": 1,
+      "triangles": 694
+    }
+  ],
+  "bounds_max": [
+    2.55999970436096,
+    15.25,
+    2.55999994277954
+  ],
+  "bounds_min": [
+    -2.55999970436096,
+    0.0,
+    -2.55999994277954
+  ],
+  "collision_cells": 12,
+  "collision_policy": "chunked exact solid triangles; no whole-building box; chapel high triangles >4.2m and visual stair collisions omitted, smooth ramp planes added; moving windmill rotor excluded",
+  "collision_triangles": 48102,
+  "duration_ms": 512,
+  "file": "belltower.scn",
+  "id": "belltower",
+  "lights": [],
+  "material_name_content_counts": {
+    "ABY2_glass": 1,
+    "ABY2_plaster": 1,
+    "ABY2_slate": 1,
+    "ABY2_slate_dark": 1,
+    "ABY2_slate_light": 1,
+    "ABY2_stone": 1,
+    "ABY2_stone_dark": 1,
+    "ABY2_stone_light": 1,
+    "ABY2_stone_light.001": 1,
+    "ABY2_timber": 1,
+    "ABY2_window_glow": 1,
+    "ABY2_wood": 1
+  },
+  "output_meshes": 58,
+  "pack_error": 0,
+  "passed": true,
+  "ramps": [],
+  "reloaded": {
+    "bounds_max": [
+      2.55999994277954,
+      15.25,
+      2.55999994277954
+    ],
+    "bounds_min": [
+      -2.55999994277954,
+      0.0,
+      -2.55999994277954
+    ],
+    "dependencies": [],
+    "embedded_texture_content_count": 10,
+    "errors": [],
+    "material_content_count": 12,
+    "material_content_hashes": [
+      "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9"
+    ],
+    "meshes": 58,
+    "passed": true,
+    "triangles": 48518,
+    "windows": [
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      }
+    ]
+  },
+  "rotor_transform": null,
+  "save_error": 0,
+  "source": "assets/models/abbey_kit_v3/build005/assemblies/BellTower.glb",
+  "source_material_content_hashes": [
+    "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+    "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+    "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+    "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+    "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+    "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+    "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+    "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+    "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+    "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+    "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+    "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9"
+  ],
+  "source_material_contents": 12,
+  "source_material_resources": 12,
+  "source_meshes": 58,
+  "source_sha256": "db5228288eb2c78d083f2428365f24f20e2a7d28b8ca8d988289d2af44e3a03e",
+  "source_surfaces": 113,
+  "source_triangles": 48518,
+  "transparent_surfaces_kept_separate": 8,
+  "visual_bounds_preserved": true
+}

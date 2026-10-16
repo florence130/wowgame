@@ -1,0 +1,608 @@
+{
+  "assets": [
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -20.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.00000282878363577765,
+            0.000829658238217235,
+            -16.9368667602539
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "academy",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -10.0,
+            0.0,
+            -1.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            5.0,
+            0.0,
+            -1.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 10
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -47.0
+          ],
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "walk_end": [
+            -0.00000293529501504963,
+            0.000839701970107853,
+            -43.9368133544922
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "cathedral",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            0.0,
+            0.0,
+            26.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            -7.0,
+            0.0,
+            15.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 9
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -20.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.00000169068164268538,
+            0.000828834541607648,
+            -16.9368267059326
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "civic_hall",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -9.0,
+            0.0,
+            -2.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            9.0,
+            0.0,
+            -2.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            0.0,
+            0.0,
+            9.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 10
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            13.0
+          ],
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "walk_end": [
+            -0.00000319159175887762,
+            0.000811956124380231,
+            16.0629596710205
+          ],
+          "walk_from_street": true
+        },
+        {
+          "clear": true,
+          "entry": [
+            -40.0,
+            0.0,
+            -35.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -40.0,
+            0.00083660043310374,
+            -31.937198638916
+          ],
+          "walk_from_street": true
+        },
+        {
+          "clear": true,
+          "entry": [
+            40.0,
+            0.0,
+            -35.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            39.9999961853027,
+            0.000836591236293316,
+            -31.9369621276855
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "governor_palace",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            -7.0,
+            0.0,
+            23.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            7.0,
+            0.0,
+            23.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 9
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -15.0
+          ],
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "walk_end": [
+            -0.00000179349399331841,
+            0.00083309062756598,
+            -11.9371614456177
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "guild_hall",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            -9.0,
+            0.0,
+            4.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            9.0,
+            0.0,
+            4.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.000000119209289550781,
+          "pass": true,
+          "position": [
+            0.0,
+            0.0,
+            8.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 8
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -10.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.00000214758233596513,
+            0.000815672043245286,
+            -6.9370265007019
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "magic_tower",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -4.0,
+            0.0,
+            2.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            4.0,
+            0.0,
+            2.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 9
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -20.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.00000233607306654449,
+            0.000835104903671891,
+            -16.9368076324463
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "opera",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -10.0,
+            0.0,
+            -9.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            10.0,
+            0.0,
+            -9.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 10
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -14.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.00000191004664884531,
+            0.000822458474431187,
+            -10.9368171691895
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "public_house",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -8.0,
+            0.0,
+            3.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            8.0,
+            0.0,
+            3.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 10
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -28.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.000000978427124209702,
+            0.000838137872051448,
+            -24.9367752075195
+          ],
+          "walk_from_street": true
+        },
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            28.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            0.00000207798393603298,
+            0.000838135310914367,
+            24.9367637634277
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "station",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -10.0,
+            0.0,
+            -12.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            10.0,
+            0.0,
+            -12.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 11
+    },
+    {
+      "bad_materials": [],
+      "collision_shapes": 1,
+      "entry_checks": [
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            -19.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            -0.00000426177939516492,
+            0.000835451122839004,
+            -15.936803817749
+          ],
+          "walk_from_street": true
+        },
+        {
+          "clear": true,
+          "entry": [
+            0.0,
+            0.0,
+            19.0
+          ],
+          "floor_y": 0.0,
+          "pass": true,
+          "walk_end": [
+            0.00000250707921622961,
+            0.000829229422379285,
+            15.9368162155151
+          ],
+          "walk_from_street": true
+        }
+      ],
+      "id": "trade_hall",
+      "import_contract_pass": true,
+      "service_checks": [
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -10.0,
+            0.0,
+            -6.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            10.0,
+            0.0,
+            -6.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            -10.0,
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "capsule_clear": true,
+          "floor_y": 0.0,
+          "pass": true,
+          "position": [
+            10.0,
+            0.0,
+            8.0
+          ]
+        }
+      ],
+      "static_bodies": 1,
+      "visible_colonly": [],
+      "visual_meshes": 8
+    }
+  ],
+  "godot": "4.7.2-stable (official)",
+  "passed": true,
+  "test_context": "isolated imported GLBs, flat street plane at -0.6m, fixed 60 physics ticks; not integrated city navigation",
+  "walker": {
+    "height": 1.8,
+    "inside_distance": 3.0,
+    "radius": 0.35,
+    "speed": 6.0,
+    "start_distance": 7.0
+  }
+}

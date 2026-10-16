@@ -1,0 +1,549 @@
+{
+  "label": "晴岚帝国浴场",
+  "footprint": [
+    64,
+    44
+  ],
+  "body_height": 17,
+  "max_height": 27,
+  "entry_width": 10,
+  "entries": [
+    [
+      0,
+      0,
+      -22
+    ]
+  ],
+  "concept": "Roman thermae: basilical hall, paired vaulted bathing rooms, open natatio courts and colonnades",
+  "id": "roman_baths",
+  "aabb_min": [
+    -32.290000915527344,
+    -1.4500000476837158,
+    -25.149999618530273
+  ],
+  "aabb_max": [
+    32.290000915527344,
+    25.094797134399414,
+    22.5
+  ],
+  "aabb_size": [
+    64.58000183105469,
+    26.54479718208313,
+    47.64999961853027
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/roman_baths.glb",
+  "blend": "assets/models/city_v5/landmarks/roman_baths.blend",
+  "modules": [
+    {
+      "name": "Bath footing and pool courts",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Bath footing and pool courts_rustic",
+        "Bath footing and pool courts_floor"
+      ]
+    },
+    {
+      "name": "Open natatio basin",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Open natatio basin_water",
+        "Open natatio basin_stone",
+        "Open natatio basin_trim"
+      ]
+    },
+    {
+      "name": "Open natatio basin",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Open natatio basin_water.001",
+        "Open natatio basin_stone.001",
+        "Open natatio basin_trim.001"
+      ]
+    },
+    {
+      "name": "Central frigidarium basilica",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Central frigidarium basilica_stone",
+        "Central frigidarium basilica_trim",
+        "Central frigidarium basilica_brick"
+      ]
+    },
+    {
+      "name": "Daylit thermal hall clerestory",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Daylit thermal hall clerestory_brick",
+        "Daylit thermal hall clerestory_trim",
+        "Daylit thermal hall clerestory_glass",
+        "Daylit thermal hall clerestory_bronze",
+        "Daylit thermal hall clerestory_stone"
+      ]
+    },
+    {
+      "name": "Daylit thermal hall clerestory",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Daylit thermal hall clerestory_brick.001",
+        "Daylit thermal hall clerestory_trim.001",
+        "Daylit thermal hall clerestory_glass.001",
+        "Daylit thermal hall clerestory_bronze.001",
+        "Daylit thermal hall clerestory_stone.001"
+      ]
+    },
+    {
+      "name": "High barrel-vaulted frigidarium",
+      "methods": [
+        "loft",
+        "profile extrusion"
+      ],
+      "objects": [
+        "High barrel-vaulted frigidarium_slate",
+        "High barrel-vaulted frigidarium_bronze",
+        "High barrel-vaulted frigidarium_trim"
+      ]
+    },
+    {
+      "name": "Thermal lunette window",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Thermal lunette window_glass"
+      ]
+    },
+    {
+      "name": "Lunette bronze mullion",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Lunette bronze mullion_bronze"
+      ]
+    },
+    {
+      "name": "Lunette bronze mullion",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Lunette bronze mullion_bronze.001"
+      ]
+    },
+    {
+      "name": "Lunette bronze mullion",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Lunette bronze mullion_bronze.002"
+      ]
+    },
+    {
+      "name": "Thermal lunette window",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Thermal lunette window_glass.001"
+      ]
+    },
+    {
+      "name": "Lunette bronze mullion",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Lunette bronze mullion_bronze.003"
+      ]
+    },
+    {
+      "name": "Lunette bronze mullion",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Lunette bronze mullion_bronze.004"
+      ]
+    },
+    {
+      "name": "Lunette bronze mullion",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Lunette bronze mullion_bronze.005"
+      ]
+    },
+    {
+      "name": "Warm bathing chamber",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Warm bathing chamber_rustic",
+        "Warm bathing chamber_floor",
+        "Warm bathing chamber_brick",
+        "Warm bathing chamber_trim",
+        "Warm bathing chamber_glass",
+        "Warm bathing chamber_bronze",
+        "Warm bathing chamber_stone"
+      ]
+    },
+    {
+      "name": "Caldarium hemispherical roof",
+      "methods": [
+        "screw; solidify"
+      ],
+      "objects": [
+        "Caldarium hemispherical roof"
+      ]
+    },
+    {
+      "name": "Caldarium hemispherical roof base ring",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Caldarium hemispherical roof base ring_trim"
+      ]
+    },
+    {
+      "name": "Pool-side colonnade",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Pool-side colonnade"
+      ]
+    },
+    {
+      "name": "Pool-side colonnade lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool-side colonnade lintel_stone"
+      ]
+    },
+    {
+      "name": "Warm bathing chamber",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Warm bathing chamber_rustic.001",
+        "Warm bathing chamber_floor.001",
+        "Warm bathing chamber_brick.001",
+        "Warm bathing chamber_trim.001",
+        "Warm bathing chamber_glass.001",
+        "Warm bathing chamber_bronze.001",
+        "Warm bathing chamber_stone.001"
+      ]
+    },
+    {
+      "name": "Caldarium hemispherical roof.001",
+      "methods": [
+        "screw; solidify"
+      ],
+      "objects": [
+        "Caldarium hemispherical roof.001"
+      ]
+    },
+    {
+      "name": "Caldarium hemispherical roof base ring",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Caldarium hemispherical roof base ring_trim.001"
+      ]
+    },
+    {
+      "name": "Pool-side colonnade.001",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Pool-side colonnade.001"
+      ]
+    },
+    {
+      "name": "Pool-side colonnade lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool-side colonnade lintel_stone.001"
+      ]
+    },
+    {
+      "name": "Perimeter arcade",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Perimeter arcade_brick",
+        "Perimeter arcade_trim"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.001"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.002"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.003"
+      ]
+    },
+    {
+      "name": "Perimeter arcade",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Perimeter arcade_brick.001",
+        "Perimeter arcade_trim.001"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.004"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.005"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.006"
+      ]
+    },
+    {
+      "name": "Pool side niche",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Pool side niche_trim.007"
+      ]
+    },
+    {
+      "name": "Monumental entrance left",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Monumental entrance left"
+      ]
+    },
+    {
+      "name": "Monumental entrance left lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Monumental entrance left lintel_stone"
+      ]
+    },
+    {
+      "name": "Monumental entrance right",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Monumental entrance right"
+      ]
+    },
+    {
+      "name": "Monumental entrance right lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Monumental entrance right lintel_stone"
+      ]
+    },
+    {
+      "name": "Bath portal",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Bath portal_stone",
+        "Bath portal_brick",
+        "Bath portal_trim"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone",
+        "Stone public bench_rustic"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone.001",
+        "Stone public bench_rustic.001"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -22
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 35476,
+  "collision_triangles": 840
+}

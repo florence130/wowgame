@@ -1,0 +1,300 @@
+{
+  "label": "星门传送大厅",
+  "footprint": [
+    32,
+    28
+  ],
+  "body_height": 16,
+  "max_height": 29,
+  "entry_width": 8,
+  "entries": [
+    [
+      0,
+      0,
+      -14
+    ]
+  ],
+  "concept": "Broad vaulted terminal, three portal bays, luminous oculus; no tower",
+  "id": "portal_hall",
+  "aabb_min": [
+    -17.290000915527344,
+    -1.600000023841858,
+    -17.149999618530273
+  ],
+  "aabb_max": [
+    17.290000915527344,
+    23.308683395385742,
+    15.289999961853027
+  ],
+  "aabb_size": [
+    34.58000183105469,
+    24.9086834192276,
+    32.4399995803833
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/portal_hall.glb",
+  "blend": "assets/models/city_v5/landmarks/portal_hall.blend",
+  "modules": [
+    {
+      "name": "01 Continuous ground and cut-stone footing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Continuous ground and cut-stone footing_rustic",
+        "01 Continuous ground and cut-stone footing_floor"
+      ]
+    },
+    {
+      "name": "Side portal registry wing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Side portal registry wing_rustic",
+        "Side portal registry wing_floor",
+        "Side portal registry wing_indigo",
+        "Side portal registry wing_trim",
+        "Side portal registry wing_glass",
+        "Side portal registry wing_bronze",
+        "Side portal registry wing_stone",
+        "Side portal registry wing_slate",
+        "Side portal registry wing_gold"
+      ]
+    },
+    {
+      "name": "Side portal registry wing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Side portal registry wing_rustic.001",
+        "Side portal registry wing_floor.001",
+        "Side portal registry wing_indigo.001",
+        "Side portal registry wing_trim.001",
+        "Side portal registry wing_glass.001",
+        "Side portal registry wing_bronze.001",
+        "Side portal registry wing_stone.001",
+        "Side portal registry wing_slate.001",
+        "Side portal registry wing_gold.001"
+      ]
+    },
+    {
+      "name": "Great-hall arches",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Great-hall arches_stone",
+        "Great-hall arches_trim"
+      ]
+    },
+    {
+      "name": "Glazed nave over the three gates",
+      "methods": [
+        "loft",
+        "profile extrusion"
+      ],
+      "objects": [
+        "Glazed nave over the three gates_glass",
+        "Glazed nave over the three gates_bronze",
+        "Glazed nave over the three gates_trim"
+      ]
+    },
+    {
+      "name": "Main tympanum and ring",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Main tympanum and ring_indigo",
+        "Main tympanum and ring_trim",
+        "Main tympanum and ring_glass",
+        "Main tympanum and ring_gold"
+      ]
+    },
+    {
+      "name": "Portal gateway ring",
+      "methods": [
+        "curve bevel"
+      ],
+      "objects": [
+        "Portal gateway ring"
+      ]
+    },
+    {
+      "name": "Gate dais",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Gate dais_stone"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold"
+      ]
+    },
+    {
+      "name": "Portal gateway ring.001",
+      "methods": [
+        "curve bevel"
+      ],
+      "objects": [
+        "Portal gateway ring.001"
+      ]
+    },
+    {
+      "name": "Gate dais",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Gate dais_stone.001"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold.001"
+      ]
+    },
+    {
+      "name": "Entrance pillars",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Entrance pillars"
+      ]
+    },
+    {
+      "name": "Entrance pillars lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entrance pillars lintel_stone"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    },
+    {
+      "name": "01 Mirrored corner buttresses",
+      "methods": [
+        "mirror",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Mirrored corner buttresses_rustic",
+        "01 Mirrored corner buttresses_trim"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold.002"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold.003"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold.004"
+      ]
+    },
+    {
+      "name": "Continuous rune frieze",
+      "methods": [
+        "curve bevel"
+      ],
+      "objects": [
+        "Continuous rune frieze"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -14
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 35336,
+  "collision_triangles": 684
+}

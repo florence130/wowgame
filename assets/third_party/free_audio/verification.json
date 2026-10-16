@@ -1,0 +1,28 @@
+{
+  "decoded_assets": 44,
+  "clipping": false,
+  "night_pairs": [
+    {
+      "map": "vale",
+      "preserved_first_voice_notes": 88,
+      "first_voice_is_theme": "not independently confirmed"
+    },
+    {
+      "map": "tidewind",
+      "preserved_first_voice_notes": 92,
+      "first_voice_is_theme": "not independently confirmed"
+    },
+    {
+      "map": "city",
+      "preserved_first_voice_notes": 267,
+      "first_voice_is_theme": "not independently confirmed"
+    },
+    {
+      "map": "sanctum",
+      "preserved_first_voice_notes": 36,
+      "first_voice_is_theme": "not independently confirmed"
+    }
+  ],
+  "godot_integration": "tests/free_audio.tscn passed",
+  "aesthetic_and_musical_loop_seam": "requires audition"
+}

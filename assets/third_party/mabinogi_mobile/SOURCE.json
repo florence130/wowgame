@@ -1,0 +1,30 @@
+{
+	"source": "洛奇 M（玛奇手游）客户端提取音频",
+	"origin": "E:\\codexwork\\洛奇mobile\\assets\\audio",
+	"authorization": "用户明确授权在 E:\\wowgame 中使用并改编；不直接照搬，全部经过降采样/单声道/循环淡化/归一化处理。",
+	"derivatives": {
+		"BGM_Tir Cornail DAY.ogg": {
+			"out": "assets\\audio\\bgm\\field_day.ogg",
+			"sha256": "4f88021be678881193942a74b611be4c5ffe994fe8ce01cc1b7bb2e71c3d8706"
+		},
+		"BGM_Dungeon ALBY.ogg": {
+			"out": "assets\\audio\\bgm\\dungeon.ogg",
+			"sha256": "bb20315ce6bb2529227583b029f18d33b3a3a45f0e21d8652b82b1052db47529"
+		},
+		"BGM_Tir Cornail NIGHT.wav": {
+			"out": "assets\\audio\\bgm\\night.wav",
+			"sha256": "570b521c76133704a4b2b328003847bd4ca4e44924bba8008dcc1d362e97e5f1",
+			"note": "150s window, mono 22.05k, crossfade loop"
+		},
+		"SFX_ENV_Village_Day.wav": {
+			"out": "assets\\audio\\env\\village_day.wav",
+			"sha256": "cb8fac74886b9f806a7ef1b9989d3277b72dd77da069c90135f2dad207492715",
+			"note": "mono 22.05k, peak -3dBFS"
+		},
+		"SFX_ENV_Village_Night.wav": {
+			"out": "assets\\audio\\env\\village_night.wav",
+			"sha256": "ce3daea62bee3dc03791b218d2e3507b1b0b588e0d026a1de98b0af1d3588199",
+			"note": "mono 22.05k, peak -3dBFS"
+		}
+	}
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "key": "hit",
+    "file": "assets\\audio\\free\\hit.ogg",
+    "author": "Kenney",
+    "license": "CC0",
+    "source_member": "Audio/impactPunch_medium_000.ogg",
+    "source": "https://kenney.nl/assets/impact-sounds",
+    "edit": "constant level adjustment; no pitch editing",
+    "sha256": "60ba0e6a047c5ef6c1587e9e8d1a97eae3ad99bfb085cab7fb2c9a283a36c594",
+    "actual_duration_s": 0.431,
+    "decoded_peak_dbfs": -8.05
+  },
+  {
+    "key": "hit_crit",
+    "file": "assets\\audio\\free\\hit_crit.ogg",
+    "author": "Kenney",
+    "license": "CC0",
+    "source_member": "Audio/impactPunch_heavy_000.ogg",
+    "source": "https://kenney.nl/assets/impact-sounds",
+    "edit": "constant level adjustment; no pitch editing",
+    "sha256": "9bb1a3db6d0da8358c568f032ed864a643a4e0679f18f0586f66d7f54bf27898",
+    "actual_duration_s": 0.649,
+    "decoded_peak_dbfs": -6.96
+  },
+  {
+    "key": "block",
+    "file": "assets\\audio\\free\\block.ogg",
+    "author": "Kenney",
+    "license": "CC0",
+    "source_member": "Audio/impactPlate_medium_000.ogg",
+    "source": "https://kenney.nl/assets/impact-sounds",
+    "edit": "constant level adjustment; no pitch editing",
+    "sha256": "f238969a39e7bb54bb5c04592da599dc1cab4466559c427858084a72172ca0fe",
+    "actual_duration_s": 0.609,
+    "decoded_peak_dbfs": -6.24
+  },
+  {
+    "key": "death",
+    "file": "assets\\audio\\free\\death.ogg",
+    "author": "Kenney",
+    "license": "CC0",
+    "source_member": "Audio/impactSoft_heavy_000.ogg",
+    "source": "https://kenney.nl/assets/impact-sounds",
+    "edit": "constant level adjustment; no pitch editing",
+    "sha256": "2603d8189cefd69dd62bf5373939c90198b6d90ec39996a63fca0d9d5411d658",
+    "actual_duration_s": 0.527,
+    "decoded_peak_dbfs": -7.48
+  },
+  {
+    "key": "shot",
+    "file": "assets\\audio\\free\\shot.ogg",
+    "author": "Michel Baradari",
+    "license": "CC-BY-3.0",
+    "source_member": "shots/pistol.wav",
+    "source": "https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots",
+    "edit": "constant level adjustment; no pitch editing",
+    "sha256": "1d9c16ba159954e2eb210f5646666cf87812b5bfb4a1f047ddb28ac0806eef35",
+    "actual_duration_s": 0.992,
+    "decoded_peak_dbfs": -13.41
+  }
+]

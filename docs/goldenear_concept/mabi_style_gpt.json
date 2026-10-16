@@ -1,0 +1,17 @@
+{
+  "style": "Render a fantasy village as stylized, hand-painted 3D mobile-game scenery with simplified low-poly geometry and matte surfaces. Use a high, downward-looking three-quarter orthographic camera, showing roofs and two building faces without wide-angle distortion. Build compact, chunky cottages with thick beams, substantial eaves, slightly oversized architectural features, and doors roughly one-and-a-half character heights tall. Cover tiled roofs with large overlapping terracotta shingles, roughly eight to twelve across a small roof face: irregular rectangular plates with softly rounded or scalloped lower edges, slight warping, thick readable lips, staggered rows, and restrained brick-red/orange variation. Simplify brown roofs into broad painted bands or softly uneven thatch masses. Make plaster smooth ivory or blue-gray, with sparse flat discoloration; timber broad, dark brown, minimally grained. Recess small arched or rectangular windows beneath heavy frames; suggest diamond lattice with a few strokes. Pave paths with large irregular rounded polygon stones, pale gray or cream, separated by narrow muted seams. Construct trees from clustered angular, scalloped foliage masses; use pointed conifers, chunky trunks, flat leaf sprays, grass tufts, and tiny flower dabs. Keep detail selective and silhouettes clear. Avoid uniform ink outlines; use occasional fine dark contour accents and contact shadows. Apply warm diffuse sunlight, broad cool shadows, restrained ambient occlusion, moderate saturation, compressed contrast, and crisp visibility without photographic texture or depth-of-field blur.",
+  "negative": [
+    "Photorealistic architecture or physically scanned materials",
+    "Tiny densely packed shingles or perfectly uniform roof tiles",
+    "Razor-thin roof edges, sharp machined corners, or paper-flat shingles",
+    "Dense wood grain, cracked plaster, elaborate weathering, or surface noise",
+    "Uniform black ink outlines around every object",
+    "Heavy comic-book contours or exaggerated cel-shading bands",
+    "Individually rendered leaves, realistic botanical branching, or wispy foliage",
+    "Perfect rectangular paving grids or highly detailed gravel",
+    "Slender architectural proportions, delicate beams, or monumental building scale",
+    "Neon saturation, extreme contrast, crushed blacks, or blown-out highlights",
+    "Glossy reflections, dramatic cinematic lighting, heavy bloom, or volumetric haze",
+    "Eye-level camera, wide-angle perspective, strong vanishing points, depth-of-field blur, or game-interface overlays"
+  ]
+}

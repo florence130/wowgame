@@ -1,0 +1,43 @@
+# Godot-generated cache; retain the source .import settings and .uid files.
+/.godot/
+/.local/
+/​.local/
+/.shots/
+/backup/
+/dist/
+/output/
+/Claude outputs/
+
+# Local account/tool configuration and private conversation history.
+/.claude/
+/.mcp.json
+/CLAUDE.md
+/PROJECT_INSTRUCTIONS.md
+/docs/对话归档/
+**/.env
+**/.env.*
+!**/.env.example
+**/*.pem
+**/*.key
+
+# Original distribution archives and redundant local project bundles.
+/assets/source_packs/archives/*.rar
+/assets/source_packs/environment_shader_sources.zip
+# Archived third-party pages may embed service tokens; retain provenance manifests instead.
+/assets/third_party/**/*.html
+# Retired client-extracted music; current runtime uses the credited replacement tracks.
+/assets/audio/bgm/field_day.ogg
+/assets/audio/bgm/dungeon.ogg
+/assets/audio/bgm/field_day.ogg.import
+/assets/audio/bgm/dungeon.ogg.import
+/wowgame.tar.gz
+/未命名.blend
+/_probe.txt
+*.blend1
+*.blend2
+*.tmp
+*.log
+**/__pycache__/
+**/node_modules/
+**/.DS_Store
+**/Thumbs.db

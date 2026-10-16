@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "status": "staging",
+  "production_ready": false,
+  "asset_id": "TR06",
+  "label_zh": "主窗宽缓尖拱顶框",
+  "created_utc": "2026-10-07T16:02:42.063113+00:00",
+  "blender_version": "5.2.2 LTS",
+  "source": {
+    "path": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\raw\\TR06.glb",
+    "sha256": "b85e174b978f29a075bd1efe801b6bf854d87b183d80b56c3672e2f72b31d1ca",
+    "bytes": 36748
+  },
+  "source_image": {
+    "path_project_relative": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR06.png",
+    "exists_at_import": true,
+    "sha256_at_import": "ace2af22cb0405fd31f10276092b4173890fd36b0ca0695d554f4f3da53a1d14",
+    "reference_provenance": {
+      "building_reference": "docs/abbey_tripo_20261007/references/townhall.png",
+      "decomposition_reference": "docs/abbey_tripo_20261007/references/legacy_breakdown.png",
+      "interpretation_zh": "用户提供的市政厅图片，仅作晨露谷修道院建筑语汇参考。独立部件图属于根据参考重绘的设计，不证明原建筑不可见面的形状。树木、旗帜、旗杆、灯具、园艺均不在本批。",
+      "part_image_status": "generated_and_visually_checked; see docs/abbey_tripo_20261007/REVIEW.md for scope",
+      "generation_record": "docs/abbey_tripo_20261007/GENERATION.md"
+    },
+    "image_is_design_interpretation": true
+  },
+  "asset_definition": {
+    "id": "TR06",
+    "name": "lancet_arch_head",
+    "label_zh": "主窗宽缓尖拱顶框",
+    "dimensions_xyz_m": [
+      1.5,
+      0.28,
+      0.9
+    ],
+    "dimensions_status": "design_proposal",
+    "route": "hunyuan_optional",
+    "fallback_route": "blockout",
+    "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR06.png",
+    "scope_zh": "仅宽缓尖拱上部石框，保留参考图宽缓尖顶，不做过尖狭长的教堂窗；拱下保持中空，不含两侧竖直窗框、窗台、玻璃或整面墙。",
+    "techniques": [
+      "mirror",
+      "profile_extrude",
+      "curve_bevel",
+      "bridge_loft",
+      "vertices"
+    ],
+    "origin": "back_bottom",
+    "target_socket_specification": {
+      "status": "design_proposal_requires_geometry_review",
+      "sockets": [
+        {
+          "name": "left_spring",
+          "position_blender": [
+            -0.65,
+            0.14,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "lancet_arch_spring"
+        },
+        {
+          "name": "right_spring",
+          "position_blender": [
+            0.65,
+            0.14,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "lancet_arch_spring"
+        },
+        {
+          "name": "back",
+          "position_blender": [
+            0,
+            0,
+            0.45
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "lancet_arch_back"
+        }
+      ],
+      "review_zh": "检查尖顶不是变圆、孔洞没有被自动填实；最终起拱位置与石框宽度需要复测。"
+    },
+    "default_route": "blender_native_H"
+  },
+  "axes": {
+    "x": "width",
+    "y": "depth; +Y faces out from building",
+    "z": "height; +Z up"
+  },
+  "units": "metres",
+  "orientation": {
+    "gltf_to_blender_conversion": "Blender importer applied first",
+    "additional_euler_xyz_degrees": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "front_is_verified": false
+  },
+  "normalization": {
+    "method": "uniform_by_rotated_height",
+    "uniform_scale": 2.0950863031019833,
+    "anisotropic_stretch_applied": false,
+    "source_hierarchy_and_proportions_preserved": true,
+    "anchor_before_scale_in_rotated_space": [
+      -0.012489020824432373,
+      -0.07180449366569519,
+      0.0
+    ],
+    "matrix_blender": [
+      [
+        2.0950863361358643,
+        0.0,
+        0.0,
+        0.02616557665169239
+      ],
+      [
+        0.0,
+        2.0950863361358643,
+        0.0,
+        0.1504366099834442
+      ],
+      [
+        0.0,
+        0.0,
+        2.0950863361358643,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "origin": "back_bottom",
+    "origin_is_bounding_box_anchor_not_surface_repair": true
+  },
+  "bounds": {
+    "source_blender": {
+      "min": [
+        -0.5720325112342834,
+        -0.07180449366569519,
+        0.0
+      ],
+      "max": [
+        0.5470544695854187,
+        0.07239308208227158,
+        0.429576575756073
+      ],
+      "dimensions_xyz": [
+        1.1190869808197021,
+        0.14419757574796677,
+        0.429576575756073
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    },
+    "source_after_rotation": {
+      "min": [
+        -0.5720325112342834,
+        -0.07180449366569519,
+        0.0
+      ],
+      "max": [
+        0.5470544695854187,
+        0.07239308208227158,
+        0.429576575756073
+      ],
+      "dimensions_xyz": [
+        1.1190869808197021,
+        0.14419757574796677,
+        0.429576575756073
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    },
+    "candidate_metres": {
+      "min": [
+        -1.172291874885559,
+        0.0,
+        0.0
+      ],
+      "max": [
+        1.1722919940948486,
+        0.3021063804626465,
+        0.9000000357627869
+      ],
+      "dimensions_xyz": [
+        2.3445838689804077,
+        0.3021063804626465,
+        0.9000000357627869
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    }
+  },
+  "proposed_dimensions_xyz_m": [
+    1.5,
+    0.28,
+    0.9
+  ],
+  "dimension_difference_xyz_m": [
+    0.8445838689804077,
+    0.022106380462646458,
+    3.5762786843029915e-08
+  ],
+  "source_hierarchy": [
+    {
+      "name": "Mesh_0",
+      "type": "MESH",
+      "parent": null,
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "collection": "ABY_TR06",
+  "root": "TR06_ROOT",
+  "sockets": [
+    {
+      "name": "left_spring",
+      "position_blender": [
+        -0.65,
+        0.14,
+        0
+      ],
+      "normal_blender": [
+        0,
+        0,
+        -1
+      ],
+      "kind": "lancet_arch_spring"
+    },
+    {
+      "name": "right_spring",
+      "position_blender": [
+        0.65,
+        0.14,
+        0
+      ],
+      "normal_blender": [
+        0,
+        0,
+        -1
+      ],
+      "kind": "lancet_arch_spring"
+    },
+    {
+      "name": "back",
+      "position_blender": [
+        0,
+        0,
+        0.45
+      ],
+      "normal_blender": [
+        0,
+        -1,
+        0
+      ],
+      "kind": "lancet_arch_back"
+    }
+  ],
+  "socket_status": "design_proposal_unverified",
+  "review_required": [
+    "Inspect front/back and requested part-only scope against the individual source image.",
+    "Review unknown rear/hidden geometry; generated image is a design interpretation.",
+    "Check silhouette, watertightness, normals, disconnected scraps, density and UV/material quality.",
+    "Cut/repair actual planar bearing and back interfaces; bounding-box alignment does not flatten surfaces.",
+    "Replace proposal sockets with measured contact positions and check matched pieces in assembly.",
+    "Review actual width/depth deviations; regenerate or rebuild geometry instead of anisotropic stretching.",
+    "Confirm polycount, collision, LOD, textures and game-engine import budget before promotion.",
+    "Reopen candidate blend and reimport GLB; approve only after visual and dimensional checks."
+  ],
+  "outputs": {
+    "blend": "abbey_kit.blend",
+    "glb": "glb/TR06.glb",
+    "blend_sha256": "bb5fbb0fa39e8f1a9da5e4f79203b524638fc73c92436e65049c917b451fa6be",
+    "glb_sha256": "a5d17acdd263d5ab9af273bc7ab0a431888d93f93cb88d3ea647b0d809f87cc8"
+  },
+  "catalog_updated": false,
+  "pipeline_stage_completed": "optional_hunyuan_candidate_normalization_only",
+  "provider": "Tencent Hunyuan3D",
+  "normalization_engine": "abbey_tripo/import_tripo.py (shared offline implementation)",
+  "generation_request_expectation": {
+    "model": "3.0",
+    "generate_type": "Geometry",
+    "face_count": 3000,
+    "enable_pbr": false,
+    "request_execution_verified_by_this_tool": false
+  }
+}

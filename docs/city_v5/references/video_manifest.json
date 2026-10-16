@@ -1,0 +1,268 @@
+[
+  {
+    "name": "video_1",
+    "source": "E:\\DOWNLOADS\\41403485769-1-192.mp4",
+    "duration_seconds": 509.42,
+    "resolution": [
+      1280,
+      720
+    ],
+    "method": "24 equally spaced still frames; not continuous playback",
+    "frames": [
+      {
+        "index": 1,
+        "seconds": 0.0,
+        "file": "video_1\\frame_01_000.000s.jpg"
+      },
+      {
+        "index": 2,
+        "seconds": 22.105,
+        "file": "video_1\\frame_02_022.105s.jpg"
+      },
+      {
+        "index": 3,
+        "seconds": 44.21,
+        "file": "video_1\\frame_03_044.210s.jpg"
+      },
+      {
+        "index": 4,
+        "seconds": 66.316,
+        "file": "video_1\\frame_04_066.316s.jpg"
+      },
+      {
+        "index": 5,
+        "seconds": 88.421,
+        "file": "video_1\\frame_05_088.421s.jpg"
+      },
+      {
+        "index": 6,
+        "seconds": 110.526,
+        "file": "video_1\\frame_06_110.526s.jpg"
+      },
+      {
+        "index": 7,
+        "seconds": 132.631,
+        "file": "video_1\\frame_07_132.631s.jpg"
+      },
+      {
+        "index": 8,
+        "seconds": 154.737,
+        "file": "video_1\\frame_08_154.737s.jpg"
+      },
+      {
+        "index": 9,
+        "seconds": 176.842,
+        "file": "video_1\\frame_09_176.842s.jpg"
+      },
+      {
+        "index": 10,
+        "seconds": 198.947,
+        "file": "video_1\\frame_10_198.947s.jpg"
+      },
+      {
+        "index": 11,
+        "seconds": 221.052,
+        "file": "video_1\\frame_11_221.052s.jpg"
+      },
+      {
+        "index": 12,
+        "seconds": 243.157,
+        "file": "video_1\\frame_12_243.157s.jpg"
+      },
+      {
+        "index": 13,
+        "seconds": 265.263,
+        "file": "video_1\\frame_13_265.263s.jpg"
+      },
+      {
+        "index": 14,
+        "seconds": 287.368,
+        "file": "video_1\\frame_14_287.368s.jpg"
+      },
+      {
+        "index": 15,
+        "seconds": 309.473,
+        "file": "video_1\\frame_15_309.473s.jpg"
+      },
+      {
+        "index": 16,
+        "seconds": 331.578,
+        "file": "video_1\\frame_16_331.578s.jpg"
+      },
+      {
+        "index": 17,
+        "seconds": 353.683,
+        "file": "video_1\\frame_17_353.683s.jpg"
+      },
+      {
+        "index": 18,
+        "seconds": 375.789,
+        "file": "video_1\\frame_18_375.789s.jpg"
+      },
+      {
+        "index": 19,
+        "seconds": 397.894,
+        "file": "video_1\\frame_19_397.894s.jpg"
+      },
+      {
+        "index": 20,
+        "seconds": 419.999,
+        "file": "video_1\\frame_20_419.999s.jpg"
+      },
+      {
+        "index": 21,
+        "seconds": 442.104,
+        "file": "video_1\\frame_21_442.104s.jpg"
+      },
+      {
+        "index": 22,
+        "seconds": 464.21,
+        "file": "video_1\\frame_22_464.210s.jpg"
+      },
+      {
+        "index": 23,
+        "seconds": 486.315,
+        "file": "video_1\\frame_23_486.315s.jpg"
+      },
+      {
+        "index": 24,
+        "seconds": 508.42,
+        "file": "video_1\\frame_24_508.420s.jpg"
+      }
+    ],
+    "contact_sheet": "video_1_contact_sheet.jpg"
+  },
+  {
+    "name": "video_2",
+    "source": "E:\\DOWNLOADS\\41418490820-1-192.mp4",
+    "duration_seconds": 258.82,
+    "resolution": [
+      1280,
+      720
+    ],
+    "method": "24 equally spaced still frames; not continuous playback",
+    "frames": [
+      {
+        "index": 1,
+        "seconds": 0.0,
+        "file": "video_2\\frame_01_000.000s.jpg"
+      },
+      {
+        "index": 2,
+        "seconds": 11.21,
+        "file": "video_2\\frame_02_011.210s.jpg"
+      },
+      {
+        "index": 3,
+        "seconds": 22.419,
+        "file": "video_2\\frame_03_022.419s.jpg"
+      },
+      {
+        "index": 4,
+        "seconds": 33.629,
+        "file": "video_2\\frame_04_033.629s.jpg"
+      },
+      {
+        "index": 5,
+        "seconds": 44.838,
+        "file": "video_2\\frame_05_044.838s.jpg"
+      },
+      {
+        "index": 6,
+        "seconds": 56.048,
+        "file": "video_2\\frame_06_056.048s.jpg"
+      },
+      {
+        "index": 7,
+        "seconds": 67.257,
+        "file": "video_2\\frame_07_067.257s.jpg"
+      },
+      {
+        "index": 8,
+        "seconds": 78.467,
+        "file": "video_2\\frame_08_078.467s.jpg"
+      },
+      {
+        "index": 9,
+        "seconds": 89.677,
+        "file": "video_2\\frame_09_089.677s.jpg"
+      },
+      {
+        "index": 10,
+        "seconds": 100.886,
+        "file": "video_2\\frame_10_100.886s.jpg"
+      },
+      {
+        "index": 11,
+        "seconds": 112.096,
+        "file": "video_2\\frame_11_112.096s.jpg"
+      },
+      {
+        "index": 12,
+        "seconds": 123.305,
+        "file": "video_2\\frame_12_123.305s.jpg"
+      },
+      {
+        "index": 13,
+        "seconds": 134.515,
+        "file": "video_2\\frame_13_134.515s.jpg"
+      },
+      {
+        "index": 14,
+        "seconds": 145.724,
+        "file": "video_2\\frame_14_145.724s.jpg"
+      },
+      {
+        "index": 15,
+        "seconds": 156.934,
+        "file": "video_2\\frame_15_156.934s.jpg"
+      },
+      {
+        "index": 16,
+        "seconds": 168.143,
+        "file": "video_2\\frame_16_168.143s.jpg"
+      },
+      {
+        "index": 17,
+        "seconds": 179.353,
+        "file": "video_2\\frame_17_179.353s.jpg"
+      },
+      {
+        "index": 18,
+        "seconds": 190.563,
+        "file": "video_2\\frame_18_190.563s.jpg"
+      },
+      {
+        "index": 19,
+        "seconds": 201.772,
+        "file": "video_2\\frame_19_201.772s.jpg"
+      },
+      {
+        "index": 20,
+        "seconds": 212.982,
+        "file": "video_2\\frame_20_212.982s.jpg"
+      },
+      {
+        "index": 21,
+        "seconds": 224.191,
+        "file": "video_2\\frame_21_224.191s.jpg"
+      },
+      {
+        "index": 22,
+        "seconds": 235.401,
+        "file": "video_2\\frame_22_235.401s.jpg"
+      },
+      {
+        "index": 23,
+        "seconds": 246.61,
+        "file": "video_2\\frame_23_246.610s.jpg"
+      },
+      {
+        "index": 24,
+        "seconds": 257.82,
+        "file": "video_2\\frame_24_257.820s.jpg"
+      }
+    ],
+    "contact_sheet": "video_2_contact_sheet.jpg"
+  }
+]

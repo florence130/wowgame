@@ -1,0 +1,189 @@
+{
+  "label": "商贸交易所",
+  "footprint": [
+    44,
+    28
+  ],
+  "body_height": 13,
+  "max_height": 23,
+  "entry_width": 8,
+  "entries": [
+    [
+      0,
+      0,
+      -14
+    ]
+  ],
+  "concept": "Glass-vault trading gallery between lower merchant wings",
+  "id": "exchange_hall",
+  "aabb_min": [
+    -23.290000915527344,
+    -1.600000023841858,
+    -17.149999618530273
+  ],
+  "aabb_max": [
+    23.290000915527344,
+    22.094884872436523,
+    15.289999961853027
+  ],
+  "aabb_size": [
+    46.58000183105469,
+    23.69488489627838,
+    32.4399995803833
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/exchange_hall.glb",
+  "blend": "assets/models/city_v5/landmarks/exchange_hall.blend",
+  "modules": [
+    {
+      "name": "01 Continuous ground and cut-stone footing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Continuous ground and cut-stone footing_rustic",
+        "01 Continuous ground and cut-stone footing_floor"
+      ]
+    },
+    {
+      "name": "Merchant counting wing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Merchant counting wing_rustic",
+        "Merchant counting wing_floor",
+        "Merchant counting wing_red",
+        "Merchant counting wing_trim",
+        "Merchant counting wing_glass",
+        "Merchant counting wing_bronze",
+        "Merchant counting wing_stone",
+        "Merchant counting wing_slate",
+        "Merchant counting wing_gold"
+      ]
+    },
+    {
+      "name": "Merchant counting wing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Merchant counting wing_rustic.001",
+        "Merchant counting wing_floor.001",
+        "Merchant counting wing_red.001",
+        "Merchant counting wing_trim.001",
+        "Merchant counting wing_glass.001",
+        "Merchant counting wing_bronze.001",
+        "Merchant counting wing_stone.001",
+        "Merchant counting wing_slate.001",
+        "Merchant counting wing_gold.001"
+      ]
+    },
+    {
+      "name": "Exchange hall arcades",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Exchange hall arcades_stone",
+        "Exchange hall arcades_trim"
+      ]
+    },
+    {
+      "name": "Trading-floor glass vault",
+      "methods": [
+        "loft",
+        "profile extrusion"
+      ],
+      "objects": [
+        "Trading-floor glass vault_glass",
+        "Trading-floor glass vault_bronze",
+        "Trading-floor glass vault_trim"
+      ]
+    },
+    {
+      "name": "Trading-floor columns",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Trading-floor columns"
+      ]
+    },
+    {
+      "name": "Trading-floor columns lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Trading-floor columns lintel_stone"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    },
+    {
+      "name": "Institutional sculpted emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Institutional sculpted emblem_gold"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -14
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 34224,
+  "collision_triangles": 636
+}

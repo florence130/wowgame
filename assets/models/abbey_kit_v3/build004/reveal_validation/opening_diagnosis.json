@@ -1,0 +1,349 @@
+{
+  "source": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build002\\abbey_kit.blend",
+  "before": [
+    {
+      "label": "Window jamb",
+      "hits": [
+        {
+          "object": "Nave repeat wall.004",
+          "asset_id": "wall_clerestory_4",
+          "position": [
+            -0.1899999976158142,
+            6.550000190734863,
+            4.119999885559082
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "distance": 0.5500001907348633
+        },
+        {
+          "object": "ABY_Detail_PointedWindow.008",
+          "asset_id": "window_clerestory",
+          "position": [
+            -0.1899999976158142,
+            6.550000190734863,
+            4.119999885559082
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "distance": 0.5500001907348633
+        }
+      ]
+    },
+    {
+      "label": "Rear left jamb",
+      "hits": [
+        {
+          "object": "ABY_Detail_StoneArch.006",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999046325684
+        },
+        {
+          "object": "Rear sanctuary portal.001",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999046325684
+        }
+      ]
+    },
+    {
+      "label": "Rear left jamb second course",
+      "hits": [
+        {
+          "object": "ABY_Detail_StoneArch.006",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.549999952316284
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999998450279236
+        },
+        {
+          "object": "Rear sanctuary portal.001",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.549999952316284
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999046325684
+        }
+      ]
+    },
+    {
+      "label": "Rear right jamb",
+      "hits": [
+        {
+          "object": "ABY_Detail_StoneArch.006",
+          "asset_id": "rear_portal",
+          "position": [
+            6.599999904632568,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999642372131
+        },
+        {
+          "object": "Rear sanctuary portal.001",
+          "asset_id": "rear_portal",
+          "position": [
+            6.599999904632568,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999642372131
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "label": "Window jamb",
+      "hits": [
+        {
+          "object": "ABY3_PointWindow_ContinuousStoneReveal.003",
+          "asset_id": "window_reveal",
+          "position": [
+            -0.1899999976158142,
+            6.534999847412109,
+            4.119999885559082
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "distance": 0.5349998474121094
+        },
+        {
+          "object": "Nave repeat wall.004",
+          "asset_id": "wall_clerestory_4",
+          "position": [
+            -0.1899999976158142,
+            6.550000190734863,
+            4.119999885559082
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "distance": 0.5500001907348633
+        },
+        {
+          "object": "ABY_Detail_PointedWindow.008",
+          "asset_id": "window_clerestory",
+          "position": [
+            -0.1899999976158142,
+            6.550000190734863,
+            4.119999885559082
+          ],
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "distance": 0.5500001907348633
+        }
+      ]
+    },
+    {
+      "label": "Rear left jamb",
+      "hits": [
+        {
+          "object": "ABY3_RoundArch_ContinuousStoneReveal.001",
+          "asset_id": "portal_reveal",
+          "position": [
+            1.4149999618530273,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            0.9999999403953552,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5850000381469727
+        },
+        {
+          "object": "ABY_Detail_StoneArch.006",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999046325684
+        },
+        {
+          "object": "Rear sanctuary portal.001",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999046325684
+        }
+      ]
+    },
+    {
+      "label": "Rear left jamb second course",
+      "hits": [
+        {
+          "object": "ABY3_RoundArch_ContinuousStoneReveal.001",
+          "asset_id": "portal_reveal",
+          "position": [
+            1.4149999618530273,
+            -7.840000152587891,
+            2.549999952316284
+          ],
+          "normal": [
+            0.9999999403953552,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5850000381469727
+        },
+        {
+          "object": "ABY_Detail_StoneArch.006",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.549999952316284
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999998450279236
+        },
+        {
+          "object": "Rear sanctuary portal.001",
+          "asset_id": "rear_portal",
+          "position": [
+            1.4000000953674316,
+            -7.840000152587891,
+            2.549999952316284
+          ],
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999046325684
+        }
+      ]
+    },
+    {
+      "label": "Rear right jamb",
+      "hits": [
+        {
+          "object": "ABY3_RoundArch_ContinuousStoneReveal.001",
+          "asset_id": "portal_reveal",
+          "position": [
+            6.585000038146973,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            -0.9999999403953552,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5850000381469727
+        },
+        {
+          "object": "ABY_Detail_StoneArch.006",
+          "asset_id": "rear_portal",
+          "position": [
+            6.599999904632568,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999642372131
+        },
+        {
+          "object": "Rear sanctuary portal.001",
+          "asset_id": "rear_portal",
+          "position": [
+            6.599999904632568,
+            -7.840000152587891,
+            2.180000066757202
+          ],
+          "normal": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "distance": 0.5999999642372131
+        }
+      ]
+    }
+  ],
+  "created_reveals": 10,
+  "topology": "all base rings closed manifold, positive signed volume, no zero-area faces"
+}

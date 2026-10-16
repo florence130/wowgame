@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "panel_read_add_snap": "executed registered operators on two rotated instances",
+  "snap_gap_m": 4.76837158203125e-07,
+  "saved_reopened_file": "E:\\wowgame\\assets\\models\\abbey_kit_v1\\build_004\\editable_roundtrip.blend",
+  "bridge_array_count_before": 4,
+  "after_reopen": 5,
+  "note": "This copy intentionally changes count without extending path. It only tests editable persistence; not the selected design candidate."
+}

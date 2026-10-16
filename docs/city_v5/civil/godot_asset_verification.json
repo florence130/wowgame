@@ -1,0 +1,876 @@
+{
+  "assets": [
+    {
+      "collision_shapes": 1,
+      "id": "corner_merchants_3",
+      "meshes": 12,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "corner_copper_4",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "courtyard_college_3",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "courtyard_residence_3",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "shop_arcade_3",
+      "meshes": 12,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "shop_rose_4",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "residence_slate_3",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "residence_ochre_4",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "academy_library_3",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "academy_lodgings_4",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "inn_seafarer_3",
+      "meshes": 12,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "mansion_garden_3",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "warehouse_brick_2",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "warehouse_stone_1",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "city_gate_grand",
+      "meshes": 11,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "city_wall_32",
+      "meshes": 4,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "city_corner_tower",
+      "meshes": 6,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "city_bridge_74",
+      "meshes": 7,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "harbor_passenger_65",
+      "meshes": 8,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "harbor_sailing_52",
+      "meshes": 8,
+      "unit_scale": true
+    },
+    {
+      "collision_shapes": 1,
+      "id": "harbor_crane",
+      "meshes": 5,
+      "unit_scale": true
+    }
+  ],
+  "check_count": 139,
+  "checks": [
+    {
+      "detail": null,
+      "name": "corner_merchants_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "corner_merchants_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 12,
+      "name": "corner_merchants_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "corner_merchants_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "corner_merchants_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": false,
+        "open": true
+      },
+      "name": "corner_merchants_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, -0.0, -11.0)",
+      "name": "corner_merchants_3: entry 0 interior finished floor",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "corner_copper_4: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "corner_copper_4: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "corner_copper_4: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "corner_copper_4: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "corner_copper_4: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "corner_copper_4: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "courtyard_college_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "courtyard_college_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "courtyard_college_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "courtyard_college_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "courtyard_college_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": false,
+        "open": true
+      },
+      "name": "courtyard_college_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 0.0, -11.0)",
+      "name": "courtyard_college_3: entry 0 interior finished floor",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": false,
+        "open": true
+      },
+      "name": "courtyard_college_3: entry 1 correct access",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 0.0, -5.0)",
+      "name": "courtyard_college_3: entry 1 interior finished floor",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "courtyard_residence_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "courtyard_residence_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "courtyard_residence_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "courtyard_residence_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "courtyard_residence_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "courtyard_residence_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "shop_arcade_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "shop_arcade_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 12,
+      "name": "shop_arcade_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "shop_arcade_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "shop_arcade_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": false,
+        "open": true
+      },
+      "name": "shop_arcade_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, -0.0, -8.0)",
+      "name": "shop_arcade_3: entry 0 interior finished floor",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "shop_rose_4: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "shop_rose_4: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "shop_rose_4: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "shop_rose_4: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "shop_rose_4: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "shop_rose_4: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "residence_slate_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "residence_slate_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "residence_slate_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "residence_slate_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "residence_slate_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "residence_slate_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "residence_ochre_4: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "residence_ochre_4: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "residence_ochre_4: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "residence_ochre_4: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "residence_ochre_4: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "residence_ochre_4: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "academy_library_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "academy_library_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "academy_library_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "academy_library_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "academy_library_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "academy_library_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "academy_lodgings_4: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "academy_lodgings_4: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "academy_lodgings_4: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "academy_lodgings_4: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "academy_lodgings_4: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "academy_lodgings_4: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "inn_seafarer_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "inn_seafarer_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 12,
+      "name": "inn_seafarer_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "inn_seafarer_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "inn_seafarer_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": false,
+        "open": true
+      },
+      "name": "inn_seafarer_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, -0.0, -10.0)",
+      "name": "inn_seafarer_3: entry 0 interior finished floor",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "mansion_garden_3: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "mansion_garden_3: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "mansion_garden_3: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "mansion_garden_3: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "mansion_garden_3: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "mansion_garden_3: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "warehouse_brick_2: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "warehouse_brick_2: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "warehouse_brick_2: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "warehouse_brick_2: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "warehouse_brick_2: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "warehouse_brick_2: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "warehouse_stone_1: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "warehouse_stone_1: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "warehouse_stone_1: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "warehouse_stone_1: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "warehouse_stone_1: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": {
+        "blocked": true,
+        "open": false
+      },
+      "name": "warehouse_stone_1: entry 0 correct access",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "city_gate_grand: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 11,
+      "name": "city_gate_grand: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: open street passage x=-8.0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: open street passage x=0.0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: open street passage x=8.0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: arch ring has collision",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_gate_grand: tower has collision",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_wall_32: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "city_wall_32: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 4,
+      "name": "city_wall_32: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_wall_32: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_wall_32: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 16.2, 0.0)",
+      "name": "city_wall_32: wall-walk finished floor",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_corner_tower: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "city_corner_tower: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 6,
+      "name": "city_corner_tower: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_corner_tower: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_corner_tower: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_bridge_74: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "city_bridge_74: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 7,
+      "name": "city_bridge_74: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_bridge_74: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_bridge_74: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 0.0, -30.0)",
+      "name": "city_bridge_74: continuous deck z=-30.0",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 0.0, 0.0)",
+      "name": "city_bridge_74: continuous deck z=0.0",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 0.0, 30.0)",
+      "name": "city_bridge_74: continuous deck z=30.0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_bridge_74: open waterway under central arch",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "city_bridge_74: pier has collision",
+      "passed": true
+    },
+    {
+      "detail": "(9.5, 0.2, 0.0)",
+      "name": "city_bridge_74: raised footway supports feet",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_passenger_65: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "harbor_passenger_65: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 8,
+      "name": "harbor_passenger_65: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_passenger_65: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_passenger_65: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 2.76, -28.0)",
+      "name": "harbor_passenger_65: finished main deck supports feet",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_sailing_52: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "harbor_sailing_52: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 8,
+      "name": "harbor_sailing_52: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_sailing_52: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_sailing_52: all imported transforms preserve unit scale",
+      "passed": true
+    },
+    {
+      "detail": "(0.0, 3.16, -6.0)",
+      "name": "harbor_sailing_52: finished main deck supports feet",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_crane: loads as PackedScene",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "harbor_crane: exactly one authored collision shape",
+      "passed": true
+    },
+    {
+      "detail": 5,
+      "name": "harbor_crane: appearance meshes imported",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_crane: collision source mesh hidden",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "harbor_crane: all imported transforms preserve unit scale",
+      "passed": true
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "mode": "isolated imported asset physics; no game scene, no save IO"
+}

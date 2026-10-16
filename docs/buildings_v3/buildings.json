@@ -1,0 +1,227 @@
+{
+ "style": "Stylized 3D game environment art in the exact visual style of the attached reference screenshots (Mabinogi Mobile / Mabinogi Eternity): soft stylized PBR-lite rendering with clear warm sunlight from the upper left, gentle soft shadows and ambient occlusion under eaves, realistic European medieval-fantasy architectural proportions, clean chunky geometry with real modelled depth (protruding window frames, quoins, cornices, timber beams standing proud of the plaster, roof tiles in overlapping rows), low-frequency hand-painted textures with subtle colour variation, slightly desaturated natural palette, no photo textures, no outlines",
+ "iso": "Single building isolated in the centre on a plain light grey background, the whole building fully visible with margin, three-quarter view from the front-left at about 30 degrees elevation, standing on a small flat paved base, one 1.75 m tall human figure silhouette standing beside the front door for scale, no other buildings, no text, no watermark",
+ "interior": "Interior eye-level view inside the same building as the first reference image, third-person game camera about 2.5 m high looking along the main room, one 1.75 m tall human figure in the foreground for scale, same materials and colours as the exterior, warm interior lighting plus daylight from windows, no text, no watermark",
+ "palette": {
+  "abbey": "warm off-white ashlar stone walls #d9d4c7 with slightly darker quoins #b9b2a3, blue-grey slate roofs #4a5f86, dark brown oak timber #5a3d2b, black iron fittings #2b2f36",
+  "village": "cream plaster #efe6d2 between dark brown timber framing #5a3d2b, warm grey stone ground floors, red clay tile roofs #a5463a or dark red #7a3b35 or golden thatch #b8925a, black iron lamps"
+ },
+ "buildings": [
+  {
+   "id": "abbey_chapel",
+   "cn": "晨钟修道院礼拜堂（乡野小礼拜堂 + 钟楼 + 回廊）",
+   "zone": "vale",
+   "palette": "abbey",
+   "size": [
+    28,
+    23,
+    32
+   ],
+   "refs": [
+    "timber_house_day.jpg",
+    "stone_wall_arch.jpg"
+   ],
+   "replaces": "GPT abbey_kit_v3 Chapel_Open_Interior + BellTower（保持其布局，约放大 1.3 倍）",
+   "desc": "small countryside abbey chapel complex in a wild valley (not a cathedral), same layout as the base image: a single-nave chapel (about 11 m wide, 24 m long, eaves 7.5 m, ridge 14 m) with a front gable, round rose window and arched oak double door up a few steps; a square bell tower (6 m, 22 m to the cross) beside the chapel with an open arched belfry showing a bronze bell; a cloister courtyard on the tower side enclosed by covered arcades. ADD: a raised rough-stone foundation plinth (0.8 m) under the whole complex with a moulded top edge; a complete covered cloister walk on three sides of the courtyard with round stone columns, simple carved capitals and round arches, a small stone well in the courtyard centre; deeper stepped buttresses with small stone caps; window tracery and leaded stained glass in the lancet windows; carved stone hood moulds over windows and door; dark oak eave brackets; iron wall lanterns beside the door; worn quoin stones with subtle colour variation; small patches of moss and ivy at the base, a few flower boxes; the small courtyard gate keeps its little slate roof. Materials: warm off-white ashlar with varied block sizes, blue-grey slate roofs with slightly uneven tile rows and darker ridge tiles, dark oak, black iron",
+   "interior_desc": "inside the small abbey chapel: single nave about 11 m wide with a dark oak open timber roof (scissor trusses) 12 m above the floor, white plaster walls with stone pilasters, tall lancet stained-glass windows, two blocks of dark walnut pews with carved end boards either side of a blue-violet carpet with gold diamond pattern, grey and cream chequered stone floor, a raised altar platform with three steps, a carved dark wood altarpiece under a round window, candle stands, blue banners with a gold bell emblem, an iron ring chandelier with candles",
+   "base": "base_gpt_v3.png"
+  },
+  {
+   "id": "abbey_campanile",
+   "cn": "修道院钟楼",
+   "zone": "vale",
+   "palette": "abbey",
+   "size": [
+    8,
+    34,
+    8
+   ],
+   "refs": [
+    "red_roof_belfry.jpg",
+    "castle_distance.jpg"
+   ],
+   "desc": "square abbey bell tower, heavy ashlar base with a small arched door, three stages separated by moulded string courses, narrow lancet windows, an open belfry stage with paired pointed arches on every side showing a big bronze bell inside, a corbelled parapet, tall octagonal blue-grey slate spire with four small corner pinnacles and an iron cross finial, a clock face on the stage below the belfry",
+   "note": "钟楼已并入 abbey_chapel；此条仅作备选"
+  },
+  {
+   "id": "abbey_gatehouse",
+   "cn": "修道院门楼",
+   "zone": "vale",
+   "palette": "abbey",
+   "size": [
+    16,
+    13,
+    8
+   ],
+   "refs": [
+    "stone_wall_arch.jpg"
+   ],
+   "desc": "abbey gatehouse, a broad stone block with a 5 m wide 6 m tall round-arched carriage passage through it closed by open dark oak gates with iron studs, a small pedestrian door beside it, a carved stone niche with a statue above the arch, crenellated parapet, small blue-grey slate pitched roof behind the parapet, a single square corner turret with a slate cone, low stone walls with flat coping stones extending to both sides with ivy patches"
+  },
+  {
+   "id": "abbey_quartermaster",
+   "cn": "修道院军需处 / 宿舍",
+   "zone": "vale",
+   "palette": "abbey",
+   "size": [
+    22,
+    14,
+    13
+   ],
+   "refs": [
+    "timber_house_day.jpg"
+   ],
+   "desc": "two-and-a-half storey abbey dormitory and quartermaster building, ashlar stone ground floor with a wide arched entrance and two arched shop windows with wooden shutters held open, an upper floor of cream plaster and dark oak half-timbering slightly jettied over the ground floor, steep blue-grey slate roof with three gabled dormers and two stone chimneys, wooden sign with a shield emblem on an iron bracket, crates and barrels by the door, window boxes with flowers",
+   "interior_desc": "inside the quartermaster: a 10 m deep ground floor hall with a long wooden service counter, weapon racks of swords and spears, armour stands, shelves with folded cloth and supplies, heavy timber ceiling beams on stone corbels 4.5 m above the floor, a wide wooden staircase to the upper dormitory, iron chandelier, flagstone floor"
+  },
+  {
+   "id": "abbey_training_hall",
+   "cn": "修道院训练馆",
+   "zone": "vale",
+   "palette": "abbey",
+   "size": [
+    24,
+    12,
+    16
+   ],
+   "refs": [
+    "timber_house_day.jpg"
+   ],
+   "desc": "abbey training hall, long single-storey stone hall with tall arched windows, a covered timber colonnade along the front facing a sand training yard, big double doors at the gable end, steep blue-grey slate roof with a ventilation lantern on the ridge, shields with abbey emblems hanging on the colonnade posts, training dummies and weapon racks in front",
+   "interior_desc": "inside the training hall: an open hall 14 m wide with exposed timber roof trusses, a sanded floor ring for sparring, weapon racks along the walls, archery targets at the far end, wooden benches, banners"
+  },
+  {
+   "id": "abbey_cottage",
+   "cn": "修道院药草小屋",
+   "zone": "vale",
+   "palette": "abbey",
+   "size": [
+    13,
+    10,
+    10
+   ],
+   "refs": [
+    "village_aerial.jpg"
+   ],
+   "desc": "cosy herbalist cottage of the abbey, rough stone walls, golden thatched roof with a rounded ridge and an eyebrow dormer, a small timber porch with bundles of drying herbs, round-headed wooden door 3 m tall, small-paned windows with flower boxes, a stone chimney, a little fenced herb garden"
+  },
+  {
+   "id": "vale_inn",
+   "cn": "金穗旅店",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    26,
+    17,
+    18
+   ],
+   "refs": [
+    "timber_square.jpg",
+    "timber_house_day.jpg"
+   ],
+   "replaces": "house 16x9x12 金穗旅店",
+   "desc": "large three-storey village inn in German half-timbered style, warm grey stone ground floor with a wide round-arched entrance and big arched windows glowing warm, two upper floors of cream plaster with dark brown timber framing jettied out over the street on carved brackets, a long wooden balcony with flower boxes on the first floor, steep dark red clay tile roof with two large cross gables, small dormers and a tall chimney, a weathervane, a carved hanging sign with a tankard emblem, lanterns beside the door",
+   "interior_desc": "inside the inn tavern room: a big 12 m wide room with a long wooden bar counter and barrels behind it, a large stone fireplace, round wooden tables and stools, heavy timber beams 4.5 m above the floor on wooden posts, a staircase with a gallery to the rooms upstairs, warm lantern light"
+  },
+  {
+   "id": "vale_blacksmith",
+   "cn": "金穗铁匠铺",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    16,
+    12,
+    13
+   ],
+   "refs": [
+    "timber_house_day.jpg"
+   ],
+   "replaces": "house 12x6x10 铁匠铺",
+   "desc": "village blacksmith, heavy dark stone ground floor with a big brick forge chimney glowing orange at its base, an open-sided timber lean-to workshop with an anvil, grindstone, quenching barrel and weapon racks, a half-timbered upper floor, dark red tile roof, hanging sign shaped like a hammer on an iron bracket, coal sacks and firewood",
+   "interior_desc": "inside the smithy: open workshop with a glowing forge, bellows, anvil, tool racks on the walls, a display counter of swords and shields, stone floor, timber ceiling 4.5 m high"
+  },
+  {
+   "id": "vale_general_store",
+   "cn": "金穗杂货店",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    14,
+    13,
+    12
+   ],
+   "refs": [
+    "timber_square.jpg",
+    "city_street_stairs.jpg"
+   ],
+   "replaces": "house 11x6x9 杂货店",
+   "desc": "two-storey village general store, stone ground floor with a large wooden shopfront window and a red-and-yellow striped scalloped awning, crates of apples, baskets and barrels displayed outside, half-timbered upper floor with green shutters, steep red tile roof with a dormer, wooden hanging sign, potted plants",
+   "interior_desc": "inside the general store: wooden counter with a scale, shelves of jars, sacks, rope and lanterns, baskets of produce, hanging dried goods, timber beams 4.2 m high"
+  },
+  {
+   "id": "vale_tailor",
+   "cn": "金穗裁缝铺",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    12,
+    14,
+    12
+   ],
+   "refs": [
+    "timber_house_day.jpg"
+   ],
+   "replaces": "house 10x7x9 裁缝铺",
+   "desc": "narrow three-storey tailor shop, cream plaster and timber framing, ground floor shop window displaying dresses on mannequins, a blue fabric awning, bay window on the first floor, steep dark red roof with a pointed turret corner, hanging sign with scissors and thread",
+   "interior_desc": "inside the tailor: mannequins with dresses, bolts of coloured cloth on shelves, a cutting table, mirror, spiral staircase"
+  },
+  {
+   "id": "vale_house_a",
+   "cn": "金穗民居 A",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    14,
+    13,
+    11
+   ],
+   "refs": [
+    "timber_square.jpg"
+   ],
+   "desc": "two-and-a-half storey half-timbered village house, stone ground floor with an arched door, jettied cream plaster upper floor with dark timber framing in diagonal patterns, steep red clay tile roof with a large dormer, window boxes with red flowers, stone chimney"
+  },
+  {
+   "id": "vale_house_b",
+   "cn": "金穗民居 B（茅草）",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    13,
+    9,
+    10
+   ],
+   "refs": [
+    "village_aerial.jpg"
+   ],
+   "desc": "low cosy farmhouse with whitewashed walls and dark timber posts, thick golden thatched roof with rounded edges and a smaller thatched side wing, a timber porch, wooden fence and a small vegetable garden"
+  },
+  {
+   "id": "vale_watch",
+   "cn": "金穗治安所",
+   "zone": "vale",
+   "palette": "village",
+   "size": [
+    12,
+    20,
+    12
+   ],
+   "refs": [
+    "timber_house_day.jpg",
+    "red_roof_belfry.jpg"
+   ],
+   "replaces": "tower 9x14x9 治安所",
+   "desc": "village watch house, a square stone tower with an attached two-storey guard house, timber-framed top storey of the tower with an open lookout gallery, steep red pyramid roof with a flag, arched doorway with the town crest, notice board with wanted posters beside the door"
+  }
+ ],
+ "elevations": "Architectural ELEVATION SHEET of exactly the same building as the reference image (same design, colours, materials, details and proportions), four flat orthographic elevations arranged in a 2x2 grid: top-left FRONT elevation (main entrance facing the viewer), top-right RIGHT SIDE elevation, bottom-left BACK elevation, bottom-right LEFT SIDE elevation. Every elevation is a pure flat side-on projection like a CAD drawing rendered with the painted materials: no perspective, no vanishing points, roof top surfaces not visible, vertical lines perfectly vertical, ground line perfectly horizontal, same scale in all four. Plain light grey background, thin gap between the four panels, no people, no text."
+}

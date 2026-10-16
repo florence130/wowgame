@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "actual_source": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build004\\glb\\window_clerestory.glb",
+  "configured": {
+    "changed": [
+      {
+        "material": "ABY2_glass",
+        "recipe_key": "glass",
+        "base_color_srgb": "3F5F86",
+        "alpha": 0.28,
+        "transmission": 0.72,
+        "roughness": 0.1,
+        "ior": 1.33,
+        "emission_strength": 0,
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "material": "ABY2_window_glow",
+        "recipe_key": "glass_amber",
+        "base_color_srgb": "FFD98A",
+        "alpha": 0.28,
+        "transmission": 0.72,
+        "roughness": 0.1,
+        "ior": 1.33,
+        "emission_strength": 0,
+        "surface_render_method": "DITHERED"
+      }
+    ],
+    "count": 2,
+    "untouched_recipe_key": "window_glow",
+    "portable_transparency": "glTF alphaMode BLEND / StandardMaterial3D alpha transparency",
+    "optical_transmission": "Principled Transmission Weight plus KHR_materials_transmission when exported"
+  },
+  "glb_materials": [
+    {
+      "name": "ABY2_glass",
+      "recipe_key": "glass",
+      "alphaMode": "BLEND",
+      "baseColorFactor": [
+        0.04970656707882881,
+        0.11443537473678589,
+        0.23839756846427917,
+        0.2800000011920929
+      ],
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.07999999821186066,
+          "clearcoatRoughnessFactor": 0.15000000596046448
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.7200000286102295
+        },
+        "KHR_materials_specular": {
+          "specularFactor": 0.7599999904632568
+        },
+        "KHR_materials_ior": {
+          "ior": 1.3300000429153442
+        }
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ABY2_window_glow",
+      "recipe_key": "glass_amber",
+      "alphaMode": "BLEND",
+      "baseColorFactor": [
+        1,
+        0.6938717365264893,
+        0.2541520893573761,
+        0.2800000011920929
+      ],
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.07999999821186066,
+          "clearcoatRoughnessFactor": 0.15000000596046448
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.7200000286102295
+        },
+        "KHR_materials_specular": {
+          "specularFactor": 0.7599999904632568
+        },
+        "KHR_materials_ior": {
+          "ior": 1.3300000429153442
+        }
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "protected_window_glow_unchanged": true,
+  "lighting": "One exterior SUN plus weak world ambient; no interior lights and no emissive glass",
+  "control": "Same geometry/camera/sun with only window alpha=1 and transmission=0",
+  "device_requested": "OPTIX",
+  "renders": [
+    "transparent_window_daylight.png",
+    "opaque_control_same_sun.png"
+  ],
+  "device_actual": "CPU",
+  "device_fallback_reason": "OptiX PTX internal compiler error: missing copysign intrinsic"
+}

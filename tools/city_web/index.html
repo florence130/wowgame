@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>晴岚港 · 主城漫游与布局编辑</title>
+  <style>/* CITY_STYLE */</style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-mark">晴</span><div><h1>晴岚港</h1><span>主城漫游 · 布局草稿</span></div></div>
+    <div class="save-state"><i id="save-dot"></i><span id="save-status">正在准备城市</span><span id="draft-count" class="tag">原始布局</span></div>
+    <nav aria-label="草稿操作"><button id="undo" disabled title="撤销 Ctrl+Z">↶ 撤销</button><button id="redo" disabled title="重做 Ctrl+Y">↷ 重做</button><span class="divider"></span><button id="import">导入草稿</button><button id="export" class="primary">导出改动</button><button id="help" title="使用说明">?</button></nav>
+  </header>
+  <main>
+    <aside id="explorer">
+      <div class="section-label">城市目录 <span id="object-count"></span></div>
+      <div class="tabs" role="tablist"><button class="active" data-tab="building">建筑</button><button data-tab="road">道路</button><button data-tab="terrace">台地</button></div>
+      <input id="search" type="search" placeholder="搜索名称或编号" aria-label="搜索对象">
+      <div class="filters"><select id="district" aria-label="选择城区"><option value="">全部城区</option></select><select id="group" aria-label="选择街坊"><option value="">全部街坊</option></select></div>
+      <button id="select-group" class="wide subtle" hidden>选择整个街坊</button>
+      <div id="object-list" role="listbox" aria-label="对象目录" aria-multiselectable="true"></div>
+      <div class="explorer-footer"><span id="visible-count"></span><button id="reset" class="link-button">还原原始布局</button></div>
+    </aside>
+    <section id="viewport" aria-label="三维主城视图" tabindex="0">
+      <div id="scene"></div>
+      <div id="view-tools"><button id="mobile-directory" class="mobile-only">目录</button><div class="segmented"><button id="orbit-mode" class="active">鸟瞰编辑</button><button id="walk-mode">步行漫游</button></div><button id="ground-review" aria-pressed="false" title="隐藏建筑，审阅占地与街坊步行网">地面审查</button><button id="overview" title="查看全城">全城</button><button id="mobile-inspector" class="mobile-only" hidden>调整</button><select id="landmarks" aria-label="快速到达地标"><option value="">前往地标…</option></select></div>
+      <div id="display-tools"><label><input type="checkbox" id="show-roads" checked> 道路线</label><label><input type="checkbox" id="show-terraces"> 台地范围</label><label><input type="checkbox" id="show-hidden"> 隐藏建筑轮廓</label></div>
+      <div id="loading"><div class="loader-mark">晴</div><h2>正在展开晴岚港</h2><p id="load-status">准备原生模型与地形…</p><progress id="load-progress" max="1" value="0"></progress></div>
+      <div id="ground-review-legend" hidden><strong>地面审查</strong><span><i class="parcel-key"></i>预留地界</span><span><i class="footprint-key"></i>建筑占地</span><span><i class="path-key"></i>街坊步行网</span><span><i class="entry-key"></i>入口</span><small>底面为实际铺装；绿地仅两处公园</small></div><div id="toast" role="status" aria-live="polite"></div>
+      <div id="walk-reticle" hidden>+</div>
+      <div id="walk-pad" hidden aria-label="漫游方向控制"><button data-walk="TurnLeft" aria-label="向左转">↶</button><button data-walk="KeyW" aria-label="前进">↑</button><button data-walk="TurnRight" aria-label="向右转">↷</button><button data-walk="KeyA" aria-label="向左平移">←</button><button data-walk="KeyS" aria-label="后退">↓</button><button data-walk="KeyD" aria-label="向右平移">→</button></div>
+      <div id="scene-info"><span id="nav-hint">左键环绕 · 右键平移 · 滚轮缩放 · 单击选择</span><span id="coordinates"></span></div>
+      <div class="scope-note">布局审阅预览 · 改动仅保存为网页草稿</div>
+    </section>
+    <aside id="inspector">
+      <div class="section-label">调整对象 <span id="selection-kind"></span><button id="collapse-inspector" class="mobile-only link-button">收起</button></div>
+      <div id="selection-empty"><div class="empty-icon">◇</div><h2>从城市中选择</h2><p>点击建筑或左侧目录，调整位置、朝向与地基标高。</p><p>按住 Ctrl 可多选；选择街坊后，可整体移动与旋转。</p><div class="small-rule"></div><p>所有修改自动保存在本机浏览器。完成后导出 JSON，可用于回导游戏。</p></div>
+      <div id="selection-panel" hidden>
+        <h2 id="selection-title"></h2><div id="selection-id"></div>
+        <div id="selection-actions"><button id="focus">定位 F</button><button id="move-tool">拖动</button><button id="rotate-tool">旋转</button></div>
+        <div id="inspector-fields"></div>
+        <div id="building-actions"><button id="duplicate">复制建筑</button><button id="hide-object">隐藏</button><button id="delete-object" class="danger">删除</button></div>
+      </div>
+      <footer><strong>草稿与游戏分开保存</strong><p>此页面不会覆盖游戏文件。步行用于查看尺度与地面支撑，不代替游戏碰撞验收。</p><span id="baseline-label"></span></footer>
+    </aside>
+  </main>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <dialog id="help-dialog"><button class="dialog-close" id="close-help">×</button><h2>在晴岚港中调整布局</h2><p>页面包含原生建筑模型、场景物件与地形，离线也可打开。</p><dl><dt>鸟瞰编辑</dt><dd>左键环绕，右键平移，滚轮缩放。单击建筑选择，双击建筑定位；F 聚焦当前选择。</dd><dt>步行漫游</dt><dd>点击画面后，鼠标转向，W A S D 行走，Shift 加速。Esc 释放鼠标；“鸟瞰编辑”返回编辑视角。</dd><dt>建筑与街坊</dt><dd>用面板数值或拖动手柄修改建筑。Ctrl/⌘ 多选，或从街坊菜单选择整组，再批量平移与旋转。复制、隐藏与删除均可撤销。</dd><dt>地面审查</dt><dd>隐藏建筑与装饰，查看预留占地、街坊步行网、道路、人行道与台阶。底面使用正式地面网格，轮廓来自同一总图；此模式只供审阅。</dd><dt>道路与台地</dt><dd>道路支持位置与宽度草稿，彩色带只表示改动意图。台地仅供查看，由统一地面总图调整，避免与街道、挡墙和入口脱节；旧草稿参数仍可保留并导出。</dd><dt>保存与回导</dt><dd>同一版本在本浏览器内自动保存。导出 JSON 包含完整布局、改动差异和基线标识，便于回导。另一版城市的草稿会被拦截，避免覆盖错误版本。</dd></dl><p class="muted">快捷键：Ctrl+Z 撤销 · Ctrl+Y 重做 · Delete 删除选中建筑</p></dialog>
+  <dialog id="export-dialog"><button class="dialog-close" id="close-export">×</button><h2>保存这份主城草稿</h2><p id="export-summary"></p><p class="muted">文件包含完整布局与修改记录。将 JSON 交回本项目后，才能应用到游戏并重新检查道路、地形和碰撞。</p><div class="export-actions"><a id="download-json" class="download-link" download>下载 JSON</a><button id="copy-json">复制完整 JSON</button></div><details><summary>查看草稿内容</summary><textarea id="export-text" readonly aria-label="完整布局草稿 JSON"></textarea></details><p class="field-note">如果内置浏览器未出现下载，可复制完整 JSON；也可用系统浏览器双击打开此 HTML 后保存。</p></dialog>
+  <script>/* CITY_DATA */</script>
+  <script>/* CITY_BUNDLE */</script>
+</body>
+</html>

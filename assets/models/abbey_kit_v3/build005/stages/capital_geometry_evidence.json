@@ -1,0 +1,42 @@
+{
+  "source": "analytic layered rounded-box SDF with bounded chisel modulation",
+  "sampling": {
+    "grid_shape": [
+      27,
+      27,
+      12
+    ],
+    "sample_count": 8748,
+    "step_target_m": 0.035,
+    "cell_crossings": 1724,
+    "scalar_min": -0.06496363636363636,
+    "scalar_max": 0.19292483665636642,
+    "raw_vertices": 6146,
+    "raw_triangles": 12288
+  },
+  "bounds_min": [
+    -0.38999998569488525,
+    -0.38999998569488525,
+    0.0
+  ],
+  "bounds_max": [
+    0.38999998569488525,
+    0.38999930024147034,
+    0.23999999463558197
+  ],
+  "triangles": 1738,
+  "degenerate_triangles": 0,
+  "finite_vertices": true,
+  "top_planar_triangles": 16,
+  "bottom_planar_triangles": 23,
+  "top_normals_positive_z": true,
+  "bottom_normals_negative_z": true,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "socket_snapped_vertices": 3505,
+  "xy_envelope_scale": [
+    1.0,
+    1.0
+  ],
+  "postprocess": "plane correction, welded coincident vertices, coplanar dissolve, triangulation; no remesh"
+}

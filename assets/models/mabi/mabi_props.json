@@ -1,0 +1,81 @@
+{
+ "weapon_stall": {
+  "size": [
+   7.4,
+   5.27,
+   3.58
+  ]
+ },
+ "mine_crystal_a": {
+  "size": [
+   2.88,
+   6.09,
+   4.06
+  ],
+  "faces": 815
+ },
+ "mine_crystal_b": {
+  "size": [
+   4.86,
+   4.07,
+   3.15
+  ],
+  "faces": 600
+ },
+ "mine_crystal_c": {
+  "size": [
+   1.8,
+   4.03,
+   2.47
+  ],
+  "faces": 124
+ },
+ "mine_rock": {
+  "size": [
+   6.77,
+   1.71,
+   4.6
+  ],
+  "faces": 243
+ },
+ "mine_scaffold": {
+  "size": [
+   4.73,
+   7.67,
+   2.27
+  ],
+  "faces": 4036
+ },
+ "mine_trestle": {
+  "size": [
+   10.0,
+   4.97,
+   4.8
+  ],
+  "faces": 2782
+ },
+ "mine_gate": {
+  "size": [
+   7.3,
+   7.32,
+   7.6
+  ],
+  "faces": 5547
+ },
+ "mine_fence": {
+  "size": [
+   3.38,
+   2.16,
+   8.24
+  ],
+  "faces": 1166
+ },
+ "mine_tower": {
+  "size": [
+   6.25,
+   5.72,
+   7.03
+  ],
+  "faces": 740
+ }
+}

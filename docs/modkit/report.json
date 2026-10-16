@@ -1,0 +1,176 @@
+{
+ "abbey_cottage": {
+  "size_m": [
+   7.2,
+   7.2,
+   8.16
+  ],
+  "tris": 17544,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "profile_extrude",
+   "screw",
+   "simple_deform",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "abbey_quartermaster": {
+  "size_m": [
+   12.0,
+   9.6,
+   12.84
+  ],
+  "tris": 42176,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "simple_deform",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "abbey_training_hall": {
+  "size_m": [
+   16.8,
+   9.6,
+   9.52
+  ],
+  "tris": 26900,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "vale_house_timber": {
+  "size_m": [
+   12.0,
+   7.2,
+   11.94
+  ],
+  "tris": 40584,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "simple_deform",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "abbey_wall_seg": {
+  "size_m": [
+   4.8,
+   1,
+   3
+  ],
+  "tris": 1100,
+  "methods": [
+   "array",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "abbey_wall_seg_b": {
+  "size_m": [
+   4.8,
+   1,
+   3
+  ],
+  "tris": 1268,
+  "methods": [
+   "array",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "abbey_wall_seg_c": {
+  "size_m": [
+   4.8,
+   1,
+   3
+  ],
+  "tris": 272,
+  "methods": [
+   "array",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "abbey_gatehouse": {
+  "size_m": [
+   8,
+   3,
+   8
+  ],
+  "tris": 4616,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "lamp_post_iron": {
+  "size_m": [
+   1.5,
+   1.5,
+   4
+  ],
+  "tris": 456,
+  "methods": [
+   "curve_bevel",
+   "profile_extrude",
+   "screw"
+  ]
+ },
+ "cypress_kit": {
+  "size_m": [
+   2,
+   2,
+   7
+  ],
+  "tris": 484,
+  "methods": [
+   "screw",
+   "vertex"
+  ]
+ },
+ "cypress_kit_b": {
+  "size_m": [
+   2,
+   2,
+   6
+  ],
+  "tris": 484,
+  "methods": [
+   "screw",
+   "vertex"
+  ]
+ }
+}

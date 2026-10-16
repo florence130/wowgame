@@ -1,0 +1,49 @@
+{
+  "sources": [
+    [
+      "farmhouse",
+      "house_0",
+      [
+        1.411764705882353,
+        1.125,
+        1.0909090909090908
+      ],
+      [
+        "F0E4C8",
+        "B8553A",
+        "6A4A30"
+      ]
+    ],
+    [
+      "barn",
+      "house_1",
+      [
+        1.8823529411764706,
+        1.375,
+        1.4545454545454546
+      ],
+      [
+        "B04030",
+        "5A3A2A",
+        "F0E8D8"
+      ]
+    ],
+    [
+      "windmill",
+      "windmill_0",
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        "F0E4C8",
+        "8A4A3A",
+        "6A4A30"
+      ]
+    ]
+  ],
+  "map_source": "tools/gen_vale.gd::_farms",
+  "barn_roof_exception": "Fixed thatch material C8A868 is not recoloured by color_b. Keep golden thatch.",
+  "front": "Blender +Y / Godot -Z"
+}

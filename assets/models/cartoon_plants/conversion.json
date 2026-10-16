@@ -1,0 +1,112 @@
+{
+  "grass_near": {
+    "source": "Grass_04-1.fbx",
+    "height_m": 0.56,
+    "original_size": [
+      0.5620607137680054,
+      0.4878658652305603,
+      0.28166958689689636
+    ],
+    "vertices": 77,
+    "polygons": 35
+  },
+  "grass_far": {
+    "source": "Grass_04-1.fbx",
+    "height_m": 0.56,
+    "original_size": [
+      0.5620607137680054,
+      0.4878658652305603,
+      0.28166958689689636
+    ],
+    "vertices": 48,
+    "polygons": 22
+  },
+  "grass_wide": {
+    "source": "Grass_04-1.fbx",
+    "height_m": 0.55,
+    "original_size": [
+      0.5620607137680054,
+      0.4878658652305603,
+      0.28166958689689636
+    ],
+    "vertices": 77,
+    "polygons": 35
+  },
+  "flower_white": {
+    "source": "Flower_01.fbx",
+    "height_m": 0.56,
+    "original_size": [
+      0.10533169656991959,
+      0.104888916015625,
+      0.3759699761867523
+    ],
+    "vertices": 39,
+    "polygons": 20
+  },
+  "flower_yellow": {
+    "source": "Flower_02.fbx",
+    "height_m": 0.54,
+    "original_size": [
+      0.10533169656991959,
+      0.104888916015625,
+      0.3759699761867523
+    ],
+    "vertices": 39,
+    "polygons": 20
+  },
+  "flower_blue": {
+    "source": "Flower_03.fbx",
+    "height_m": 0.6,
+    "original_size": [
+      0.104888916015625,
+      0.104888916015625,
+      0.3759700059890747
+    ],
+    "vertices": 29,
+    "polygons": 12
+  },
+  "flower_pink": {
+    "source": "Flower_04.fbx",
+    "height_m": 0.56,
+    "original_size": [
+      0.08082705736160278,
+      0.051492586731910706,
+      0.4650474786758423
+    ],
+    "vertices": 118,
+    "polygons": 188
+  },
+  "plant_broad": {
+    "source": "Plant_01.fbx",
+    "height_m": 0.64,
+    "original_size": [
+      0.9286783933639526,
+      0.9451431632041931,
+      0.13838660717010498
+    ],
+    "vertices": 3115,
+    "polygons": 2481
+  },
+  "plant_fern": {
+    "source": "Plant_07.fbx",
+    "height_m": 0.72,
+    "original_size": [
+      0.577620267868042,
+      0.4994736909866333,
+      0.4522441625595093
+    ],
+    "vertices": 194,
+    "polygons": 356
+  },
+  "plant_leaf": {
+    "source": "Plant_10.fbx",
+    "height_m": 0.65,
+    "original_size": [
+      1.2494691610336304,
+      1.312467098236084,
+      0.4774496555328369
+    ],
+    "vertices": 868,
+    "polygons": 1008
+  }
+}

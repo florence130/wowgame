@@ -1,0 +1,1610 @@
+[
+ {
+  "file": "Decor/Cornice_Cover_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   2.189,
+   0.093,
+   3.176
+  ],
+  "min": [
+   -3.033,
+   -0.047,
+   3.973
+  ],
+  "max": [
+   -0.845,
+   0.047,
+   7.149
+  ],
+  "tris": 12,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Decor/Cornice_Cover_2.fbx",
+  "group": "Decor",
+  "size_m": [
+   3.134,
+   0.111,
+   3.793
+  ],
+  "min": [
+   0.967,
+   -0.064,
+   3.356
+  ],
+  "max": [
+   4.101,
+   0.047,
+   7.149
+  ],
+  "tris": 72,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Cornice_Cover_3.fbx",
+  "group": "Decor",
+  "size_m": [
+   2.311,
+   0.093,
+   1.876
+  ],
+  "min": [
+   -1.155,
+   -0.047,
+   4.973
+  ],
+  "max": [
+   1.155,
+   0.047,
+   6.848
+  ],
+  "tris": 84,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Crossbar_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   2.218,
+   0.296,
+   0.334
+  ],
+  "min": [
+   -1.218,
+   -0.211,
+   -0.168
+  ],
+  "max": [
+   1.0,
+   0.085,
+   0.166
+  ],
+  "tris": 112,
+  "materials": [
+   "Stone",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Crossbar_2.fbx",
+  "group": "Decor",
+  "size_m": [
+   2.0,
+   0.281,
+   0.287
+  ],
+  "min": [
+   5.0,
+   -0.197,
+   0.858
+  ],
+  "max": [
+   7.0,
+   0.084,
+   1.144
+  ],
+  "tris": 76,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Decor_Peaks_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   2.023,
+   0.077,
+   1.197
+  ],
+  "min": [
+   2.962,
+   -0.038,
+   1.009
+  ],
+  "max": [
+   4.985,
+   0.038,
+   2.206
+  ],
+  "tris": 140,
+  "materials": [
+   "Metal"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Decor_Peaks_2.fbx",
+  "group": "Decor",
+  "size_m": [
+   0.077,
+   0.077,
+   1.197
+  ],
+  "min": [
+   5.962,
+   -0.038,
+   1.009
+  ],
+  "max": [
+   6.038,
+   0.038,
+   2.206
+  ],
+  "tris": 48,
+  "materials": [
+   "Metal"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Flovers_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.561,
+   0.859,
+   1.034
+  ],
+  "min": [
+   0.308,
+   -1.124,
+   0.368
+  ],
+  "max": [
+   1.869,
+   -0.266,
+   1.402
+  ],
+  "tris": 1270,
+  "materials": [
+   "Material.001",
+   "Material.002",
+   "Material.003"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.964,
+   0.27,
+   2.844
+  ],
+  "min": [
+   -4.911,
+   -0.134,
+   -0.13
+  ],
+  "max": [
+   -2.946,
+   0.136,
+   2.713
+  ],
+  "tris": 1510,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_2.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.98,
+   0.411,
+   1.317
+  ],
+  "min": [
+   0.94,
+   -0.333,
+   0.02
+  ],
+  "max": [
+   2.919,
+   0.078,
+   1.338
+  ],
+  "tris": 630,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_3.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.222,
+   1.115,
+   2.861
+  ],
+  "min": [
+   7.875,
+   -0.405,
+   0.104
+  ],
+  "max": [
+   9.097,
+   0.71,
+   2.965
+  ],
+  "tris": 1000,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_4_L.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.952,
+   1.308,
+   3.282
+  ],
+  "min": [
+   16.514,
+   -0.385,
+   -0.633
+  ],
+  "max": [
+   18.466,
+   0.923,
+   2.649
+  ],
+  "tris": 1000,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_4_R.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.952,
+   1.308,
+   3.282
+  ],
+  "min": [
+   14.683,
+   -0.385,
+   -0.633
+  ],
+  "max": [
+   16.634,
+   0.923,
+   2.649
+  ],
+  "tris": 1000,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_5_L.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.368,
+   1.709,
+   2.762
+  ],
+  "min": [
+   26.245,
+   -0.177,
+   -2.154
+  ],
+  "max": [
+   27.613,
+   1.532,
+   0.608
+  ],
+  "tris": 1010,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ivy_5_R.fbx",
+  "group": "Decor",
+  "size_m": [
+   1.368,
+   1.709,
+   2.762
+  ],
+  "min": [
+   23.3,
+   -0.177,
+   -2.154
+  ],
+  "max": [
+   24.668,
+   1.532,
+   0.608
+  ],
+  "tris": 1010,
+  "materials": [
+   "Material"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Ridge.fbx",
+  "group": "Decor",
+  "size_m": [
+   2.0,
+   0.602,
+   0.42
+  ],
+  "min": [
+   -6.0,
+   -0.301,
+   4.379
+  ],
+  "max": [
+   -4.0,
+   0.301,
+   4.799
+  ],
+  "tris": 24,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Decor/Support_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   0.171,
+   0.741,
+   0.944
+  ],
+  "min": [
+   -2.085,
+   -0.814,
+   0.762
+  ],
+  "max": [
+   -1.914,
+   -0.073,
+   1.706
+  ],
+  "tris": 72,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Support_2.fbx",
+  "group": "Decor",
+  "size_m": [
+   0.245,
+   1.318,
+   1.087
+  ],
+  "min": [
+   -2.122,
+   -1.388,
+   1.788
+  ],
+  "max": [
+   -1.878,
+   -0.07,
+   2.876
+  ],
+  "tris": 200,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Support_3.fbx",
+  "group": "Decor",
+  "size_m": [
+   0.259,
+   0.259,
+   1.0
+  ],
+  "min": [
+   1.871,
+   -0.129,
+   2.0
+  ],
+  "max": [
+   2.129,
+   0.129,
+   3.0
+  ],
+  "tris": 72,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Support_3_Base.fbx",
+  "group": "Decor",
+  "size_m": [
+   0.407,
+   0.407,
+   1.0
+  ],
+  "min": [
+   1.796,
+   -0.204,
+   -0.0
+  ],
+  "max": [
+   2.204,
+   0.204,
+   1.0
+  ],
+  "tris": 160,
+  "materials": [
+   "Stone",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Decor/Wooden_Canopy_1.fbx",
+  "group": "Decor",
+  "size_m": [
+   3.795,
+   2.293,
+   3.602
+  ],
+  "min": [
+   -6.875,
+   -1.482,
+   -0.0
+  ],
+  "max": [
+   -3.081,
+   0.811,
+   3.602
+  ],
+  "tris": 1752,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Doors And Windows/Window_1.fbx",
+  "group": "Doors And Windows",
+  "size_m": [
+   0.844,
+   0.265,
+   1.238
+  ],
+  "min": [
+   -1.422,
+   -0.132,
+   0.448
+  ],
+  "max": [
+   -0.578,
+   0.133,
+   1.686
+  ],
+  "tris": 462,
+  "materials": [
+   "Glass",
+   "Wooden_Planks"
+  ],
+  "objects": 3
+ },
+ {
+  "file": "Doors And Windows/Window_2.fbx",
+  "group": "Doors And Windows",
+  "size_m": [
+   0.908,
+   0.29,
+   1.228
+  ],
+  "min": [
+   0.546,
+   -0.145,
+   0.403
+  ],
+  "max": [
+   1.454,
+   0.145,
+   1.631
+  ],
+  "tris": 264,
+  "materials": [
+   "Glass",
+   "Wooden_Planks"
+  ],
+  "objects": 3
+ },
+ {
+  "file": "Doors And Windows/Window_2_Small.fbx",
+  "group": "Doors And Windows",
+  "size_m": [
+   0.908,
+   0.177,
+   1.017
+  ],
+  "min": [
+   2.546,
+   -0.089,
+   0.508
+  ],
+  "max": [
+   3.454,
+   0.088,
+   1.525
+  ],
+  "tris": 264,
+  "materials": [
+   "Glass",
+   "Wooden_Planks"
+  ],
+  "objects": 3
+ },
+ {
+  "file": "Doors And Windows/Wooden_Door_1.fbx",
+  "group": "Doors And Windows",
+  "size_m": [
+   1.151,
+   0.183,
+   2.18
+  ],
+  "min": [
+   -3.135,
+   -0.12,
+   0.013
+  ],
+  "max": [
+   -1.984,
+   0.063,
+   2.193
+  ],
+  "tris": 1620,
+  "materials": [
+   "Metal",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Doors And Windows/Wooden_Door_1_W.fbx",
+  "group": "Doors And Windows",
+  "size_m": [
+   1.151,
+   0.184,
+   2.18
+  ],
+  "min": [
+   -5.135,
+   -0.115,
+   0.013
+  ],
+  "max": [
+   -3.984,
+   0.069,
+   2.193
+  ],
+  "tris": 2026,
+  "materials": [
+   "Glass",
+   "Metal",
+   "Wooden_Planks"
+  ],
+  "objects": 3
+ },
+ {
+  "file": "Frame Modules/Frame_Extension.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.173,
+   1.7,
+   3.116
+  ],
+  "min": [
+   -10.162,
+   -1.548,
+   0.0
+  ],
+  "max": [
+   -7.989,
+   0.152,
+   3.116
+  ],
+  "tris": 540,
+  "materials": [
+   "Roof",
+   "Wall",
+   "Wooden_Floor",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Frame Modules/Frame_Wall_1.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.159,
+   0.314,
+   3.076
+  ],
+  "min": [
+   4.833,
+   -0.153,
+   -0.001
+  ],
+  "max": [
+   6.993,
+   0.161,
+   3.074
+  ],
+  "tris": 148,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Frame Modules/Frame_Wall_1_D.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.161,
+   0.314,
+   3.074
+  ],
+  "min": [
+   -1.16,
+   -0.157,
+   0.0
+  ],
+  "max": [
+   1.001,
+   0.157,
+   3.074
+  ],
+  "tris": 384,
+  "materials": [
+   "Stone_Wall",
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Frame Modules/Frame_Wall_1_W.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.156,
+   0.312,
+   3.069
+  ],
+  "min": [
+   1.836,
+   -0.153,
+   -0.001
+  ],
+  "max": [
+   3.993,
+   0.159,
+   3.068
+  ],
+  "tris": 196,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Frame Modules/Frame_Wall_2.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.159,
+   0.315,
+   3.07
+  ],
+  "min": [
+   -7.166,
+   -0.156,
+   -0.0
+  ],
+  "max": [
+   -5.008,
+   0.159,
+   3.07
+  ],
+  "tris": 96,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Frame Modules/Frame_Wall_2_W.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.164,
+   0.314,
+   3.068
+  ],
+  "min": [
+   -4.172,
+   -0.156,
+   0.0
+  ],
+  "max": [
+   -2.008,
+   0.158,
+   3.068
+  ],
+  "tris": 136,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Frame Modules/Gable_L.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.0,
+   0.233,
+   3.0
+  ],
+  "min": [
+   11.0,
+   -0.117,
+   -0.0
+  ],
+  "max": [
+   13.0,
+   0.117,
+   3.0
+  ],
+  "tris": 20,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Frame Modules/Gable_R.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.153,
+   0.305,
+   3.0
+  ],
+  "min": [
+   13.847,
+   -0.152,
+   -0.0
+  ],
+  "max": [
+   16.0,
+   0.152,
+   3.0
+  ],
+  "tris": 30,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Frame Modules/Gable_Small.fbx",
+  "group": "Frame Modules",
+  "size_m": [
+   2.0,
+   0.228,
+   1.518
+  ],
+  "min": [
+   8.0,
+   -0.114,
+   -0.0
+  ],
+  "max": [
+   10.0,
+   0.114,
+   1.518
+  ],
+  "tris": 44,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Indoor Modules/Beam_1.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.0,
+   0.235,
+   0.239
+  ],
+  "min": [
+   5.0,
+   -0.117,
+   1.877
+  ],
+  "max": [
+   7.0,
+   0.117,
+   2.116
+  ],
+  "tris": 76,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Beam_2.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.0,
+   0.148,
+   0.153
+  ],
+  "min": [
+   5.0,
+   -0.074,
+   2.921
+  ],
+  "max": [
+   7.0,
+   0.075,
+   3.074
+  ],
+  "tris": 76,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Fireplace_1.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   1.634,
+   1.365,
+   3.0
+  ],
+  "min": [
+   12.183,
+   -1.16,
+   -0.0
+  ],
+  "max": [
+   13.817,
+   0.205,
+   3.0
+  ],
+  "tris": 1452,
+  "materials": [
+   "Fireplace"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Fireplace_2.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   0.914,
+   0.555,
+   1.0
+  ],
+  "min": [
+   12.543,
+   -0.418,
+   3.0
+  ],
+  "max": [
+   13.457,
+   0.137,
+   4.0
+  ],
+  "tris": 88,
+  "materials": [
+   "Fireplace"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Fireplace_3.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   0.997,
+   0.633,
+   1.013
+  ],
+  "min": [
+   12.502,
+   -0.457,
+   4.0
+  ],
+  "max": [
+   13.498,
+   0.176,
+   5.013
+  ],
+  "tris": 376,
+  "materials": [
+   "Fireplace"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Floor_1.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   1.0,
+   1.0,
+   0.179
+  ],
+  "min": [
+   11.0,
+   0.0,
+   -0.052
+  ],
+  "max": [
+   12.0,
+   1.0,
+   0.128
+  ],
+  "tris": 22,
+  "materials": [
+   "Material.006"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Indoor Modules/Floor_2.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.0,
+   2.0,
+   0.179
+  ],
+  "min": [
+   8.0,
+   0.0,
+   -0.052
+  ],
+  "max": [
+   10.0,
+   2.0,
+   0.128
+  ],
+  "tris": 36,
+  "materials": [
+   "Material.006"
+  ],
+  "objects": 1
+ },
+ {
+  "file": "Indoor Modules/Frame_Wall_1_D_Indoor.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.072,
+   0.267,
+   3.017
+  ],
+  "min": [
+   -7.071,
+   -0.134,
+   0.022
+  ],
+  "max": [
+   -5.0,
+   0.134,
+   3.039
+  ],
+  "tris": 360,
+  "materials": [
+   "Stone_Wall",
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Frame_Wall_2_Indoor.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.072,
+   0.25,
+   3.017
+  ],
+  "min": [
+   -4.071,
+   -0.125,
+   0.022
+  ],
+  "max": [
+   -2.0,
+   0.125,
+   3.039
+  ],
+  "tris": 96,
+  "materials": [
+   "Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Stone_Wall_Indoor.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.052,
+   0.284,
+   3.023
+  ],
+  "min": [
+   -1.052,
+   -0.142,
+   0.022
+  ],
+  "max": [
+   1.0,
+   0.142,
+   3.045
+  ],
+  "tris": 96,
+  "materials": [
+   "Stone_Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Indoor Modules/Stone_Wall_Indoor_D.fbx",
+  "group": "Indoor Modules",
+  "size_m": [
+   2.052,
+   0.295,
+   3.023
+  ],
+  "min": [
+   1.948,
+   -0.149,
+   0.022
+  ],
+  "max": [
+   4.0,
+   0.146,
+   3.045
+  ],
+  "tris": 360,
+  "materials": [
+   "Stone_Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_1.fbx",
+  "group": "Roofs",
+  "size_m": [
+   2.0,
+   2.242,
+   3.22
+  ],
+  "min": [
+   -4.0,
+   -0.119,
+   -0.101
+  ],
+  "max": [
+   -2.0,
+   2.124,
+   3.119
+  ],
+  "tris": 60,
+  "materials": [
+   "Roof",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_1_Cornice.fbx",
+  "group": "Roofs",
+  "size_m": [
+   2.0,
+   3.097,
+   3.718
+  ],
+  "min": [
+   -1.0,
+   -0.986,
+   -0.599
+  ],
+  "max": [
+   1.0,
+   2.111,
+   3.119
+  ],
+  "tris": 172,
+  "materials": [
+   "Roof",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_1_Cornice_W.fbx",
+  "group": "Roofs",
+  "size_m": [
+   2.005,
+   3.132,
+   3.71
+  ],
+  "min": [
+   2.0,
+   -0.986,
+   -0.592
+  ],
+  "max": [
+   4.005,
+   2.145,
+   3.119
+  ],
+  "tris": 698,
+  "materials": [
+   "Roof",
+   "Wall",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_2.fbx",
+  "group": "Roofs",
+  "size_m": [
+   3.111,
+   3.111,
+   3.164
+  ],
+  "min": [
+   -12.111,
+   -1.0,
+   -0.045
+  ],
+  "max": [
+   -9.0,
+   2.111,
+   3.119
+  ],
+  "tris": 128,
+  "materials": [
+   "Roof",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_2_Cornice.fbx",
+  "group": "Roofs",
+  "size_m": [
+   3.116,
+   3.115,
+   3.699
+  ],
+  "min": [
+   -8.111,
+   -1.004,
+   -0.58
+  ],
+  "max": [
+   -4.995,
+   2.111,
+   3.119
+  ],
+  "tris": 284,
+  "materials": [
+   "Roof",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_Top_1.fbx",
+  "group": "Roofs",
+  "size_m": [
+   2.0,
+   2.237,
+   1.72
+  ],
+  "min": [
+   10.0,
+   -0.119,
+   -0.101
+  ],
+  "max": [
+   12.0,
+   2.119,
+   1.619
+  ],
+  "tris": 92,
+  "materials": [
+   "Roof",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Roofs/Roof_Top_2.fbx",
+  "group": "Roofs",
+  "size_m": [
+   4.0,
+   3.119,
+   1.72
+  ],
+  "min": [
+   5.0,
+   -1.0,
+   -0.101
+  ],
+  "max": [
+   9.0,
+   2.119,
+   1.619
+  ],
+  "tris": 232,
+  "materials": [
+   "Roof",
+   "Wooden_Planks",
+   "Wooden_Roof"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Stone_Stairs.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.696,
+   1.929,
+   1.132
+  ],
+  "min": [
+   -4.841,
+   -0.929,
+   -0.017
+  ],
+  "max": [
+   -3.145,
+   1.0,
+   1.115
+  ],
+  "tris": 1118,
+  "materials": [
+   "Stone",
+   "Stone_Wall"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Platform.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.028,
+   1.008,
+   0.15
+  ],
+  "min": [
+   4.005,
+   0.988,
+   1.879
+  ],
+  "max": [
+   5.033,
+   1.996,
+   2.029
+  ],
+  "tris": 336,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Platform_Cover.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.0,
+   0.094,
+   0.223
+  ],
+  "min": [
+   4.0,
+   0.954,
+   2.859
+  ],
+  "max": [
+   5.0,
+   1.048,
+   3.082
+  ],
+  "tris": 40,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Railings_1.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.016,
+   0.084,
+   0.943
+  ],
+  "min": [
+   -2.042,
+   -0.042,
+   -0.005
+  ],
+  "max": [
+   -1.025,
+   0.042,
+   0.938
+  ],
+  "tris": 208,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Railings_2.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.068,
+   0.086,
+   1.832
+  ],
+  "min": [
+   -0.042,
+   -0.044,
+   -0.005
+  ],
+  "max": [
+   1.026,
+   0.042,
+   1.826
+  ],
+  "tris": 208,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Railings_3.fbx",
+  "group": "Stairs",
+  "size_m": [
+   0.084,
+   0.084,
+   0.943
+  ],
+  "min": [
+   0.958,
+   -0.042,
+   -0.005
+  ],
+  "max": [
+   1.042,
+   0.042,
+   0.938
+  ],
+  "tris": 80,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Stairs_1.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.089,
+   1.151,
+   1.151
+  ],
+  "min": [
+   3.952,
+   -0.073,
+   -0.093
+  ],
+  "max": [
+   5.041,
+   1.078,
+   1.057
+  ],
+  "tris": 352,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stairs/Wooden_Stairs_2.fbx",
+  "group": "Stairs",
+  "size_m": [
+   1.095,
+   2.15,
+   2.15
+  ],
+  "min": [
+   1.951,
+   -0.073,
+   -0.093
+  ],
+  "max": [
+   3.046,
+   2.078,
+   2.057
+  ],
+  "tris": 672,
+  "materials": [
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stone Modules/Stone_Base.fbx",
+  "group": "Stone Modules",
+  "size_m": [
+   2.323,
+   0.679,
+   1.118
+  ],
+  "min": [
+   -7.323,
+   -0.345,
+   -0.0
+  ],
+  "max": [
+   -5.0,
+   0.334,
+   1.118
+  ],
+  "tris": 150,
+  "materials": [
+   "Stone_Wall"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stone Modules/Stone_Wall.fbx",
+  "group": "Stone Modules",
+  "size_m": [
+   2.153,
+   0.314,
+   3.074
+  ],
+  "min": [
+   -4.153,
+   -0.152,
+   0.0
+  ],
+  "max": [
+   -2.0,
+   0.161,
+   3.074
+  ],
+  "tris": 96,
+  "materials": [
+   "Stone_Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stone Modules/Stone_Wall_D.fbx",
+  "group": "Stone Modules",
+  "size_m": [
+   2.16,
+   0.314,
+   3.074
+  ],
+  "min": [
+   1.84,
+   -0.157,
+   0.0
+  ],
+  "max": [
+   4.0,
+   0.157,
+   3.074
+  ],
+  "tris": 360,
+  "materials": [
+   "Stone_Wall",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ },
+ {
+  "file": "Stone Modules/Stone_Wall_W.fbx",
+  "group": "Stone Modules",
+  "size_m": [
+   2.157,
+   0.31,
+   3.069
+  ],
+  "min": [
+   -1.16,
+   -0.157,
+   0.0
+  ],
+  "max": [
+   0.998,
+   0.153,
+   3.069
+  ],
+  "tris": 200,
+  "materials": [
+   "Stone_Wall",
+   "Wall_Decal",
+   "Wooden_Planks"
+  ],
+  "objects": 2
+ }
+]

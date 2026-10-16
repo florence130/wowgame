@@ -1,0 +1,1075 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "textures\\foundation_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          111,
+          106,
+          98
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\linen_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          239,
+          228,
+          204
+        ],
+        [
+          196,
+          166,
+          118
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\plaster_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          239,
+          230,
+          210
+        ],
+        [
+          244,
+          238,
+          226
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\plaster_ochre_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          239,
+          230,
+          210
+        ],
+        [
+          227,
+          207,
+          158
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\plaster_rose_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          234,
+          210,
+          196
+        ],
+        [
+          239,
+          230,
+          210
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\slate_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          67,
+          90,
+          121
+        ],
+        [
+          83,
+          110,
+          150
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\slate_dark_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          47,
+          68,
+          98
+        ],
+        [
+          67,
+          90,
+          121
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\stone_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          179,
+          172,
+          162
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\stone_dark_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          142,
+          135,
+          122
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\terracotta_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          184,
+          85,
+          58
+        ],
+        [
+          208,
+          118,
+          74
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\terracotta_dark_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          138,
+          58,
+          38
+        ],
+        [
+          184,
+          85,
+          58
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\thatch_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          200,
+          168,
+          104
+        ],
+        [
+          156,
+          126,
+          72
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\timber_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          74,
+          48,
+          32
+        ],
+        [
+          90,
+          58,
+          36
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\wood_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          165,
+          128,
+          95
+        ],
+        [
+          133,
+          96,
+          67
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\wood_green_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          63,
+          106,
+          58
+        ],
+        [
+          63,
+          106,
+          74
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "textures\\wood_pale_basecolor.png",
+      "check": "all texture texels are source palette swatches",
+      "passed": true,
+      "unique_rgb": [
+        [
+          165,
+          128,
+          95
+        ],
+        [
+          196,
+          154,
+          104
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "assemblies\\general_store.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 59724,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "207f4317db30ae48e7fa5401d36e859cab0cfba58076bab890a1a332aa05c70c"
+    },
+    {
+      "id": "assemblies\\guard_tower.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 85456,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "5a459b97d271edb3280377e02e799c819fa771fafa786281f99c36c5a8b89e1a"
+    },
+    {
+      "id": "assemblies\\home_broad.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 48772,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "805ed2614a81900b07d8bd01716a191e111400e3ba9d08c0cfcb751326144022"
+    },
+    {
+      "id": "assemblies\\home_cottage.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 28204,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "2143ba44f7cbdfe8b29aec5f7d099c1ce1b24894e063d1301f001423c1b9a401"
+    },
+    {
+      "id": "assemblies\\home_loft.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 64060,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "0e17113e4890e0e999abcc6b079c0cbb5c61b8926d531a1b4086e912888505f9"
+    },
+    {
+      "id": "assemblies\\home_long.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 49852,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "b6c1c03b0a30b60c44c18fb51ea0f3bc7db01bdcc39425bfb475fd850836f9cc"
+    },
+    {
+      "id": "assemblies\\home_porch.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 48012,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "098332127d798a34e4b7573e4d967ba9e08eaec448e4b9871a0cd3754c40207c"
+    },
+    {
+      "id": "assemblies\\home_wing.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 39814,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "046b90ab20b9ce936e74388de60ed577f5f00a8747dfc7c95bb228f50f18a542"
+    },
+    {
+      "id": "assemblies\\smithy.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 53470,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "99bd601829798c49460515a3037073f9cf86f8719e97714f6c89493f4b73d772"
+    },
+    {
+      "id": "assemblies\\tailor.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 88640,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "905ab5bc641a314e1dfd23e4270f3535e250a7f93266cc599a7680db46fd8284"
+    },
+    {
+      "id": "assemblies\\tavern.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 124996,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "00f0569ccab17788bd3c83c9ff3aa1627ffdd1a30d152826099e496ac195c3d9"
+    },
+    {
+      "id": "modules\\awning_4.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 552,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "f611f88ef511609bab5f0ff24d4a81487b6220f757cdd517b02ab79079e69be0"
+    },
+    {
+      "id": "modules\\chimney.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 704,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "663a076228a38e02297a11694b0bc3528b53104cbe57d4c4f984a0a76f016adf"
+    },
+    {
+      "id": "modules\\column.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 212,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "20640421a3805d799bdc7b4d3f5aaf81353dc2ad09779712d59278a1a2941a34"
+    },
+    {
+      "id": "modules\\counter_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 220,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "e8a7b0824bbf394a6fb27e7d43c84bcd2faac1a7b1037d8f2f79be8ecee5f00d"
+    },
+    {
+      "id": "modules\\door_leaf.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 520,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "fe6fc5982d5270935f44535e669da0a5bed9bf45904dc79419dc8eb0b0722b38"
+    },
+    {
+      "id": "modules\\fascia_4.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 64,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "cb520c569a253ca43eab06a219024d8ff6a1afd7fbe9d30a6a8273ea719d681f"
+    },
+    {
+      "id": "modules\\fascia_6.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 64,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "ac3da734d5faab18430b82d21cd80b2709be7f9a0d4c0aa34ca473ca8b1fd22f"
+    },
+    {
+      "id": "modules\\fascia_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 64,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "8b56843cb08b957882cd4cb6200a5394446ee6643173024bb844657ea421272d"
+    },
+    {
+      "id": "modules\\fascia_low_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 64,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "7365d22b5fd04faf6adfd5bc30f6cf08c8c006674c10d83bffee96940324c90b"
+    },
+    {
+      "id": "modules\\floor_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 396,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "9f2bf709c5732f69b5d719a83bf06bb440ced967aee001c1695d1f294cff28e0"
+    },
+    {
+      "id": "modules\\forge.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 232,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "3053073daa68e8a05043a3c1b5fd40be440ebd0683b96e012e24d5fd186af230"
+    },
+    {
+      "id": "modules\\foundation_1.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 220,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "c2462519a4ba593b1e02eacabc6b44dbbb808599d1ee30604e5e3cf3e2ec02a9"
+    },
+    {
+      "id": "modules\\foundation_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 396,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "9bcde7b872b9b82c499210d96d5fc1ebc6968fb8e07c7c56bf46d75a4aa88c6d"
+    },
+    {
+      "id": "modules\\gable_4.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 368,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "c759013a7f0be12112184cecce0b593a6de04d317174a5e3f78e8966a5d9bd3b"
+    },
+    {
+      "id": "modules\\gable_6.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 368,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "56f6331f796015b79b3db61b1f08cdf73846a3ff9264eb8f3eb3fc31f4ee8e9d"
+    },
+    {
+      "id": "modules\\gable_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 368,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "adc5d3b2462c1f0de993ef9109aeb9115b77128f59a370315b93eeee6e1edb33"
+    },
+    {
+      "id": "modules\\gable_low_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 368,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "80337ec5275f2d2557ee79f1507c684bde9a43d92198eb31e2cc364be5ae7561"
+    },
+    {
+      "id": "modules\\hip_roof_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 19560,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "db12bcffc2898c103c98d8e315f3a79f06f04532bfba9bcd1b2953fdb17d6b53"
+    },
+    {
+      "id": "modules\\rail_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 264,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "31b4f4cb2b0625f97d02afcc36de571d4477a3454b78a1193e9b830f645a3bd0"
+    },
+    {
+      "id": "modules\\roof_4_slate.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 2292,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "c7a8eae1411c23a230efe08a9ed443e1ad2238e7ebf4069379271f46a8f385ad"
+    },
+    {
+      "id": "modules\\roof_4_terracotta.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 2292,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "6a40567c7e581d0ccb04b5ac4507cd15647433265dcf7887815a4c596981fdd9"
+    },
+    {
+      "id": "modules\\roof_4_thatch.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 1464,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "e538a3436927e17f4c64b1239e172ba7dde07b6d0a606fb5dd6e262ccc383ce9"
+    },
+    {
+      "id": "modules\\roof_6_slate.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 3184,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "94c2a6c16e2fc0ab28d1bec0d4c342c80db44c1b973b4317c4be040ae9cfbeda"
+    },
+    {
+      "id": "modules\\roof_6_terracotta.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 3184,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "9e07e81f70f1d397c141fcbcbacfdf2f0a9b036ad758e37f3bd6e6438452e99a"
+    },
+    {
+      "id": "modules\\roof_6_thatch.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 1464,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "ea1b84054af82d2b25bb76a5bedbd191715f5014e3da2b56d532a36f7467aaed"
+    },
+    {
+      "id": "modules\\roof_8_slate.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 3820,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "35930ec36a9187c2f84c82e6a5555e9732d8d5f0247ec26203e37a5ab1c974b6"
+    },
+    {
+      "id": "modules\\roof_8_terracotta.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 3820,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "b255a43f9903befcac205ac33b807f215b938d9c563014436fe5d736000cf040"
+    },
+    {
+      "id": "modules\\roof_8_thatch.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 1464,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "04e84670be4062f6465229f8f98c6a93d5fefb707f19171a44d357a53efc4ab9"
+    },
+    {
+      "id": "modules\\roof_low_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 3820,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "0f94b075481916de6726e0571d684282d0c2657e36734f04d4a5c3db8aaf5b5e"
+    },
+    {
+      "id": "modules\\shed_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 1174,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "a4c2cda5f231366c690de5ad617929ebc06fe09f2ebb518e7f5ac8df01be4df4"
+    },
+    {
+      "id": "modules\\shelf_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 308,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "039f8eaa422a3a4f66978173832114227f2c2ef4dfca6a63468bd56619ca6d83"
+    },
+    {
+      "id": "modules\\sign_general.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 108,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "9293e1f02294c8a97e7f58d36c39cae37ad81d109c402eb4b28bf1ceb0e79113"
+    },
+    {
+      "id": "modules\\sign_guard.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 104,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "b5efa442a6f1ffc4d3c165e753b5c9a88320ee354a5a6d9a7da1df75b596cdd1"
+    },
+    {
+      "id": "modules\\sign_smithy.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 116,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "3ff496345bd4e71972dd6a89cb238ecdb03984bae5f006590405f21bc932df7e"
+    },
+    {
+      "id": "modules\\sign_tailor.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 368,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "44bba6d35b5dc9ceba0b13d88b0bb76534e45a81bff067bde040e24bba6a1afc"
+    },
+    {
+      "id": "modules\\sign_tavern.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 212,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "152ae137475e7071625b2256d656ab4b3589fb39a99bea975c0c952ee25e71b6"
+    },
+    {
+      "id": "modules\\stairs_34.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 1364,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "f740ef339447d14f6fc052caec768e88d6a945fb73f89a98e3951a62e0ff5a8f"
+    },
+    {
+      "id": "modules\\stone_sdf.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 344,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "520bb6508cdf6b1a78c4d405da4cbab111b4bde6e9e52f2c1380863ef72c2afd"
+    },
+    {
+      "id": "modules\\thatch_end_4.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 260,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "85a04675f1cc225701ec2b610fc15e32625468d9ea8d0cd17222575928460f73"
+    },
+    {
+      "id": "modules\\thatch_end_6.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 260,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "aef70e6fb4ed3837d47ee0f9f9fdbd3f16643307fa615fc07e1d9c52fc0a563e"
+    },
+    {
+      "id": "modules\\thatch_end_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 260,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "e041002d5c2c7c59b93bdbede069e87d5a00f7016701963c8913cc9d63c7a296"
+    },
+    {
+      "id": "modules\\thatch_gable_4.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 176,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "d62621ee80583eb6adb0e7cea6af1bc0d557645db6935d405b3559bda91db0d2"
+    },
+    {
+      "id": "modules\\thatch_gable_6.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 176,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "1d2f5f902a7f22cf3b1ce632c0c54db2e2aec0d983d0e2181fe4582ffd970b14"
+    },
+    {
+      "id": "modules\\thatch_gable_8.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 176,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "a01d6e6bd90aac43352854c9b82705c0cc33e4cf51d5884b2f1a8d5773a074b1"
+    },
+    {
+      "id": "modules\\tower_cap.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 19800,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "298ee52d9383fff4e3ae116e422be8d8582fb64fde8fc6fb7c30d4502d83e998"
+    },
+    {
+      "id": "modules\\wall_door_plaster.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 396,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "052ec61b517d034ef7a5d1443893c2225a1241d69ea6d3137ed176a04d74620d"
+    },
+    {
+      "id": "modules\\wall_door_plaster_ochre.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 396,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "3be20675835d767ed79a9d3290085b4cc85f522a1cde363de64fff72575c15df"
+    },
+    {
+      "id": "modules\\wall_door_plaster_rose.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 396,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "814daee691e668200553d3217955df8f31a82ddf26a2ce2cc1154272451e505c"
+    },
+    {
+      "id": "modules\\wall_door_stone.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 396,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "58bae4d8e567caf3113eb1729cd7f3aa622f2cf22f1d36182f6949307f44a94f"
+    },
+    {
+      "id": "modules\\wall_plain_1.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 220,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "935ad10d37f58e705d7d4a8e7b3ada67d311f01570e5181d4c58d5be6e2c2164"
+    },
+    {
+      "id": "modules\\wall_plain_2.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 264,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "8b43a0ccbdbf88840d1f0635748f45259d9e33a21b2f964ac7df04a02fb371a4"
+    },
+    {
+      "id": "modules\\wall_window_plaster.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 352,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "5a1fad7927204f9163868e70e022068bb80ae512f671a8413c2cc501667848ec"
+    },
+    {
+      "id": "modules\\wall_window_plaster_ochre.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 352,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "7a67460328702db3aa14733c260b9f7cbc886219cefd315b0e3a1d08221ac037"
+    },
+    {
+      "id": "modules\\wall_window_plaster_rose.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 352,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "d65d156283ec577b4c588ac2940bf9f3c20e4d4dc8495a68a5659f89bb2d55c6"
+    },
+    {
+      "id": "modules\\wall_window_stone.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 352,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "1ceebc4eb7b52674649a42911c706cde351a6159a91ab026750da6458c58c927"
+    },
+    {
+      "id": "modules\\window.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 760,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "75d44e9e4133a3a37ddb17a0327a4df2901296cadc56a9af97fae030ce11a11f"
+    },
+    {
+      "id": "modules\\worktable.glb",
+      "check": "GLB actual geometry and lit PBR",
+      "passed": true,
+      "triangles": 232,
+      "degenerate": 0,
+      "uv": true,
+      "lit": true,
+      "glass_transparent": true,
+      "sha256": "a2585134be110eec8e2bf12a8bbe8b32761972832687c432108424af48a45256"
+    }
+  ],
+  "scope": "Actual texels and binary GLB primitives. Performance and traversal are separate runtime observations."
+}

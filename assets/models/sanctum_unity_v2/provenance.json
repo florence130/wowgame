@@ -1,0 +1,13 @@
+{
+  "version": "sanctum-mmo-clearance-dressing-20261011",
+  "source": "Unity 2022.3 saved polygon Mesh assets; Dungeon Architect 1.22.0 painted footprint / EmitMarkers",
+  "cells": 1223,
+  "markers": 2139,
+  "source_meshes": 147,
+  "groups": 7,
+  "materials": 11,
+  "source_sha256": "a42b1095e4c51bb55739a982a3c5f0d21092a2628eb6ffea3177b4f982a54f5c",
+  "glb_sha256": "59eec0955fc5ee49d4359e30f63e5c5602f0a7983539a7e48458487a37b9e48f",
+  "bytes": 10559180,
+  "unity_scene": ".local/sanctum_unity_workshop/UnityProject/Assets/SanctumWorkshop/Scenes/WindwhisperSanctumSpatial.unity"
+}

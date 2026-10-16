@@ -1,0 +1,332 @@
+{
+ "T01_dormer": {
+  "zh": "老虎窗",
+  "size": [
+   3.44,
+   3.25,
+   3.37
+  ],
+  "min": [
+   -1.72,
+   -0.6,
+   -0.15
+  ],
+  "tris": 812,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "T02_chimney": {
+  "zh": "石烟囱",
+  "size": [
+   1.7,
+   1.7,
+   5.86
+  ],
+  "min": [
+   -0.85,
+   -0.85,
+   0.0
+  ],
+  "tris": 368,
+  "methods": [
+   "array",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "simple_deform",
+   "vertex"
+  ]
+ },
+ "T03_door": {
+  "zh": "拱门单元",
+  "size": [
+   4.0,
+   4.2,
+   4.41
+  ],
+  "min": [
+   -2.0,
+   -1.68,
+   -0.01
+  ],
+  "tris": 780,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "T04_porch": {
+  "zh": "门廊",
+  "size": [
+   4.64,
+   4.78,
+   5.85
+  ],
+  "min": [
+   -2.32,
+   -4.51,
+   -0.01
+  ],
+  "tris": 1138,
+  "methods": [
+   "array",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "T05_bay": {
+  "zh": "凸窗",
+  "size": [
+   4.1,
+   2.05,
+   4.94
+  ],
+  "min": [
+   -2.05,
+   -1.95,
+   0.12
+  ],
+  "tris": 152,
+  "methods": [
+   "mirror",
+   "profile_extrude",
+   "solidify"
+  ]
+ },
+ "T06_barn_door": {
+  "zh": "双开谷仓门",
+  "size": [
+   3.94,
+   0.57,
+   4.74
+  ],
+  "min": [
+   -1.97,
+   -0.4,
+   0.0
+  ],
+  "tris": 538,
+  "methods": [
+   "array",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw"
+  ]
+ },
+ "T07_tower_roof": {
+  "zh": "塔楼锥顶",
+  "size": [
+   5.52,
+   5.52,
+   5.65
+  ],
+  "min": [
+   -2.76,
+   -2.76,
+   0.0
+  ],
+  "tris": 302,
+  "methods": [
+   "profile_extrude",
+   "screw"
+  ]
+ },
+ "T08a_ivy": {
+  "zh": "常春藤",
+  "size": [
+   0.86,
+   0.29,
+   3.54
+  ],
+  "min": [
+   -0.41,
+   -0.61,
+   -0.0
+  ],
+  "tris": 2620,
+  "methods": [
+   "array",
+   "curve_bevel",
+   "vertex"
+  ]
+ },
+ "T08b_bush": {
+  "zh": "灌木",
+  "size": [
+   1.72,
+   1.58,
+   0.94
+  ],
+  "min": [
+   -0.86,
+   -0.79,
+   0.0
+  ],
+  "tris": 4992,
+  "methods": [
+   "array",
+   "screw",
+   "vertex"
+  ]
+ },
+ "T08c_flowerbed": {
+  "zh": "花坛",
+  "size": [
+   2.67,
+   0.95,
+   1.14
+  ],
+  "min": [
+   -1.32,
+   -0.47,
+   0.0
+  ],
+  "tris": 2820,
+  "methods": [
+   "array",
+   "mirror",
+   "profile_extrude",
+   "vertex"
+  ]
+ },
+ "T08d_grass": {
+  "zh": "草丛",
+  "size": [
+   1.12,
+   1.15,
+   0.71
+  ],
+  "min": [
+   -0.52,
+   -0.62,
+   -0.0
+  ],
+  "tris": 2772,
+  "methods": [
+   "array",
+   "vertex"
+  ]
+ },
+ "T09_fence": {
+  "zh": "栅栏+小门",
+  "size": [
+   4.79,
+   0.18,
+   1.42
+  ],
+  "min": [
+   -0.09,
+   -0.09,
+   0.0
+  ],
+  "tris": 340,
+  "methods": [
+   "array",
+   "curve_bevel",
+   "profile_extrude"
+  ]
+ },
+ "T10_well": {
+  "zh": "石井",
+  "size": [
+   3.04,
+   4.14,
+   4.53
+  ],
+  "min": [
+   -1.52,
+   -2.07,
+   -0.02
+  ],
+  "tris": 1472,
+  "methods": [
+   "array",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "solidify",
+   "vertex"
+  ]
+ },
+ "T11_stall": {
+  "zh": "摊位",
+  "size": [
+   3.8,
+   2.48,
+   3.34
+  ],
+  "min": [
+   -1.9,
+   -2.42,
+   0.0
+  ],
+  "tris": 588,
+  "methods": [
+   "array",
+   "mirror",
+   "profile_extrude",
+   "screw"
+  ]
+ },
+ "T12_window": {
+  "zh": "窗户单元",
+  "size": [
+   4.0,
+   0.94,
+   3.6
+  ],
+  "min": [
+   -2.0,
+   -0.64,
+   0.0
+  ],
+  "tris": 1300,
+  "methods": [
+   "array",
+   "bridge",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude",
+   "screw",
+   "solidify"
+  ]
+ },
+ "T13_sign": {
+  "zh": "店招",
+  "size": [
+   0.24,
+   2.15,
+   1.54
+  ],
+  "min": [
+   -0.1,
+   -1.9,
+   1.31
+  ],
+  "tris": 580,
+  "methods": [
+   "array",
+   "curve_bevel",
+   "mirror",
+   "profile_extrude"
+  ]
+ }
+}

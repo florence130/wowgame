@@ -1,0 +1,1991 @@
+{
+	"skills": {
+		"pd_sweeping_oath": {
+			"name": "Sweeping Oath",
+			"class": "warrior",
+			"requires_spec": "paladin",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "heroic_strike",
+			"color": "#d8d2c4ff",
+			"desc": "Melee sweep: windup 0.2 s, recovery 0.28 s, 5 s cooldown. Needs a shield and a live enemy within 2.4 m. Hits up to 4 enemies in a frontal 3.5 m arc for 16-22 flat Physical damage (no weapon or Attack Power scaling) and adds +1 Holy Power once, however many are hit. Carries threat bonus 45. It does not grant Oath of the Shield, so a following Shield Bash gets no bonus Holy Power. Trade-off: low damage per target and only 1 Holy Power; Oath Cut into Shield Bash stays the better single-target build.",
+			"rotation_role": "Multi-target Holy Power builder",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.2,
+			"recovery": 0.28,
+			"cd": 5.0,
+			"animation": "slash",
+			"requires": {
+				"shield": true
+			},
+			"threat_bonus": 45,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 3.5,
+					"frontal": true,
+					"min": 16,
+					"max": 22,
+					"max_targets": 4
+				},
+				{
+					"type": "gauge",
+					"gauge": "holy_power",
+					"add": 1.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"pd_hallowed_verdict": {
+			"name": "Hallowed Verdict",
+			"class": "warrior",
+			"requires_spec": "paladin",
+			"school": "light",
+			"target": "enemy",
+			"icon": "heroic_strike",
+			"color": "#fff1b0ff",
+			"desc": "Committed finisher: windup 0.4 s, recovery 0.4 s, 10 s cooldown, spends 5 Holy Power (the full bar). Needs a shield and a live enemy within 3 m. Releases a 4.5 m burst around you that hits up to 5 enemies for 30-38 flat Light damage each and heals you for 5% of max Health. Carries threat bonus 60. Opportunity cost: it takes the whole bar, which is a Radiant Strike (3 Holy Power) plus 2 more; per Holy Power it only beats Radiant Strike against roughly 2 or more enemies.",
+			"rotation_role": "Multi-target Holy Power payoff",
+			"gcd": 0.7,
+			"range": 3.0,
+			"cost": 0,
+			"windup": 0.4,
+			"recovery": 0.4,
+			"cd": 10.0,
+			"animation": "shield",
+			"gauge_cost": {
+				"gauge": "holy_power",
+				"amount": 5.0
+			},
+			"requires": {
+				"shield": true
+			},
+			"threat_bonus": 60,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 4.5,
+					"min": 30,
+					"max": 38,
+					"max_targets": 5
+				},
+				{
+					"type": "heal_self_pct",
+					"pct": 0.05
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"pd_bastion_ward": {
+			"name": "Bastion Ward",
+			"class": "warrior",
+			"requires_spec": "paladin",
+			"school": "light",
+			"target": "self",
+			"icon": "shield_wall",
+			"color": "#fff1b0ff",
+			"desc": "Off-GCD group defense, instant, 24 s cooldown, spends 2 Holy Power. Needs a shield. For 6 s, allies within 8 m take 10% less damage but move 12% slower. Opportunity cost: 2 Holy Power is two thirds of a Radiant Strike, and the slow makes repositioning harder during the window. It reduces damage only; it is not invulnerability.",
+			"rotation_role": "Group defensive cooldown",
+			"gcd": 0.0,
+			"range": 8.0,
+			"cost": 0,
+			"cd": 24.0,
+			"gauge_cost": {
+				"gauge": "holy_power",
+				"amount": 2.0
+			},
+			"requires": {
+				"shield": true
+			},
+			"effects": [
+				{
+					"type": "party_aura",
+					"radius": 8.0,
+					"aura": {
+						"id": "pd_bastion_ward",
+						"name": "Bastion Ward",
+						"icon": "shield_wall",
+						"dur": 6.0,
+						"type": "buff",
+						"mods": {
+							"dmg_taken": -0.1,
+							"speed": -0.12
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"pd_rebuke": {
+			"name": "Rebuke",
+			"class": "warrior",
+			"requires_spec": "paladin",
+			"school": "light",
+			"target": "enemy",
+			"icon": "taunt",
+			"color": "#fff1b0ff",
+			"desc": "Off-GCD shield interrupt, instant, 12 s cooldown. Needs a shield and an enemy within 3 m. Interrupts the target's cast and locks it out for 3 s. It costs no Holy Power and generates none, so its only price is the cooldown and the need to stand in reach.",
+			"rotation_role": "Interrupt",
+			"gcd": 0.0,
+			"range": 3.0,
+			"cost": 0,
+			"cd": 12.0,
+			"requires": {
+				"shield": true
+			},
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 3.0
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"bk_reaping_cleave": {
+			"name": "Reaping Cleave",
+			"class": "warrior",
+			"requires_spec": "berserker",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "slash",
+			"color": "#d8d2c4ff",
+			"desc": "Melee cleave: windup 0.22 s, recovery 0.28 s, 4 s cooldown. Needs a live enemy within 2.4 m. Hits up to 5 enemies in a frontal 3.5 m arc for 16-22 flat Physical damage (no weapon scaling) and adds +8 Fury once. It neither uses nor consumes Flow, so Trade-off: it is a weaker Fury source than Rend Slash (+12 Fury, +6 more with Flow); pick it when 3 or more enemies stand in front of you.",
+			"rotation_role": "Multi-target Fury builder",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.22,
+			"recovery": 0.28,
+			"cd": 4.0,
+			"animation": "slash",
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 3.5,
+					"frontal": true,
+					"min": 16,
+					"max": 22,
+					"max_targets": 5
+				},
+				{
+					"type": "gauge",
+					"gauge": "fury",
+					"add": 8.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"bk_blood_cyclone": {
+			"name": "Blood Cyclone",
+			"class": "warrior",
+			"requires_spec": "berserker",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "mortal_strike",
+			"color": "#d8d2c4ff",
+			"desc": "Committed spender: windup 0.36 s, recovery 0.38 s, 10 s cooldown, spends 40 Fury. Needs a live enemy within 2.4 m. Spins for 30-38 flat Physical damage to up to 5 enemies within 4 m (no weapon scaling) and grants Flow for 5 s, so the next Rend Slash gets its bonus. Trade-off: it costs 10 more Fury than Bloodthirst and has no lifesteal, so it only beats Bloodthirst against about 2 or more enemies.",
+			"rotation_role": "Multi-target Fury spender",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.36,
+			"recovery": 0.38,
+			"cd": 10.0,
+			"animation": "heavy",
+			"gauge_cost": {
+				"gauge": "fury",
+				"amount": 40.0
+			},
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 4.0,
+					"min": 30,
+					"max": 38,
+					"max_targets": 5
+				},
+				{
+					"type": "self_aura",
+					"aura": {
+						"dur": 5.0,
+						"icon": "arcane_intellect",
+						"id": "bk_flow",
+						"mods": {},
+						"type": "buff"
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"bk_grit": {
+			"name": "Gritted Teeth",
+			"class": "warrior",
+			"requires_spec": "berserker",
+			"school": "physical",
+			"target": "self",
+			"icon": "shield_wall",
+			"color": "#d8d2c4ff",
+			"desc": "Off-GCD defense, instant, 18 s cooldown, spends 25 Fury. For 4 s you take 25% less damage. Opportunity cost: 25 Fury is most of a Bloodthirst (30), and you cannot cast it below 25 Fury. Pairing it with Frenzy (which adds 10% damage taken) offsets part of Frenzy's risk. It reduces damage only; it is not invulnerability.",
+			"rotation_role": "Self defensive cooldown",
+			"gcd": 0.0,
+			"range": 2.4,
+			"cost": 0,
+			"cd": 18.0,
+			"gauge_cost": {
+				"gauge": "fury",
+				"amount": 25.0
+			},
+			"effects": [
+				{
+					"type": "self_aura",
+					"aura": {
+						"id": "bk_grit",
+						"name": "Gritted Teeth",
+						"icon": "shield_wall",
+						"dur": 4.0,
+						"type": "buff",
+						"mods": {
+							"dmg_taken": -0.25
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"bk_pummel": {
+			"name": "Pummel",
+			"class": "warrior",
+			"requires_spec": "berserker",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "execute_slash",
+			"color": "#d8d2c4ff",
+			"desc": "Off-GCD melee interrupt: windup 0.12 s, recovery 0.18 s, 12 s cooldown. Needs actual contact with an enemy within 2.4 m. Interrupts the target's cast and locks it out for 3 s, and adds +8 Fury. Trade-off: it costs no Fury, but on an enemy that is not casting it only yields the Fury for a 12 s cooldown.",
+			"rotation_role": "Interrupt",
+			"gcd": 0.0,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.12,
+			"recovery": 0.18,
+			"cd": 12.0,
+			"animation": "slash",
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 3.0
+				},
+				{
+					"type": "gauge",
+					"gauge": "fury",
+					"add": 8.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"dm_blizzard_burst": {
+			"name": "Blizzard Burst",
+			"class": "mage",
+			"requires_spec": "dark_mage",
+			"school": "frost",
+			"target": "enemy",
+			"icon": "frostbolt",
+			"color": "#89d4efff",
+			"desc": "1.4 s cast, 8 s cooldown, costs 10% max mana, range 28 m. Frost burst centered on the target: up to 5 enemies within 4.5 m take 15-20 Frost damage (Spell Power coefficient 0.12) and are chilled 20% slower for 5 s. Adds +1 Ice Mark and returns 4% mana. Trade-off: a long cast for only +1 Ice Mark; Frost Spike gives +2 Ice Marks and 28% mana back on one target.",
+			"rotation_role": "Multi-target Ice Mark builder",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"cast": 1.4,
+			"cd": 8.0,
+			"cost_pct_max": 0.1,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "target",
+					"radius": 4.5,
+					"min": 15,
+					"max": 20,
+					"coef": 0.12,
+					"max_targets": 5,
+					"aura": {
+						"id": "dm_chilled",
+						"name": "Chilled",
+						"icon": "frostbolt",
+						"dur": 5.0,
+						"type": "debuff",
+						"mods": {
+							"speed": -0.2
+						}
+					}
+				},
+				{
+					"type": "gauge",
+					"gauge": "ice_mark",
+					"add": 1.0,
+					"when": {}
+				},
+				{
+					"type": "energize",
+					"pct": 0.04
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"dm_umbral_nova": {
+			"name": "Umbral Nova",
+			"class": "mage",
+			"requires_spec": "dark_mage",
+			"school": "shadow",
+			"target": "enemy",
+			"icon": "mind_blast",
+			"color": "#9c76c5ff",
+			"desc": "Instant, 6 s cooldown, spends 3 Ember and 10% max mana, range 28 m. Shadow release centered on the target: up to 5 enemies within 4.5 m take 34-42 Shadow damage (Spell Power coefficient 0.3) and you recover 4% mana. Trade-off: Void Pulse (also 3 Ember) deals 50-60 to one target on a 4 s cooldown, so Nova only pays off against roughly 2 or more enemies.",
+			"rotation_role": "Multi-target Ember spender",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"cd": 6.0,
+			"gauge_cost": {
+				"gauge": "ember",
+				"amount": 3.0
+			},
+			"cost_pct_max": 0.1,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "target",
+					"radius": 4.5,
+					"min": 34,
+					"max": 42,
+					"coef": 0.3,
+					"max_targets": 5
+				},
+				{
+					"type": "energize",
+					"pct": 0.04
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"dm_frost_ward": {
+			"name": "Frost Ward",
+			"class": "mage",
+			"requires_spec": "dark_mage",
+			"school": "frost",
+			"target": "self",
+			"icon": "pwshield",
+			"color": "#89d4efff",
+			"desc": "Off-GCD defense, instant, 18 s cooldown, spends 2 Ice Mark. Grants an absorb shield of 7% (absorb_pct 0.07) for 6 s. Opportunity cost: the 2 Ice Marks would otherwise shorten your next two fire casts by 30% each, and you must hold 2 Ice Marks to cast it. It absorbs damage only; it is not invulnerability.",
+			"rotation_role": "Self defensive cooldown",
+			"gcd": 0.0,
+			"range": 28.0,
+			"cost": 0,
+			"cd": 18.0,
+			"gauge_cost": {
+				"gauge": "ice_mark",
+				"amount": 2.0
+			},
+			"effects": [
+				{
+					"type": "self_aura",
+					"aura": {
+						"id": "dm_frost_ward",
+						"name": "Frost Ward",
+						"icon": "pwshield",
+						"dur": 6.0,
+						"type": "buff",
+						"absorb_pct": 0.07,
+						"mods": {}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"dm_scorch": {
+			"name": "Scorch",
+			"class": "mage",
+			"requires_spec": "dark_mage",
+			"school": "fire",
+			"target": "enemy",
+			"icon": "fireball",
+			"color": "#ff9b54ff",
+			"desc": "Instant, 6 s cooldown, costs 8% max mana, range 28 m. Deals 10-14 Fire damage (Spell Power coefficient 0.15) plus an 8 s burn of 5 Fire damage every 2 s, and adds +1 Ember. It has no cast time, so it neither uses nor spends Ice Marks. Trade-off: about 34 total damage for 8% mana is far below Flame Bolt, so it is the option for moving or for keeping Ember flowing while Ice Marks are held.",
+			"rotation_role": "Instant mobile Ember builder",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"cd": 6.0,
+			"cost_pct_max": 0.08,
+			"projectile": {
+				"color": "#f9a04bff",
+				"size": 0.14,
+				"speed": 38.0
+			},
+			"effects": [
+				{
+					"type": "damage",
+					"coef": 0.15,
+					"min": 10.0,
+					"max": 14.0
+				},
+				{
+					"type": "aura",
+					"aura": {
+						"id": "dm_scorch",
+						"name": "Scorch",
+						"icon": "fireball",
+						"dur": 8.0,
+						"type": "debuff",
+						"tick": {
+							"dmg": 5,
+							"interval": 2.0,
+							"school": "fire"
+						}
+					}
+				},
+				{
+					"type": "gauge",
+					"gauge": "ember",
+					"add": 1.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"el_riptide_ring": {
+			"name": "Riptide Ring",
+			"class": "mage",
+			"requires_spec": "elementalist",
+			"school": "water",
+			"target": "enemy",
+			"icon": "renew",
+			"color": "#63c2dbff",
+			"desc": "0.9 s cast, 10 s cooldown, costs 6% max mana. Needs a live enemy within 10 m. Water ring centered on you: up to 5 enemies within 4.5 m take 15-19 Water damage (Spell Power coefficient 0.1) and gain Wet (15% slower, 8 s). Adds +2 Tide. Trade-off: it is self-centered, so you must stand near the pack, with a longer cast and cooldown than Surge, which is ranged but adds only +1 Tide.",
+			"rotation_role": "Multi-target Tide builder",
+			"gcd": 0.85,
+			"range": 10.0,
+			"cost": 0,
+			"cast": 0.9,
+			"cd": 10.0,
+			"cost_pct_max": 0.06,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 4.5,
+					"min": 15,
+					"max": 19,
+					"coef": 0.1,
+					"max_targets": 5,
+					"aura": {
+						"dur": 8.0,
+						"icon": "renew",
+						"id": "el_wet",
+						"mods": {
+							"speed": -0.15
+						},
+						"type": "debuff"
+					}
+				},
+				{
+					"type": "gauge",
+					"gauge": "tide",
+					"add": 2.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"el_overload": {
+			"name": "Overload",
+			"class": "mage",
+			"requires_spec": "elementalist",
+			"school": "lightning",
+			"target": "enemy",
+			"icon": "thunder_strike",
+			"color": "#e8e26aff",
+			"desc": "1.5 s cast, 12 s cooldown, spends 4 Tide and 12% max mana, range 28 m. Deals 74-88 Lightning damage (Spell Power coefficient 0.5), 25% more against Wet targets, and grants Return for 5 s so the next Water Bolt casts at half time. Opportunity cost: 4 of your 5 Tide, enough for two Lightning bolts (30-38 each), so use it when Wet is up and you can hold the Tide.",
+			"rotation_role": "Single-target Tide payoff",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"cast": 1.5,
+			"cd": 12.0,
+			"gauge_cost": {
+				"gauge": "tide",
+				"amount": 4.0
+			},
+			"cost_pct_max": 0.12,
+			"projectile": {
+				"color": "#f2ee8aff",
+				"size": 0.18,
+				"speed": 40.0
+			},
+			"effects": [
+				{
+					"type": "damage",
+					"coef": 0.5,
+					"min": 74.0,
+					"max": 88.0,
+					"bonus_mul": 1.25,
+					"bonus_when": {
+						"target_aura": "el_wet"
+					}
+				},
+				{
+					"type": "self_aura",
+					"aura": {
+						"dur": 5.0,
+						"icon": "arcane_intellect",
+						"id": "el_return",
+						"mods": {},
+						"type": "buff"
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"el_static_snare": {
+			"name": "Static Snare",
+			"class": "mage",
+			"requires_spec": "elementalist",
+			"school": "lightning",
+			"target": "enemy",
+			"icon": "thunder_strike",
+			"color": "#e8e26aff",
+			"desc": "0.5 s cast, 24 s cooldown, spends 1 Tide and 5% max mana, range 24 m. Deals 6-9 Lightning damage (Spell Power coefficient 0.08). If the target is Wet it is rooted for 2.5 s; if it is not Wet it is slowed 25% for 3 s instead. Bosses are immune to the root (hard control) and take only the damage. Trade-off: you must set up Wet with Water Bolt or Surge first, and the 24 s cooldown is long.",
+			"rotation_role": "Conditional crowd control",
+			"gcd": 0.85,
+			"range": 24.0,
+			"cost": 0,
+			"cast": 0.5,
+			"cd": 24.0,
+			"gauge_cost": {
+				"gauge": "tide",
+				"amount": 1.0
+			},
+			"cost_pct_max": 0.05,
+			"effects": [
+				{
+					"type": "damage",
+					"coef": 0.08,
+					"min": 6.0,
+					"max": 9.0
+				},
+				{
+					"type": "aura",
+					"aura": {
+						"id": "el_static_snare",
+						"name": "Static Snare",
+						"icon": "thunder_strike",
+						"dur": 2.5,
+						"type": "debuff",
+						"root": true
+					},
+					"when": {
+						"target_aura": "el_wet"
+					}
+				},
+				{
+					"type": "aura",
+					"aura": {
+						"id": "el_static_drag",
+						"name": "Static Drag",
+						"icon": "thunder_strike",
+						"dur": 3.0,
+						"type": "debuff",
+						"mods": {
+							"speed": -0.25
+						}
+					},
+					"when": {
+						"no_target_aura": "el_wet"
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"el_sea_mist": {
+			"name": "Sea Mist",
+			"class": "mage",
+			"requires_spec": "elementalist",
+			"school": "water",
+			"target": "self",
+			"icon": "wind",
+			"color": "#63c2dbff",
+			"desc": "Off-GCD group utility, instant, 22 s cooldown, spends 1 Tide and 3% max mana. For 6 s allies within 10 m move 10% faster and take 6% less damage. Opportunity cost: the Tide is half a Lightning, and the effect is small, so it is for repositioning and soak windows rather than raw safety.",
+			"rotation_role": "Group mobility and mitigation",
+			"gcd": 0.0,
+			"range": 10.0,
+			"cost": 0,
+			"cd": 22.0,
+			"gauge_cost": {
+				"gauge": "tide",
+				"amount": 1.0
+			},
+			"cost_pct_max": 0.03,
+			"effects": [
+				{
+					"type": "party_aura",
+					"radius": 10.0,
+					"aura": {
+						"id": "el_sea_mist",
+						"name": "Sea Mist",
+						"icon": "sprint",
+						"dur": 6.0,
+						"type": "buff",
+						"mods": {
+							"speed": 0.1,
+							"dmg_taken": -0.06
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"wh_dawn_bloom": {
+			"name": "Dawn Bloom",
+			"class": "priest",
+			"requires_spec": "radiant",
+			"school": "light",
+			"target": "self",
+			"icon": "renew",
+			"color": "#fff1b0ff",
+			"desc": "1.2 s cast, 14 s cooldown, spends 2 Bloom and 10% max mana. Allies within 10 m receive Dawn Bloom for 9 s: every 3 s they heal for 2% of max Health, and each effective healing tick also restores 0.6% of your max mana (caster_power_pct_on_heal). Opportunity cost: 2 of your 3 Bloom, so Pure Light (which needs 3 for its discount) is delayed until you rebuild. It only heals over time, so it is wrong against burst damage.",
+			"rotation_role": "Multi-target heal over time",
+			"gcd": 0.85,
+			"range": 10.0,
+			"cost": 0,
+			"cast": 1.2,
+			"cd": 14.0,
+			"gauge_cost": {
+				"gauge": "bloom",
+				"amount": 2.0
+			},
+			"cost_pct_max": 0.1,
+			"vfx": "heal",
+			"effects": [
+				{
+					"type": "party_aura",
+					"radius": 10.0,
+					"aura": {
+						"id": "wh_dawn_bloom",
+						"name": "Dawn Bloom",
+						"icon": "renew",
+						"dur": 9.0,
+						"type": "buff",
+						"tick": {
+							"interval": 3.0,
+							"heal_pct": 0.02,
+							"caster_power_pct_on_heal": 0.006
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"wh_sanctuary_veil": {
+			"name": "Sanctuary Veil",
+			"class": "priest",
+			"requires_spec": "radiant",
+			"school": "light",
+			"target": "self",
+			"icon": "pwshield",
+			"color": "#fff1b0ff",
+			"desc": "Off-GCD group shield, instant, 28 s cooldown, costs 8% max mana. Allies within 8 m gain an absorb shield of 5% (absorb_pct 0.05) for 6 s. Trade-off: it heals nothing and builds no Bloom, so it must be cast before damage lands: use heals reactively and this one proactively.",
+			"rotation_role": "Group absorb cooldown",
+			"gcd": 0.0,
+			"range": 8.0,
+			"cost": 0,
+			"cd": 28.0,
+			"cost_pct_max": 0.08,
+			"effects": [
+				{
+					"type": "party_aura",
+					"radius": 8.0,
+					"aura": {
+						"id": "wh_sanctuary_veil",
+						"name": "Sanctuary Veil",
+						"icon": "pwshield",
+						"dur": 6.0,
+						"type": "buff",
+						"absorb_pct": 0.05
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"wh_sunlit_flash": {
+			"name": "Sunlit Flash",
+			"class": "priest",
+			"requires_spec": "radiant",
+			"school": "light",
+			"target": "friend",
+			"icon": "holy",
+			"color": "#fff1b0ff",
+			"desc": "0.6 s cast, no cooldown, costs 10% max mana, range 24 m. Heals the target for 9% of max Health. Trade-off versus Wind Mend (1.1 s cast, 4% mana, 10% heal and +1 Bloom on an effective heal): Flash is nearly twice as fast but costs 2.5 times the mana and builds no Bloom.",
+			"rotation_role": "Fast mana-expensive heal",
+			"gcd": 0.85,
+			"range": 24.0,
+			"cost": 0,
+			"cast": 0.6,
+			"cost_pct_max": 0.1,
+			"vfx": "heal",
+			"effects": [
+				{
+					"type": "heal_pct",
+					"pct": 0.09
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"wh_zephyr_hush": {
+			"name": "Zephyr Hush",
+			"class": "priest",
+			"requires_spec": "radiant",
+			"school": "wind",
+			"target": "enemy",
+			"icon": "wind",
+			"color": "#b8f0d8ff",
+			"desc": "Off-GCD interrupt, instant, 20 s cooldown, costs 3% max mana, range 24 m. Interrupts the target's cast and locks it out for 3 s. Opportunity cost: the 20 s cooldown and the attention it takes away from healing; save it for casts that would otherwise force emergency healing.",
+			"rotation_role": "Interrupt",
+			"gcd": 0.0,
+			"range": 24.0,
+			"cost": 0,
+			"cd": 20.0,
+			"cost_pct_max": 0.03,
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 3.0
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cl_hammer_sweep": {
+			"name": "Hammer Sweep",
+			"class": "priest",
+			"requires_spec": "shadow_priest",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "mortal_strike",
+			"color": "#d8d2c4ff",
+			"desc": "Melee sweep with the two-handed mace: windup 0.22 s, recovery 0.3 s, 5 s cooldown. Needs a live enemy within 2.4 m. Hits up to 5 enemies within 3.2 m for 15-20 flat Physical damage (no weapon scaling), adds +7 Light and +7 Bolt once, and carries threat bonus 40. Trade-off: Holy Mace gives +12 Light, +12 Bolt and threat bonus 55 on one target; Sweep gives less of each but spreads damage and threat.",
+			"rotation_role": "Multi-target dual-gauge builder",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.22,
+			"recovery": 0.3,
+			"cd": 5.0,
+			"animation": "hammer",
+			"requires": {
+				"weapon": "mace2"
+			},
+			"threat_bonus": 40,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 3.2,
+					"min": 15,
+					"max": 20,
+					"max_targets": 5
+				},
+				{
+					"type": "gauge",
+					"gauge": "light",
+					"add": 7.0,
+					"when": {}
+				},
+				{
+					"type": "gauge",
+					"gauge": "bolt",
+					"add": 7.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cl_thunder_nova": {
+			"name": "Thunder Nova",
+			"class": "priest",
+			"requires_spec": "shadow_priest",
+			"school": "lightning",
+			"target": "enemy",
+			"icon": "thunder_strike",
+			"color": "#e8e26aff",
+			"desc": "Committed lightning slam: windup 0.36 s, recovery 0.4 s, spends 50 Bolt and 50 Light, no cooldown. Needs the two-handed mace, Thunder Brand active (it consumes the Brand) and a live enemy within 2.4 m. Hits up to 5 enemies within 4.5 m for 36-44 flat Lightning damage, carries threat bonus 70 and grants Afterglow for 6 s, which lowers Light Guard and Radiant Mend costs as after Lightning Smash. Trade-off: Lightning Smash costs 40 Bolt and 40 Light for 48-58 on one target; Nova costs 10 more of each and wins against about 2 or more enemies.",
+			"rotation_role": "Multi-target dual-gauge payoff",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.36,
+			"recovery": 0.4,
+			"animation": "hammer",
+			"gauge_costs": {
+				"bolt": 50,
+				"light": 50
+			},
+			"requires": {
+				"has_aura_self": "cl_thunder_brand",
+				"weapon": "mace2"
+			},
+			"threat_bonus": 70,
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 4.5,
+					"min": 36,
+					"max": 44,
+					"max_targets": 5
+				},
+				{
+					"type": "self_aura",
+					"aura": {
+						"dur": 6.0,
+						"icon": "arcane_intellect",
+						"id": "cl_afterglow",
+						"mods": {},
+						"type": "buff"
+					}
+				},
+				{
+					"type": "consume_aura",
+					"id": "cl_thunder_brand"
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cl_storm_ward": {
+			"name": "Storm Ward",
+			"class": "priest",
+			"requires_spec": "shadow_priest",
+			"school": "lightning",
+			"target": "self",
+			"icon": "thunder_strike",
+			"color": "#e8e26aff",
+			"desc": "Off-GCD defense, instant, 16 s cooldown, spends 25 Bolt. For 4 s you take 20% less damage. Trade-off: this is the Bolt-side counterpart of Light Guard (30 Light, 15% less damage and a party absorb): it protects only you, but lets you defend without draining the Light that Radiant Mend needs. It reduces damage only; it is not invulnerability.",
+			"rotation_role": "Self defensive cooldown",
+			"gcd": 0.0,
+			"range": 2.4,
+			"cost": 0,
+			"cd": 16.0,
+			"gauge_cost": {
+				"gauge": "bolt",
+				"amount": 25.0
+			},
+			"effects": [
+				{
+					"type": "self_aura",
+					"aura": {
+						"id": "cl_storm_ward",
+						"name": "Storm Ward",
+						"icon": "thunder_strike",
+						"dur": 4.0,
+						"type": "buff",
+						"mods": {
+							"dmg_taken": -0.2
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cl_silencing_clap": {
+			"name": "Silencing Clap",
+			"class": "priest",
+			"requires_spec": "shadow_priest",
+			"school": "lightning",
+			"target": "enemy",
+			"icon": "thunder_strike",
+			"color": "#e8e26aff",
+			"desc": "Off-GCD interrupt, instant, 12 s cooldown, spends 15 Light, enemy within 5 m. Interrupts the target's cast and locks it out for 3 s. Opportunity cost: the Light competes with Radiant Mend and Light Guard, so keep at least 15 Light spare before engaging casters.",
+			"rotation_role": "Interrupt",
+			"gcd": 0.0,
+			"range": 5.0,
+			"cost": 0,
+			"cd": 12.0,
+			"gauge_cost": {
+				"gauge": "light",
+				"amount": 15.0
+			},
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 3.0
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"as_fan_of_knives": {
+			"name": "Fan of Knives",
+			"class": "rogue",
+			"requires_spec": "assassin",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "poison",
+			"color": "#d8d2c4ff",
+			"desc": "Melee flurry: windup 0.2 s, recovery 0.26 s, 6 s cooldown, costs 35 Energy. Needs dual daggers and a live enemy within 2.4 m. Hits up to 5 enemies within 3.5 m for 15-20 flat Physical damage (no weapon scaling), applies Poison to each (as exported: 12 s, 4 Nature damage every 3 s regardless of Bleed; the 5 Energy returned to you per tick requires the as_bleed aura on that target; dispellable) and adds +1 combo point. Trade-off: 35 Energy for 1 combo point is poor value on one target compared with Backstab (25 Energy, 2 combo points); it exists to spread Poison over a pack.",
+			"rotation_role": "Multi-target Poison spreader",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 35,
+			"windup": 0.2,
+			"recovery": 0.26,
+			"cd": 6.0,
+			"animation": "dual",
+			"requires": {
+				"dual_daggers": true,
+				"weapon": "dagger"
+			},
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 3.5,
+					"min": 15,
+					"max": 20,
+					"max_targets": 5,
+					"aura": {
+						"dispel": true,
+						"dur": 12.0,
+						"icon": "poison",
+						"id": "as_poison",
+						"tick": {
+							"caster_energy": 5,
+							"dmg": 4,
+							"interval": 3.0,
+							"requires_aura": "as_bleed",
+							"school": "nature"
+						},
+						"type": "debuff"
+					}
+				},
+				{
+					"type": "combo",
+					"n": 1
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"as_hamstring": {
+			"name": "Hamstring",
+			"class": "rogue",
+			"requires_spec": "assassin",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "slash",
+			"color": "#d8d2c4ff",
+			"desc": "Melee cut: windup 0.14 s, recovery 0.2 s, 8 s cooldown, costs 20 Energy. Needs dual daggers and a live enemy within 2.4 m. Weapon strike for 30% weapon damage +4, adds +1 combo point and slows the target 30% for 5 s. Trade-off: it is a weaker builder than Venomous Cut (65% weapon damage +6 and Poison) with an 8 s cooldown, so it is for keeping a runner in reach, not for damage.",
+			"rotation_role": "Slow and single combo builder",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 20,
+			"windup": 0.14,
+			"recovery": 0.2,
+			"cd": 8.0,
+			"animation": "dual",
+			"requires": {
+				"dual_daggers": true,
+				"weapon": "dagger"
+			},
+			"effects": [
+				{
+					"type": "weapon",
+					"pct": 0.3,
+					"bonus": 4.0
+				},
+				{
+					"type": "combo",
+					"n": 1
+				},
+				{
+					"type": "aura",
+					"aura": {
+						"id": "as_hamstring",
+						"name": "Hamstring",
+						"icon": "slash",
+						"dur": 5.0,
+						"type": "debuff",
+						"mods": {
+							"speed": -0.3
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"as_evasive_veil": {
+			"name": "Evasive Veil",
+			"class": "rogue",
+			"requires_spec": "assassin",
+			"school": "shadow",
+			"target": "self",
+			"icon": "shadow_strike",
+			"color": "#9c76c5ff",
+			"desc": "Off-GCD defense, instant, 20 s cooldown, costs 20 Energy. For 4 s you take 20% less damage and move 10% faster. Opportunity cost: 20 Energy is almost a Venomous Cut, which delays your next finisher. It reduces damage only; it is not invulnerability.",
+			"rotation_role": "Self defensive cooldown",
+			"gcd": 0.0,
+			"range": 2.4,
+			"cost": 20,
+			"cd": 20.0,
+			"effects": [
+				{
+					"type": "self_aura",
+					"aura": {
+						"id": "as_evasive_veil",
+						"name": "Evasive Veil",
+						"icon": "shadow_strike",
+						"dur": 4.0,
+						"type": "buff",
+						"mods": {
+							"dmg_taken": -0.2,
+							"speed": 0.1
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"as_kick": {
+			"name": "Kick",
+			"class": "rogue",
+			"requires_spec": "assassin",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "mutilate",
+			"color": "#d8d2c4ff",
+			"desc": "Off-GCD melee interrupt: windup 0.12 s, recovery 0.18 s, 12 s cooldown, costs 15 Energy. Needs dual daggers and an enemy within 2.4 m. Interrupts the target's cast and locks it out for 3 s. Opportunity cost: it builds no combo points, so each use costs 15 Energy of builder tempo.",
+			"rotation_role": "Interrupt",
+			"gcd": 0.0,
+			"range": 2.4,
+			"cost": 15,
+			"windup": 0.12,
+			"recovery": 0.18,
+			"cd": 12.0,
+			"animation": "dual",
+			"requires": {
+				"dual_daggers": true,
+				"weapon": "dagger"
+			},
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 3.0
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"ms_crescent_flurry": {
+			"name": "Crescent Flurry",
+			"class": "rogue",
+			"requires_spec": "duelist",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "slash",
+			"color": "#d8d2c4ff",
+			"desc": "Rapier sweep: windup 0.2 s, recovery 0.26 s, 6 s cooldown. Needs a rapier and a live enemy within 2.4 m. Hits up to 4 enemies in a frontal 3.2 m arc for 15-20 flat Physical damage (no weapon scaling) and adds +10 Resonance, plus another +8 Resonance if Shadow Edge is active (which it consumes). Trade-off: unlike Arcane Edge it does not grant Echo, so it is the multi-target Resonance builder but gives up the instant Shadow Bolt that Echo provides.",
+			"rotation_role": "Multi-target Resonance builder",
+			"gcd": 0.7,
+			"range": 2.4,
+			"cost": 0,
+			"windup": 0.2,
+			"recovery": 0.26,
+			"cd": 6.0,
+			"animation": "slash",
+			"requires": {
+				"weapon": "rapier"
+			},
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 3.2,
+					"frontal": true,
+					"min": 15,
+					"max": 20,
+					"max_targets": 4
+				},
+				{
+					"type": "gauge",
+					"gauge": "resonance",
+					"add": 10.0,
+					"when": {}
+				},
+				{
+					"type": "gauge",
+					"gauge": "resonance",
+					"add": 8.0,
+					"when": {
+						"self_aura": "ms_shadow_edge"
+					}
+				},
+				{
+					"type": "consume_aura",
+					"id": "ms_shadow_edge"
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"ms_counter_thrust": {
+			"name": "Counter Thrust",
+			"class": "rogue",
+			"requires_spec": "duelist",
+			"school": "physical",
+			"target": "self",
+			"icon": "shield_wall",
+			"color": "#d8d2c4ff",
+			"desc": "Off-GCD defensive timing window: instant, 9 s cooldown. Needs a rapier. For 0.5 s after use, an incoming melee hit is answered with a riposte for 22-28 damage, a 0.5 s stun (bosses are immune to stun) and +15 Resonance. The riposte effect carries weapon rapier; the receiving integrator is assumed to supply guard support that honors it (not verifiable standalone). Opportunity cost: if nothing triggers it, nothing happens and the 9 s cooldown is spent, so it rewards reading enemy windups.",
+			"rotation_role": "Defensive riposte window",
+			"gcd": 0.0,
+			"range": 2.4,
+			"cost": 0,
+			"cd": 9.0,
+			"requires": {
+				"weapon": "rapier"
+			},
+			"effects": [
+				{
+					"type": "riposte",
+					"window": 0.5,
+					"min": 22,
+					"max": 28,
+					"stun": 0.5,
+					"gauge": "resonance",
+					"gauge_add": 15,
+					"weapon": "rapier"
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"ms_dusk_chain": {
+			"name": "Dusk Chain",
+			"class": "rogue",
+			"requires_spec": "duelist",
+			"school": "shadow",
+			"target": "enemy",
+			"icon": "mind_blast",
+			"color": "#9c76c5ff",
+			"desc": "0.75 s cast (instant while Echo is active, which it consumes), 8 s cooldown, spends 35 Resonance, range 16 m. Needs a rapier. Shadow bolt for 20-26 damage (Attack Power coefficient 0.1) that chains up to 2 jumps to enemies within 5 m for 16-20 each, with falloff 0.3 per jump. Trade-off: it gives no Shadow Edge and no Resonance, and its 35 Resonance competes with Spellblade (needs 30) and Unbound (60).",
+			"rotation_role": "Multi-target Resonance spender",
+			"gcd": 0.7,
+			"range": 16.0,
+			"cost": 0,
+			"cast": 0.75,
+			"cast_by_aura": {
+				"id": "ms_echo",
+				"mul": 0.0
+			},
+			"cd": 8.0,
+			"gauge_cost": {
+				"gauge": "resonance",
+				"amount": 35.0
+			},
+			"requires": {
+				"weapon": "rapier"
+			},
+			"projectile": {
+				"color": "#aa86ccff",
+				"size": 0.14,
+				"speed": 34.0
+			},
+			"effects": [
+				{
+					"type": "damage",
+					"coef": 0.0,
+					"ap_coef": 0.1,
+					"min": 20.0,
+					"max": 26.0
+				},
+				{
+					"type": "chain",
+					"coef": 0.0,
+					"falloff": 0.3,
+					"jumps": 2,
+					"radius": 5.0,
+					"min": 16,
+					"max": 20
+				},
+				{
+					"type": "consume_aura",
+					"id": "ms_echo"
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"ms_disrupting_thrust": {
+			"name": "Disrupting Thrust",
+			"class": "rogue",
+			"requires_spec": "duelist",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "arcane_barrage",
+			"color": "#d8d2c4ff",
+			"desc": "Off-GCD thrust interrupt: windup 0.12 s, recovery 0.18 s, 14 s cooldown, enemy within 3 m. Needs a rapier. Interrupts the target's cast and locks it out for 2.5 s, then adds +8 Resonance. The lock is shorter and the cooldown longer than other jobs' interrupts, in exchange for the Resonance.",
+			"rotation_role": "Interrupt",
+			"gcd": 0.0,
+			"range": 3.0,
+			"cost": 0,
+			"windup": 0.12,
+			"recovery": 0.18,
+			"cd": 14.0,
+			"animation": "thrust",
+			"requires": {
+				"weapon": "rapier"
+			},
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 2.5
+				},
+				{
+					"type": "gauge",
+					"gauge": "resonance",
+					"add": 8.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cannon_suppressing_fire": {
+			"name": "Suppressing Fire",
+			"class": "gunner",
+			"requires_spec": "marksman",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "scatter_volley",
+			"color": "#d8d2c4ff",
+			"desc": "Ranged volley: windup 0.2 s, recovery 0.26 s, 8 s cooldown, spends 1 Ammo, range 28 m. Needs a ranged weapon. Hits up to 5 enemies within 4 m of the target for 15-20 flat Physical damage (Ranged Attack Power coefficient 0.05), slows them 25% for 4 s and adds +1 Aim. Trade-off: low damage for a round, so it is a control and Aim tool; Barrage deals 22-28 to the same pack for 2 Ammo and 2 Aim.",
+			"rotation_role": "Multi-target slow and Aim builder",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"windup": 0.2,
+			"recovery": 0.26,
+			"cd": 8.0,
+			"animation": "rifle",
+			"gauge_cost": {
+				"gauge": "ammo",
+				"amount": 1.0
+			},
+			"requires": {
+				"ranged_weapon": true
+			},
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "target",
+					"radius": 4.0,
+					"min": 15,
+					"max": 20,
+					"rap_coef": 0.05,
+					"max_targets": 5,
+					"aura": {
+						"id": "cannon_suppressed",
+						"name": "Suppressed",
+						"icon": "scatter_volley",
+						"dur": 4.0,
+						"type": "debuff",
+						"mods": {
+							"speed": -0.25
+						}
+					}
+				},
+				{
+					"type": "gauge",
+					"gauge": "aim",
+					"add": 1.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cannon_ricochet": {
+			"name": "Ricochet Shot",
+			"class": "gunner",
+			"requires_spec": "marksman",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "aether_shot",
+			"color": "#d8d2c4ff",
+			"desc": "Ranged shot: windup 0.2 s, recovery 0.28 s, 6 s cooldown, spends 1 Ammo and 1 Aim, range 28 m. Needs a ranged weapon. Fires at one target for 45% ranged weapon damage +6 (Ranged Attack Power coefficient 0.05), then ricochets for 14-18 damage to up to 2 more enemies within 5 m of the previous hit (falloff 0.3). Trade-off: it spends Aim that Burst and Barrage need (2 each) and adds no Aim itself, unlike Steady Shot.",
+			"rotation_role": "Multi-target Aim spender",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"windup": 0.2,
+			"recovery": 0.28,
+			"cd": 6.0,
+			"animation": "rifle",
+			"gauge_costs": {
+				"ammo": 1,
+				"aim": 1
+			},
+			"requires": {
+				"ranged_weapon": true
+			},
+			"projectile": {
+				"color": "#ffe0a0ff",
+				"kind": "bullet",
+				"size": 0.06,
+				"speed": 60.0
+			},
+			"effects": [
+				{
+					"type": "ranged",
+					"pct": 0.45,
+					"bonus": 6,
+					"rap_coef": 0.05
+				},
+				{
+					"type": "chain",
+					"coef": 0.0,
+					"falloff": 0.3,
+					"jumps": 2,
+					"radius": 5.0,
+					"min": 14,
+					"max": 18
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cannon_brace": {
+			"name": "Braced Stance",
+			"class": "gunner",
+			"requires_spec": "marksman",
+			"school": "physical",
+			"target": "self",
+			"icon": "steady_shot",
+			"color": "#d8d2c4ff",
+			"desc": "Off-GCD stance, instant, 14 s cooldown, spends 1 Ammo. Needs a ranged weapon. For 4 s you take 20% less damage but move 40% slower, so you hold position instead of kiting. Opportunity cost: 1 Ammo from a six-round magazine and the loss of mobility; Recoil is the movement answer to the same pressure. It reduces damage only; it is not invulnerability.",
+			"rotation_role": "Positional defensive stance",
+			"gcd": 0.0,
+			"range": 28.0,
+			"cost": 0,
+			"cd": 14.0,
+			"gauge_cost": {
+				"gauge": "ammo",
+				"amount": 1.0
+			},
+			"requires": {
+				"ranged_weapon": true
+			},
+			"effects": [
+				{
+					"type": "self_aura",
+					"aura": {
+						"id": "cannon_brace",
+						"name": "Braced Stance",
+						"icon": "steady_shot",
+						"dur": 4.0,
+						"type": "buff",
+						"mods": {
+							"dmg_taken": -0.2,
+							"speed": -0.4
+						}
+					}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"cannon_speed_load": {
+			"name": "Speed Load",
+			"class": "gunner",
+			"requires_spec": "marksman",
+			"school": "physical",
+			"target": "self",
+			"icon": "steady_shot",
+			"color": "#d8d2c4ff",
+			"desc": "0.6 s channel, 6 s cooldown, spends 1 Aim. Needs a ranged weapon and at most 4 Ammo. Quick reload that adds +2 Ammo (Reload adds +3 over a 1.2 s channel with no cooldown). You can move at 60% speed while loading. Opportunity cost: it burns 1 Aim, which delays Burst and Barrage, and it tops up less than a full reload; you must hold 1 Aim to use it.",
+			"rotation_role": "Tactical quick reload",
+			"gcd": 0.85,
+			"range": 28.0,
+			"cost": 0,
+			"channel": 0.6,
+			"ticks": 1,
+			"cd": 6.0,
+			"animation": "reload",
+			"gauge_cost": {
+				"gauge": "aim",
+				"amount": 1.0
+			},
+			"requires": {
+				"gauge_max": {
+					"ammo": 4
+				},
+				"ranged_weapon": true
+			},
+			"move_cast": true,
+			"move_cast_speed": 0.6,
+			"effects": [
+				{
+					"type": "gauge",
+					"gauge": "ammo",
+					"add": 2.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"mech_flak_burst": {
+			"name": "Flak Burst",
+			"class": "gunner",
+			"requires_spec": "gadgeteer",
+			"school": "physical",
+			"target": "enemy",
+			"icon": "aether_shot",
+			"color": "#d8d2c4ff",
+			"desc": "Ranged blast: windup 0.18 s, recovery 0.26 s, 5 s cooldown, range 16 m. Needs Mech Armor active and at most 78 Heat. Hits up to 5 enemies within 4 m of the target for 18-24 flat Physical damage (Ranged Attack Power coefficient 0.06) and adds +20 Heat. Trade-off: the Heat is the price; from empty you get about 4 casts before you must vent, and it competes with Rocket (+24 Heat, one target) and Rail (60 Heat).",
+			"rotation_role": "Multi-target Heat builder",
+			"gcd": 0.7,
+			"range": 16.0,
+			"cost": 0,
+			"windup": 0.18,
+			"recovery": 0.26,
+			"cd": 5.0,
+			"animation": "rocket",
+			"requires": {
+				"gauge_max": {
+					"heat": 78
+				},
+				"has_aura_self": "mech_armor"
+			},
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "target",
+					"radius": 4.0,
+					"min": 18,
+					"max": 24,
+					"rap_coef": 0.06,
+					"max_targets": 5
+				},
+				{
+					"type": "gauge",
+					"gauge": "heat",
+					"add": 20.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"mech_coolant_spray": {
+			"name": "Coolant Spray",
+			"class": "gunner",
+			"requires_spec": "gadgeteer",
+			"school": "frost",
+			"target": "enemy",
+			"icon": "frost",
+			"color": "#89d4efff",
+			"desc": "Frontal spray: windup 0.16 s, recovery 0.24 s, 8 s cooldown. Needs Mech Armor, at least 15 Heat and a live enemy within 5 m. Hits up to 5 enemies in a frontal 5 m cone for 15-20 flat Frost damage (no weapon scaling), slows them 25% for 4 s and removes 15 Heat. Trade-off: Vent removes 30 Heat but is a 1.2 s channel with no damage; Spray cools half as much on an 8 s cooldown, but you keep fighting and hit the whole pack.",
+			"rotation_role": "Multi-target active cooling",
+			"gcd": 0.7,
+			"range": 5.0,
+			"cost": 0,
+			"windup": 0.16,
+			"recovery": 0.24,
+			"cd": 8.0,
+			"requires": {
+				"gauge_min": {
+					"heat": 15
+				},
+				"has_aura_self": "mech_armor"
+			},
+			"effects": [
+				{
+					"type": "aoe",
+					"center": "self",
+					"radius": 5.0,
+					"frontal": true,
+					"min": 15,
+					"max": 20,
+					"max_targets": 5,
+					"aura": {
+						"id": "mech_coolant",
+						"name": "Coolant Soak",
+						"icon": "frost",
+						"dur": 4.0,
+						"type": "debuff",
+						"mods": {
+							"speed": -0.25
+						}
+					}
+				},
+				{
+					"type": "gauge",
+					"gauge": "heat",
+					"add": -15.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"mech_shield_projector": {
+			"name": "Shield Projector",
+			"class": "gunner",
+			"requires_spec": "gadgeteer",
+			"school": "arcane",
+			"target": "self",
+			"icon": "pwshield",
+			"color": "#c58bffff",
+			"desc": "Off-GCD group defense, instant, 20 s cooldown. Needs Mech Armor and at most 80 Heat. For 5 s allies within 6 m take 10% less damage, and you gain +16 Heat. Opportunity cost: 16 Heat is almost a Piston strike's 18 and can push you above the Heat limits of Rocket and Overdrive. It reduces damage only; it is not invulnerability.",
+			"rotation_role": "Group defensive cooldown paid in Heat",
+			"gcd": 0.0,
+			"range": 6.0,
+			"cost": 0,
+			"cd": 20.0,
+			"requires": {
+				"gauge_max": {
+					"heat": 80
+				},
+				"has_aura_self": "mech_armor"
+			},
+			"effects": [
+				{
+					"type": "party_aura",
+					"radius": 6.0,
+					"aura": {
+						"id": "mech_projector",
+						"name": "Shield Projector",
+						"icon": "pwshield",
+						"dur": 5.0,
+						"type": "buff",
+						"mods": {
+							"dmg_taken": -0.1
+						}
+					}
+				},
+				{
+					"type": "gauge",
+					"gauge": "heat",
+					"add": 16.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		},
+		"mech_static_pulse": {
+			"name": "Static Pulse",
+			"class": "gunner",
+			"requires_spec": "gadgeteer",
+			"school": "lightning",
+			"target": "enemy",
+			"icon": "thunder_strike",
+			"color": "#e8e26aff",
+			"desc": "Off-GCD interrupt, instant, 14 s cooldown, range 14 m. Needs Mech Armor and at most 85 Heat. Interrupts the target's cast, locks it out for 2.5 s and adds +12 Heat. Opportunity cost: the Heat, which you would otherwise spend on Rocket or Rail.",
+			"rotation_role": "Interrupt paid in Heat",
+			"gcd": 0.0,
+			"range": 14.0,
+			"cost": 0,
+			"cd": 14.0,
+			"requires": {
+				"gauge_max": {
+					"heat": 85
+				},
+				"has_aura_self": "mech_armor"
+			},
+			"effects": [
+				{
+					"type": "interrupt",
+					"lock": 2.5
+				},
+				{
+					"type": "gauge",
+					"gauge": "heat",
+					"add": 12.0,
+					"when": {}
+				}
+			],
+			"ranks": [
+				{
+					"lvl": 15
+				}
+			]
+		}
+	},
+	"patches": {},
+	"jobs": {
+		"paladin": {
+			"new_grants": [
+				"pd_sweeping_oath",
+				"pd_hallowed_verdict",
+				"pd_bastion_ward",
+				"pd_rebuke"
+			],
+			"suggested_bar": [
+				"pd_oath_cut",
+				"pd_shield_bash",
+				"pd_radiant_strike",
+				"pd_sweeping_oath",
+				"pd_hallowed_verdict",
+				"pd_riposte",
+				"pd_rebuke",
+				"pd_guard",
+				"pd_bastion_ward",
+				"pd_holy_bulwark"
+			],
+			"decision_notes": "Loop: Oath Cut (+1 Holy Power, grants Oath) then Shield Bash (+2 with Oath), then spend. Decisions: against one target spend 3 Holy Power on Radiant Strike (36-44 plus Resolve, bonus after a riposte); against a pack either keep building with Sweeping Oath (+1, 4 targets, but no Oath so Bash loses its bonus) or save the whole bar for Hallowed Verdict (5 Holy Power, 5 targets, self-heal). Defensive spending competes with offense: Guard costs 1, Bastion Ward costs 2 and slows allies 12%, Holy Bulwark costs no Holy Power but has a long cooldown. Rebuke is free and off-GCD; its only cost is staying within 3 m of a caster. Opportunity cost is always Holy Power: every point spent on protection delays the next Radiant Strike by roughly one builder."
+		},
+		"berserker": {
+			"new_grants": [
+				"bk_reaping_cleave",
+				"bk_blood_cyclone",
+				"bk_grit",
+				"bk_pummel"
+			],
+			"suggested_bar": [
+				"bk_rend_slash",
+				"bk_bloodthirst",
+				"bk_execute",
+				"bk_reaping_cleave",
+				"bk_blood_cyclone",
+				"bk_iron_charge",
+				"bk_pummel",
+				"bk_grit",
+				"bk_frenzy"
+			],
+			"decision_notes": "Loop: Rend Slash builds Fury (+12, +6 with Flow), Bloodthirst (30 Fury) grants Flow and heals, then an enhanced Rend Slash. Decisions: with 3 or more enemies swap Rend Slash for Reaping Cleave (+8 Fury, weaker but 5 targets) and Bloodthirst for Blood Cyclone (40 Fury, 5 targets, still grants Flow so the loop continues). Execute (50 Fury) stays the single-target finisher. Defense is paid in Fury: Gritted Teeth costs 25 Fury, nearly a Bloodthirst, and pairs with Frenzy's 10% extra damage taken. Pummel is free but needs contact and gives only +8 Fury. Opportunity cost is Fury tempo: every defensive or AoE swap delays the next Bloodthirst or Execute."
+		},
+		"dark_mage": {
+			"new_grants": [
+				"dm_blizzard_burst",
+				"dm_umbral_nova",
+				"dm_frost_ward",
+				"dm_scorch"
+			],
+			"suggested_bar": [
+				"dm_frost_spike",
+				"dm_ice_lance",
+				"dm_blizzard_burst",
+				"dm_flame_bolt",
+				"dm_firestorm",
+				"dm_pyroblast",
+				"dm_scorch",
+				"dm_void_pulse",
+				"dm_umbral_nova",
+				"dm_soul_siphon",
+				"dm_shadow_bolt",
+				"dm_frost_ward"
+			],
+			"decision_notes": "Loop: ice builds Ice Marks and mana, fire casts each consume one Ice Mark to cast 30% faster and build Ember, Void Pulse spends 3 Ember. Decisions: Blizzard Burst is the pack Ice Mark builder (+1, slow) but weaker than Frost Spike on one target; Umbral Nova replaces Void Pulse against 2 or more enemies; Scorch is the instant option while moving but ignores Ice Marks. Frost Ward spends 2 Ice Marks, which are exactly two discounted fire casts, so defense directly slows the fire phase. Opportunity cost is Ice Marks and Ember: every mark spent on Ward is a 30%-faster Flame Bolt not cast, and every 3 Ember spent on Nova is a single-target Void Pulse not cast."
+		},
+		"elementalist": {
+			"new_grants": [
+				"el_riptide_ring",
+				"el_overload",
+				"el_static_snare",
+				"el_sea_mist"
+			],
+			"suggested_bar": [
+				"el_water_bolt",
+				"el_surge",
+				"el_riptide_ring",
+				"el_lightning",
+				"el_chain_lightning",
+				"el_thunderstorm",
+				"el_overload",
+				"el_static_snare",
+				"el_tide_shield",
+				"el_sea_mist",
+				"el_cleanse",
+				"el_holy_beam"
+			],
+			"decision_notes": "Loop: water applies Wet and builds Tide, lightning spends Tide for bonus damage on Wet targets and grants Return, Return halves the next Water Bolt cast and gives extra Tide. Decisions: Riptide Ring (+2 Tide, self-centered) versus Surge (+1 Tide, ranged); Overload (4 Tide) versus two Lightning bolts or one Thunderstorm; Static Snare only roots a Wet target and only slows otherwise, so it rewards keeping Wet up and adds nothing against bosses' hard-control immunity. Sea Mist and Tide Shield are defensive and cost Tide. Opportunity cost is Tide: it is capped at 5, and every defensive or control point is a Lightning not cast."
+		},
+		"radiant": {
+			"new_grants": [
+				"wh_dawn_bloom",
+				"wh_sanctuary_veil",
+				"wh_sunlit_flash",
+				"wh_zephyr_hush"
+			],
+			"suggested_bar": [
+				"wh_water_blessing",
+				"wh_wind_mend",
+				"wh_pure_light",
+				"wh_luminous_wave",
+				"wh_dawn_bloom",
+				"wh_sunlit_flash",
+				"wh_sanctuary_veil",
+				"wh_cleanse",
+				"wh_zephyr_hush",
+				"wh_wind_step",
+				"wh_gale"
+			],
+			"decision_notes": "Loop: Water Blessing then Wind Mend (bonus on blessed targets, +1 Bloom per effective heal) build Bloom to 3, which makes Pure Light cheap and fast. Decisions: spend 2 Bloom on Dawn Bloom (group heal over time, 9 s) or hold 3 for Pure Light (single big heal) or 1 for Luminous Wave; Sunlit Flash is the emergency heal that costs 10% mana and builds no Bloom; Sanctuary Veil is mana-only prevention cast before a hit; Zephyr Hush trades a 20 s cooldown and healing attention for stopping a cast. Opportunity cost is Bloom and mana: Bloom caps at 3, so Dawn Bloom always delays Pure Light, and Flash drains mana that the efficient loop saves."
+		},
+		"shadow_priest": {
+			"new_grants": [
+				"cl_hammer_sweep",
+				"cl_thunder_nova",
+				"cl_storm_ward",
+				"cl_silencing_clap"
+			],
+			"suggested_bar": [
+				"cl_holy_mace",
+				"cl_hammer_sweep",
+				"cl_thunder_brand",
+				"cl_lightning_smash",
+				"cl_thunder_nova",
+				"cl_light_focus",
+				"cl_bolt_focus",
+				"cl_gauge_exchange",
+				"cl_light_guard",
+				"cl_storm_ward",
+				"cl_radiant_mend",
+				"cl_silencing_clap",
+				"cl_provoke"
+			],
+			"decision_notes": "Loop: Holy Mace builds Light and Bolt evenly, Thunder Brand (20 Bolt) enables a 40/40 Lightning Smash that grants Afterglow, Afterglow lowers the cost of Light Guard and Radiant Mend. Decisions: Hammer Sweep (+7/+7, 5 targets) instead of Holy Mace on packs; Thunder Nova (50/50, 5 targets, consumes Brand, grants Afterglow) instead of Smash on packs. Defense splits by gauge: Light Guard and Radiant Mend spend Light, Storm Ward spends Bolt, Silencing Clap spends 15 Light. Gauge Exchange and the focus buffs still steer which gauge fills. Opportunity cost: every gauge point spent on defense or interrupts delays the Brand-Smash cycle, and Nova costs 10 more of each gauge than Smash."
+		},
+		"assassin": {
+			"new_grants": [
+				"as_fan_of_knives",
+				"as_hamstring",
+				"as_evasive_veil",
+				"as_kick"
+			],
+			"suggested_bar": [
+				"as_venomous_cut",
+				"as_backstab",
+				"as_envenom",
+				"as_death_mark",
+				"as_fan_of_knives",
+				"as_hamstring",
+				"as_kick",
+				"as_evasive_veil",
+				"as_shadow_step"
+			],
+			"decision_notes": "Loop: Venomous Cut (Poison, +1 combo, +1 more with Edge) and Backstab (+2 combo) build combo points, Death Mark applies Bleed, which Poison needs to return Energy on its ticks, Envenom spends combos and grants Edge. Decisions: Fan of Knives (35 Energy, +1 combo) spreads Poison to up to 5 enemies and is poor value on one target; Hamstring (20 Energy) keeps a runner slowed 30% but is a weak builder; Evasive Veil (20 Energy) and Kick (15 Energy) are off-GCD answers that cost builder tempo. Opportunity cost is Energy: every defensive or utility use is a Venomous Cut or Backstab not cast, so the next finisher arrives later."
+		},
+		"duelist": {
+			"new_grants": [
+				"ms_crescent_flurry",
+				"ms_counter_thrust",
+				"ms_dusk_chain",
+				"ms_disrupting_thrust"
+			],
+			"suggested_bar": [
+				"ms_shadow_bolt",
+				"ms_arcane_edge",
+				"ms_unbound",
+				"ms_crescent_flurry",
+				"ms_dusk_chain",
+				"ms_spellblade",
+				"ms_counter_thrust",
+				"ms_disrupting_thrust",
+				"ms_phase_lunge"
+			],
+			"decision_notes": "Loop: Shadow Bolt (+20 Resonance, grants Shadow Edge) then Arcane Edge (bonus with Edge, +10, grants Echo), Echo makes the next Shadow Bolt instant, Unbound spends 60 Resonance, Spellblade needs 30. Decisions: Crescent Flurry builds Resonance on up to 4 enemies but grants no Echo; Dusk Chain (35 Resonance) chains Shadow damage through up to 3 enemies and is instant under Echo, competing with Spellblade (30) and Unbound (60); Counter Thrust is a 0.5 s riposte window that refunds Resonance only if the enemy hits you; Disrupting Thrust gives +8 Resonance with a shorter lock. Opportunity cost: Resonance spent on Chain is not available for Unbound or Spellblade, and a missed Counter Thrust window is a lost 9 s cooldown."
+		},
+		"marksman": {
+			"new_grants": [
+				"cannon_suppressing_fire",
+				"cannon_ricochet",
+				"cannon_brace",
+				"cannon_speed_load"
+			],
+			"suggested_bar": [
+				"cannon_steady",
+				"cannon_burst",
+				"cannon_ricochet",
+				"cannon_shotgun",
+				"cannon_suppressing_fire",
+				"cannon_barrage",
+				"cannon_speed_load",
+				"cannon_reload",
+				"cannon_brace",
+				"cannon_recoil"
+			],
+			"decision_notes": "Loop: Steady builds Aim (1 Ammo, +1 Aim), Burst and Barrage spend 2 Ammo and 2 Aim, the six-round magazine forces a manual Reload (+3 Ammo, 1.2 s). Decisions: Suppressing Fire (1 Ammo, +1 Aim, slow, 5 targets) as a pack Aim builder; Ricochet (1 Ammo, 1 Aim) spreads damage through up to 3 targets; Speed Load (0.6 s, +2 Ammo) for a faster top-up that burns 1 Aim; Braced Stance (1 Ammo) trades mobility for 20% less damage, whereas Recoil is the movement answer. Opportunity cost: Ammo is the hard cap (6), so every Brace or extra volley brings the next reload forward, and Aim spent on Ricochet or Speed Load delays Burst and Barrage."
+		},
+		"gadgeteer": {
+			"new_grants": [
+				"mech_flak_burst",
+				"mech_coolant_spray",
+				"mech_shield_projector",
+				"mech_static_pulse"
+			],
+			"suggested_bar": [
+				"mech_armor",
+				"mech_piston",
+				"mech_rocket",
+				"mech_flak_burst",
+				"mech_rail",
+				"mech_coolant_spray",
+				"mech_vent",
+				"mech_overdrive",
+				"mech_shield_projector",
+				"mech_static_pulse"
+			],
+			"decision_notes": "Loop: Piston and Rocket raise Heat (+18, +24) with bonus damage above 50 Heat, Rail spends 60 Heat and grants Cooled for an extra Piston hit, Vent (-30 Heat) is the active release, all gated by Mech Armor and Heat ceilings. Decisions: Flak Burst (+20 Heat, 5 targets) replaces Rocket on packs; Coolant Spray (-15 Heat, 5 targets, slow) lets you cool while still dealing damage; Shield Projector (+16 Heat) and Static Pulse (+12 Heat) are group defense and interrupt paid in Heat, and each can push you above the ceiling of Rocket, Piston or Overdrive. Opportunity cost is Heat headroom: every defensive or utility use shortens the safe window before a Vent, and a mistimed one forces a 1.2 s Vent channel."
+		}
+	}
+}

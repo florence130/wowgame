@@ -1,0 +1,82 @@
+[
+  {
+    "video": "video_1",
+    "source": "E:\\DOWNLOADS\\41403485769-1-192.mp4",
+    "seconds": 92.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_1_092.000s.jpg"
+  },
+  {
+    "video": "video_1",
+    "source": "E:\\DOWNLOADS\\41403485769-1-192.mp4",
+    "seconds": 115.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_1_115.000s.jpg"
+  },
+  {
+    "video": "video_1",
+    "source": "E:\\DOWNLOADS\\41403485769-1-192.mp4",
+    "seconds": 171.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_1_171.000s.jpg"
+  },
+  {
+    "video": "video_1",
+    "source": "E:\\DOWNLOADS\\41403485769-1-192.mp4",
+    "seconds": 275.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_1_275.000s.jpg"
+  },
+  {
+    "video": "video_2",
+    "source": "E:\\DOWNLOADS\\41418490820-1-192.mp4",
+    "seconds": 27.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_2_027.000s.jpg"
+  },
+  {
+    "video": "video_2",
+    "source": "E:\\DOWNLOADS\\41418490820-1-192.mp4",
+    "seconds": 42.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_2_042.000s.jpg"
+  },
+  {
+    "video": "video_2",
+    "source": "E:\\DOWNLOADS\\41418490820-1-192.mp4",
+    "seconds": 150.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_2_150.000s.jpg"
+  },
+  {
+    "video": "video_2",
+    "source": "E:\\DOWNLOADS\\41418490820-1-192.mp4",
+    "seconds": 205.0,
+    "resolution": [
+      1280,
+      720
+    ],
+    "file": "details\\video_2_205.000s.jpg"
+  }
+]

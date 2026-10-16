@@ -1,0 +1,242 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "chandelier_exported_light_sockets",
+      "passed": true,
+      "sockets": [
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              0.6000000000000001,
+              0.0,
+              -0.72
+            ],
+            "suggested_energy_watts": 18,
+            "suggested_radius_metres": 0.09,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_Chandelier.018",
+          "translation": [
+            0.6000000238418579,
+            -0.7200000286102295,
+            0
+          ]
+        },
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              0.3000000000000001,
+              0.5196152422706632,
+              -0.72
+            ],
+            "suggested_energy_watts": 18,
+            "suggested_radius_metres": 0.09,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_Chandelier.019",
+          "translation": [
+            0.30000001192092896,
+            -0.7200000286102295,
+            -0.5196152329444885
+          ]
+        },
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              -0.29999999999999993,
+              0.5196152422706632,
+              -0.72
+            ],
+            "suggested_energy_watts": 18,
+            "suggested_radius_metres": 0.09,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_Chandelier.020",
+          "translation": [
+            -0.30000001192092896,
+            -0.7200000286102295,
+            -0.5196152329444885
+          ]
+        },
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              -0.6000000000000001,
+              7.34788079488412e-17,
+              -0.72
+            ],
+            "suggested_energy_watts": 18,
+            "suggested_radius_metres": 0.09,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_Chandelier.021",
+          "translation": [
+            -0.6000000238418579,
+            -0.7200000286102295,
+            0
+          ]
+        },
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              -0.3000000000000003,
+              -0.5196152422706631,
+              -0.72
+            ],
+            "suggested_energy_watts": 18,
+            "suggested_radius_metres": 0.09,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_Chandelier.022",
+          "translation": [
+            -0.30000001192092896,
+            -0.7200000286102295,
+            0.5196152329444885
+          ]
+        },
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              0.3000000000000001,
+              -0.5196152422706632,
+              -0.72
+            ],
+            "suggested_energy_watts": 18,
+            "suggested_radius_metres": 0.09,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_Chandelier.023",
+          "translation": [
+            0.30000001192092896,
+            -0.7200000286102295,
+            0.5196152329444885
+          ]
+        }
+      ]
+    },
+    {
+      "check": "floor_lamp_exported_light_sockets",
+      "passed": true,
+      "sockets": [
+        {
+          "extras": {
+            "socket_kind": "light_point",
+            "local_position": [
+              0.0,
+              0.0,
+              1.568
+            ],
+            "suggested_energy_watts": 38,
+            "suggested_radius_metres": 0.10439999999999999,
+            "palette_color": "window_glow"
+          },
+          "name": "LIGHT_SOCKET_FloorLamp.005",
+          "translation": [
+            0,
+            1.5679999589920044,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "check": "glb/door_hinged.glb_hinge_hierarchy",
+      "passed": true,
+      "hinges": [
+        {
+          "children": [
+            8,
+            9,
+            10
+          ],
+          "extras": {
+            "hinge_axis": "Z",
+            "open_sign": 1
+          },
+          "name": "HINGE_Left.002",
+          "translation": [
+            -1.2200000286102295,
+            0,
+            0
+          ]
+        },
+        {
+          "children": [
+            12,
+            13,
+            14
+          ],
+          "extras": {
+            "hinge_axis": "Z",
+            "open_sign": -1
+          },
+          "name": "HINGE_Right.002",
+          "translation": [
+            1.2200000286102295,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "check": "assemblies/Door_Open_105deg.glb_hinge_hierarchy",
+      "passed": true,
+      "hinges": [
+        {
+          "children": [
+            8,
+            9,
+            10
+          ],
+          "extras": {
+            "hinge_axis": "Z",
+            "open_sign": 1
+          },
+          "name": "HINGE_Left.002",
+          "rotation": [
+            0,
+            0.7933533787727356,
+            0,
+            0.6087614297866821
+          ],
+          "translation": [
+            -1.2200000286102295,
+            0,
+            0
+          ]
+        },
+        {
+          "children": [
+            12,
+            13,
+            14
+          ],
+          "extras": {
+            "hinge_axis": "Z",
+            "open_sign": -1
+          },
+          "name": "HINGE_Right.002",
+          "rotation": [
+            0,
+            -0.7933533787727356,
+            0,
+            0.6087614297866821
+          ],
+          "translation": [
+            1.2200000286102295,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

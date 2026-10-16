@@ -1,0 +1,13 @@
+{
+  "version": "sanctum-unity-v1",
+  "source": "Unity 2022.3 + Dungeon Architect 1.22.0 GridDungeonBuilder paintedCells / EmitMarkers",
+  "cells": 1536,
+  "markers": 2976,
+  "source_meshes": 4725,
+  "groups": 4,
+  "materials": 41,
+  "source_sha256": "267ea8942d43851d2669cca0271f67b7f97570ccc9d9a643331512e5d5fc0097",
+  "glb_sha256": "e5abffe469eec0ba2b57f90c01352811779930856a3f24fbd33555f8cc10368f",
+  "bytes": 4351724,
+  "unity_scene": ".local/sanctum_unity_workshop/UnityProject/Assets/SanctumWorkshop/Scenes/WindwhisperSanctum.unity"
+}

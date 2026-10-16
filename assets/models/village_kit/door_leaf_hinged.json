@@ -1,0 +1,53 @@
+{
+  "asset": "door_leaf_hinged.glb",
+  "source_blend": "door_leaf_hinged.blend",
+  "revision": "frame_fit_v2_20261011",
+  "unit": "metres",
+  "frame_opening": {
+    "width": 1.6956521739130435,
+    "height": 3.0,
+    "spring_height": 2.1521739130434785,
+    "source": "actual village frame inner edge: kit.door(dw-.2,dh-.1)"
+  },
+  "fixed_reveal": {
+    "root": "DoorFrame_Fixed_Root",
+    "depth": 0.5679565217391305,
+    "runtime_parent": "building _gen (detached from moving pivot)",
+    "material": "existing K wood"
+  },
+  "door_leaf": {
+    "width": 1.6596521739130434,
+    "height": 2.9560000000000004,
+    "thickness": 0.14,
+    "hinge_origin": [
+      0,
+      0,
+      0
+    ],
+    "hinge_side": "left",
+    "outline_gap": 0.018,
+    "bottom_gap": 0.026,
+    "closed_panel_blender_y": -0.07,
+    "closed_panel_godot_z": 0.07,
+    "front_axis": "Blender -Y / Godot +Z",
+    "room_axis": "Blender +Y / Godot -Z",
+    "runtime_open_angle_radians": 1.36,
+    "runtime_open_angle_degrees": 77.92226013779197,
+    "runtime_pivot": "opening left edge at inner wall face; door metadata is an approach point"
+  },
+  "collision": {
+    "owner": "src/world/model_prop.gd",
+    "shape": "BoxShape3D",
+    "closed_size": [
+      1.6596521739130434,
+      2.9560000000000004,
+      0.14
+    ],
+    "closed_center": [
+      0.8478260869565217,
+      1.504,
+      0.07
+    ],
+    "disabled_when_abs_angle_gt": 0.12
+  }
+}

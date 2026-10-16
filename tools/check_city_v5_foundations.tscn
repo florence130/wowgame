@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tools/check_city_v5_foundations.gd" id="1"]
+
+[node name="CityFoundationAudit" type="Node"]
+script = ExtResource("1")

@@ -1,0 +1,2198 @@
+{
+  "source": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build002\\abbey_kit.blend",
+  "child_order": [
+    {
+      "name": "corner_pad_instance",
+      "key": "corner_pad",
+      "world": [
+        -0.19999980926513672,
+        -8.0,
+        0.0
+      ]
+    },
+    {
+      "name": "corner_pad_instance.001",
+      "key": "corner_pad",
+      "world": [
+        -0.19999980926513672,
+        8.0,
+        0.0
+      ]
+    },
+    {
+      "name": "corner_pad_instance.002",
+      "key": "corner_pad",
+      "world": [
+        8.199999809265137,
+        -8.0,
+        0.0
+      ]
+    },
+    {
+      "name": "corner_pad_instance.003",
+      "key": "corner_pad",
+      "world": [
+        8.199999809265137,
+        8.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance",
+      "key": "foundation_strip_4m",
+      "world": [
+        -0.6750001907348633,
+        -6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.001",
+      "key": "foundation_strip_4m",
+      "world": [
+        -0.6750001907348633,
+        -2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.002",
+      "key": "foundation_strip_4m",
+      "world": [
+        -0.6750001907348633,
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.003",
+      "key": "foundation_strip_4m",
+      "world": [
+        -0.6750001907348633,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.004",
+      "key": "foundation_strip_4m",
+      "world": [
+        8.675000190734863,
+        -6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.005",
+      "key": "foundation_strip_4m",
+      "world": [
+        8.675000190734863,
+        -2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.006",
+      "key": "foundation_strip_4m",
+      "world": [
+        8.675000190734863,
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "foundation_strip_4m_instance.007",
+      "key": "foundation_strip_4m",
+      "world": [
+        8.675000190734863,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance",
+      "key": "plinth_4",
+      "world": [
+        2.0,
+        -6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.001",
+      "key": "plinth_4",
+      "world": [
+        2.0,
+        -2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.002",
+      "key": "plinth_4",
+      "world": [
+        2.0,
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.003",
+      "key": "plinth_4",
+      "world": [
+        2.0,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.004",
+      "key": "plinth_4",
+      "world": [
+        6.0,
+        -6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.005",
+      "key": "plinth_4",
+      "world": [
+        6.0,
+        -2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.006",
+      "key": "plinth_4",
+      "world": [
+        6.0,
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "name": "plinth_4_instance.007",
+      "key": "plinth_4",
+      "world": [
+        6.0,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "support_pad_instance",
+      "key": "support_pad",
+      "world": [
+        0.34999990463256836,
+        8.539999961853027,
+        0.0
+      ]
+    },
+    {
+      "name": "support_pad_instance.001",
+      "key": "support_pad",
+      "world": [
+        7.650000095367432,
+        8.539999961853027,
+        0.0
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "point_xy": [
+        8.7,
+        7.4
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.8000000715255737
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_CopingSlab.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.005499839782715,
+              0.6499999761581421
+            ],
+            [
+              9.350000381469727,
+              7.994500160217285,
+              0.800000011920929
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.7999999523162842
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Foundation_ClosedCore.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0600004196167,
+              4.009999752044678,
+              0.0
+            ],
+            [
+              9.289999961853027,
+              7.990000247955322,
+              0.7200000286102295
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.7200000286102295
+          ],
+          "normal": [
+            -3.189445507700839e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.6959999799728394
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseB.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL",
+            "ARRAY"
+          ],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.508500099182129,
+              0.39500001072883606
+            ],
+            [
+              9.317500114440918,
+              7.491499900817871,
+              0.6299999952316284
+            ]
+          ],
+          "faces": 78,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.6299999952316284
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 77
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseA.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.008500099182129,
+              0.15000000596046448
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.38499999046325684
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.38499999046325684
+          ],
+          "normal": [
+            -1.3857287761709358e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_GroundFoot.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.0,
+              0.0
+            ],
+            [
+              9.350000381469727,
+              8.0,
+              0.12999999523162842
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.400000095367432,
+            0.12999999523162842
+          ],
+          "normal": [
+            7.304304383559668e-10,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        8.4,
+        7.4
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.8000000715255737
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_CopingSlab.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.005499839782715,
+              0.6499999761581421
+            ],
+            [
+              9.350000381469727,
+              7.994500160217285,
+              0.800000011920929
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Foundation_ClosedCore.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0600004196167,
+              4.009999752044678,
+              0.0
+            ],
+            [
+              9.289999961853027,
+              7.990000247955322,
+              0.7200000286102295
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.7200000286102295
+          ],
+          "normal": [
+            -3.189445507700839e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.6960000395774841
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseB.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL",
+            "ARRAY"
+          ],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.508500099182129,
+              0.39500001072883606
+            ],
+            [
+              9.317500114440918,
+              7.491499900817871,
+              0.6299999952316284
+            ]
+          ],
+          "faces": 78,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.6299999356269836
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 77
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseA.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.008500099182129,
+              0.15000000596046448
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.38499999046325684
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.38499993085861206
+          ],
+          "normal": [
+            -1.3857287761709358e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.1399998664855957
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_GroundFoot.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.0,
+              0.0
+            ],
+            [
+              9.350000381469727,
+              8.0,
+              0.12999999523162842
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.399999618530273,
+            7.400000095367432,
+            0.12999999523162842
+          ],
+          "normal": [
+            7.304304383559668e-10,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        9,
+        7.4
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.8000000715255737
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_CopingSlab.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.005499839782715,
+              0.6499999761581421
+            ],
+            [
+              9.350000381469727,
+              7.994500160217285,
+              0.800000011920929
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.7999999523162842
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Foundation_ClosedCore.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0600004196167,
+              4.009999752044678,
+              0.0
+            ],
+            [
+              9.289999961853027,
+              7.990000247955322,
+              0.7200000286102295
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.7200000286102295
+          ],
+          "normal": [
+            -3.189445507700839e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.6959999799728394
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseB.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL",
+            "ARRAY"
+          ],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.508500099182129,
+              0.39500001072883606
+            ],
+            [
+              9.317500114440918,
+              7.491499900817871,
+              0.6299999952316284
+            ]
+          ],
+          "faces": 78,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.6299999356269836
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 77
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseA.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.008500099182129,
+              0.15000000596046448
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.38499999046325684
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.38499993085861206
+          ],
+          "normal": [
+            -1.3857287761709358e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_GroundFoot.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.0,
+              0.0
+            ],
+            [
+              9.350000381469727,
+              8.0,
+              0.12999999523162842
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            9.0,
+            7.400000095367432,
+            0.12999999523162842
+          ],
+          "normal": [
+            7.304304383559668e-10,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        8.7,
+        7.15
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.8000000715255737
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_CopingSlab.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.005499839782715,
+              0.6499999761581421
+            ],
+            [
+              9.350000381469727,
+              7.994500160217285,
+              0.800000011920929
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Foundation_ClosedCore.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0600004196167,
+              4.009999752044678,
+              0.0
+            ],
+            [
+              9.289999961853027,
+              7.990000247955322,
+              0.7200000286102295
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.7200000286102295
+          ],
+          "normal": [
+            -3.189445507700839e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.6959999799728394
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseB.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL",
+            "ARRAY"
+          ],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.508500099182129,
+              0.39500001072883606
+            ],
+            [
+              9.317500114440918,
+              7.491499900817871,
+              0.6299999952316284
+            ]
+          ],
+          "faces": 78,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.6299999952316284
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 77
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseA.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.008500099182129,
+              0.15000000596046448
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.38499999046325684
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.38499993085861206
+          ],
+          "normal": [
+            -1.3857287761709358e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_GroundFoot.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.0,
+              0.0
+            ],
+            [
+              9.350000381469727,
+              8.0,
+              0.12999999523162842
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.150000095367432,
+            0.12999999523162842
+          ],
+          "normal": [
+            7.304304383559668e-10,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        8.7,
+        7.8
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Foundation_CopingSlab.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.005499839782715,
+              0.6499999761581421
+            ],
+            [
+              9.350000381469727,
+              7.994500160217285,
+              0.800000011920929
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_ClosedCore.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0600004196167,
+              4.009999752044678,
+              0.0
+            ],
+            [
+              9.289999961853027,
+              7.990000247955322,
+              0.7200000286102295
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.7200000286102295
+          ],
+          "normal": [
+            -3.189445507700839e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.6959999799728394
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_HalfBond.017",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              7.508500099182129,
+              0.39500001072883606
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.6299999952316284
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.6300000548362732
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseA.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.008500099182129,
+              0.15000000596046448
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.38499999046325684
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.38499999046325684
+          ],
+          "normal": [
+            -1.3857287761709358e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_GroundFoot.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.0,
+              0.0
+            ],
+            [
+              9.350000381469727,
+              8.0,
+              0.12999999523162842
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            7.800000190734863,
+            0.12999987602233887
+          ],
+          "normal": [
+            7.304304383559668e-10,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        8.7,
+        8.2
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            8.199999809265137,
+            0.7999999523162842
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            8.199999809265137,
+            0.6959999799728394
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.699999809265137,
+            8.199999809265137,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        8.05,
+        7.45
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Foundation_CopingSlab.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.005499839782715,
+              0.6499999761581421
+            ],
+            [
+              9.350000381469727,
+              7.994500160217285,
+              0.800000011920929
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.6399999856948853
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.800000011920929
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.279999732971191,
+              7.079999923706055,
+              0.14000000059604645
+            ],
+            [
+              9.119999885559082,
+              8.920000076293945,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.6960000991821289
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseB.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL",
+            "ARRAY"
+          ],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.508500099182129,
+              0.39500001072883606
+            ],
+            [
+              9.317500114440918,
+              7.491499900817871,
+              0.6299999952316284
+            ]
+          ],
+          "faces": 78,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.6299999356269836
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 77
+        },
+        {
+          "object": "ABY3_Foundation_AshlarCourseA.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.032500267028809,
+              4.008500099182129,
+              0.15000000596046448
+            ],
+            [
+              9.317500114440918,
+              7.991499900817871,
+              0.38499999046325684
+            ]
+          ],
+          "faces": 103,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.3850000500679016
+          ],
+          "normal": [
+            -1.3857287761709358e-08,
+            0.0,
+            1.0
+          ],
+          "face_index": 100
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.007",
+          "asset": "corner_pad_instance.003",
+          "asset_id": "corner_pad",
+          "asset_world": [
+            8.199999809265137,
+            8.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              7.199999809265137,
+              7.0,
+              0.0
+            ],
+            [
+              9.199999809265137,
+              9.0,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            0.9999999403953552
+          ],
+          "face_index": 22
+        },
+        {
+          "object": "ABY3_Foundation_GroundFoot.008",
+          "asset": "foundation_strip_4m_instance.007",
+          "asset_id": "foundation_strip_4m",
+          "asset_world": [
+            8.675000190734863,
+            6.0,
+            0.0
+          ],
+          "trimmed": true,
+          "modifiers": [],
+          "bounds": [
+            [
+              8.0,
+              4.0,
+              0.0
+            ],
+            [
+              9.350000381469727,
+              8.0,
+              0.12999999523162842
+            ]
+          ],
+          "faces": 25,
+          "hit": [
+            8.050000190734863,
+            7.449999809265137,
+            0.12999999523162842
+          ],
+          "normal": [
+            7.304304383559668e-10,
+            0.0,
+            1.0
+          ],
+          "face_index": 22
+        }
+      ]
+    },
+    {
+      "point_xy": [
+        8.15,
+        8.5
+      ],
+      "hits": [
+        {
+          "object": "ABY3_Pad_UpperDressedSlab.009",
+          "asset": "support_pad_instance.001",
+          "asset_id": "support_pad",
+          "asset_world": [
+            7.650000095367432,
+            8.539999961853027,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL"
+          ],
+          "bounds": [
+            [
+              6.849999904632568,
+              7.639999866485596,
+              0.6399999856948853
+            ],
+            [
+              8.449999809265137,
+              9.4399995803833,
+              0.800000011920929
+            ]
+          ],
+          "faces": 26,
+          "hit": [
+            8.149999618530273,
+            8.5,
+            0.800000011920929
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 25
+        },
+        {
+          "object": "ABY3_Pad_SolidCore.009",
+          "asset": "support_pad_instance.001",
+          "asset_id": "support_pad",
+          "asset_world": [
+            7.650000095367432,
+            8.539999961853027,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL"
+          ],
+          "bounds": [
+            [
+              6.930000305175781,
+              7.71999979019165,
+              0.14000000059604645
+            ],
+            [
+              8.369999885559082,
+              9.359999656677246,
+              0.6959999799728394
+            ]
+          ],
+          "faces": 26,
+          "hit": [
+            8.149999618530273,
+            8.5,
+            0.6959999203681946
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 25
+        },
+        {
+          "object": "ABY3_Pad_GroundFoot.009",
+          "asset": "support_pad_instance.001",
+          "asset_id": "support_pad",
+          "asset_world": [
+            7.650000095367432,
+            8.539999961853027,
+            0.0
+          ],
+          "trimmed": false,
+          "modifiers": [
+            "BEVEL"
+          ],
+          "bounds": [
+            [
+              6.849999904632568,
+              7.639999866485596,
+              0.0
+            ],
+            [
+              8.449999809265137,
+              9.4399995803833,
+              0.14000000059604645
+            ]
+          ],
+          "faces": 26,
+          "hit": [
+            8.149999618530273,
+            8.5,
+            0.13999998569488525
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 25
+        }
+      ]
+    }
+  ]
+}

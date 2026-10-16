@@ -1,0 +1,55 @@
+{
+  "source_sha256": "271f060749db980b17a1fca1c7c86ca3216d97383490f16660eae51c2766c2ba",
+  "assets": [
+    {
+      "id": "station",
+      "glb_sha256": "8a0e496d894c504337d8e09fdaaaf2a1c2c0f4873538d1d8808044b3a27e4b79",
+      "bytes": 7075864
+    },
+    {
+      "id": "civic_hall",
+      "glb_sha256": "3f3f1d4fb9907cd0790844768d40c4e1a822ba58aa7db671be05c69bcef79748",
+      "bytes": 4920280
+    },
+    {
+      "id": "governor_palace",
+      "glb_sha256": "a1aebe43638516dfacd515b9778f256812cbb33fe2d9b9e9b1f64be709d31ef7",
+      "bytes": 6053004
+    },
+    {
+      "id": "cathedral",
+      "glb_sha256": "c7135ea44fab171b516a85b2ce61eefef5cb7e83aaa89159b4011ba40f3b300f",
+      "bytes": 6863852
+    },
+    {
+      "id": "trade_hall",
+      "glb_sha256": "da3a6208bfe25822a1ab4e4665e3393e29ad0c6811fab15f533abf8ed0015899",
+      "bytes": 2321596
+    },
+    {
+      "id": "academy",
+      "glb_sha256": "992617f1384c95785f993ff6c2adc0647e5145471bd1acea6e647ac35dcc4caf",
+      "bytes": 2930432
+    },
+    {
+      "id": "opera",
+      "glb_sha256": "bf15099477ce17ec117673ebbc0b047b5b2beee533b18952e43f04809b5f75f1",
+      "bytes": 2476164
+    },
+    {
+      "id": "public_house",
+      "glb_sha256": "181a2457b7e140f30fed54eaee16a9bc491475ff234cbdce341ba121c2f726c9",
+      "bytes": 1724820
+    },
+    {
+      "id": "magic_tower",
+      "glb_sha256": "e5150fe460c33f428696ac1d89ca3d7de86856235e27cc5ddd438e337e400917",
+      "bytes": 1363428
+    },
+    {
+      "id": "guild_hall",
+      "glb_sha256": "816d476b167517d66d0123ea3e6e282d8e1480212ee321b4df537434a1f54ece",
+      "bytes": 1631920
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "build": "build_008",
+  "evidence_package": "build008-handoff1",
+  "status": "reviewed_asset_package",
+  "catalog": "build_008/catalog.html",
+  "editable_source": "build_008/vale_kit.blend",
+  "godot_preferred": "build_008/godot",
+  "glb_source": "build_008/assemblies",
+  "handoff": "docs/vale_kit_v1/HANDOFF.md",
+  "review": "docs/vale_kit_v1/REVIEW.md",
+  "raw_godot_glb_material_status": "failed_specular_preservation_use_native_scn_or_post_import_script",
+  "not_verified": ["Godot rendered pixels", "live map integration", "collision", "navigation", "batch performance"]
+}

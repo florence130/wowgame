@@ -1,0 +1,116 @@
+{
+  "textures": {
+    "sky_clouds": {
+      "pack": "sky",
+      "source_asset": "Packages/com.occasoftware.super-simple-skybox/Textures/Clouds/T_Clouds_Default.png",
+      "source_sha256": "6be502f9e423691445e6506b07aba9e63f802807372e78885d89369d2748e2ae",
+      "runtime": "assets\\textures\\environment_packs\\sky_clouds.png",
+      "runtime_sha256": "677cf6f830bfb0fbfb6f48d90e1e4b94e19cfe4e4fc9c66cc0823941d65eb798",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "sky_cloud_detail": {
+      "pack": "sky",
+      "source_asset": "Packages/com.occasoftware.super-simple-skybox/Textures/Clouds/T_Clouds-1.png",
+      "source_sha256": "a32efa56cead4fc695841501231d6dae4810edd91169e0b47454eef79734abe7",
+      "runtime": "assets\\textures\\environment_packs\\sky_cloud_detail.png",
+      "runtime_sha256": "7666d2baf2118cdfb9a8dd16bc923b62bb78d8e95cbb93ae03b6edf9ae963698",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "sky_stars": {
+      "pack": "sky",
+      "source_asset": "Packages/com.occasoftware.super-simple-skybox/Textures/Stars/T_Stars_01.png",
+      "source_sha256": "3b78f4a9c080087117665b07727fb4be0b33eee7f0e0a1472621493903beeae6",
+      "runtime": "assets\\textures\\environment_packs\\sky_stars.png",
+      "runtime_sha256": "b2f16830c995ab1ccf6a2ec727ca4360b032047fbee1dace52a27ab94f8791ab",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    "plant_atlas": {
+      "pack": "plants",
+      "source_asset": "Assets/CartoonGrass/Textures/CartoonGrass_Texture_01.png",
+      "source_sha256": "caf4a9c69ee2e747a012c1045a25a238c24ca4b24271897641e22a9c5d799703",
+      "runtime": "assets\\textures\\environment_packs\\plant_atlas.png",
+      "runtime_sha256": "c4399de2d09f0a87918ea283f36ec12a30439b2bf982ea784a031577321a3cd0",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "water_normal": {
+      "pack": "water",
+      "source_asset": "Assets/Stylized Water For URP/Textures/Normals/Normals 1.png",
+      "source_sha256": "6879fcbcbb8102074473688c5bc9b66d019d46c811ec5137d7e9974339534e18",
+      "runtime": "assets\\textures\\environment_packs\\water_normal.png",
+      "runtime_sha256": "4986731df23ed135dd337947b308859d1680a7764a6fe54bd3a9b660e93b1d90",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "water_foam": {
+      "pack": "water",
+      "source_asset": "Assets/Stylized Water For URP/Textures/Foam/Foam 1.png",
+      "source_sha256": "aa4a998f2df86d9733c90be882bab0768acea6954afa9c18e149264f6ecc41fb",
+      "runtime": "assets\\textures\\environment_packs\\water_foam.png",
+      "runtime_sha256": "906237d7307711eb18d2c5df9bfe2b3ca0421221d7a6127795be83513f3bd09e",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "water_caustics": {
+      "pack": "water",
+      "source_asset": "Assets/Stylized Water For URP/Textures/Caustics/Caustics 1.png",
+      "source_sha256": "a8bee868f118eda01b88c8949dbfa829c62c3fc26444bfa03f408bdd4d84ab65",
+      "runtime": "assets\\textures\\environment_packs\\water_caustics.png",
+      "runtime_sha256": "332ea71f2a15046f4634344e0f2b53bafaa58ae73373953726400bc08f470e6b",
+      "size": [
+        512,
+        512
+      ]
+    },
+    "fog_noise": {
+      "pack": "ethereal",
+      "source_asset": "Assets/ARTnGAME/VolumeFogSRP/Materials/FogNoise 3 SMALLER.png",
+      "source_sha256": "20f8a05d6a9fda7fe5226f778c6795a07ee45d3f1fb3ed18939f34ea66d41a81",
+      "runtime": "assets\\textures\\environment_packs\\fog_noise.png",
+      "runtime_sha256": "12e12a5c2aa6bfb0b8f1723d7d04e70dcd9e5b50ed45a792bb72fda689883569",
+      "size": [
+        206,
+        103
+      ]
+    }
+  },
+  "source_inventory": ".local/environment_20261011/inventory.json",
+  "plant_conversion": "assets/models/cartoon_plants/conversion.json",
+  "shader_sources": {
+    "path": "assets\\source_packs\\environment_shader_sources.zip",
+    "sha256": "ba1b9dfa2ba3e7e5ab04649fccd06d7c2ddf5a8a12f9bb8e2ffd90a143b11310"
+  },
+  "packs": {
+    "sky": {
+      "source": "F:\\资源\\服装\\Super Simple Skybox 5.0.0.unitypackage",
+      "bytes": 141871587
+    },
+    "plants": {
+      "source": "F:\\资源\\服装\\53.Cartoon Grass and Plants 1.01 卡通草地植物\\Cartoon Grass and Plants v1.01.unitypackage",
+      "bytes": 10797452
+    },
+    "water": {
+      "source": "F:\\资源\\服装\\Stylized Water For URP 1.1.2.unitypackage",
+      "bytes": 6903195
+    },
+    "ethereal": {
+      "source": "F:\\资源\\服装\\Ethereal URP - Volumetric Lighting Fog v1.6.5.unitypackage",
+      "bytes": 40012827
+    }
+  }
+}

@@ -1,0 +1,1080 @@
+{
+  "coordinate_system": "Godot native XYZ; front -Z",
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "assets": [
+    {
+      "id": "academy",
+      "footprint": [
+        60,
+        40
+      ],
+      "body_height": 22,
+      "max_height": 48,
+      "entries": [
+        [
+          0,
+          0,
+          -20
+        ]
+      ],
+      "entry_width": 8,
+      "usable_hall": {
+        "center": [
+          -4,
+          0,
+          -7
+        ],
+        "size": [
+          24,
+          22
+        ]
+      },
+      "service_positions": [
+        [
+          -10,
+          0,
+          -1
+        ],
+        [
+          5,
+          0,
+          -1
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/academy.glb",
+      "blend": "assets/models/city_v5/landmarks/academy.blend",
+      "aabb_min": [
+        -31.290000000000003,
+        -1.2000000000000002,
+        -23.6
+      ],
+      "aabb_max": [
+        31.290000000000003,
+        48.0,
+        21.290000000000006
+      ],
+      "aabb_size": [
+        62.580000000000005,
+        49.2,
+        44.89000000000001
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0",
+        "K|7|508d89||0"
+      ],
+      "visual_meshes": 10,
+      "visual_vertices": 35024,
+      "visual_triangles": 57354,
+      "collision_meshes": 1,
+      "collision_vertices": 616,
+      "collision_triangles": 944,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -20
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "cathedral",
+      "footprint": [
+        48,
+        94
+      ],
+      "body_height": 26,
+      "max_height": 62,
+      "entries": [
+        [
+          0,
+          0,
+          -47
+        ]
+      ],
+      "entry_width": 8,
+      "gross_nave_floor": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          19,
+          82
+        ]
+      },
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -7
+        ],
+        "size": [
+          19,
+          64
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          26
+        ],
+        [
+          -7,
+          0,
+          15
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/cathedral.glb",
+      "blend": "assets/models/city_v5/landmarks/cathedral.blend",
+      "aabb_min": [
+        -25.290000000000003,
+        -1.2000000000000002,
+        -50.9
+      ],
+      "aabb_max": [
+        25.290000000000003,
+        62,
+        47.3
+      ],
+      "aabb_size": [
+        50.580000000000005,
+        63.2,
+        98.19999999999999
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0"
+      ],
+      "visual_meshes": 9,
+      "visual_vertices": 78268,
+      "visual_triangles": 126026,
+      "collision_meshes": 1,
+      "collision_vertices": 1104,
+      "collision_triangles": 1656,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -47
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "civic_hall",
+      "footprint": [
+        88,
+        40
+      ],
+      "body_height": 24,
+      "max_height": 44,
+      "entries": [
+        [
+          0,
+          0,
+          -20
+        ]
+      ],
+      "entry_width": 10,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -3
+        ],
+        "size": [
+          28,
+          30
+        ]
+      },
+      "service_positions": [
+        [
+          -9,
+          0,
+          -2
+        ],
+        [
+          9,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          9
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/civic_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/civic_hall.blend",
+      "aabb_min": [
+        -45.29,
+        -1.2000000000000002,
+        -23.8
+      ],
+      "aabb_max": [
+        45.29,
+        44.0,
+        21.290000000000006
+      ],
+      "aabb_size": [
+        90.58,
+        45.2,
+        45.09
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0",
+        "K|7|508d89||0"
+      ],
+      "visual_meshes": 10,
+      "visual_vertices": 56000,
+      "visual_triangles": 90396,
+      "collision_meshes": 1,
+      "collision_vertices": 912,
+      "collision_triangles": 1368,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -20
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "governor_palace",
+      "footprint": [
+        100,
+        70
+      ],
+      "body_height": 24,
+      "max_height": 38,
+      "entries": [
+        [
+          0,
+          0,
+          13
+        ],
+        [
+          -40,
+          0,
+          -35
+        ],
+        [
+          40,
+          0,
+          -35
+        ]
+      ],
+      "entry_width": 10,
+      "entry_widths": [
+        10,
+        4.6667,
+        4.6667
+      ],
+      "courtyard": {
+        "center": [
+          0,
+          0,
+          -11
+        ],
+        "size": [
+          60,
+          48
+        ]
+      },
+      "usable_courtyard": {
+        "center": [
+          0,
+          0,
+          -11.25
+        ],
+        "size": [
+          59,
+          47.5
+        ]
+      },
+      "service_positions": [
+        [
+          -7,
+          0,
+          23
+        ],
+        [
+          7,
+          0,
+          23
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/governor_palace.glb",
+      "blend": "assets/models/city_v5/landmarks/governor_palace.blend",
+      "aabb_min": [
+        -51.29,
+        -1.2000000000000002,
+        -38.0
+      ],
+      "aabb_max": [
+        51.29,
+        38.0,
+        36.290000000000006
+      ],
+      "aabb_size": [
+        102.58,
+        39.2,
+        74.29
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0"
+      ],
+      "visual_meshes": 9,
+      "visual_vertices": 69160,
+      "visual_triangles": 111762,
+      "collision_meshes": 1,
+      "collision_vertices": 984,
+      "collision_triangles": 1476,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            13
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        },
+        {
+          "entry": [
+            -40,
+            0,
+            -35
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        },
+        {
+          "entry": [
+            40,
+            0,
+            -35
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "guild_hall",
+      "footprint": [
+        44,
+        30
+      ],
+      "body_height": 18,
+      "max_height": 28,
+      "entries": [
+        [
+          0,
+          0,
+          -15
+        ]
+      ],
+      "entry_width": 8,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          28,
+          26
+        ]
+      },
+      "service_positions": [
+        [
+          -9,
+          0,
+          4
+        ],
+        [
+          9,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          8
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/guild_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/guild_hall.blend",
+      "aabb_min": [
+        -23.290000000000003,
+        -1.2000000000000002,
+        -20.6
+      ],
+      "aabb_max": [
+        23.290000000000003,
+        28.30748176574707,
+        16.290000000000003
+      ],
+      "aabb_size": [
+        46.580000000000005,
+        29.50748176574707,
+        36.89
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0"
+      ],
+      "visual_meshes": 8,
+      "visual_vertices": 19614,
+      "visual_triangles": 31758,
+      "collision_meshes": 1,
+      "collision_vertices": 280,
+      "collision_triangles": 420,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -15
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "magic_tower",
+      "footprint": [
+        20,
+        20
+      ],
+      "body_height": 54,
+      "max_height": 66,
+      "entries": [
+        [
+          0,
+          0,
+          -10
+        ]
+      ],
+      "entry_width": 4.4,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "diameter": 16
+      },
+      "service_positions": [
+        [
+          -4,
+          0,
+          2
+        ],
+        [
+          4,
+          0,
+          2
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/magic_tower.glb",
+      "blend": "assets/models/city_v5/landmarks/magic_tower.blend",
+      "aabb_min": [
+        -10.790000000000001,
+        -1.2,
+        -13.4
+      ],
+      "aabb_max": [
+        10.790000000000001,
+        66.0,
+        10.790000000000001
+      ],
+      "aabb_size": [
+        21.580000000000002,
+        67.2,
+        24.19
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|7|508d89||0",
+        "K|7|bca35e||0",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|3|41546f|st_roof_scale|2.4"
+      ],
+      "visual_meshes": 9,
+      "visual_vertices": 16142,
+      "visual_triangles": 27104,
+      "collision_meshes": 1,
+      "collision_vertices": 280,
+      "collision_triangles": 440,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -10
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "opera",
+      "footprint": [
+        64,
+        40
+      ],
+      "body_height": 20,
+      "max_height": 28,
+      "entries": [
+        [
+          0,
+          0,
+          -20
+        ]
+      ],
+      "entry_width": 10,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -8
+        ],
+        "size": [
+          30,
+          18
+        ]
+      },
+      "service_positions": [
+        [
+          -10,
+          0,
+          -9
+        ],
+        [
+          10,
+          0,
+          -9
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/opera.glb",
+      "blend": "assets/models/city_v5/landmarks/opera.blend",
+      "aabb_min": [
+        -33.29,
+        -1.2000000000000002,
+        -24.8
+      ],
+      "aabb_max": [
+        33.29,
+        28.320749282836914,
+        21.290000000000006
+      ],
+      "aabb_size": [
+        66.58,
+        29.520749282836913,
+        46.09
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0",
+        "K|7|508d89||0"
+      ],
+      "visual_meshes": 10,
+      "visual_vertices": 29628,
+      "visual_triangles": 48204,
+      "collision_meshes": 1,
+      "collision_vertices": 400,
+      "collision_triangles": 600,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -20
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "public_house",
+      "footprint": [
+        44,
+        28
+      ],
+      "body_height": 18,
+      "max_height": 28,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "entry_width": 8,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          26,
+          24
+        ]
+      },
+      "service_positions": [
+        [
+          -8,
+          0,
+          3
+        ],
+        [
+          8,
+          0,
+          3
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/public_house.glb",
+      "blend": "assets/models/city_v5/landmarks/public_house.blend",
+      "aabb_min": [
+        -23.290000000000003,
+        -1.2000000000000002,
+        -18.8
+      ],
+      "aabb_max": [
+        23.290000000000003,
+        28.0,
+        15.290000000000001
+      ],
+      "aabb_size": [
+        46.580000000000005,
+        29.2,
+        34.09
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0",
+        "K|7|508d89||0"
+      ],
+      "visual_meshes": 10,
+      "visual_vertices": 20624,
+      "visual_triangles": 33458,
+      "collision_meshes": 1,
+      "collision_vertices": 296,
+      "collision_triangles": 444,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "station",
+      "footprint": [
+        100,
+        56
+      ],
+      "body_height": 28,
+      "max_height": 46,
+      "entries": [
+        [
+          0,
+          0,
+          -28
+        ],
+        [
+          0,
+          0,
+          28
+        ]
+      ],
+      "entry_width": 14,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          30,
+          48
+        ]
+      },
+      "service_positions": [
+        [
+          -10,
+          0,
+          -12
+        ],
+        [
+          10,
+          0,
+          -12
+        ]
+      ],
+      "rail_rear_axis": [
+        0,
+        0,
+        28
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/station.glb",
+      "blend": "assets/models/city_v5/landmarks/station.blend",
+      "aabb_min": [
+        -51.290000000000006,
+        -1.2000000000000002,
+        -31.0
+      ],
+      "aabb_max": [
+        51.290000000000006,
+        46.0,
+        31.0
+      ],
+      "aabb_size": [
+        102.58000000000001,
+        47.2,
+        62.0
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|3|41546f|st_roof_scale|2.4",
+        "K|7|bca35e||0",
+        "K|0|eee1c7|st_plaster|3.0",
+        "K|7|508d89||0",
+        "K|6|694a34|st_boards|2.0"
+      ],
+      "visual_meshes": 11,
+      "visual_vertices": 78222,
+      "visual_triangles": 125808,
+      "collision_meshes": 1,
+      "collision_vertices": 1232,
+      "collision_triangles": 1848,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -28
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        },
+        {
+          "entry": [
+            0,
+            0,
+            28
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    },
+    {
+      "id": "trade_hall",
+      "footprint": [
+        70,
+        38
+      ],
+      "body_height": 14,
+      "max_height": 24,
+      "entries": [
+        [
+          0,
+          0,
+          -19
+        ],
+        [
+          0,
+          0,
+          19
+        ]
+      ],
+      "entry_width": 12,
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          30,
+          34
+        ]
+      },
+      "service_positions": [
+        [
+          -10,
+          0,
+          -6
+        ],
+        [
+          10,
+          0,
+          -6
+        ],
+        [
+          -10,
+          0,
+          8
+        ],
+        [
+          10,
+          0,
+          8
+        ]
+      ],
+      "glb": "res://assets/models/city_v5/landmarks/trade_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/trade_hall.blend",
+      "aabb_min": [
+        -36.29,
+        -1.2000000000000002,
+        -22.0
+      ],
+      "aabb_max": [
+        36.29,
+        24.094921112060547,
+        22.0
+      ],
+      "aabb_size": [
+        72.58,
+        25.294921112060546,
+        44.0
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.2,
+      "placement_lift": 0.6,
+      "materials": [
+        "K|2|b4a58c|st_masonry|3.5",
+        "K|2|c9bda4|st_masonry|5.0",
+        "K|2|d8c8a8|st_masonry|4.0",
+        "K|9|f3e8d3||0",
+        "K|glass|739da8||0",
+        "K|7|574b39||0",
+        "K|7|508d89||0",
+        "K|7|bca35e||0"
+      ],
+      "visual_meshes": 8,
+      "visual_vertices": 27658,
+      "visual_triangles": 45140,
+      "collision_meshes": 1,
+      "collision_vertices": 656,
+      "collision_triangles": 984,
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -19
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        },
+        {
+          "entry": [
+            0,
+            0,
+            19
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "front": "-Z",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+    }
+  ]
+}

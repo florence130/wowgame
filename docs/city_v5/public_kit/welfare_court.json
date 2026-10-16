@@ -1,0 +1,257 @@
+{
+  "label": "市民保障院",
+  "footprint": [
+    32,
+    28
+  ],
+  "body_height": 9,
+  "max_height": 16,
+  "entry_width": 8,
+  "entries": [
+    [
+      0,
+      0,
+      -14
+    ]
+  ],
+  "concept": "Welcoming low courtyard institution with sheltered benches and community fountain",
+  "id": "welfare_court",
+  "aabb_min": [
+    -17.290000915527344,
+    -1.600000023841858,
+    -17.149999618530273
+  ],
+  "aabb_max": [
+    17.290000915527344,
+    14.710000038146973,
+    15.289999961853027
+  ],
+  "aabb_size": [
+    34.58000183105469,
+    16.31000006198883,
+    32.4399995803833
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/welfare_court.glb",
+  "blend": "assets/models/city_v5/landmarks/welfare_court.blend",
+  "modules": [
+    {
+      "name": "01 Continuous ground and cut-stone footing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Continuous ground and cut-stone footing_rustic",
+        "01 Continuous ground and cut-stone footing_floor"
+      ]
+    },
+    {
+      "name": "Sheltered community wing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Sheltered community wing_rustic",
+        "Sheltered community wing_floor",
+        "Sheltered community wing_ivory",
+        "Sheltered community wing_trim",
+        "Sheltered community wing_glass",
+        "Sheltered community wing_bronze",
+        "Sheltered community wing_stone",
+        "Sheltered community wing_slate",
+        "Sheltered community wing_gold"
+      ]
+    },
+    {
+      "name": "Sheltered community wing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Sheltered community wing_rustic.001",
+        "Sheltered community wing_floor.001",
+        "Sheltered community wing_ivory.001",
+        "Sheltered community wing_trim.001",
+        "Sheltered community wing_glass.001",
+        "Sheltered community wing_bronze.001",
+        "Sheltered community wing_stone.001",
+        "Sheltered community wing_slate.001",
+        "Sheltered community wing_gold.001"
+      ]
+    },
+    {
+      "name": "Public assistance room",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Public assistance room_rustic",
+        "Public assistance room_floor",
+        "Public assistance room_ivory",
+        "Public assistance room_trim",
+        "Public assistance room_glass",
+        "Public assistance room_bronze",
+        "Public assistance room_stone",
+        "Public assistance room_slate",
+        "Public assistance room_gold"
+      ]
+    },
+    {
+      "name": "Friendly open porch left",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Friendly open porch left"
+      ]
+    },
+    {
+      "name": "Friendly open porch left lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Friendly open porch left lintel_stone"
+      ]
+    },
+    {
+      "name": "Friendly open porch right",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Friendly open porch right"
+      ]
+    },
+    {
+      "name": "Friendly open porch right lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Friendly open porch right lintel_stone"
+      ]
+    },
+    {
+      "name": "Welcome canopy",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Welcome canopy_copper",
+        "Welcome canopy_stone",
+        "Welcome canopy_gold"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone",
+        "Stone public bench_rustic"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone.001",
+        "Stone public bench_rustic.001"
+      ]
+    },
+    {
+      "name": "Community fountain",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Community fountain_stone",
+        "Community fountain_water",
+        "Community fountain_trim"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    },
+    {
+      "name": "09 Soft hanging institutional banner",
+      "methods": [
+        "simple deform; solidify"
+      ],
+      "objects": [
+        "09 Soft hanging institutional banner"
+      ]
+    },
+    {
+      "name": "09 Soft hanging institutional banner.001",
+      "methods": [
+        "simple deform; solidify"
+      ],
+      "objects": [
+        "09 Soft hanging institutional banner.001"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -14
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 26120,
+  "collision_triangles": 720
+}

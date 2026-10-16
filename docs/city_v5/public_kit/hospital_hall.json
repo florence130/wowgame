@@ -1,0 +1,235 @@
+{
+  "label": "圣堂医院",
+  "footprint": [
+    44,
+    28
+  ],
+  "body_height": 12,
+  "max_height": 22,
+  "entry_width": 8,
+  "entries": [
+    [
+      0,
+      0,
+      -14
+    ]
+  ],
+  "concept": "Two ward wings and a sheltered healing garden, small central chapel roof",
+  "id": "hospital_hall",
+  "aabb_min": [
+    -23.290000915527344,
+    -1.600000023841858,
+    -17.149999618530273
+  ],
+  "aabb_max": [
+    23.290000915527344,
+    19.700000762939453,
+    15.289999961853027
+  ],
+  "aabb_size": [
+    46.58000183105469,
+    21.30000078678131,
+    32.4399995803833
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/hospital_hall.glb",
+  "blend": "assets/models/city_v5/landmarks/hospital_hall.blend",
+  "modules": [
+    {
+      "name": "01 Continuous ground and cut-stone footing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Continuous ground and cut-stone footing_rustic",
+        "01 Continuous ground and cut-stone footing_floor"
+      ]
+    },
+    {
+      "name": "Daylit patient ward",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Daylit patient ward_rustic",
+        "Daylit patient ward_floor",
+        "Daylit patient ward_ivory",
+        "Daylit patient ward_trim",
+        "Daylit patient ward_glass",
+        "Daylit patient ward_bronze",
+        "Daylit patient ward_stone",
+        "Daylit patient ward_slate",
+        "Daylit patient ward_gold"
+      ]
+    },
+    {
+      "name": "Daylit patient ward",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Daylit patient ward_rustic.001",
+        "Daylit patient ward_floor.001",
+        "Daylit patient ward_ivory.001",
+        "Daylit patient ward_trim.001",
+        "Daylit patient ward_glass.001",
+        "Daylit patient ward_bronze.001",
+        "Daylit patient ward_stone.001",
+        "Daylit patient ward_slate.001",
+        "Daylit patient ward_gold.001"
+      ]
+    },
+    {
+      "name": "Infirmary reception and chapel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Infirmary reception and chapel_rustic",
+        "Infirmary reception and chapel_floor",
+        "Infirmary reception and chapel_ivory",
+        "Infirmary reception and chapel_trim",
+        "Infirmary reception and chapel_glass",
+        "Infirmary reception and chapel_bronze",
+        "Infirmary reception and chapel_stone"
+      ]
+    },
+    {
+      "name": "Chapel gable",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Chapel gable_slate",
+        "Chapel gable_stone",
+        "Chapel gable_gold"
+      ]
+    },
+    {
+      "name": "Sheltered healing walk left",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Sheltered healing walk left"
+      ]
+    },
+    {
+      "name": "Sheltered healing walk left lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Sheltered healing walk left lintel_stone"
+      ]
+    },
+    {
+      "name": "Sheltered healing walk right",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Sheltered healing walk right"
+      ]
+    },
+    {
+      "name": "Sheltered healing walk right lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Sheltered healing walk right lintel_stone"
+      ]
+    },
+    {
+      "name": "Healer emblem",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Healer emblem_copper"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone",
+        "Stone public bench_rustic"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone.001",
+        "Stone public bench_rustic.001"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -14
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 47286,
+  "collision_triangles": 864
+}

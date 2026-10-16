@@ -1,0 +1,180 @@
+{
+  "checks": [
+    {
+      "file": "godot/modules/V_barn_beam.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_barn_doorframe.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_barn_frame.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_barn_wall_door.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_barn_wall_solid.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_barn_wall_window.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_barrel.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_bracket.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_cargo_door.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_chimney.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_door.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_farm_beam.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_farm_doorframe.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_farm_frame.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_farm_wall_door.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_farm_wall_solid.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_farm_wall_window.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_fence_4m.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_fence_curved_12m.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_flowerbox.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_foundation.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_haybale.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_hayloft.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_course_0.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_course_1.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_course_2.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_course_3.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_hub.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_roof.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_mill_sail.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_porch.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_ridge_thatch.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_ridge_tile.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_roof_thatch_4m.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_roof_tile_4m.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_stone_SDF.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/modules/V_window_insert.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/assemblies/VALE_barn.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/assemblies/VALE_farm.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/assemblies/VALE_fence_demo.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/assemblies/VALE_rotor.scn",
+      "passed": true
+    },
+    {
+      "file": "godot/assemblies/VALE_windmill.scn",
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "files": 42,
+  "passed": true,
+  "raw_glb_import_specular_values": [
+    "0.5",
+    "0.0"
+  ],
+  "scope": "Native .scn saved, reloaded without cache and instantiated; lit textures, roughness 1, specular disabled. Not live-map pixel/performance validation."
+}

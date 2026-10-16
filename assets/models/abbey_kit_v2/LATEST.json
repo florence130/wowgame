@@ -1,0 +1,6 @@
+{
+  "build_directory": "E:/wowgame/assets/models/abbey_kit_v2/game_006",
+  "scope": "Architecture only: no vegetation, ivy, standalone props",
+  "palette": "User supplied Aetherlands palette v1",
+  "review_status": "GPT-6 Astra Low passed the editable architectural candidate and modular tools; game integration and runtime performance remain unverified"
+}

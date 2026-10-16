@@ -1,0 +1,158 @@
+{
+  "check_count": 10,
+  "checks": [
+    {
+      "asset": "corner_merchants_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(0.0, 0.0, -10.07214)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.000927040120586753,
+      "pass": true,
+      "position": "(0.0, 0.000927, -10.07214)",
+      "remaining_m": 0.0721445083618164,
+      "yaw": 0.0
+    },
+    {
+      "asset": "corner_merchants_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(-10.07211, 0.0, 0.0)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.000874974182806909,
+      "pass": true,
+      "position": "(-10.07211, 0.000875, 0.0)",
+      "remaining_m": 0.0721120834350586,
+      "yaw": 90.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(0.0, 0.0, -10.07213)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.000870627642143518,
+      "pass": true,
+      "position": "(0.0, 0.000871, -10.07213)",
+      "remaining_m": 0.0721340179443359,
+      "yaw": 0.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(0.0, 0.0, -5.927803)"
+        }
+      ],
+      "entry": 1,
+      "max_height": 0.000874569988809526,
+      "pass": true,
+      "position": "(0.0, 0.000875, -5.927803)",
+      "remaining_m": 0.0721969604492188,
+      "yaw": 0.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(-10.07215, 0.0, 0.0)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.000872087490279228,
+      "pass": true,
+      "position": "(-10.07215, 0.000872, 0.0)",
+      "remaining_m": 0.0721502304077148,
+      "yaw": 90.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(-5.927816, 0.0, 0.0)"
+        }
+      ],
+      "entry": 1,
+      "max_height": 0.000903249718248844,
+      "pass": true,
+      "position": "(-5.927816, 0.000903, 0.0)",
+      "remaining_m": 0.0721840858459473,
+      "yaw": 90.0
+    },
+    {
+      "asset": "shop_arcade_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(-0.0, 0.0, -7.072114)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.000801414833404124,
+      "pass": true,
+      "position": "(-0.0, 0.000801, -7.072114)",
+      "remaining_m": 0.0721144676208496,
+      "yaw": 0.0
+    },
+    {
+      "asset": "shop_arcade_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(-7.072135, 0.0, 0.0)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.00090977898798883,
+      "pass": true,
+      "position": "(-7.072135, 0.00091, 0.0)",
+      "remaining_m": 0.0721354484558105,
+      "yaw": 90.0
+    },
+    {
+      "asset": "inn_seafarer_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(0.0, 0.0, -9.07212)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.00094379298388958,
+      "pass": true,
+      "position": "(0.0, 0.000816, -9.07212)",
+      "remaining_m": 0.0721197128295898,
+      "yaw": 0.0
+    },
+    {
+      "asset": "inn_seafarer_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 1.0, 0.0)",
+          "position": "(-9.072103, 0.0, 0.0)"
+        }
+      ],
+      "entry": 0,
+      "max_height": 0.000935351359657943,
+      "pass": true,
+      "position": "(-9.072103, 0.000935, 0.0)",
+      "remaining_m": 0.0721025466918945,
+      "yaw": 90.0
+    }
+  ],
+  "failure_count": 0,
+  "scope": "Actual Player class, authored capsule, floor_max_angle=52 degrees, unchanged apply_gravity_and_move; isolated imported assets over a flat street at -0.6; no World scene or terrain integration claimed.",
+  "slot_index": -1
+}

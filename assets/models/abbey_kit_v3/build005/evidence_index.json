@@ -1,0 +1,848 @@
+{
+  "build_directory": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build005",
+  "file_hashes": [
+    {
+      "path": "abbey_kit.blend",
+      "bytes": 2421038,
+      "sha256": "50b367be87243ad9992999335594755647c04a0f359b790ded41b7af7dda46ea"
+    },
+    {
+      "path": "assemblies/BellTower.glb",
+      "bytes": 3685716,
+      "sha256": "db5228288eb2c78d083f2428365f24f20e2a7d28b8ca8d988289d2af44e3a03e"
+    },
+    {
+      "path": "assemblies/Chapel_Open_Interior.glb",
+      "bytes": 15007240,
+      "sha256": "25335b4c76b14dcfb12f19df4681d12a34f7e0c88e0bec64419c6f7c83dc1748"
+    },
+    {
+      "path": "assemblies/CourtyardArchitecture.glb",
+      "bytes": 5677468,
+      "sha256": "8d09a12dd81a15ade57c663f9c6e70124df491abbd5cfca2eb7342336db818b0"
+    },
+    {
+      "path": "assemblies/Door_Open_105deg.glb",
+      "bytes": 176092,
+      "sha256": "7e1e84a92271600403ac6996451b370cdd5baaf28bdf7ca0fcacd7532ec5850f"
+    },
+    {
+      "path": "assemblies/InteriorLayout_A.glb",
+      "bytes": 5352300,
+      "sha256": "23cc1601be614a121e9ac7abeb574765428eeb8325d2ba79298d1dc430fdbafd"
+    },
+    {
+      "path": "assemblies/InteriorLayout_B.glb",
+      "bytes": 1896228,
+      "sha256": "34c29033d98f9cdcae3d3206c665950c54baf27492a7fbb20e25e36c01fc2f6c"
+    },
+    {
+      "path": "assembly_preset.json",
+      "bytes": 240,
+      "sha256": "a8daec42d8143338f42818c93f385c81e961e22eaf30ed77f203d3db5aa876c4"
+    },
+    {
+      "path": "export_validation.json",
+      "bytes": 2259372,
+      "sha256": "43763471d8b0fbdb93d7f567043983c09c4e53ca3a7d837e243ad0c82c6620b2"
+    },
+    {
+      "path": "glass_export_validation.json",
+      "bytes": 3302,
+      "sha256": "1d0ee25af8c31f353702c3bfe2456b8be662e4ced1e1487697a068902c3ed2bd"
+    },
+    {
+      "path": "glass_validation/daylight_floor_evidence.json",
+      "bytes": 427,
+      "sha256": "ea730c96f42d41ed39ae6e7c9088fa113931a6c38bf092bbc6c601c2c1326b83"
+    },
+    {
+      "path": "glass_validation/daylight_floor_opaque_control.png",
+      "bytes": 195528,
+      "sha256": "48967b3ef864f491eeeeffff48bcdd933ca7ac386d0914c58b64967af9a97574"
+    },
+    {
+      "path": "glass_validation/daylight_floor_transparent.png",
+      "bytes": 894867,
+      "sha256": "27a6f0feae8bd8abdc4bdd1a5632765ac0f0f2b086ccd45bbab1c020e17ecae6"
+    },
+    {
+      "path": "glass_validation/glass_blender_glb_evidence.json",
+      "bytes": 3172,
+      "sha256": "6a49a5a9f3dfc90ef890dcc4a7fac43223d9a7c6428fbba74962a4355e7ed4c6"
+    },
+    {
+      "path": "glass_validation/glass_daylight_probe.blend",
+      "bytes": 246997,
+      "sha256": "d50eb90b602ab7f760b8ebb307e1c28c4abec961474510f555e0e689deebdb9f"
+    },
+    {
+      "path": "glass_validation/glass_floor_daylight_probe.blend",
+      "bytes": 243404,
+      "sha256": "17adb3fecc562f0953c172d7835437f188785ad9d59a1480f023ab30507620f5"
+    },
+    {
+      "path": "glass_validation/glass_validation_summary.json",
+      "bytes": 5247,
+      "sha256": "419bf02f417a3bb26903735c6f167c5b37f2c7f734539a03b2dac8b4a5897d76"
+    },
+    {
+      "path": "glass_validation/godot_glass_check.gd",
+      "bytes": 2046,
+      "sha256": "3adb3eab4425635253a1f3b6548b5932f5f044119895a7a1183f40caa9d65062"
+    },
+    {
+      "path": "glass_validation/godot_glass_evidence.json",
+      "bytes": 936,
+      "sha256": "57397ae4c7888147e76c0f82c99a95d7ebbdba262ffc94e80fb0247f92e22de6"
+    },
+    {
+      "path": "glass_validation/light_probe.py",
+      "bytes": 2735,
+      "sha256": "e415fe66eb5c9c20b1ff39b65a7144645ebf5ac864d0aa1a89da20514fb7b7e5"
+    },
+    {
+      "path": "glass_validation/opaque_control_same_sun.png",
+      "bytes": 1034128,
+      "sha256": "d593879c5f79dc36a05b109f4d3b538957c7324bc742332fa8b4230fa50cf4b4"
+    },
+    {
+      "path": "glass_validation/probe.py",
+      "bytes": 7590,
+      "sha256": "cf8d8e3ae2cc3af258558b78dd41bb5c480760281bc817826e4741f53746b20d"
+    },
+    {
+      "path": "glass_validation/transparent_window_daylight.png",
+      "bytes": 1050770,
+      "sha256": "b68081b0201dc61d51ea2655ee7ed6ec123ecdb20fb3ee18cd0b5e298728db36"
+    },
+    {
+      "path": "glass_validation/window_transparent.glb",
+      "bytes": 178484,
+      "sha256": "873a32161a66812f2b0ba0862765329c9e414cc9390edd08e6b646c0e24207e8"
+    },
+    {
+      "path": "glb/altar_back_panel.glb",
+      "bytes": 162584,
+      "sha256": "aa26f7de33f4a460df5dbce15a19c437286c494e5de4ec29e883facc90e1c652"
+    },
+    {
+      "path": "glb/altar_table.glb",
+      "bytes": 230224,
+      "sha256": "9d5b9e1f79fb16e199b93bc591893913e67052029bdd211bd0e01b754887f751"
+    },
+    {
+      "path": "glb/apse.glb",
+      "bytes": 640732,
+      "sha256": "8c62f984b235ee376f9c178aa74f6e4f506b7d9129d9d7aa5fcbf9d1341bcd58"
+    },
+    {
+      "path": "glb/apse_floor.glb",
+      "bytes": 33388,
+      "sha256": "f05f10ebf1ab585933cc89c658dc91918584f53a1dadd8fc4e1cd1e0cfa3554c"
+    },
+    {
+      "path": "glb/apse_plinth.glb",
+      "bytes": 337296,
+      "sha256": "fb83a0077b24b3aaa30550926454b953c6cd16a8352787582141f722b404743e"
+    },
+    {
+      "path": "glb/arcade.glb",
+      "bytes": 286300,
+      "sha256": "5003296dec91be2286af974ec6ab3d813a54def1d4835a65309d3043f1183044"
+    },
+    {
+      "path": "glb/beam_4m.glb",
+      "bytes": 165896,
+      "sha256": "ba0284e7779cfc0cd6f186022e4bdc7f757a98cb19afb6ea64076165ea3227ac"
+    },
+    {
+      "path": "glb/belfry.glb",
+      "bytes": 282588,
+      "sha256": "69bb0d243acc184df46a106d9e6179b5f90a72ebefa148216dc1cc6cbd2b68d2"
+    },
+    {
+      "path": "glb/boundary_4.glb",
+      "bytes": 503500,
+      "sha256": "978740aaad80823442228206e65de42739644a38ebe254f08dd44c74c0709766"
+    },
+    {
+      "path": "glb/buttress.glb",
+      "bytes": 82268,
+      "sha256": "2017a87937e5a5e1102198f00fc81e50fec6b689e09810fb93f24072a7a9d16f"
+    },
+    {
+      "path": "glb/ceiling_4m.glb",
+      "bytes": 91652,
+      "sha256": "d204af4581bb5eb4d4a3ed5757628b46c9b687c1d4c4944c2704043e3a1d3458"
+    },
+    {
+      "path": "glb/chandelier.glb",
+      "bytes": 209400,
+      "sha256": "55713190a785b60cf32e23805bdc43768e1bfd64ca580e0c9d51ff4f49911a7d"
+    },
+    {
+      "path": "glb/chimney.glb",
+      "bytes": 217812,
+      "sha256": "81e3f2328f9edc1a83398850e6f91ac0dd41d7c4ccd85bf76673e01dfc7cb951"
+    },
+    {
+      "path": "glb/cloister_pad.glb",
+      "bytes": 126512,
+      "sha256": "d69b2eb14aaaa21df9dd36bd30dc57eed97fd4b889e0fa202f631c0cfd3ff92f"
+    },
+    {
+      "path": "glb/column.glb",
+      "bytes": 59168,
+      "sha256": "f64787bde3143208f0ac0658b9f1d8a0277c0b4b5842ffee7fcdfb4788391b7c"
+    },
+    {
+      "path": "glb/corbel.glb",
+      "bytes": 109588,
+      "sha256": "b98f39a997ae6d713a3ed42071f8812ddb166479f4920b1d84fc6d3386d40759"
+    },
+    {
+      "path": "glb/corner_pad.glb",
+      "bytes": 126360,
+      "sha256": "eec6733d6099e6b2d1403a1e2e066c66c6e7d0ff778fe0a73e7d24a60a6db40b"
+    },
+    {
+      "path": "glb/door_arch.glb",
+      "bytes": 165444,
+      "sha256": "f55101756c8d5cfa0b8f3c6994a8f72602e7b1e41e9df6359343821fa768a26a"
+    },
+    {
+      "path": "glb/door_hinged.glb",
+      "bytes": 175832,
+      "sha256": "8533ea2735bcb749d4745447639d6636dcb773e7b212c51dcf9d106dc88befe6"
+    },
+    {
+      "path": "glb/door_oak.glb",
+      "bytes": 244212,
+      "sha256": "70fe7fe3bbfcfba0ba60c538ff8e29cd8d3878f8c2600d401867cc152ee1d0d2"
+    },
+    {
+      "path": "glb/dormer.glb",
+      "bytes": 250888,
+      "sha256": "ebc4cd2a6c57e4be05169aa1e98847a8e5abf3cc22d5dfca823a67671b77062a"
+    },
+    {
+      "path": "glb/entry_landing.glb",
+      "bytes": 47228,
+      "sha256": "97936ac7b5e0c9017ac3ee0b1775ef050a5a8dce2ca185a5d6644533d193e6e0"
+    },
+    {
+      "path": "glb/entry_reveal.glb",
+      "bytes": 39140,
+      "sha256": "fc74de91b167a2dcd23f75f56eeceeaea2b2fbbf811d701143493adeff5974ed"
+    },
+    {
+      "path": "glb/entry_stairs.glb",
+      "bytes": 44884,
+      "sha256": "abf2f6af0f75d439b7b646236d8bb2c7d2a2ac384aa2d47568fcb8fc1502439e"
+    },
+    {
+      "path": "glb/facade_8.glb",
+      "bytes": 599652,
+      "sha256": "91cb01e349a86ec6130bec7fbb95b2b2d4b440f27c8879a6c512cd587e8f4338"
+    },
+    {
+      "path": "glb/floor_lamp.glb",
+      "bytes": 92716,
+      "sha256": "cc17d7d1a5612e62f8afb2b7edfb3a370ccbbaa5be1649844e3b60cfb509572b"
+    },
+    {
+      "path": "glb/floor_stone_4.glb",
+      "bytes": 117196,
+      "sha256": "d03c50d33b80add448c26c1a9724d6de9a71da684054f5c0dcc5294987fc0ca0"
+    },
+    {
+      "path": "glb/foundation_strip_4m.glb",
+      "bytes": 116856,
+      "sha256": "40d621de43121c54f7fd4b55a4c2376f337f4eacd84eb929aecd832bfd73639c"
+    },
+    {
+      "path": "glb/gate.glb",
+      "bytes": 647844,
+      "sha256": "9ac1d9e133e4e033c4b1dba32d7ec4062ba6cfe0b1eb205dab165ff927b381c8"
+    },
+    {
+      "path": "glb/interior_column.glb",
+      "bytes": 257412,
+      "sha256": "e2056e3364b16c0f4de79bc91664f0d3b55dc5a4968792a43720cc1a42bc039e"
+    },
+    {
+      "path": "glb/lectern.glb",
+      "bytes": 184652,
+      "sha256": "22903b35effa550c12f752791a96023e96c768347cb027b250a69c05b29ec603"
+    },
+    {
+      "path": "glb/pew_2m.glb",
+      "bytes": 296736,
+      "sha256": "f01e8a2c77a94f9028c1f9fea27b2cf130a94422d55fce4647e4112c01e36bfe"
+    },
+    {
+      "path": "glb/pew_end.glb",
+      "bytes": 157268,
+      "sha256": "c29e479357d9423362a471610aa5f0a860d615d8fa20544703046b903891c164"
+    },
+    {
+      "path": "glb/pew_seat_1m.glb",
+      "bytes": 205120,
+      "sha256": "785d1349d8abe9b6751beb57b0939a4f50d955eac78f75982381f0b8ab989ca6"
+    },
+    {
+      "path": "glb/plinth_4.glb",
+      "bytes": 44960,
+      "sha256": "87e71c3a8f71414f53ae5ee4dd8a6948dbe5c1a3bb49218eead65eee686ec9c3"
+    },
+    {
+      "path": "glb/portal_reveal.glb",
+      "bytes": 39136,
+      "sha256": "6f423327c978b6baeb93ae227dd91bdc32c7f298f506e5bd12f29472e74c5ea6"
+    },
+    {
+      "path": "glb/quoin_6.glb",
+      "bytes": 140536,
+      "sha256": "cf7c25965b8a9e151c937744697f908f99672c3d86f333b7d11b27495193fd73"
+    },
+    {
+      "path": "glb/rear_portal.glb",
+      "bytes": 577688,
+      "sha256": "a5076cdd22316c8e72316241624ca50751eb69fdbd65d0e5dcd130535138620c"
+    },
+    {
+      "path": "glb/ridge_cross.glb",
+      "bytes": 103000,
+      "sha256": "5c70cf77852867863f6e851e23b2888411313df0658a5b8a8f7f2357711e2848"
+    },
+    {
+      "path": "glb/roof_cloister_4.glb",
+      "bytes": 416060,
+      "sha256": "900deab37e4f0dcbbc4c8e1fd6cc2993868090eda29d7703eb0c50b93042e10d"
+    },
+    {
+      "path": "glb/roof_end.glb",
+      "bytes": 202812,
+      "sha256": "8d37c9648d21ddc51486cd71565bb544b711d30259b26581ba8ca7541c182e91"
+    },
+    {
+      "path": "glb/roof_fascia.glb",
+      "bytes": 98000,
+      "sha256": "1b630196f6290e96a2d49e561015a1319095de459acbbccfd7c3bba057bd3534"
+    },
+    {
+      "path": "glb/roof_nave_4.glb",
+      "bytes": 672016,
+      "sha256": "fa3fa026377415c7d05d139db243bb82f5d0cda18b6c455838e09529d134cdbc"
+    },
+    {
+      "path": "glb/roof_shed_4.glb",
+      "bytes": 268388,
+      "sha256": "c7ba5d51250916d2fc5b5e8b12190f301ab185c528ec2a95896abb7a7b9771ba"
+    },
+    {
+      "path": "glb/roof_tower.glb",
+      "bytes": 1383924,
+      "sha256": "7f1e5b3a00f7e4135b35a3c208598dc9c22b093ea1c912de5052248abcf82611"
+    },
+    {
+      "path": "glb/roof_truss_8m.glb",
+      "bytes": 201332,
+      "sha256": "118804ce0f9cf3022752658b6852d410b5afcedbf38eb522492651c914528a4d"
+    },
+    {
+      "path": "glb/rose_window.glb",
+      "bytes": 359056,
+      "sha256": "578168d7e79140d905eb582f84ce7bbf26247e3d8c95b330838d5ecd0d8d5316"
+    },
+    {
+      "path": "glb/stairs.glb",
+      "bytes": 41068,
+      "sha256": "7586b32c109e1ffa27fb76a5ff7c32907cff889b2a9a14388954d8ff539fdbe3"
+    },
+    {
+      "path": "glb/stone_capital_sdf.glb",
+      "bytes": 185280,
+      "sha256": "ad41b3440e3b36842f1be618f5c12827d620c5c7ac2e22a872480904a1ec0c49"
+    },
+    {
+      "path": "glb/support_pad.glb",
+      "bytes": 126496,
+      "sha256": "af8a614f8e97af538b3ad883b35b9e449fac5797c1ebfbaf630dd39cd378d49c"
+    },
+    {
+      "path": "glb/tower_foundation.glb",
+      "bytes": 126476,
+      "sha256": "06145a985eb72a63a76dfe1d98347d62e026f51e6e0b92c7eea052b2ae0f0df0"
+    },
+    {
+      "path": "glb/tower_wall.glb",
+      "bytes": 303520,
+      "sha256": "6272ad2532599f5f3b8ce2a4236aab6715caf912151ea5d5e6eee2fdbff637f7"
+    },
+    {
+      "path": "glb/tower_window.glb",
+      "bytes": 175820,
+      "sha256": "dc78b820b55aa957e77771f581f0ee27b37820f04a52926fc0de5a47b5f7636f"
+    },
+    {
+      "path": "glb/wainscot_4m.glb",
+      "bytes": 121704,
+      "sha256": "0589ed4df6c98cf927bfbc6c580d4403cdeb90dd107ce700a6a82b0971187f72"
+    },
+    {
+      "path": "glb/wall_clerestory_4.glb",
+      "bytes": 359060,
+      "sha256": "a98b1208ac5f5496df15c0d21db84f1edfe6d66fef549cc7bc4f1ca52f2262de"
+    },
+    {
+      "path": "glb/window_clerestory.glb",
+      "bytes": 175804,
+      "sha256": "02a400fcd7a59aebfc7141a9de055862e0c43dae1d3c126f20274c74efc819de"
+    },
+    {
+      "path": "glb/window_reveal.glb",
+      "bytes": 51776,
+      "sha256": "134a8ec5fb3a5d91e48e54f19a7d0c6d01103bfe173815bdafad9842e318b457"
+    },
+    {
+      "path": "glb/wood_dais_2m.glb",
+      "bytes": 174144,
+      "sha256": "683ea12d6cdeb3648376d94ce789c72d4cb92e37163c3c1616db0db81f24956c"
+    },
+    {
+      "path": "glb/wood_stairs.glb",
+      "bytes": 155572,
+      "sha256": "57fe38034b38a191188eeaedf8ea38c3fb84dd8ac6467a7696cd39e5a74c2263"
+    },
+    {
+      "path": "godot_validation.json",
+      "bytes": 98270,
+      "sha256": "985448c03420378c64798f1bed02ec2d25f8f6fa3e8c94c7325f64b04bc3e505"
+    },
+    {
+      "path": "hierarchy_validation.json",
+      "bytes": 6090,
+      "sha256": "2d33e3ac41286bfe5d6774531d54ec99e3f1faf832cf0f7b4c93af27b38e8999"
+    },
+    {
+      "path": "live_blender_append.json",
+      "bytes": 290,
+      "sha256": "a8180ef7f14efb49ab8f3ceac5d425db3c48b41bbfe554be10b799057a422524"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 85885,
+      "sha256": "20ea2285edfd48f3f48e16adfa8d2b1a233805e025d59fd03c035adb0a6c2d89"
+    },
+    {
+      "path": "palette_mapping.json",
+      "bytes": 2347,
+      "sha256": "17b7bcb838d3a2573e7887110791a8beb05a394f104a20a9f40bae590549a901"
+    },
+    {
+      "path": "palette_validation.json",
+      "bytes": 8608,
+      "sha256": "260202858826b19ee62b85c0ff7b6e632b5c1140dd05f178b4f1c3fab0a33e0b"
+    },
+    {
+      "path": "renders/capital_detail.png",
+      "bytes": 624031,
+      "sha256": "14842aabfd300178608d610c59b092344527ad34e36d39e1aa516efc4458433d"
+    },
+    {
+      "path": "renders/exterior_open.png",
+      "bytes": 2164947,
+      "sha256": "1d19daa83c7a60ec9e734d7ab835ca49745378f9087a4e1e6e55174337e96669"
+    },
+    {
+      "path": "renders/foundation_close.png",
+      "bytes": 2032751,
+      "sha256": "5ee448910fdf4dbd2e4241225204f06ed8cecf4c8eecae5dd9c9d33800837f88"
+    },
+    {
+      "path": "renders/interior_cutaway.png",
+      "bytes": 2146664,
+      "sha256": "8a732455556604a3074eb604ded21649a215920e85b8bcdd12eb0938764e5fa5"
+    },
+    {
+      "path": "renders/interior_eye.png",
+      "bytes": 1972518,
+      "sha256": "c8b2b199847561de5be8f3e03d274d3a77da0360fa65fe6eb8b0b473ae82ce61"
+    },
+    {
+      "path": "renders/pew_4m_detail.png",
+      "bytes": 1323030,
+      "sha256": "faaff792a3084988d6b778bcc50d905b36d80763db23107c7076506e8a55ccfb"
+    },
+    {
+      "path": "renders/reuse_examples.png",
+      "bytes": 1722024,
+      "sha256": "83c040e50f96a9829f9afe9e74f52c619eb0b9f8eddd1c088869d0743552a8f1"
+    },
+    {
+      "path": "reveal_validation/interior_reveals_after.png",
+      "bytes": 987930,
+      "sha256": "1c2d8e87bb04d21f8c3bd34336f67fe8e9e0e4cdf741d153b30b11a22e77f16b"
+    },
+    {
+      "path": "reveal_validation/opening_diagnosis.json",
+      "bytes": 8576,
+      "sha256": "b3a256679e0a982ce89af88e3713ccb14120cf4d4ab86765ee6d96350a4d2609"
+    },
+    {
+      "path": "reveal_validation/portal_reveal_close.png",
+      "bytes": 923195,
+      "sha256": "7115105124879113b63d307be67ef01d0ba5440a845d1b28702fa2b55e68179c"
+    },
+    {
+      "path": "reveal_validation/PROVENANCE.txt",
+      "bytes": 1054,
+      "sha256": "588358252b5722c57a7e86e44f8f4a10b9153fe962f5884e2ccce54050f64f50"
+    },
+    {
+      "path": "stages/artifact_reopen_and_copy_evidence.json",
+      "bytes": 1060,
+      "sha256": "1f37df901f7ff1b89dd010ea7e6703acc18cb424cacb027020ef69022db69978"
+    },
+    {
+      "path": "stages/capital_geometry_evidence.json",
+      "bytes": 1045,
+      "sha256": "7de5736f911453482cc3d6f4010e38e8e93115bdcc9fc67870603bc2e8944da2"
+    },
+    {
+      "path": "stages/furniture_measurements.json",
+      "bytes": 6524,
+      "sha256": "595e29d9684934209cad7f11b63556c50297310ea4e046fb382da61dfb502520"
+    },
+    {
+      "path": "stages/pipeline_routes.json",
+      "bytes": 125962,
+      "sha256": "07ce2ae65bdd5b55e1e8b0ae1d328f7c294f27623d46192617094f17beaddc80"
+    },
+    {
+      "path": "stages/pipeline_stages.blend",
+      "bytes": 18579182,
+      "sha256": "b38e619e2692f7909a7a95b4ad287de8f88688ba1a9cb5693af16a4442a42454"
+    },
+    {
+      "path": "stages/textures/bronze_basecolor.png",
+      "bytes": 19275,
+      "sha256": "4e92661eb6938323636c79b983b82413d3d672387adac9df420f530fb6519bcc"
+    },
+    {
+      "path": "stages/textures/sandstone_basecolor.png",
+      "bytes": 21177,
+      "sha256": "020d031e13a81d502101557d625830cacb1e75ccef615545a2c39fa13a44de5c"
+    },
+    {
+      "path": "stages/textures/stone_dark_basecolor.png",
+      "bytes": 16815,
+      "sha256": "f03be9c4448d1c82ae5d32a2a1377fd16448a32efb840e895301ff76be67219c"
+    },
+    {
+      "path": "stages/textures/stone_light_basecolor.png",
+      "bytes": 19963,
+      "sha256": "044bc6568eebc67f8b143dd687ebfcac613651b1594c0492f04564eb16a07379"
+    },
+    {
+      "path": "stages/textures/stone_mid_basecolor.png",
+      "bytes": 21888,
+      "sha256": "a03504e412d367e271a87cfcefaba919d25abd7130b89a8e1e917817bbb98543"
+    },
+    {
+      "path": "stages/textures/timber_basecolor.png",
+      "bytes": 43408,
+      "sha256": "63fcd9a6304f6daad5a1ca663138532344a5aad12a5a3084299c19ab201962f4"
+    },
+    {
+      "path": "stages/textures/window_glow_basecolor.png",
+      "bytes": 15533,
+      "sha256": "d2033a7ed60b2516753057650b02d02477f7315db9d7e9fd619428fa1c9e2715"
+    },
+    {
+      "path": "stages/textures/wood_basecolor.png",
+      "bytes": 46649,
+      "sha256": "e1402fdd5a43e250980c5dcd4ec26c67aa743da612bf4aae8850e79ea153cbdd"
+    },
+    {
+      "path": "stages/textures/wood_dark_basecolor.png",
+      "bytes": 18865,
+      "sha256": "9d662c59711a58c71a277e96dbd777dd32f6c7a31c6cd1ec3a5e8bdd30c33212"
+    },
+    {
+      "path": "support_validation.json",
+      "bytes": 173067,
+      "sha256": "dc06aaa140df55fb6354b7badd277a3fa7c385411c11a19c8915c158b15b9a2f"
+    },
+    {
+      "path": "textures/bronze_basecolor.png",
+      "bytes": 19275,
+      "sha256": "4e92661eb6938323636c79b983b82413d3d672387adac9df420f530fb6519bcc"
+    },
+    {
+      "path": "textures/ground_basecolor.png",
+      "bytes": 17913,
+      "sha256": "420ef197a869a24358008da58df017f178466f988749bc01d5671a623c1d5665"
+    },
+    {
+      "path": "textures/grout_basecolor.png",
+      "bytes": 17794,
+      "sha256": "27dbbc5502deadcb560491b95e1038a48e85b297c8bce3189c2d42ec6e537526"
+    },
+    {
+      "path": "textures/plaster_basecolor.png",
+      "bytes": 21008,
+      "sha256": "f6ce05b5322354be770539ac7e39dd13e9457a85e167d1bc4f1ceec6bc87b8ff"
+    },
+    {
+      "path": "textures/sandstone_basecolor.png",
+      "bytes": 21177,
+      "sha256": "020d031e13a81d502101557d625830cacb1e75ccef615545a2c39fa13a44de5c"
+    },
+    {
+      "path": "textures/stone_dark_basecolor.png",
+      "bytes": 16815,
+      "sha256": "f03be9c4448d1c82ae5d32a2a1377fd16448a32efb840e895301ff76be67219c"
+    },
+    {
+      "path": "textures/stone_light_basecolor.png",
+      "bytes": 19963,
+      "sha256": "044bc6568eebc67f8b143dd687ebfcac613651b1594c0492f04564eb16a07379"
+    },
+    {
+      "path": "textures/stone_mid_basecolor.png",
+      "bytes": 21888,
+      "sha256": "a03504e412d367e271a87cfcefaba919d25abd7130b89a8e1e917817bbb98543"
+    },
+    {
+      "path": "textures/terracotta_basecolor.png",
+      "bytes": 20710,
+      "sha256": "37a0f509e4f845e4c63e16254661d05bb6e9d6f160af3837e60c1b1c2d0a33f6"
+    },
+    {
+      "path": "textures/tile_dark_basecolor.png",
+      "bytes": 21892,
+      "sha256": "f35ad0dfb47bd0c3771820d184d81e151b0f7c8c2ca9976a1878998a1ebc3e4a"
+    },
+    {
+      "path": "textures/tile_light_basecolor.png",
+      "bytes": 20369,
+      "sha256": "91d18df5fa3ba15e7c1dd0f2b6dff0798939ebcd05a5ee1165e3ee2a94472696"
+    },
+    {
+      "path": "textures/timber_basecolor.png",
+      "bytes": 43408,
+      "sha256": "63fcd9a6304f6daad5a1ca663138532344a5aad12a5a3084299c19ab201962f4"
+    },
+    {
+      "path": "textures/window_glow_basecolor.png",
+      "bytes": 15533,
+      "sha256": "d2033a7ed60b2516753057650b02d02477f7315db9d7e9fd619428fa1c9e2715"
+    },
+    {
+      "path": "textures/wood_basecolor.png",
+      "bytes": 46649,
+      "sha256": "e1402fdd5a43e250980c5dcd4ec26c67aa743da612bf4aae8850e79ea153cbdd"
+    },
+    {
+      "path": "textures/wood_dark_basecolor.png",
+      "bytes": 18865,
+      "sha256": "9d662c59711a58c71a277e96dbd777dd32f6c7a31c6cd1ec3a5e8bdd30c33212"
+    },
+    {
+      "path": "tool_validation.json",
+      "bytes": 3741,
+      "sha256": "8efdc856ec22a3a5eb21d521c34a8dfd3d9560ecc38b78fe99706dd71bf4db5f"
+    }
+  ],
+  "source_hashes": [
+    {
+      "path": "tools/blender/abbey_kit/blender_panel.py",
+      "sha256": "44ad22839792786475cce62f3e6c57d409ba07d8196d4a2e2636af5957bb69d2"
+    },
+    {
+      "path": "tools/blender/abbey_kit/build.py",
+      "sha256": "9931c2c1b1363a05a302732a2b20f853bfca84da1ee5871251f68a6f13c87f5b"
+    },
+    {
+      "path": "tools/blender/abbey_kit/catalog.py",
+      "sha256": "36f15c500491e288853e66653dcaff2a896df625563dec963fd245cdeb2874a4"
+    },
+    {
+      "path": "tools/blender/abbey_kit/components.py",
+      "sha256": "c01116d389e3b6ea2b1c037e1559c631f9a9d49202371a60c76b2efd2335cafa"
+    },
+    {
+      "path": "tools/blender/abbey_kit/geometry.py",
+      "sha256": "bf34e7147925b9e845b765ab0a174a0d3f1b5703be8dffd2af9a9c3e1dc3bcf9"
+    },
+    {
+      "path": "tools/blender/abbey_kit/inspect_references.py",
+      "sha256": "41713bbfe7f2e837bde2dd281aa51b32867f1ae71bee1236b6aa16c14308ad93"
+    },
+    {
+      "path": "tools/blender/abbey_kit/render_thumbnails.py",
+      "sha256": "0b5c9ec3930a4a86a54494531c77b2e7a3668487aec22f09b0aa19948dbf7588"
+    },
+    {
+      "path": "tools/blender/abbey_kit/roundtrip_check.py",
+      "sha256": "657d46e6e64e2387cbaf8419aca4d597a81b5f2ca09900448a209fd23e7c49f5"
+    },
+    {
+      "path": "tools/blender/abbey_kit/sdf.py",
+      "sha256": "6a788505e0994b3ede219ea403f3f02f63080710ab605d4429d78736d142c3ff"
+    },
+    {
+      "path": "tools/blender/abbey_kit/show_in_blender.py",
+      "sha256": "62bff767bbed7b508f0553a436c1edf742300f0dd5ca3733b1ca3924a1791b99"
+    },
+    {
+      "path": "tools/blender/abbey_kit/verify_exports.py",
+      "sha256": "a0929d63d6fd714923bcca5ef387466573fd2af603ad9ffab06c8b45a4019883"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/apse_base.py",
+      "sha256": "148afe40a9cd86f2f3a0e1d7db024ed577439f713c1ec331db5460bc9147d69e"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/build.py",
+      "sha256": "9eeb1a636a4695ce24a51e833efa94d5e8e3a403b1d28f6450a8bd4b12a4a0c6"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/check_palette.py",
+      "sha256": "6fa5777e0201d7dd77f8940945df292615c9f4a7666e97bb2d7790c5b0a83d51"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/detail_probe.py",
+      "sha256": "4babcc6b3c04b4c8558d02bae84b277915fb5e6b56ac74e9f05ac3762cc2e5f7"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/details.py",
+      "sha256": "0cd90715a72503b5973ffab63666a1d9bd63d07d193857c78ce40fe2253d2edb"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/inspect_and_render.py",
+      "sha256": "6603085d2085b6537d10e11c354c89bf5fca03210e446f5e32b592659fb4e8d5"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/install_panel.py",
+      "sha256": "1db13116984e771464f4bd1d6be6f4fc35b9c00f01568078766279156de189a5"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/live_append.py",
+      "sha256": "de37e6d3b8e7252409848297f7c9e0a91788061de6a77919205e7f597988ba92"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/materials.py",
+      "sha256": "8850b2672c6c88a29eeedb6b7592ecd1d6d5dd12431b0189c119ab3cabcefd33"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/roof_probe.py",
+      "sha256": "9fdf7367d0b1afebf9dff4ffcd2ba08462442ccc3c3ec4e44d5b213eec1eac32"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/roofs.py",
+      "sha256": "2fde9bc650612cecd77cab7292d1034406e7a4249256a9f18b443eb57755d3e2"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v2/verify_exports.py",
+      "sha256": "6bc7c12d152e79377638c04045dff9f409d3b733f5340945b39ae557566d0787"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/build_v3.py",
+      "sha256": "e232c697456fa7dc6ee7655274e23865ca77743a904e24ba72502c1146e183aa"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/collect_evidence.py",
+      "sha256": "802cc20879e3972559494adca814a6bea2dcd842a84d463d83749c076dbcdc2e"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/diagnose_overlap.py",
+      "sha256": "5217ca3be50e3c5ce2f21f0e3227cdc259dd45ebc2733a5a5860ec24804aca1d"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/doors.py",
+      "sha256": "8a1df292901290ada07e3d4b8422c2ef658aef25fd7b628f974ae6034d1bf610"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/furniture.py",
+      "sha256": "b5ac4ce511c8d6ac6b17ea906a4c0df3258be7ff8352b2fb8c5bc9d6a945c189"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/furniture_probe.py",
+      "sha256": "96422082d89f3118b978c49613b929e78073c2348c49855bca61992569e0edf4"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/glass.py",
+      "sha256": "f06ffad3f1166836d3a28da703928943dc33b4c78e1be0fa000d8756c789aacc"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/install_panel.py",
+      "sha256": "ff81607226ac26e41b086badb67561ab56073eccde12a0aa31f0d278b11612b0"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/live_append.py",
+      "sha256": "18673b9df5df828d3033d883c5035d9d09c607a056533a70505b657be77bd607"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/openings.py",
+      "sha256": "1784037e3f306c6b2ed1a36b6b23049dd258a4987e89cdcd724c4e6e70e3f179"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/openings_probe.py",
+      "sha256": "146ce8674a979e5544e8724e4941b3f7b335ecdafe78c9391301367f0a6de840"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/pipeline.py",
+      "sha256": "25d5193a06945e3a25b5f4fd17d49f7774d67e020553549b7ee92b97023532b6"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/refine_entry.py",
+      "sha256": "bebea83ef374eddf293b1e0dc3a3f4637e3fbce0201d37fa7424378abfdf85bf"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/render_views.py",
+      "sha256": "9269d9bef707fe1e8cf753a9617743b2ec1797f17d14cf29fcdb8af0dff5ed32"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/structure.py",
+      "sha256": "389047883a90e0f81eceaf4774cbf3e3a5558ac9fa1aa1477262e4ced2030509"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/structure_probe.py",
+      "sha256": "cb82488e994ea4388d9510a52077db20ec15ff9f1926d78c195360b76b37dccb"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/upgrade_glass.py",
+      "sha256": "47bdda81c095fd545a90f0ce9ec35aedd99b97948be47c79a50c566e9c0449d4"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/verify_glass_exports.py",
+      "sha256": "9de4afb912fa1656818a8981ddc7b898387267091aedbd30543e83a72f7d1314"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/verify_hierarchy.py",
+      "sha256": "eb8812fcae3d8012f2a84615374ffa482c8a63ace0df2178f299c630cbb20541"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/verify_support.py",
+      "sha256": "cd087cad90afde119c2b235e3f24cd6a6b4222b034794c35446852808d9a3c89"
+    },
+    {
+      "path": "tools/blender/abbey_kit_v3/verify_tools.py",
+      "sha256": "8d811aaa5eb0ffd0ee8fa7b5f6dc2d621aa4297475207f459a9814887cf4ecc3"
+    }
+  ],
+  "validation": {
+    "export_validation": true,
+    "palette_validation": true,
+    "support_validation": true,
+    "tool_validation": true,
+    "hierarchy_validation": true,
+    "godot_validation": true,
+    "stages": true
+  },
+  "scope": "File identity and reported checks; independent visual acceptance is recorded separately in REVIEW.md."
+}

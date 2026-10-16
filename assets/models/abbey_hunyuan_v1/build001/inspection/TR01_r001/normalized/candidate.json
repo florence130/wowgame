@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "status": "staging",
+  "production_ready": false,
+  "asset_id": "TR01",
+  "label_zh": "石柱头",
+  "created_utc": "2026-10-07T16:00:06.023467+00:00",
+  "blender_version": "5.2.2 LTS",
+  "source": {
+    "path": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\raw\\TR01.glb",
+    "sha256": "ed3e2baab5f616ef249100128d4564ef71e56626b5460b4c73b579476d60010b",
+    "bytes": 36748
+  },
+  "source_image": {
+    "path_project_relative": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR01.png",
+    "exists_at_import": true,
+    "sha256_at_import": "c49809df8e6c08748d25e4f440e925f335d5f230ba234a3d8de605532e91c7bc",
+    "reference_provenance": {
+      "building_reference": "docs/abbey_tripo_20261007/references/townhall.png",
+      "decomposition_reference": "docs/abbey_tripo_20261007/references/legacy_breakdown.png",
+      "interpretation_zh": "用户提供的市政厅图片，仅作晨露谷修道院建筑语汇参考。独立部件图属于根据参考重绘的设计，不证明原建筑不可见面的形状。树木、旗帜、旗杆、灯具、园艺均不在本批。",
+      "part_image_status": "generated_and_visually_checked; see docs/abbey_tripo_20261007/REVIEW.md for scope",
+      "generation_record": "docs/abbey_tripo_20261007/GENERATION.md"
+    },
+    "image_is_design_interpretation": true
+  },
+  "asset_definition": {
+    "id": "TR01",
+    "name": "stone_capital",
+    "label_zh": "石柱头",
+    "dimensions_xyz_m": [
+      1.0,
+      0.8,
+      0.55
+    ],
+    "dimensions_status": "design_proposal",
+    "route": "hunyuan_optional",
+    "fallback_route": "blockout",
+    "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR01.png",
+    "scope_zh": "仅柱头：承压顶板、分层过渡和短方颈；不含柱身、柱础或参考图没有的花叶雕刻。",
+    "techniques": [
+      "mirror",
+      "profile_extrude",
+      "spin",
+      "bridge_loft",
+      "vertices"
+    ],
+    "origin": "bottom_center",
+    "target_socket_specification": {
+      "status": "design_proposal_requires_geometry_review",
+      "sockets": [
+        {
+          "name": "bottom",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "capital"
+        },
+        {
+          "name": "top",
+          "position_blender": [
+            0,
+            0,
+            0.55
+          ],
+          "normal_blender": [
+            0,
+            0,
+            1
+          ],
+          "kind": "capital"
+        }
+      ],
+      "review_zh": "确认顶板与底部承压面真实平整，柱身尺寸匹配；端口 family 借用旧 capital 命名不代表与旧件已验收兼容。"
+    },
+    "default_route": "blender_native_H"
+  },
+  "axes": {
+    "x": "width",
+    "y": "depth; +Y faces out from building",
+    "z": "height; +Z up"
+  },
+  "units": "metres",
+  "orientation": {
+    "gltf_to_blender_conversion": "Blender importer applied first",
+    "additional_euler_xyz_degrees": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "front_is_verified": false
+  },
+  "normalization": {
+    "method": "uniform_by_rotated_height",
+    "uniform_scale": 0.8918586057904944,
+    "anisotropic_stretch_applied": false,
+    "source_hierarchy_and_proportions_preserved": true,
+    "anchor_before_scale_in_rotated_space": [
+      0.008223563432693481,
+      0.005152091383934021,
+      0.0
+    ],
+    "matrix_blender": [
+      [
+        0.8918585777282715,
+        0.0,
+        0.0,
+        -0.007334255613386631
+      ],
+      [
+        0.0,
+        0.8918585777282715,
+        0.0,
+        -0.004594936966896057
+      ],
+      [
+        0.0,
+        0.0,
+        0.8918585777282715,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "origin": "bottom_center",
+    "origin_is_bounding_box_anchor_not_surface_repair": true
+  },
+  "bounds": {
+    "source_blender": {
+      "min": [
+        -0.3807776868343353,
+        -0.35505685210227966,
+        0.0
+      ],
+      "max": [
+        0.3972248136997223,
+        0.3653610348701477,
+        0.6166896820068359
+      ],
+      "dimensions_xyz": [
+        0.7780025005340576,
+        0.7204178869724274,
+        0.6166896820068359
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    },
+    "source_after_rotation": {
+      "min": [
+        -0.3807776868343353,
+        -0.35505685210227966,
+        0.0
+      ],
+      "max": [
+        0.3972248136997223,
+        0.3653610348701477,
+        0.6166896820068359
+      ],
+      "dimensions_xyz": [
+        0.7780025005340576,
+        0.7204178869724274,
+        0.6166896820068359
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    },
+    "candidate_metres": {
+      "min": [
+        -0.34693410992622375,
+        -0.3212554454803467,
+        0.0
+      ],
+      "max": [
+        0.34693410992622375,
+        0.3212554454803467,
+        0.550000011920929
+      ],
+      "dimensions_xyz": [
+        0.6938682198524475,
+        0.6425108909606934,
+        0.550000011920929
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    }
+  },
+  "proposed_dimensions_xyz_m": [
+    1.0,
+    0.8,
+    0.55
+  ],
+  "dimension_difference_xyz_m": [
+    -0.3061317801475525,
+    -0.15748910903930669,
+    1.1920928910669204e-08
+  ],
+  "source_hierarchy": [
+    {
+      "name": "Mesh_0",
+      "type": "MESH",
+      "parent": null,
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "collection": "ABY_TR01",
+  "root": "TR01_ROOT",
+  "sockets": [
+    {
+      "name": "bottom",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "normal_blender": [
+        0,
+        0,
+        -1
+      ],
+      "kind": "capital"
+    },
+    {
+      "name": "top",
+      "position_blender": [
+        0,
+        0,
+        0.55
+      ],
+      "normal_blender": [
+        0,
+        0,
+        1
+      ],
+      "kind": "capital"
+    }
+  ],
+  "socket_status": "design_proposal_unverified",
+  "review_required": [
+    "Inspect front/back and requested part-only scope against the individual source image.",
+    "Review unknown rear/hidden geometry; generated image is a design interpretation.",
+    "Check silhouette, watertightness, normals, disconnected scraps, density and UV/material quality.",
+    "Cut/repair actual planar bearing and back interfaces; bounding-box alignment does not flatten surfaces.",
+    "Replace proposal sockets with measured contact positions and check matched pieces in assembly.",
+    "Review actual width/depth deviations; regenerate or rebuild geometry instead of anisotropic stretching.",
+    "Confirm polycount, collision, LOD, textures and game-engine import budget before promotion.",
+    "Reopen candidate blend and reimport GLB; approve only after visual and dimensional checks."
+  ],
+  "outputs": {
+    "blend": "abbey_kit.blend",
+    "glb": "glb/TR01.glb",
+    "blend_sha256": "ff13930c627da13ca2b569be93df19c6830fb1c691b4b897e97dbd92a2f64a60",
+    "glb_sha256": "b982c076b5fba7e81ce5b91806dd6520e8eade473e3ef68ebcc622865ffacabe"
+  },
+  "catalog_updated": false,
+  "pipeline_stage_completed": "optional_hunyuan_candidate_normalization_only",
+  "provider": "Tencent Hunyuan3D",
+  "normalization_engine": "abbey_tripo/import_tripo.py (shared offline implementation)",
+  "generation_request_expectation": {
+    "model": "3.0",
+    "generate_type": "Geometry",
+    "face_count": 3000,
+    "enable_pbr": false,
+    "request_execution_verified_by_this_tool": false
+  }
+}

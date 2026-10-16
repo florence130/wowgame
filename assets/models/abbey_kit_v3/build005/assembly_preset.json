@@ -1,0 +1,12 @@
+{
+  "door_angle": 105,
+  "pew_rows": 5,
+  "pew_pitch": 1.65,
+  "pew_first_y": 5.1,
+  "aisle_clear_width": 2.1,
+  "floor_z": 0.9,
+  "column_height": 5.4,
+  "beam_bottom": 6.3,
+  "chandelier_energy": 48,
+  "floor_lamp_energy": 35
+}

@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "asset": "roof_nave_4",
+      "operator": [
+        "FINISHED"
+      ],
+      "socket_distance_metres": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "boundary_4",
+      "operator": [
+        "FINISHED"
+      ],
+      "socket_distance_metres": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "operator": [
+        "FINISHED"
+      ],
+      "socket_distance_metres": 0.0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,900 @@
+{
+  "scope": "Static 2D geometry and authored terrain-write audit; no full-city runtime pass claimed.",
+  "sources": {
+    "docs/city_v5/layout.json": "3ffb69edab808a61ccfee2554cee1fe5c7e8ccdcd3954105e506a7a374842305",
+    "tools/gen_solenne.gd": "eb3ad26dea6d6865edd88c99d1ec59628f241a5e791b2164aab3a89860c830d9",
+    "scenes/zones/tidewind_highlands.tscn": "20478ae08514fa773b83d76fb1d37f0715e83ed2d1bbb587f4fc7b02fe27bee2",
+    "assets/models/city_v5/architecture/manifest.json": "982f4675df085a2d847bcfe2598c27043d0dc32db173b5de7545a71fa3256000",
+    "assets/models/city_v5/landmarks/manifest.json": "4ead05abbfc6f094496f87cff41033b7efbb50d43f1e112e86383e4cc8ce890b"
+  },
+  "scenario_overrides": [
+    {
+      "cathedral_square_width": 80.0
+    }
+  ],
+  "counts": {
+    "buildings": 116,
+    "roads": 27,
+    "definite_overlap_records": 0,
+    "setback_visual_risks": 4,
+    "terrain_write_or_blend_records": 27
+  },
+  "scene_layout_transform_mismatches": [],
+  "confirmed_plan_conflicts": [],
+  "setback_and_visual_risks": [
+    {
+      "kind": "overhang_or_trim_walk",
+      "building": "smith",
+      "road": "civic_south",
+      "area_m2": 18.855,
+      "at": [
+        -180.0,
+        527.37
+      ],
+      "note": "AABB envelope only; could be overhead eaves. Normal entry apron excluded."
+    },
+    {
+      "kind": "overhang_or_trim_walk",
+      "building": "artisan",
+      "road": "civic_south",
+      "area_m2": 18.855,
+      "at": [
+        -215.0,
+        527.37
+      ],
+      "note": "AABB envelope only; could be overhead eaves. Normal entry apron excluded."
+    },
+    {
+      "kind": "overhang_or_trim_walk",
+      "building": "blackmarket",
+      "road": "west_cross",
+      "area_m2": 5.846,
+      "at": [
+        -725.0,
+        572.14
+      ],
+      "note": "AABB envelope only; could be overhead eaves. Normal entry apron excluded."
+    },
+    {
+      "kind": "water_setback_under_3m",
+      "building": "court_3_-1_0",
+      "gap_m": 2.348
+    }
+  ],
+  "terrain_write_conflicts": [
+    {
+      "feature": "civic_forecourt",
+      "owner": "civic_forecourt",
+      "kind": "squares",
+      "road": "east_crown",
+      "at": [
+        -285.0,
+        442.5
+      ],
+      "target_grade": 26,
+      "road_authored_grade": 29.5,
+      "delta_m": -3.5,
+      "sampled_max_single_write_displacement_m": 3.5,
+      "core_overlap_m2": 315.0,
+      "blend_overlap_m2": 1567.845,
+      "severity": "terrain_write_conflict"
+    },
+    {
+      "feature": "service_court",
+      "owner": "service_court",
+      "kind": "squares",
+      "road": "east_crown",
+      "at": [
+        -280.92,
+        459.0
+      ],
+      "target_grade": 26,
+      "road_authored_grade": 29.364,
+      "delta_m": -3.364,
+      "sampled_max_single_write_displacement_m": 2.897,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 1190.904,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "service_court",
+      "owner": "service_court",
+      "kind": "squares",
+      "road": "civic_south",
+      "at": [
+        -82.411,
+        530.0
+      ],
+      "target_grade": 26,
+      "road_authored_grade": 21.436,
+      "delta_m": 4.564,
+      "sampled_max_single_write_displacement_m": 0.242,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 192.838,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "cathedral_square",
+      "owner": "cathedral_square",
+      "kind": "squares",
+      "road": "harbor_ramp",
+      "at": [
+        -738.141,
+        696.39
+      ],
+      "target_grade": 38,
+      "road_authored_grade": 23.573,
+      "delta_m": 14.427,
+      "sampled_max_single_write_displacement_m": 2.776,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 125.061,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "admiral_garden",
+      "owner": "admiral_garden",
+      "kind": "gardens",
+      "road": "terrace_lane",
+      "at": [
+        -674.0,
+        349.0
+      ],
+      "target_grade": 60,
+      "road_authored_grade": 54.927,
+      "delta_m": 5.073,
+      "sampled_max_single_write_displacement_m": 4.808,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 139.207,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "seaside_park",
+      "owner": "seaside_park",
+      "kind": "gardens",
+      "road": "east_quay",
+      "at": [
+        160.56,
+        970.974
+      ],
+      "target_grade": 17,
+      "road_authored_grade": 19.991,
+      "delta_m": -2.991,
+      "sampled_max_single_write_displacement_m": 2.991,
+      "core_overlap_m2": 1157.051,
+      "blend_overlap_m2": 60.263,
+      "severity": "terrain_write_conflict"
+    },
+    {
+      "feature": "blackmarket:body_pad",
+      "owner": "blackmarket",
+      "kind": "building_pad",
+      "road": "west_cross",
+      "at": [
+        -707.293,
+        575.0
+      ],
+      "target_grade": 34,
+      "road_authored_grade": 31.383,
+      "delta_m": 2.617,
+      "sampled_max_single_write_displacement_m": 1.422,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 83.39,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "admiral:body_pad",
+      "owner": "admiral",
+      "kind": "building_pad",
+      "road": "terrace_lane",
+      "at": [
+        -674.0,
+        318.139
+      ],
+      "target_grade": 60,
+      "road_authored_grade": 56.432,
+      "delta_m": 3.568,
+      "sampled_max_single_write_displacement_m": 0.511,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 30.608,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "weapon_shop:body_pad",
+      "owner": "weapon_shop",
+      "kind": "building_pad",
+      "road": "bridge_station",
+      "at": [
+        27.0,
+        499.139
+      ],
+      "target_grade": 26,
+      "road_authored_grade": 22.531,
+      "delta_m": 3.469,
+      "sampled_max_single_write_displacement_m": 0.511,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 28.608,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "westcore_5:entry_pad",
+      "owner": "westcore_5",
+      "kind": "building_entry_pad",
+      "road": "civic_west",
+      "at": [
+        -366.0,
+        398.76
+      ],
+      "target_grade": 33.713,
+      "road_authored_grade": 25.795,
+      "delta_m": 7.918,
+      "sampled_max_single_write_displacement_m": 2.228,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 56.006,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "academy_south_0:entry_pad",
+      "owner": "academy_south_0",
+      "kind": "building_entry_pad",
+      "road": "east_crown",
+      "at": [
+        -637.929,
+        441.0
+      ],
+      "target_grade": 45.272,
+      "road_authored_grade": 48.396,
+      "delta_m": -3.124,
+      "sampled_max_single_write_displacement_m": 2.611,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "academy_south_1:entry_pad",
+      "owner": "academy_south_1",
+      "kind": "building_entry_pad",
+      "road": "east_crown",
+      "at": [
+        -607.329,
+        441.0
+      ],
+      "target_grade": 43.213,
+      "road_authored_grade": 46.866,
+      "delta_m": -3.653,
+      "sampled_max_single_write_displacement_m": 3.05,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "academy_south_6:entry_pad",
+      "owner": "academy_south_6",
+      "kind": "building_entry_pad",
+      "road": "east_crown",
+      "at": [
+        -442.329,
+        441.0
+      ],
+      "target_grade": 31.836,
+      "road_authored_grade": 37.489,
+      "delta_m": -5.653,
+      "sampled_max_single_write_displacement_m": 4.867,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "westlane_0:entry_pad",
+      "owner": "westlane_0",
+      "kind": "building_entry_pad",
+      "road": "west_residential_lane",
+      "at": [
+        -849.071,
+        536.0
+      ],
+      "target_grade": 38.728,
+      "road_authored_grade": 44.437,
+      "delta_m": -5.709,
+      "sampled_max_single_write_displacement_m": 5.364,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "west_middle_6:entry_pad",
+      "owner": "west_middle_6",
+      "kind": "building_entry_pad",
+      "road": "east_crown",
+      "at": [
+        -595.678,
+        459.0
+      ],
+      "target_grade": 34.908,
+      "road_authored_grade": 46.284,
+      "delta_m": -11.376,
+      "sampled_max_single_write_displacement_m": 1.733,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 34.432,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "west_sea_1:entry_pad",
+      "owner": "west_sea_1",
+      "kind": "building_entry_pad",
+      "road": "west_highstreet",
+      "at": [
+        -903.932,
+        503.881
+      ],
+      "target_grade": 39.846,
+      "road_authored_grade": 46.222,
+      "delta_m": -6.376,
+      "sampled_max_single_write_displacement_m": 4.183,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 114.705,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "west_sea_3:entry_pad",
+      "owner": "west_sea_3",
+      "kind": "building_entry_pad",
+      "road": "west_highstreet",
+      "at": [
+        -901.872,
+        557.44
+      ],
+      "target_grade": 28.491,
+      "road_authored_grade": 40.454,
+      "delta_m": -11.963,
+      "sampled_max_single_write_displacement_m": 6.825,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 89.042,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "dockwest_0:body_pad",
+      "owner": "dockwest_0",
+      "kind": "building_pad",
+      "road": "harbor_ramp",
+      "at": [
+        -713.5,
+        739.123
+      ],
+      "target_grade": 13,
+      "road_authored_grade": 19.656,
+      "delta_m": -6.656,
+      "sampled_max_single_write_displacement_m": 0.283,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 2.413,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "terrace_south_3:entry_pad",
+      "owner": "terrace_south_3",
+      "kind": "building_entry_pad",
+      "road": "west_residential_lane",
+      "at": [
+        -565.404,
+        532.729
+      ],
+      "target_grade": 32.395,
+      "road_authored_grade": 35.382,
+      "delta_m": -2.987,
+      "sampled_max_single_write_displacement_m": 2.531,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 145.95,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "bath_south_0:entry_pad",
+      "owner": "bath_south_0",
+      "kind": "building_entry_pad",
+      "road": "west_residential_lane",
+      "at": [
+        -487.0,
+        531.0
+      ],
+      "target_grade": 30.453,
+      "road_authored_grade": 32.773,
+      "delta_m": -2.32,
+      "sampled_max_single_write_displacement_m": 1.862,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 180.37,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "market_eastwall_0:entry_pad",
+      "owner": "market_eastwall_0",
+      "kind": "building_entry_pad",
+      "road": "east_embankment",
+      "at": [
+        241.0,
+        495.929
+      ],
+      "target_grade": 26,
+      "road_authored_grade": 22.758,
+      "delta_m": 3.242,
+      "sampled_max_single_write_displacement_m": 2.565,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "academy_westwall_0:entry_pad",
+      "owner": "academy_westwall_0",
+      "kind": "building_entry_pad",
+      "road": "terrace_lane",
+      "at": [
+        -666.0,
+        275.587
+      ],
+      "target_grade": 44,
+      "road_authored_grade": 58.508,
+      "delta_m": -14.508,
+      "sampled_max_single_write_displacement_m": 9.623,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 103.56,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "academy_westwall_2:entry_pad",
+      "owner": "academy_westwall_2",
+      "kind": "building_entry_pad",
+      "road": "terrace_lane",
+      "at": [
+        -666.0,
+        324.864
+      ],
+      "target_grade": 44,
+      "road_authored_grade": 56.104,
+      "delta_m": -12.104,
+      "sampled_max_single_write_displacement_m": 9.768,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 128.732,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "upper_seafront_0:entry_pad",
+      "owner": "upper_seafront_0",
+      "kind": "building_entry_pad",
+      "road": "west_highstreet",
+      "at": [
+        -906.0,
+        333.929
+      ],
+      "target_grade": 60,
+      "road_authored_grade": 56.53,
+      "delta_m": 3.47,
+      "sampled_max_single_write_displacement_m": 2.945,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "upper_seafront_2:entry_pad",
+      "owner": "upper_seafront_2",
+      "kind": "building_entry_pad",
+      "road": "west_highstreet",
+      "at": [
+        -906.0,
+        383.6
+      ],
+      "target_grade": 60,
+      "road_authored_grade": 54.591,
+      "delta_m": 5.409,
+      "sampled_max_single_write_displacement_m": 5.077,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 180.37,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "upper_seafront_3:entry_pad",
+      "owner": "upper_seafront_3",
+      "kind": "building_entry_pad",
+      "road": "west_highstreet",
+      "at": [
+        -906.0,
+        412.329
+      ],
+      "target_grade": 60,
+      "road_authored_grade": 53.47,
+      "delta_m": 6.53,
+      "sampled_max_single_write_displacement_m": 5.889,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 154.423,
+      "severity": "terrain_blend_risk"
+    },
+    {
+      "feature": "court_5_-1_0:body_pad",
+      "owner": "court_5_-1_0",
+      "kind": "building_pad",
+      "road": "east_crown",
+      "at": [
+        -727.932,
+        441.0
+      ],
+      "target_grade": 44,
+      "road_authored_grade": 53.379,
+      "delta_m": -9.379,
+      "sampled_max_single_write_displacement_m": 0.398,
+      "core_overlap_m2": 0.0,
+      "blend_overlap_m2": 17.295,
+      "severity": "terrain_blend_risk"
+    }
+  ],
+  "authored_slope_risks": [
+    {
+      "road": "north_ring",
+      "a": [
+        -670,
+        205
+      ],
+      "b": [
+        -360,
+        205
+      ],
+      "y0": 60.0,
+      "y1": 22.29,
+      "authored_grade_percent": 12.17,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    },
+    {
+      "road": "civic_west",
+      "a": [
+        -360,
+        390
+      ],
+      "b": [
+        -360,
+        450
+      ],
+      "y0": 24.73,
+      "y1": 32,
+      "authored_grade_percent": 12.11,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    },
+    {
+      "road": "palace_approach",
+      "a": [
+        -790,
+        450
+      ],
+      "b": [
+        -790,
+        530
+      ],
+      "y0": 57,
+      "y1": 47,
+      "authored_grade_percent": 12.5,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    },
+    {
+      "road": "palace_approach",
+      "a": [
+        -790,
+        530
+      ],
+      "b": [
+        -785,
+        600
+      ],
+      "y0": 47,
+      "y1": 38,
+      "authored_grade_percent": 12.82,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    },
+    {
+      "road": "terrace_lane",
+      "a": [
+        -670,
+        450
+      ],
+      "b": [
+        -670,
+        540
+      ],
+      "y0": 50,
+      "y1": 38,
+      "authored_grade_percent": 13.33,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    },
+    {
+      "road": "terrace_lane",
+      "a": [
+        -670,
+        540
+      ],
+      "b": [
+        -690,
+        580
+      ],
+      "y0": 38,
+      "y1": 30,
+      "authored_grade_percent": 17.89,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    },
+    {
+      "road": "tavern_walk",
+      "a": [
+        -679,
+        657
+      ],
+      "b": [
+        -638,
+        689
+      ],
+      "y0": 20,
+      "y1": 13,
+      "authored_grade_percent": 13.46,
+      "severity": "planned_slope_risk",
+      "note": "Endpoint design grades only; post-road flatten writes can produce a different actual slope."
+    }
+  ],
+  "gate_wall_connections": [
+    {
+      "gate": "gate_east",
+      "tower_side": -1,
+      "tower_c": [
+        292.0,
+        467.0
+      ],
+      "nearest_wall": "wall_6_0",
+      "gap_m": 0.0,
+      "connected_in_plan": true,
+      "gap_endpoints": [
+        [
+          288.5,
+          475.0
+        ],
+        [
+          288.5,
+          475.0
+        ]
+      ],
+      "vertical_base_delta": 0.405
+    },
+    {
+      "gate": "gate_east",
+      "tower_side": 1,
+      "tower_c": [
+        292.0,
+        433.0
+      ],
+      "nearest_wall": "wall_5_2",
+      "gap_m": 0.0,
+      "connected_in_plan": true,
+      "gap_endpoints": [
+        [
+          295.5,
+          425.167
+        ],
+        [
+          295.5,
+          425.167
+        ]
+      ],
+      "vertical_base_delta": 0.807
+    },
+    {
+      "gate": "gate_north",
+      "tower_side": -1,
+      "tower_c": [
+        -87.0,
+        205.0
+      ],
+      "nearest_wall": "wall_2_8",
+      "gap_m": 0.0,
+      "connected_in_plan": true,
+      "gap_endpoints": [
+        [
+          -94.717,
+          200.701
+        ],
+        [
+          -94.717,
+          200.701
+        ]
+      ],
+      "vertical_base_delta": 0.402
+    },
+    {
+      "gate": "gate_north",
+      "tower_side": 1,
+      "tower_c": [
+        -53.0,
+        205.0
+      ],
+      "nearest_wall": "wall_3_0",
+      "gap_m": 0.0,
+      "connected_in_plan": true,
+      "gap_endpoints": [
+        [
+          -45.0,
+          210.203
+        ],
+        [
+          -45.0,
+          210.203
+        ]
+      ],
+      "vertical_base_delta": 0.4
+    },
+    {
+      "gate": "gate_southeast",
+      "tower_side": -1,
+      "tower_c": [
+        270.0,
+        757.0
+      ],
+      "nearest_wall": "wall_8_0",
+      "gap_m": 0.0,
+      "connected_in_plan": true,
+      "gap_endpoints": [
+        [
+          264.489,
+          765.0
+        ],
+        [
+          264.489,
+          765.0
+        ]
+      ],
+      "vertical_base_delta": 0.398
+    },
+    {
+      "gate": "gate_southeast",
+      "tower_side": 1,
+      "tower_c": [
+        270.0,
+        723.0
+      ],
+      "nearest_wall": "wall_7_3",
+      "gap_m": 0.0,
+      "connected_in_plan": true,
+      "gap_endpoints": [
+        [
+          276.439,
+          718.867
+        ],
+        [
+          276.439,
+          718.867
+        ]
+      ],
+      "vertical_base_delta": 0.398
+    }
+  ],
+  "station_court": {
+    "member_count": 6,
+    "members": [
+      {
+        "building": "station_court_n",
+        "rear_access_point": [
+          -60.0,
+          779.9
+        ],
+        "rear_faces_shared_court": true,
+        "rear_door_claimed": false,
+        "note": "Back-of-plot connection only; closed residences have no playable rear door."
+      },
+      {
+        "building": "station_court_s",
+        "rear_access_point": [
+          -60.0,
+          840.1
+        ],
+        "rear_faces_shared_court": true,
+        "rear_door_claimed": false,
+        "note": "Back-of-plot connection only; closed residences have no playable rear door."
+      },
+      {
+        "building": "station_court_w1",
+        "rear_access_point": [
+          -88.1,
+          798.0
+        ],
+        "rear_faces_shared_court": true,
+        "rear_door_claimed": false,
+        "note": "Back-of-plot connection only; closed residences have no playable rear door."
+      },
+      {
+        "building": "station_court_w2",
+        "rear_access_point": [
+          -88.1,
+          822.0
+        ],
+        "rear_faces_shared_court": true,
+        "rear_door_claimed": false,
+        "note": "Back-of-plot connection only; closed residences have no playable rear door."
+      },
+      {
+        "building": "station_court_e1",
+        "rear_access_point": [
+          -30.9,
+          798.0
+        ],
+        "rear_faces_shared_court": true,
+        "rear_door_claimed": false,
+        "note": "Back-of-plot connection only; closed residences have no playable rear door."
+      },
+      {
+        "building": "station_court_e2",
+        "rear_access_point": [
+          -30.9,
+          822.0
+        ],
+        "rear_faces_shared_court": true,
+        "rear_door_claimed": false,
+        "note": "Back-of-plot connection only; closed residences have no playable rear door."
+      }
+    ],
+    "exits": [
+      {
+        "side": "west",
+        "path": [
+          [
+            -60,
+            810
+          ],
+          [
+            -118,
+            810
+          ],
+          [
+            -130,
+            810
+          ]
+        ],
+        "clear_width_m": 1.5,
+        "blocking_buildings": [],
+        "water_overlap_m2": 0.0,
+        "reaches_public_road": true,
+        "pass_plan": true
+      },
+      {
+        "side": "east",
+        "path": [
+          [
+            -60,
+            810
+          ],
+          [
+            0,
+            810
+          ],
+          [
+            0,
+            765
+          ],
+          [
+            0,
+            735
+          ]
+        ],
+        "clear_width_m": 1.5,
+        "blocking_buildings": [],
+        "water_overlap_m2": 0.0,
+        "reaches_public_road": true,
+        "pass_plan": true
+      }
+    ],
+    "two_plan_exits": true,
+    "limitation": "2D plot/road test. Garden props, actual grade and real-player traversal require runtime verification."
+  },
+  "relocation_candidates": {},
+  "joint_candidate_conflicts": [],
+  "limitations": [
+    "Native architectural L/U polygons used; landmark manifest body rectangles reserve their structural footprint.",
+    "Visual AABB eaves/trim treated as risk, not certain ground obstruction. Ordinary external entry aprons excluded from that risk.",
+    "Road cells reproduce 4m water skip and junction sidewalk suppression; curb-only overhangs are not a separate test.",
+    "Terrain records inspect writes made after road grading. They do not measure final terrain samples or wall-clock Player traversal.",
+    "Candidate elevations are retained, not certified against actual terrain, utility access or views.",
+    "Station paths test the shared rear court and two street routes, not rear doors for sealed residences."
+  ]
+}

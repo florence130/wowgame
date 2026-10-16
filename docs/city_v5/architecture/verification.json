@@ -1,0 +1,310 @@
+{
+  "scope": "14 authored native-metre GLBs; Blender BVH doorway checks and metadata inspection",
+  "runtime_verification": "docs/city_v5/civil/godot_asset_verification.json",
+  "assets": [
+    {
+      "id": "corner_merchants_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 12,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 17846,
+      "collision_triangles": 188
+    },
+    {
+      "id": "corner_copper_4",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 24948,
+      "collision_triangles": 56
+    },
+    {
+      "id": "courtyard_college_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        },
+        {
+          "entry": [
+            0.0,
+            0,
+            -3.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 34078,
+      "collision_triangles": 268
+    },
+    {
+      "id": "courtyard_residence_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 25214,
+      "collision_triangles": 72
+    },
+    {
+      "id": "shop_arcade_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 12,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -10.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": -0.0
+        }
+      ],
+      "triangles": 12354,
+      "collision_triangles": 148
+    },
+    {
+      "id": "shop_rose_4",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 15762,
+      "collision_triangles": 40
+    },
+    {
+      "id": "residence_slate_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -10.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 13030,
+      "collision_triangles": 40
+    },
+    {
+      "id": "residence_ochre_4",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 18370,
+      "collision_triangles": 40
+    },
+    {
+      "id": "academy_library_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 21546,
+      "collision_triangles": 40
+    },
+    {
+      "id": "academy_lodgings_4",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 26794,
+      "collision_triangles": 40
+    },
+    {
+      "id": "inn_seafarer_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 12,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 14502,
+      "collision_triangles": 148
+    },
+    {
+      "id": "mansion_garden_3",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 21082,
+      "collision_triangles": 40
+    },
+    {
+      "id": "warehouse_brick_2",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 11748,
+      "collision_triangles": 40
+    },
+    {
+      "id": "warehouse_stone_1",
+      "glb_version": 2,
+      "collision_nodes": 1,
+      "appearance_nodes": 11,
+      "nonunit_nodes": 0,
+      "source_blend": true,
+      "entry_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "triangles": 8856,
+      "collision_triangles": 40
+    }
+  ],
+  "player_walk_verification": "docs/city_v5/architecture/player_walk_verification.json"
+}

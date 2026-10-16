@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>晴岚港 v6 规划编辑器</title>
+<style>
+  :root{
+    --bg:#171a1f;--panel:#1f232b;--panel2:#262b34;--line:#343a46;--txt:#d8dce3;
+    --dim:#8b93a1;--acc:#e0a458;--acc2:#7fb0d8;--red:#e06c5a;--green:#7fb87f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden;font:13px/1.5 "Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--txt)}
+  #wrap{display:flex;height:100%}
+  #map{flex:1;position:relative;cursor:grab}
+  #map.dragging{cursor:grabbing}
+  #map.placing{cursor:crosshair}
+  #hud{position:absolute;top:8px;left:8px;z-index:5;background:rgba(23,26,31,.85);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:12px;color:var(--dim);pointer-events:none}
+  #hud b{color:var(--txt);font-weight:600}
+  #scalebar{position:absolute;bottom:10px;left:12px;z-index:5;color:var(--dim);font-size:11px;pointer-events:none}
+  #scalebar .bar{height:4px;background:var(--dim);border-radius:2px;margin-top:2px}
+  #north{position:absolute;bottom:10px;right:14px;z-index:5;color:var(--dim);font-size:11px;pointer-events:none;text-align:center}
+  #toast{position:absolute;top:52px;left:50%;transform:translateX(-50%);z-index:9;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:6px 14px;font-size:12px;display:none;pointer-events:none}
+  #sidebar{width:340px;background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column}
+  #sidebar header{padding:10px 14px;border-bottom:1px solid var(--line)}
+  #sidebar header h1{font-size:15px;color:var(--acc);font-weight:700}
+  #sidebar header .sub{font-size:11px;color:var(--dim);margin-top:2px}
+  .tabs{display:flex;border-bottom:1px solid var(--line)}
+  .tabs button{flex:1;background:none;border:none;color:var(--dim);padding:8px 2px;cursor:pointer;font-size:12px;border-bottom:2px solid transparent}
+  .tabs button.on{color:var(--acc);border-bottom-color:var(--acc)}
+  .tabbody{flex:1;overflow-y:auto;padding:10px 12px 30px;display:none}
+  .tabbody.on{display:block}
+  fieldset{border:1px solid var(--line);border-radius:6px;margin-bottom:10px;padding:8px 10px}
+  legend{font-size:11px;color:var(--dim);padding:0 6px}
+  label.ck{display:flex;align-items:center;gap:6px;padding:3px 0;cursor:pointer;font-size:12px}
+  label.ck input{accent-color:var(--acc)}
+  .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+  .btn{display:inline-block;background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:5px;padding:5px 10px;cursor:pointer;font-size:12px;margin:2px 3px 2px 0}
+  .btn:hover{border-color:var(--acc);color:var(--acc)}
+  .btn.warn:hover{border-color:var(--red);color:var(--red)}
+  .btn.primary{background:var(--acc);border-color:var(--acc);color:#171a1f;font-weight:700}
+  select,input[type=text],input[type=number]{background:var(--bg);border:1px solid var(--line);color:var(--txt);border-radius:4px;padding:4px 6px;font-size:12px;width:100%}
+  .row{display:flex;gap:6px;margin:4px 0}
+  .row>*{flex:1}
+  .kv{display:flex;gap:6px;align-items:center;margin:3px 0;font-size:12px}
+  .kv .k{width:58px;color:var(--dim);flex:none}
+  .palette{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:4px}
+  .pal{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:4px 6px;cursor:pointer;font-size:11px}
+  .pal:hover{border-color:var(--acc)}
+  .pal.sel{border-color:var(--acc);color:var(--acc)}
+  .pal .en{color:var(--dim);font-size:10px;display:block}
+  .note{font-size:12px;color:var(--txt);margin:3px 0;padding-left:8px;border-left:2px solid var(--line)}
+  .note b{color:var(--acc2)}
+  .issue{font-size:12px;color:var(--red);margin:2px 0}
+  .ok{color:var(--green)}
+  .legendRow{display:flex;align-items:center;gap:6px;font-size:12px;padding:2px 0}
+  .lg{width:16px;height:12px;border-radius:3px;flex:none}
+  .help dt{color:var(--acc);font-size:12px;margin-top:6px}
+  .help dd{color:var(--dim);font-size:12px;margin-left:12px}
+  .conflict{outline:2px solid var(--red);outline-offset:1px}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="map">
+    <canvas id="cv"></canvas>
+    <div id="hud"><b id="hudInfo">就绪</b></div>
+    <div id="scalebar"><span id="sbTxt">100 m</span><div class="bar" id="sbBar" style="width:100px"></div></div>
+    <div id="north">▲ 北<br><span style="font-size:10px">x→东 z→南</span></div>
+    <div id="toast"></div>
+  </div>
+  <div id="sidebar">
+    <header>
+      <h1>晴岚港 v6 · 规划编辑器</h1>
+      <div class="sub">草案（不进游戏）· 双轴十字 / 路网分级 / 13 街坊 / 15 白盒</div>
+    </header>
+    <div class="tabs">
+      <button data-t="layers" class="on">图层</button>
+      <button data-t="add">添加</button>
+      <button data-t="prop">属性</button>
+      <button data-t="notes">方案说明</button>
+      <button data-t="help">帮助</button>
+    </div>
+
+    <div class="tabbody on" id="tab-layers">
+      <fieldset><legend>图层开关</legend><div id="layerCks"></div></fieldset>
+      <fieldset><legend>图例</legend><div id="legendBox"></div></fieldset>
+      <fieldset><legend>数据</legend>
+        <button class="btn primary" id="btnExport">导出 JSON</button>
+        <button class="btn" id="btnImport">导入 JSON</button>
+        <button class="btn warn" id="btnReset">恢复初始草案</button>
+        <button class="btn" id="btnPng">导出 PNG</button>
+        <input type="file" id="fileImp" accept=".json" style="display:none">
+        <div class="kv" style="margin-top:6px"><span class="k">统计</span><span id="statTxt" style="color:var(--dim)"></span></div>
+      </fieldset>
+    </div>
+
+    <div class="tabbody" id="tab-add">
+      <fieldset><legend>放置模式：选中类型后点击地图放置（Esc 取消）</legend>
+        <div id="palette"></div>
+      </fieldset>
+      <fieldset><legend>批量</legend>
+        <button class="btn" id="btnAutoBlock">沿矩形边缘补街坊建筑</button>
+        <div class="kv"><span class="k">矩形</span><span style="color:var(--dim);font-size:11px">先框选：按 B 进入框选，拖出矩形后自动填充</span></div>
+      </fieldset>
+    </div>
+
+    <div class="tabbody" id="tab-prop"><div id="propBody"></div></div>
+
+    <div class="tabbody" id="tab-notes">
+      <div id="notesBox"></div>
+      <fieldset><legend>自检</legend><div id="checkBox"></div></fieldset>
+    </div>
+
+    <div class="tabbody" id="tab-help">
+      <fieldset><legend>操作</legend>
+        <dl class="help">
+          <dt>平移 / 缩放</dt><dd>左键拖空白处平移；滚轮缩放（以鼠标为中心）</dd>
+          <dt>选择</dt><dd>点击建筑 / 道路 / 广场 / 庭园；选中后右侧"属性"可编辑</dd>
+          <dt>移动</dt><dd>拖动建筑本体；道路选中后拖动顶点</dd>
+          <dt>旋转</dt><dd>选中建筑按 Q / E 每次 ±15°（属性面板可输任意角度）</dd>
+          <dt>复制 / 删除</dt><dd>Ctrl+D 复制；Delete 删除（道路需确认）</dd>
+          <dt>道路加点</dt><dd>选中道路后双击线段中部插入顶点；Alt+点击顶点删除该点</dd>
+          <dt>添加建筑</dt><dd>"添加"页选类型 → 点地图；白盒类型在面板底部</dd>
+          <dt>框选填充</dt><dd>按 B 拖出矩形 → 自动沿四边补住宅（占用/压路自动跳过）</dd>
+          <dt>测距</dt><dd>按 M 点击两点，显示米距；Esc 退出</dd>
+          <dt>保存</dt><dd>自动存 localStorage；导出 JSON 可留档/回传给助手</dd>
+        </dl>
+      </fieldset>
+    </div>
+  </div>
+</div>
+<script>
+const INITIAL = __DATA__;
+const ASSET_FP = __ALLFP__;
+</script>
+<script>
+'use strict';
+/* ================= 基础状态 ================= */
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+const mapEl = document.getElementById('map');
+let D = JSON.parse(JSON.stringify(INITIAL));
+const saved = localStorage.getItem('city_v6_plan_v1');
+if (saved) { try { D = JSON.parse(saved); toast('已载入本地保存的编辑结果'); } catch(e){} }
+const view = { x: -1010, y: 115, s: 0.85 };   // 视口左上角世界坐标 + 缩放（初始正对全城）
+let sel = null;          // {type:'building'|'road'|'square'|'garden'|'district', id}
+let hoverVtx = null;     // 道路顶点索引
+let tool = 'select';     // select | add | measure | blocksel
+let addAsset = null, addY = 26;
+let drag = null;         // 拖拽状态
+let measure = null;      // [p1,p2]
+let blockRect = null;
+let showLayers = { district:true, terrace:true, water:true, wall:true, road:true,
+  block:true, green:true, building:true, npc:false, poi:true, label:true };
+const W2S = p => [(p[0]-view.x)*view.s, (p[1]-view.y)*view.s];
+const S2W = p => [p[0]/view.s+view.x, p[1]/view.s+view.y];
+
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.style.display='block';
+  clearTimeout(t._h); t._h=setTimeout(()=>t.style.display='none',2200); }
+function byId(list,id){ return list.find(a=>a.id===id); }
+
+/* ================= 资产表 ================= */
+const FP = Object.assign({}, ASSET_FP);
+D.buildings.forEach(b=>{ FP[b.asset]=b.size; });
+const CAT = b => {
+  if (b.whitebox) return 'wb';
+  const a=b.asset;
+  if (['civic_hall','trade_hall','governor_palace','academy','cathedral','station','guild_hall','opera'].includes(a)) return 'landmark';
+  if (a.startsWith('residence')||a.startsWith('academy_lodgings')||a.startsWith('mansion')) return 'res';
+  if (a.startsWith('shop')||a.startsWith('corner')) return 'shop';
+  if (a.startsWith('warehouse')) return 'port';
+  if (a.startsWith('inn')||a.startsWith('public')) return 'service';
+  return 'inst'; // academy_library / courtyard / magic_tower
+};
+const CATCOL = { landmark:'#8f6bb0', res:'#c8a878', shop:'#c07f6a', port:'#6f8ba3',
+  service:'#b09455', inst:'#8f8ab8', wb:'#7a8288' };
+const CATNAME = { landmark:'地标', res:'住宅', shop:'商铺', port:'港口',
+  service:'服务/旅店', inst:'机构', wb:'白盒（占位）' };
+const ROADCOL = { arterial:'#5c5148', collector:'#6e6355', local:'#8a7d6c',
+  alley:'#7a7062', rail:'#4a4f57', path:'#9a8c72' };
+
+/* ================= 画布尺寸 ================= */
+function resize(){ cv.width = mapEl.clientWidth*devicePixelRatio; cv.height = mapEl.clientHeight*devicePixelRatio;
+  cv.style.width=mapEl.clientWidth+'px'; cv.style.height=mapEl.clientHeight+'px'; requestAnimationFrame(draw); }
+window.addEventListener('resize',resize);
+
+/* ================= 冲突检测 ================= */
+function bboxOf(b,pad=0){ const [w,d]=b.size,a=b.yaw*Math.PI/180;
+  const wx=Math.abs(Math.cos(a))*w+Math.abs(Math.sin(a))*d, dz=Math.abs(Math.sin(a))*w+Math.abs(Math.cos(a))*d;
+  return [b.c[0]-wx/2-pad,b.c[1]-dz/2-pad,b.c[0]+wx/2+pad,b.c[1]+dz/2+pad]; }
+const ov=(a,b)=>a[0]<b[2]&&a[2]>b[0]&&a[1]<b[3]&&a[3]>b[1];
+function segdist(p,a,b){ const dx=b[0]-a[0],dz=b[1]-a[1];
+  const t=Math.max(0,Math.min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dz)/Math.max(dx*dx+dz*dz,1e-9)));
+  return Math.hypot(p[0]-a[0]-t*dx,p[1]-a[1]-t*dz); }
+function conflictsOf(b){
+  const out=[]; const me=bboxOf(b,0.5);
+  D.buildings.forEach(o=>{ if(o!==b && ov(me,bboxOf(o,0.5))) out.push('建筑重叠: '+oid(o)); });
+  D.roads.forEach(r=>{ if(r.cls==='rail'||r.cls==='path')return;
+    const lim=r.width/2+(r.walk||3);
+    for(let i=0;i<r.pts.length-1;i++)
+      for(const q of [[me[0],me[1]],[me[2],me[1]],[me[0],me[3]],[me[2],me[3]],[(me[0]+me[2])/2,(me[1]+me[3])/2]])
+        if(segdist(q,r.pts[i],r.pts[i+1])<lim) { out.push('压路: '+r.cn); i=1e9; break; }
+  });
+  return out;
+}
+function oid(b){ return b.label || b.id || b.asset; }
+
+/* ================= 绘制 ================= */
+let dirty=true;
+function draw(){
+  if(!dirty) return; dirty=false;
+  const W=cv.width,H=cv.height,dpr=devicePixelRatio;
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.fillStyle='#3d4a42'; ctx.fillRect(0,0,W,H);      // 画布外底色
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const w=W/dpr,h=H/dpr;
+  // 地面
+  ctx.fillStyle='#b8b09a'; ctx.fillRect(0,0,w,h);
+  // 分区底色
+  if(showLayers.district) for(const d of D.districts){
+    ctx.beginPath(); d.poly.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.closePath();
+    ctx.fillStyle=`rgba(${d.color[0]},${d.color[1]},${d.color[2]},.35)`; ctx.fill();
+    ctx.strokeStyle=`rgba(${d.color[0]},${d.color[1]},${d.color[2]},.8)`; ctx.setLineDash([5,4]); ctx.lineWidth=1; ctx.stroke(); ctx.setLineDash([]);
+    const c=polyCentroid(d.poly), [cx,cy]=W2S(c);
+    ctx.fillStyle='rgba(40,40,40,.75)'; ctx.font='700 13px sans-serif'; ctx.textAlign='center';
+    ctx.fillText(d.cn,cx,cy);
+  }
+  // 台地
+  if(showLayers.terrace) for(const t of D.terraces){
+    const [x,y]=W2S([t.c[0]-t.size[0]/2,t.c[1]-t.size[1]/2]);
+    ctx.fillStyle='rgba(255,255,255,.14)'; ctx.fillRect(x,y,t.size[0]*view.s,t.size[1]*view.s);
+    ctx.strokeStyle='rgba(90,80,60,.5)'; ctx.setLineDash([8,5]); ctx.strokeRect(x,y,t.size[0]*view.s,t.size[1]*view.s); ctx.setLineDash([]);
+    ctx.fillStyle='rgba(70,60,45,.85)'; ctx.font='11px sans-serif'; ctx.textAlign='left';
+    ctx.fillText(t.id+'台地 '+t.y+'m', x+4, y+13);
+  }
+  // 水系
+  if(showLayers.water){
+    const poly=[[-1600,160],...D.coast_west,...D.coast_south,[520,905],[520,1500],[-1600,1500]];
+    ctx.beginPath(); poly.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.closePath(); ctx.fillStyle='#5d87a8'; ctx.fill();
+    // 河
+    ctx.beginPath(); D.river.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.strokeStyle='#5d87a8'; ctx.lineWidth=Math.max(52*view.s,2); ctx.lineJoin='round'; ctx.lineCap='round'; ctx.stroke();
+    ctx.lineWidth=1;
+  }
+  // 城墙
+  if(showLayers.wall){
+    ctx.beginPath(); D.wall.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.strokeStyle='#4a4238'; ctx.lineWidth=Math.max(7*view.s,2.5); ctx.stroke(); ctx.lineWidth=1;
+    for(const [name,g] of Object.entries(D.gates)){
+      const [x,y]=W2S(g); ctx.fillStyle='#2e2a24';
+      ctx.beginPath(); ctx.arc(x,y,Math.max(6*view.s,3),0,7); ctx.fill();
+      if(showLayers.label){ ctx.fillStyle='#2e2a24'; ctx.font='700 11px sans-serif'; ctx.textAlign='center'; ctx.fillText(name,x,y-8); }
+    }
+  }
+  // 街坊
+  if(showLayers.block) for(const bk of D.blocks){
+    const [x0,z0,x1,z1]=bk.rect, [x,y]=W2S([x0,z0]);
+    ctx.strokeStyle='rgba(80,70,55,.55)'; ctx.setLineDash([4,3]);
+    ctx.strokeRect(x,y,(x1-x0)*view.s,(z1-z0)*view.s); ctx.setLineDash([]);
+    if(view.s>0.28){ ctx.fillStyle='rgba(80,70,55,.6)'; ctx.font='10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(bk.cn,(x0+x1)/2*view.s-view.x*view.s,(z0+z1)/2*view.s-view.y*view.s); }
+  }
+  // 广场 / 庭园
+  for(const s of [...D.squares,...D.gardens]){
+    const isG='style' in s;
+    if(isG&&!showLayers.green) continue;
+    const [x,y]=W2S([s.c[0]-s.size[0]/2,s.c[1]-s.size[1]/2]);
+    ctx.fillStyle=isG?'rgba(126,158,110,.55)':'rgba(200,190,160,.75)';
+    ctx.fillRect(x,y,s.size[0]*view.s,s.size[1]*view.s);
+    ctx.strokeStyle=isG?'rgba(90,120,70,.8)':'rgba(120,105,75,.8)'; ctx.strokeRect(x,y,s.size[0]*view.s,s.size[1]*view.s);
+    if(view.s>0.22){ ctx.fillStyle=isG?'#3d5233':'#5c4f38'; ctx.font='10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(s.cn||s.id,(s.c[0])*view.s-view.x*view.s,(s.c[1])*view.s-view.y*view.s); }
+  }
+  // 道路
+  if(showLayers.road) for(const r of D.roads){
+    const col=ROADCOL[r.cls]||'#777';
+    ctx.beginPath(); r.pts.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    const wpx=Math.max(r.width*view.s, r.cls==='alley'||r.cls==='path'?1:1.6);
+    ctx.strokeStyle=col; ctx.lineWidth=wpx;
+    if(r.cls==='alley'||r.cls==='path'||r.cls==='rail'){ ctx.setLineDash([6,4]); } 
+    if(r.cls==='rail'){ ctx.strokeStyle='#3c4048'; }
+    ctx.lineJoin='round'; ctx.lineCap='round'; ctx.stroke(); ctx.setLineDash([]);
+    // 路名
+    if(showLayers.label&&view.s>0.2&&r.cn){
+      const a=r.pts[0],b=r.pts[Math.min(1,r.pts.length-1)];
+      const [x,y]=W2S([(a[0]+b[0])/2,(a[1]+b[1])/2]);
+      ctx.save(); ctx.translate(x,y);
+      ctx.rotate(Math.atan2(b[1]-a[1],b[0]-a[0]));
+      ctx.fillStyle='rgba(35,30,25,.8)'; ctx.font=(r.cls==='arterial'?'700 ':'')+'10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(r.cn,0,-wpx/2-3); ctx.restore();
+    }
+    // 选中道路的顶点
+    if(sel&&sel.type==='road'&&sel.id===r.id){
+      r.pts.forEach((p,i)=>{ const [x,y]=W2S(p);
+        ctx.fillStyle=hoverVtx===i?'#e0a458':'#ffdf9e'; ctx.strokeStyle='#54452c';
+        ctx.beginPath(); ctx.arc(x,y,5,0,7); ctx.fill(); ctx.stroke(); });
+    }
+  }
+  // 桥
+  for(const br of (D.bridges||[])){
+    const [x,y]=W2S(br.at);
+    ctx.strokeStyle='#7a5a34'; ctx.lineWidth=Math.max(br.span*view.s,3);
+    ctx.beginPath(); ctx.moveTo(x-br.span*view.s*0.7,y); ctx.lineTo(x+br.span*view.s*0.7,y); ctx.stroke(); ctx.lineWidth=1;
+    if(view.s>0.25){ ctx.fillStyle='#6a4e2c'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText(br.cn,x,y-6); }
+  }
+  // 建筑
+  if(showLayers.building) for(const b of D.buildings){
+    const [x,y]=W2S(b.c);
+    ctx.save(); ctx.translate(x,y); ctx.rotate(-b.yaw*Math.PI/180);
+    const bw=b.size[0]*view.s, bd=b.size[1]*view.s;
+    const isSel=sel&&sel.type==='building'&&sel.id===b.id;
+    const conf=isSel?conflictsOf(b):[];
+    ctx.fillStyle=CATCOL[CAT(b)];
+    if(b.whitebox){ ctx.fillStyle='#838a90'; }
+    ctx.fillRect(-bw/2,-bd/2,bw,bd);
+    ctx.strokeStyle=isSel?(conf.length?'#e8493a':'#ffd75e'):'rgba(50,42,32,.75)';
+    ctx.lineWidth=isSel?2:1; ctx.strokeRect(-bw/2,-bd/2,bw,bd); ctx.lineWidth=1;
+    if(b.whitebox&&view.s>0.3){ ctx.strokeStyle='rgba(40,45,50,.35)';
+      for(let i=-bw/2;i<bw/2;i+=5){ctx.beginPath();ctx.moveTo(i,-bd/2);ctx.lineTo(i+4,bd/2);ctx.stroke();}}
+    ctx.restore();
+    // 标签
+    if(showLayers.label&&(view.s>0.34||isSel||CAT(b)==='landmark')&&b.label){
+      ctx.fillStyle=CAT(b)==='landmark'?'#3a2852':'rgba(45,38,28,.9)';
+      ctx.font=(CAT(b)==='landmark'?'700 ':'')+'10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(b.label,x,y+3);
+    }
+  }
+  // NPC
+  if(showLayers.npc) for(const n of D.npcs){
+    const [x,y]=W2S(n.p);
+    ctx.fillStyle='#3f6d8e'; ctx.beginPath(); ctx.arc(x,y,2.2,0,7); ctx.fill();
+  }
+  // POI
+  if(showLayers.poi) for(const p of D.pois){
+    const [x,y]=W2S(p.p);
+    ctx.strokeStyle='#7a4f9e'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(x,y-5); ctx.lineTo(x+5,y); ctx.lineTo(x,y+5); ctx.lineTo(x-5,y); ctx.closePath(); ctx.stroke(); ctx.lineWidth=1;
+    if(view.s>0.22){ ctx.fillStyle='#5c3a78'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText(p.title,x,y+14); }
+  }
+  // 出生点
+  for(const sp of D.spawns){
+    const [x,y]=W2S(sp.p);
+    ctx.strokeStyle='#2f7d4f'; ctx.lineWidth=1.5; ctx.beginPath(); ctx.arc(x,y,6,0,7); ctx.stroke(); ctx.lineWidth=1;
+    ctx.fillStyle='#2f7d4f'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText(sp.id,x,y-9);
+  }
+  // 框选矩形
+  if(blockRect&&blockRect.cur){
+    const [x,y]=W2S(blockRect.a), [x2,y2]=W2S(blockRect.cur);
+    ctx.strokeStyle='#e0a458'; ctx.setLineDash([5,4]); ctx.strokeRect(x,y,x2-x,y2-y); ctx.setLineDash([]);
+  }
+  // 测距
+  if(measure&&measure.length){
+    const [x1,y1]=W2S(measure[0]);
+    ctx.strokeStyle='#e05a5a'; ctx.setLineDash([4,3]);
+    ctx.beginPath(); ctx.moveTo(x1,y1);
+    if(measure[1]){ const [x2,y2]=W2S(measure[1]); ctx.lineTo(x2,y2);
+      const d=Math.hypot(measure[1][0]-measure[0][0],measure[1][1]-measure[0][1]);
+      ctx.fillStyle='#c23c3c'; ctx.font='700 12px sans-serif'; ctx.fillText(d.toFixed(0)+' m',(x1+x2)/2,(y1+y2)/2-6);
+    } else { const m=lastMouse; ctx.lineTo(m[0],m[1]); }
+    ctx.stroke(); ctx.setLineDash([]);
+  }
+  // 比例尺
+  const targets=[10,20,50,100,200,500,1000];
+  let t=targets.find(t=>t*view.s>70)||1000;
+  document.getElementById('sbTxt').textContent=t+' m';
+  document.getElementById('sbBar').style.width=(t*view.s)+'px';
+  // 统计
+  document.getElementById('statTxt').textContent=
+    `建筑 ${D.buildings.length}（白盒 ${D.buildings.filter(b=>b.whitebox).length}）· 道路 ${D.roads.length} · 街坊 ${D.blocks.length} · NPC ${D.npcs.length}`;
+}
+function polyCentroid(poly){
+  let x=0,z=0; poly.forEach(p=>{x+=p[0];z+=p[1];}); return [x/poly.length,z/poly.length];
+}
+function invalidate(){ dirty=true; requestAnimationFrame(draw); }
+
+/* ================= 命中检测 ================= */
+function hitBuilding(wp){
+  for(let i=D.buildings.length-1;i>=0;i--){ const b=D.buildings[i];
+    const a=-b.yaw*Math.PI/180, dx=wp[0]-b.c[0], dz=wp[1]-b.c[1];
+    const lx=dx*Math.cos(a)-dz*Math.sin(a), lz=dx*Math.sin(a)+dz*Math.cos(a);
+    if(Math.abs(lx)<=b.size[0]/2&&Math.abs(lz)<=b.size[1]/2) return b; }
+  return null;
+}
+function hitRoad(wp){
+  // 世界坐标下判定
+  for(const r of D.roads){
+    if(sel&&sel.type==='road'&&sel.id===r.id){
+      for(let i=0;i<r.pts.length;i++)
+        if(Math.hypot(r.pts[i][0]-wp[0],r.pts[i][1]-wp[1])<8/view.s) return {r,vtx:i};
+    }
+    const lim=Math.max(r.width/2, 7/view.s);
+    for(let i=0;i<r.pts.length-1;i++)
+      if(segdist(wp,r.pts[i],r.pts[i+1])<lim) return {r,vtx:-1};
+  }
+  return null;
+}
+function hitRect(list,wp){
+  for(let i=list.length-1;i>=0;i--){ const s=list[i];
+    if(Math.abs(wp[0]-s.c[0])<=s.size[0]/2&&Math.abs(wp[1]-s.c[1])<=s.size[1]/2) return s; }
+  return null;
+}
+
+/* ================= 交互 ================= */
+let lastMouse=[0,0], panning=false, panStart=null, moved=false;
+cv.addEventListener('wheel',e=>{
+  e.preventDefault();
+  const rect=cv.getBoundingClientRect();
+  const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  const before=S2W([mx,my]);
+  view.s*=Math.pow(1.0016,-e.deltaY);
+  view.s=Math.max(0.06,Math.min(4,view.s));
+  const after=S2W([mx,my]);
+  view.x+=before[0]-after[0]; view.y+=before[1]-after[1];
+  invalidate();
+},{passive:false});
+cv.addEventListener('mousedown',e=>{
+  const rect=cv.getBoundingClientRect();
+  const sp=[e.clientX-rect.left,e.clientY-rect.top], wp=S2W(sp);
+  moved=false; lastMouse=sp;
+  if(tool==='add'&&addAsset){
+    const id=autoId(addAsset);
+    const size=FP[addAsset]||[20,16];
+    const nb={id,asset:addAsset,c:[Math.round(wp[0]),Math.round(wp[1])],yaw:0,size:[...size],label:''};
+    if(addAsset.startsWith('wb_')){ nb.whitebox=true; nb.h=18; }
+    D.buildings.push(nb); sel={type:'building',id};
+    save(); renderProp(); invalidate(); return;
+  }
+  if(tool==='measure'){
+    if(!measure||measure.length>=2) measure=[wp];
+    else measure.push(wp);
+    invalidate(); return;
+  }
+  if(tool==='blocksel'){ blockRect={a:wp,cur:null}; return; }
+  // 道路顶点优先
+  if(sel&&sel.type==='road'){
+    const r=byId(D.roads,sel.id);
+    for(let i=0;i<r.pts.length;i++){
+      const [x,y]=W2S(r.pts[i]);
+      if(Math.hypot(sp[0]-x,sp[1]-y)<7){ drag={kind:'vtx',r,i,off:[0,0]}; return; }
+    }
+  }
+  const hb=hitBuilding(wp);
+  if(hb){ sel={type:'building',id:hb.id};
+    drag={kind:'bld',b:hb,off:[hb.c[0]-wp[0],hb.c[1]-wp[1]]};
+    renderProp(); invalidate(); return; }
+  const hr=hitRoad(wp);
+  if(hr){ sel={type:'road',id:hr.r.id}; hoverVtx=-1; renderProp(); invalidate(); return; }
+  const hsq=hitRect(D.squares,wp)||hitRect(D.gardens,wp);
+  if(hsq){ sel={type:D.squares.includes(hsq)?'square':'garden',id:hsq.id};
+    drag={kind:'rect',s:hsq,off:[hsq.c[0]-wp[0],hsq.c[1]-wp[1]]};
+    renderProp(); invalidate(); return; }
+  sel=null; hoverVtx=null; renderProp();
+  panning=true; panStart={sp:[...sp],vx:view.x,vy:view.y};
+  mapEl.classList.add('dragging'); invalidate();
+});
+window.addEventListener('mousemove',e=>{
+  const rect=cv.getBoundingClientRect();
+  const sp=[e.clientX-rect.left,e.clientY-rect.top], wp=S2W(sp);
+  lastMouse=sp;
+  document.getElementById('hudInfo').textContent=
+    `x ${wp[0].toFixed(0)} · z ${wp[1].toFixed(0)}　缩放 ${(view.s*100).toFixed(0)}%`+
+    (sel?`　选中: ${selDesc()}`:'');
+  if(blockRect&&blockRect.a){ blockRect.cur=wp; invalidate(); return; }
+  if(measure&&measure.length===1&&tool==='measure'){ invalidate(); }
+  if(panning){ view.x=panStart.vx-(sp[0]-panStart.sp[0])/view.s;
+    view.y=panStart.vy-(sp[1]-panStart.sp[1])/view.s; invalidate(); return; }
+  if(!drag) return;
+  moved=true;
+  if(drag.kind==='bld'){
+    drag.b.c=[Math.round(wp[0]+drag.off[0]),Math.round(wp[1]+drag.off[1])];
+    renderProp(true);
+  } else if(drag.kind==='vtx'){
+    drag.r.pts[drag.i]=[Math.round(wp[0]),Math.round(wp[1])];
+  } else if(drag.kind==='rect'){
+    drag.s.c=[Math.round(wp[0]+drag.off[0]),Math.round(wp[1]+drag.off[1])];
+    renderProp(true);
+  }
+  invalidate();
+});
+window.addEventListener('mouseup',()=>{
+  if(drag){ save(); }
+  drag=null; panning=false; mapEl.classList.remove('dragging');
+});
+cv.addEventListener('dblclick',e=>{
+  const rect=cv.getBoundingClientRect();
+  const wp=S2W([e.clientX-rect.left,e.clientY-rect.top]);
+  if(sel&&sel.type==='road'){
+    const r=byId(D.roads,sel.id);
+    for(let i=0;i<r.pts.length-1;i++){
+      // 插入到最近线段
+      const d=segdist(wp,r.pts[i],r.pts[i+1]);
+      if(d<12/view.s){ r.pts.splice(i+1,1,[Math.round(wp[0]),Math.round(wp[1])]); save(); invalidate(); toast('已插入顶点'); return; }
+    }
+  }
+});
+cv.addEventListener('contextmenu',e=>e.preventDefault());
+window.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
+  const k=e.key.toLowerCase();
+  if(k==='escape'){ tool='select'; addAsset=null; measure=null; blockRect=null; renderPalette(); mapEl.classList.remove('placing'); invalidate(); }
+  if(k==='m'){ tool='measure'; measure=null; toast('测距：点击两点'); }
+  if(k==='b'){ tool='blocksel'; blockRect=null; toast('框选填充：拖出矩形自动补街坊建筑'); }
+  if(sel&&sel.type==='building'){
+    const b=byId(D.buildings,sel.id);
+    if(k==='q'){ b.yaw=(b.yaw-15+360)%360; renderProp(true); invalidate(); }
+    if(k==='e'){ b.yaw=(b.yaw+15)%360; renderProp(true); invalidate(); }
+    if(k==='delete'){ delSelected(); }
+    if(k==='d'&&e.ctrlKey){ e.preventDefault();
+      const nb=JSON.parse(JSON.stringify(b)); nb.id=autoId(b.asset);
+      nb.c=[b.c[0]+15,b.c[1]+15]; D.buildings.push(nb); sel={type:'building',id:nb.id};
+      save(); renderProp(); invalidate(); }
+  } else if(k==='delete'&&(sel&&(sel.type==='road'))){ delSelected(); }
+});
+function selDesc(){ const s=sel;
+  if(s.type==='building'){ const b=byId(D.buildings,s.id); return (b.label||b.asset); }
+  if(s.type==='road'){ const r=byId(D.roads,s.id); return r.cn+'（'+r.pts.length+'点）'; }
+  if(s.type==='square'||s.type==='garden'){ const g=byId(s.type==='square'?D.squares:D.gardens,s.id); return g.cn; }
+  return '';
+}
+function autoId(asset){
+  let i=1; while(D.buildings.some(b=>b.id===asset+'_'+i)) i++;
+  return asset+'_'+i;
+}
+function delSelected(){
+  if(!sel) return;
+  if(sel.type==='building'){ D.buildings=D.buildings.filter(b=>b.id!==sel.id); }
+  else if(sel.type==='road'){ if(!confirm('删除整条道路？'))return; D.roads=D.roads.filter(r=>r.id!==sel.id); }
+  else if(sel.type==='square'){ D.squares=D.squares.filter(s=>s.id!==sel.id); }
+  else if(sel.type==='garden'){ D.gardens=D.gardens.filter(g=>g.id!==sel.id); }
+  sel=null; save(); renderProp(); invalidate();
+}
+
+/* ================= 框选填充 ================= */
+function fillBlockRect(x0,z0,x1,z1){
+  const types=['residence_slate_3','residence_ochre_4','shop_rose_4','corner_merchants_3'];
+  let n=0;
+  const occ=D.buildings.map(b=>bboxOf(b,1));
+  const okPlace=(x,z,yaw,aid)=>{
+    const size=FP[aid]; const a=yaw*Math.PI/180;
+    const wx=Math.abs(Math.cos(a))*size[0]+Math.abs(Math.sin(a))*size[1];
+    const dz=Math.abs(Math.sin(a))*size[0]+Math.abs(Math.cos(a))*size[1];
+    const bb=[x-wx/2-.6,z-dz/2-.6,x+wx/2+.6,z+dz/2+.6];
+    if(occ.some(o=>ov(bb,o))) return null;
+    for(const r of D.roads){ if(r.cls==='rail'||r.cls==='path')continue;
+      const lim=r.width/2+(r.walk||3);
+      for(let i=0;i<r.pts.length-1;i++)
+        for(const q of [[bb[0],bb[1]],[bb[2],bb[1]],[bb[0],bb[3]],[bb[2],bb[3]]])
+          if(segdist(q,r.pts[i],r.pts[i+1])<lim) return null; }
+    return bb;
+  };
+  const L=6, G=1.2;
+  const lx=Math.min(x0,x1),hx=Math.max(x0,x1),lz=Math.min(z0,z1),hz=Math.max(z0,z1);
+  const put=(x,z,yaw,aid,i)=>{
+    const bb=okPlace(x,z,yaw,aid);
+    if(!bb) return false;
+    occ.push(bb);
+    D.buildings.push({id:autoId(aid),asset:aid,c:[Math.round(x),Math.round(z)],yaw,size:[...FP[aid]],label:''});
+    n++; return true;
+  };
+  // 北边（面北） / 南边（面南）
+  for(const [lineZ,yaw] of [[lz+12,180],[hz-12,0]]){
+    let t=lx+L,i=0;
+    while(t<hx-L){
+      const aid=types[i%types.length], w=FP[aid][0], d=FP[aid][1];
+      const bz = yaw===180 ? lineZ+d/2 : lineZ-d/2;
+      if(put(t+w/2,bz,yaw,aid,i)) i++;
+      t+=w+G;
+    }
+  }
+  // 西边（面西） / 东边（面东）
+  for(const [xx,yaw] of [[lx+12,270],[hx-12,90]]){
+    let t=hz-L,i=1;
+    while(t>lz+L){
+      const aid=types[i%types.length], d=FP[aid][1];  // 纵向步进用深度 d
+      const cx = yaw===270 ? lx+12+FP[aid][0]/2 : hx-12-FP[aid][0]/2;
+      if(put(cx,t-d/2,yaw,aid,i)) i++;
+      t-=d+G;
+    }
+  }
+  return n;
+}
+
+/* ================= 属性面板 ================= */
+function renderProp(skipFocus){
+  const el=document.getElementById('propBody');
+  if(!sel){ el.innerHTML='<div class="note" style="color:var(--dim)">未选中对象。点击地图中的建筑 / 道路 / 广场 / 庭园。</div>'; return; }
+  if(skipFocus&&document.activeElement&&/INPUT|SELECT/.test(document.activeElement.tagName)) return;
+  if(sel.type==='building'){
+    const b=byId(D.buildings,sel.id); if(!b){sel=null;return renderProp();}
+    const conf=conflictsOf(b);
+    el.innerHTML=`
+      <fieldset><legend>建筑</legend>
+        <div class="kv"><span class="k">ID</span><span>${b.id}</span></div>
+        <div class="kv"><span class="k">资产</span><span>${b.asset}${b.whitebox?' <span class="sw" style="background:#838a90"></span>白盒':''}</span></div>
+        <div class="kv"><span class="k">尺寸</span><span>${b.size[0]} × ${b.size[1]} m</span></div>
+      </fieldset>
+      <fieldset><legend>编辑</legend>
+        <div class="kv"><span class="k">标签</span><input type="text" id="pLabel" value="${b.label||''}"></div>
+        <div class="row">
+          <input type="number" id="pX" value="${b.c[0]}" step="1" title="x"><input type="number" id="pZ" value="${b.c[1]}" step="1" title="z">
+        </div>
+        <div class="row">
+          <input type="number" id="pYaw" value="${b.yaw}" step="15" title="朝向°"><input type="number" id="pY" value="${b.y??''}" step="1" placeholder="标高 m">
+        </div>
+        <div class="row">
+          <input type="number" id="pW" value="${b.size[0]}" step="1" title="宽（白盒可改）" ${b.whitebox?'':'disabled'}><input type="number" id="pD" value="${b.size[1]}" step="1" title="深（白盒可改）" ${b.whitebox?'':'disabled'}>
+        </div>
+      </fieldset>
+      <fieldset><legend>状态</legend>
+        ${conf.length?conf.map(c=>`<div class="issue">✖ ${c}</div>`).join(''):'<div class="ok">✔ 无冲突</div>'}
+      </fieldset>
+      <button class="btn" onclick="rotSel(-15)">↺ 15°</button>
+      <button class="btn" onclick="rotSel(15)">↻ 15°</button>
+      <button class="btn" onclick="dupSel()">复制</button>
+      <button class="btn warn" onclick="delSelected()">删除</button>`;
+    const bind=(id,fn)=>{ const n=document.getElementById(id); if(!n)return;
+      n.onchange=()=>{ fn(n.value); save(); invalidate(); }; };
+    bind('pLabel',v=>b.label=v);
+    bind('pX',v=>b.c[0]=+v); bind('pZ',v=>b.c[1]=+v);
+    bind('pYaw',v=>b.yaw=((+v)%360+360)%360); bind('pY',v=>b.y=v===''?undefined:+v);
+    bind('pW',v=>b.size[0]=+v); bind('pD',v=>b.size[1]=+v);
+  } else if(sel.type==='road'){
+    const r=byId(D.roads,sel.id); if(!r){sel=null;return renderProp();}
+    el.innerHTML=`
+      <fieldset><legend>道路</legend>
+        <div class="kv"><span class="k">名称</span><input type="text" id="rCn" value="${r.cn}"></div>
+        <div class="kv"><span class="k">等级</span><span>${({arterial:'主干道',collector:'次干道',local:'支路',alley:'后巷',rail:'铁路',path:'步道/栈桥'})[r.cls]||r.cls}</span></div>
+        <div class="row"><input type="number" id="rW" value="${r.width}" step="1" title="宽度 m"><input type="number" id="rWalk" value="${r.walk??3}" step="1" title="步道 m"></div>
+        ${r.note?`<div class="note">${r.note}</div>`:''}
+        ${r.elev?`<div class="kv"><span class="k">标高</span><span>${r.elev[0]}m → ${r.elev[1]}m</span></div>`:''}
+        <div class="kv"><span class="k">顶点</span><span>${r.pts.length} 个（双击线段加点 / Alt+点顶点删点）</span></div>
+      </fieldset>
+      <button class="btn warn" onclick="delSelected()">删除道路</button>`;
+    document.getElementById('rCn').onchange=e=>{ r.cn=e.target.value; save(); invalidate(); };
+    document.getElementById('rW').onchange=e=>{ r.width=+e.target.value; save(); invalidate(); };
+    document.getElementById('rWalk').onchange=e=>{ r.walk=+e.target.value; save(); invalidate(); };
+  } else {
+    const list=sel.type==='square'?D.squares:D.gardens;
+    const g=byId(list,sel.id); if(!g){sel=null;return renderProp();}
+    el.innerHTML=`
+      <fieldset><legend>${sel.type==='square'?'广场':'庭园'}</legend>
+        <div class="kv"><span class="k">名称</span><input type="text" id="gCn" value="${g.cn||g.id}"></div>
+        <div class="row"><input type="number" id="gW" value="${g.size[0]}" step="2"><input type="number" id="gD" value="${g.size[1]}" step="2"></div>
+        <div class="row"><input type="number" id="gX" value="${g.c[0]}" step="1"><input type="number" id="gZ" value="${g.c[1]}" step="1"></div>
+      </fieldset>
+      <button class="btn warn" onclick="delSelected()">删除</button>`;
+    document.getElementById('gCn').onchange=e=>{g.cn=e.target.value;save();invalidate();};
+    document.getElementById('gW').onchange=e=>{g.size[0]=+e.target.value;save();invalidate();};
+    document.getElementById('gD').onchange=e=>{g.size[1]=+e.target.value;save();invalidate();};
+    document.getElementById('gX').onchange=e=>{g.c[0]=+e.target.value;save();invalidate();};
+    document.getElementById('gZ').onchange=e=>{g.c[1]=+e.target.value;save();invalidate();};
+  }
+}
+window.rotSel=d=>{ if(sel&&sel.type==='building'){ const b=byId(D.buildings,sel.id); b.yaw=((b.yaw+d)%360+360)%360; save(); renderProp(true); invalidate(); } };
+window.dupSel=()=>{ if(sel&&sel.type==='building'){ const b=byId(D.buildings,sel.id);
+  const nb=JSON.parse(JSON.stringify(b)); nb.id=autoId(b.asset); nb.c=[b.c[0]+15,b.c[1]+15];
+  D.buildings.push(nb); sel={type:'building',id:nb.id}; save(); renderProp(); invalidate(); } };
+window.delSelected=delSelected;
+
+/* ================= 图层/图例/调色板/说明 ================= */
+function renderLayers(){
+  const defs=[['district','分区底色'],['terrace','台地（标高）'],['water','水系'],['wall','城墙/城门'],
+    ['road','道路'],['block','街坊框'],['green','广场/庭园'],['building','建筑'],['npc','NPC 点位'],
+    ['poi','POI'],['label','文字标签']];
+  document.getElementById('layerCks').innerHTML=defs.map(([k,n])=>
+    `<label class="ck"><input type="checkbox" ${showLayers[k]?'checked':''} data-l="${k}">${n}</label>`).join('');
+  document.querySelectorAll('#layerCks input').forEach(c=>c.onchange=()=>{ showLayers[c.dataset.l]=c.checked; invalidate(); });
+}
+function renderLegend(){
+  const rows=Object.entries(CATNAME).map(([k,n])=>
+    `<div class="legendRow"><span class="lg" style="background:${CATCOL[k]}"></span>${n}</div>`).join('')
+    +['arterial 主干道 20m','collector 次干道 12-14m','local 支路 9m','alley 后巷 5m','rail 铁路走廊','path 栈桥/堤'].map(s=>{
+      const [k,n]=s.split(' ');
+      return `<div class="legendRow"><span class="lg" style="background:${ROADCOL[k]}"></span>${n}</div>`;}).join('');
+  document.getElementById('legendBox').innerHTML=rows;
+}
+const PAL_GROUPS=[['地标',['civic_hall','trade_hall','governor_palace','academy','cathedral','station','guild_hall','opera']],
+  ['住宅/公馆',['residence_slate_3','residence_ochre_4','corner_merchants_3','corner_copper_4','mansion_garden_3']],
+  ['商铺/服务',['shop_arcade_3','shop_rose_4','inn_seafarer_3','public_house']],
+  ['机构/学院',['academy_library_3','courtyard_college_3','magic_tower','academy_lodgings_4']],
+  ['港口',['warehouse_stone_1','warehouse_brick_2']],
+  ['白盒（占位）',['wb_hall','wb_shophouse','wb_warehouse','wb_tower','wb_clock_arch','wb_fountain','wb_crane','wb_lighthouse','wb_pier_shed']]];
+function renderPalette(){
+  const el=document.getElementById('palette');
+  el.innerHTML=PAL_GROUPS.map(([g,items])=>
+    `<div style="margin:6px 0 2px;color:var(--dim);font-size:11px">${g}</div>`+
+    items.map(a=>`<div class="pal ${addAsset===a?'sel':''}" data-a="${a}">${a}<span class="en">${FP[a]?FP[a][0]+'×'+FP[a][1]+' m':'新类型'}</span></div>`).join('')
+  ).join('');
+  el.querySelectorAll('.pal').forEach(p=>p.onclick=()=>{
+    addAsset=p.dataset.a; tool='add'; mapEl.classList.add('placing'); renderPalette(); toast('点击地图放置：'+addAsset); });
+}
+function renderNotes(){
+  document.getElementById('notesBox').innerHTML='<fieldset><legend>设计要点</legend>'+
+    D.notes.map(([t,c])=>`<div class="note"><b>${t}</b>　${c}</div>`).join('')+'</fieldset>';
+  runCheck();
+}
+function runCheck(){
+  const issues=[];
+  for(const a of D.buildings){ if(a.whitebox)continue;
+    for(const c of conflictsOf(a)) issues.push(a.id+': '+c); }
+  document.getElementById('checkBox').innerHTML=issues.length?
+    ('<div class="issue">'+issues.length+' 处冲突：</div>'+issues.slice(0,30).map(i=>`<div class="issue">${i}</div>`).join('')):
+    '<div class="ok">✔ 当前无冲突（白盒除外）</div>';
+}
+
+/* ================= 持久化/导入导出 ================= */
+let saveTimer=null;
+function save(){ clearTimeout(saveTimer); saveTimer=setTimeout(()=>{
+  try{ localStorage.setItem('city_v6_plan_v1',JSON.stringify(D)); }catch(e){}
+},300); }
+document.getElementById('btnExport').onclick=()=>{
+  const blob=new Blob([JSON.stringify(D,null,1)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='city_v6_plan.json'; a.click(); toast('已导出 city_v6_plan.json');
+};
+document.getElementById('btnImport').onclick=()=>document.getElementById('fileImp').click();
+document.getElementById('fileImp').onchange=e=>{
+  const f=e.target.files[0]; if(!f)return;
+  const rd=new FileReader();
+  rd.onload=()=>{ try{ D=JSON.parse(rd.result); sel=null; save(); renderAll(); toast('导入成功'); }
+    catch(err){ toast('导入失败：'+err.message); } };
+  rd.readAsText(f);
+};
+document.getElementById('btnReset').onclick=()=>{
+  if(!confirm('放弃全部编辑，恢复初始草案？'))return;
+  D=JSON.parse(JSON.stringify(INITIAL)); sel=null; localStorage.removeItem('city_v6_plan_v1');
+  renderAll(); toast('已恢复初始草案');
+};
+document.getElementById('btnPng').onclick=()=>{ dirty=true; draw();
+  cv.toBlob(b=>{ const a=document.createElement('a'); a.href=URL.createObjectURL(b);
+    a.download='city_v6_plan.png'; a.click(); }); };
+document.getElementById('btnAutoBlock').onclick=()=>{ tool='blocksel'; blockRect=null; toast('按住拖动…（先点地图起点）'); toast('框选填充：在地图上拖出矩形'); };
+
+/* ================= Tab 切换 ================= */
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.tabbody').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); document.getElementById('tab-'+b.dataset.t).classList.add('on');
+  if(b.dataset.t==='notes') runCheck();
+});
+
+/* ================= 鼠标事件补充：框选/测距/删点 ================= */
+mapEl.addEventListener('mouseup',()=>{
+  if(tool==='blocksel'&&blockRect&&blockRect.a&&blockRect.cur){
+    const n=fillBlockRect(blockRect.a[0],blockRect.a[1],blockRect.cur[0],blockRect.cur[1]);
+    toast(n?('已填充 '+n+' 栋街坊建筑'):'矩形太小或全被占用');
+    blockRect=null; tool='select'; save(); renderPalette(); invalidate(); runCheck();
+  }
+});
+window.addEventListener('keyup',e=>{ if(e.key==='Alt') altDown=false; });
+let altDown=false;
+window.addEventListener('keydown',e=>{ if(e.key==='Alt') altDown=true; });
+cv.addEventListener('mousedown',e=>{
+  if(altDown&&sel&&sel.type==='road'){
+    const rect=cv.getBoundingClientRect();
+    const wp=S2W([e.clientX-rect.left,e.clientY-rect.top]);
+    const r=byId(D.roads,sel.id);
+    for(let i=0;i<r.pts.length;i++)
+      if(Math.hypot(r.pts[i][0]-wp[0],r.pts[i][1]-wp[1])<8/view.s){
+        if(r.pts.length<=2){ toast('至少保留两个顶点'); return; }
+        r.pts.splice(i,1); save(); invalidate(); return;
+      }
+  }
+});
+
+/* ================= 启动 ================= */
+function renderAll(){ renderLayers(); renderLegend(); renderPalette(); renderNotes(); renderProp(); invalidate(); }
+resize(); renderAll();
+</script>
+</body>
+</html>

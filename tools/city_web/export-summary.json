@@ -1,0 +1,174 @@
+{
+  "assets": 284,
+  "baselineHash": "2a0e6cd462529a87ab156f850423739aa2ed60738ed1d08da4ee0d5ca725bdbf",
+  "buildings": 119,
+  "errors": [],
+  "exportedMeshes": 314,
+  "legacyObjects": 663,
+  "nativeObjects": 382,
+  "objects": 1045,
+  "sceneHash": "509939a5eaaaeb95ac77a708af3bb614fca957b20e939d6561409312dade7608",
+  "skipped": [
+    {
+      "id": "arch_0",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tower_1",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "house_2",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "windmill_390",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "cottage_391",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "house_392",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tower_393",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "house_394",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "house_395",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "arch_396",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "ruin_wall_397",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "ruin_wall_398",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "ruin_wall_399",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "ruin_wall_400",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "column_401",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "column_402",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "sign_0",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_1",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_2",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_3",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_4",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_5",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "campfire_6",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "stall_7",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "crate_8",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "crate_9",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "crate_10",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "fence_11",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "field_658",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "field_659",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "field_660",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "haystack_661",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "haystack_662",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "haystack_663",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_669",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_670",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "tent_679",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "campfire_680",
+      "reason": "outside_city_bounds"
+    },
+    {
+      "id": "portal_ring_681",
+      "reason": "outside_city_bounds"
+    }
+  ],
+  "stable": true,
+  "success": true,
+  "terrainCols": 577,
+  "terrainHash": "e827a3367115e536d0570e8125708be69f1609e852e5c47c3bf26c3bd20cec97",
+  "terrainRows": 417
+}

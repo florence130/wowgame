@@ -1,0 +1,207 @@
+{
+	"checks": [
+		{
+			"label": "pure function preserves input including nested bind and quest data",
+			"pass": true
+		},
+		{
+			"label": "authorized old-city position uses current inn marker",
+			"pass": true
+		},
+		{
+			"label": "city hearth is migrated to stable inn spawn",
+			"pass": true
+		},
+		{
+			"label": "independent city version preserves world version",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: zone",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: world_ver",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: yaw",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: flags",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: quests",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: qdone",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: fps",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: explored",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: money",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: bank",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: auction",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: tmog",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: professions",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: recipes",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: guild",
+			"pass": true
+		},
+		{
+			"label": "preserved non-location field: welfare_day",
+			"pass": true
+		},
+		{
+			"label": "bind identity is preserved",
+			"pass": true
+		},
+		{
+			"label": "idempotent even if future anchors move",
+			"pass": true
+		},
+		{
+			"label": "locked old-city player goes to current gate outside city",
+			"pass": true
+		},
+		{
+			"label": "locked bind repairs without granting access",
+			"pass": true
+		},
+		{
+			"label": "player in another zone stays there",
+			"pass": true
+		},
+		{
+			"label": "city bind repairs independently of current zone",
+			"pass": true
+		},
+		{
+			"label": "outer settlement and wilderness positions are not moved",
+			"pass": true
+		},
+		{
+			"label": "v4 city envelope includes (-770.0, 300.0)",
+			"pass": true
+		},
+		{
+			"label": "v4 city envelope includes (-792.0, 934.0)",
+			"pass": true
+		},
+		{
+			"label": "v4 city envelope includes (-578.0, 1122.0)",
+			"pass": true
+		},
+		{
+			"label": "v4 city envelope includes (40.0, 704.0)",
+			"pass": true
+		},
+		{
+			"label": "v4 city envelope includes (-540.0, 690.0)",
+			"pass": true
+		},
+		{
+			"label": "city envelope excludes wilderness (318.0, 480.0)",
+			"pass": true
+		},
+		{
+			"label": "city envelope excludes wilderness (370.0, 470.0)",
+			"pass": true
+		},
+		{
+			"label": "city envelope excludes wilderness (420.0, 700.0)",
+			"pass": true
+		},
+		{
+			"label": "city envelope excludes wilderness (-700.0, -700.0)",
+			"pass": true
+		},
+		{
+			"label": "city envelope excludes wilderness (330.0, -200.0)",
+			"pass": true
+		},
+		{
+			"label": "v7 north expansion is inside city (-700.0, 160.0)",
+			"pass": true
+		},
+		{
+			"label": "v7 north expansion is inside city (-120.0, -480.0)",
+			"pass": true
+		},
+		{
+			"label": "v7 north expansion is inside city (-740.0, -300.0)",
+			"pass": true
+		},
+		{
+			"label": "new + ZERO retains original start-spawn behavior",
+			"pass": true
+		},
+		{
+			"label": "new flag alone does not suppress a real legacy city position",
+			"pass": true
+		},
+		{
+			"label": "missing inn marker has safe position fallback without stale spawn",
+			"pass": true
+		},
+		{
+			"label": "missing gate marker uses safe above-ground fallback",
+			"pass": true
+		},
+		{
+			"label": "future-version saves are untouched",
+			"pass": true
+		},
+		{
+			"label": "world v1 offset conversion precedes city migration",
+			"pass": true
+		},
+		{
+			"label": "world v2 offset conversion precedes city migration",
+			"pass": true
+		},
+		{
+			"label": "tiny independent scene can serialize migration anchor",
+			"pass": true
+		},
+		{
+			"label": "serialized spawn resolves parent transform and overworld offset",
+			"pass": true
+		},
+		{
+			"label": "missing scene anchors remain optional",
+			"pass": true
+		}
+	],
+	"failed": 0,
+	"slot_index": -1,
+	"world_instanced": false
+}

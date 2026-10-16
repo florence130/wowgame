@@ -1,0 +1,11 @@
+{
+  "device_actual": "CUDA",
+  "passed": true,
+  "illumination": "One real exterior SUN, weak world ambient. No interior light; no emissive window material.",
+  "comparison": "Same camera and light. Only Alpha=.28/Transmission=.72 versus Alpha=1/Transmission=0.",
+  "source_window": "build004/glb/window_clerestory.glb",
+  "files": [
+    "daylight_floor_transparent.png",
+    "daylight_floor_opaque_control.png"
+  ]
+}

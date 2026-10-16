@@ -1,0 +1,191 @@
+{
+  "label": "税务计量厅",
+  "footprint": [
+    28,
+    24
+  ],
+  "body_height": 14,
+  "max_height": 21,
+  "entry_width": 6,
+  "entries": [
+    [
+      0,
+      0,
+      -12
+    ]
+  ],
+  "concept": "Rusticated loggia, steep treasury roof, counting-window rhythm and relief balance",
+  "id": "tax_hall",
+  "aabb_min": [
+    -15.289999961853027,
+    -1.600000023841858,
+    -15.149999618530273
+  ],
+  "aabb_max": [
+    15.289999961853027,
+    20.110000610351562,
+    13.289999961853027
+  ],
+  "aabb_size": [
+    30.579999923706055,
+    21.71000063419342,
+    28.4399995803833
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/tax_hall.glb",
+  "blend": "assets/models/city_v5/landmarks/tax_hall.blend",
+  "modules": [
+    {
+      "name": "01 Continuous ground and cut-stone footing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Continuous ground and cut-stone footing_rustic",
+        "01 Continuous ground and cut-stone footing_floor"
+      ]
+    },
+    {
+      "name": "Counting hall",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Counting hall_rustic",
+        "Counting hall_floor",
+        "Counting hall_stone",
+        "Counting hall_trim",
+        "Counting hall_glass",
+        "Counting hall_bronze"
+      ]
+    },
+    {
+      "name": "Treasury hipped roof",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Treasury hipped roof_slate",
+        "Treasury hipped roof_stone",
+        "Treasury hipped roof_gold",
+        "Treasury hipped roof_trim",
+        "Treasury hipped roof_glass",
+        "Treasury hipped roof_bronze"
+      ]
+    },
+    {
+      "name": "Public counting loggia left",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Public counting loggia left"
+      ]
+    },
+    {
+      "name": "Public counting loggia left lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Public counting loggia left lintel_stone"
+      ]
+    },
+    {
+      "name": "Public counting loggia right",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Public counting loggia right"
+      ]
+    },
+    {
+      "name": "Public counting loggia right lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Public counting loggia right lintel_stone"
+      ]
+    },
+    {
+      "name": "Weighing scales relief",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Weighing scales relief_gold",
+        "Weighing scales relief_bronze"
+      ]
+    },
+    {
+      "name": "01 Mirrored corner buttresses",
+      "methods": [
+        "mirror",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Mirrored corner buttresses_rustic",
+        "01 Mirrored corner buttresses_trim"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -12
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 19676,
+  "collision_triangles": 384
+}

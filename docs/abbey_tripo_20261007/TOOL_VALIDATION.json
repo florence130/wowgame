@@ -1,0 +1,246 @@
+{
+  "passed": true,
+  "kind": "synthetic_fixture_only",
+  "blender": "E:/SteamLibrary/steamapps/common/Blender/blender.exe",
+  "real_tripo_model_tested": false,
+  "results": [
+    {
+      "asset": "TR01",
+      "checks": [
+        {
+          "name": "root_identity",
+          "passed": true
+        },
+        {
+          "name": "candidate_only_scene",
+          "passed": true
+        },
+        {
+          "name": "root_covers_entire_collection",
+          "passed": true
+        },
+        {
+          "name": "no_startup_objects",
+          "passed": true
+        },
+        {
+          "name": "staging_property",
+          "passed": true
+        },
+        {
+          "name": "blend_actual_vertices_match_independent_transform",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_PARENT_nonuniform",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_PARENT_nonuniform",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_CHILD_rotated",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_CHILD_rotated",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_OBJECT_0",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_OBJECT_0",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_OBJECT_1",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_OBJECT_1",
+          "passed": true
+        },
+        {
+          "name": "bottom_at_zero",
+          "passed": true
+        },
+        {
+          "name": "x_center_at_zero",
+          "passed": true
+        },
+        {
+          "name": "origin_y_convention",
+          "passed": true
+        },
+        {
+          "name": "height_matches_proposal",
+          "passed": true
+        },
+        {
+          "name": "nonuniform_original_ratio_not_forced_to_target",
+          "passed": true
+        },
+        {
+          "name": "no_production_manifest",
+          "passed": true
+        },
+        {
+          "name": "no_incomplete_marker",
+          "passed": true
+        },
+        {
+          "name": "sockets_marked_unverified",
+          "passed": true
+        },
+        {
+          "name": "glb_actual_vertices_match_independent_transform",
+          "passed": true
+        },
+        {
+          "name": "glb_staging_extras",
+          "passed": true
+        },
+        {
+          "name": "glb_root_identity",
+          "passed": true
+        },
+        {
+          "name": "glb_root_covers_entire_hierarchy",
+          "passed": true
+        },
+        {
+          "name": "glb_socket_count",
+          "passed": true
+        }
+      ],
+      "preexisting_scene_preserved": true,
+      "overwrite_rejected_existing_files_unchanged": true
+    },
+    {
+      "asset": "TR02",
+      "checks": [
+        {
+          "name": "root_identity",
+          "passed": true
+        },
+        {
+          "name": "candidate_only_scene",
+          "passed": true
+        },
+        {
+          "name": "root_covers_entire_collection",
+          "passed": true
+        },
+        {
+          "name": "no_startup_objects",
+          "passed": true
+        },
+        {
+          "name": "staging_property",
+          "passed": true
+        },
+        {
+          "name": "blend_actual_vertices_match_independent_transform",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_PARENT_nonuniform",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_PARENT_nonuniform",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_CHILD_rotated",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_CHILD_rotated",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_OBJECT_0",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_OBJECT_0",
+          "passed": true
+        },
+        {
+          "name": "hierarchy_Fixture_OBJECT_1",
+          "passed": true
+        },
+        {
+          "name": "original_local_transform_Fixture_OBJECT_1",
+          "passed": true
+        },
+        {
+          "name": "bottom_at_zero",
+          "passed": true
+        },
+        {
+          "name": "x_center_at_zero",
+          "passed": true
+        },
+        {
+          "name": "origin_y_convention",
+          "passed": true
+        },
+        {
+          "name": "height_matches_proposal",
+          "passed": true
+        },
+        {
+          "name": "nonuniform_original_ratio_not_forced_to_target",
+          "passed": true
+        },
+        {
+          "name": "no_production_manifest",
+          "passed": true
+        },
+        {
+          "name": "no_incomplete_marker",
+          "passed": true
+        },
+        {
+          "name": "sockets_marked_unverified",
+          "passed": true
+        },
+        {
+          "name": "glb_actual_vertices_match_independent_transform",
+          "passed": true
+        },
+        {
+          "name": "glb_staging_extras",
+          "passed": true
+        },
+        {
+          "name": "glb_root_identity",
+          "passed": true
+        },
+        {
+          "name": "glb_root_covers_entire_hierarchy",
+          "passed": true
+        },
+        {
+          "name": "glb_socket_count",
+          "passed": true
+        }
+      ],
+      "preexisting_scene_preserved": true,
+      "overwrite_rejected_existing_files_unchanged": true
+    }
+  ],
+  "existing_empty_directory_rejected": true,
+  "image_provenance_probe": {
+    "asset": "TR06",
+    "kind": "synthetic_fixture_only",
+    "image_exists": true,
+    "image_sha256_matches": true,
+    "candidate_report": ".local/abbey_tripo_20261007/validated_TR06_image_provenance/candidate.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "style": "stylized_ghibli_flat_paint",
+  "baseline": "Current project ArtStyle palette and existing modular building workflow",
+  "external_source": "F:\\资源\\服装\\stylized-medieval-market-fatpack--stylarts-5.0+.rar",
+  "archive_manifest": "res://assets/source_packs/archive_manifest.json",
+  "stylarts_catalog": "res://assets/source_packs/stylarts_runtime_catalog.json",
+  "bundled_archives": [
+    "res://assets/source_packs/archives/stylized-medieval-market-fatpack--stylarts-5.0+.rar"
+  ],
+  "runtime_assets": [],
+  "rules": [
+    "Use the existing project ArtStyle palette for buildings, terrain, props and vegetation.",
+    "Preserve authored modular proportions, UV atlas regions and open-door collision.",
+    "Convert selected UE/Blender assets offline; share textures and compress runtime resources.",
+    "Keep source archives under .gdignore; never auto-extract at game startup.",
+    "Do not change grass density, height, spacing or geometry generation during resource removal."
+  ],
+  "stylarts_status": "conversion_blocked_missing_ue_exporter",
+  "archives_are_runtime_assets": false,
+  "grass_density_changed": false
+}

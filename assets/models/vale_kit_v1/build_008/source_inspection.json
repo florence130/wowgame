@@ -1,0 +1,49 @@
+{
+  "source_file": "E:\\wowgame\\assets\\models\\vale_kit_v1\\build_008\\vale_kit.blend",
+  "modifier_counts": {
+    "DECIMATE": 45,
+    "BEVEL": 1937,
+    "SCREW": 21,
+    "SIMPLE_DEFORM": 9,
+    "SOLIDIFY": 341,
+    "ARRAY": 91,
+    "CURVE": 1,
+    "MIRROR": 6
+  },
+  "examples": {
+    "DECIMATE": {
+      "object": "analytic_SDF_stone",
+      "modifier": "SDF production reduction"
+    },
+    "BEVEL": {
+      "object": "bale",
+      "modifier": "Soft low-poly corners"
+    },
+    "SCREW": {
+      "object": "barrel_body",
+      "modifier": "06 Spin profile"
+    },
+    "SIMPLE_DEFORM": {
+      "object": "canvas",
+      "modifier": "09 Gentle sail twist"
+    },
+    "SOLIDIFY": {
+      "object": "canvas",
+      "modifier": "04 Canvas thickness"
+    },
+    "ARRAY": {
+      "object": "continuous_rail",
+      "modifier": "02 Repeat measured pitch"
+    },
+    "CURVE": {
+      "object": "continuous_rail",
+      "modifier": "07 Follow editable path"
+    },
+    "MIRROR": {
+      "object": "roof_half",
+      "modifier": "01 Mirror roof across Y"
+    }
+  },
+  "editable_modifier_types_present": true,
+  "scope": "Six modifier methods verified in saved Blend. Extrusion, bevel curves, bridge/loft and direct vertices are source geometry; see BREAKDOWN for all ten methods."
+}

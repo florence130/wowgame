@@ -1,0 +1,28 @@
+{
+  "source": "res://assets/source_packs/archives/stylized-medieval-market-fatpack--stylarts-5.0+.rar",
+  "format": "Unreal Engine .uasset",
+  "runtime_status": "conversion_blocked_missing_ue_exporter",
+  "note": "已确认 RAR 内为 926 个 UE .uasset 和一个 .uproject，没有 FBX/GLB/glTF/OBJ/blend。本机安装清单与 E/F 盘搜索未找到 UE 编辑器或已安装导出工具；未转换，未接入游戏。",
+  "modular_building_components": [
+    "Content/MedievalMarket/Meshes/Modulars",
+    "Content/MedievalMarket/Meshes/Church/Modulars",
+    "Content/MedievalMarket/Meshes/Modulars/SM_Roof_1200x900x750.uasset",
+    "Content/MedievalMarket/Meshes/Modulars/SM_Wall_300x300_Door.uasset",
+    "Content/MedievalMarket/Meshes/Modulars/SM_Wall_300x300_RoundWindow.uasset",
+    "Content/MedievalMarket/Meshes/Modulars/SM_WallRoof_750x300_Windows_Door_04_01.uasset"
+  ],
+  "style_materials": [
+    "Content/MedievalMarket/Materials/Landscape",
+    "Content/MedievalMarket/Materials/MasterMaterials/MM_Grass.uasset",
+    "Content/MedievalMarket/Materials/MasterMaterials/MM_Master.uasset",
+    "Content/MedievalMarket/Materials/Material_Instances/Buildings",
+    "Content/MedievalMarket/Materials/Material_Instances/Foliage"
+  ],
+  "reference_blueprints": [
+    "Content/MedievalMarket/Blueprints/Houses",
+    "Content/MedievalMarket/Blueprints/Stalls",
+    "Content/MedievalMarket/Blueprints/Pots"
+  ],
+  "conversion_rule": "构件保留原始模块尺寸与 UV，按项目 ArtStyle 色板协调颜色；房屋由墙、门、窗、屋顶、台阶、门廊构件组合，保持可进入碰撞。",
+  "runtime_model_count": 0
+}

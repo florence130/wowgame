@@ -1,0 +1,4970 @@
+{
+  "passed": true,
+  "version": "abbey-v3-stages",
+  "assets": [
+    {
+      "id": "foundation_strip_4m",
+      "recipe": "foundation_strip_4m",
+      "target_bounds": [
+        [
+          -2,
+          -0.675,
+          0
+        ],
+        [
+          2,
+          0.675,
+          0.8
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "ground foot",
+          "size": [
+            4.0,
+            1.35,
+            0.14
+          ],
+          "center": [
+            0,
+            0,
+            0.07
+          ],
+          "material": "stone_dark"
+        },
+        {
+          "kind": "box",
+          "name": "closed load core",
+          "size": [
+            3.84,
+            1.1900000000000002,
+            0.5
+          ],
+          "center": [
+            0,
+            0,
+            0.39
+          ],
+          "material": "stone_dark"
+        },
+        {
+          "kind": "box",
+          "name": "support cap",
+          "size": [
+            4.0,
+            1.35,
+            0.16
+          ],
+          "center": [
+            0,
+            0,
+            0.7200000000000001
+          ],
+          "material": "sandstone"
+        },
+        {
+          "kind": "box",
+          "name": "separate facing ashlar 0",
+          "size": [
+            0.948,
+            0.07,
+            0.485
+          ],
+          "center": [
+            -1.44,
+            0.6100000000000001,
+            0.39
+          ],
+          "material": "stone_mid"
+        },
+        {
+          "kind": "box",
+          "name": "separate facing ashlar 1",
+          "size": [
+            0.948,
+            0.07,
+            0.485
+          ],
+          "center": [
+            -0.48,
+            0.6100000000000001,
+            0.39
+          ],
+          "material": "stone_mid"
+        },
+        {
+          "kind": "box",
+          "name": "separate facing ashlar 2",
+          "size": [
+            0.948,
+            0.07,
+            0.485
+          ],
+          "center": [
+            0.48,
+            0.6100000000000001,
+            0.39
+          ],
+          "material": "stone_mid"
+        },
+        {
+          "kind": "box",
+          "name": "separate facing ashlar 3",
+          "size": [
+            0.948,
+            0.07,
+            0.485
+          ],
+          "center": [
+            1.44,
+            0.6100000000000001,
+            0.39
+          ],
+          "material": "stone_mid"
+        }
+      ],
+      "route": "thick_stone_sdf_comparison_then_dimension_control",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 7,
+            "triangles": 84,
+            "bounds_min": [
+              -2.0,
+              -0.675000011920929,
+              0.0
+            ],
+            "bounds_max": [
+              2.0,
+              0.675000011920929,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              45,
+              19,
+              13
+            ],
+            "sample_count": 11115,
+            "step_target_m": 0.1,
+            "cell_crossings": 2416,
+            "scalar_min": -0.23999999403953554,
+            "scalar_max": 0.34985711573514083,
+            "raw_vertices": 8970,
+            "raw_triangles": 17936
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 17936,
+            "bounds_min": [
+              -2.0,
+              -0.675000011920929,
+              0.0
+            ],
+            "bounds_max": [
+              2.0,
+              0.675000011920929,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "ground foot",
+              "thickness_m": 0.14,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "support cap",
+              "thickness_m": 0.16,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "separate facing ashlar 0",
+              "thickness_m": 0.07,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "separate facing ashlar 1",
+              "thickness_m": 0.07,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "separate facing ashlar 2",
+              "thickness_m": 0.07,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "separate facing ashlar 3",
+              "thickness_m": 0.07,
+              "sample_step_m": 0.1
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF refined thick-stone candidate",
+          "sampling": {
+            "grid_shape": [
+              73,
+              28,
+              19
+            ],
+            "sample_count": 38836,
+            "step_target_m": 0.059,
+            "cell_crossings": 6560,
+            "scalar_min": -0.2399999940395356,
+            "scalar_max": 0.2768466843251271,
+            "raw_vertices": 25090,
+            "raw_triangles": 50176
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 50176,
+            "bounds_min": [
+              -2.0,
+              -0.675000011920929,
+              8.673617379884035e-19
+            ],
+            "bounds_max": [
+              2.0,
+              0.675000011920929,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF candidate interface correction",
+          "stats": {
+            "objects": 1,
+            "triangles": 50176,
+            "bounds_min": [
+              -2.0,
+              -0.675000011920929,
+              0.0
+            ],
+            "bounds_max": [
+              2.0,
+              0.675000011920929,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "bottom_plane": 0.0,
+          "top_support_plane": 0.8,
+          "snapped_vertices": 14358,
+          "selected_for_final": false,
+          "note": "Candidate comparison only. Final sockets stay with the exact modifier recipe."
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 7,
+            "triangles": 660,
+            "bounds_min": [
+              -2.0,
+              -0.675000011920929,
+              0.0
+            ],
+            "bounds_max": [
+              2.0,
+              0.675000011920929,
+              0.800000011920929
+            ],
+            "retained_modifiers": {
+              "BEVEL": 7,
+              "ARRAY": 3
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "support_pad",
+      "recipe": "support_pad",
+      "target_bounds": [
+        [
+          -0.8,
+          -0.9,
+          0
+        ],
+        [
+          0.8,
+          0.9,
+          0.8
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "ground foot",
+          "size": [
+            1.6,
+            1.8,
+            0.14
+          ],
+          "center": [
+            0,
+            0,
+            0.07
+          ],
+          "material": "stone_dark"
+        },
+        {
+          "kind": "box",
+          "name": "closed load core",
+          "size": [
+            1.4400000000000002,
+            1.6400000000000001,
+            0.5
+          ],
+          "center": [
+            0,
+            0,
+            0.39
+          ],
+          "material": "stone_dark"
+        },
+        {
+          "kind": "box",
+          "name": "support cap",
+          "size": [
+            1.6,
+            1.8,
+            0.16
+          ],
+          "center": [
+            0,
+            0,
+            0.7200000000000001
+          ],
+          "material": "sandstone"
+        },
+        {
+          "kind": "box",
+          "name": "separate facing ashlar 0",
+          "size": [
+            0.7080000000000001,
+            0.07,
+            0.485
+          ],
+          "center": [
+            -0.36000000000000004,
+            0.835,
+            0.39
+          ],
+          "material": "stone_mid"
+        },
+        {
+          "kind": "box",
+          "name": "separate facing ashlar 1",
+          "size": [
+            0.7080000000000001,
+            0.07,
+            0.485
+          ],
+          "center": [
+            0.36,
+            0.835,
+            0.39
+          ],
+          "material": "stone_mid"
+        }
+      ],
+      "route": "thick_stone_sdf_comparison_then_dimension_control",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 5,
+            "triangles": 60,
+            "bounds_min": [
+              -0.800000011920929,
+              -0.8999999761581421,
+              0.0
+            ],
+            "bounds_max": [
+              0.800000011920929,
+              0.8999999761581421,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              37,
+              41,
+              21
+            ],
+            "sample_count": 31857,
+            "step_target_m": 0.05,
+            "cell_crossings": 5176,
+            "scalar_min": -0.2399999940395356,
+            "scalar_max": 0.24041631403279587,
+            "raw_vertices": 19780,
+            "raw_triangles": 39556
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 39556,
+            "bounds_min": [
+              -0.800000011920929,
+              -0.8999999761581421,
+              1.734723475976807e-18
+            ],
+            "bounds_max": [
+              0.800000011920929,
+              0.8999999761581421,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "separate facing ashlar 0",
+              "thickness_m": 0.07,
+              "sample_step_m": 0.05
+            },
+            {
+              "part": "separate facing ashlar 1",
+              "thickness_m": 0.07,
+              "sample_step_m": 0.05
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF refined thick-stone candidate",
+          "sampling": {
+            "grid_shape": [
+              59,
+              66,
+              32
+            ],
+            "sample_count": 124608,
+            "step_target_m": 0.0295,
+            "cell_crossings": 14154,
+            "scalar_min": -0.24538387673593337,
+            "scalar_max": 0.2027293082642871,
+            "raw_vertices": 54636,
+            "raw_triangles": 109268
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 109268,
+            "bounds_min": [
+              -0.800000011920929,
+              -0.8999999761581421,
+              8.673617379884035e-19
+            ],
+            "bounds_max": [
+              0.800000011920929,
+              0.8999999761581421,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF candidate interface correction",
+          "stats": {
+            "objects": 1,
+            "triangles": 109268,
+            "bounds_min": [
+              -0.800000011920929,
+              -0.8999999761581421,
+              0.0
+            ],
+            "bounds_max": [
+              0.800000011920929,
+              0.8999999761581421,
+              0.800000011920929
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "bottom_plane": 0.0,
+          "top_support_plane": 0.8,
+          "snapped_vertices": 28166,
+          "selected_for_final": false,
+          "note": "Candidate comparison only. Final sockets stay with the exact modifier recipe."
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 7,
+            "triangles": 836,
+            "bounds_min": [
+              -0.800000011920929,
+              -0.8999999761581421,
+              0.0
+            ],
+            "bounds_max": [
+              0.800000011920929,
+              0.8999999761581421,
+              0.800000011920929
+            ],
+            "retained_modifiers": {
+              "BEVEL": 7,
+              "ARRAY": 4,
+              "MIRROR": 4
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "interior_column",
+      "recipe": "interior_column",
+      "target_bounds": [
+        [
+          -0.37,
+          -0.37,
+          0
+        ],
+        [
+          0.37,
+          0.37,
+          5.4
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "square foot",
+          "size": [
+            0.74,
+            0.74,
+            0.2
+          ],
+          "center": [
+            0,
+            0,
+            0.1
+          ],
+          "material": "stone_dark"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lower collar",
+          "radius": 0.3,
+          "height": 0.18,
+          "center": [
+            0,
+            0,
+            0.29
+          ],
+          "material": "sandstone"
+        },
+        {
+          "kind": "cylinder",
+          "name": "slender structural shaft",
+          "radius": 0.175,
+          "height": 4.59,
+          "center": [
+            0,
+            0,
+            2.7
+          ],
+          "material": "sandstone"
+        },
+        {
+          "kind": "cylinder",
+          "name": "capital collar",
+          "radius": 0.28,
+          "height": 0.22,
+          "center": [
+            0,
+            0,
+            5.11
+          ],
+          "material": "sandstone"
+        },
+        {
+          "kind": "box",
+          "name": "square capital",
+          "size": [
+            0.72,
+            0.72,
+            0.18
+          ],
+          "center": [
+            0,
+            0,
+            5.3100000000000005
+          ],
+          "material": "stone_light"
+        }
+      ],
+      "route": "thick_stone_sdf_comparison_then_dimension_control",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 5,
+            "triangles": 204,
+            "bounds_min": [
+              -0.3700000047683716,
+              -0.3700000047683716,
+              0.0
+            ],
+            "bounds_max": [
+              0.3700000047683716,
+              0.3700000047683716,
+              5.400000095367432
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              13,
+              13,
+              59
+            ],
+            "sample_count": 9971,
+            "step_target_m": 0.1,
+            "cell_crossings": 1048,
+            "scalar_min": -0.175,
+            "scalar_max": 0.602817466048698,
+            "raw_vertices": 3670,
+            "raw_triangles": 7336
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 7336,
+            "bounds_min": [
+              -0.3700000047683716,
+              -0.3700000047683716,
+              -3.469446951953614e-18
+            ],
+            "bounds_max": [
+              0.3700000047683716,
+              0.3700000047683716,
+              5.400000095367432
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "square capital",
+              "thickness_m": 0.18,
+              "sample_step_m": 0.1
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF refined thick-stone candidate",
+          "sampling": {
+            "grid_shape": [
+              18,
+              18,
+              97
+            ],
+            "sample_count": 31428,
+            "step_target_m": 0.059,
+            "cell_crossings": 3154,
+            "scalar_min": -0.13538538205026102,
+            "scalar_max": 0.49844850514556366,
+            "raw_vertices": 11078,
+            "raw_triangles": 22152
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 22152,
+            "bounds_min": [
+              -0.3700000047683716,
+              -0.3700000047683716,
+              -3.469446951953614e-18
+            ],
+            "bounds_max": [
+              0.3700000047683716,
+              0.3700000047683716,
+              5.400000095367432
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF candidate interface correction",
+          "stats": {
+            "objects": 1,
+            "triangles": 22152,
+            "bounds_min": [
+              -0.3700000047683716,
+              -0.3700000047683716,
+              0.0
+            ],
+            "bounds_max": [
+              0.3700000047683716,
+              0.3700000047683716,
+              5.400000095367432
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "bottom_plane": 0.0,
+          "top_support_plane": 5.4,
+          "snapped_vertices": 1649,
+          "selected_for_final": false,
+          "note": "Candidate comparison only. Final sockets stay with the exact modifier recipe."
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 3,
+            "triangles": 504,
+            "bounds_min": [
+              -0.3700000047683716,
+              -0.3700000047683716,
+              0.0
+            ],
+            "bounds_max": [
+              0.3700000047683716,
+              0.3700000047683716,
+              5.400000095367432
+            ],
+            "retained_modifiers": {
+              "BEVEL": 2,
+              "SCREW": 1
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "stone_capital_sdf",
+      "recipe": "stone_capital_sdf",
+      "target_bounds": [
+        [
+          -0.39,
+          -0.39,
+          0
+        ],
+        [
+          0.39,
+          0.39,
+          0.24
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "capital lower seat",
+          "size": [
+            0.6474,
+            0.6474,
+            0.06
+          ],
+          "center": [
+            0,
+            0,
+            0.03
+          ],
+          "material": "stone_dark"
+        },
+        {
+          "kind": "box",
+          "name": "capital rounded body",
+          "size": [
+            0.7176,
+            0.7176,
+            0.1392
+          ],
+          "center": [
+            0,
+            0,
+            0.108
+          ],
+          "material": "sandstone"
+        },
+        {
+          "kind": "box",
+          "name": "capital upper bearing crown",
+          "size": [
+            0.78,
+            0.78,
+            0.08399999999999999
+          ],
+          "center": [
+            0,
+            0,
+            0.19799999999999998
+          ],
+          "material": "sandstone"
+        }
+      ],
+      "route": "refined_analytic_sdf_with_socket_correction_to_final",
+      "final_source": "refined analytic SDF and corrected interface planes",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 3,
+            "triangles": 36,
+            "bounds_min": [
+              -0.38999998569488525,
+              -0.38999998569488525,
+              0.0
+            ],
+            "bounds_max": [
+              0.38999998569488525,
+              0.38999998569488525,
+              0.23999999463558197
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              33,
+              33,
+              14
+            ],
+            "sample_count": 15246,
+            "step_target_m": 0.028,
+            "cell_crossings": 2764,
+            "scalar_min": -0.0684923076923077,
+            "scalar_max": 0.14561098859632812,
+            "raw_vertices": 10382,
+            "raw_triangles": 20760
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 20760,
+            "bounds_min": [
+              -0.38999998569488525,
+              -0.38999998569488525,
+              4.336808689942018e-19
+            ],
+            "bounds_max": [
+              0.38999998569488525,
+              0.38999998569488525,
+              0.23999999463558197
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [],
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF refined thick-stone candidate",
+          "sampling": {
+            "grid_shape": [
+              44,
+              44,
+              17
+            ],
+            "sample_count": 32912,
+            "step_target_m": 0.02,
+            "cell_crossings": 5122,
+            "scalar_min": -0.0621,
+            "scalar_max": 0.13288128331926005,
+            "raw_vertices": 19534,
+            "raw_triangles": 39064
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 39064,
+            "bounds_min": [
+              -0.38999998569488525,
+              -0.38999998569488525,
+              0.0
+            ],
+            "bounds_max": [
+              0.38999998569488525,
+              0.38999998569488525,
+              0.23999999463558197
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": false
+        },
+        {
+          "name": "SDF candidate interface correction",
+          "stats": {
+            "objects": 1,
+            "triangles": 39064,
+            "bounds_min": [
+              -0.38999998569488525,
+              -0.38999998569488525,
+              0.0
+            ],
+            "bounds_max": [
+              0.38999998569488525,
+              0.38999998569488525,
+              0.23999999463558197
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "bottom_plane": 0.0,
+          "top_support_plane": 0.24,
+          "snapped_vertices": 11333,
+          "selected_for_final": false,
+          "note": "Candidate comparison only. Final sockets stay with the exact modifier recipe."
+        },
+        {
+          "name": "actual SDF final with dimensional interface correction",
+          "stats": {
+            "objects": 1,
+            "triangles": 1738,
+            "bounds_min": [
+              -0.38999998569488525,
+              -0.38999998569488525,
+              0.0
+            ],
+            "bounds_max": [
+              0.38999998569488525,
+              0.38999930024147034,
+              0.23999999463558197
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "refined analytic SDF and corrected interface planes",
+          "sdf_evidence": {
+            "source": "analytic layered rounded-box SDF with bounded chisel modulation",
+            "sampling": {
+              "grid_shape": [
+                27,
+                27,
+                12
+              ],
+              "sample_count": 8748,
+              "step_target_m": 0.035,
+              "cell_crossings": 1724,
+              "scalar_min": -0.06496363636363636,
+              "scalar_max": 0.19292483665636642,
+              "raw_vertices": 6146,
+              "raw_triangles": 12288
+            },
+            "bounds_min": [
+              -0.38999998569488525,
+              -0.38999998569488525,
+              0.0
+            ],
+            "bounds_max": [
+              0.38999998569488525,
+              0.38999930024147034,
+              0.23999999463558197
+            ],
+            "triangles": 1738,
+            "degenerate_triangles": 0,
+            "finite_vertices": true,
+            "top_planar_triangles": 16,
+            "bottom_planar_triangles": 23,
+            "top_normals_positive_z": true,
+            "bottom_normals_negative_z": true,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "socket_snapped_vertices": 3505,
+            "xy_envelope_scale": [
+              1.0,
+              1.0
+            ],
+            "postprocess": "plane correction, welded coincident vertices, coplanar dissolve, triangulation; no remesh"
+          }
+        }
+      ]
+    },
+    {
+      "id": "beam_4m",
+      "recipe": "beam_4m",
+      "target_bounds": [
+        [
+          -2,
+          -0.15,
+          -0.17
+        ],
+        [
+          2,
+          0.15,
+          0.17
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "main beam",
+          "size": [
+            4,
+            0.24,
+            0.32
+          ],
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "end strap",
+          "size": [
+            0.06,
+            0.26,
+            0.34
+          ],
+          "center": [
+            -1.82,
+            0,
+            0
+          ],
+          "material": "iron"
+        },
+        {
+          "kind": "box",
+          "name": "end strap",
+          "size": [
+            0.06,
+            0.26,
+            0.34
+          ],
+          "center": [
+            1.82,
+            0,
+            0
+          ],
+          "material": "iron"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 3,
+            "triangles": 36,
+            "bounds_min": [
+              -2.0,
+              -0.12999999523162842,
+              -0.17000000178813934
+            ],
+            "bounds_max": [
+              2.0,
+              0.12999999523162842,
+              0.17000000178813934
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              45,
+              8,
+              9
+            ],
+            "sample_count": 3240,
+            "step_target_m": 0.1,
+            "cell_crossings": 424,
+            "scalar_min": -0.07285714285714284,
+            "scalar_max": 0.33555923572372887,
+            "raw_vertices": 1506,
+            "raw_triangles": 3008
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 3008,
+            "bounds_min": [
+              -2.0,
+              -0.127077117562294,
+              -0.16621345281600952
+            ],
+            "bounds_max": [
+              2.0,
+              0.127077117562294,
+              0.16621345281600952
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "end strap",
+              "thickness_m": 0.06,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "end strap",
+              "thickness_m": 0.06,
+              "sample_step_m": 0.1
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 11,
+            "triangles": 420,
+            "bounds_min": [
+              -2.0,
+              -0.15000000596046448,
+              -0.16699999570846558
+            ],
+            "bounds_max": [
+              2.0,
+              0.15000000596046448,
+              0.16699999570846558
+            ],
+            "retained_modifiers": {
+              "BEVEL": 5,
+              "CURVE_BEVEL": 6
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "roof_truss_8m",
+      "recipe": "roof_truss_8m",
+      "target_bounds": [
+        [
+          -3.7,
+          -0.2,
+          0
+        ],
+        [
+          3.7,
+          0.2,
+          3.1
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "tie beam",
+          "size": [
+            7.4,
+            0.28,
+            0.3
+          ],
+          "center": [
+            0,
+            0,
+            0.15
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "king post",
+          "size": [
+            0.2,
+            0.24,
+            2.95
+          ],
+          "center": [
+            0,
+            0,
+            1.625
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "principal rafter",
+          "size": [
+            0.22,
+            0.22,
+            4.528321985018291
+          ],
+          "center": [
+            -1.795,
+            0.0,
+            1.63
+          ],
+          "material": "timber",
+          "rotation": [
+            [
+              -0.6094972948326799,
+              0.0,
+              -0.7927881479888844
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.7927881479888844,
+              0.0,
+              -0.6094972948326799
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "rising strut",
+          "size": [
+            0.14,
+            0.17,
+            2.523568901377571
+          ],
+          "center": [
+            -1.32,
+            0.0,
+            0.68
+          ],
+          "material": "wood",
+          "rotation": [
+            [
+              0.3090860723375582,
+              0.0,
+              -0.9510340687309481
+            ],
+            [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.9510340687309482,
+              0.0,
+              0.30908607233755814
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "crossed brace",
+          "size": [
+            0.14,
+            0.17,
+            2.5140007955448223
+          ],
+          "center": [
+            -1.125,
+            0.0,
+            1.045
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              -0.6006362458897949,
+              0.0,
+              -0.7995224200254886
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.7995224200254886,
+              0.0,
+              -0.6006362458897949
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "principal rafter",
+          "size": [
+            0.22,
+            0.22,
+            4.528321985018291
+          ],
+          "center": [
+            1.795,
+            0.0,
+            1.63
+          ],
+          "material": "timber",
+          "rotation": [
+            [
+              -0.6094972948326799,
+              0.0,
+              0.7927881479888844
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.7927881479888844,
+              0.0,
+              -0.6094972948326799
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "rising strut",
+          "size": [
+            0.14,
+            0.17,
+            2.523568901377571
+          ],
+          "center": [
+            1.32,
+            0.0,
+            0.68
+          ],
+          "material": "wood",
+          "rotation": [
+            [
+              0.3090860723375582,
+              -0.0,
+              0.9510340687309481
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.9510340687309482,
+              0.0,
+              0.30908607233755814
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "crossed brace",
+          "size": [
+            0.14,
+            0.17,
+            2.5140007955448223
+          ],
+          "center": [
+            1.125,
+            0.0,
+            1.045
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              -0.6006362458897949,
+              0.0,
+              0.7995224200254886
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.7995224200254886,
+              0.0,
+              -0.6006362458897949
+            ]
+          ]
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 8,
+            "triangles": 96,
+            "bounds_min": [
+              -3.700000047683716,
+              -0.14000000059604645,
+              0.0
+            ],
+            "bounds_max": [
+              3.700000047683716,
+              0.14000000059604645,
+              3.0999999046325684
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              79,
+              9,
+              36
+            ],
+            "sample_count": 25596,
+            "step_target_m": 0.1,
+            "cell_crossings": 2800,
+            "scalar_min": -0.11657142857142858,
+            "scalar_max": 2.483622098820414,
+            "raw_vertices": 9242,
+            "raw_triangles": 18512
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 18512,
+            "bounds_min": [
+              -3.700000047683716,
+              -0.14000000059604645,
+              0.0
+            ],
+            "bounds_max": [
+              3.700000047683716,
+              0.14000000059604645,
+              3.0999999046325684
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "rising strut",
+              "thickness_m": 0.14,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "crossed brace",
+              "thickness_m": 0.14,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "rising strut",
+              "thickness_m": 0.14,
+              "sample_step_m": 0.1
+            },
+            {
+              "part": "crossed brace",
+              "thickness_m": 0.14,
+              "sample_step_m": 0.1
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 21,
+            "triangles": 800,
+            "bounds_min": [
+              -3.700000047683716,
+              -0.17100000381469727,
+              0.0
+            ],
+            "bounds_max": [
+              3.700000047683716,
+              0.17100000381469727,
+              3.0999999046325684
+            ],
+            "retained_modifiers": {
+              "BEVEL": 13,
+              "MIRROR": 3,
+              "CURVE_BEVEL": 8
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "chandelier",
+      "recipe": "chandelier",
+      "target_bounds": [
+        [
+          -0.75,
+          -0.75,
+          -1
+        ],
+        [
+          0.75,
+          0.75,
+          0
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "cylinder",
+          "name": "ceiling mount",
+          "radius": 0.115,
+          "height": 0.045,
+          "center": [
+            0,
+            0,
+            -0.0225
+          ],
+          "material": "iron"
+        },
+        {
+          "kind": "cylinder",
+          "name": "chain volume candidate",
+          "radius": 0.025,
+          "height": 0.42,
+          "center": [
+            0,
+            0,
+            -0.24
+          ],
+          "material": "iron"
+        },
+        {
+          "kind": "torus",
+          "name": "load bearing circular ring",
+          "major": 0.6000000000000001,
+          "minor": 0.038,
+          "center": [
+            0,
+            0,
+            -0.88
+          ],
+          "material": "iron"
+        },
+        {
+          "kind": "box",
+          "name": "radial arm",
+          "size": [
+            0.046,
+            0.046,
+            0.6000000000000001
+          ],
+          "center": [
+            0.30000000000000004,
+            0.0,
+            -0.88
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.135,
+          "height": 0.055,
+          "center": [
+            0.6000000000000001,
+            0.0,
+            -0.88
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.105,
+          "height": 0.245,
+          "center": [
+            0.6000000000000001,
+            0.0,
+            -0.725
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern lid",
+          "radius": 0.125,
+          "height": 0.045,
+          "center": [
+            0.6000000000000001,
+            0.0,
+            -0.558
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "box",
+          "name": "radial arm",
+          "size": [
+            0.046,
+            0.046,
+            0.6000000000000001
+          ],
+          "center": [
+            0.15000000000000005,
+            0.2598076211353316,
+            -0.88
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              0.0,
+              -0.8660254037844386,
+              0.5000000000000001
+            ],
+            [
+              0.0,
+              0.5000000000000001,
+              0.8660254037844386
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.135,
+          "height": 0.055,
+          "center": [
+            0.3000000000000001,
+            0.5196152422706632,
+            -0.88
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.105,
+          "height": 0.245,
+          "center": [
+            0.3000000000000001,
+            0.5196152422706632,
+            -0.725
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern lid",
+          "radius": 0.125,
+          "height": 0.045,
+          "center": [
+            0.3000000000000001,
+            0.5196152422706632,
+            -0.558
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "box",
+          "name": "radial arm",
+          "size": [
+            0.046,
+            0.046,
+            0.6000000000000001
+          ],
+          "center": [
+            -0.14999999999999997,
+            0.2598076211353316,
+            -0.88
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              0.0,
+              0.8660254037844386,
+              -0.49999999999999983
+            ],
+            [
+              -0.0,
+              0.49999999999999983,
+              0.8660254037844386
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.135,
+          "height": 0.055,
+          "center": [
+            -0.29999999999999993,
+            0.5196152422706632,
+            -0.88
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.105,
+          "height": 0.245,
+          "center": [
+            -0.29999999999999993,
+            0.5196152422706632,
+            -0.725
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern lid",
+          "radius": 0.125,
+          "height": 0.045,
+          "center": [
+            -0.29999999999999993,
+            0.5196152422706632,
+            -0.558
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "box",
+          "name": "radial arm",
+          "size": [
+            0.046,
+            0.046,
+            0.6000000000000001
+          ],
+          "center": [
+            -0.30000000000000004,
+            3.67394039744206e-17,
+            -0.88
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              0.0,
+              1.2246467991473532e-16,
+              -1.0
+            ],
+            [
+              -0.0,
+              1.0,
+              1.2246467991473532e-16
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.135,
+          "height": 0.055,
+          "center": [
+            -0.6000000000000001,
+            7.34788079488412e-17,
+            -0.88
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.105,
+          "height": 0.245,
+          "center": [
+            -0.6000000000000001,
+            7.34788079488412e-17,
+            -0.725
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern lid",
+          "radius": 0.125,
+          "height": 0.045,
+          "center": [
+            -0.6000000000000001,
+            7.34788079488412e-17,
+            -0.558
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "box",
+          "name": "radial arm",
+          "size": [
+            0.046,
+            0.046,
+            0.6000000000000001
+          ],
+          "center": [
+            -0.15000000000000016,
+            -0.25980762113533157,
+            -0.88
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              0.0,
+              -0.8660254037844385,
+              -0.5000000000000004
+            ],
+            [
+              -0.0,
+              0.5000000000000004,
+              -0.8660254037844385
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.135,
+          "height": 0.055,
+          "center": [
+            -0.3000000000000003,
+            -0.5196152422706631,
+            -0.88
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.105,
+          "height": 0.245,
+          "center": [
+            -0.3000000000000003,
+            -0.5196152422706631,
+            -0.725
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern lid",
+          "radius": 0.125,
+          "height": 0.045,
+          "center": [
+            -0.3000000000000003,
+            -0.5196152422706631,
+            -0.558
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "box",
+          "name": "radial arm",
+          "size": [
+            0.046,
+            0.046,
+            0.6000000000000001
+          ],
+          "center": [
+            0.15000000000000005,
+            -0.2598076211353316,
+            -0.88
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              0.0,
+              0.8660254037844386,
+              0.5000000000000001
+            ],
+            [
+              0.0,
+              0.5000000000000001,
+              -0.8660254037844386
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.135,
+          "height": 0.055,
+          "center": [
+            0.3000000000000001,
+            -0.5196152422706632,
+            -0.88
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.105,
+          "height": 0.245,
+          "center": [
+            0.3000000000000001,
+            -0.5196152422706632,
+            -0.725
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern lid",
+          "radius": 0.125,
+          "height": 0.045,
+          "center": [
+            0.3000000000000001,
+            -0.5196152422706632,
+            -0.558
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "box",
+          "name": "tension rod",
+          "size": [
+            0.032,
+            0.032,
+            0.7746612162745725
+          ],
+          "center": [
+            0.2598076211353316,
+            0.15,
+            -0.635
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              -0.6860699827075363,
+              -0.2817498293340456,
+              0.6707644985372415
+            ],
+            [
+              0.0,
+              0.9219680015239291,
+              0.3872660637933207
+            ],
+            [
+              -0.7275355515902167,
+              0.2656916216898992,
+              -0.6325345708624238
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "tension rod",
+          "size": [
+            0.032,
+            0.032,
+            0.7746612162745725
+          ],
+          "center": [
+            -0.2598076211353316,
+            0.15,
+            -0.635
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              -0.6860699827075363,
+              0.2817498293340456,
+              -0.6707644985372415
+            ],
+            [
+              0.0,
+              0.9219680015239291,
+              0.3872660637933207
+            ],
+            [
+              0.7275355515902167,
+              0.2656916216898992,
+              -0.6325345708624238
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "tension rod",
+          "size": [
+            0.032,
+            0.032,
+            0.7746612162745725
+          ],
+          "center": [
+            -5.51091059616309e-17,
+            -0.30000000000000004,
+            -0.635
+          ],
+          "material": "iron",
+          "rotation": [
+            [
+              -1.0,
+              -1.7421948199942712e-16,
+              -1.4227924363286548e-16
+            ],
+            [
+              0.0,
+              0.6325345708624238,
+              -0.7745321275866415
+            ],
+            [
+              2.2493512637400366e-16,
+              -0.7745321275866415,
+              -0.6325345708624238
+            ]
+          ]
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 30,
+            "triangles": 1596,
+            "bounds_min": [
+              -0.7350000143051147,
+              -0.6546152234077454,
+              -0.9129089713096619
+            ],
+            "bounds_max": [
+              0.7350000143051147,
+              0.6546152234077454,
+              0.0
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              41,
+              41,
+              29
+            ],
+            "sample_count": 48749,
+            "step_target_m": 0.041666666666666664,
+            "cell_crossings": 2806,
+            "scalar_min": -0.08625000000000017,
+            "scalar_max": 0.7780619331304653,
+            "raw_vertices": 8640,
+            "raw_triangles": 17106
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 17106,
+            "bounds_min": [
+              -0.7299456596374512,
+              -0.6495252251625061,
+              -0.9179945588111877
+            ],
+            "bounds_max": [
+              0.7299456596374512,
+              0.6495252251625061,
+              0.0
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "chain volume candidate",
+              "thickness_m": 0.05,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "load bearing circular ring",
+              "thickness_m": 0.076,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "radial arm",
+              "thickness_m": 0.046,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "radial arm",
+              "thickness_m": 0.046,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "radial arm",
+              "thickness_m": 0.046,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "radial arm",
+              "thickness_m": 0.046,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "radial arm",
+              "thickness_m": 0.046,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "radial arm",
+              "thickness_m": 0.046,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "tension rod",
+              "thickness_m": 0.032,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "tension rod",
+              "thickness_m": 0.032,
+              "sample_step_m": 0.041666666666666664
+            },
+            {
+              "part": "tension rod",
+              "thickness_m": 0.032,
+              "sample_step_m": 0.041666666666666664
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 64,
+            "triangles": 2852,
+            "bounds_min": [
+              -0.7417500019073486,
+              -0.6613652110099792,
+              -1.0
+            ],
+            "bounds_max": [
+              0.7417500019073486,
+              0.6613652110099792,
+              0.0
+            ],
+            "retained_modifiers": {
+              "SCREW": 21,
+              "ARRAY": 2,
+              "CURVE_BEVEL": 37
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "floor_lamp",
+      "recipe": "floor_lamp",
+      "target_bounds": [
+        [
+          -0.28,
+          -0.28,
+          0
+        ],
+        [
+          0.28,
+          0.28,
+          1.8
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "cylinder",
+          "name": "stable iron foot",
+          "radius": 0.28,
+          "height": 0.12,
+          "center": [
+            0,
+            0,
+            0.06
+          ],
+          "material": "iron"
+        },
+        {
+          "kind": "cylinder",
+          "name": "foot taper blockout",
+          "radius": 0.15,
+          "height": 0.16,
+          "center": [
+            0,
+            0,
+            0.2
+          ],
+          "material": "iron"
+        },
+        {
+          "kind": "cylinder",
+          "name": "slender bronze upright",
+          "radius": 0.038,
+          "height": 1.1624,
+          "center": [
+            0,
+            0,
+            0.8012
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern cup",
+          "radius": 0.21,
+          "height": 0.07,
+          "center": [
+            0,
+            0,
+            1.3824
+          ],
+          "material": "bronze"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern glass",
+          "radius": 0.16,
+          "height": 0.29,
+          "center": [
+            0,
+            0,
+            1.5624
+          ],
+          "material": "window_glow"
+        },
+        {
+          "kind": "cylinder",
+          "name": "lantern roof",
+          "radius": 0.18,
+          "height": 0.085,
+          "center": [
+            0,
+            0,
+            1.7550000000000001
+          ],
+          "material": "bronze"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 6,
+            "triangles": 360,
+            "bounds_min": [
+              -0.2800000011920929,
+              -0.2800000011920929,
+              0.0
+            ],
+            "bounds_max": [
+              0.2800000011920929,
+              0.2800000011920929,
+              1.7975000143051147
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              16,
+              16,
+              41
+            ],
+            "sample_count": 10496,
+            "step_target_m": 0.05,
+            "cell_crossings": 946,
+            "scalar_min": -0.12511606534907205,
+            "scalar_max": 0.4852590197639192,
+            "raw_vertices": 3148,
+            "raw_triangles": 6292
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 6292,
+            "bounds_min": [
+              -0.27890744805336,
+              -0.27890744805336,
+              0.0
+            ],
+            "bounds_max": [
+              0.27890744805336,
+              0.27890744805336,
+              1.7975000143051147
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "slender bronze upright",
+              "thickness_m": 0.076,
+              "sample_step_m": 0.05
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 12,
+            "triangles": 864,
+            "bounds_min": [
+              -0.2800000011920929,
+              -0.2800000011920929,
+              0.0
+            ],
+            "bounds_max": [
+              0.2800000011920929,
+              0.2800000011920929,
+              1.8000000715255737
+            ],
+            "retained_modifiers": {
+              "SCREW": 5,
+              "CURVE_BEVEL": 6
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "pew_2m",
+      "recipe": "pew_2m",
+      "target_bounds": [
+        [
+          -1,
+          -0.425,
+          0
+        ],
+        [
+          1,
+          0.425,
+          1.15
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "seat board",
+          "size": [
+            1.87,
+            0.45,
+            0.06
+          ],
+          "center": [
+            0,
+            0.02,
+            0.45
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "lower back rail",
+          "size": [
+            1.87,
+            0.08,
+            0.09
+          ],
+          "center": [
+            0,
+            -0.31,
+            0.58
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "back head rail",
+          "size": [
+            1.87,
+            0.085,
+            0.105
+          ],
+          "center": [
+            0,
+            -0.36,
+            1.085
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "kneeler",
+          "size": [
+            1.83,
+            0.17,
+            0.045
+          ],
+          "center": [
+            0,
+            0.34,
+            0.1375
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "back structural upright",
+          "size": [
+            0.13,
+            0.14,
+            1.1
+          ],
+          "center": [
+            -0.88,
+            -0.31,
+            0.55
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "front floor leg",
+          "size": [
+            0.13,
+            0.14,
+            0.44
+          ],
+          "center": [
+            -0.88,
+            0.19,
+            0.22
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "side arm",
+          "size": [
+            0.13,
+            0.56,
+            0.13
+          ],
+          "center": [
+            -0.88,
+            -0.01,
+            0.68
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back structural upright",
+          "size": [
+            0.13,
+            0.14,
+            1.1
+          ],
+          "center": [
+            0.88,
+            -0.31,
+            0.55
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "front floor leg",
+          "size": [
+            0.13,
+            0.14,
+            0.44
+          ],
+          "center": [
+            0.88,
+            0.19,
+            0.22
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "side arm",
+          "size": [
+            0.13,
+            0.56,
+            0.13
+          ],
+          "center": [
+            0.88,
+            -0.01,
+            0.68
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            -0.875,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            -0.625,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            -0.375,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            -0.125,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            0.125,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            0.375,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            0.625,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            0.875,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 18,
+            "triangles": 216,
+            "bounds_min": [
+              -0.949999988079071,
+              -0.4025000035762787,
+              0.0
+            ],
+            "bounds_max": [
+              0.949999988079071,
+              0.42500001192092896,
+              1.1375000476837158
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              41,
+              20,
+              26
+            ],
+            "sample_count": 21320,
+            "step_target_m": 0.05555555555555555,
+            "cell_crossings": 2132,
+            "scalar_min": -0.06499999999999989,
+            "scalar_max": 0.8193289978242686,
+            "raw_vertices": 7596,
+            "raw_triangles": 15098
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 15098,
+            "bounds_min": [
+              -0.9459999799728394,
+              -0.4021478295326233,
+              -8.673617379884035e-18
+            ],
+            "bounds_max": [
+              0.9459999799728394,
+              0.41568198800086975,
+              1.1367413997650146
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "seat board",
+              "thickness_m": 0.06,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "lower back rail",
+              "thickness_m": 0.08,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back head rail",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "kneeler",
+              "thickness_m": 0.045,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.05555555555555555
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 13,
+            "triangles": 2432,
+            "bounds_min": [
+              -1.0,
+              -0.42500001192092896,
+              0.0
+            ],
+            "bounds_max": [
+              1.0,
+              0.42500001192092896,
+              1.149999976158142
+            ],
+            "retained_modifiers": {
+              "BEVEL": 13,
+              "ARRAY": 9,
+              "MIRROR": 6
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "pew_end",
+      "recipe": "pew_end",
+      "target_bounds": [
+        [
+          -0.065,
+          -0.425,
+          0
+        ],
+        [
+          0.065,
+          0.32,
+          1.15
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "end rear upright",
+          "size": [
+            0.13,
+            0.16,
+            1.15
+          ],
+          "center": [
+            0,
+            -0.34,
+            0.575
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "side arm",
+          "size": [
+            0.13,
+            0.62,
+            0.13
+          ],
+          "center": [
+            0,
+            -0.01,
+            0.64
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "lower side board",
+          "size": [
+            0.13,
+            0.48,
+            0.36
+          ],
+          "center": [
+            0,
+            -0.02,
+            0.28
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "end foot",
+          "size": [
+            0.13,
+            0.18,
+            0.2
+          ],
+          "center": [
+            0,
+            -0.31,
+            0.1
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "end foot",
+          "size": [
+            0.13,
+            0.18,
+            0.2
+          ],
+          "center": [
+            0,
+            0.2,
+            0.1
+          ],
+          "material": "timber"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 5,
+            "triangles": 60,
+            "bounds_min": [
+              -0.06499999761581421,
+              -0.42000001668930054,
+              0.0
+            ],
+            "bounds_max": [
+              0.06499999761581421,
+              0.30000001192092896,
+              1.149999976158142
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              9,
+              28,
+              41
+            ],
+            "sample_count": 10332,
+            "step_target_m": 0.03194444444444444,
+            "cell_crossings": 1810,
+            "scalar_min": -0.065,
+            "scalar_max": 0.5116822744633626,
+            "raw_vertices": 6854,
+            "raw_triangles": 12930
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 12930,
+            "bounds_min": [
+              -0.06499999761581421,
+              -0.41999998688697815,
+              -2.5153490401663703e-17
+            ],
+            "bounds_max": [
+              0.06499999761581421,
+              0.30000001192092896,
+              1.149999976158142
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 5,
+            "triangles": 596,
+            "bounds_min": [
+              -0.06499999761581421,
+              -0.42500001192092896,
+              0.0
+            ],
+            "bounds_max": [
+              0.06499999761581421,
+              0.3199999928474426,
+              1.149999976158142
+            ],
+            "retained_modifiers": {
+              "BEVEL": 5,
+              "MIRROR": 1
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "pew_seat_1m",
+      "recipe": "pew_seat_1m",
+      "target_bounds": [
+        [
+          -0.5,
+          -0.403,
+          0
+        ],
+        [
+          0.5,
+          0.425,
+          1.1375
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "seat board",
+          "size": [
+            0.87,
+            0.45,
+            0.06
+          ],
+          "center": [
+            0,
+            0.02,
+            0.45
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "lower back rail",
+          "size": [
+            0.87,
+            0.08,
+            0.09
+          ],
+          "center": [
+            0,
+            -0.31,
+            0.58
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "back head rail",
+          "size": [
+            0.87,
+            0.085,
+            0.105
+          ],
+          "center": [
+            0,
+            -0.36,
+            1.085
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "kneeler",
+          "size": [
+            0.83,
+            0.17,
+            0.045
+          ],
+          "center": [
+            0,
+            0.34,
+            0.1375
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "back structural upright",
+          "size": [
+            0.13,
+            0.14,
+            1.1
+          ],
+          "center": [
+            -0.38,
+            -0.31,
+            0.55
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "front floor leg",
+          "size": [
+            0.13,
+            0.14,
+            0.44
+          ],
+          "center": [
+            -0.38,
+            0.19,
+            0.22
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "side arm",
+          "size": [
+            0.13,
+            0.56,
+            0.13
+          ],
+          "center": [
+            -0.38,
+            -0.01,
+            0.68
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back structural upright",
+          "size": [
+            0.13,
+            0.14,
+            1.1
+          ],
+          "center": [
+            0.38,
+            -0.31,
+            0.55
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "front floor leg",
+          "size": [
+            0.13,
+            0.14,
+            0.44
+          ],
+          "center": [
+            0.38,
+            0.19,
+            0.22
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "side arm",
+          "size": [
+            0.13,
+            0.56,
+            0.13
+          ],
+          "center": [
+            0.38,
+            -0.01,
+            0.68
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            -0.375,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            -0.125,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            0.125,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "back slat",
+          "size": [
+            0.15,
+            0.052,
+            0.49
+          ],
+          "center": [
+            0.375,
+            -0.33,
+            0.79
+          ],
+          "material": "wood"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 14,
+            "triangles": 168,
+            "bounds_min": [
+              -0.44999998807907104,
+              -0.4025000035762787,
+              0.0
+            ],
+            "bounds_max": [
+              0.44999998807907104,
+              0.42500001192092896,
+              1.1375000476837158
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              37,
+              31,
+              41
+            ],
+            "sample_count": 47027,
+            "step_target_m": 0.03159722354676989,
+            "cell_crossings": 4582,
+            "scalar_min": -0.0562500015894572,
+            "scalar_max": 0.5882635100958766,
+            "raw_vertices": 17038,
+            "raw_triangles": 34084
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 34084,
+            "bounds_min": [
+              -0.44999998807907104,
+              -0.4025000035762787,
+              -6.071532165918825e-18
+            ],
+            "bounds_max": [
+              0.44999998807907104,
+              0.42500001192092896,
+              1.1375000476837158
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "seat board",
+              "thickness_m": 0.06,
+              "sample_step_m": 0.03159722354676989
+            },
+            {
+              "part": "kneeler",
+              "thickness_m": 0.045,
+              "sample_step_m": 0.03159722354676989
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.03159722354676989
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.03159722354676989
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.03159722354676989
+            },
+            {
+              "part": "back slat",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.03159722354676989
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 12,
+            "triangles": 1176,
+            "bounds_min": [
+              -0.5,
+              -0.40299999713897705,
+              0.0
+            ],
+            "bounds_max": [
+              0.5,
+              0.42500001192092896,
+              1.1375000476837158
+            ],
+            "retained_modifiers": {
+              "BEVEL": 12,
+              "ARRAY": 2,
+              "MIRROR": 5
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "lectern",
+      "recipe": "lectern",
+      "target_bounds": [
+        [
+          -0.4,
+          -0.3,
+          0
+        ],
+        [
+          0.4,
+          0.313,
+          1.25
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "wide floor plinth",
+          "size": [
+            0.8,
+            0.55,
+            0.15
+          ],
+          "center": [
+            0,
+            0,
+            0.075
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "central pedestal",
+          "size": [
+            0.22,
+            0.22,
+            0.78
+          ],
+          "center": [
+            0,
+            0,
+            0.53
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "front carving shield",
+          "size": [
+            0.53,
+            0.065,
+            0.53
+          ],
+          "center": [
+            0,
+            0.17,
+            0.72
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "sloped reading desk",
+          "size": [
+            0.8,
+            0.628,
+            0.052
+          ],
+          "center": [
+            0,
+            0,
+            1.131
+          ],
+          "material": "wood",
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9556066635268956,
+              -0.2946453879207928
+            ],
+            [
+              0.0,
+              0.2946453879207928,
+              0.9556066635268956
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "book stop",
+          "size": [
+            0.75,
+            0.043,
+            0.045
+          ],
+          "center": [
+            0,
+            -0.274,
+            1.093
+          ],
+          "material": "wood_dark"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 5,
+            "triangles": 60,
+            "bounds_min": [
+              -0.4000000059604645,
+              -0.30772125720977783,
+              0.0
+            ],
+            "bounds_max": [
+              0.4000000059604645,
+              0.30772125720977783,
+              1.2483644485473633
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              28,
+              23,
+              41
+            ],
+            "sample_count": 26404,
+            "step_target_m": 0.034722222222222224,
+            "cell_crossings": 3454,
+            "scalar_min": -0.09287037014961243,
+            "scalar_max": 0.4346267250356964,
+            "raw_vertices": 12288,
+            "raw_triangles": 24568
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 24568,
+            "bounds_min": [
+              -0.4000000059604645,
+              -0.29770782589912415,
+              0.0
+            ],
+            "bounds_max": [
+              0.4000000059604645,
+              0.30315080285072327,
+              1.2421448230743408
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "front carving shield",
+              "thickness_m": 0.065,
+              "sample_step_m": 0.034722222222222224
+            },
+            {
+              "part": "sloped reading desk",
+              "thickness_m": 0.052,
+              "sample_step_m": 0.034722222222222224
+            },
+            {
+              "part": "book stop",
+              "thickness_m": 0.043,
+              "sample_step_m": 0.034722222222222224
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 9,
+            "triangles": 652,
+            "bounds_min": [
+              -0.4000000059604645,
+              -0.29764285683631897,
+              0.0
+            ],
+            "bounds_max": [
+              0.4000000059604645,
+              0.31296440958976746,
+              1.2476428747177124
+            ],
+            "retained_modifiers": {
+              "BEVEL": 9,
+              "SOLIDIFY": 1
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "altar_table",
+      "recipe": "altar_table",
+      "target_bounds": [
+        [
+          -1.1,
+          -0.45,
+          0
+        ],
+        [
+          1.1,
+          0.45,
+          1.05
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "tabletop",
+          "size": [
+            2.2,
+            0.9,
+            0.075
+          ],
+          "center": [
+            0,
+            0,
+            1.0125
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "under edge moulding",
+          "size": [
+            2.11,
+            0.81,
+            0.045
+          ],
+          "center": [
+            0,
+            0,
+            0.953
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "low stretcher",
+          "size": [
+            1.85,
+            0.1,
+            0.12
+          ],
+          "center": [
+            0,
+            0,
+            0.205
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "load bearing leg",
+          "size": [
+            0.17,
+            0.17,
+            0.96
+          ],
+          "center": [
+            -0.88,
+            -0.29,
+            0.48
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "load bearing leg",
+          "size": [
+            0.17,
+            0.17,
+            0.96
+          ],
+          "center": [
+            -0.88,
+            0.29,
+            0.48
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "end apron",
+          "size": [
+            0.075,
+            0.65,
+            0.205
+          ],
+          "center": [
+            -0.88,
+            0,
+            0.835
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "load bearing leg",
+          "size": [
+            0.17,
+            0.17,
+            0.96
+          ],
+          "center": [
+            0.88,
+            -0.29,
+            0.48
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "load bearing leg",
+          "size": [
+            0.17,
+            0.17,
+            0.96
+          ],
+          "center": [
+            0.88,
+            0.29,
+            0.48
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "end apron",
+          "size": [
+            0.075,
+            0.65,
+            0.205
+          ],
+          "center": [
+            0.88,
+            0,
+            0.835
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "long apron",
+          "size": [
+            1.83,
+            0.075,
+            0.205
+          ],
+          "center": [
+            0,
+            -0.32,
+            0.835
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "long apron",
+          "size": [
+            1.83,
+            0.075,
+            0.205
+          ],
+          "center": [
+            0,
+            0.32,
+            0.835
+          ],
+          "material": "wood"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 11,
+            "triangles": 132,
+            "bounds_min": [
+              -1.100000023841858,
+              -0.44999998807907104,
+              0.0
+            ],
+            "bounds_max": [
+              1.100000023841858,
+              0.44999998807907104,
+              1.0500000715255737
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              41,
+              20,
+              22
+            ],
+            "sample_count": 18040,
+            "step_target_m": 0.061111112435658775,
+            "cell_crossings": 2776,
+            "scalar_min": -0.057499980330467146,
+            "scalar_max": 0.5701973374611673,
+            "raw_vertices": 10174,
+            "raw_triangles": 20340
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 20340,
+            "bounds_min": [
+              -1.0999609231948853,
+              -0.44999998807907104,
+              -1.3877787807814457e-17
+            ],
+            "bounds_max": [
+              1.0999609231948853,
+              0.44999998807907104,
+              1.0499999523162842
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "tabletop",
+              "thickness_m": 0.075,
+              "sample_step_m": 0.061111112435658775
+            },
+            {
+              "part": "under edge moulding",
+              "thickness_m": 0.045,
+              "sample_step_m": 0.061111112435658775
+            },
+            {
+              "part": "low stretcher",
+              "thickness_m": 0.1,
+              "sample_step_m": 0.061111112435658775
+            },
+            {
+              "part": "end apron",
+              "thickness_m": 0.075,
+              "sample_step_m": 0.061111112435658775
+            },
+            {
+              "part": "end apron",
+              "thickness_m": 0.075,
+              "sample_step_m": 0.061111112435658775
+            },
+            {
+              "part": "long apron",
+              "thickness_m": 0.075,
+              "sample_step_m": 0.061111112435658775
+            },
+            {
+              "part": "long apron",
+              "thickness_m": 0.075,
+              "sample_step_m": 0.061111112435658775
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 12,
+            "triangles": 1264,
+            "bounds_min": [
+              -1.100000023841858,
+              -0.44999998807907104,
+              0.0
+            ],
+            "bounds_max": [
+              1.100000023841858,
+              0.44999998807907104,
+              1.0499999523162842
+            ],
+            "retained_modifiers": {
+              "BEVEL": 10,
+              "MIRROR": 4,
+              "ARRAY": 1,
+              "CURVE_BEVEL": 2
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "wood_dais_2m",
+      "recipe": "wood_dais_2m",
+      "target_bounds": [
+        [
+          -1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0.48
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "load bearing deck",
+          "size": [
+            2,
+            2,
+            0.08
+          ],
+          "center": [
+            0,
+            0,
+            0.44
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "side frame",
+          "size": [
+            0.1,
+            2,
+            0.4
+          ],
+          "center": [
+            -0.95,
+            0,
+            0.2
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "side frame",
+          "size": [
+            0.1,
+            2,
+            0.4
+          ],
+          "center": [
+            0.95,
+            0,
+            0.2
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "end frame",
+          "size": [
+            1.8,
+            0.1,
+            0.4
+          ],
+          "center": [
+            0,
+            -0.95,
+            0.2
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "end frame",
+          "size": [
+            1.8,
+            0.1,
+            0.4
+          ],
+          "center": [
+            0,
+            0.95,
+            0.2
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "underfloor joist",
+          "size": [
+            0.12,
+            1.81,
+            0.27
+          ],
+          "center": [
+            -0.5,
+            0,
+            0.27
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "underfloor joist",
+          "size": [
+            0.12,
+            1.81,
+            0.27
+          ],
+          "center": [
+            0,
+            0,
+            0.27
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "underfloor joist",
+          "size": [
+            0.12,
+            1.81,
+            0.27
+          ],
+          "center": [
+            0.5,
+            0,
+            0.27
+          ],
+          "material": "wood_dark"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 8,
+            "triangles": 96,
+            "bounds_min": [
+              -1.0,
+              -1.0,
+              0.0
+            ],
+            "bounds_max": [
+              1.0,
+              1.0,
+              0.47999998927116394
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              41,
+              41,
+              14
+            ],
+            "sample_count": 23534,
+            "step_target_m": 0.05555555555555555,
+            "cell_crossings": 6186,
+            "scalar_min": -0.06,
+            "scalar_max": 0.28714108030722457,
+            "raw_vertices": 23658,
+            "raw_triangles": 45032
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 45032,
+            "bounds_min": [
+              -1.0,
+              -1.0,
+              -1.1275702593849246e-17
+            ],
+            "bounds_max": [
+              1.0,
+              1.0,
+              0.47999998927116394
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "load bearing deck",
+              "thickness_m": 0.08,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "side frame",
+              "thickness_m": 0.1,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "side frame",
+              "thickness_m": 0.1,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "end frame",
+              "thickness_m": 0.1,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "end frame",
+              "thickness_m": 0.1,
+              "sample_step_m": 0.05555555555555555
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 5,
+            "triangles": 792,
+            "bounds_min": [
+              -1.0,
+              -1.0,
+              0.0
+            ],
+            "bounds_max": [
+              1.0,
+              1.0,
+              0.47999998927116394
+            ],
+            "retained_modifiers": {
+              "BEVEL": 5,
+              "MIRROR": 2,
+              "ARRAY": 2
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "wood_stairs",
+      "recipe": "wood_stairs",
+      "target_bounds": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          1.05,
+          0.48
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "stair tread",
+          "size": [
+            2,
+            0.35,
+            0.035
+          ],
+          "center": [
+            0,
+            0.875,
+            0.14250000000000002
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "closed stair riser",
+          "size": [
+            1.78,
+            0.043,
+            0.125
+          ],
+          "center": [
+            0,
+            1.0185,
+            0.0625
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "stepped stringer segment",
+          "size": [
+            0.12,
+            0.35,
+            0.125
+          ],
+          "center": [
+            -0.91,
+            0.875,
+            0.0625
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "stepped stringer segment",
+          "size": [
+            0.12,
+            0.35,
+            0.125
+          ],
+          "center": [
+            0.91,
+            0.875,
+            0.0625
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "stair tread",
+          "size": [
+            2,
+            0.35,
+            0.035
+          ],
+          "center": [
+            0,
+            0.525,
+            0.3025
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "closed stair riser",
+          "size": [
+            1.78,
+            0.043,
+            0.125
+          ],
+          "center": [
+            0,
+            0.6685,
+            0.2225
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "stepped stringer segment",
+          "size": [
+            0.12,
+            0.35,
+            0.28500000000000003
+          ],
+          "center": [
+            -0.91,
+            0.525,
+            0.14250000000000002
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "stepped stringer segment",
+          "size": [
+            0.12,
+            0.35,
+            0.28500000000000003
+          ],
+          "center": [
+            0.91,
+            0.525,
+            0.14250000000000002
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "stair tread",
+          "size": [
+            2,
+            0.35,
+            0.035
+          ],
+          "center": [
+            0,
+            0.17500000000000004,
+            0.46249999999999997
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "closed stair riser",
+          "size": [
+            1.78,
+            0.043,
+            0.125
+          ],
+          "center": [
+            0,
+            0.3185,
+            0.38249999999999995
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "stepped stringer segment",
+          "size": [
+            0.12,
+            0.35,
+            0.44499999999999995
+          ],
+          "center": [
+            -0.91,
+            0.17500000000000004,
+            0.22249999999999998
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "stepped stringer segment",
+          "size": [
+            0.12,
+            0.35,
+            0.44499999999999995
+          ],
+          "center": [
+            0.91,
+            0.17500000000000004,
+            0.22249999999999998
+          ],
+          "material": "timber"
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 12,
+            "triangles": 144,
+            "bounds_min": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "bounds_max": [
+              1.0,
+              1.0499999523162842,
+              0.48000001907348633
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              41,
+              24,
+              14
+            ],
+            "sample_count": 13776,
+            "step_target_m": 0.05555555555555555,
+            "cell_crossings": 2006,
+            "scalar_min": -0.034999999999999976,
+            "scalar_max": 0.5540983667184014,
+            "raw_vertices": 7580,
+            "raw_triangles": 15160
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 15160,
+            "bounds_min": [
+              -0.9951162338256836,
+              5.724587470723463e-17,
+              -1.214306433183765e-17
+            ],
+            "bounds_max": [
+              0.9951162338256836,
+              1.0499999523162842,
+              0.47999998927116394
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "stair tread",
+              "thickness_m": 0.035,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "closed stair riser",
+              "thickness_m": 0.043,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "stair tread",
+              "thickness_m": 0.035,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "closed stair riser",
+              "thickness_m": 0.043,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "stair tread",
+              "thickness_m": 0.035,
+              "sample_step_m": 0.05555555555555555
+            },
+            {
+              "part": "closed stair riser",
+              "thickness_m": 0.043,
+              "sample_step_m": 0.05555555555555555
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 4,
+            "triangles": 580,
+            "bounds_min": [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "bounds_max": [
+              1.0,
+              1.0499999523162842,
+              0.47999998927116394
+            ],
+            "retained_modifiers": {
+              "BEVEL": 4,
+              "MIRROR": 1,
+              "ARRAY": 3
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    },
+    {
+      "id": "altar_back_panel",
+      "recipe": "altar_back_panel",
+      "target_bounds": [
+        [
+          -1.2,
+          -0.21,
+          0
+        ],
+        [
+          1.2,
+          0.21,
+          2.8
+        ]
+      ],
+      "analytic_primitives": [
+        {
+          "kind": "box",
+          "name": "base lintel",
+          "size": [
+            2.15,
+            0.16,
+            0.2
+          ],
+          "center": [
+            0,
+            0,
+            0.29
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "top lintel",
+          "size": [
+            2.4,
+            0.2,
+            0.16
+          ],
+          "center": [
+            0,
+            0,
+            2.5
+          ],
+          "material": "wood_dark"
+        },
+        {
+          "kind": "box",
+          "name": "floor bearing foot",
+          "size": [
+            0.23,
+            0.42,
+            0.16
+          ],
+          "center": [
+            -1.07,
+            0,
+            0.08
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "vertical frame",
+          "size": [
+            0.17,
+            0.2,
+            2.4
+          ],
+          "center": [
+            -1.07,
+            0,
+            1.32
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "floor bearing foot",
+          "size": [
+            0.23,
+            0.42,
+            0.16
+          ],
+          "center": [
+            1.07,
+            0,
+            0.08
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "vertical frame",
+          "size": [
+            0.17,
+            0.2,
+            2.4
+          ],
+          "center": [
+            1.07,
+            0,
+            1.32
+          ],
+          "material": "timber"
+        },
+        {
+          "kind": "box",
+          "name": "broad carved panel",
+          "size": [
+            0.68,
+            0.072,
+            1.66
+          ],
+          "center": [
+            -0.71,
+            0,
+            1.2
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "pointed panel head",
+          "size": [
+            0.085,
+            0.09,
+            0.4951767361255982
+          ],
+          "center": [
+            -0.88,
+            0.0,
+            2.21
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              0.7270131525498177,
+              -0.0,
+              0.6866235329637163
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.6866235329637163,
+              0.0,
+              0.7270131525498177
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "pointed panel head",
+          "size": [
+            0.085,
+            0.09,
+            0.49517673612559815
+          ],
+          "center": [
+            -0.5399999999999999,
+            0.0,
+            2.21
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              0.7270131525498178,
+              0.0,
+              -0.6866235329637161
+            ],
+            [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.6866235329637163,
+              0.0,
+              0.7270131525498177
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "broad carved panel",
+          "size": [
+            0.68,
+            0.072,
+            1.66
+          ],
+          "center": [
+            0,
+            0,
+            1.2
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "pointed panel head",
+          "size": [
+            0.085,
+            0.09,
+            0.49517673612559815
+          ],
+          "center": [
+            -0.17,
+            0.0,
+            2.21
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              0.7270131525498178,
+              -0.0,
+              0.6866235329637161
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.6866235329637163,
+              0.0,
+              0.7270131525498177
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "pointed panel head",
+          "size": [
+            0.085,
+            0.09,
+            0.49517673612559815
+          ],
+          "center": [
+            0.17,
+            0.0,
+            2.21
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              0.7270131525498178,
+              0.0,
+              -0.6866235329637161
+            ],
+            [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.6866235329637163,
+              0.0,
+              0.7270131525498177
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "broad carved panel",
+          "size": [
+            0.68,
+            0.072,
+            1.66
+          ],
+          "center": [
+            0.71,
+            0,
+            1.2
+          ],
+          "material": "wood"
+        },
+        {
+          "kind": "box",
+          "name": "pointed panel head",
+          "size": [
+            0.085,
+            0.09,
+            0.49517673612559815
+          ],
+          "center": [
+            0.5399999999999999,
+            0.0,
+            2.21
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              0.7270131525498178,
+              -0.0,
+              0.6866235329637161
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.6866235329637163,
+              0.0,
+              0.7270131525498177
+            ]
+          ]
+        },
+        {
+          "kind": "box",
+          "name": "pointed panel head",
+          "size": [
+            0.085,
+            0.09,
+            0.4951767361255982
+          ],
+          "center": [
+            0.88,
+            0.0,
+            2.21
+          ],
+          "material": "wood_dark",
+          "rotation": [
+            [
+              0.7270131525498177,
+              0.0,
+              -0.6866235329637163
+            ],
+            [
+              -0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.6866235329637163,
+              0.0,
+              0.7270131525498177
+            ]
+          ]
+        }
+      ],
+      "route": "thin_parts_retain_csg_and_editable_modifiers",
+      "final_source": "dimension-controlled CSG and Blender modifiers; not derived from SDF",
+      "stages": [
+        {
+          "name": "CSG initial geometry / decomposition",
+          "stats": {
+            "objects": 15,
+            "triangles": 180,
+            "bounds_min": [
+              -1.2000000476837158,
+              -0.20999999344348907,
+              0.0
+            ],
+            "bounds_max": [
+              1.2000000476837158,
+              0.20999999344348907,
+              2.5799999237060547
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "construction": "independent box, cylinder and torus solids; constructive union; no combined mesh"
+        },
+        {
+          "name": "pure analytic SDF coarse candidate",
+          "sampling": {
+            "grid_shape": [
+              36,
+              10,
+              41
+            ],
+            "sample_count": 14760,
+            "step_target_m": 0.07777777777777778,
+            "cell_crossings": 1296,
+            "scalar_min": -0.06900000000000003,
+            "scalar_max": 0.4601086973221031,
+            "raw_vertices": 4344,
+            "raw_triangles": 8680
+          },
+          "stats": {
+            "objects": 1,
+            "triangles": 8680,
+            "bounds_min": [
+              -1.2000000476837158,
+              -0.20999999344348907,
+              0.0
+            ],
+            "bounds_max": [
+              1.2000000476837158,
+              0.20999999344348907,
+              2.5799999237060547
+            ],
+            "retained_modifiers": {},
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "under_two_voxel_features": [
+            {
+              "part": "broad carved panel",
+              "thickness_m": 0.072,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "pointed panel head",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "pointed panel head",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "broad carved panel",
+              "thickness_m": 0.072,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "pointed panel head",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "pointed panel head",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "broad carved panel",
+              "thickness_m": 0.072,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "pointed panel head",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.07777777777777778
+            },
+            {
+              "part": "pointed panel head",
+              "thickness_m": 0.085,
+              "sample_step_m": 0.07777777777777778
+            }
+          ],
+          "selected_for_final": false
+        },
+        {
+          "name": "corrected final recipe with retained Blender construction",
+          "stats": {
+            "objects": 9,
+            "triangles": 684,
+            "bounds_min": [
+              -1.2000000476837158,
+              -0.20999999344348907,
+              0.0
+            ],
+            "bounds_max": [
+              1.2000000476837158,
+              0.20999999344348907,
+              2.799999952316284
+            ],
+            "retained_modifiers": {
+              "BEVEL": 5,
+              "ARRAY": 1,
+              "CURVE_BEVEL": 3
+            },
+            "finite_vertices": true,
+            "degenerate_triangles": 0
+          },
+          "selected_for_final": true,
+          "source": "dimension-controlled CSG and Blender modifiers; not derived from SDF"
+        }
+      ]
+    }
+  ],
+  "asset_count": 16,
+  "elapsed_seconds": 33.67041869999957,
+  "total_stage_triangles": 768096,
+  "stage_geometry_checks": {
+    "all_vertices_finite": true,
+    "total_degenerate_triangles": 0
+  },
+  "sdf_algorithm": "direct analytic box/cylinder/torus signed distances, constructive union / smooth union, sampled grid, welded marching tetrahedra",
+  "mesh_input_used_for_sdf": false,
+  "remesh_used": false,
+  "route_disclosure": "Thick masonry has coarse/fine SDF and planar-interface candidate comparisons. stone_capital_sdf is an explicitly selected refined analytic SDF final with corrected planes. Thin planks, joinery, chains and metal rods use dimensional CSG/modifier finals.",
+  "stage_blend": "pipeline_stages.blend",
+  "assembly_stage": "Owned by the main v3 build; not synthesized or claimed by this stage project."
+}

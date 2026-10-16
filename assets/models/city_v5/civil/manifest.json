@@ -1,0 +1,278 @@
+{
+  "version": "5.0",
+  "units": "metres",
+  "godot_axes": {
+    "up": "+Y",
+    "front": "-Z"
+  },
+  "scaling": "Preserve unit scale. Translate and rotate whole native assets.",
+  "source": "tools/blender/city_v5/civil.py",
+  "assets": [
+    {
+      "id": "city_gate_grand",
+      "label": "晴岚港大城门",
+      "footprint": [
+        50,
+        18
+      ],
+      "datum": "finished street grade y=0",
+      "visible_height": 30,
+      "gate_clear_width": 18,
+      "gate_clear_height": 14,
+      "arch_spring_height": 11,
+      "central_wall_thickness": 7,
+      "opening_axis": "Z",
+      "doorway": [
+        0,
+        0,
+        0
+      ],
+      "collision_policy": "solid towers, continuous arch ring/spandrels and high crossbeam; fully open street passage",
+      "path": "res://assets/models/city_v5/civil/city_gate_grand.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/city_gate_grand.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -25.5,
+          0.0,
+          -8.89
+        ],
+        "max": [
+          25.6,
+          30.0,
+          8.5
+        ]
+      },
+      "triangles": 8003,
+      "collision_triangles": 564
+    },
+    {
+      "id": "city_wall_32",
+      "label": "三十二米石城墙",
+      "footprint": [
+        32,
+        8.5
+      ],
+      "structural_footprint": [
+        32,
+        7
+      ],
+      "datum": "finished grade y=0",
+      "visible_height": 18.06,
+      "wall_walk_y": 16.2,
+      "repeat_axis": "X",
+      "collision_policy": "solid wall and separate parapets; authored wall-walk",
+      "path": "res://assets/models/city_v5/civil/city_wall_32.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/city_wall_32.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -16.125,
+          0.0,
+          -4.45
+        ],
+        "max": [
+          16.125,
+          18.06,
+          3.7
+        ]
+      },
+      "triangles": 1776,
+      "collision_triangles": 312
+    },
+    {
+      "id": "city_corner_tower",
+      "label": "晴岚港转角重塔",
+      "footprint": [
+        24,
+        24
+      ],
+      "body_diameter": 22,
+      "datum": "finished grade y=0",
+      "visible_height": 27.98,
+      "collision_policy": "one low-sided solid tower shell",
+      "path": "res://assets/models/city_v5/civil/city_corner_tower.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/city_corner_tower.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -12.0,
+          -0.5,
+          -12.0
+        ],
+        "max": [
+          12.0,
+          27.98,
+          12.0
+        ]
+      },
+      "triangles": 3604,
+      "collision_triangles": 60
+    },
+    {
+      "id": "city_bridge_74",
+      "label": "晴岚三拱大桥",
+      "footprint": [
+        22,
+        74
+      ],
+      "datum": "finished bridge deck y=0",
+      "visible_height": 6.14,
+      "foundation_bottom_y": -8,
+      "axis": "Z",
+      "clear_spans": [
+        20,
+        20,
+        20
+      ],
+      "span_centers_z": [
+        -24,
+        0,
+        24
+      ],
+      "walkable_width": 20.0,
+      "collision_policy": "flat deck, piers, cutwaters, continuous arch rings/spandrels and parapets; no detail collision",
+      "path": "res://assets/models/city_v5/civil/city_bridge_74.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/city_bridge_74.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -14.0,
+          -8.0,
+          -37.15
+        ],
+        "max": [
+          14.0,
+          6.14,
+          37.15
+        ]
+      },
+      "triangles": 2624,
+      "collision_triangles": 1580
+    },
+    {
+      "id": "harbor_passenger_65",
+      "label": "海岚号客轮",
+      "footprint": [
+        13,
+        65
+      ],
+      "datum": "waterline y=0",
+      "main_deck_y": 2.76,
+      "visible_height": 16,
+      "keel_y": -3.2,
+      "bow": "-Z",
+      "collision_policy": "coarse shaped hull, finished deck and three solid superstructure blocks; decoration excluded",
+      "path": "res://assets/models/city_v5/civil/harbor_passenger_65.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/harbor_passenger_65.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -6.555,
+          -3.2,
+          -32.534
+        ],
+        "max": [
+          6.555,
+          16.0,
+          32.533
+        ]
+      },
+      "triangles": 4074,
+      "collision_triangles": 182
+    },
+    {
+      "id": "harbor_sailing_52",
+      "label": "远航三桅帆船",
+      "footprint": [
+        12,
+        55.2
+      ],
+      "hull_length": 52,
+      "datum": "waterline y=0",
+      "main_deck_y": 3.16,
+      "visible_height": 29,
+      "keel_y": -3.2,
+      "bow": "-Z",
+      "collision_policy": "coarse shaped hull/finished decks, tapered fore/aftcastle and stern deck stairs; rigging and cloth excluded",
+      "path": "res://assets/models/city_v5/civil/harbor_sailing_52.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/harbor_sailing_52.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -6.055,
+          -3.2,
+          -29.038
+        ],
+        "max": [
+          6.055,
+          29.0,
+          26.035
+        ]
+      },
+      "triangles": 5911,
+      "collision_triangles": 350
+    },
+    {
+      "id": "harbor_crane",
+      "label": "港口桁架吊机",
+      "footprint": [
+        8,
+        24
+      ],
+      "datum": "quayside y=0",
+      "visible_height": 23.1,
+      "hook_position": [
+        0,
+        4.0,
+        -15
+      ],
+      "collision_policy": "base/cab/counterweight only; narrow lattice and cables excluded",
+      "path": "res://assets/models/city_v5/civil/harbor_crane.glb",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_blend": "assets/models/city_v5/civil/harbor_crane.blend",
+      "actual_bounds_godot": {
+        "min": [
+          -4.0,
+          0.0,
+          -16.13
+        ],
+        "max": [
+          4.0,
+          23.027,
+          7.13
+        ]
+      },
+      "triangles": 2604,
+      "collision_triangles": 48
+    }
+  ]
+}

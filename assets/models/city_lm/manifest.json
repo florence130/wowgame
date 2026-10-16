@@ -1,0 +1,1246 @@
+{
+ "version": 2,
+ "landmarks": {
+  "guild": {
+   "name": "冒险者公会",
+   "type": "guild",
+   "tier": 2,
+   "plan_wdh": [
+    42,
+    32,
+    42
+   ],
+   "size_m": [
+    46.8,
+    42.1,
+    96.4
+   ],
+   "tris": 70770,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "smith": {
+   "name": "锻铁匠行会",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    52,
+    34,
+    26
+   ],
+   "size_m": [
+    55.6,
+    37.6,
+    47.5
+   ],
+   "tris": 64578,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "airtower": {
+   "name": "飞艇站瞭望塔",
+   "type": "airtower",
+   "tier": 0,
+   "plan_wdh": [
+    26,
+    26,
+    118
+   ],
+   "size_m": [
+    60.2,
+    67.3,
+    121.7
+   ],
+   "tris": 64580,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "station": {
+   "name": "晴岚中央车站",
+   "type": "station",
+   "tier": 1,
+   "plan_wdh": [
+    136,
+    51,
+    53
+   ],
+   "size_m": [
+    141.3,
+    56.3,
+    93.4
+   ],
+   "tris": 106988,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "cityhall": {
+   "name": "市政厅",
+   "type": "cityhall",
+   "tier": 1,
+   "plan_wdh": [
+    138,
+    47,
+    46
+   ],
+   "size_m": [
+    143.1,
+    57.3,
+    136.7
+   ],
+   "tris": 187638,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "exchange": {
+   "name": "交易所 · 晴岚银行",
+   "type": "exchange",
+   "tier": 2,
+   "plan_wdh": [
+    43,
+    34,
+    42
+   ],
+   "size_m": [
+    47.2,
+    44.1,
+    79.7
+   ],
+   "tris": 74148,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "cathedral": {
+   "name": "晴岚大圣堂",
+   "type": "cathedral",
+   "tier": 1,
+   "plan_wdh": [
+    82,
+    96,
+    56
+   ],
+   "size_m": [
+    87.6,
+    108.2,
+    150.8
+   ],
+   "tris": 126158,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "inn": {
+   "name": "旅人之歌旅店",
+   "type": "inn",
+   "tier": 2,
+   "plan_wdh": [
+    37,
+    27,
+    38
+   ],
+   "size_m": [
+    40.8,
+    36.9,
+    57.6
+   ],
+   "tris": 58246,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "court": {
+   "name": "裁定厅",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    58,
+    34,
+    34
+   ],
+   "size_m": [
+    61.4,
+    43.7,
+    54.6
+   ],
+   "tris": 89002,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "archive": {
+   "name": "城市档案馆",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    41,
+    34,
+    30
+   ],
+   "size_m": [
+    44.4,
+    43.7,
+    50.6
+   ],
+   "tris": 71958,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "market": {
+   "name": "万国博览集市",
+   "type": "market",
+   "tier": 1,
+   "plan_wdh": [
+    120,
+    45,
+    46
+   ],
+   "size_m": [
+    126.1,
+    56.1,
+    70.6
+   ],
+   "tris": 110656,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "merchant": {
+   "name": "商会总部",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    37,
+    36,
+    38
+   ],
+   "size_m": [
+    40.8,
+    45.9,
+    59.8
+   ],
+   "tris": 65102,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "artisan": {
+   "name": "精工行会",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    45,
+    25,
+    26
+   ],
+   "size_m": [
+    48.6,
+    28.6,
+    44.8
+   ],
+   "tris": 56334,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "cook": {
+   "name": "烹饪师行会",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    36,
+    33,
+    22
+   ],
+   "size_m": [
+    39.1,
+    36.1,
+    43.5
+   ],
+   "tris": 61306,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "bath": {
+   "name": "公共浴池",
+   "type": "bath",
+   "tier": 2,
+   "plan_wdh": [
+    43,
+    40,
+    27
+   ],
+   "size_m": [
+    46.4,
+    49.7,
+    62.2
+   ],
+   "tris": 85192,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "trainer": {
+   "name": "英雄殿",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    43,
+    36,
+    42
+   ],
+   "size_m": [
+    47.2,
+    46.1,
+    64.1
+   ],
+   "tris": 58354,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "post": {
+   "name": "邮政驿站",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    40,
+    34,
+    30
+   ],
+   "size_m": [
+    43.4,
+    43.7,
+    50.5
+   ],
+   "tris": 71910,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "library": {
+   "name": "公共图书馆",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    95,
+    56,
+    38
+   ],
+   "size_m": [
+    99.0,
+    66.0,
+    86.6
+   ],
+   "tris": 129328,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "lecture": {
+   "name": "学院讲堂",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    90,
+    52,
+    34
+   ],
+   "size_m": [
+    93.4,
+    61.7,
+    59.8
+   ],
+   "tris": 129442,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "academy": {
+   "name": "皇家学院",
+   "type": "academy",
+   "tier": 1,
+   "plan_wdh": [
+    95,
+    84,
+    39
+   ],
+   "size_m": [
+    98.9,
+    89.4,
+    90.9
+   ],
+   "tris": 159730,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "scholar": {
+   "name": "学者行会",
+   "type": "pavilion",
+   "tier": 2,
+   "plan_wdh": [
+    34,
+    25,
+    23
+   ],
+   "size_m": [
+    37.4,
+    34.7,
+    45.5
+   ],
+   "tris": 62596,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "embassy": {
+   "name": "外交宫",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    123,
+    90,
+    42
+   ],
+   "size_m": [
+    127.8,
+    100.4,
+    91.0
+   ],
+   "tris": 157292,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "royal_chapel": {
+   "name": "王室礼拜堂",
+   "type": "cathedral",
+   "tier": 2,
+   "plan_wdh": [
+    45,
+    78,
+    42
+   ],
+   "size_m": [
+    49.2,
+    82.6,
+    77.0
+   ],
+   "tris": 75106,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "institute": {
+   "name": "魔导研究所",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    48,
+    47,
+    38
+   ],
+   "size_m": [
+    51.8,
+    56.9,
+    64.0
+   ],
+   "tris": 79102,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "observatory": {
+   "name": "星象台",
+   "type": "observatory",
+   "tier": 2,
+   "plan_wdh": [
+    56,
+    50,
+    42
+   ],
+   "size_m": [
+    60.8,
+    60.4,
+    85.7
+   ],
+   "tris": 86872,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "arcane": {
+   "name": "奥术议会",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    53,
+    40,
+    38
+   ],
+   "size_m": [
+    57.0,
+    50.0,
+    73.2
+   ],
+   "tris": 85672,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "rogue": {
+   "name": "影刃会馆",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    32,
+    21,
+    19
+   ],
+   "size_m": [
+    35.1,
+    24.1,
+    35.6
+   ],
+   "tris": 42326,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "blackmarket": {
+   "name": "旧巷货行",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    24,
+    21,
+    19
+   ],
+   "size_m": [
+    27.1,
+    24.1,
+    35.6
+   ],
+   "tris": 36862,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "oldchurch": {
+   "name": "旧城礼拜堂",
+   "type": "cathedral",
+   "tier": 2,
+   "plan_wdh": [
+    21,
+    35,
+    30
+   ],
+   "size_m": [
+    24.4,
+    39.6,
+    64.7
+   ],
+   "tris": 100022,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "knights": {
+   "name": "晨曦骑士团",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    56,
+    64,
+    42
+   ],
+   "size_m": [
+    60.2,
+    74.1,
+    68.3
+   ],
+   "tris": 86246,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "armory": {
+   "name": "军械库",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    60,
+    34,
+    22
+   ],
+   "size_m": [
+    63.1,
+    37.1,
+    43.5
+   ],
+   "tris": 80538,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "gunnery": {
+   "name": "魔导枪械所",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    56,
+    34,
+    22
+   ],
+   "size_m": [
+    59.1,
+    37.1,
+    43.5
+   ],
+   "tris": 80382,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "stables": {
+   "name": "皇家马厩",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    56,
+    34,
+    16
+   ],
+   "size_m": [
+    59.1,
+    37.1,
+    37.5
+   ],
+   "tris": 69046,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "greenhouse": {
+   "name": "城市温室",
+   "type": "market",
+   "tier": 2,
+   "plan_wdh": [
+    67,
+    45,
+    27
+   ],
+   "size_m": [
+    70.5,
+    54.8,
+    46.7
+   ],
+   "tris": 101928,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "hospital": {
+   "name": "圣堂医院",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    40,
+    64,
+    30
+   ],
+   "size_m": [
+    43.4,
+    73.7,
+    53.8
+   ],
+   "tris": 93102,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "clergy": {
+   "name": "修士院",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    40,
+    56,
+    30
+   ],
+   "size_m": [
+    43.4,
+    65.7,
+    53.9
+   ],
+   "tris": 92814,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "fishmarket": {
+   "name": "鱼市",
+   "type": "workshop",
+   "tier": 3,
+   "plan_wdh": [
+    50,
+    23,
+    16
+   ],
+   "size_m": [
+    53.1,
+    26.1,
+    33.5
+   ],
+   "tris": 55570,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "customs": {
+   "name": "海关",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    50,
+    21,
+    30
+   ],
+   "size_m": [
+    53.4,
+    30.7,
+    49.3
+   ],
+   "tris": 68182,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "terminal": {
+   "name": "海运客运站",
+   "type": "terminal",
+   "tier": 2,
+   "plan_wdh": [
+    42,
+    21,
+    30
+   ],
+   "size_m": [
+    45.4,
+    30.7,
+    48.4
+   ],
+   "tris": 58378,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "tavern": {
+   "name": "海鸥酒馆",
+   "type": "tavern",
+   "tier": 3,
+   "plan_wdh": [
+    35,
+    21,
+    22
+   ],
+   "size_m": [
+    38.1,
+    24.1,
+    38.6
+   ],
+   "tris": 50546,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "simple_deform",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "canal": {
+   "name": "漕运局",
+   "type": "civic",
+   "tier": 2,
+   "plan_wdh": [
+    47,
+    40,
+    27
+   ],
+   "size_m": [
+    50.4,
+    49.7,
+    50.9
+   ],
+   "tris": 78610,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "opera": {
+   "name": "晴岚歌剧院",
+   "type": "opera",
+   "tier": 1,
+   "plan_wdh": [
+    58,
+    45,
+    42
+   ],
+   "size_m": [
+    62.8,
+    55.4,
+    86.7
+   ],
+   "tris": 90044,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "palace": {
+   "name": "晴岚王宫",
+   "type": "grandpalace",
+   "tier": 1,
+   "plan_wdh": [
+    234,
+    123,
+    56
+   ],
+   "size_m": [
+    243.5,
+    144.6,
+    117.6
+   ],
+   "tris": 410834,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "belvedere": {
+   "name": "北苑眺望台",
+   "type": "pavilion",
+   "tier": 0,
+   "plan_wdh": [
+    35,
+    24,
+    24
+   ],
+   "size_m": [
+    38.4,
+    33.7,
+    45.6
+   ],
+   "tris": 62596,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "seaside_a": {
+   "name": "观潮亭",
+   "type": "pavilion",
+   "tier": 0,
+   "plan_wdh": [
+    27,
+    21,
+    16
+   ],
+   "size_m": [
+    30.4,
+    30.7,
+    35.1
+   ],
+   "tris": 48332,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "seaside_b": {
+   "name": "听涛亭",
+   "type": "pavilion",
+   "tier": 0,
+   "plan_wdh": [
+    27,
+    21,
+    16
+   ],
+   "size_m": [
+    30.4,
+    30.7,
+    35.1
+   ],
+   "tris": 48332,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "seaside_c": {
+   "name": "望帆亭",
+   "type": "pavilion",
+   "tier": 0,
+   "plan_wdh": [
+    27,
+    21,
+    16
+   ],
+   "size_m": [
+    30.4,
+    30.7,
+    35.1
+   ],
+   "tris": 48332,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "airship_terminal": {
+   "name": "飞艇候船厅",
+   "type": "terminal",
+   "tier": 0,
+   "plan_wdh": [
+    35,
+    22,
+    18
+   ],
+   "size_m": [
+    38.4,
+    31.7,
+    35.8
+   ],
+   "tris": 57934,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "screw",
+    "solidify",
+    "vertex"
+   ]
+  }
+ }
+}

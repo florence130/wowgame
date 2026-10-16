@@ -1,0 +1,140 @@
+{
+  "id": "governor_palace",
+  "footprint": [
+    100,
+    70
+  ],
+  "body_height": 24,
+  "max_height": 38,
+  "entries": [
+    [
+      0,
+      0,
+      13
+    ],
+    [
+      -40,
+      0,
+      -35
+    ],
+    [
+      40,
+      0,
+      -35
+    ]
+  ],
+  "entry_width": 10,
+  "entry_widths": [
+    10,
+    4.6667,
+    4.6667
+  ],
+  "courtyard": {
+    "center": [
+      0,
+      0,
+      -11
+    ],
+    "size": [
+      60,
+      48
+    ]
+  },
+  "usable_courtyard": {
+    "center": [
+      0,
+      0,
+      -11.25
+    ],
+    "size": [
+      59,
+      47.5
+    ]
+  },
+  "service_positions": [
+    [
+      -7,
+      0,
+      23
+    ],
+    [
+      7,
+      0,
+      23
+    ]
+  ],
+  "glb": "res://assets/models/city_v5/landmarks/governor_palace.glb",
+  "blend": "assets/models/city_v5/landmarks/governor_palace.blend",
+  "aabb_min": [
+    -51.29,
+    -1.2000000000000002,
+    -38.0
+  ],
+  "aabb_max": [
+    51.29,
+    38.0,
+    36.290000000000006
+  ],
+  "aabb_size": [
+    102.58,
+    39.2,
+    74.29
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.2,
+  "placement_lift": 0.6,
+  "materials": [
+    "K|2|b4a58c|st_masonry|3.5",
+    "K|2|c9bda4|st_masonry|5.0",
+    "K|0|eee1c7|st_plaster|3.0",
+    "K|9|f3e8d3||0",
+    "K|glass|739da8||0",
+    "K|7|574b39||0",
+    "K|2|d8c8a8|st_masonry|4.0",
+    "K|3|41546f|st_roof_scale|2.4",
+    "K|7|bca35e||0"
+  ],
+  "visual_meshes": 9,
+  "visual_vertices": 69160,
+  "visual_triangles": 111762,
+  "collision_meshes": 1,
+  "collision_vertices": 984,
+  "collision_triangles": 1476,
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        13
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    },
+    {
+      "entry": [
+        -40,
+        0,
+        -35
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    },
+    {
+      "entry": [
+        40,
+        0,
+        -35
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "front": "-Z",
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+}

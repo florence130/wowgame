@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "asset": "wall_plain_2",
+      "operator": "gs.snap_end",
+      "measured_gap_m": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "roof_8_terracotta",
+      "operator": "gs.snap_end",
+      "measured_gap_m": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "rail_2",
+      "operator": "gs.snap_end",
+      "measured_gap_m": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "rail_2",
+      "operator": "rotated gs.snap_end",
+      "measured_gap_m": 0.0,
+      "passed": true
+    }
+  ]
+}

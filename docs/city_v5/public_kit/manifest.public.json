@@ -1,0 +1,2579 @@
+{
+  "version": "5.1-public-kit",
+  "source": "component assembly with retained editing modifiers",
+  "assets": [
+    {
+      "label": "星门传送大厅",
+      "footprint": [
+        32,
+        28
+      ],
+      "body_height": 16,
+      "max_height": 29,
+      "entry_width": 8,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Broad vaulted terminal, three portal bays, luminous oculus; no tower",
+      "id": "portal_hall",
+      "aabb_min": [
+        -17.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        17.290000915527344,
+        23.308683395385742,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        34.58000183105469,
+        24.9086834192276,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/portal_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/portal_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Side portal registry wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Side portal registry wing_rustic",
+            "Side portal registry wing_floor",
+            "Side portal registry wing_indigo",
+            "Side portal registry wing_trim",
+            "Side portal registry wing_glass",
+            "Side portal registry wing_bronze",
+            "Side portal registry wing_stone",
+            "Side portal registry wing_slate",
+            "Side portal registry wing_gold"
+          ]
+        },
+        {
+          "name": "Side portal registry wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Side portal registry wing_rustic.001",
+            "Side portal registry wing_floor.001",
+            "Side portal registry wing_indigo.001",
+            "Side portal registry wing_trim.001",
+            "Side portal registry wing_glass.001",
+            "Side portal registry wing_bronze.001",
+            "Side portal registry wing_stone.001",
+            "Side portal registry wing_slate.001",
+            "Side portal registry wing_gold.001"
+          ]
+        },
+        {
+          "name": "Great-hall arches",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Great-hall arches_stone",
+            "Great-hall arches_trim"
+          ]
+        },
+        {
+          "name": "Glazed nave over the three gates",
+          "methods": [
+            "loft",
+            "profile extrusion"
+          ],
+          "objects": [
+            "Glazed nave over the three gates_glass",
+            "Glazed nave over the three gates_bronze",
+            "Glazed nave over the three gates_trim"
+          ]
+        },
+        {
+          "name": "Main tympanum and ring",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Main tympanum and ring_indigo",
+            "Main tympanum and ring_trim",
+            "Main tympanum and ring_glass",
+            "Main tympanum and ring_gold"
+          ]
+        },
+        {
+          "name": "Portal gateway ring",
+          "methods": [
+            "curve bevel"
+          ],
+          "objects": [
+            "Portal gateway ring"
+          ]
+        },
+        {
+          "name": "Gate dais",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Gate dais_stone"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold"
+          ]
+        },
+        {
+          "name": "Portal gateway ring.001",
+          "methods": [
+            "curve bevel"
+          ],
+          "objects": [
+            "Portal gateway ring.001"
+          ]
+        },
+        {
+          "name": "Gate dais",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Gate dais_stone.001"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold.001"
+          ]
+        },
+        {
+          "name": "Entrance pillars",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Entrance pillars"
+          ]
+        },
+        {
+          "name": "Entrance pillars lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entrance pillars lintel_stone"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        },
+        {
+          "name": "01 Mirrored corner buttresses",
+          "methods": [
+            "mirror",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Mirrored corner buttresses_rustic",
+            "01 Mirrored corner buttresses_trim"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold.002"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold.003"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold.004"
+          ]
+        },
+        {
+          "name": "Continuous rune frieze",
+          "methods": [
+            "curve bevel"
+          ],
+          "objects": [
+            "Continuous rune frieze"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 35336,
+      "collision_triangles": 684
+    },
+    {
+      "label": "群星法师院",
+      "footprint": [
+        44,
+        32
+      ],
+      "body_height": 16,
+      "max_height": 30,
+      "entry_width": 10,
+      "entries": [
+        [
+          0,
+          0,
+          -16
+        ]
+      ],
+      "concept": "Open scholarly court, two low study wings and rear observatory hall",
+      "id": "mage_guild",
+      "aabb_min": [
+        -23.290000915527344,
+        -1.600000023841858,
+        -19.149999618530273
+      ],
+      "aabb_max": [
+        23.290000915527344,
+        26.530174255371094,
+        17.290000915527344
+      ],
+      "aabb_size": [
+        46.58000183105469,
+        28.13017427921295,
+        36.44000053405762
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/mage_guild.glb",
+      "blend": "assets/models/city_v5/landmarks/mage_guild.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Low research cloister wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Low research cloister wing_rustic",
+            "Low research cloister wing_floor",
+            "Low research cloister wing_indigo",
+            "Low research cloister wing_trim",
+            "Low research cloister wing_glass",
+            "Low research cloister wing_bronze",
+            "Low research cloister wing_stone",
+            "Low research cloister wing_slate",
+            "Low research cloister wing_gold"
+          ]
+        },
+        {
+          "name": "Low research cloister wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Low research cloister wing_rustic.001",
+            "Low research cloister wing_floor.001",
+            "Low research cloister wing_indigo.001",
+            "Low research cloister wing_trim.001",
+            "Low research cloister wing_glass.001",
+            "Low research cloister wing_bronze.001",
+            "Low research cloister wing_stone.001",
+            "Low research cloister wing_slate.001",
+            "Low research cloister wing_gold.001"
+          ]
+        },
+        {
+          "name": "Rear lecture hall",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Rear lecture hall_rustic",
+            "Rear lecture hall_floor",
+            "Rear lecture hall_stone",
+            "Rear lecture hall_trim",
+            "Rear lecture hall_glass",
+            "Rear lecture hall_bronze"
+          ]
+        },
+        {
+          "name": "Observatory cupola",
+          "methods": [
+            "screw; solidify"
+          ],
+          "objects": [
+            "Observatory cupola"
+          ]
+        },
+        {
+          "name": "Observatory cupola base ring",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Observatory cupola base ring_trim"
+          ]
+        },
+        {
+          "name": "Astronomical brass meridian",
+          "methods": [
+            "curve bevel"
+          ],
+          "objects": [
+            "Astronomical brass meridian"
+          ]
+        },
+        {
+          "name": "Astronomical brass meridian.001",
+          "methods": [
+            "curve bevel"
+          ],
+          "objects": [
+            "Astronomical brass meridian.001"
+          ]
+        },
+        {
+          "name": "Cloister entry colonnade",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Cloister entry colonnade"
+          ]
+        },
+        {
+          "name": "Cloister entry colonnade lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Cloister entry colonnade lintel_stone"
+          ]
+        },
+        {
+          "name": "Cloister entry colonnade.001",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Cloister entry colonnade.001"
+          ]
+        },
+        {
+          "name": "Cloister entry colonnade lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Cloister entry colonnade lintel_stone.001"
+          ]
+        },
+        {
+          "name": "Open ceremonial gateway",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Open ceremonial gateway_trim"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone",
+            "Stone public bench_rustic"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone.001",
+            "Stone public bench_rustic.001"
+          ]
+        },
+        {
+          "name": "09 Soft hanging institutional banner",
+          "methods": [
+            "simple deform; solidify"
+          ],
+          "objects": [
+            "09 Soft hanging institutional banner"
+          ]
+        },
+        {
+          "name": "09 Soft hanging institutional banner.001",
+          "methods": [
+            "simple deform; solidify"
+          ],
+          "objects": [
+            "09 Soft hanging institutional banner.001"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -16
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 56520,
+      "collision_triangles": 900
+    },
+    {
+      "label": "晴岚帝国浴场",
+      "footprint": [
+        64,
+        44
+      ],
+      "body_height": 17,
+      "max_height": 27,
+      "entry_width": 10,
+      "entries": [
+        [
+          0,
+          0,
+          -22
+        ]
+      ],
+      "concept": "Roman thermae: basilical hall, paired vaulted bathing rooms, open natatio courts and colonnades",
+      "id": "roman_baths",
+      "aabb_min": [
+        -32.290000915527344,
+        -1.4500000476837158,
+        -25.149999618530273
+      ],
+      "aabb_max": [
+        32.290000915527344,
+        25.094797134399414,
+        22.5
+      ],
+      "aabb_size": [
+        64.58000183105469,
+        26.54479718208313,
+        47.64999961853027
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/roman_baths.glb",
+      "blend": "assets/models/city_v5/landmarks/roman_baths.blend",
+      "modules": [
+        {
+          "name": "Bath footing and pool courts",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Bath footing and pool courts_rustic",
+            "Bath footing and pool courts_floor"
+          ]
+        },
+        {
+          "name": "Open natatio basin",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Open natatio basin_water",
+            "Open natatio basin_stone",
+            "Open natatio basin_trim"
+          ]
+        },
+        {
+          "name": "Open natatio basin",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Open natatio basin_water.001",
+            "Open natatio basin_stone.001",
+            "Open natatio basin_trim.001"
+          ]
+        },
+        {
+          "name": "Central frigidarium basilica",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Central frigidarium basilica_stone",
+            "Central frigidarium basilica_trim",
+            "Central frigidarium basilica_brick"
+          ]
+        },
+        {
+          "name": "Daylit thermal hall clerestory",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Daylit thermal hall clerestory_brick",
+            "Daylit thermal hall clerestory_trim",
+            "Daylit thermal hall clerestory_glass",
+            "Daylit thermal hall clerestory_bronze",
+            "Daylit thermal hall clerestory_stone"
+          ]
+        },
+        {
+          "name": "Daylit thermal hall clerestory",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Daylit thermal hall clerestory_brick.001",
+            "Daylit thermal hall clerestory_trim.001",
+            "Daylit thermal hall clerestory_glass.001",
+            "Daylit thermal hall clerestory_bronze.001",
+            "Daylit thermal hall clerestory_stone.001"
+          ]
+        },
+        {
+          "name": "High barrel-vaulted frigidarium",
+          "methods": [
+            "loft",
+            "profile extrusion"
+          ],
+          "objects": [
+            "High barrel-vaulted frigidarium_slate",
+            "High barrel-vaulted frigidarium_bronze",
+            "High barrel-vaulted frigidarium_trim"
+          ]
+        },
+        {
+          "name": "Thermal lunette window",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Thermal lunette window_glass"
+          ]
+        },
+        {
+          "name": "Lunette bronze mullion",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Lunette bronze mullion_bronze"
+          ]
+        },
+        {
+          "name": "Lunette bronze mullion",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Lunette bronze mullion_bronze.001"
+          ]
+        },
+        {
+          "name": "Lunette bronze mullion",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Lunette bronze mullion_bronze.002"
+          ]
+        },
+        {
+          "name": "Thermal lunette window",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Thermal lunette window_glass.001"
+          ]
+        },
+        {
+          "name": "Lunette bronze mullion",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Lunette bronze mullion_bronze.003"
+          ]
+        },
+        {
+          "name": "Lunette bronze mullion",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Lunette bronze mullion_bronze.004"
+          ]
+        },
+        {
+          "name": "Lunette bronze mullion",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Lunette bronze mullion_bronze.005"
+          ]
+        },
+        {
+          "name": "Warm bathing chamber",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Warm bathing chamber_rustic",
+            "Warm bathing chamber_floor",
+            "Warm bathing chamber_brick",
+            "Warm bathing chamber_trim",
+            "Warm bathing chamber_glass",
+            "Warm bathing chamber_bronze",
+            "Warm bathing chamber_stone"
+          ]
+        },
+        {
+          "name": "Caldarium hemispherical roof",
+          "methods": [
+            "screw; solidify"
+          ],
+          "objects": [
+            "Caldarium hemispherical roof"
+          ]
+        },
+        {
+          "name": "Caldarium hemispherical roof base ring",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Caldarium hemispherical roof base ring_trim"
+          ]
+        },
+        {
+          "name": "Pool-side colonnade",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Pool-side colonnade"
+          ]
+        },
+        {
+          "name": "Pool-side colonnade lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool-side colonnade lintel_stone"
+          ]
+        },
+        {
+          "name": "Warm bathing chamber",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Warm bathing chamber_rustic.001",
+            "Warm bathing chamber_floor.001",
+            "Warm bathing chamber_brick.001",
+            "Warm bathing chamber_trim.001",
+            "Warm bathing chamber_glass.001",
+            "Warm bathing chamber_bronze.001",
+            "Warm bathing chamber_stone.001"
+          ]
+        },
+        {
+          "name": "Caldarium hemispherical roof.001",
+          "methods": [
+            "screw; solidify"
+          ],
+          "objects": [
+            "Caldarium hemispherical roof.001"
+          ]
+        },
+        {
+          "name": "Caldarium hemispherical roof base ring",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Caldarium hemispherical roof base ring_trim.001"
+          ]
+        },
+        {
+          "name": "Pool-side colonnade.001",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Pool-side colonnade.001"
+          ]
+        },
+        {
+          "name": "Pool-side colonnade lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool-side colonnade lintel_stone.001"
+          ]
+        },
+        {
+          "name": "Perimeter arcade",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Perimeter arcade_brick",
+            "Perimeter arcade_trim"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.001"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.002"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.003"
+          ]
+        },
+        {
+          "name": "Perimeter arcade",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Perimeter arcade_brick.001",
+            "Perimeter arcade_trim.001"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.004"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.005"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.006"
+          ]
+        },
+        {
+          "name": "Pool side niche",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Pool side niche_trim.007"
+          ]
+        },
+        {
+          "name": "Monumental entrance left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Monumental entrance left"
+          ]
+        },
+        {
+          "name": "Monumental entrance left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Monumental entrance left lintel_stone"
+          ]
+        },
+        {
+          "name": "Monumental entrance right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Monumental entrance right"
+          ]
+        },
+        {
+          "name": "Monumental entrance right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Monumental entrance right lintel_stone"
+          ]
+        },
+        {
+          "name": "Bath portal",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Bath portal_stone",
+            "Bath portal_brick",
+            "Bath portal_trim"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone",
+            "Stone public bench_rustic"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone.001",
+            "Stone public bench_rustic.001"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -22
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 35476,
+      "collision_triangles": 840
+    },
+    {
+      "label": "税务计量厅",
+      "footprint": [
+        28,
+        24
+      ],
+      "body_height": 14,
+      "max_height": 21,
+      "entry_width": 6,
+      "entries": [
+        [
+          0,
+          0,
+          -12
+        ]
+      ],
+      "concept": "Rusticated loggia, steep treasury roof, counting-window rhythm and relief balance",
+      "id": "tax_hall",
+      "aabb_min": [
+        -15.289999961853027,
+        -1.600000023841858,
+        -15.149999618530273
+      ],
+      "aabb_max": [
+        15.289999961853027,
+        20.110000610351562,
+        13.289999961853027
+      ],
+      "aabb_size": [
+        30.579999923706055,
+        21.71000063419342,
+        28.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/tax_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/tax_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Counting hall",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Counting hall_rustic",
+            "Counting hall_floor",
+            "Counting hall_stone",
+            "Counting hall_trim",
+            "Counting hall_glass",
+            "Counting hall_bronze"
+          ]
+        },
+        {
+          "name": "Treasury hipped roof",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Treasury hipped roof_slate",
+            "Treasury hipped roof_stone",
+            "Treasury hipped roof_gold",
+            "Treasury hipped roof_trim",
+            "Treasury hipped roof_glass",
+            "Treasury hipped roof_bronze"
+          ]
+        },
+        {
+          "name": "Public counting loggia left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Public counting loggia left"
+          ]
+        },
+        {
+          "name": "Public counting loggia left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Public counting loggia left lintel_stone"
+          ]
+        },
+        {
+          "name": "Public counting loggia right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Public counting loggia right"
+          ]
+        },
+        {
+          "name": "Public counting loggia right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Public counting loggia right lintel_stone"
+          ]
+        },
+        {
+          "name": "Weighing scales relief",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Weighing scales relief_gold",
+            "Weighing scales relief_bronze"
+          ]
+        },
+        {
+          "name": "01 Mirrored corner buttresses",
+          "methods": [
+            "mirror",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Mirrored corner buttresses_rustic",
+            "01 Mirrored corner buttresses_trim"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -12
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 19676,
+      "collision_triangles": 384
+    },
+    {
+      "label": "市民保障院",
+      "footprint": [
+        32,
+        28
+      ],
+      "body_height": 9,
+      "max_height": 16,
+      "entry_width": 8,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Welcoming low courtyard institution with sheltered benches and community fountain",
+      "id": "welfare_court",
+      "aabb_min": [
+        -17.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        17.290000915527344,
+        14.710000038146973,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        34.58000183105469,
+        16.31000006198883,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/welfare_court.glb",
+      "blend": "assets/models/city_v5/landmarks/welfare_court.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Sheltered community wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Sheltered community wing_rustic",
+            "Sheltered community wing_floor",
+            "Sheltered community wing_ivory",
+            "Sheltered community wing_trim",
+            "Sheltered community wing_glass",
+            "Sheltered community wing_bronze",
+            "Sheltered community wing_stone",
+            "Sheltered community wing_slate",
+            "Sheltered community wing_gold"
+          ]
+        },
+        {
+          "name": "Sheltered community wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Sheltered community wing_rustic.001",
+            "Sheltered community wing_floor.001",
+            "Sheltered community wing_ivory.001",
+            "Sheltered community wing_trim.001",
+            "Sheltered community wing_glass.001",
+            "Sheltered community wing_bronze.001",
+            "Sheltered community wing_stone.001",
+            "Sheltered community wing_slate.001",
+            "Sheltered community wing_gold.001"
+          ]
+        },
+        {
+          "name": "Public assistance room",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Public assistance room_rustic",
+            "Public assistance room_floor",
+            "Public assistance room_ivory",
+            "Public assistance room_trim",
+            "Public assistance room_glass",
+            "Public assistance room_bronze",
+            "Public assistance room_stone",
+            "Public assistance room_slate",
+            "Public assistance room_gold"
+          ]
+        },
+        {
+          "name": "Friendly open porch left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Friendly open porch left"
+          ]
+        },
+        {
+          "name": "Friendly open porch left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Friendly open porch left lintel_stone"
+          ]
+        },
+        {
+          "name": "Friendly open porch right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Friendly open porch right"
+          ]
+        },
+        {
+          "name": "Friendly open porch right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Friendly open porch right lintel_stone"
+          ]
+        },
+        {
+          "name": "Welcome canopy",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Welcome canopy_copper",
+            "Welcome canopy_stone",
+            "Welcome canopy_gold"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone",
+            "Stone public bench_rustic"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone.001",
+            "Stone public bench_rustic.001"
+          ]
+        },
+        {
+          "name": "Community fountain",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Community fountain_stone",
+            "Community fountain_water",
+            "Community fountain_trim"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        },
+        {
+          "name": "09 Soft hanging institutional banner",
+          "methods": [
+            "simple deform; solidify"
+          ],
+          "objects": [
+            "09 Soft hanging institutional banner"
+          ]
+        },
+        {
+          "name": "09 Soft hanging institutional banner.001",
+          "methods": [
+            "simple deform; solidify"
+          ],
+          "objects": [
+            "09 Soft hanging institutional banner.001"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 26120,
+      "collision_triangles": 720
+    },
+    {
+      "label": "海港裁定厅",
+      "footprint": [
+        44,
+        28
+      ],
+      "body_height": 18,
+      "max_height": 26,
+      "entry_width": 8,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Severe giant-order portico, stepped pediment and solid judicial chamber",
+      "id": "court_hall",
+      "aabb_min": [
+        -23.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        23.290000915527344,
+        24.32215118408203,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        46.58000183105469,
+        25.92215120792389,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/court_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/court_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Judicial chamber",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Judicial chamber_rustic",
+            "Judicial chamber_floor",
+            "Judicial chamber_stone",
+            "Judicial chamber_trim",
+            "Judicial chamber_glass",
+            "Judicial chamber_bronze"
+          ]
+        },
+        {
+          "name": "Stepped pediment",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stepped pediment_slate",
+            "Stepped pediment_stone",
+            "Stepped pediment_gold",
+            "Stepped pediment_trim"
+          ]
+        },
+        {
+          "name": "Giant order left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Giant order left"
+          ]
+        },
+        {
+          "name": "Giant order left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Giant order left lintel_stone"
+          ]
+        },
+        {
+          "name": "Giant order right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Giant order right"
+          ]
+        },
+        {
+          "name": "Giant order right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Giant order right lintel_stone"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 27538,
+      "collision_triangles": 456
+    },
+    {
+      "label": "商贸交易所",
+      "footprint": [
+        44,
+        28
+      ],
+      "body_height": 13,
+      "max_height": 23,
+      "entry_width": 8,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Glass-vault trading gallery between lower merchant wings",
+      "id": "exchange_hall",
+      "aabb_min": [
+        -23.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        23.290000915527344,
+        22.094884872436523,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        46.58000183105469,
+        23.69488489627838,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/exchange_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/exchange_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Merchant counting wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Merchant counting wing_rustic",
+            "Merchant counting wing_floor",
+            "Merchant counting wing_red",
+            "Merchant counting wing_trim",
+            "Merchant counting wing_glass",
+            "Merchant counting wing_bronze",
+            "Merchant counting wing_stone",
+            "Merchant counting wing_slate",
+            "Merchant counting wing_gold"
+          ]
+        },
+        {
+          "name": "Merchant counting wing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Merchant counting wing_rustic.001",
+            "Merchant counting wing_floor.001",
+            "Merchant counting wing_red.001",
+            "Merchant counting wing_trim.001",
+            "Merchant counting wing_glass.001",
+            "Merchant counting wing_bronze.001",
+            "Merchant counting wing_stone.001",
+            "Merchant counting wing_slate.001",
+            "Merchant counting wing_gold.001"
+          ]
+        },
+        {
+          "name": "Exchange hall arcades",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Exchange hall arcades_stone",
+            "Exchange hall arcades_trim"
+          ]
+        },
+        {
+          "name": "Trading-floor glass vault",
+          "methods": [
+            "loft",
+            "profile extrusion"
+          ],
+          "objects": [
+            "Trading-floor glass vault_glass",
+            "Trading-floor glass vault_bronze",
+            "Trading-floor glass vault_trim"
+          ]
+        },
+        {
+          "name": "Trading-floor columns",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Trading-floor columns"
+          ]
+        },
+        {
+          "name": "Trading-floor columns lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Trading-floor columns lintel_stone"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 34224,
+      "collision_triangles": 636
+    },
+    {
+      "label": "圣堂医院",
+      "footprint": [
+        44,
+        28
+      ],
+      "body_height": 12,
+      "max_height": 22,
+      "entry_width": 8,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Two ward wings and a sheltered healing garden, small central chapel roof",
+      "id": "hospital_hall",
+      "aabb_min": [
+        -23.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        23.290000915527344,
+        19.700000762939453,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        46.58000183105469,
+        21.30000078678131,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/hospital_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/hospital_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Daylit patient ward",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Daylit patient ward_rustic",
+            "Daylit patient ward_floor",
+            "Daylit patient ward_ivory",
+            "Daylit patient ward_trim",
+            "Daylit patient ward_glass",
+            "Daylit patient ward_bronze",
+            "Daylit patient ward_stone",
+            "Daylit patient ward_slate",
+            "Daylit patient ward_gold"
+          ]
+        },
+        {
+          "name": "Daylit patient ward",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Daylit patient ward_rustic.001",
+            "Daylit patient ward_floor.001",
+            "Daylit patient ward_ivory.001",
+            "Daylit patient ward_trim.001",
+            "Daylit patient ward_glass.001",
+            "Daylit patient ward_bronze.001",
+            "Daylit patient ward_stone.001",
+            "Daylit patient ward_slate.001",
+            "Daylit patient ward_gold.001"
+          ]
+        },
+        {
+          "name": "Infirmary reception and chapel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Infirmary reception and chapel_rustic",
+            "Infirmary reception and chapel_floor",
+            "Infirmary reception and chapel_ivory",
+            "Infirmary reception and chapel_trim",
+            "Infirmary reception and chapel_glass",
+            "Infirmary reception and chapel_bronze",
+            "Infirmary reception and chapel_stone"
+          ]
+        },
+        {
+          "name": "Chapel gable",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Chapel gable_slate",
+            "Chapel gable_stone",
+            "Chapel gable_gold"
+          ]
+        },
+        {
+          "name": "Sheltered healing walk left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Sheltered healing walk left"
+          ]
+        },
+        {
+          "name": "Sheltered healing walk left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Sheltered healing walk left lintel_stone"
+          ]
+        },
+        {
+          "name": "Sheltered healing walk right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Sheltered healing walk right"
+          ]
+        },
+        {
+          "name": "Sheltered healing walk right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Sheltered healing walk right lintel_stone"
+          ]
+        },
+        {
+          "name": "Healer emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Healer emblem_copper"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone",
+            "Stone public bench_rustic"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone.001",
+            "Stone public bench_rustic.001"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 47286,
+      "collision_triangles": 864
+    },
+    {
+      "label": "港务海关",
+      "footprint": [
+        44,
+        28
+      ],
+      "body_height": 14,
+      "max_height": 22,
+      "entry_width": 8,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Brick inspection loggia, deep cargo arches and a weighbridge canopy",
+      "id": "customs_hall",
+      "aabb_min": [
+        -23.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        23.290000915527344,
+        20.700000762939453,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        46.58000183105469,
+        22.30000078678131,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/customs_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/customs_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Brick customs registry",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Brick customs registry_rustic",
+            "Brick customs registry_floor",
+            "Brick customs registry_brick",
+            "Brick customs registry_trim",
+            "Brick customs registry_glass",
+            "Brick customs registry_bronze",
+            "Brick customs registry_stone"
+          ]
+        },
+        {
+          "name": "Bonded goods roof",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Bonded goods roof_slate",
+            "Bonded goods roof_stone",
+            "Bonded goods roof_gold"
+          ]
+        },
+        {
+          "name": "Cargo inspection loggia left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Cargo inspection loggia left"
+          ]
+        },
+        {
+          "name": "Cargo inspection loggia left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Cargo inspection loggia left lintel_stone"
+          ]
+        },
+        {
+          "name": "Cargo inspection loggia right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Cargo inspection loggia right"
+          ]
+        },
+        {
+          "name": "Cargo inspection loggia right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Cargo inspection loggia right lintel_stone"
+          ]
+        },
+        {
+          "name": "Inspection porch and deep arches",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Inspection porch and deep arches_stone"
+          ]
+        },
+        {
+          "name": "Institutional sculpted emblem",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Institutional sculpted emblem_gold"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 25118,
+      "collision_triangles": 432
+    },
+    {
+      "label": "海运客运厅",
+      "footprint": [
+        44,
+        28
+      ],
+      "body_height": 12,
+      "max_height": 23,
+      "entry_width": 10,
+      "entries": [
+        [
+          0,
+          0,
+          -14
+        ]
+      ],
+      "concept": "Long glazed concourse, broad arched entrances and projecting quay canopy",
+      "id": "passenger_hall",
+      "aabb_min": [
+        -23.290000915527344,
+        -1.600000023841858,
+        -17.149999618530273
+      ],
+      "aabb_max": [
+        23.290000915527344,
+        21.5949649810791,
+        15.289999961853027
+      ],
+      "aabb_size": [
+        46.58000183105469,
+        23.19496500492096,
+        32.4399995803833
+      ],
+      "floor_y": 0,
+      "street_y": -0.6,
+      "foundation_y": -1.6,
+      "placement_lift": 0.6,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "front": "-Z",
+      "glb": "res://assets/models/city_v5/landmarks/passenger_hall.glb",
+      "blend": "assets/models/city_v5/landmarks/passenger_hall.blend",
+      "modules": [
+        {
+          "name": "01 Continuous ground and cut-stone footing",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "01 Continuous ground and cut-stone footing_rustic",
+            "01 Continuous ground and cut-stone footing_floor"
+          ]
+        },
+        {
+          "name": "Passenger concourse",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Passenger concourse_rustic",
+            "Passenger concourse_floor",
+            "Passenger concourse_ivory",
+            "Passenger concourse_trim",
+            "Passenger concourse_glass",
+            "Passenger concourse_bronze",
+            "Passenger concourse_stone"
+          ]
+        },
+        {
+          "name": "Long copper quay roof",
+          "methods": [
+            "loft",
+            "profile extrusion"
+          ],
+          "objects": [
+            "Long copper quay roof_copper",
+            "Long copper quay roof_bronze",
+            "Long copper quay roof_trim"
+          ]
+        },
+        {
+          "name": "Quay entrance canopy left",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Quay entrance canopy left"
+          ]
+        },
+        {
+          "name": "Quay entrance canopy left lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Quay entrance canopy left lintel_stone"
+          ]
+        },
+        {
+          "name": "Quay entrance canopy right",
+          "methods": [
+            "screw; array"
+          ],
+          "objects": [
+            "Quay entrance canopy right"
+          ]
+        },
+        {
+          "name": "Quay entrance canopy right lintel",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Quay entrance canopy right lintel_stone"
+          ]
+        },
+        {
+          "name": "Harbor-front canopy",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Harbor-front canopy_trim",
+            "Harbor-front canopy_floor",
+            "Harbor-front canopy_bronze"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone",
+            "Stone public bench_rustic"
+          ]
+        },
+        {
+          "name": "Stone public bench",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Stone public bench_stone.001",
+            "Stone public bench_rustic.001"
+          ]
+        },
+        {
+          "name": "Entry terrace, steps and accessible ramp",
+          "methods": [
+            "profile extrusion",
+            "geometric vertices"
+          ],
+          "objects": [
+            "Entry terrace, steps and accessible ramp_stone",
+            "Entry terrace, steps and accessible ramp_floor"
+          ]
+        }
+      ],
+      "entry_checks": [
+        {
+          "entry": [
+            0,
+            0,
+            -14
+          ],
+          "approach_ray_clear": true,
+          "floor_hit_y": 0.0
+        }
+      ],
+      "usable_hall": {
+        "center": [
+          0,
+          0,
+          -5
+        ],
+        "size": [
+          8,
+          8
+        ]
+      },
+      "service_positions": [
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "visual_triangles": 26516,
+      "collision_triangles": 444
+    }
+  ]
+}

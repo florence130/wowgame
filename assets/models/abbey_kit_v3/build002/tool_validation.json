@@ -1,0 +1,179 @@
+{
+  "passed": false,
+  "source": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build002\\abbey_kit.blend",
+  "checks": [
+    {
+      "check": "beam_4m_real_snap",
+      "passed": true,
+      "gap_metres": 0.0
+    },
+    {
+      "check": "beam_4m_real_repeat",
+      "passed": true,
+      "distances": [
+        4.0,
+        8.0,
+        12.0
+      ]
+    },
+    {
+      "check": "pew_seat_1m_real_snap",
+      "passed": true,
+      "gap_metres": 0.0
+    },
+    {
+      "check": "pew_seat_1m_real_repeat",
+      "passed": true,
+      "distances": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    {
+      "check": "wood_dais_2m_real_snap",
+      "passed": true,
+      "gap_metres": 0.0
+    },
+    {
+      "check": "wood_dais_2m_real_repeat",
+      "passed": true,
+      "distances": [
+        2.0,
+        4.0,
+        6.0
+      ]
+    },
+    {
+      "check": "foundation_strip_4m_real_snap",
+      "passed": true,
+      "gap_metres": 0.0
+    },
+    {
+      "check": "foundation_strip_4m_real_repeat",
+      "passed": true,
+      "distances": [
+        4.0,
+        8.0,
+        12.0
+      ]
+    },
+    {
+      "check": "two_editable_doors_independent",
+      "passed": true,
+      "first": [
+        0.0,
+        0.0
+      ],
+      "second": [
+        -105.0,
+        105.0
+      ]
+    },
+    {
+      "check": "door_sweep_clear_frame",
+      "passed": false,
+      "samples": [
+        {
+          "angle": 0,
+          "intersecting_triangle_pairs": 66
+        },
+        {
+          "angle": 5,
+          "intersecting_triangle_pairs": 60
+        },
+        {
+          "angle": 10,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 15,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 20,
+          "intersecting_triangle_pairs": 54
+        },
+        {
+          "angle": 25,
+          "intersecting_triangle_pairs": 54
+        },
+        {
+          "angle": 30,
+          "intersecting_triangle_pairs": 52
+        },
+        {
+          "angle": 35,
+          "intersecting_triangle_pairs": 52
+        },
+        {
+          "angle": 40,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 45,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 50,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 55,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 60,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 65,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 70,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 75,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 80,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 85,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 90,
+          "intersecting_triangle_pairs": 56
+        },
+        {
+          "angle": 95,
+          "intersecting_triangle_pairs": 64
+        },
+        {
+          "angle": 100,
+          "intersecting_triangle_pairs": 64
+        },
+        {
+          "angle": 105,
+          "intersecting_triangle_pairs": 74
+        }
+      ]
+    },
+    {
+      "check": "central_aisle_2p1m",
+      "passed": true,
+      "measured_widths": [
+        2.1000001430511475,
+        2.1000001430511475,
+        2.1000001430511475,
+        2.1000001430511475,
+        2.1000001430511475
+      ]
+    }
+  ]
+}

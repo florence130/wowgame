@@ -1,0 +1,10 @@
+{
+  "scenes": [
+    "ABY3_Courtyard_build005",
+    "ABY3_Interior_Cutaway_build005",
+    "ABY3_Reuse_Examples_build005"
+  ],
+  "active": "ABY3_Interior_Cutaway_build005",
+  "source_build": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build005",
+  "previous_scenes_preserved": true
+}

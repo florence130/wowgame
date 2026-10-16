@@ -1,0 +1,1416 @@
+{
+  "version": "1.0",
+  "front": "Blender +Y = Godot -Z",
+  "units": "metres",
+  "palette_srgb": {
+    "plaster": "EFE6D2",
+    "plaster_patch": "E3CF9E",
+    "timber": "4A3020",
+    "wood": "856043",
+    "terracotta": "B8553A",
+    "tile_dark": "8A3A26",
+    "tile_light": "D0764A",
+    "barn": "8A3A2A",
+    "barn_light": "B8553A",
+    "barn_dark": "8A3A26",
+    "ivory": "F4EEE2",
+    "thatch": "C8A868",
+    "thatch_light": "E2C460",
+    "thatch_dark": "9C7E48",
+    "mill_roof": "8A3A26",
+    "mill_light": "B8553A",
+    "sandstone": "B3ACA2",
+    "stone_dark": "8E877A",
+    "stone_light": "CDC7C1",
+    "iron": "3C3A40",
+    "glass": "3F5F86",
+    "cloth": "EFE4CC",
+    "leaf": "3F7A3A",
+    "flower": "F28FB0",
+    "flower_y": "FFD23F",
+    "flower_w": "FFF6E8"
+  },
+  "palette_source": "docs/palette/palette.json + user supplied palette image",
+  "palette_map": {
+    "plaster": "plaster",
+    "plaster_patch": "plaster_ochre",
+    "timber": "timber",
+    "wood": "wood",
+    "terracotta": "terracotta",
+    "tile_dark": "terracotta_dark",
+    "tile_light": "terracotta_light",
+    "barn": "wood_red",
+    "barn_light": "terracotta",
+    "barn_dark": "terracotta_dark",
+    "ivory": "plaster_white",
+    "thatch": "thatch",
+    "thatch_light": "wheat",
+    "thatch_dark": "thatch_dark",
+    "mill_roof": "terracotta_dark",
+    "mill_light": "terracotta",
+    "sandstone": "stone",
+    "stone_dark": "stone_dark",
+    "stone_light": "stone_light",
+    "iron": "iron",
+    "glass": "glass",
+    "cloth": "linen",
+    "leaf": "leaf_mid",
+    "flower": "flower_pink",
+    "flower_y": "flower_y",
+    "flower_w": "flower_w"
+  },
+  "modules": [
+    {
+      "id": "V_farm_wall_solid",
+      "methods": [
+        "CSG",
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          2.0,
+          0.18299999833106995,
+          3.0
+        ]
+      ],
+      "file": "modules/V_farm_wall_solid.glb"
+    },
+    {
+      "id": "V_farm_wall_door",
+      "methods": [
+        "CSG",
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          2.0,
+          0.18299999833106995,
+          3.0
+        ]
+      ],
+      "file": "modules/V_farm_wall_door.glb"
+    },
+    {
+      "id": "V_farm_wall_window",
+      "methods": [
+        "CSG",
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          2.0,
+          0.18299999833106995,
+          3.0
+        ]
+      ],
+      "file": "modules/V_farm_wall_window.glb"
+    },
+    {
+      "id": "V_farm_frame",
+      "methods": [
+        "03 extrusion"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.9750000238418579,
+          -0.05999999865889549,
+          -0.2150000035762787
+        ],
+        [
+          0.9750000238418579,
+          0.46000000834465027,
+          1.6100000143051147
+        ]
+      ],
+      "file": "modules/V_farm_frame.glb"
+    },
+    {
+      "id": "V_farm_doorframe",
+      "methods": [
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -1.1399999856948853,
+          -0.04500000178813934,
+          0.0
+        ],
+        [
+          1.1399999856948853,
+          0.3050000071525574,
+          3.059999942779541
+        ]
+      ],
+      "file": "modules/V_farm_doorframe.glb"
+    },
+    {
+      "id": "V_farm_beam",
+      "methods": [
+        "03 extrusion"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.18000000715255737,
+          -0.13500000536441803
+        ],
+        [
+          2.0,
+          0.1875,
+          0.13500000536441803
+        ]
+      ],
+      "file": "modules/V_farm_beam.glb"
+    },
+    {
+      "id": "V_barn_wall_solid",
+      "methods": [
+        "CSG",
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          4
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          2.0899999141693115,
+          0.19249999523162842,
+          4.0
+        ]
+      ],
+      "file": "modules/V_barn_wall_solid.glb"
+    },
+    {
+      "id": "V_barn_wall_door",
+      "methods": [
+        "CSG",
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          4
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          2.0899999141693115,
+          0.19249999523162842,
+          4.0
+        ]
+      ],
+      "file": "modules/V_barn_wall_door.glb"
+    },
+    {
+      "id": "V_barn_wall_window",
+      "methods": [
+        "CSG",
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          4
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          2.0899999141693115,
+          0.19249999523162842,
+          4.0
+        ]
+      ],
+      "file": "modules/V_barn_wall_window.glb"
+    },
+    {
+      "id": "V_barn_frame",
+      "methods": [
+        "03 extrusion"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.9750000238418579,
+          -0.05999999865889549,
+          -0.2150000035762787
+        ],
+        [
+          0.9750000238418579,
+          0.46000000834465027,
+          1.6100000143051147
+        ]
+      ],
+      "file": "modules/V_barn_frame.glb"
+    },
+    {
+      "id": "V_barn_doorframe",
+      "methods": [
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -1.1399999856948853,
+          -0.04500000178813934,
+          0.0
+        ],
+        [
+          1.1399999856948853,
+          0.3050000071525574,
+          3.059999942779541
+        ]
+      ],
+      "file": "modules/V_barn_doorframe.glb"
+    },
+    {
+      "id": "V_barn_beam",
+      "methods": [
+        "03 extrusion"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.18000000715255737,
+          -0.13500000536441803
+        ],
+        [
+          2.0,
+          0.1875,
+          0.13500000536441803
+        ]
+      ],
+      "file": "modules/V_barn_beam.glb"
+    },
+    {
+      "id": "V_window_insert",
+      "methods": [
+        "03 extrusion"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.6700000166893005,
+          -0.09749999642372131,
+          0.0949999988079071
+        ],
+        [
+          0.6700000166893005,
+          0.07000000029802322,
+          1.4049999713897705
+        ]
+      ],
+      "file": "modules/V_window_insert.glb"
+    },
+    {
+      "id": "V_door",
+      "methods": [
+        "03 extrusion",
+        "05 curve bevel"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.9150000214576721,
+          -0.08500000089406967,
+          0.03500000014901161
+        ],
+        [
+          0.9150000214576721,
+          0.2070000171661377,
+          2.815000057220459
+        ]
+      ],
+      "file": "modules/V_door.glb"
+    },
+    {
+      "id": "V_flowerbox",
+      "methods": [
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.8999999761581421,
+          -0.23000000417232513,
+          0.0
+        ],
+        [
+          0.8999999761581421,
+          0.23000000417232513,
+          0.6799999475479126
+        ]
+      ],
+      "file": "modules/V_flowerbox.glb"
+    },
+    {
+      "id": "V_foundation",
+      "methods": [
+        "02 repeat",
+        "03 extrusion"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -1.9874999523162842,
+          -0.2750000059604645,
+          0.0
+        ],
+        [
+          1.9874999523162842,
+          0.2750000059604645,
+          0.3799999952316284
+        ]
+      ],
+      "file": "modules/V_foundation.glb"
+    },
+    {
+      "id": "V_stone_SDF",
+      "methods": [
+        "SDF analytical field",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.5075628757476807,
+          -0.30679166316986084,
+          -0.009577125310897827
+        ],
+        [
+          0.5101627707481384,
+          0.30745530128479004,
+          0.5695801377296448
+        ]
+      ],
+      "file": "modules/V_stone_SDF.glb"
+    },
+    {
+      "id": "V_roof_tile_4m",
+      "methods": [
+        "01 mirror",
+        "02 array",
+        "04 solidify",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0,
+          -5.253356456756592,
+          -0.19499999284744263
+        ],
+        [
+          2.0,
+          5.253356456756592,
+          5.272636413574219
+        ]
+      ],
+      "file": "modules/V_roof_tile_4m.glb"
+    },
+    {
+      "id": "V_roof_thatch_4m",
+      "methods": [
+        "01 mirror",
+        "02 array",
+        "04 solidify",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.0139999389648438,
+          -7.085236549377441,
+          -0.32714608311653137
+        ],
+        [
+          2.0139999389648438,
+          7.085236549377441,
+          7.632318019866943
+        ]
+      ],
+      "file": "modules/V_roof_thatch_4m.glb"
+    },
+    {
+      "id": "V_ridge_tile",
+      "methods": [
+        "03 extrusion",
+        "02 array"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -1.9900000095367432,
+          -0.3100000321865082,
+          0.0
+        ],
+        [
+          1.9900001287460327,
+          0.31000015139579773,
+          0.3499999940395355
+        ]
+      ],
+      "file": "modules/V_ridge_tile.glb"
+    },
+    {
+      "id": "V_ridge_thatch",
+      "methods": [
+        "06 spin",
+        "05 curve bevel"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -2.0,
+          -0.4480000138282776,
+          -0.4480000138282776
+        ],
+        [
+          2.0,
+          0.4480000138282776,
+          0.4480000138282776
+        ]
+      ],
+      "file": "modules/V_ridge_thatch.glb"
+    },
+    {
+      "id": "V_chimney",
+      "methods": [
+        "CSG",
+        "03 extrusion"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.5799999833106995,
+          -0.625,
+          0.0
+        ],
+        [
+          0.5799999833106995,
+          0.625,
+          4.585000038146973
+        ]
+      ],
+      "file": "modules/V_chimney.glb"
+    },
+    {
+      "id": "V_bracket",
+      "methods": [
+        "03 extrusion"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.17000000178813934,
+          -0.32499998807907104,
+          -0.41999998688697815
+        ],
+        [
+          0.17000000178813934,
+          0.32499998807907104,
+          0.0
+        ]
+      ],
+      "file": "modules/V_bracket.glb"
+    },
+    {
+      "id": "V_fence_4m",
+      "methods": [
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.1050000190734863,
+          -0.10499999672174454,
+          0.0
+        ],
+        [
+          2.0,
+          0.10499999672174454,
+          1.399999976158142
+        ]
+      ],
+      "file": "modules/V_fence_4m.glb"
+    },
+    {
+      "id": "V_fence_curved_12m",
+      "methods": [
+        "02 array",
+        "07 curve deformation"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.016977623105049133,
+          -0.06791016459465027,
+          0.3399999737739563
+        ],
+        [
+          11.221434593200684,
+          4.158731460571289,
+          1.130000352859497
+        ]
+      ],
+      "file": "modules/V_fence_curved_12m.glb"
+    },
+    {
+      "id": "V_mill_course_0",
+      "methods": [
+        "08 loft",
+        "CSG"
+      ],
+      "sockets": {
+        "bottom": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3.5
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.7716383934020996,
+          -2.7716383934020996,
+          0.0
+        ],
+        [
+          2.7716383934020996,
+          2.7716383934020996,
+          3.5
+        ]
+      ],
+      "file": "modules/V_mill_course_0.glb"
+    },
+    {
+      "id": "V_mill_course_1",
+      "methods": [
+        "08 loft",
+        "CSG"
+      ],
+      "sockets": {
+        "bottom": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3.5
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.56376576423645,
+          -2.56376576423645,
+          0.0
+        ],
+        [
+          2.56376576423645,
+          2.56376576423645,
+          3.5
+        ]
+      ],
+      "file": "modules/V_mill_course_1.glb"
+    },
+    {
+      "id": "V_mill_course_2",
+      "methods": [
+        "08 loft",
+        "CSG"
+      ],
+      "sockets": {
+        "bottom": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3.5
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.3558926582336426,
+          -2.3558926582336426,
+          0.0
+        ],
+        [
+          2.3558926582336426,
+          2.3558926582336426,
+          3.5
+        ]
+      ],
+      "file": "modules/V_mill_course_2.glb"
+    },
+    {
+      "id": "V_mill_course_3",
+      "methods": [
+        "08 loft",
+        "CSG"
+      ],
+      "sockets": {
+        "bottom": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          0,
+          3.5
+        ]
+      },
+      "bounds_blender": [
+        [
+          -2.148019790649414,
+          -2.148019790649414,
+          0.0
+        ],
+        [
+          2.148019790649414,
+          2.148019790649414,
+          3.5
+        ]
+      ],
+      "file": "modules/V_mill_course_3.glb"
+    },
+    {
+      "id": "V_mill_roof",
+      "methods": [
+        "08 loft",
+        "06 spin",
+        "04 solidify"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -3.375,
+          -3.375,
+          -0.2199999988079071
+        ],
+        [
+          3.375,
+          3.375,
+          4.32786750793457
+        ]
+      ],
+      "file": "modules/V_mill_roof.glb"
+    },
+    {
+      "id": "V_mill_sail",
+      "methods": [
+        "09 simple deform",
+        "04 solidify",
+        "05 curve bevel"
+      ],
+      "sockets": {
+        "pivot": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -0.11886514723300934,
+          -0.1164044737815857,
+          0.0
+        ],
+        [
+          1.5988651514053345,
+          0.2199999988079071,
+          7.5
+        ]
+      ],
+      "file": "modules/V_mill_sail.glb"
+    },
+    {
+      "id": "V_mill_hub",
+      "methods": [
+        "06 spin",
+        "03 extrusion"
+      ],
+      "sockets": {
+        "pivot": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bounds_blender": [
+        [
+          -0.3499999940395355,
+          -1.399999976158142,
+          -0.3499999940395355
+        ],
+        [
+          0.3499999940395355,
+          0.45750001072883606,
+          0.3499999940395355
+        ]
+      ],
+      "file": "modules/V_mill_hub.glb"
+    },
+    {
+      "id": "V_porch",
+      "methods": [
+        "03 extrusion",
+        "04 solidify",
+        "06 spin",
+        "05 curve bevel"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -2.299999952316284,
+          -0.22499999403953552,
+          0.0
+        ],
+        [
+          2.299999952316284,
+          2.609999895095825,
+          4.22556734085083
+        ]
+      ],
+      "file": "modules/V_porch.glb"
+    },
+    {
+      "id": "V_cargo_door",
+      "methods": [
+        "03 extrusion",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -2.25,
+          -0.12999999523162842,
+          0.0
+        ],
+        [
+          2.25,
+          0.35249999165534973,
+          3.7699999809265137
+        ]
+      ],
+      "file": "modules/V_cargo_door.glb"
+    },
+    {
+      "id": "V_hayloft",
+      "methods": [
+        "03 extrusion",
+        "05 curve bevel",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -2.569999933242798,
+          -0.25,
+          -0.14000000059604645
+        ],
+        [
+          2.569999933242798,
+          2.0799999237060547,
+          2.819999933242798
+        ]
+      ],
+      "file": "modules/V_hayloft.glb"
+    },
+    {
+      "id": "V_barrel",
+      "methods": [
+        "06 spin",
+        "05 curve bevel"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.6639989614486694,
+          -0.6473511457443237,
+          0.0
+        ],
+        [
+          0.6639989614486694,
+          0.6473511457443237,
+          1.5499999523162842
+        ]
+      ],
+      "file": "modules/V_barrel.glb"
+    },
+    {
+      "id": "V_haybale",
+      "methods": [
+        "03 extrusion",
+        "05 curve bevel",
+        "10 vertices"
+      ],
+      "sockets": {},
+      "bounds_blender": [
+        [
+          -0.75,
+          -0.5080000162124634,
+          0.0
+        ],
+        [
+          0.75,
+          0.5080000162124634,
+          1.1156396865844727
+        ]
+      ],
+      "file": "modules/V_haybale.glb"
+    }
+  ],
+  "assemblies": {
+    "farm": {
+      "file": "assemblies/VALE_farm.glb",
+      "bounds_blender": [
+        [
+          -6.779999732971191,
+          -5.253356456756592,
+          0.0
+        ],
+        [
+          6.789999961853027,
+          7.300000190734863,
+          12.156999588012695
+        ]
+      ]
+    },
+    "barn": {
+      "file": "assemblies/VALE_barn.glb",
+      "bounds_blender": [
+        [
+          -9.736973762512207,
+          -7.085236549377441,
+          0.0
+        ],
+        [
+          9.736973762512207,
+          7.799999713897705,
+          15.868000030517578
+        ]
+      ]
+    },
+    "windmill": {
+      "file": "assemblies/VALE_windmill.glb",
+      "bounds_blender": [
+        [
+          -7.5,
+          -3.375,
+          -0.005363196134567261
+        ],
+        [
+          7.5,
+          4.107500076293945,
+          19.399999618530273
+        ]
+      ]
+    },
+    "rotor": {
+      "file": "assemblies/VALE_rotor.glb",
+      "bounds_blender": [
+        [
+          -7.5,
+          -1.399999976158142,
+          -7.5
+        ],
+        [
+          7.5,
+          0.45750001072883606,
+          7.5
+        ]
+      ]
+    },
+    "fence_demo": {
+      "file": "assemblies/VALE_fence_demo.glb",
+      "bounds_blender": [
+        [
+          -6.105000019073486,
+          -0.10499999672174454,
+          0.0
+        ],
+        [
+          6.105000019073486,
+          0.10499999672174454,
+          1.399999976158142
+        ]
+      ]
+    }
+  },
+  "facade_seams": [
+    {
+      "building": "farm",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        -6.0,
+        -2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        -6.0,
+        -2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        -6.0,
+        -2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        -6.0,
+        -2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "building": "farm",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        2.0,
+        6.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        -8.0,
+        -4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        -4.0,
+        0.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 0,
+      "x_interval": [
+        4.0,
+        8.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        -8.0,
+        -4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        -4.0,
+        0.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": -1,
+      "level": 1,
+      "x_interval": [
+        4.0,
+        8.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        -8.0,
+        -4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        -4.0,
+        0.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 0,
+      "x_interval": [
+        4.0,
+        8.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        -8.0,
+        -4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        -4.0,
+        0.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "building": "barn",
+      "side": 1,
+      "level": 1,
+      "x_interval": [
+        4.0,
+        8.0
+      ]
+    }
+  ],
+  "source_files": [
+    "tools/gen_vale.gd",
+    "tools/blender/build_models.py",
+    "tools/blender/build_props.py"
+  ],
+  "source_sha256": {
+    "build.py": "7bc4e41f4d28c56a93391acd4604164c438399bde396ecbe682b9900c2a5e4c0",
+    "capture_originals.py": "f2f7bfcaeddfbb125807f5012cbaa52a6661d25d4d68a895740334aaae74d177",
+    "field.py": "6a788505e0994b3ede219ea403f3f02f63080710ab605d4429d78736d142c3ff",
+    "glb_reader.py": "0371b1364d158fd14638d2fe97b8798ac2d253f6670713285e5471bc4361b636",
+    "kernel.py": "d5003fcbfc0e1ef8f4808b53106cdc304789a3a30f89ddb2c7fe1b802acf4b58",
+    "probe_thatch.py": "f42a5eb39d61af3b97b46494bea815c8c341c4a97c61ec3b05a7f2b4f24521c7",
+    "reimport.py": "fa96fdc27b3278aa4db11be59623d3159534cf88c20225e33a0ce84f9b005471",
+    "thatch.py": "82e9b9ff4707190788c555ac8587290c163fe832813d0c658e29979a9d0142ea",
+    "verify.py": "67ec85f0dfb74d4f06949a379667d7262af015bf72ed511c30b6570f88c16005"
+  }
+}

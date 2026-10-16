@@ -1,0 +1,1951 @@
+{
+  "batches": [
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_0_ABY2_wood",
+      "partition": "-1_1_0",
+      "parts": 23,
+      "triangles": 1108
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_1_ABY2_wood",
+      "partition": "-1_1_-1",
+      "parts": 21,
+      "triangles": 1052
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_2_ABY2_wood",
+      "partition": "0_1_0",
+      "parts": 25,
+      "triangles": 1284
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_3_ABY2_wood",
+      "partition": "0_1_-1",
+      "parts": 24,
+      "triangles": 1272
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_4_ABY2_iron",
+      "partition": "-1_1_0",
+      "parts": 7,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_5_ABY2_iron",
+      "partition": "-1_1_-1",
+      "parts": 7,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_6_ABY2_iron",
+      "partition": "0_1_0",
+      "parts": 18,
+      "triangles": 1020
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_7_ABY2_iron",
+      "partition": "0_1_-1",
+      "parts": 18,
+      "triangles": 1020
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_8_ABY2_bronze",
+      "partition": "-1_1_0",
+      "parts": 10,
+      "triangles": 120
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_9_ABY2_bronze",
+      "partition": "-1_1_-1",
+      "parts": 10,
+      "triangles": 120
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_10_ABY2_bronze",
+      "partition": "0_1_0",
+      "parts": 19,
+      "triangles": 276
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_11_ABY2_bronze",
+      "partition": "0_1_-1",
+      "parts": 19,
+      "triangles": 276
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_12_ABY2_timber",
+      "partition": "-1_1_0",
+      "parts": 32,
+      "triangles": 1164
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_13_ABY2_timber",
+      "partition": "-1_1_-1",
+      "parts": 31,
+      "triangles": 1024
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_14_ABY2_timber",
+      "partition": "0_1_0",
+      "parts": 39,
+      "triangles": 1528
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_15_ABY2_timber",
+      "partition": "0_1_-1",
+      "parts": 40,
+      "triangles": 1476
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_16_ABY2_wood_dark",
+      "partition": "-1_1_0",
+      "parts": 3,
+      "triangles": 132
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_17_ABY2_wood_dark",
+      "partition": "-1_1_-1",
+      "parts": 3,
+      "triangles": 132
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_18_ABY2_wood_dark",
+      "partition": "0_1_0",
+      "parts": 9,
+      "triangles": 436
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_19_ABY2_wood_dark",
+      "partition": "0_1_-1",
+      "parts": 9,
+      "triangles": 436
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_20_ABY2_bronze",
+      "partition": "0_0_0",
+      "parts": 15,
+      "triangles": 1204
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_21_ABY2_bronze",
+      "partition": "-1_0_0",
+      "parts": 9,
+      "triangles": 712
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_22_ABY2_bronze",
+      "partition": "0_0_-1",
+      "parts": 11,
+      "triangles": 1028
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_bronze",
+      "material_sha256": "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "node": "Batch_23_ABY2_bronze",
+      "partition": "-1_0_-1",
+      "parts": 9,
+      "triangles": 712
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_24_ABY2_iron",
+      "partition": "0_0_0",
+      "parts": 25,
+      "triangles": 1092
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_25_ABY2_iron",
+      "partition": "-1_0_0",
+      "parts": 23,
+      "triangles": 816
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_26_ABY2_iron",
+      "partition": "0_0_-1",
+      "parts": 25,
+      "triangles": 1092
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_27_ABY2_iron",
+      "partition": "-1_0_-1",
+      "parts": 23,
+      "triangles": 816
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_28_ABY2_window_glow_001",
+      "partition": "alpha_268351584498_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_29_ABY2_window_glow_001",
+      "partition": "alpha_268385138932_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_30_ABY2_window_glow_001",
+      "partition": "alpha_268418693366_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_31_ABY2_window_glow_001",
+      "partition": "alpha_268452247800_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_32_ABY2_window_glow_001",
+      "partition": "alpha_268485802234_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_33_ABY2_window_glow_001",
+      "partition": "alpha_268519356668_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_34_ABY2_window_glow_001",
+      "partition": "alpha_268552911102_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_35_ABY2_window_glow_001",
+      "partition": "alpha_268586465536_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_36_ABY2_window_glow_001",
+      "partition": "alpha_268620019970_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_37_ABY2_window_glow_001",
+      "partition": "alpha_268653574404_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_38_ABY2_window_glow_001",
+      "partition": "alpha_268687128838_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_39_ABY2_window_glow_001",
+      "partition": "alpha_268720683272_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_40_ABY2_stone_dark",
+      "partition": "-1_0_0",
+      "parts": 13,
+      "triangles": 540
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_41_ABY2_stone_dark",
+      "partition": "-1_0_-1",
+      "parts": 18,
+      "triangles": 784
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_42_ABY2_stone_dark",
+      "partition": "0_0_0",
+      "parts": 13,
+      "triangles": 540
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_43_ABY2_stone_dark",
+      "partition": "0_0_-1",
+      "parts": 18,
+      "triangles": 784
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_44_ABY2_stone_light",
+      "partition": "-1_0_0",
+      "parts": 20,
+      "triangles": 5192
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_45_ABY2_stone_light",
+      "partition": "-1_0_-1",
+      "parts": 25,
+      "triangles": 6116
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_46_ABY2_stone_light",
+      "partition": "0_0_0",
+      "parts": 21,
+      "triangles": 5280
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_47_ABY2_stone_light",
+      "partition": "0_0_-1",
+      "parts": 24,
+      "triangles": 6028
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_48_ABY2_window_glow_001",
+      "partition": "alpha_270633286010_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_49_ABY2_window_glow_001",
+      "partition": "alpha_270666840444_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_50_ABY2_window_glow_001",
+      "partition": "alpha_270700394878_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow.001",
+      "material_sha256": "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "node": "Glass_51_ABY2_window_glow_001",
+      "partition": "alpha_270733949312_0",
+      "parts": 1,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_52_ABY2_stone",
+      "partition": "-1_0_0",
+      "parts": 8,
+      "triangles": 1960
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_53_ABY2_stone",
+      "partition": "-1_0_-1",
+      "parts": 10,
+      "triangles": 2208
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_54_ABY2_stone",
+      "partition": "0_0_0",
+      "parts": 8,
+      "triangles": 1960
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_55_ABY2_stone",
+      "partition": "0_0_-1",
+      "parts": 10,
+      "triangles": 2208
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_56_ABY2_stone",
+      "partition": "-1_0_1",
+      "parts": 2,
+      "triangles": 352
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_57_ABY2_stone_light",
+      "partition": "-1_0_1",
+      "parts": 7,
+      "triangles": 1848
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_58_ABY2_stone",
+      "partition": "0_0_1",
+      "parts": 4,
+      "triangles": 1726
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_59_ABY2_stone_light",
+      "partition": "0_0_1",
+      "parts": 11,
+      "triangles": 5238
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_60_ABY2_stone",
+      "partition": "-1_0_-2",
+      "parts": 2,
+      "triangles": 352
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_61_ABY2_stone_light",
+      "partition": "-1_0_-2",
+      "parts": 5,
+      "triangles": 528
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone",
+      "material_sha256": "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "node": "Batch_62_ABY2_stone",
+      "partition": "0_0_-2",
+      "parts": 3,
+      "triangles": 1658
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_63_ABY2_stone_light",
+      "partition": "0_0_-2",
+      "parts": 8,
+      "triangles": 2216
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_64_ABY2_stone_dark",
+      "partition": "-1_0_1",
+      "parts": 4,
+      "triangles": 176
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_65_ABY2_stone_dark",
+      "partition": "0_0_1",
+      "parts": 7,
+      "triangles": 1124
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_66_ABY2_stone_dark",
+      "partition": "-1_0_-2",
+      "parts": 6,
+      "triangles": 256
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_dark",
+      "material_sha256": "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "node": "Batch_67_ABY2_stone_dark",
+      "partition": "0_0_-2",
+      "parts": 7,
+      "triangles": 432
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_68_ABY2_stone_light",
+      "partition": "0_1_0",
+      "parts": 5,
+      "triangles": 220
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_69_ABY2_stone_light",
+      "partition": "0_1_-1",
+      "parts": 5,
+      "triangles": 220
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_70_ABY2_plaster",
+      "partition": "0_1_0",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_71_ABY2_plaster",
+      "partition": "0_1_-1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_72_ABY2_slate",
+      "partition": "0_1_0",
+      "parts": 8,
+      "triangles": 8438
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_73_ABY2_slate_light",
+      "partition": "0_1_0",
+      "parts": 7,
+      "triangles": 3544
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_74_ABY2_slate",
+      "partition": "0_1_-1",
+      "parts": 8,
+      "triangles": 8438
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_75_ABY2_slate_light",
+      "partition": "0_1_-1",
+      "parts": 7,
+      "triangles": 3544
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_76_ABY2_slate_dark",
+      "partition": "0_1_0",
+      "parts": 10,
+      "triangles": 2638
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_77_ABY2_slate_dark",
+      "partition": "0_1_-1",
+      "parts": 10,
+      "triangles": 2638
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_78_ABY2_glass",
+      "partition": "alpha_278820567906_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_79_ABY2_window_glow",
+      "partition": "alpha_278820567906_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_80_ABY2_stone_light_001",
+      "partition": "0_0_1",
+      "parts": 5,
+      "triangles": 1056
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_81_ABY2_timber",
+      "partition": "0_0_1",
+      "parts": 2,
+      "triangles": 460
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_82_ABY2_glass",
+      "partition": "alpha_278854122340_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_83_ABY2_window_glow",
+      "partition": "alpha_278854122340_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_84_ABY2_stone_light_001",
+      "partition": "-1_0_1",
+      "parts": 5,
+      "triangles": 1056
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_85_ABY2_timber",
+      "partition": "-1_0_1",
+      "parts": 3,
+      "triangles": 764
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_86_ABY2_glass",
+      "partition": "alpha_278887676774_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_87_ABY2_window_glow",
+      "partition": "alpha_278887676774_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_88_ABY2_glass",
+      "partition": "alpha_278921231208_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_89_ABY2_window_glow",
+      "partition": "alpha_278921231208_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_90_ABY2_stone_light_001",
+      "partition": "-1_0_0",
+      "parts": 6,
+      "triangles": 1056
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_91_ABY2_timber",
+      "partition": "-1_0_0",
+      "parts": 30,
+      "triangles": 2744
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_92_ABY2_glass",
+      "partition": "alpha_278954785642_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_93_ABY2_window_glow",
+      "partition": "alpha_278954785642_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_94_ABY2_glass",
+      "partition": "alpha_278988340076_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_95_ABY2_window_glow",
+      "partition": "alpha_278988340076_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_96_ABY2_stone_light_001",
+      "partition": "-1_0_-1",
+      "parts": 11,
+      "triangles": 1408
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_97_ABY2_timber",
+      "partition": "-1_0_-1",
+      "parts": 41,
+      "triangles": 4096
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_98_ABY2_glass",
+      "partition": "alpha_279021894510_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_99_ABY2_window_glow",
+      "partition": "alpha_279021894510_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_100_ABY2_glass",
+      "partition": "alpha_279055448944_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_101_ABY2_window_glow",
+      "partition": "alpha_279055448944_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_102_ABY2_stone_light_001",
+      "partition": "0_0_0",
+      "parts": 6,
+      "triangles": 1056
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_103_ABY2_timber",
+      "partition": "0_0_0",
+      "parts": 36,
+      "triangles": 3908
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_104_ABY2_glass",
+      "partition": "alpha_279089003378_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_105_ABY2_window_glow",
+      "partition": "alpha_279089003378_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_106_ABY2_glass",
+      "partition": "alpha_279122557812_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_107_ABY2_window_glow",
+      "partition": "alpha_279122557812_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_108_ABY2_stone_light_001",
+      "partition": "0_0_-1",
+      "parts": 11,
+      "triangles": 1408
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_109_ABY2_timber",
+      "partition": "0_0_-1",
+      "parts": 41,
+      "triangles": 4096
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_110_ABY2_glass",
+      "partition": "alpha_279156112246_0",
+      "parts": 1,
+      "triangles": 80
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_111_ABY2_window_glow",
+      "partition": "alpha_279156112246_1",
+      "parts": 1,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_112_ABY2_plaster",
+      "partition": "-1_0_1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_113_ABY2_plaster",
+      "partition": "-1_0_-1",
+      "parts": 5,
+      "triangles": 4016
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_114_ABY2_plaster",
+      "partition": "0_0_1",
+      "parts": 4,
+      "triangles": 4012
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_115_ABY2_plaster",
+      "partition": "0_0_-1",
+      "parts": 6,
+      "triangles": 4596
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light",
+      "material_sha256": "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9",
+      "node": "Batch_116_ABY2_stone_light",
+      "partition": "0_1_-2",
+      "parts": 1,
+      "triangles": 528
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_117_ABY2_stone_light_001",
+      "partition": "0_1_-2",
+      "parts": 2,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_glass",
+      "material_sha256": "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "node": "Glass_118_ABY2_glass",
+      "partition": "alpha_279323884416_2",
+      "parts": 1,
+      "triangles": 556
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_119_ABY2_timber",
+      "partition": "0_1_-2",
+      "parts": 3,
+      "triangles": 2224
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_window_glow",
+      "material_sha256": "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "node": "Glass_120_ABY2_window_glow",
+      "partition": "alpha_279323884416_4",
+      "parts": 1,
+      "triangles": 428
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_121_ABY2_stone_light_001",
+      "partition": "0_0_-2",
+      "parts": 3,
+      "triangles": 484
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_122_ABY2_slate",
+      "partition": "-1_1_0",
+      "parts": 2,
+      "triangles": 386
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_123_ABY2_slate",
+      "partition": "-1_1_-1",
+      "parts": 2,
+      "triangles": 386
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_124_ABY2_slate_dark",
+      "partition": "-1_1_0",
+      "parts": 5,
+      "triangles": 358
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_125_ABY2_slate_light",
+      "partition": "-1_1_0",
+      "parts": 1,
+      "triangles": 84
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_126_ABY2_slate_dark",
+      "partition": "-1_1_-1",
+      "parts": 5,
+      "triangles": 358
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_127_ABY2_slate_light",
+      "partition": "-1_1_-1",
+      "parts": 1,
+      "triangles": 84
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_128_ABY2_timber",
+      "partition": "0_1_1",
+      "parts": 4,
+      "triangles": 144
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_129_ABY2_timber",
+      "partition": "-1_1_1",
+      "parts": 2,
+      "triangles": 56
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_130_ABY2_timber",
+      "partition": "-1_1_-2",
+      "parts": 2,
+      "triangles": 56
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_131_ABY2_wood",
+      "partition": "0_1_1",
+      "parts": 2,
+      "triangles": 64
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_132_ABY2_wood",
+      "partition": "-1_1_1",
+      "parts": 1,
+      "triangles": 20
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_133_ABY2_wood",
+      "partition": "-1_1_-2",
+      "parts": 1,
+      "triangles": 20
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_134_ABY2_wood",
+      "partition": "0_1_-2",
+      "parts": 1,
+      "triangles": 20
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_135_ABY2_slate_light",
+      "partition": "0_1_1",
+      "parts": 2,
+      "triangles": 238
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_136_ABY2_slate_light",
+      "partition": "0_1_-2",
+      "parts": 2,
+      "triangles": 238
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_137_ABY2_slate",
+      "partition": "0_1_1",
+      "parts": 2,
+      "triangles": 613
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_138_ABY2_slate_dark",
+      "partition": "0_1_1",
+      "parts": 2,
+      "triangles": 250
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_139_ABY2_slate",
+      "partition": "0_1_-2",
+      "parts": 1,
+      "triangles": 564
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_140_ABY2_slate_dark",
+      "partition": "0_1_-2",
+      "parts": 2,
+      "triangles": 250
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_141_ABY2_slate_dark",
+      "partition": "-1_1_1",
+      "parts": 2,
+      "triangles": 868
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_dark",
+      "material_sha256": "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "node": "Batch_142_ABY2_slate_dark",
+      "partition": "-1_1_-2",
+      "parts": 1,
+      "triangles": 100
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_143_ABY2_wood",
+      "partition": "0_0_0",
+      "parts": 13,
+      "triangles": 2580
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_144_ABY2_wood_dark",
+      "partition": "0_0_0",
+      "parts": 17,
+      "triangles": 1608
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate",
+      "material_sha256": "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "node": "Batch_145_ABY2_slate",
+      "partition": "-1_1_1",
+      "parts": 1,
+      "triangles": 768
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_slate_light",
+      "material_sha256": "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "node": "Batch_146_ABY2_slate_light",
+      "partition": "-1_1_1",
+      "parts": 1,
+      "triangles": 768
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_147_ABY2_stone_light_001",
+      "partition": "-1_0_-2",
+      "parts": 2,
+      "triangles": 88
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_148_ABY2_stone_light_001",
+      "partition": "-1_1_-2",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_149_ABY2_stone_light_001",
+      "partition": "-1_1_1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_150_ABY2_stone_light_001",
+      "partition": "-1_1_0",
+      "parts": 3,
+      "triangles": 3520
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_151_ABY2_stone_light_001",
+      "partition": "-1_1_-1",
+      "parts": 5,
+      "triangles": 3608
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_152_ABY2_stone_light_001",
+      "partition": "0_1_1",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_153_ABY2_stone_light_001",
+      "partition": "0_1_0",
+      "parts": 3,
+      "triangles": 3520
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_stone_light.001",
+      "material_sha256": "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "node": "Batch_154_ABY2_stone_light_001",
+      "partition": "0_1_-1",
+      "parts": 5,
+      "triangles": 3608
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_cobble_joint",
+      "material_sha256": "3e239c5941c3924a4c1c1c22db3932f2786680bd70329ea3546bb164dc8f8653",
+      "node": "Batch_155_ABY2_cobble_joint",
+      "partition": "-1_0_0",
+      "parts": 2,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_cobble_joint",
+      "material_sha256": "3e239c5941c3924a4c1c1c22db3932f2786680bd70329ea3546bb164dc8f8653",
+      "node": "Batch_156_ABY2_cobble_joint",
+      "partition": "-1_0_-1",
+      "parts": 2,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_cobble_joint",
+      "material_sha256": "3e239c5941c3924a4c1c1c22db3932f2786680bd70329ea3546bb164dc8f8653",
+      "node": "Batch_157_ABY2_cobble_joint",
+      "partition": "0_0_0",
+      "parts": 2,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_cobble_joint",
+      "material_sha256": "3e239c5941c3924a4c1c1c22db3932f2786680bd70329ea3546bb164dc8f8653",
+      "node": "Batch_158_ABY2_cobble_joint",
+      "partition": "0_0_-1",
+      "parts": 2,
+      "triangles": 24
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_159_ABY2_wood_dark",
+      "partition": "-1_0_0",
+      "parts": 8,
+      "triangles": 1032
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_160_ABY2_wood",
+      "partition": "-1_0_0",
+      "parts": 7,
+      "triangles": 2000
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_161_ABY2_timber",
+      "partition": "-1_0_-2",
+      "parts": 3,
+      "triangles": 312
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_timber",
+      "material_sha256": "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "node": "Batch_162_ABY2_timber",
+      "partition": "0_0_-2",
+      "parts": 3,
+      "triangles": 312
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_163_ABY2_iron",
+      "partition": "-1_0_-2",
+      "parts": 5,
+      "triangles": 372
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_iron",
+      "material_sha256": "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "node": "Batch_164_ABY2_iron",
+      "partition": "0_0_-2",
+      "parts": 5,
+      "triangles": 372
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "K|2|cfc8ba|st_stone|1.6",
+      "material_sha256": "d7f9014fd331d359b53ac9dc4d577fbb01c23caf22a1fb1779b00bcef253bc7a",
+      "node": "Batch_165_K|2|cfc8ba|st_stone|1_6",
+      "partition": "0_0_-2",
+      "parts": 7,
+      "triangles": 308
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "K|2|b9b2a3|st_stone|1.6",
+      "material_sha256": "5227f1c7d3596d71b662908ada1faa310682a26429c9470fce8c351c3dce8bd7",
+      "node": "Batch_166_K|2|b9b2a3|st_stone|1_6",
+      "partition": "0_0_-2",
+      "parts": 1,
+      "triangles": 44
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_167_ABY2_plaster",
+      "partition": "0_0_-2",
+      "parts": 1,
+      "triangles": 4302
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_168_ABY2_plaster",
+      "partition": "-1_0_0",
+      "parts": 4,
+      "triangles": 3972
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_plaster",
+      "material_sha256": "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "node": "Batch_169_ABY2_plaster",
+      "partition": "0_0_0",
+      "parts": 4,
+      "triangles": 3972
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_170_ABY2_wood",
+      "partition": "-1_0_-1",
+      "parts": 14,
+      "triangles": 4216
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_171_ABY2_wood",
+      "partition": "0_0_-1",
+      "parts": 14,
+      "triangles": 4216
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_172_ABY2_wood_dark",
+      "partition": "-1_0_-1",
+      "parts": 11,
+      "triangles": 2280
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_173_ABY2_wood_dark",
+      "partition": "0_0_-1",
+      "parts": 11,
+      "triangles": 2280
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_174_ABY2_wood_dark",
+      "partition": "0_0_1",
+      "parts": 4,
+      "triangles": 160
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood_dark",
+      "material_sha256": "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "node": "Batch_175_ABY2_wood_dark",
+      "partition": "-1_0_1",
+      "parts": 1,
+      "triangles": 36
+    },
+    {
+      "branch": "ValeRuntime_chapel",
+      "material": "ABY2_wood",
+      "material_sha256": "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "node": "Batch_176_ABY2_wood",
+      "partition": "0_0_1",
+      "parts": 2,
+      "triangles": 176
+    }
+  ],
+  "bounds_max": [
+    5.35000038146973,
+    11.2399997711182,
+    12.020001411438
+  ],
+  "bounds_min": [
+    -5.35000038146973,
+    0.0,
+    -11.5325002670288
+  ],
+  "collision_cells": 8,
+  "collision_policy": "chunked exact solid triangles; no whole-building box; chapel high triangles >4.2m and visual stair collisions omitted, smooth ramp planes added; moving windmill rotor excluded",
+  "collision_triangles": 86814,
+  "duration_ms": 1367,
+  "file": "chapel.scn",
+  "id": "chapel",
+  "lights": [
+    {
+      "energy": 1.4,
+      "position": [
+        0,
+        4.7,
+        -2.0
+      ],
+      "range": 5.5,
+      "shadow_enabled": true
+    },
+    {
+      "energy": 1.4,
+      "position": [
+        0,
+        4.7,
+        2.0
+      ],
+      "range": 5.5,
+      "shadow_enabled": false
+    }
+  ],
+  "material_name_content_counts": {
+    "ABY2_bronze": 1,
+    "ABY2_cobble_joint": 1,
+    "ABY2_glass": 1,
+    "ABY2_iron": 1,
+    "ABY2_plaster": 1,
+    "ABY2_slate": 1,
+    "ABY2_slate_dark": 1,
+    "ABY2_slate_light": 1,
+    "ABY2_stone": 1,
+    "ABY2_stone_dark": 1,
+    "ABY2_stone_light": 1,
+    "ABY2_stone_light.001": 1,
+    "ABY2_timber": 1,
+    "ABY2_window_glow": 1,
+    "ABY2_window_glow.001": 1,
+    "ABY2_wood": 1,
+    "ABY2_wood_dark": 1,
+    "K|2|b9b2a3|st_stone|1.6": 1,
+    "K|2|cfc8ba|st_stone|1.6": 1
+  },
+  "output_meshes": 177,
+  "pack_error": 0,
+  "passed": true,
+  "ramps": [
+    {
+      "lower_zy": [
+        -11.9324998855591,
+        0.0
+      ],
+      "name": "EntrySmoothRamp",
+      "upper_zy": [
+        -9.53250026702881,
+        0.903999984264374
+      ],
+      "width": 3.38
+    },
+    {
+      "lower_zy": [
+        -9.53250026702881,
+        0.903999984264374
+      ],
+      "name": "EntryRampTopConnector",
+      "upper_zy": [
+        -8.17000007629395,
+        0.903999984264374
+      ],
+      "width": 3.38
+    },
+    {
+      "lower_zy": [
+        2.59999990463257,
+        0.899999976158142
+      ],
+      "name": "SanctuarySmoothRamp",
+      "upper_zy": [
+        3.65000009536743,
+        1.38399994373322
+      ],
+      "width": 1.99
+    },
+    {
+      "lower_zy": [
+        3.65000009536743,
+        1.38399994373322
+      ],
+      "name": "SanctuaryRampTopConnector",
+      "upper_zy": [
+        4.0149998664856,
+        1.38399994373322
+      ],
+      "width": 1.99
+    }
+  ],
+  "reloaded": {
+    "bounds_max": [
+      5.35000038146973,
+      11.2399997711182,
+      12.0199995040894
+    ],
+    "bounds_min": [
+      -5.35000038146973,
+      0.0,
+      -11.5325002670288
+    ],
+    "dependencies": [],
+    "embedded_texture_content_count": 14,
+    "errors": [],
+    "material_content_count": 19,
+    "material_content_hashes": [
+      "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+      "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+      "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+      "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+      "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+      "3e239c5941c3924a4c1c1c22db3932f2786680bd70329ea3546bb164dc8f8653",
+      "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+      "5227f1c7d3596d71b662908ada1faa310682a26429c9470fce8c351c3dce8bd7",
+      "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+      "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+      "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+      "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+      "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+      "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+      "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+      "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+      "d7f9014fd331d359b53ac9dc4d577fbb01c23caf22a1fb1779b00bcef253bc7a",
+      "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+      "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9"
+    ],
+    "meshes": 177,
+    "passed": true,
+    "triangles": 199525,
+    "windows": [
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_glass",
+        "passed": true,
+        "shadow": 0
+      },
+      {
+        "alpha": 0.280000001192093,
+        "mode": 4,
+        "name": "ABY2_window_glow",
+        "passed": true,
+        "shadow": 0
+      }
+    ]
+  },
+  "rotor_transform": null,
+  "save_error": 0,
+  "source": "assets/models/abbey_kit_v3/build005/assemblies/Chapel_Open_Interior.glb",
+  "source_material_content_hashes": [
+    "0d218ce46d841755685075be7a52c121b3917560d3204af9789f81471ba7cae7",
+    "0ece60b1fec2a599e9c54ce6663ba70e28b37764816a07023c37e9f78acf309d",
+    "1b8ac686062ec561ff5014fd956a3fcc52d5f3bd5136673e9afdbbedba8613bd",
+    "21a24890979da0e7c5fb62baaaeee4cf219030758fd9adb4489a08885223cb21",
+    "30363a77f54565a7d6d4c6176d89a088acbd58700a8496f41ea007a7c97d6d7f",
+    "3e239c5941c3924a4c1c1c22db3932f2786680bd70329ea3546bb164dc8f8653",
+    "4e4c973729feb9aac2ab70ccc9f9fa7003b90e459041d61c5b7eae69ef11ffff",
+    "5227f1c7d3596d71b662908ada1faa310682a26429c9470fce8c351c3dce8bd7",
+    "6707586999267e80aa5857e0d4c5739eca5673cfa126b863e4dbded26f27c549",
+    "694805421f72a4360e6009f256e28a0fe5409c28bec32750f93f6ff206aae283",
+    "8ca937a082111e560d7a2d9ab18808fb01e3c1ea82f030d0d31c0fbe84813aac",
+    "a5027eac8c99c44eb5368bfad6ed19a677be8445c74cba0aff2b95bd748af6f2",
+    "a650b4f83b060811792435c1650b2658f36e71fddeed8ccf3edb90335eba38dc",
+    "b4b846e2fac74bdfd94055c3b7e7253271e75c8c342748c4b95af05b73077797",
+    "b7198e779e525b6e0a49c9ceaea67a5f8892d2ecac78479694a7fb0f7ee36f41",
+    "c7c61cf4d0a456e98569046e90433ccac4e520a1a8e8018e95c2ae5b7b5965cc",
+    "d7f9014fd331d359b53ac9dc4d577fbb01c23caf22a1fb1779b00bcef253bc7a",
+    "f17ac3ea866e7be3a71285407bde5fc46365085f340df948863b2ebedc5c5d04",
+    "fc0f6c71a21459e14cfdca8e9aae6348c4093360e3338da42835046577b5a5e9"
+  ],
+  "source_material_contents": 19,
+  "source_material_resources": 19,
+  "source_meshes": 1148,
+  "source_sha256": "25335b4c76b14dcfb12f19df4681d12a34f7e0c88e0bec64419c6f7c83dc1748",
+  "source_surfaces": 1294,
+  "source_triangles": 199525,
+  "transparent_surfaces_kept_separate": 40,
+  "visual_bounds_preserved": true
+}

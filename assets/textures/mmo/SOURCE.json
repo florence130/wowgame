@@ -1,0 +1,11 @@
+{
+  "source": "Original deterministic procedural material",
+  "generator": "tools/texgen/town_stone.py",
+  "seed": 20261016,
+  "resolution": [
+    512,
+    512
+  ],
+  "usage": "Per-zone cobble override; broad irregular cobbles, muted stone and moss joints; opaque rough terrain material.",
+  "license": "Project-authored asset; no third-party source pixels."
+}

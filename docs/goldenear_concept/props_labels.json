@@ -1,0 +1,1442 @@
+{
+ "fountain": {
+  "928b85": {
+   "label": "stone",
+   "share": 0.071
+  },
+  "57585a": {
+   "label": "stone",
+   "share": 0.138
+  },
+  "6992a5": {
+   "label": "water",
+   "share": 0.113
+  },
+  "424850": {
+   "label": "stone",
+   "share": 0.192
+  },
+  "c3bbb1": {
+   "label": "stone",
+   "share": 0.119
+  },
+  "706b68": {
+   "label": "stone",
+   "share": 0.136
+  },
+  "357c96": {
+   "label": "water",
+   "share": 0.23
+  }
+ },
+ "lamp": {
+  "847669": {
+   "label": "metal",
+   "share": 0.026
+  },
+  "eccda6": {
+   "label": "glow",
+   "share": 0.099
+  },
+  "171719": {
+   "label": "metal",
+   "share": 0.087
+  },
+  "4f4d4e": {
+   "label": "metal",
+   "share": 0.27
+  },
+  "323133": {
+   "label": "metal",
+   "share": 0.187
+  },
+  "262628": {
+   "label": "metal",
+   "share": 0.113
+  },
+  "403e40": {
+   "label": "metal",
+   "share": 0.218
+  }
+ },
+ "noticeboard": {
+  "dbad89": {
+   "label": "paper",
+   "share": 0.179
+  },
+  "605044": {
+   "label": "metal",
+   "share": 0.135
+  },
+  "dc6946": {
+   "label": "roof_tile",
+   "share": 0.186
+  },
+  "51392c": {
+   "label": "wood",
+   "share": 0.131
+  },
+  "883325": {
+   "label": "roof_tile",
+   "share": 0.055
+  },
+  "94704f": {
+   "label": "wood_light",
+   "share": 0.143
+  },
+  "3b271d": {
+   "label": "wood",
+   "share": 0.171
+  }
+ },
+ "stall_fruit": {
+  "9f6943": {
+   "label": "wood_light",
+   "share": 0.119
+  },
+  "513422": {
+   "label": "wood",
+   "share": 0.249
+  },
+  "874a2e": {
+   "label": "wood",
+   "share": 0.118
+  },
+  "e0bc9d": {
+   "label": "cloth",
+   "share": 0.07
+  },
+  "db8655": {
+   "label": "cloth",
+   "share": 0.088
+  },
+  "66412a": {
+   "label": "wood",
+   "share": 0.112
+  },
+  "3f2a1c": {
+   "label": "wood",
+   "share": 0.245
+  }
+ },
+ "stall_herb": {
+  "504536": {
+   "label": "wood",
+   "share": 0.215
+  },
+  "988f6f": {
+   "label": "cloth",
+   "share": 0.183
+  },
+  "3e3832": {
+   "label": "wood",
+   "share": 0.114
+  },
+  "dbc09f": {
+   "label": "cloth",
+   "share": 0.133
+  },
+  "786851": {
+   "label": "wood_light",
+   "share": 0.137
+  },
+  "5d5843": {
+   "label": "foliage",
+   "share": 0.126
+  },
+  "302f2c": {
+   "label": "wood",
+   "share": 0.092
+  }
+ },
+ "stall_weapon": {
+  "d1805f": {
+   "label": "cloth",
+   "share": 0.12
+  },
+  "74533f": {
+   "label": "wood",
+   "share": 0.262
+  },
+  "5c3e30": {
+   "label": "wood",
+   "share": 0.278
+  },
+  "98755b": {
+   "label": "wood_light",
+   "share": 0.083
+  },
+  "e1cbb4": {
+   "label": "cloth",
+   "share": 0.072
+  },
+  "9f412e": {
+   "label": "cloth",
+   "share": 0.039
+  },
+  "473228": {
+   "label": "wood",
+   "share": 0.146
+  }
+ },
+ "waystone": {
+  "1f9dce": {
+   "label": "glow",
+   "share": 0.036
+  },
+  "9a9a92": {
+   "label": "stone",
+   "share": 0.343
+  },
+  "536168": {
+   "label": "stone",
+   "share": 0.198
+  },
+  "6e8040": {
+   "label": "foliage",
+   "share": 0.117
+  },
+  "46849b": {
+   "label": "glow",
+   "share": 0.048
+  },
+  "66b6d8": {
+   "label": "glow",
+   "share": 0.059
+  },
+  "7c7c78": {
+   "label": "stone",
+   "share": 0.199
+  }
+ },
+ "well": {
+  "82827e": {
+   "label": "stone",
+   "share": 0.156
+  },
+  "b6afa5": {
+   "label": "stone",
+   "share": 0.066
+  },
+  "462619": {
+   "label": "wood",
+   "share": 0.282
+  },
+  "cb603c": {
+   "label": "roof_tile",
+   "share": 0.18
+  },
+  "3a4651": {
+   "label": "water",
+   "share": 0.1
+  },
+  "7f4028": {
+   "label": "wood_light",
+   "share": 0.145
+  },
+  "737b55": {
+   "label": "foliage",
+   "share": 0.072
+  }
+ },
+ "haycart": {
+  "a07044": {
+   "label": "wood",
+   "share": 0.185
+  },
+  "c08e47": {
+   "label": "wood_light",
+   "share": 0.077
+  },
+  "4a382c": {
+   "label": "wood",
+   "share": 0.186
+  },
+  "dfa853": {
+   "label": "thatch",
+   "share": 0.105
+  },
+  "644633": {
+   "label": "wood",
+   "share": 0.162
+  },
+  "825938": {
+   "label": "wood",
+   "share": 0.159
+  },
+  "f5c16b": {
+   "label": "thatch",
+   "share": 0.127
+  }
+ },
+ "haystack": {
+  "83873e": {
+   "label": "foliage",
+   "share": 0.082
+  },
+  "eab45a": {
+   "label": "thatch",
+   "share": 0.207
+  },
+  "d09d4e": {
+   "label": "thatch",
+   "share": 0.194
+  },
+  "3a2d1f": {
+   "label": "wood",
+   "share": 0.23
+  },
+  "af8b4c": {
+   "label": "thatch",
+   "share": 0.109
+  },
+  "a8472e": {
+   "label": "roof_tile",
+   "share": 0.061
+  },
+  "77482a": {
+   "label": "wood_light",
+   "share": 0.117
+  }
+ },
+ "signpost": {
+  "695f56": {
+   "label": "metal",
+   "share": 0.045
+  },
+  "ab7a51": {
+   "label": "wood_light",
+   "share": 0.127
+  },
+  "31241a": {
+   "label": "wood",
+   "share": 0.127
+  },
+  "895e3c": {
+   "label": "wood",
+   "share": 0.266
+  },
+  "939d53": {
+   "label": "foliage",
+   "share": 0.26
+  },
+  "8d944d": {
+   "label": "foliage",
+   "share": 0.07
+  },
+  "5c412f": {
+   "label": "wood",
+   "share": 0.106
+  }
+ },
+ "bench": {
+  "503828": {
+   "label": "wood",
+   "share": 0.083
+  },
+  "c08c61": {
+   "label": "wood_light",
+   "share": 0.146
+  },
+  "714f37": {
+   "label": "wood",
+   "share": 0.313
+  },
+  "634531": {
+   "label": "wood",
+   "share": 0.222
+  },
+  "866146": {
+   "label": "wood_light",
+   "share": 0.028
+  },
+  "cc9c71": {
+   "label": "wood_light",
+   "share": 0.185
+  },
+  "a27653": {
+   "label": "wood_light",
+   "share": 0.023
+  }
+ },
+ "woodshed": {
+  "543b28": {
+   "label": "wood",
+   "share": 0.195
+  },
+  "a9603b": {
+   "label": "wood_light",
+   "share": 0.053
+  },
+  "36261c": {
+   "label": "wood",
+   "share": 0.159
+  },
+  "6d5439": {
+   "label": "wood_light",
+   "share": 0.164
+  },
+  "7a844b": {
+   "label": "foliage",
+   "share": 0.166
+  },
+  "211410": {
+   "label": "wood",
+   "share": 0.133
+  },
+  "dd804f": {
+   "label": "roof_tile",
+   "share": 0.129
+  }
+ },
+ "trough": {
+  "8a8368": {
+   "label": "stone",
+   "share": 0.184
+  },
+  "453d38": {
+   "label": "wood",
+   "share": 0.181
+  },
+  "89884b": {
+   "label": "foliage",
+   "share": 0.293
+  },
+  "aa9d8d": {
+   "label": "stone",
+   "share": 0.02
+  },
+  "7c5536": {
+   "label": "wood_light",
+   "share": 0.147
+  },
+  "528396": {
+   "label": "water",
+   "share": 0.067
+  },
+  "585655": {
+   "label": "metal",
+   "share": 0.107
+  }
+ },
+ "brazier": {
+  "3d2217": {
+   "label": "wood",
+   "share": 0.216
+  },
+  "c05720": {
+   "label": "glow",
+   "share": 0.057
+  },
+  "483c39": {
+   "label": "metal",
+   "share": 0.207
+  },
+  "989794": {
+   "label": "metal",
+   "share": 0.048
+  },
+  "79371e": {
+   "label": "wood",
+   "share": 0.115
+  },
+  "5d6064": {
+   "label": "metal",
+   "share": 0.11
+  },
+  "845e42": {
+   "label": "wood",
+   "share": 0.247
+  }
+ },
+ "scarecrow": {
+  "383c41": {
+   "label": "leather",
+   "share": 0.104
+  },
+  "879243": {
+   "label": "foliage",
+   "share": 0.068
+  },
+  "785534": {
+   "label": "wood",
+   "share": 0.191
+  },
+  "c1bba8": {
+   "label": "rubble",
+   "share": 0.077
+  },
+  "aa7b46": {
+   "label": "wood_light",
+   "share": 0.206
+  },
+  "d4a364": {
+   "label": "thatch",
+   "share": 0.179
+  },
+  "5f686f": {
+   "label": "cloth",
+   "share": 0.175
+  }
+ },
+ "bed": {
+  "895e3e": {
+   "label": "wood_light",
+   "share": 0.205
+  },
+  "2a475f": {
+   "label": "cloth",
+   "share": 0.019
+  },
+  "1e3143": {
+   "label": "cloth",
+   "share": 0.024
+  },
+  "c1bbb1": {
+   "label": "cloth",
+   "share": 0.136
+  },
+  "4a3120": {
+   "label": "wood",
+   "share": 0.429
+  },
+  "37698d": {
+   "label": "cloth",
+   "share": 0.135
+  },
+  "2e5a7c": {
+   "label": "cloth",
+   "share": 0.053
+  }
+ },
+ "bench_long": {
+  "a17049": {
+   "label": "wood_light",
+   "share": 0.072
+  },
+  "5d4130": {
+   "label": "wood",
+   "share": 0.316
+  },
+  "302118": {
+   "label": "wood",
+   "share": 0.054
+  },
+  "c28e5c": {
+   "label": "wood_light",
+   "share": 0.244
+  },
+  "4e3627": {
+   "label": "wood",
+   "share": 0.189
+  },
+  "402c21": {
+   "label": "wood",
+   "share": 0.111
+  },
+  "7e573c": {
+   "label": "wood",
+   "share": 0.013
+  }
+ },
+ "bookshelf": {
+  "b88455": {
+   "label": "wood_light",
+   "share": 0.064
+  },
+  "493f3a": {
+   "label": "leather",
+   "share": 0.126
+  },
+  "6c442c": {
+   "label": "wood",
+   "share": 0.061
+  },
+  "3f2b20": {
+   "label": "wood",
+   "share": 0.336
+  },
+  "2c1f18": {
+   "label": "wood",
+   "share": 0.293
+  },
+  "94613e": {
+   "label": "wood_light",
+   "share": 0.108
+  },
+  "6d716a": {
+   "label": "leather",
+   "share": 0.012
+  }
+ },
+ "chair": {
+  "c38b58": {
+   "label": "wood_light",
+   "share": 0.038
+  },
+  "794f32": {
+   "label": "wood",
+   "share": 0.223
+  },
+  "392719": {
+   "label": "wood",
+   "share": 0.203
+  },
+  "95633c": {
+   "label": "wood",
+   "share": 0.113
+  },
+  "ae7749": {
+   "label": "wood_light",
+   "share": 0.112
+  },
+  "513522": {
+   "label": "wood",
+   "share": 0.171
+  },
+  "644129": {
+   "label": "wood",
+   "share": 0.139
+  }
+ },
+ "counter": {
+  "ac805a": {
+   "label": "wood_light",
+   "share": 0.209
+  },
+  "875b3b": {
+   "label": "wood",
+   "share": 0.284
+  },
+  "463a36": {
+   "label": "wood",
+   "share": 0.1
+  },
+  "3a291f": {
+   "label": "wood",
+   "share": 0.07
+  },
+  "2c1f16": {
+   "label": "wood",
+   "share": 0.261
+  },
+  "6d482f": {
+   "label": "wood",
+   "share": 0.051
+  },
+  "51331f": {
+   "label": "wood",
+   "share": 0.025
+  }
+ },
+ "cupboard": {
+  "5c4231": {
+   "label": "wood",
+   "share": 0.145
+  },
+  "9c6d48": {
+   "label": "wood",
+   "share": 0.133
+  },
+  "302116": {
+   "label": "metal",
+   "share": 0.037
+  },
+  "845c3e": {
+   "label": "wood",
+   "share": 0.126
+  },
+  "af8461": {
+   "label": "wood_light",
+   "share": 0.113
+  },
+  "6f4c34": {
+   "label": "wood",
+   "share": 0.286
+  },
+  "433023": {
+   "label": "wood",
+   "share": 0.16
+  }
+ },
+ "fireplace": {
+  "684427": {
+   "label": "wood",
+   "share": 0.143
+  },
+  "897561": {
+   "label": "stone",
+   "share": 0.131
+  },
+  "2a231f": {
+   "label": "wood",
+   "share": 0.131
+  },
+  "bcad98": {
+   "label": "stone",
+   "share": 0.2
+  },
+  "e79e2e": {
+   "label": "glow",
+   "share": 0.052
+  },
+  "353434": {
+   "label": "stone",
+   "share": 0.18
+  },
+  "444547": {
+   "label": "stone",
+   "share": 0.163
+  }
+ },
+ "sign_guard": {
+  "6e6154": {
+   "label": "wood_light",
+   "share": 0.157
+  },
+  "573c23": {
+   "label": "wood",
+   "share": 0.237
+  },
+  "383738": {
+   "label": "metal",
+   "share": 0.166
+  },
+  "282829": {
+   "label": "metal",
+   "share": 0.201
+  },
+  "99856b": {
+   "label": "wood_light",
+   "share": 0.022
+  },
+  "514b46": {
+   "label": "wood",
+   "share": 0.126
+  },
+  "d6b477": {
+   "label": "metal",
+   "share": 0.092
+  }
+ },
+ "sign_smith": {
+  "77695b": {
+   "label": "wood",
+   "share": 0.103
+  },
+  "6c4829": {
+   "label": "wood",
+   "share": 0.305
+  },
+  "ae8d66": {
+   "label": "wood_light",
+   "share": 0.033
+  },
+  "e3c59a": {
+   "label": "wood_light",
+   "share": 0.082
+  },
+  "524c47": {
+   "label": "metal",
+   "share": 0.083
+  },
+  "292523": {
+   "label": "metal",
+   "share": 0.138
+  },
+  "35373c": {
+   "label": "metal",
+   "share": 0.255
+  }
+ },
+ "sign_stable": {
+  "694629": {
+   "label": "wood",
+   "share": 0.266
+  },
+  "26282a": {
+   "label": "metal",
+   "share": 0.194
+  },
+  "916b47": {
+   "label": "wood_light",
+   "share": 0.171
+  },
+  "585451": {
+   "label": "metal",
+   "share": 0.097
+  },
+  "413f3d": {
+   "label": "metal",
+   "share": 0.082
+  },
+  "e2c79d": {
+   "label": "metal",
+   "share": 0.098
+  },
+  "443122": {
+   "label": "wood",
+   "share": 0.092
+  }
+ },
+ "sign_store": {
+  "857c74": {
+   "label": "metal",
+   "share": 0.027
+  },
+  "3d3c3e": {
+   "label": "metal",
+   "share": 0.203
+  },
+  "5c5855": {
+   "label": "metal",
+   "share": 0.202
+  },
+  "593d27": {
+   "label": "wood",
+   "share": 0.107
+  },
+  "a06e3e": {
+   "label": "wood_light",
+   "share": 0.209
+  },
+  "845932": {
+   "label": "wood",
+   "share": 0.061
+  },
+  "272423": {
+   "label": "metal",
+   "share": 0.191
+  }
+ },
+ "sign_tailor": {
+  "ad8a5d": {
+   "label": "wood_light",
+   "share": 0.065
+  },
+  "545454": {
+   "label": "metal",
+   "share": 0.171
+  },
+  "d5be97": {
+   "label": "cloth",
+   "share": 0.084
+  },
+  "393b3d": {
+   "label": "metal",
+   "share": 0.177
+  },
+  "795533": {
+   "label": "wood",
+   "share": 0.316
+  },
+  "292a2b": {
+   "label": "metal",
+   "share": 0.09
+  },
+  "553b24": {
+   "label": "wood",
+   "share": 0.097
+  }
+ },
+ "sign_tavern": {
+  "6a4729": {
+   "label": "wood",
+   "share": 0.277
+  },
+  "37322e": {
+   "label": "metal",
+   "share": 0.119
+  },
+  "4c4947": {
+   "label": "metal",
+   "share": 0.094
+  },
+  "ae8150": {
+   "label": "wood_light",
+   "share": 0.133
+  },
+  "e5ceac": {
+   "label": "wood_light",
+   "share": 0.059
+  },
+  "736150": {
+   "label": "wood",
+   "share": 0.133
+  },
+  "222122": {
+   "label": "metal",
+   "share": 0.185
+  }
+ },
+ "sign_trainer": {
+  "987e5f": {
+   "label": "wood_light",
+   "share": 0.041
+  },
+  "79502a": {
+   "label": "wood",
+   "share": 0.3
+  },
+  "4e331c": {
+   "label": "wood",
+   "share": 0.125
+  },
+  "282523": {
+   "label": "metal",
+   "share": 0.164
+  },
+  "e7ca9d": {
+   "label": "wood_light",
+   "share": 0.083
+  },
+  "36383a": {
+   "label": "metal",
+   "share": 0.158
+  },
+  "57514a": {
+   "label": "metal",
+   "share": 0.129
+  }
+ },
+ "stool": {
+  "8b5e3c": {
+   "label": "wood",
+   "share": 0.125
+  },
+  "5c3e2b": {
+   "label": "wood",
+   "share": 0.191
+  },
+  "3c2b20": {
+   "label": "wood",
+   "share": 0.268
+  },
+  "9b6b44": {
+   "label": "wood_light",
+   "share": 0.106
+  },
+  "a6744a": {
+   "label": "wood_light",
+   "share": 0.063
+  },
+  "bc8757": {
+   "label": "wood_light",
+   "share": 0.13
+  },
+  "754f34": {
+   "label": "wood",
+   "share": 0.118
+  }
+ },
+ "table": {
+  "e3cfb5": {
+   "label": "stone",
+   "share": 0.028
+  },
+  "302217": {
+   "label": "wood",
+   "share": 0.307
+  },
+  "3f2e22": {
+   "label": "wood",
+   "share": 0.101
+  },
+  "533d2e": {
+   "label": "wood",
+   "share": 0.158
+  },
+  "8e694c": {
+   "label": "wood_light",
+   "share": 0.268
+  },
+  "231a12": {
+   "label": "wood",
+   "share": 0.034
+  },
+  "6b503d": {
+   "label": "wood",
+   "share": 0.104
+  }
+ },
+ "chandelier": {
+  "413c3a": {
+   "label": "metal",
+   "share": 0.306
+  },
+  "514a47": {
+   "label": "metal",
+   "share": 0.254
+  },
+  "e4ae5e": {
+   "label": "glow",
+   "share": 0.031
+  },
+  "655c57": {
+   "label": "metal",
+   "share": 0.139
+  },
+  "7f756d": {
+   "label": "metal",
+   "share": 0.03
+  },
+  "2f2c2b": {
+   "label": "metal",
+   "share": 0.097
+  },
+  "eed2a9": {
+   "label": "plaster",
+   "share": 0.143
+  }
+ },
+ "anvil": {
+  "797d84": {
+   "label": "metal",
+   "share": 0.074
+  },
+  "2d2928": {
+   "label": "metal",
+   "share": 0.186
+  },
+  "af7749": {
+   "label": "wood_light",
+   "share": 0.083
+  },
+  "45484d": {
+   "label": "metal",
+   "share": 0.164
+  },
+  "4e3625": {
+   "label": "wood",
+   "share": 0.202
+  },
+  "895d3e": {
+   "label": "wood",
+   "share": 0.147
+  },
+  "6b472d": {
+   "label": "wood",
+   "share": 0.143
+  }
+ },
+ "forge": {
+  "e68013": {
+   "label": "glow",
+   "share": 0.024
+  },
+  "444546": {
+   "label": "stone",
+   "share": 0.321
+  },
+  "63412c": {
+   "label": "wood",
+   "share": 0.182
+  },
+  "885633": {
+   "label": "wood_light",
+   "share": 0.101
+  },
+  "3d2c21": {
+   "label": "leather",
+   "share": 0.179
+  },
+  "a39789": {
+   "label": "stone",
+   "share": 0.056
+  },
+  "626262": {
+   "label": "stone",
+   "share": 0.138
+  }
+ },
+ "weaponrack": {
+  "6b6e73": {
+   "label": "metal",
+   "share": 0.074
+  },
+  "483529": {
+   "label": "wood",
+   "share": 0.45
+  },
+  "474b51": {
+   "label": "metal",
+   "share": 0.074
+  },
+  "999da2": {
+   "label": "metal",
+   "share": 0.037
+  },
+  "6d4a32": {
+   "label": "wood",
+   "share": 0.168
+  },
+  "8d6241": {
+   "label": "wood_light",
+   "share": 0.118
+  },
+  "37281d": {
+   "label": "wood",
+   "share": 0.079
+  }
+ },
+ "barrel": {
+  "875a38": {
+   "label": "wood",
+   "share": 0.3
+  },
+  "878482": {
+   "label": "metal",
+   "share": 0.02
+  },
+  "5a3d27": {
+   "label": "wood",
+   "share": 0.179
+  },
+  "6a6767": {
+   "label": "metal",
+   "share": 0.157
+  },
+  "49494a": {
+   "label": "metal",
+   "share": 0.112
+  },
+  "754e31": {
+   "label": "wood_light",
+   "share": 0.139
+  },
+  "3c2e24": {
+   "label": "wood",
+   "share": 0.093
+  }
+ },
+ "chest": {
+  "6a492e": {
+   "label": "wood",
+   "share": 0.406
+  },
+  "464649": {
+   "label": "metal",
+   "share": 0.193
+  },
+  "6a635f": {
+   "label": "metal",
+   "share": 0.083
+  },
+  "9a6739": {
+   "label": "wood_light",
+   "share": 0.105
+  },
+  "36291f": {
+   "label": "metal",
+   "share": 0.079
+  },
+  "44372f": {
+   "label": "metal",
+   "share": 0.12
+  },
+  "a09891": {
+   "label": "metal",
+   "share": 0.013
+  }
+ },
+ "mannequin": {
+  "9b363a": {
+   "label": "cloth",
+   "share": 0.142
+  },
+  "6d2f37": {
+   "label": "cloth",
+   "share": 0.186
+  },
+  "6c5a4f": {
+   "label": "wood_light",
+   "share": 0.083
+  },
+  "4e3429": {
+   "label": "wood",
+   "share": 0.194
+  },
+  "b3aa9c": {
+   "label": "cloth",
+   "share": 0.1
+  },
+  "c54846": {
+   "label": "cloth",
+   "share": 0.139
+  },
+  "362621": {
+   "label": "wood",
+   "share": 0.155
+  }
+ },
+ "dormer": {
+  "92563b": {
+   "label": "roof_tile",
+   "share": 0.152
+  },
+  "676c6e": {
+   "label": "slate",
+   "share": 0.07
+  },
+  "70412f": {
+   "label": "wood",
+   "share": 0.123
+  },
+  "34281d": {
+   "label": "wood",
+   "share": 0.235
+  },
+  "c76f48": {
+   "label": "roof_tile",
+   "share": 0.21
+  },
+  "4f3b2d": {
+   "label": "wood",
+   "share": 0.164
+  },
+  "9eb0b6": {
+   "label": "slate",
+   "share": 0.046
+  }
+ },
+ "chimney": {
+  "807c75": {
+   "label": "stone",
+   "share": 0.266
+  },
+  "b5a48e": {
+   "label": "stone",
+   "share": 0.136
+  },
+  "6c3a2a": {
+   "label": "roof_tile",
+   "share": 0.058
+  },
+  "585d60": {
+   "label": "stone",
+   "share": 0.334
+  },
+  "3a3633": {
+   "label": "stone",
+   "share": 0.072
+  },
+  "e8d5b8": {
+   "label": "stone",
+   "share": 0.1
+  },
+  "cc7045": {
+   "label": "roof_tile",
+   "share": 0.033
+  }
+ },
+ "window": {
+  "403124": {
+   "label": "wood",
+   "share": 0.479
+  },
+  "c7d1ba": {
+   "label": "foliage",
+   "share": 0.049
+  },
+  "7a4e29": {
+   "label": "wood",
+   "share": 0.13
+  },
+  "627d26": {
+   "label": "foliage",
+   "share": 0.062
+  },
+  "947b52": {
+   "label": "wood_light",
+   "share": 0.13
+  },
+  "dac85e": {
+   "label": "foliage",
+   "share": 0.014
+  },
+  "4d4d4c": {
+   "label": "stone",
+   "share": 0.136
+  }
+ },
+ "door": {
+  "3c2e22": {
+   "label": "wood",
+   "share": 0.241
+  },
+  "d5c2a6": {
+   "label": "stone",
+   "share": 0.091
+  },
+  "57524c": {
+   "label": "metal",
+   "share": 0.077
+  },
+  "bcaa92": {
+   "label": "stone",
+   "share": 0.085
+  },
+  "845732": {
+   "label": "wood_light",
+   "share": 0.105
+  },
+  "6f7171": {
+   "label": "stone",
+   "share": 0.347
+  },
+  "998d7c": {
+   "label": "stone",
+   "share": 0.054
+  }
+ },
+ "wall_lantern": {
+  "9f7e5b": {
+   "label": "metal",
+   "share": 0.068
+  },
+  "303032": {
+   "label": "metal",
+   "share": 0.221
+  },
+  "3f4144": {
+   "label": "metal",
+   "share": 0.197
+  },
+  "eeb971": {
+   "label": "glow",
+   "share": 0.091
+  },
+  "5a5b5e": {
+   "label": "metal",
+   "share": 0.083
+  },
+  "6b533f": {
+   "label": "metal",
+   "share": 0.112
+  },
+  "513e2e": {
+   "label": "metal",
+   "share": 0.229
+  }
+ },
+ "planter": {
+  "7a512a": {
+   "label": "wood",
+   "share": 0.224
+  },
+  "ebe6d4": {
+   "label": "foliage",
+   "share": 0.045
+  },
+  "537923": {
+   "label": "foliage",
+   "share": 0.246
+  },
+  "c0bb88": {
+   "label": "foliage",
+   "share": 0.006
+  },
+  "2c460d": {
+   "label": "foliage",
+   "share": 0.345
+  },
+  "deb714": {
+   "label": "foliage",
+   "share": 0.054
+  },
+  "4f5052": {
+   "label": "metal",
+   "share": 0.081
+  }
+ },
+ "porch": {
+  "52514f": {
+   "label": "metal",
+   "share": 0.072
+  },
+  "c7b69c": {
+   "label": "stone",
+   "share": 0.041
+  },
+  "403023": {
+   "label": "wood",
+   "share": 0.333
+  },
+  "687076": {
+   "label": "stone",
+   "share": 0.094
+  },
+  "683d2e": {
+   "label": "roof_tile",
+   "share": 0.119
+  },
+  "8d5740": {
+   "label": "roof_tile",
+   "share": 0.241
+  },
+  "b7784b": {
+   "label": "wood_light",
+   "share": 0.099
+  }
+ },
+ "fence": {
+  "4d3929": {
+   "label": "wood",
+   "share": 0.121
+  },
+  "72533a": {
+   "label": "wood",
+   "share": 0.143
+  },
+  "5c4634": {
+   "label": "wood",
+   "share": 0.147
+  },
+  "9f7a55": {
+   "label": "wood_light",
+   "share": 0.242
+  },
+  "b3926c": {
+   "label": "wood_light",
+   "share": 0.01
+  },
+  "8d6745": {
+   "label": "wood",
+   "share": 0.248
+  },
+  "71604f": {
+   "label": "metal",
+   "share": 0.089
+  }
+ },
+ "steps": {
+  "5c5f49": {
+   "label": "stone",
+   "share": 0.141
+  },
+  "c7b89e": {
+   "label": "stone",
+   "share": 0.172
+  },
+  "53412e": {
+   "label": "wood",
+   "share": 0.111
+  },
+  "75883a": {
+   "label": "foliage",
+   "share": 0.02
+  },
+  "9e947c": {
+   "label": "stone",
+   "share": 0.26
+  },
+  "797669": {
+   "label": "stone",
+   "share": 0.236
+  },
+  "8f6942": {
+   "label": "wood_light",
+   "share": 0.061
+  }
+ }
+}

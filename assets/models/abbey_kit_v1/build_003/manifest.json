@@ -1,0 +1,5161 @@
+{
+  "version": "1.0",
+  "generated_utc": "2026-10-05T07:08:58.520280+00:00",
+  "source_hashes": {
+    "build.py": "a0b178f958a11a0708baeab574b614093bafb9d4fe0a4aed82482422b466a205",
+    "components.py": "db42bd80eb4614502e96a3c1d470c37614c514db2522b02d08aa87acf59339e8",
+    "geometry.py": "bf34e7147925b9e845b765ab0a174a0d3f1b5703be8dffd2af9a9c3e1dc3bcf9",
+    "inspect_references.py": "41713bbfe7f2e837bde2dd281aa51b32867f1ae71bee1236b6aa16c14308ad93",
+    "sdf.py": "6a788505e0994b3ede219ea403f3f02f63080710ab605d4429d78736d142c3ff"
+  },
+  "units": "metres",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "+Y"
+  },
+  "godot_axes": {
+    "up": "+Y",
+    "front": "-Z"
+  },
+  "basis_conversion": "(x,y,z)->(x,z,-y)",
+  "uv": "Box projection in metres; broad color-block materials. Not a baked atlas.",
+  "material_mode": "KHR_materials_unlit, opaque color glass stylization",
+  "config": {
+    "name": "晨钟修道院 · 暖陶瓦",
+    "palette": {},
+    "chapel_bays": 4,
+    "cloister_bays": 3,
+    "bridge_segments": 4,
+    "bridge_bend_m": 2.5,
+    "render_resolution": 1400
+  },
+  "assets": [
+    {
+      "id": "wall_plain_4",
+      "label_zh": "纯墙4米",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "top",
+          "position_blender": [
+            0,
+            0,
+            3
+          ],
+          "normal_blender": [
+            0,
+            0,
+            1
+          ],
+          "kind": "stack_3m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/wall_plain_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 72,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "wall_plain_2",
+      "label_zh": "纯墙2米",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -1.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            1.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "top",
+          "position_blender": [
+            0,
+            0,
+            3
+          ],
+          "normal_blender": [
+            0,
+            0,
+            1
+          ],
+          "kind": "stack_3m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/wall_plain_2.glb",
+      "bounds_min": [
+        -1.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 72,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "wall_door_4",
+      "label_zh": "拱门洞墙",
+      "route": "CSG/mesh",
+      "techniques": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "top",
+          "position_blender": [
+            0,
+            0,
+            3
+          ],
+          "normal_blender": [
+            0,
+            0,
+            1
+          ],
+          "kind": "stack_3m"
+        },
+        {
+          "name": "door",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "door_2_s1p7"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/wall_door_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 132,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "wall_window_4",
+      "label_zh": "拱窗洞墙",
+      "route": "CSG/mesh",
+      "techniques": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "top",
+          "position_blender": [
+            0,
+            0,
+            3
+          ],
+          "normal_blender": [
+            0,
+            0,
+            1
+          ],
+          "kind": "stack_3m"
+        },
+        {
+          "name": "window",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "window_1p4_s2p05"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/wall_window_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 124,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "window_arch_frame",
+      "label_zh": "拱窗框",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "window",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "window_1p4_s2p05"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/window_arch_frame.glb",
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.3199999928474426,
+        0.6200000047683716
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.3199999928474426,
+        2.930000066757202
+      ],
+      "triangles": 276,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "window_arch_glass",
+      "label_zh": "拱窗玻璃",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "curve_bevel"
+      ],
+      "sockets": [
+        {
+          "name": "window",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "window_1p4_s2p05"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/window_arch_glass.glb",
+      "bounds_min": [
+        -0.6800000071525574,
+        0.007499999832361937,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        0.6800000071525574,
+        0.10799999535083771,
+        2.7300000190734863
+      ],
+      "triangles": 92,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "door_arch_frame",
+      "label_zh": "拱门框",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "door",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "door_2_s1p7"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/door_arch_frame.glb",
+      "bounds_min": [
+        -1.25,
+        -0.30000001192092896,
+        0.0
+      ],
+      "bounds_max": [
+        1.25,
+        0.30000001192092896,
+        2.950000047683716
+      ],
+      "triangles": 232,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "door_wood_double",
+      "label_zh": "木双开门",
+      "route": "CSG/mesh",
+      "techniques": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "door",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "door_2_s1p7"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/door_wood_double.glb",
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.06499999761581421,
+        0.02500000037252903
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.16300000250339508,
+        2.6584203243255615
+      ],
+      "triangles": 504,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "door_wood_plain",
+      "label_zh": "素木门",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "door",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "door_2_s1p7"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/door_wood_plain.glb",
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.06499999761581421,
+        0.02500000037252903
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.16300000250339508,
+        2.6600000858306885
+      ],
+      "triangles": 424,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "door_stone",
+      "label_zh": "石门",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "door",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "door_2_s1p7"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/door_stone.glb",
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.06499999761581421,
+        0.02500000037252903
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.16300000250339508,
+        2.6600000858306885
+      ],
+      "triangles": 436,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "rose_frame",
+      "label_zh": "圆花窗框",
+      "route": "CSG/mesh",
+      "techniques": [
+        "curve_bevel"
+      ],
+      "sockets": [
+        {
+          "name": "rose",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "rose_r1"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/rose_frame.glb",
+      "bounds_min": [
+        -1.1899999380111694,
+        -0.14000003039836884,
+        -1.1899999380111694
+      ],
+      "bounds_max": [
+        1.1899999380111694,
+        0.14000003039836884,
+        1.1899999380111694
+      ],
+      "triangles": 160,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "rose_glass",
+      "label_zh": "圆花窗玻璃",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "curve_bevel"
+      ],
+      "sockets": [
+        {
+          "name": "rose",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "rose_r1"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/rose_glass.glb",
+      "bounds_min": [
+        -0.9399999976158142,
+        -0.017500000074505806,
+        -0.9399999976158142
+      ],
+      "bounds_max": [
+        0.9399999976158142,
+        0.10000000894069672,
+        0.9399999976158142
+      ],
+      "triangles": 540,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "column_3",
+      "label_zh": "3米柱",
+      "route": "CSG/mesh",
+      "techniques": [
+        "spin",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "top",
+          "position_blender": [
+            0,
+            0,
+            3
+          ],
+          "normal_blender": [
+            0,
+            0,
+            1
+          ],
+          "kind": "stack_3m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/column_3.glb",
+      "bounds_min": [
+        -0.4000000059604645,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        0.4000000059604645,
+        0.4000000059604645,
+        3.0
+      ],
+      "triangles": 232,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "railing_wood_4",
+      "label_zh": "木栏杆",
+      "route": "CSG/mesh",
+      "techniques": [
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/railing_wood_4.glb",
+      "bounds_min": [
+        -1.75,
+        -0.09000000357627869,
+        0.07000000029802322
+      ],
+      "bounds_max": [
+        1.75,
+        0.09000000357627869,
+        1.1299999952316284
+      ],
+      "triangles": 352,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "railing_stone_4",
+      "label_zh": "石栏杆",
+      "route": "CSG/mesh",
+      "techniques": [
+        "spin",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/railing_stone_4.glb",
+      "bounds_min": [
+        -1.75,
+        -0.10999999940395355,
+        0.07000000029802322
+      ],
+      "bounds_max": [
+        1.75,
+        0.10999999940395355,
+        1.1299999952316284
+      ],
+      "triangles": 648,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "fence_post",
+      "label_zh": "栏杆柱",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/fence_post.glb",
+      "bounds_min": [
+        -0.3199999928474426,
+        -0.3199999928474426,
+        0.0
+      ],
+      "bounds_max": [
+        0.3199999928474426,
+        0.3199999928474426,
+        1.2799999713897705
+      ],
+      "triangles": 88,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "arcade_4",
+      "label_zh": "回廊拱跨",
+      "route": "CSG/mesh",
+      "techniques": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/arcade_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.32499998807907104,
+        1.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.32499998807907104,
+        3.0
+      ],
+      "triangles": 308,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_gable_8x4",
+      "label_zh": "8米坡屋顶",
+      "route": "CSG/mesh",
+      "techniques": [
+        "mirror",
+        "solidify",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "front",
+          "position_blender": [
+            0,
+            2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "roof_pitch_4m"
+        },
+        {
+          "name": "back",
+          "position_blender": [
+            0,
+            -2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "roof_pitch_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/roof_gable_8x4.glb",
+      "bounds_min": [
+        -4.539999961853027,
+        -2.0,
+        -0.1599999964237213
+      ],
+      "bounds_max": [
+        4.539999961853027,
+        2.0,
+        2.7200000286102295
+      ],
+      "triangles": 200,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_gable_4x4",
+      "label_zh": "4米坡屋顶",
+      "route": "CSG/mesh",
+      "techniques": [
+        "mirror",
+        "solidify",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "front",
+          "position_blender": [
+            0,
+            2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "roof_pitch_4m"
+        },
+        {
+          "name": "back",
+          "position_blender": [
+            0,
+            -2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "roof_pitch_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/roof_gable_4x4.glb",
+      "bounds_min": [
+        -2.5399999618530273,
+        -2.0,
+        -0.1599999964237213
+      ],
+      "bounds_max": [
+        2.5399999618530273,
+        2.0,
+        1.3600000143051147
+      ],
+      "triangles": 200,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_ridge_4",
+      "label_zh": "屋脊",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "front",
+          "position_blender": [
+            0,
+            2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "roof_pitch_4m"
+        },
+        {
+          "name": "back",
+          "position_blender": [
+            0,
+            -2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "roof_pitch_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/roof_ridge_4.glb",
+      "bounds_min": [
+        -0.23999999463558197,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.23999999463558197,
+        2.0,
+        0.28999999165534973
+      ],
+      "triangles": 16,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "gable_rose_8",
+      "label_zh": "花窗山墙",
+      "route": "CSG/mesh",
+      "techniques": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/gable_rose_8.glb",
+      "bounds_min": [
+        -4.388077259063721,
+        -0.20000000298023224,
+        -0.2795618176460266
+      ],
+      "bounds_max": [
+        4.388077259063721,
+        0.330000102519989,
+        2.779561758041382
+      ],
+      "triangles": 196,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "gable_plain_4",
+      "label_zh": "普通山墙",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/gable_plain_4.glb",
+      "bounds_min": [
+        -2.3879408836364746,
+        -0.20000000298023224,
+        -0.2796941101551056
+      ],
+      "bounds_max": [
+        2.3879408836364746,
+        0.33000001311302185,
+        1.4196940660476685
+      ],
+      "triangles": 96,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "floor_stone_4",
+      "label_zh": "石地板",
+      "route": "CSG/mesh",
+      "techniques": [
+        "array",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/floor_stone_4.glb",
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.22499999403953552
+      ],
+      "triangles": 204,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "floor_wood_4",
+      "label_zh": "木地板",
+      "route": "CSG/mesh",
+      "techniques": [
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/floor_wood_4.glb",
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.23999999463558197
+      ],
+      "triangles": 108,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "plinth_4",
+      "label_zh": "地台",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/plinth_4.glb",
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.6000000238418579
+      ],
+      "triangles": 12,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "stairs_4",
+      "label_zh": "4级台阶",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/stairs_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.6000000834465027,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.6000000834465027,
+        0.6175000071525574
+      ],
+      "triangles": 84,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "chimney",
+      "label_zh": "烟囱",
+      "route": "CSG/mesh",
+      "techniques": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/chimney.glb",
+      "bounds_min": [
+        -0.5,
+        -0.5,
+        0.0
+      ],
+      "bounds_max": [
+        0.5,
+        0.5,
+        1.8799999952316284
+      ],
+      "triangles": 128,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "dome_frame_4",
+      "label_zh": "穹顶框",
+      "route": "CSG/mesh",
+      "techniques": [
+        "spin",
+        "curve_bevel"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/dome_frame_4.glb",
+      "bounds_min": [
+        -2.119999885559082,
+        -2.119999885559082,
+        -0.007178955711424351
+      ],
+      "bounds_max": [
+        2.119999885559082,
+        2.119999885559082,
+        2.0545294284820557
+      ],
+      "triangles": 544,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "dome_glass_4",
+      "label_zh": "穹顶玻璃",
+      "route": "CSG/mesh",
+      "techniques": [
+        "loft",
+        "solidify"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/dome_glass_4.glb",
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        -0.006692380644381046
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "triangles": 320,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "bridge_segment_4",
+      "label_zh": "石桥段",
+      "route": "CSG/mesh",
+      "techniques": [
+        "vertices",
+        "array",
+        "curve_deform"
+      ],
+      "sockets": [
+        {
+          "name": "left",
+          "position_blender": [
+            -2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "right",
+          "position_blender": [
+            2.0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "linear_4m"
+        },
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/bridge_segment_4.glb",
+      "bounds_min": [
+        -2.0,
+        -1.559999942779541,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        1.559999942779541,
+        1.1200000047683716
+      ],
+      "triangles": 116,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "balcony_4",
+      "label_zh": "阳台",
+      "route": "CSG/mesh",
+      "techniques": [
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/balcony_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.75,
+        -1.0746949911117554
+      ],
+      "bounds_max": [
+        2.0,
+        0.75,
+        0.20000000298023224
+      ],
+      "triangles": 100,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "sagging_beam_4",
+      "label_zh": "弯木梁",
+      "route": "CSG/mesh",
+      "techniques": [
+        "simple_deform"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/sagging_beam_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.11999999731779099,
+        -0.11999999731779099
+      ],
+      "bounds_max": [
+        2.0053834915161133,
+        0.29396453499794006,
+        0.11999999731779099
+      ],
+      "triangles": 68,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "bell",
+      "label_zh": "钟",
+      "route": "CSG/mesh",
+      "techniques": [
+        "loft",
+        "spin"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/bell.glb",
+      "bounds_min": [
+        -0.6800000071525574,
+        -0.6800000071525574,
+        -0.18000000715255737
+      ],
+      "bounds_max": [
+        0.6800000071525574,
+        0.6800000071525574,
+        0.8199999928474426
+      ],
+      "triangles": 184,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "buttress",
+      "label_zh": "扶壁",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/buttress.glb",
+      "bounds_min": [
+        -0.3499999940395355,
+        -0.5,
+        0.0
+      ],
+      "bounds_max": [
+        0.3499999940395355,
+        0.5,
+        2.9200000762939453
+      ],
+      "triangles": 64,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "sdf_stone",
+      "label_zh": "SDF石块",
+      "route": "SDF",
+      "techniques": [
+        "SDF",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/sdf_stone.glb",
+      "bounds_min": [
+        -0.5076199173927307,
+        -0.3096891939640045,
+        5.908663069931208e-07
+      ],
+      "bounds_max": [
+        0.5122984647750854,
+        0.30966535210609436,
+        0.585598886013031
+      ],
+      "triangles": 1308,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "sdf_plinth",
+      "label_zh": "SDF石基",
+      "route": "SDF",
+      "techniques": [
+        "SDF",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/sdf_plinth.glb",
+      "bounds_min": [
+        -0.6499999761581421,
+        -0.6499999761581421,
+        0.0
+      ],
+      "bounds_max": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.5702083110809326
+      ],
+      "triangles": 2278,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "sdf_rock",
+      "label_zh": "SDF山石",
+      "route": "SDF",
+      "techniques": [
+        "SDF",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/sdf_rock.glb",
+      "bounds_min": [
+        -0.8630971312522888,
+        -0.5835732221603394,
+        1.9333949239808135e-05
+      ],
+      "bounds_max": [
+        0.803820788860321,
+        0.5836307406425476,
+        0.9417957067489624
+      ],
+      "triangles": 2400,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_bench",
+      "label_zh": "长椅",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_bench.glb",
+      "bounds_min": [
+        -1.100000023841858,
+        -0.32499998807907104,
+        0.0
+      ],
+      "bounds_max": [
+        1.100000023841858,
+        0.32499998807907104,
+        1.1299999952316284
+      ],
+      "triangles": 200,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_planter",
+      "label_zh": "花盆",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_planter.glb",
+      "bounds_min": [
+        -0.5199999809265137,
+        -0.49454936385154724,
+        0.0
+      ],
+      "bounds_max": [
+        0.5199999809265137,
+        0.49454939365386963,
+        1.4500000476837158
+      ],
+      "triangles": 192,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_crate",
+      "label_zh": "货箱",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_crate.glb",
+      "bounds_min": [
+        -0.5,
+        -0.5249999761581421,
+        -0.02500000037252903
+      ],
+      "bounds_max": [
+        0.5,
+        0.5249999761581421,
+        1.024999976158142
+      ],
+      "triangles": 68,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_barrel",
+      "label_zh": "木桶",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_barrel.glb",
+      "bounds_min": [
+        -0.49000000953674316,
+        -0.49000000953674316,
+        0.0
+      ],
+      "bounds_max": [
+        0.49000000953674316,
+        0.49000000953674316,
+        1.100000023841858
+      ],
+      "triangles": 308,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_grave",
+      "label_zh": "墓碑",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_grave.glb",
+      "bounds_min": [
+        -0.4000000059604645,
+        -0.2750000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        0.4000000059604645,
+        0.2750000059604645,
+        1.2949999570846558
+      ],
+      "triangles": 132,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_dummy",
+      "label_zh": "训练假人",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_dummy.glb",
+      "bounds_min": [
+        -0.7250000238418579,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        0.7250000238418579,
+        0.4000000059604645,
+        2.1500000953674316
+      ],
+      "triangles": 156,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_rack",
+      "label_zh": "武器架",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_rack.glb",
+      "bounds_min": [
+        -1.0,
+        -0.25,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        0.25,
+        2.549999952316284
+      ],
+      "triangles": 186,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_altar",
+      "label_zh": "祭台",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_altar.glb",
+      "bounds_min": [
+        -1.25,
+        -0.6800000071525574,
+        0.0
+      ],
+      "bounds_max": [
+        1.25,
+        0.6800000071525574,
+        1.2575000524520874
+      ],
+      "triangles": 144,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_lamp",
+      "label_zh": "灯柱",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_lamp.glb",
+      "bounds_min": [
+        -0.36000001430511475,
+        -0.36000001430511475,
+        0.0
+      ],
+      "bounds_max": [
+        0.36000001430511475,
+        0.36000001430511475,
+        3.0999999046325684
+      ],
+      "triangles": 164,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_fountain",
+      "label_zh": "喷泉",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_fountain.glb",
+      "bounds_min": [
+        -1.600000023841858,
+        -1.600000023841858,
+        0.0
+      ],
+      "bounds_max": [
+        1.600000023841858,
+        1.600000023841858,
+        1.9800000190734863
+      ],
+      "triangles": 360,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_cypress",
+      "label_zh": "柏树",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_cypress.glb",
+      "bounds_min": [
+        -0.6306782364845276,
+        -0.6824495196342468,
+        0.0
+      ],
+      "bounds_max": [
+        0.699999988079071,
+        0.6824495196342468,
+        4.099999904632568
+      ],
+      "triangles": 184,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "prop_banner",
+      "label_zh": "旗帜",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/prop_banner.glb",
+      "bounds_min": [
+        -0.6499999761581421,
+        -0.05000002682209015,
+        0.75
+      ],
+      "bounds_max": [
+        0.6499999761581421,
+        0.05000002682209015,
+        2.450000047683716
+      ],
+      "triangles": 72,
+      "degenerate_triangles": 0
+    }
+  ],
+  "assemblies": [
+    "chapel",
+    "bell_tower",
+    "cloister",
+    "courtyard_gate"
+  ],
+  "placements": [
+    {
+      "assembly": "cloister",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "arcade_4",
+      "position_blender": [
+        0,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "arcade_4",
+      "position_blender": [
+        0,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "roof_gable_4x4",
+      "position_blender": [
+        0,
+        0,
+        3
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        0,
+        4.36
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        4,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "arcade_4",
+      "position_blender": [
+        4,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "arcade_4",
+      "position_blender": [
+        4,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "roof_gable_4x4",
+      "position_blender": [
+        4,
+        0,
+        3
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        4,
+        0,
+        4.36
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        8,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "arcade_4",
+      "position_blender": [
+        8,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "arcade_4",
+      "position_blender": [
+        8,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "roof_gable_4x4",
+      "position_blender": [
+        8,
+        0,
+        3
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        8,
+        0,
+        4.36
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        -2,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        -2,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        2,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        2,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        6,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        6,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        10,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "column_3",
+      "position_blender": [
+        10,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "cloister",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        -2,
+        0,
+        3
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "cloister",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        10,
+        0,
+        3
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        -2,
+        -6.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        -2,
+        -2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        -2,
+        2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        -2,
+        6.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        2,
+        -6.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        2,
+        -2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        2,
+        2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "plinth_4",
+      "position_blender": [
+        2,
+        6.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_door_4",
+      "position_blender": [
+        0,
+        -8.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        0,
+        -8.02,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "door_wood_double",
+      "position_blender": [
+        0,
+        -8.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        -3,
+        -8.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        3,
+        -8.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "gable_rose_8",
+      "position_blender": [
+        0,
+        -8.0,
+        3.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "rose_frame",
+      "position_blender": [
+        0,
+        -8.25,
+        4.79
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "rose_glass",
+      "position_blender": [
+        0,
+        -8.26,
+        4.79
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_door_4",
+      "position_blender": [
+        0,
+        8.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        0,
+        8.02,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        -3,
+        8.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        3,
+        8.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "gable_rose_8",
+      "position_blender": [
+        0,
+        8.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "rose_frame",
+      "position_blender": [
+        0,
+        8.25,
+        4.79
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "rose_glass",
+      "position_blender": [
+        0,
+        8.26,
+        4.79
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -4,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -4,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -4,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -4,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -4,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -4,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        -8.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        0.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        8.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        4,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        4,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        4,
+        -6.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "wall_window_4",
+      "position_blender": [
+        4,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        4,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        4,
+        6.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        -8.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        0.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        8.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        0,
+        -6.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        -6.0,
+        6.319999999999999
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        0,
+        -2.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        -2.0,
+        6.319999999999999
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        0,
+        2.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        2.0,
+        6.319999999999999
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        0,
+        6.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        6.0,
+        6.319999999999999
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "stairs_4",
+      "position_blender": [
+        0,
+        8.65,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_altar",
+      "position_blender": [
+        0,
+        -6.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        -2.2,
+        -3.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        2.2,
+        -3.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        -2.2,
+        -1.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        2.2,
+        -1.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        -2.2,
+        1.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        2.2,
+        1.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        -2.2,
+        3.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        2.2,
+        3.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        -2.2,
+        5.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel",
+      "asset": "prop_bench",
+      "position_blender": [
+        2.2,
+        5.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "plinth_4",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_door_4",
+      "position_blender": [
+        0,
+        2,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        0,
+        2,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        0,
+        -2,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        0,
+        -2,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        0,
+        -2,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        2,
+        0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        2,
+        0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        2,
+        0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -2,
+        0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -2,
+        0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -2,
+        0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        0,
+        2,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        0,
+        2,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        0,
+        2,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        0,
+        -2,
+        3.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        0,
+        -2,
+        3.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        0,
+        -2,
+        3.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        2,
+        0,
+        3.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        2,
+        0,
+        3.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        2,
+        0,
+        3.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -2,
+        0,
+        3.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -2,
+        0,
+        3.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -2,
+        0,
+        3.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "column_3",
+      "position_blender": [
+        -2,
+        -2,
+        6.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "column_3",
+      "position_blender": [
+        -2,
+        2,
+        6.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "column_3",
+      "position_blender": [
+        2,
+        -2,
+        6.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "column_3",
+      "position_blender": [
+        2,
+        2,
+        6.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "arcade_4",
+      "position_blender": [
+        0,
+        2,
+        6.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "arcade_4",
+      "position_blender": [
+        0,
+        -2,
+        6.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "arcade_4",
+      "position_blender": [
+        2,
+        0,
+        6.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "arcade_4",
+      "position_blender": [
+        -2,
+        0,
+        6.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "roof_gable_4x4",
+      "position_blender": [
+        0,
+        0,
+        9.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        0,
+        -2,
+        9.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        0,
+        2,
+        9.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        0,
+        10.96
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bell_tower",
+      "asset": "bell",
+      "position_blender": [
+        0,
+        0,
+        7.7
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "wall_door_4",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "column_3",
+      "position_blender": [
+        -6,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "column_3",
+      "position_blender": [
+        -2,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "column_3",
+      "position_blender": [
+        2,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "column_3",
+      "position_blender": [
+        6,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "railing_stone_4",
+      "position_blender": [
+        -4,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "railing_stone_4",
+      "position_blender": [
+        4,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "roof_gable_4x4",
+      "position_blender": [
+        0,
+        0,
+        3
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        0,
+        -2,
+        3
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        0,
+        2,
+        3
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "courtyard_gate",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        0,
+        4.36
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_fountain",
+      "position_blender": [
+        -4,
+        13,
+        0.225
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_planter",
+      "position_blender": [
+        -3,
+        9,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_planter",
+      "position_blender": [
+        3,
+        9,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_cypress",
+      "position_blender": [
+        7,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_cypress",
+      "position_blender": [
+        7,
+        -5,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_bench",
+      "position_blender": [
+        -9,
+        15,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_lamp",
+      "position_blender": [
+        -4,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "prop_lamp",
+      "position_blender": [
+        6,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -6,
+        10,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -6,
+        14,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        10,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        14,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        10,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Demo",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        14,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bridge_array_curve",
+      "asset": "bridge_segment_4",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "bridge_array_curve.001",
+      "asset": "bridge_segment_4",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Pipeline",
+      "asset": "wall_door_4",
+      "position_blender": [
+        10,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Pipeline",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        10,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "wall_plain_4",
+      "position_blender": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        6,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "wall_door_4",
+      "position_blender": [
+        12,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "wall_window_4",
+      "position_blender": [
+        18,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        24,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        30,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        36,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "door_wood_double",
+      "position_blender": [
+        0,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "door_wood_plain",
+      "position_blender": [
+        6,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "door_stone",
+      "position_blender": [
+        12,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "rose_frame",
+      "position_blender": [
+        18,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "rose_glass",
+      "position_blender": [
+        24,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "column_3",
+      "position_blender": [
+        30,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "railing_wood_4",
+      "position_blender": [
+        36,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "railing_stone_4",
+      "position_blender": [
+        0,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "fence_post",
+      "position_blender": [
+        6,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "arcade_4",
+      "position_blender": [
+        12,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        18,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "roof_gable_4x4",
+      "position_blender": [
+        24,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        30,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "gable_rose_8",
+      "position_blender": [
+        36,
+        12,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "gable_plain_4",
+      "position_blender": [
+        0,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        6,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "floor_wood_4",
+      "position_blender": [
+        12,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "plinth_4",
+      "position_blender": [
+        18,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "stairs_4",
+      "position_blender": [
+        24,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "chimney",
+      "position_blender": [
+        30,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "dome_frame_4",
+      "position_blender": [
+        36,
+        18,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "dome_glass_4",
+      "position_blender": [
+        0,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "bridge_segment_4",
+      "position_blender": [
+        6,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "balcony_4",
+      "position_blender": [
+        12,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "sagging_beam_4",
+      "position_blender": [
+        18,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "bell",
+      "position_blender": [
+        24,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "buttress",
+      "position_blender": [
+        30,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "sdf_stone",
+      "position_blender": [
+        36,
+        24,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "sdf_plinth",
+      "position_blender": [
+        0,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "sdf_rock",
+      "position_blender": [
+        6,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_bench",
+      "position_blender": [
+        12,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_planter",
+      "position_blender": [
+        18,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_crate",
+      "position_blender": [
+        24,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_barrel",
+      "position_blender": [
+        30,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_grave",
+      "position_blender": [
+        36,
+        30,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_dummy",
+      "position_blender": [
+        0,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_rack",
+      "position_blender": [
+        6,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_altar",
+      "position_blender": [
+        12,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_lamp",
+      "position_blender": [
+        18,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_fountain",
+      "position_blender": [
+        24,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_cypress",
+      "position_blender": [
+        30,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "ABY_Catalog",
+      "asset": "prop_banner",
+      "position_blender": [
+        36,
+        36,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "plinth_4",
+      "position_blender": [
+        -2,
+        -2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "plinth_4",
+      "position_blender": [
+        -2,
+        2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        -2,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "plinth_4",
+      "position_blender": [
+        2,
+        -2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "plinth_4",
+      "position_blender": [
+        2,
+        2.0,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "floor_stone_4",
+      "position_blender": [
+        2,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_door_4",
+      "position_blender": [
+        0,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        0,
+        -4.02,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "door_wood_double",
+      "position_blender": [
+        0,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        -3,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        3,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "gable_rose_8",
+      "position_blender": [
+        0,
+        -4.0,
+        3.6
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "rose_frame",
+      "position_blender": [
+        0,
+        -4.25,
+        4.79
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "rose_glass",
+      "position_blender": [
+        0,
+        -4.26,
+        4.79
+      ],
+      "rotation_z_deg": 180
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_door_4",
+      "position_blender": [
+        0,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "door_arch_frame",
+      "position_blender": [
+        0,
+        4.02,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        -3,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_plain_2",
+      "position_blender": [
+        3,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "gable_rose_8",
+      "position_blender": [
+        0,
+        4.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "rose_frame",
+      "position_blender": [
+        0,
+        4.25,
+        4.79
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "rose_glass",
+      "position_blender": [
+        0,
+        4.26,
+        4.79
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_window_4",
+      "position_blender": [
+        -4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        -4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        -4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        0.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "buttress",
+      "position_blender": [
+        -4.25,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_window_4",
+      "position_blender": [
+        4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        4,
+        -2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "wall_window_4",
+      "position_blender": [
+        4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_frame",
+      "position_blender": [
+        4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "window_arch_glass",
+      "position_blender": [
+        4,
+        2.0,
+        0.6
+      ],
+      "rotation_z_deg": -90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        -4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        0.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "buttress",
+      "position_blender": [
+        4.25,
+        4.0,
+        0.6
+      ],
+      "rotation_z_deg": 90
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        0,
+        -2.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        -2.0,
+        6.319999999999999
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "roof_gable_8x4",
+      "position_blender": [
+        0,
+        2.0,
+        3.6
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "roof_ridge_4",
+      "position_blender": [
+        0,
+        2.0,
+        6.319999999999999
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "stairs_4",
+      "position_blender": [
+        0,
+        4.65,
+        0
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "prop_altar",
+      "position_blender": [
+        0,
+        -2.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "prop_bench",
+      "position_blender": [
+        -2.2,
+        1.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    },
+    {
+      "assembly": "chapel_small",
+      "asset": "prop_bench",
+      "position_blender": [
+        2.2,
+        1.0,
+        0.825
+      ],
+      "rotation_z_deg": 0
+    }
+  ],
+  "production_status": "source and model prototype; not installed into live map"
+}

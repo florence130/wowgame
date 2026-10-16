@@ -1,0 +1,688 @@
+{
+ "version": 1,
+ "grid": {
+  "bay_m": 4.4,
+  "ground_floor_m": 5.6,
+  "floor_m": 4.4,
+  "gable_depth_m": 14.0,
+  "gable_rise_m": 5.469,
+  "axes": "glTF/Godot：沿 +X 展开 0..bay，外立面朝 +Z，Y 向上，进深为 -Z；原点在左下角墙中心线（屋面 / 山墙原点在墙顶）",
+  "materials": "S|槽|类型|贴图|米 = 实例着色槽；K|… 固定色；N|RRGGBB 窗格（夜间发光）"
+ },
+ "pieces": {
+  "sk_gf_shop": {
+   "category": "底层",
+   "note": "商铺开间：石墙裙 + 大橱窗 + 招牌 + 遮阳篷 + 壁柱",
+   "size_m": [
+    4.4,
+    2.27,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -1.72,
+    0.0
+   ],
+   "tris": 760,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_uf_half": {
+   "category": "标准层",
+   "note": "木筋灰泥墙 + 窗板窗",
+   "size_m": [
+    4.4,
+    0.6,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "tris": 572,
+   "methods": [
+    "bridge",
+    "mirror",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_roof_gable": {
+   "category": "屋顶",
+   "note": "双坡屋面一个开间（进深 14m 名义，Y/Z 同比缩放）",
+   "size_m": [
+    4.42,
+    15.7,
+    6.5
+   ],
+   "min_m": [
+    -0.01,
+    -0.82,
+    -0.83
+   ],
+   "tris": 60,
+   "methods": [
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "sk_gf_arch": {
+   "category": "底层",
+   "note": "拱窗开间：砖石墙 + 拱洞 + 拱券线脚 + 拱心石",
+   "size_m": [
+    4.4,
+    0.6,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "tris": 545,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_gf_door": {
+   "category": "底层",
+   "note": "拱门开间：拱形木门 + 铁箍 + 拱券线脚 + 门前石阶",
+   "size_m": [
+    4.4,
+    0.95,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.8,
+    0.0
+   ],
+   "tris": 536,
+   "methods": [
+    "bridge",
+    "curve_bevel",
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "sk_gf_solid": {
+   "category": "底层",
+   "note": "实墙开间（侧 / 背墙）",
+   "size_m": [
+    4.4,
+    0.42,
+    5.6
+   ],
+   "min_m": [
+    0.0,
+    -0.27,
+    0.0
+   ],
+   "tris": 28,
+   "methods": [
+    "profile_extrude",
+    "solidify"
+   ]
+  },
+  "sk_uf_plain": {
+   "category": "标准层",
+   "note": "灰泥墙 + 石窗套 + 窗板 + 小檐",
+   "size_m": [
+    4.4,
+    0.6,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    -0.0
+   ],
+   "tris": 528,
+   "methods": [
+    "bridge",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_uf_brick": {
+   "category": "标准层",
+   "note": "红砖墙 + 石过梁窗",
+   "size_m": [
+    4.4,
+    0.6,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    -0.0
+   ],
+   "tris": 512,
+   "methods": [
+    "bridge",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_uf_balc": {
+   "category": "标准层",
+   "note": "落地窗 + 铁艺小阳台",
+   "size_m": [
+    4.4,
+    1.15,
+    5.1
+   ],
+   "min_m": [
+    0.0,
+    -1.0,
+    -0.7
+   ],
+   "tris": 744,
+   "methods": [
+    "array",
+    "bridge",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_uf_blank": {
+   "category": "标准层",
+   "note": "无窗灰泥墙",
+   "size_m": [
+    4.4,
+    0.3,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "tris": 12,
+   "methods": [
+    "solidify"
+   ]
+  },
+  "sk_uf_side": {
+   "category": "标准层",
+   "note": "侧 / 背墙带小窗",
+   "size_m": [
+    4.4,
+    0.6,
+    4.4
+   ],
+   "min_m": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "tris": 464,
+   "methods": [
+    "bridge",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_band": {
+   "category": "线脚",
+   "note": "层间腰线",
+   "size_m": [
+    4.4,
+    0.24,
+    0.2
+   ],
+   "min_m": [
+    0.0,
+    -0.37,
+    0.0
+   ],
+   "tris": 16,
+   "methods": [
+    "profile_extrude"
+   ]
+  },
+  "sk_eave": {
+   "category": "线脚",
+   "note": "檐口 + 牛腿",
+   "size_m": [
+    4.4,
+    0.37,
+    0.7
+   ],
+   "min_m": [
+    0.0,
+    -0.47,
+    -0.3
+   ],
+   "tris": 68,
+   "methods": [
+    "array",
+    "profile_extrude"
+   ]
+  },
+  "sk_gable_end": {
+   "category": "屋顶",
+   "note": "木筋山墙（朝 -X）",
+   "size_m": [
+    0.47,
+    14.55,
+    5.66
+   ],
+   "min_m": [
+    -0.32,
+    -0.27,
+    -0.1
+   ],
+   "tris": 298,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_dormer": {
+   "category": "屋顶",
+   "note": "双坡老虎窗",
+   "size_m": [
+    2.28,
+    1.55,
+    2.36
+   ],
+   "min_m": [
+    -1.14,
+    -0.35,
+    0.0
+   ],
+   "tris": 129,
+   "methods": [
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_chimney": {
+   "category": "屋顶",
+   "note": "砖烟囱",
+   "size_m": [
+    1.2,
+    1.2,
+    3.15
+   ],
+   "min_m": [
+    -0.6,
+    -0.6,
+    0.0
+   ],
+   "tris": 48,
+   "methods": [
+    "mirror",
+    "profile_extrude"
+   ]
+  },
+  "sk_mansard_bay": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面一个开间",
+   "size_m": [
+    4.4,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 68,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude"
+   ]
+  },
+  "sk_mansard_L": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面左端开间（45° 斜接外角）",
+   "size_m": [
+    5.17,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    -0.77,
+    -0.77,
+    -0.38
+   ],
+   "tris": 80,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_mansard_R": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面右端开间（45° 斜接外角）",
+   "size_m": [
+    5.17,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 80,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_mansard_dormer": {
+   "category": "屋顶",
+   "note": "芒萨尔老虎窗",
+   "size_m": [
+    1.85,
+    0.72,
+    2.45
+   ],
+   "min_m": [
+    -0.93,
+    -0.38,
+    0.0
+   ],
+   "tris": 108,
+   "methods": [
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_roof_flat": {
+   "category": "屋顶",
+   "note": "芒萨尔顶面薄板",
+   "size_m": [
+    4.4,
+    4.4,
+    0.16
+   ],
+   "min_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "tris": 12,
+   "methods": [
+    "profile_extrude"
+   ]
+  },
+  "demo_half_timber": {
+   "category": "示范建筑",
+   "note": "示范楼",
+   "size_m": [
+    22.9,
+    16.6,
+    22.12
+   ],
+   "min_m": [
+    -0.45,
+    -1.72,
+    0.0
+   ],
+   "tris": 16112,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "demo_plaster_row": {
+   "category": "示范建筑",
+   "note": "示范楼",
+   "size_m": [
+    18.5,
+    14.48,
+    21.34
+   ],
+   "min_m": [
+    -0.45,
+    -1.72,
+    0.0
+   ],
+   "tris": 13624,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "demo_mansard_front": {
+   "category": "示范建筑",
+   "note": "示范楼",
+   "size_m": [
+    23.54,
+    3.38,
+    18.43
+   ],
+   "min_m": [
+    -0.77,
+    -1.72,
+    0.0
+   ],
+   "tris": 10730,
+   "methods": [
+    "array",
+    "bridge",
+    "curve_bevel",
+    "mirror",
+    "profile_extrude",
+    "solidify",
+    "vertex"
+   ]
+  },
+  "sk_mansard_L135": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面端部开间（L 端，转角室内夹角 135° 斜接）",
+   "size_m": [
+    4.72,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    -0.32,
+    -0.77,
+    -0.38
+   ],
+   "tris": 80,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_mansard_R90": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面端部开间（R 端，转角室内夹角 90° 斜接）",
+   "size_m": [
+    5.17,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 80,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_hip_bay": {
+   "category": "屋顶",
+   "note": "四坡屋面裙边一个开间（陶瓦，顶部另封锥顶）",
+   "size_m": [
+    4.4,
+    3.77,
+    3.38
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 40,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude"
+   ]
+  },
+  "sk_hip_L135": {
+   "category": "屋顶",
+   "note": "四坡屋面裙边端部开间（L 端，135° 斜接）",
+   "size_m": [
+    4.72,
+    3.77,
+    3.38
+   ],
+   "min_m": [
+    -0.32,
+    -0.77,
+    -0.38
+   ],
+   "tris": 46,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_hip_R90": {
+   "category": "屋顶",
+   "note": "四坡屋面裙边端部开间（R 端，90° 斜接）",
+   "size_m": [
+    5.17,
+    3.77,
+    3.38
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 46,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_mansard_L90": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面端部开间（L 端，转角室内夹角 90° 斜接）",
+   "size_m": [
+    5.17,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    -0.77,
+    -0.77,
+    -0.38
+   ],
+   "tris": 80,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_mansard_R135": {
+   "category": "屋顶",
+   "note": "芒萨尔屋面端部开间（R 端，转角室内夹角 135° 斜接）",
+   "size_m": [
+    4.72,
+    2.43,
+    4.41
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 80,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_hip_L90": {
+   "category": "屋顶",
+   "note": "四坡屋面裙边端部开间（L 端，90° 斜接）",
+   "size_m": [
+    5.17,
+    3.77,
+    3.38
+   ],
+   "min_m": [
+    -0.77,
+    -0.77,
+    -0.38
+   ],
+   "tris": 46,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  },
+  "sk_hip_R135": {
+   "category": "屋顶",
+   "note": "四坡屋面裙边端部开间（R 端，135° 斜接）",
+   "size_m": [
+    4.72,
+    3.77,
+    3.38
+   ],
+   "min_m": [
+    0.0,
+    -0.77,
+    -0.38
+   ],
+   "tris": 46,
+   "methods": [
+    "curve_bevel",
+    "profile_extrude",
+    "vertex"
+   ]
+  }
+ }
+}

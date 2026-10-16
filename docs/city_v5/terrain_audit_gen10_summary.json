@@ -1,0 +1,3875 @@
+{
+  "scope": "Read-only actual saved TerrainData.sample() along road centers, both carriageway edges and both sidewalk centers, spacing <=2m. No city or Player instancing; not runtime traversal acceptance.",
+  "terrain_sha256": "fdc90037bcd805b1cea03bbd1aec78d462035ea4487f412b734a9a13474d0fb3",
+  "layout_sha256": "ef7ec0ca9419c693dda241de61e67cd62d368e97cc84c0ef564cf861c8c48b38",
+  "scene_sha256": "1287e7a674ffdceb20708fc62d859798c54895661f497eb7eb15fe452f981169",
+  "road_count": 40,
+  "sample_count": 31710,
+  "worst_by_road_lane": [
+    {
+      "a": [
+        -747.0,
+        36.427,
+        656.5
+      ],
+      "b": [
+        -745.0,
+        30.134,
+        656.5
+      ],
+      "degrees": 72.37,
+      "lane": "walk_left",
+      "nearby_buildings": [],
+      "percent": 314.66,
+      "road": "cathedral_front",
+      "segment": 1
+    },
+    {
+      "a": [
+        -747.0,
+        36.451,
+        654.75
+      ],
+      "b": [
+        -745.0,
+        30.256,
+        654.75
+      ],
+      "degrees": 72.11,
+      "lane": "car_left",
+      "nearby_buildings": [],
+      "percent": 309.76,
+      "road": "cathedral_front",
+      "segment": 1
+    },
+    {
+      "a": [
+        -747.0,
+        36.492,
+        650.0
+      ],
+      "b": [
+        -745.0,
+        30.461,
+        650.0
+      ],
+      "degrees": 71.65,
+      "lane": "center",
+      "nearby_buildings": [],
+      "percent": 301.57,
+      "road": "cathedral_front",
+      "segment": 1
+    },
+    {
+      "a": [
+        -747.0,
+        36.518,
+        645.25
+      ],
+      "b": [
+        -745.0,
+        30.59,
+        645.25
+      ],
+      "degrees": 71.36,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 296.41,
+      "road": "cathedral_front",
+      "segment": 1
+    },
+    {
+      "a": [
+        -747.0,
+        36.536,
+        643.5
+      ],
+      "b": [
+        -745.0,
+        30.68,
+        643.5
+      ],
+      "degrees": 71.14,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "percent": 292.8,
+      "road": "cathedral_front",
+      "segment": 1
+    },
+    {
+      "a": [
+        -680.137,
+        38.021,
+        547.975
+      ],
+      "b": [
+        -681.006,
+        35.876,
+        549.714
+      ],
+      "degrees": 47.8,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 42.41,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 46.06,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 110.28,
+      "road": "terrace_lane",
+      "segment": 2
+    },
+    {
+      "a": [
+        -888.718,
+        43.263,
+        548.197
+      ],
+      "b": [
+        -888.642,
+        41.182,
+        550.166
+      ],
+      "degrees": 46.56,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -927.0,
+            569.8
+          ],
+          "center_distance": 43.52,
+          "declared_grade": 39.1,
+          "id": "west_sea_3"
+        },
+        {
+          "c": [
+            -862.0,
+            513.0
+          ],
+          "center_distance": 44.95,
+          "declared_grade": null,
+          "id": "westlane_0"
+        },
+        {
+          "c": [
+            -927.0,
+            516.6
+          ],
+          "center_distance": 50.3,
+          "declared_grade": 44.8,
+          "id": "west_sea_1"
+        }
+      ],
+      "percent": 105.58,
+      "road": "west_highstreet",
+      "segment": 1
+    },
+    {
+      "a": [
+        -890.466,
+        43.177,
+        548.264
+      ],
+      "b": [
+        -890.391,
+        41.182,
+        550.234
+      ],
+      "degrees": 45.34,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -927.0,
+            569.8
+          ],
+          "center_distance": 41.95,
+          "declared_grade": 39.1,
+          "id": "west_sea_3"
+        },
+        {
+          "c": [
+            -862.0,
+            513.0
+          ],
+          "center_distance": 46.07,
+          "declared_grade": null,
+          "id": "westlane_0"
+        },
+        {
+          "c": [
+            -927.0,
+            516.6
+          ],
+          "center_distance": 49.02,
+          "declared_grade": 44.8,
+          "id": "west_sea_1"
+        }
+      ],
+      "percent": 101.2,
+      "road": "west_highstreet",
+      "segment": 1
+    },
+    {
+      "a": [
+        -784.25,
+        39.72,
+        568.0
+      ],
+      "b": [
+        -784.25,
+        37.848,
+        570.0
+      ],
+      "degrees": 43.1,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 93.57,
+      "road": "palace_approach",
+      "segment": 4
+    },
+    {
+      "a": [
+        -782.0,
+        46.75,
+        530.0
+      ],
+      "b": [
+        -782.0,
+        44.977,
+        532.0
+      ],
+      "degrees": 41.56,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -757.0,
+            516.0
+          ],
+          "center_distance": 29.15,
+          "declared_grade": 43.0,
+          "id": "merchant_lower_0"
+        },
+        {
+          "c": [
+            -817.4,
+            516.0
+          ],
+          "center_distance": 38.45,
+          "declared_grade": null,
+          "id": "west_south_2"
+        }
+      ],
+      "percent": 88.67,
+      "road": "palace_approach",
+      "segment": 3
+    },
+    {
+      "a": [
+        -896.212,
+        42.909,
+        548.485
+      ],
+      "b": [
+        -896.136,
+        41.182,
+        550.455
+      ],
+      "degrees": 41.23,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -927.0,
+            569.8
+          ],
+          "center_distance": 36.93,
+          "declared_grade": 39.1,
+          "id": "west_sea_3"
+        },
+        {
+          "c": [
+            -927.0,
+            516.6
+          ],
+          "center_distance": 45.06,
+          "declared_grade": 44.8,
+          "id": "west_sea_1"
+        },
+        {
+          "c": [
+            -862.0,
+            513.0
+          ],
+          "center_distance": 49.98,
+          "declared_grade": null,
+          "id": "westlane_0"
+        }
+      ],
+      "percent": 87.63,
+      "road": "west_highstreet",
+      "segment": 1
+    },
+    {
+      "a": [
+        -370.0,
+        30.668,
+        439.0
+      ],
+      "b": [
+        -372.0,
+        32.4,
+        439.0
+      ],
+      "degrees": 40.9,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 37.64,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 86.62,
+      "road": "east_crown",
+      "segment": 4
+    },
+    {
+      "a": [
+        -678.0,
+        48.943,
+        461.0
+      ],
+      "b": [
+        -680.0,
+        50.583,
+        461.0
+      ],
+      "degrees": 39.35,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -644.6,
+            489.0
+          ],
+          "center_distance": 44.35,
+          "declared_grade": null,
+          "id": "west_middle_4"
+        }
+      ],
+      "percent": 82.0,
+      "road": "east_crown",
+      "segment": 6
+    },
+    {
+      "a": [
+        -795.75,
+        39.782,
+        568.0
+      ],
+      "b": [
+        -795.75,
+        38.16,
+        570.0
+      ],
+      "degrees": 39.04,
+      "lane": "car_left",
+      "nearby_buildings": [],
+      "percent": 81.1,
+      "road": "palace_approach",
+      "segment": 4
+    },
+    {
+      "a": [
+        -678.572,
+        37.099,
+        548.758
+      ],
+      "b": [
+        -679.441,
+        35.565,
+        550.497
+      ],
+      "degrees": 38.26,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 44.01,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 47.38,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 78.86,
+      "road": "terrace_lane",
+      "segment": 2
+    },
+    {
+      "a": [
+        -370.0,
+        30.94,
+        441.25
+      ],
+      "b": [
+        -372.0,
+        32.455,
+        441.25
+      ],
+      "degrees": 37.13,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 39.4,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 75.72,
+      "road": "east_crown",
+      "segment": 4
+    },
+    {
+      "a": [
+        -790.0,
+        39.477,
+        568.0
+      ],
+      "b": [
+        -790.0,
+        38.0,
+        570.0
+      ],
+      "degrees": 36.44,
+      "lane": "center",
+      "nearby_buildings": [],
+      "percent": 73.83,
+      "road": "palace_approach",
+      "segment": 4
+    },
+    {
+      "a": [
+        -798.0,
+        46.75,
+        530.0
+      ],
+      "b": [
+        -798.0,
+        45.289,
+        532.0
+      ],
+      "degrees": 36.15,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -817.4,
+            516.0
+          ],
+          "center_distance": 24.52,
+          "declared_grade": null,
+          "id": "west_south_2"
+        },
+        {
+          "c": [
+            -757.0,
+            516.0
+          ],
+          "center_distance": 43.66,
+          "declared_grade": 43.0,
+          "id": "merchant_lower_0"
+        }
+      ],
+      "percent": 73.05,
+      "road": "palace_approach",
+      "segment": 3
+    },
+    {
+      "a": [
+        -678.0,
+        49.183,
+        458.75
+      ],
+      "b": [
+        -680.0,
+        50.583,
+        458.75
+      ],
+      "degrees": 34.99,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -644.6,
+            489.0
+          ],
+          "center_distance": 45.81,
+          "declared_grade": null,
+          "id": "west_middle_4"
+        }
+      ],
+      "percent": 70.0,
+      "road": "east_crown",
+      "segment": 6
+    },
+    {
+      "a": [
+        -710.0,
+        31.6,
+        584.75
+      ],
+      "b": [
+        -708.0,
+        30.22,
+        584.75
+      ],
+      "degrees": 34.61,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 28.64,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        },
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 41.9,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 69.02,
+      "road": "west_cross",
+      "segment": 1
+    },
+    {
+      "a": [
+        -674.348,
+        37.126,
+        548.696
+      ],
+      "b": [
+        -675.217,
+        35.913,
+        550.435
+      ],
+      "degrees": 31.95,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 46.8,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 51.5,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 62.37,
+      "road": "terrace_lane",
+      "segment": 2
+    },
+    {
+      "a": [
+        -675.052,
+        32.425,
+        569.322
+      ],
+      "b": [
+        -673.206,
+        31.224,
+        568.629
+      ],
+      "degrees": 31.36,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 45.29,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 51.49,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 60.95,
+      "road": "west_cross",
+      "segment": 2
+    },
+    {
+      "a": [
+        -372.0,
+        23.502,
+        205.0
+      ],
+      "b": [
+        -370.0,
+        22.286,
+        205.0
+      ],
+      "degrees": 31.31,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -414.4,
+            235.0
+          ],
+          "center_distance": 52.76,
+          "declared_grade": 44.0,
+          "id": "academy_back_6"
+        }
+      ],
+      "percent": 60.83,
+      "road": "north_ring",
+      "segment": 2
+    },
+    {
+      "a": [
+        -360.0,
+        30.789,
+        438.0
+      ],
+      "b": [
+        -360.0,
+        32.0,
+        440.0
+      ],
+      "degrees": 31.19,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 45.45,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 60.55,
+      "road": "civic_west",
+      "segment": 1
+    },
+    {
+      "a": [
+        -372.0,
+        23.515,
+        209.75
+      ],
+      "b": [
+        -370.0,
+        22.349,
+        209.75
+      ],
+      "degrees": 30.25,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -414.4,
+            235.0
+          ],
+          "center_distance": 50.21,
+          "declared_grade": 44.0,
+          "id": "academy_back_6"
+        }
+      ],
+      "percent": 58.31,
+      "road": "north_ring",
+      "segment": 2
+    },
+    {
+      "a": [
+        -664.5,
+        39.309,
+        530.0
+      ],
+      "b": [
+        -664.5,
+        38.147,
+        532.0
+      ],
+      "degrees": 30.15,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 45.45,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -644.6,
+            489.0
+          ],
+          "center_distance": 46.48,
+          "declared_grade": null,
+          "id": "west_middle_4"
+        }
+      ],
+      "percent": 58.08,
+      "road": "terrace_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        -372.0,
+        23.519,
+        211.5
+      ],
+      "b": [
+        -370.0,
+        22.372,
+        211.5
+      ],
+      "degrees": 29.85,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -414.4,
+            235.0
+          ],
+          "center_distance": 49.35,
+          "declared_grade": 44.0,
+          "id": "academy_back_6"
+        }
+      ],
+      "percent": 57.39,
+      "road": "north_ring",
+      "segment": 2
+    },
+    {
+      "a": [
+        -666.25,
+        39.319,
+        530.0
+      ],
+      "b": [
+        -666.25,
+        38.184,
+        532.0
+      ],
+      "degrees": 29.58,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 43.8,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -644.6,
+            489.0
+          ],
+          "center_distance": 47.25,
+          "declared_grade": null,
+          "id": "west_middle_4"
+        }
+      ],
+      "percent": 56.76,
+      "road": "terrace_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        -627.667,
+        32.641,
+        549.683
+      ],
+      "b": [
+        -625.821,
+        33.655,
+        548.991
+      ],
+      "degrees": 27.23,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "percent": 51.45,
+      "road": "west_cross",
+      "segment": 2
+    },
+    {
+      "a": [
+        -902.109,
+        43.139,
+        544.766
+      ],
+      "b": [
+        -902.034,
+        42.158,
+        546.736
+      ],
+      "degrees": 26.45,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -927.0,
+            569.8
+          ],
+          "center_distance": 34.64,
+          "declared_grade": 39.1,
+          "id": "west_sea_3"
+        },
+        {
+          "c": [
+            -927.0,
+            516.6
+          ],
+          "center_distance": 38.36,
+          "declared_grade": 44.8,
+          "id": "west_sea_1"
+        },
+        {
+          "c": [
+            -862.0,
+            513.0
+          ],
+          "center_distance": 51.75,
+          "declared_grade": null,
+          "id": "westlane_0"
+        }
+      ],
+      "percent": 49.75,
+      "road": "west_highstreet",
+      "segment": 1
+    },
+    {
+      "a": [
+        -712.0,
+        31.553,
+        586.5
+      ],
+      "b": [
+        -710.0,
+        30.567,
+        586.5
+      ],
+      "degrees": 26.25,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 29.09,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        },
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 42.19,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 49.32,
+      "road": "west_cross",
+      "segment": 1
+    },
+    {
+      "a": [
+        -704.0,
+        30.623,
+        580.0
+      ],
+      "b": [
+        -702.0,
+        29.767,
+        580.0
+      ],
+      "degrees": 23.18,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 29.07,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        },
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 41.62,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 42.82,
+      "road": "west_cross",
+      "segment": 1
+    },
+    {
+      "a": [
+        -503.5,
+        34.898,
+        523.14
+      ],
+      "b": [
+        -503.5,
+        34.068,
+        525.116
+      ],
+      "degrees": 22.77,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -474.0,
+            510.0
+          ],
+          "center_distance": 32.71,
+          "declared_grade": null,
+          "id": "bath_south_0"
+        },
+        {
+          "c": [
+            -552.6,
+            510.0
+          ],
+          "center_distance": 51.09,
+          "declared_grade": null,
+          "id": "terrace_south_3"
+        }
+      ],
+      "percent": 41.98,
+      "road": "academy_lower",
+      "segment": 0
+    },
+    {
+      "a": [
+        -354.25,
+        25.222,
+        400.0
+      ],
+      "b": [
+        -354.25,
+        26.043,
+        402.0
+      ],
+      "degrees": 22.31,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 41.73,
+          "declared_grade": null,
+          "id": "westcore_5"
+        },
+        {
+          "c": [
+            -315.0,
+            370.0
+          ],
+          "center_distance": 50.02,
+          "declared_grade": 26.0,
+          "id": "portal"
+        }
+      ],
+      "percent": 41.04,
+      "road": "civic_west",
+      "segment": 1
+    },
+    {
+      "a": [
+        -352.5,
+        30.789,
+        440.0
+      ],
+      "b": [
+        -352.5,
+        31.598,
+        442.0
+      ],
+      "degrees": 22.02,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 52.6,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 40.44,
+      "road": "civic_west",
+      "segment": 1
+    },
+    {
+      "a": [
+        -367.5,
+        30.789,
+        440.0
+      ],
+      "b": [
+        -367.5,
+        31.598,
+        442.0
+      ],
+      "degrees": 22.02,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 41.44,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 40.44,
+      "road": "civic_west",
+      "segment": 1
+    },
+    {
+      "a": [
+        -505.25,
+        34.911,
+        523.14
+      ],
+      "b": [
+        -505.25,
+        34.119,
+        525.116
+      ],
+      "degrees": 21.82,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -474.0,
+            510.0
+          ],
+          "center_distance": 34.3,
+          "declared_grade": null,
+          "id": "bath_south_0"
+        },
+        {
+          "c": [
+            -552.6,
+            510.0
+          ],
+          "center_distance": 49.41,
+          "declared_grade": null,
+          "id": "terrace_south_3"
+        }
+      ],
+      "percent": 40.04,
+      "road": "academy_lower",
+      "segment": 0
+    },
+    {
+      "a": [
+        -510.0,
+        34.915,
+        523.14
+      ],
+      "b": [
+        -510.0,
+        34.147,
+        525.116
+      ],
+      "degrees": 21.23,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -474.0,
+            510.0
+          ],
+          "center_distance": 38.67,
+          "declared_grade": null,
+          "id": "bath_south_0"
+        },
+        {
+          "c": [
+            -552.6,
+            510.0
+          ],
+          "center_distance": 44.88,
+          "declared_grade": null,
+          "id": "terrace_south_3"
+        }
+      ],
+      "percent": 38.86,
+      "road": "academy_lower",
+      "segment": 0
+    },
+    {
+      "a": [
+        -365.75,
+        25.172,
+        398.0
+      ],
+      "b": [
+        -365.75,
+        25.945,
+        400.0
+      ],
+      "degrees": 21.12,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 31.25,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 38.64,
+      "road": "civic_west",
+      "segment": 1
+    },
+    {
+      "a": [
+        -370.0,
+        23.324,
+        198.5
+      ],
+      "b": [
+        -368.0,
+        22.58,
+        198.5
+      ],
+      "degrees": 20.41,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "percent": 37.2,
+      "road": "north_ring",
+      "segment": 2
+    },
+    {
+      "a": [
+        -902.873,
+        38.96,
+        570.44
+      ],
+      "b": [
+        -902.797,
+        38.278,
+        572.409
+      ],
+      "degrees": 19.08,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -927.0,
+            569.8
+          ],
+          "center_distance": 24.22,
+          "declared_grade": 39.1,
+          "id": "west_sea_3"
+        }
+      ],
+      "percent": 34.6,
+      "road": "west_highstreet",
+      "segment": 1
+    },
+    {
+      "a": [
+        -514.75,
+        34.954,
+        523.14
+      ],
+      "b": [
+        -514.75,
+        34.294,
+        525.116
+      ],
+      "degrees": 18.45,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -552.6,
+            510.0
+          ],
+          "center_distance": 40.4,
+          "declared_grade": null,
+          "id": "terrace_south_3"
+        },
+        {
+          "c": [
+            -474.0,
+            510.0
+          ],
+          "center_distance": 43.13,
+          "declared_grade": null,
+          "id": "bath_south_0"
+        }
+      ],
+      "percent": 33.36,
+      "road": "academy_lower",
+      "segment": 0
+    },
+    {
+      "a": [
+        -370.0,
+        32.0,
+        450.0
+      ],
+      "b": [
+        -372.0,
+        32.667,
+        450.0
+      ],
+      "degrees": 18.43,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 46.65,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "percent": 33.33,
+      "road": "east_crown",
+      "segment": 4
+    },
+    {
+      "a": [
+        -671.894,
+        13.978,
+        824.727
+      ],
+      "b": [
+        -670.682,
+        13.337,
+        826.242
+      ],
+      "degrees": 18.28,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -705.0,
+            840.8
+          ],
+          "center_distance": 37.03,
+          "declared_grade": 13.0,
+          "id": "dockwest_3"
+        }
+      ],
+      "percent": 33.03,
+      "road": "harbor_ramp",
+      "segment": 4
+    },
+    {
+      "a": [
+        -372.0,
+        23.642,
+        200.25
+      ],
+      "b": [
+        -370.0,
+        22.984,
+        200.25
+      ],
+      "degrees": 18.21,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 32.89,
+      "road": "north_ring",
+      "segment": 2
+    },
+    {
+      "a": [
+        -516.5,
+        34.957,
+        523.14
+      ],
+      "b": [
+        -516.5,
+        34.309,
+        525.116
+      ],
+      "degrees": 18.14,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -552.6,
+            510.0
+          ],
+          "center_distance": 38.77,
+          "declared_grade": null,
+          "id": "terrace_south_3"
+        },
+        {
+          "c": [
+            -474.0,
+            510.0
+          ],
+          "center_distance": 44.79,
+          "declared_grade": null,
+          "id": "bath_south_0"
+        }
+      ],
+      "percent": 32.75,
+      "road": "academy_lower",
+      "segment": 0
+    },
+    {
+      "a": [
+        -649.846,
+        13.234,
+        689.058
+      ],
+      "b": [
+        -648.417,
+        13.867,
+        687.677
+      ],
+      "degrees": 17.66,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "percent": 31.85,
+      "road": "north_quay",
+      "segment": 0
+    },
+    {
+      "a": [
+        182.5,
+        18.797,
+        697.442
+      ],
+      "b": [
+        182.5,
+        18.185,
+        699.419
+      ],
+      "degrees": 17.21,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "percent": 30.97,
+      "road": "east_embankment",
+      "segment": 5
+    },
+    {
+      "a": [
+        -672.048,
+        13.979,
+        827.336
+      ],
+      "b": [
+        -670.836,
+        13.381,
+        828.851
+      ],
+      "degrees": 17.13,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -705.0,
+            840.8
+          ],
+          "center_distance": 35.88,
+          "declared_grade": 13.0,
+          "id": "dockwest_3"
+        },
+        {
+          "c": [
+            -700.0,
+            875.0
+          ],
+          "center_distance": 54.92,
+          "declared_grade": 13.0,
+          "id": "warehouse"
+        }
+      ],
+      "percent": 30.82,
+      "road": "harbor_ramp",
+      "segment": 4
+    },
+    {
+      "a": [
+        13.25,
+        20.641,
+        523.14
+      ],
+      "b": [
+        13.25,
+        20.074,
+        525.116
+      ],
+      "degrees": 16.03,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            50.8,
+            514.0
+          ],
+          "center_distance": 38.89,
+          "declared_grade": 20.0,
+          "id": "market_southwall_1"
+        },
+        {
+          "c": [
+            44.0,
+            484.0
+          ],
+          "center_distance": 50.56,
+          "declared_grade": 26.0,
+          "id": "weapon_shop"
+        }
+      ],
+      "percent": 28.72,
+      "road": "bridge_station",
+      "segment": 0
+    },
+    {
+      "a": [
+        26.75,
+        20.641,
+        523.14
+      ],
+      "b": [
+        26.75,
+        20.074,
+        525.116
+      ],
+      "degrees": 16.03,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            50.8,
+            514.0
+          ],
+          "center_distance": 26.1,
+          "declared_grade": 20.0,
+          "id": "market_southwall_1"
+        },
+        {
+          "c": [
+            44.0,
+            484.0
+          ],
+          "center_distance": 43.68,
+          "declared_grade": 26.0,
+          "id": "weapon_shop"
+        }
+      ],
+      "percent": 28.72,
+      "road": "bridge_station",
+      "segment": 0
+    },
+    {
+      "a": [
+        235.0,
+        22.559,
+        503.182
+      ],
+      "b": [
+        235.0,
+        22.0,
+        505.152
+      ],
+      "degrees": 15.86,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            263.0,
+            483.0
+          ],
+          "center_distance": 35.1,
+          "declared_grade": 26.0,
+          "id": "market_eastwall_0"
+        },
+        {
+          "c": [
+            186.0,
+            491.0
+          ],
+          "center_distance": 50.74,
+          "declared_grade": 26.0,
+          "id": "cook"
+        }
+      ],
+      "percent": 28.4,
+      "road": "east_embankment",
+      "segment": 0
+    },
+    {
+      "a": [
+        180.75,
+        18.81,
+        695.465
+      ],
+      "b": [
+        180.75,
+        18.254,
+        697.442
+      ],
+      "degrees": 15.71,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 28.12,
+      "road": "east_embankment",
+      "segment": 5
+    },
+    {
+      "a": [
+        -727.631,
+        20.768,
+        727.127
+      ],
+      "b": [
+        -727.006,
+        20.23,
+        729.002
+      ],
+      "degrees": 15.22,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -695.0,
+            723.0
+          ],
+          "center_distance": 32.71,
+          "declared_grade": 13.0,
+          "id": "dockwest_0"
+        }
+      ],
+      "percent": 27.21,
+      "road": "harbor_ramp",
+      "segment": 2
+    },
+    {
+      "a": [
+        20.0,
+        20.63,
+        521.163
+      ],
+      "b": [
+        20.0,
+        20.103,
+        523.14
+      ],
+      "degrees": 14.95,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            50.8,
+            514.0
+          ],
+          "center_distance": 31.86,
+          "declared_grade": 20.0,
+          "id": "market_southwall_1"
+        },
+        {
+          "c": [
+            44.0,
+            484.0
+          ],
+          "center_distance": 45.07,
+          "declared_grade": 26.0,
+          "id": "weapon_shop"
+        }
+      ],
+      "percent": 26.7,
+      "road": "bridge_station",
+      "segment": 0
+    },
+    {
+      "a": [
+        -723.125,
+        20.528,
+        725.625
+      ],
+      "b": [
+        -722.5,
+        20.0,
+        727.5
+      ],
+      "degrees": 14.95,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -695.0,
+            723.0
+          ],
+          "center_distance": 28.04,
+          "declared_grade": 13.0,
+          "id": "dockwest_0"
+        }
+      ],
+      "percent": 26.7,
+      "road": "harbor_ramp",
+      "segment": 2
+    },
+    {
+      "a": [
+        169.25,
+        18.727,
+        693.488
+      ],
+      "b": [
+        169.25,
+        18.252,
+        695.465
+      ],
+      "degrees": 13.51,
+      "lane": "car_left",
+      "nearby_buildings": [],
+      "percent": 24.02,
+      "road": "east_embankment",
+      "segment": 5
+    },
+    {
+      "a": [
+        167.5,
+        18.729,
+        693.488
+      ],
+      "b": [
+        167.5,
+        18.256,
+        695.465
+      ],
+      "degrees": 13.45,
+      "lane": "walk_left",
+      "nearby_buildings": [],
+      "percent": 23.92,
+      "road": "east_embankment",
+      "segment": 5
+    },
+    {
+      "a": [
+        -680.0,
+        38.583,
+        540.0
+      ],
+      "b": [
+        -678.0,
+        38.117,
+        540.0
+      ],
+      "degrees": 13.13,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 37.18,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 50.57,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 23.33,
+      "road": "west_residential_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        -648.282,
+        13.029,
+        690.675
+      ],
+      "b": [
+        -646.854,
+        13.454,
+        689.294
+      ],
+      "degrees": 12.05,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 21.35,
+      "road": "north_quay",
+      "segment": 0
+    },
+    {
+      "a": [
+        -729.291,
+        20.8,
+        727.68
+      ],
+      "b": [
+        -728.666,
+        20.396,
+        729.555
+      ],
+      "degrees": 11.55,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -695.0,
+            723.0
+          ],
+          "center_distance": 34.44,
+          "declared_grade": 13.0,
+          "id": "dockwest_0"
+        }
+      ],
+      "percent": 20.44,
+      "road": "harbor_ramp",
+      "segment": 2
+    },
+    {
+      "a": [
+        -680.0,
+        38.583,
+        536.25
+      ],
+      "b": [
+        -678.0,
+        38.206,
+        536.25
+      ],
+      "degrees": 10.68,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 34.88,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 52.24,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 18.87,
+      "road": "west_residential_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        -680.0,
+        38.583,
+        543.75
+      ],
+      "b": [
+        -678.0,
+        38.206,
+        543.75
+      ],
+      "degrees": 10.68,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 39.71,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 49.13,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 18.87,
+      "road": "west_residential_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        29.0,
+        20.448,
+        525.116
+      ],
+      "b": [
+        29.0,
+        20.118,
+        527.093
+      ],
+      "degrees": 9.49,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            50.8,
+            514.0
+          ],
+          "center_distance": 24.94,
+          "declared_grade": 20.0,
+          "id": "market_southwall_1"
+        },
+        {
+          "c": [
+            44.0,
+            484.0
+          ],
+          "center_distance": 44.7,
+          "declared_grade": 26.0,
+          "id": "weapon_shop"
+        }
+      ],
+      "percent": 16.72,
+      "road": "bridge_station",
+      "segment": 0
+    },
+    {
+      "a": [
+        11.0,
+        20.448,
+        525.116
+      ],
+      "b": [
+        11.0,
+        20.118,
+        527.093
+      ],
+      "degrees": 9.49,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            50.8,
+            514.0
+          ],
+          "center_distance": 41.6,
+          "declared_grade": 20.0,
+          "id": "market_southwall_1"
+        },
+        {
+          "c": [
+            44.0,
+            484.0
+          ],
+          "center_distance": 53.5,
+          "declared_grade": 26.0,
+          "id": "weapon_shop"
+        }
+      ],
+      "percent": 16.72,
+      "road": "bridge_station",
+      "segment": 0
+    },
+    {
+      "a": [
+        -675.75,
+        20.357,
+        651.0
+      ],
+      "b": [
+        -675.75,
+        20.032,
+        653.0
+      ],
+      "degrees": 9.23,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 38.14,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 16.25,
+      "road": "tavern_walk",
+      "segment": 0
+    },
+    {
+      "a": [
+        -676.75,
+        20.338,
+        651.0
+      ],
+      "b": [
+        -676.75,
+        20.014,
+        653.0
+      ],
+      "degrees": 9.2,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 38.07,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 16.2,
+      "road": "tavern_walk",
+      "segment": 0
+    },
+    {
+      "a": [
+        -679.0,
+        20.323,
+        651.0
+      ],
+      "b": [
+        -679.0,
+        20.0,
+        653.0
+      ],
+      "degrees": 9.18,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 38.0,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 16.15,
+      "road": "tavern_walk",
+      "segment": 0
+    },
+    {
+      "a": [
+        -134.993,
+        15.652,
+        902.934
+      ],
+      "b": [
+        -134.871,
+        15.34,
+        904.885
+      ],
+      "degrees": 9.08,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 15.98,
+      "road": "east_quay",
+      "segment": 1
+    },
+    {
+      "a": [
+        -681.25,
+        20.343,
+        651.0
+      ],
+      "b": [
+        -681.25,
+        20.039,
+        653.0
+      ],
+      "degrees": 8.63,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 38.07,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 15.18,
+      "road": "tavern_walk",
+      "segment": 0
+    },
+    {
+      "a": [
+        209.054,
+        20.215,
+        530.084
+      ],
+      "b": [
+        209.815,
+        20.517,
+        528.236
+      ],
+      "degrees": 8.59,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            186.0,
+            491.0
+          ],
+          "center_distance": 44.78,
+          "declared_grade": 26.0,
+          "id": "cook"
+        }
+      ],
+      "percent": 15.1,
+      "road": "civic_south",
+      "segment": 4
+    },
+    {
+      "a": [
+        8.0,
+        20.35,
+        528.5
+      ],
+      "b": [
+        10.0,
+        20.05,
+        528.5
+      ],
+      "degrees": 8.54,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            50.8,
+            514.0
+          ],
+          "center_distance": 44.24,
+          "declared_grade": 20.0,
+          "id": "market_southwall_1"
+        }
+      ],
+      "percent": 15.01,
+      "road": "civic_south",
+      "segment": 3
+    },
+    {
+      "a": [
+        -682.25,
+        20.358,
+        651.0
+      ],
+      "b": [
+        -682.25,
+        20.07,
+        653.0
+      ],
+      "degrees": 8.19,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -679.0,
+            614.0
+          ],
+          "center_distance": 38.14,
+          "declared_grade": 22.0,
+          "id": "tavern"
+        }
+      ],
+      "percent": 14.39,
+      "road": "tavern_walk",
+      "segment": 0
+    },
+    {
+      "a": [
+        -52.0,
+        20.352,
+        535.0
+      ],
+      "b": [
+        -50.0,
+        20.067,
+        535.0
+      ],
+      "degrees": 8.1,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -85.0,
+            493.0
+          ],
+          "center_distance": 54.04,
+          "declared_grade": 26.0,
+          "id": "exchange"
+        }
+      ],
+      "percent": 14.23,
+      "road": "civic_south",
+      "segment": 2
+    },
+    {
+      "a": [
+        -504.25,
+        42.414,
+        440.217
+      ],
+      "b": [
+        -504.25,
+        42.136,
+        442.174
+      ],
+      "degrees": 8.07,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -468.0,
+            418.0
+          ],
+          "center_distance": 43.04,
+          "declared_grade": null,
+          "id": "academy_south_5"
+        },
+        {
+          "c": [
+            -474.0,
+            476.0
+          ],
+          "center_distance": 46.11,
+          "declared_grade": null,
+          "id": "bath_north_0"
+        }
+      ],
+      "percent": 14.18,
+      "road": "academy_approach",
+      "segment": 1
+    },
+    {
+      "a": [
+        -515.75,
+        42.414,
+        440.217
+      ],
+      "b": [
+        -515.75,
+        42.136,
+        442.174
+      ],
+      "degrees": 8.07,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -552.6,
+            476.0
+          ],
+          "center_distance": 50.69,
+          "declared_grade": null,
+          "id": "terrace_north_3"
+        },
+        {
+          "c": [
+            -468.0,
+            418.0
+          ],
+          "center_distance": 53.09,
+          "declared_grade": null,
+          "id": "academy_south_5"
+        },
+        {
+          "c": [
+            -474.0,
+            476.0
+          ],
+          "center_distance": 54.35,
+          "declared_grade": null,
+          "id": "bath_north_0"
+        }
+      ],
+      "percent": 14.18,
+      "road": "academy_approach",
+      "segment": 1
+    },
+    {
+      "a": [
+        -352.0,
+        25.933,
+        539.75
+      ],
+      "b": [
+        -350.0,
+        25.664,
+        539.75
+      ],
+      "degrees": 7.66,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -329.0,
+            585.0
+          ],
+          "center_distance": 50.31,
+          "declared_grade": 20.0,
+          "id": "court_7_1_0"
+        },
+        {
+          "c": [
+            -369.0,
+            588.0
+          ],
+          "center_distance": 51.5,
+          "declared_grade": 13.0,
+          "id": "canal"
+        }
+      ],
+      "percent": 13.46,
+      "road": "civic_south",
+      "segment": 0
+    },
+    {
+      "a": [
+        -352.0,
+        25.933,
+        530.25
+      ],
+      "b": [
+        -350.0,
+        25.664,
+        530.25
+      ],
+      "degrees": 7.66,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "percent": 13.46,
+      "road": "civic_south",
+      "segment": 0
+    },
+    {
+      "a": [
+        -510.0,
+        42.454,
+        438.261
+      ],
+      "b": [
+        -510.0,
+        42.203,
+        440.217
+      ],
+      "degrees": 7.32,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -468.0,
+            418.0
+          ],
+          "center_distance": 47.06,
+          "declared_grade": null,
+          "id": "academy_south_5"
+        },
+        {
+          "c": [
+            -474.0,
+            476.0
+          ],
+          "center_distance": 51.45,
+          "declared_grade": null,
+          "id": "bath_north_0"
+        }
+      ],
+      "percent": 12.84,
+      "road": "academy_approach",
+      "segment": 1
+    },
+    {
+      "a": [
+        -140.732,
+        15.567,
+        903.293
+      ],
+      "b": [
+        -140.61,
+        15.316,
+        905.244
+      ],
+      "degrees": 7.32,
+      "lane": "center",
+      "nearby_buildings": [],
+      "percent": 12.84,
+      "road": "east_quay",
+      "segment": 1
+    },
+    {
+      "a": [
+        -680.0,
+        38.583,
+        534.5
+      ],
+      "b": [
+        -678.0,
+        38.33,
+        534.5
+      ],
+      "degrees": 7.23,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 33.89,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 53.09,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 12.69,
+      "road": "west_residential_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        -680.0,
+        38.583,
+        545.5
+      ],
+      "b": [
+        -678.0,
+        38.33,
+        545.5
+      ],
+      "degrees": 7.23,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -707.4,
+            516.0
+          ],
+          "center_distance": 40.95,
+          "declared_grade": null,
+          "id": "merchant_lower_2"
+        },
+        {
+          "c": [
+            -725.0,
+            561.0
+          ],
+          "center_distance": 48.54,
+          "declared_grade": 34.0,
+          "id": "blackmarket"
+        }
+      ],
+      "percent": 12.69,
+      "road": "west_residential_lane",
+      "segment": 1
+    },
+    {
+      "a": [
+        -132.747,
+        15.687,
+        902.794
+      ],
+      "b": [
+        -132.625,
+        15.488,
+        904.745
+      ],
+      "degrees": 5.82,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "percent": 10.19,
+      "road": "east_quay",
+      "segment": 1
+    },
+    {
+      "a": [
+        -146.471,
+        15.63,
+        903.651
+      ],
+      "b": [
+        -146.349,
+        15.439,
+        905.603
+      ],
+      "degrees": 5.57,
+      "lane": "car_left",
+      "nearby_buildings": [],
+      "percent": 9.74,
+      "road": "east_quay",
+      "segment": 1
+    },
+    {
+      "a": [
+        -502.0,
+        42.324,
+        442.174
+      ],
+      "b": [
+        -502.0,
+        42.136,
+        444.13
+      ],
+      "degrees": 5.51,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -468.0,
+            418.0
+          ],
+          "center_distance": 42.29,
+          "declared_grade": null,
+          "id": "academy_south_5"
+        },
+        {
+          "c": [
+            -474.0,
+            476.0
+          ],
+          "center_distance": 43.16,
+          "declared_grade": null,
+          "id": "bath_north_0"
+        }
+      ],
+      "percent": 9.65,
+      "road": "academy_approach",
+      "segment": 1
+    },
+    {
+      "a": [
+        -518.0,
+        42.324,
+        442.174
+      ],
+      "b": [
+        -518.0,
+        42.136,
+        444.13
+      ],
+      "degrees": 5.51,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -552.6,
+            476.0
+          ],
+          "center_distance": 47.71,
+          "declared_grade": null,
+          "id": "terrace_north_3"
+        },
+        {
+          "c": [
+            -474.0,
+            476.0
+          ],
+          "center_distance": 54.91,
+          "declared_grade": null,
+          "id": "bath_north_0"
+        }
+      ],
+      "percent": 9.65,
+      "road": "academy_approach",
+      "segment": 1
+    },
+    {
+      "a": [
+        -148.594,
+        15.572,
+        905.743
+      ],
+      "b": [
+        -148.472,
+        15.398,
+        907.694
+      ],
+      "degrees": 5.07,
+      "lane": "walk_left",
+      "nearby_buildings": [],
+      "percent": 8.87,
+      "road": "east_quay",
+      "segment": 1
+    },
+    {
+      "a": [
+        -310.0,
+        25.795,
+        385.25
+      ],
+      "b": [
+        -308.0,
+        25.959,
+        385.25
+      ],
+      "degrees": 4.69,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -315.0,
+            370.0
+          ],
+          "center_distance": 16.39,
+          "declared_grade": 26.0,
+          "id": "portal"
+        }
+      ],
+      "percent": 8.21,
+      "road": "civic_cross",
+      "segment": 0
+    },
+    {
+      "a": [
+        -310.0,
+        25.795,
+        394.75
+      ],
+      "b": [
+        -308.0,
+        25.959,
+        394.75
+      ],
+      "degrees": 4.69,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -315.0,
+            370.0
+          ],
+          "center_distance": 25.47,
+          "declared_grade": 26.0,
+          "id": "portal"
+        }
+      ],
+      "percent": 8.21,
+      "road": "civic_cross",
+      "segment": 0
+    },
+    {
+      "a": [
+        -40.0,
+        25.442,
+        457.907
+      ],
+      "b": [
+        -40.0,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            2.0,
+            424.0
+          ],
+          "center_distance": 54.6,
+          "declared_grade": 26.0,
+          "id": "crown_0"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_axis",
+      "segment": 2
+    },
+    {
+      "a": [
+        -44.75,
+        25.442,
+        457.907
+      ],
+      "b": [
+        -44.75,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -85.0,
+            493.0
+          ],
+          "center_distance": 52.76,
+          "declared_grade": 26.0,
+          "id": "exchange"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_axis",
+      "segment": 2
+    },
+    {
+      "a": [
+        -35.25,
+        25.442,
+        457.907
+      ],
+      "b": [
+        -35.25,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            2.0,
+            424.0
+          ],
+          "center_distance": 51.04,
+          "declared_grade": 26.0,
+          "id": "crown_0"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_axis",
+      "segment": 2
+    },
+    {
+      "a": [
+        -46.5,
+        25.442,
+        457.907
+      ],
+      "b": [
+        -46.5,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -85.0,
+            493.0
+          ],
+          "center_distance": 51.43,
+          "declared_grade": 26.0,
+          "id": "exchange"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_axis",
+      "segment": 2
+    },
+    {
+      "a": [
+        -33.5,
+        25.442,
+        457.907
+      ],
+      "b": [
+        -33.5,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            2.0,
+            424.0
+          ],
+          "center_distance": 49.78,
+          "declared_grade": 26.0,
+          "id": "crown_0"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_axis",
+      "segment": 2
+    },
+    {
+      "a": [
+        145.0,
+        25.442,
+        457.907
+      ],
+      "b": [
+        145.0,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            120.0,
+            484.0
+          ],
+          "center_distance": 35.43,
+          "declared_grade": 26.0,
+          "id": "jeweler"
+        },
+        {
+          "c": [
+            181.6,
+            424.0
+          ],
+          "center_distance": 50.57,
+          "declared_grade": 26.0,
+          "id": "crown_6"
+        },
+        {
+          "c": [
+            186.0,
+            491.0
+          ],
+          "center_distance": 52.07,
+          "declared_grade": 26.0,
+          "id": "cook"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_east",
+      "segment": 2
+    },
+    {
+      "a": [
+        151.5,
+        25.442,
+        457.907
+      ],
+      "b": [
+        151.5,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            120.0,
+            484.0
+          ],
+          "center_distance": 40.28,
+          "declared_grade": 26.0,
+          "id": "jeweler"
+        },
+        {
+          "c": [
+            181.6,
+            424.0
+          ],
+          "center_distance": 46.08,
+          "declared_grade": 26.0,
+          "id": "crown_6"
+        },
+        {
+          "c": [
+            186.0,
+            491.0
+          ],
+          "center_distance": 47.13,
+          "declared_grade": 26.0,
+          "id": "cook"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_east",
+      "segment": 2
+    },
+    {
+      "a": [
+        140.25,
+        25.442,
+        457.907
+      ],
+      "b": [
+        140.25,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            120.0,
+            484.0
+          ],
+          "center_distance": 32.25,
+          "declared_grade": 26.0,
+          "id": "jeweler"
+        },
+        {
+          "c": [
+            181.6,
+            424.0
+          ],
+          "center_distance": 54.11,
+          "declared_grade": 26.0,
+          "id": "crown_6"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_east",
+      "segment": 2
+    },
+    {
+      "a": [
+        138.5,
+        25.442,
+        457.907
+      ],
+      "b": [
+        138.5,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            120.0,
+            484.0
+          ],
+          "center_distance": 31.18,
+          "declared_grade": 26.0,
+          "id": "jeweler"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_east",
+      "segment": 2
+    },
+    {
+      "a": [
+        149.75,
+        25.442,
+        457.907
+      ],
+      "b": [
+        149.75,
+        25.302,
+        459.884
+      ],
+      "degrees": 4.04,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            120.0,
+            484.0
+          ],
+          "center_distance": 38.93,
+          "declared_grade": 26.0,
+          "id": "jeweler"
+        },
+        {
+          "c": [
+            181.6,
+            424.0
+          ],
+          "center_distance": 47.25,
+          "declared_grade": 26.0,
+          "id": "crown_6"
+        },
+        {
+          "c": [
+            186.0,
+            491.0
+          ],
+          "center_distance": 48.42,
+          "declared_grade": 26.0,
+          "id": "cook"
+        }
+      ],
+      "percent": 7.06,
+      "road": "market_east",
+      "segment": 2
+    },
+    {
+      "a": [
+        -312.0,
+        25.768,
+        390.0
+      ],
+      "b": [
+        -310.0,
+        25.895,
+        390.0
+      ],
+      "degrees": 3.62,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -315.0,
+            370.0
+          ],
+          "center_distance": 20.4,
+          "declared_grade": 26.0,
+          "id": "portal"
+        }
+      ],
+      "percent": 6.33,
+      "road": "civic_cross",
+      "segment": 0
+    },
+    {
+      "a": [
+        -310.0,
+        25.789,
+        396.5
+      ],
+      "b": [
+        -308.0,
+        25.89,
+        396.5
+      ],
+      "degrees": 2.88,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -315.0,
+            370.0
+          ],
+          "center_distance": 27.17,
+          "declared_grade": 26.0,
+          "id": "portal"
+        }
+      ],
+      "percent": 5.02,
+      "road": "civic_cross",
+      "segment": 0
+    },
+    {
+      "a": [
+        -310.0,
+        25.789,
+        383.5
+      ],
+      "b": [
+        -308.0,
+        25.89,
+        383.5
+      ],
+      "degrees": 2.88,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -315.0,
+            370.0
+          ],
+          "center_distance": 14.77,
+          "declared_grade": 26.0,
+          "id": "portal"
+        }
+      ],
+      "percent": 5.02,
+      "road": "civic_cross",
+      "segment": 0
+    },
+    {
+      "a": [
+        -644.286,
+        13.004,
+        694.81
+      ],
+      "b": [
+        -642.857,
+        13.093,
+        693.429
+      ],
+      "degrees": 2.56,
+      "lane": "center",
+      "nearby_buildings": [],
+      "percent": 4.47,
+      "road": "north_quay",
+      "segment": 0
+    },
+    {
+      "a": [
+        -130.39,
+        17.885,
+        856.254
+      ],
+      "b": [
+        -130.127,
+        17.959,
+        858.227
+      ],
+      "degrees": 2.13,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -99.0,
+            822.0
+          ],
+          "center_distance": 47.11,
+          "declared_grade": 18.0,
+          "id": "station_court_w2"
+        }
+      ],
+      "percent": 3.72,
+      "road": "station_west",
+      "segment": 0
+    },
+    {
+      "a": [
+        -130.235,
+        17.975,
+        844.18
+      ],
+      "b": [
+        -129.971,
+        18.0,
+        846.154
+      ],
+      "degrees": 0.71,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -99.0,
+            822.0
+          ],
+          "center_distance": 38.78,
+          "declared_grade": 18.0,
+          "id": "station_court_w2"
+        }
+      ],
+      "percent": 1.24,
+      "road": "station_west",
+      "segment": 0
+    },
+    {
+      "a": [
+        -118.0,
+        17.997,
+        631.875
+      ],
+      "b": [
+        -118.0,
+        17.995,
+        633.813
+      ],
+      "degrees": 0.07,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -101.0,
+            642.0
+          ],
+          "center_distance": 19.31,
+          "declared_grade": 18.0,
+          "id": "river_west_n0"
+        },
+        {
+          "c": [
+            -73.0,
+            642.0
+          ],
+          "center_distance": 45.92,
+          "declared_grade": 18.0,
+          "id": "river_west_n1"
+        },
+        {
+          "c": [
+            -101.0,
+            676.0
+          ],
+          "center_distance": 46.38,
+          "declared_grade": 18.0,
+          "id": "river_west_s0"
+        }
+      ],
+      "percent": 0.12,
+      "road": "river_west_side_-117",
+      "segment": 0
+    },
+    {
+      "a": [
+        127.0,
+        18.0,
+        655.0
+      ],
+      "b": [
+        127.0,
+        18.002,
+        657.0
+      ],
+      "degrees": 0.05,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            676.0
+          ],
+          "center_distance": 25.0,
+          "declared_grade": 18.0,
+          "id": "river_east_s2"
+        },
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 33.54,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            676.0
+          ],
+          "center_distance": 48.33,
+          "declared_grade": 18.0,
+          "id": "river_east_s1"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 53.25,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.09,
+      "road": "river_east_side_128",
+      "segment": 1
+    },
+    {
+      "a": [
+        -117.75,
+        17.999,
+        631.875
+      ],
+      "b": [
+        -117.75,
+        17.997,
+        633.813
+      ],
+      "degrees": 0.04,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -101.0,
+            642.0
+          ],
+          "center_distance": 19.09,
+          "declared_grade": 18.0,
+          "id": "river_west_n0"
+        },
+        {
+          "c": [
+            -73.0,
+            642.0
+          ],
+          "center_distance": 45.68,
+          "declared_grade": 18.0,
+          "id": "river_west_n1"
+        },
+        {
+          "c": [
+            -101.0,
+            676.0
+          ],
+          "center_distance": 46.29,
+          "declared_grade": 18.0,
+          "id": "river_west_s0"
+        }
+      ],
+      "percent": 0.06,
+      "road": "river_west_side_-117",
+      "segment": 0
+    },
+    {
+      "a": [
+        127.25,
+        18.0,
+        655.0
+      ],
+      "b": [
+        127.25,
+        18.001,
+        657.0
+      ],
+      "degrees": 0.03,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            676.0
+          ],
+          "center_distance": 25.15,
+          "declared_grade": 18.0,
+          "id": "river_east_s2"
+        },
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 33.65,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            676.0
+          ],
+          "center_distance": 48.56,
+          "declared_grade": 18.0,
+          "id": "river_east_s1"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 53.46,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.04,
+      "road": "river_east_side_128",
+      "segment": 1
+    },
+    {
+      "a": [
+        126.022,
+        18.0,
+        608.75
+      ],
+      "b": [
+        128.0,
+        17.999,
+        608.75
+      ],
+      "degrees": 0.02,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 22.87,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 47.27,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.03,
+      "road": "river_east_front",
+      "segment": 0
+    },
+    {
+      "a": [
+        126.022,
+        18.0,
+        608.5
+      ],
+      "b": [
+        128.0,
+        17.999,
+        608.5
+      ],
+      "degrees": 0.02,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 23.06,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 47.36,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.03,
+      "road": "river_east_front",
+      "segment": 0
+    },
+    {
+      "a": [
+        -1.0,
+        18.0,
+        626.5
+      ],
+      "b": [
+        1.0,
+        17.999,
+        626.5
+      ],
+      "degrees": 0.01,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -15.0,
+            642.0
+          ],
+          "center_distance": 21.57,
+          "declared_grade": 18.0,
+          "id": "river_west_n3"
+        },
+        {
+          "c": [
+            -44.0,
+            642.0
+          ],
+          "center_distance": 46.65,
+          "declared_grade": 18.0,
+          "id": "river_west_n2"
+        },
+        {
+          "c": [
+            -15.0,
+            676.0
+          ],
+          "center_distance": 51.72,
+          "declared_grade": 18.0,
+          "id": "river_west_s3"
+        }
+      ],
+      "percent": 0.02,
+      "road": "river_west_front",
+      "segment": 0
+    },
+    {
+      "a": [
+        -1.0,
+        18.0,
+        626.75
+      ],
+      "b": [
+        1.0,
+        18.0,
+        626.75
+      ],
+      "degrees": 0.01,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -15.0,
+            642.0
+          ],
+          "center_distance": 21.39,
+          "declared_grade": 18.0,
+          "id": "river_west_n3"
+        },
+        {
+          "c": [
+            -44.0,
+            642.0
+          ],
+          "center_distance": 46.57,
+          "declared_grade": 18.0,
+          "id": "river_west_n2"
+        },
+        {
+          "c": [
+            -15.0,
+            676.0
+          ],
+          "center_distance": 51.48,
+          "declared_grade": 18.0,
+          "id": "river_west_s3"
+        }
+      ],
+      "percent": 0.02,
+      "road": "river_west_front",
+      "segment": 0
+    },
+    {
+      "a": [
+        -117.0,
+        18.0,
+        637.688
+      ],
+      "b": [
+        -117.0,
+        18.0,
+        639.625
+      ],
+      "degrees": 0.0,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            -101.0,
+            642.0
+          ],
+          "center_distance": 16.35,
+          "declared_grade": 18.0,
+          "id": "river_west_n0"
+        },
+        {
+          "c": [
+            -101.0,
+            676.0
+          ],
+          "center_distance": 40.63,
+          "declared_grade": 18.0,
+          "id": "river_west_s0"
+        },
+        {
+          "c": [
+            -73.0,
+            642.0
+          ],
+          "center_distance": 44.13,
+          "declared_grade": 18.0,
+          "id": "river_west_n1"
+        }
+      ],
+      "percent": 0.0,
+      "road": "river_west_side_-117",
+      "segment": 0
+    },
+    {
+      "a": [
+        -116.25,
+        18.0,
+        637.688
+      ],
+      "b": [
+        -116.25,
+        18.0,
+        639.625
+      ],
+      "degrees": 0.0,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -101.0,
+            642.0
+          ],
+          "center_distance": 15.61,
+          "declared_grade": 18.0,
+          "id": "river_west_n0"
+        },
+        {
+          "c": [
+            -101.0,
+            676.0
+          ],
+          "center_distance": 40.34,
+          "declared_grade": 18.0,
+          "id": "river_west_s0"
+        },
+        {
+          "c": [
+            -73.0,
+            642.0
+          ],
+          "center_distance": 43.38,
+          "declared_grade": 18.0,
+          "id": "river_west_n1"
+        }
+      ],
+      "percent": 0.0,
+      "road": "river_west_side_-117",
+      "segment": 0
+    },
+    {
+      "a": [
+        -116.0,
+        18.0,
+        637.688
+      ],
+      "b": [
+        -116.0,
+        18.0,
+        639.625
+      ],
+      "degrees": 0.0,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            -101.0,
+            642.0
+          ],
+          "center_distance": 15.37,
+          "declared_grade": 18.0,
+          "id": "river_west_n0"
+        },
+        {
+          "c": [
+            -101.0,
+            676.0
+          ],
+          "center_distance": 40.24,
+          "declared_grade": 18.0,
+          "id": "river_west_s0"
+        },
+        {
+          "c": [
+            -73.0,
+            642.0
+          ],
+          "center_distance": 43.13,
+          "declared_grade": 18.0,
+          "id": "river_west_n1"
+        }
+      ],
+      "percent": 0.0,
+      "road": "river_west_side_-117",
+      "segment": 0
+    },
+    {
+      "a": [
+        128.0,
+        18.0,
+        617.81
+      ],
+      "b": [
+        128.0,
+        18.0,
+        619.762
+      ],
+      "degrees": 0.0,
+      "lane": "center",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 17.55,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 45.57,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.0,
+      "road": "river_east_side_128",
+      "segment": 0
+    },
+    {
+      "a": [
+        128.75,
+        18.0,
+        617.81
+      ],
+      "b": [
+        128.75,
+        18.0,
+        619.762
+      ],
+      "degrees": 0.0,
+      "lane": "car_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 18.24,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 46.32,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.0,
+      "road": "river_east_side_128",
+      "segment": 0
+    },
+    {
+      "a": [
+        129.0,
+        18.0,
+        617.81
+      ],
+      "b": [
+        129.0,
+        18.0,
+        619.762
+      ],
+      "degrees": 0.0,
+      "lane": "walk_right",
+      "nearby_buildings": [
+        {
+          "c": [
+            112.0,
+            626.0
+          ],
+          "center_distance": 18.47,
+          "declared_grade": 18.0,
+          "id": "river_east_n2"
+        },
+        {
+          "c": [
+            83.0,
+            626.0
+          ],
+          "center_distance": 46.56,
+          "declared_grade": 18.0,
+          "id": "river_east_n1"
+        }
+      ],
+      "percent": 0.0,
+      "road": "river_east_side_128",
+      "segment": 0
+    }
+  ],
+  "depression_count": 6,
+  "worst_depressions": [
+    {
+      "depression_below_20m_chord": 1.75,
+      "lane": "center",
+      "nearby_buildings": [],
+      "position": [
+        -790.0,
+        38.0,
+        570.0
+      ],
+      "road": "palace_approach"
+    },
+    {
+      "depression_below_20m_chord": 1.73,
+      "lane": "car_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 40.02,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "position": [
+        -370.0,
+        30.94,
+        441.25
+      ],
+      "road": "east_crown"
+    },
+    {
+      "depression_below_20m_chord": 1.7,
+      "lane": "walk_left",
+      "nearby_buildings": [
+        {
+          "c": [
+            -395.0,
+            410.0
+          ],
+          "center_distance": 38.29,
+          "declared_grade": null,
+          "id": "westcore_5"
+        }
+      ],
+      "position": [
+        -370.0,
+        30.668,
+        439.0
+      ],
+      "road": "east_crown"
+    },
+    {
+      "depression_below_20m_chord": 1.67,
+      "lane": "car_right",
+      "nearby_buildings": [],
+      "position": [
+        -784.25,
+        37.848,
+        570.0
+      ],
+      "road": "palace_approach"
+    },
+    {
+      "depression_below_20m_chord": 1.59,
+      "lane": "car_left",
+      "nearby_buildings": [],
+      "position": [
+        -795.75,
+        38.16,
+        570.0
+      ],
+      "road": "palace_approach"
+    },
+    {
+      "depression_below_20m_chord": 1.52,
+      "lane": "walk_right",
+      "nearby_buildings": [],
+      "position": [
+        -629.513,
+        32.092,
+        550.375
+      ],
+      "road": "west_cross"
+    }
+  ]
+}

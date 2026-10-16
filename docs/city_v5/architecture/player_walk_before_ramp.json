@@ -1,0 +1,158 @@
+{
+  "check_count": 10,
+  "checks": [
+    {
+      "asset": "corner_merchants_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 0.503367, -0.864073)",
+          "position": "(0.0, -0.4, -14.28)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(0.0, -0.599158, -14.6259)",
+      "remaining_m": 4.62590026855469,
+      "yaw": 0.0
+    },
+    {
+      "asset": "corner_merchants_3",
+      "collisions": [
+        {
+          "normal": "(-0.864229, 0.503099, 0.0)",
+          "position": "(-14.28, -0.4, 0.000001)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(-14.62602, -0.599158, 0.000001)",
+      "remaining_m": 4.62602233886719,
+      "yaw": 90.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 0.503367, -0.864073)",
+          "position": "(0.0, -0.4, -14.28)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(0.0, -0.599158, -14.6259)",
+      "remaining_m": 4.62590026855469,
+      "yaw": 0.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 0.503298, 0.864113)",
+          "position": "(0.0, -0.4, -1.72)"
+        }
+      ],
+      "entry": 1,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(0.0, -0.599177, -1.373983)",
+      "remaining_m": 4.62601709365845,
+      "yaw": 0.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(-0.864229, 0.503099, 0.0)",
+          "position": "(-14.28, -0.4, 0.000001)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(-14.62602, -0.599158, 0.000001)",
+      "remaining_m": 4.62602233886719,
+      "yaw": 90.0
+    },
+    {
+      "asset": "courtyard_college_3",
+      "collisions": [
+        {
+          "normal": "(0.864682, 0.502319, -0.0)",
+          "position": "(-1.72, -0.4, 0.0)"
+        }
+      ],
+      "entry": 1,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(-1.373983, -0.600198, 0.0)",
+      "remaining_m": 4.62601709365845,
+      "yaw": 90.0
+    },
+    {
+      "asset": "shop_arcade_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 0.503521, -0.863983)",
+          "position": "(0.0, -0.4, -11.28)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(0.0, -0.599158, -11.62588)",
+      "remaining_m": 4.62587833404541,
+      "yaw": 0.0
+    },
+    {
+      "asset": "shop_arcade_3",
+      "collisions": [
+        {
+          "normal": "(-0.863983, 0.503521, 0.0)",
+          "position": "(-11.28, -0.4, 0.0)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(-11.62588, -0.599158, 0.000001)",
+      "remaining_m": 4.62587833404541,
+      "yaw": 90.0
+    },
+    {
+      "asset": "inn_seafarer_3",
+      "collisions": [
+        {
+          "normal": "(0.0, 0.503389, -0.86406)",
+          "position": "(0.0, -0.4, -13.28)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(0.0, -0.599158, -13.626)",
+      "remaining_m": 4.62599945068359,
+      "yaw": 0.0
+    },
+    {
+      "asset": "inn_seafarer_3",
+      "collisions": [
+        {
+          "normal": "(-0.864742, 0.502217, 0.0)",
+          "position": "(-13.28, -0.4, 0.0)"
+        }
+      ],
+      "entry": 0,
+      "max_height": -0.596111059188843,
+      "pass": false,
+      "position": "(-13.62576, -0.600457, 0.000001)",
+      "remaining_m": 4.62575531005859,
+      "yaw": 90.0
+    }
+  ],
+  "failure_count": 10,
+  "scope": "Actual Player class, authored capsule, floor_max_angle=52 degrees, unchanged apply_gravity_and_move; isolated imported assets over a flat street at -0.6; no World scene or terrain integration claimed.",
+  "slot_index": -1
+}

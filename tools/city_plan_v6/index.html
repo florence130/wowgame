@@ -1,0 +1,99 @@
+<title>晴岚港主城 v6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>/* STYLE */</style>
+<canvas id="scene" aria-label="晴岚港主城三维漫游"></canvas>
+<div id="labels" aria-hidden="true"></div>
+<div id="load-status" role="status">正在加载晴岚港…</div>
+
+<header class="bar">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"></span>
+    <div><h1>晴岚港</h1><p>主城规划 v7 · 已接入游戏</p></div>
+  </div>
+  <div class="seg" role="group" aria-label="视角">
+    <button type="button" data-mode="orbit" aria-pressed="true">鸟瞰</button>
+    <button type="button" data-mode="walk" aria-pressed="false">步行</button>
+  </div>
+</header>
+
+<div class="bar right">
+  <div class="seg" role="group" aria-label="时间">
+    <button type="button" data-time="day" aria-pressed="true">白昼</button>
+    <button type="button" data-time="dusk" aria-pressed="false">黄昏</button>
+    <button type="button" data-time="night" aria-pressed="false">夜晚</button>
+  </div>
+  <button type="button" id="panel-toggle" class="ghost">规划说明</button>
+</div>
+
+<aside id="panel" class="open" aria-label="规划说明">
+  <div class="panel-head">
+    <h2>分区与地基</h2>
+    <button type="button" id="panel-close" class="ghost small" aria-label="收起规划说明">收起</button>
+  </div>
+  <div class="stats">
+    <div><b id="st-blocks">–</b><span>街坊</span></div>
+    <div><b id="st-lots">–</b><span>沿街楼</span></div>
+    <div><b id="st-lm">–</b><span>功能建筑</span></div>
+    <div><b id="st-stairs">–</b><span>阶梯 · 桥</span></div>
+  </div>
+  <section>
+    <h3>人工地基标高</h3>
+    <p class="note">全城地面铺平。高差只在台地边缘出现，用石砌挡土墙、栏杆、大阶梯和坡桥连接。</p>
+    <ul id="levels" class="levels"></ul>
+  </section>
+  <section>
+    <h3>大道横断面</h3>
+    <svg class="section" viewBox="0 0 340 120" role="img" aria-label="王冠大道横断面：两侧各 9 米人行道比车行道高 18 厘米，以路缘石隔开，中间 20 米车行道含双线电车">
+      <rect x="0" y="20" width="18" height="74" class="bld"/>
+      <rect x="322" y="20" width="18" height="74" class="bld"/>
+      <rect x="18" y="86" width="72" height="8" class="walk"/>
+      <rect x="250" y="86" width="72" height="8" class="walk"/>
+      <rect x="88" y="86" width="4" height="8" class="curb"/>
+      <rect x="248" y="86" width="4" height="8" class="curb"/>
+      <rect x="92" y="90" width="156" height="4" class="road"/>
+      <rect x="0" y="94" width="340" height="12" class="base"/>
+      <g class="tree"><circle cx="40" cy="58" r="13"/><circle cx="300" cy="58" r="13"/><rect x="39" y="66" width="2" height="20"/><rect x="299" y="66" width="2" height="20"/></g>
+      <g class="rail"><rect x="140" y="88" width="3" height="2"/><rect x="152" y="88" width="3" height="2"/><rect x="186" y="88" width="3" height="2"/><rect x="198" y="88" width="3" height="2"/></g>
+      <text x="54" y="112">人行道 9</text><text x="170" y="112">车行道 20（双线电车）</text><text x="286" y="112">人行道 9</text>
+      <text x="96" y="80" class="small">路缘石 +0.18</text>
+    </svg>
+    <ul id="roads" class="roads"></ul>
+  </section>
+  <section>
+    <h3>功能建筑</h3>
+    <p class="note">点击名称前往。步行模式下会站到建筑正门前。</p>
+    <ul id="lmlist" class="lmlist"></ul>
+  </section>
+  <section class="toggles">
+    <h3>显示</h3>
+    <label><input type="checkbox" id="tg-white"> 白模</label>
+    <label><input type="checkbox" id="tg-labels" checked> 名称标签</label>
+    <label><input type="checkbox" id="tg-people" checked> 行人</label>
+    <label><input type="checkbox" id="tg-shadow" checked> 阴影</label>
+  </section>
+  <section class="help">
+    <h3>操作</h3>
+    <dl>
+      <dt>鸟瞰</dt><dd>左键拖动旋转，右键拖动平移，滚轮缩放</dd>
+      <dt>步行</dt><dd>WASD 或方向键行走，Shift 奔跑，Q/E 转身；点画面锁定鼠标转视角，Esc 释放；滚轮调镜头距离</dd>
+      <dt>地图</dt><dd>点小地图跳转，M 放大地图</dd>
+    </dl>
+  </section>
+</aside>
+
+<div id="mapwrap">
+  <canvas id="minimap" aria-label="小地图，点击跳转"></canvas>
+  <button type="button" id="mapsize" class="ghost small" aria-label="放大或缩小小地图">⤢</button>
+  <div class="hud"><b id="hud-area">—</b><span id="hud-pos" class="mono">—</span></div>
+</div>
+
+<div class="walkhint" aria-hidden="true">WASD 行走 · Shift 奔跑 · 点击画面转视角</div>
+<div class="pad" aria-label="方向按钮">
+  <button type="button" data-pad="1,0" aria-label="前进">▲</button>
+  <button type="button" data-pad="0,-1" aria-label="左移">◀</button>
+  <button type="button" data-pad="-1,0" aria-label="后退">▼</button>
+  <button type="button" data-pad="0,1" aria-label="右移">▶</button>
+</div>
+<script>/* BUNDLE */</script>

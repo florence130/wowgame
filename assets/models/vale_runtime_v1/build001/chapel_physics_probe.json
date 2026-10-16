@@ -1,0 +1,324 @@
+{
+  "errors": [
+    "floor_z_4.1",
+    "floor_z_4.5"
+  ],
+  "floor_ray_checks": [
+    {
+      "actual_y": 0.049907922744751,
+      "collider": "EntrySmoothRamp",
+      "expected_y": 0.0499083333333328,
+      "passed": true,
+      "z": -11.8
+    },
+    {
+      "actual_y": 0.20057487487793,
+      "collider": "EntrySmoothRamp",
+      "expected_y": 0.200575,
+      "passed": true,
+      "z": -11.4
+    },
+    {
+      "actual_y": 0.42657470703125,
+      "collider": "EntrySmoothRamp",
+      "expected_y": 0.426574999999999,
+      "passed": true,
+      "z": -10.8
+    },
+    {
+      "actual_y": 0.652575016021729,
+      "collider": "EntrySmoothRamp",
+      "expected_y": 0.652575,
+      "passed": true,
+      "z": -10.2
+    },
+    {
+      "actual_y": 0.878574848175049,
+      "collider": "EntrySmoothRamp",
+      "expected_y": 0.878575,
+      "passed": true,
+      "z": -9.6
+    },
+    {
+      "actual_y": 0.903999805450439,
+      "collider": "EntryRampTopConnector",
+      "expected_y": 0.904,
+      "passed": true,
+      "z": -9.3
+    },
+    {
+      "actual_y": 0.903999805450439,
+      "collider": "EntryRampTopConnector",
+      "expected_y": 0.904,
+      "passed": true,
+      "z": -8.6
+    },
+    {
+      "actual_y": 0.898000001907349,
+      "collider": "SolidCollision",
+      "expected_y": 0.9,
+      "passed": true,
+      "z": -8.0
+    },
+    {
+      "actual_y": 0.898000001907349,
+      "collider": "SolidCollision",
+      "expected_y": 0.9,
+      "passed": true,
+      "z": -7.2
+    },
+    {
+      "actual_y": 0.898000001907349,
+      "collider": "SolidCollision",
+      "expected_y": 0.9,
+      "passed": true,
+      "z": -4.0
+    },
+    {
+      "actual_y": 0.898000001907349,
+      "collider": "SolidCollision",
+      "expected_y": 0.9,
+      "passed": true,
+      "z": 0.0
+    },
+    {
+      "actual_y": 0.898000001907349,
+      "collider": "SolidCollision",
+      "expected_y": 0.9,
+      "passed": true,
+      "z": 2.5
+    },
+    {
+      "actual_y": 0.992190361022949,
+      "collider": "SanctuarySmoothRamp",
+      "expected_y": 0.992190476190476,
+      "passed": true,
+      "z": 2.8
+    },
+    {
+      "actual_y": 1.17657124996185,
+      "collider": "SanctuarySmoothRamp",
+      "expected_y": 1.17657142857143,
+      "passed": true,
+      "z": 3.2
+    },
+    {
+      "actual_y": 1.36095225811005,
+      "collider": "SanctuarySmoothRamp",
+      "expected_y": 1.36095238095238,
+      "passed": true,
+      "z": 3.6
+    },
+    {
+      "actual_y": 1.38399994373322,
+      "collider": "SanctuaryRampTopConnector",
+      "expected_y": 1.384,
+      "passed": true,
+      "z": 3.8
+    },
+    {
+      "actual_y": 1.29199826717377,
+      "collider": "SolidCollision",
+      "expected_y": 1.38,
+      "passed": false,
+      "z": 4.1
+    },
+    {
+      "actual_y": 1.29199826717377,
+      "collider": "SolidCollision",
+      "expected_y": 1.38,
+      "passed": false,
+      "z": 4.5
+    }
+  ],
+  "head_side_clearance_checks": [
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        0.299908333333333,
+        1.64990833333333
+      ],
+      "z": -11.8
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        0.450575,
+        1.800575
+      ],
+      "z": -11.4
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        0.676574999999999,
+        2.026575
+      ],
+      "z": -10.8
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        0.902575,
+        2.252575
+      ],
+      "z": -10.2
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.128575,
+        2.478575
+      ],
+      "z": -9.6
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.154,
+        2.504
+      ],
+      "z": -9.3
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.154,
+        2.504
+      ],
+      "z": -8.6
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.15,
+        2.5
+      ],
+      "z": -8.0
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.15,
+        2.5
+      ],
+      "z": -7.2
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.15,
+        2.5
+      ],
+      "z": -4.0
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.15,
+        2.5
+      ],
+      "z": 0.0
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.15,
+        2.5
+      ],
+      "z": 2.5
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.24219047619048,
+        2.59219047619048
+      ],
+      "z": 2.8
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.42657142857143,
+        2.77657142857143
+      ],
+      "z": 3.2
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.61095238095238,
+        2.96095238095238
+      ],
+      "z": 3.6
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.634,
+        2.984
+      ],
+      "z": 3.8
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.63,
+        2.98
+      ],
+      "z": 4.1
+    },
+    {
+      "hits": 0,
+      "passed": true,
+      "radius": 0.4,
+      "vertical_band": [
+        1.63,
+        2.98
+      ],
+      "z": 4.5
+    }
+  ],
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "passed": false,
+  "scope": "Actual Godot physics rays on entry/dais ramps and R.4 standing upper-body clearance along chapel axis. Does not replace the actual Player movement integration test.",
+  "source_scene_sha256": "ad54fa421c0506113208ac83a258b5777024ef34ecbe074580935f532f9f162d"
+}

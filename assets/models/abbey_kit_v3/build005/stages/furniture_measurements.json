@@ -1,0 +1,334 @@
+{
+  "assets": [
+    {
+      "asset": "pew_2m",
+      "objects": 13,
+      "bounds_min": [
+        -1.0,
+        -0.42500001192092896,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        0.42500001192092896,
+        1.149999976158142
+      ],
+      "triangles": 2432,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 13,
+        "ARRAY": 9,
+        "MIRROR": 6
+      }
+    },
+    {
+      "asset": "pew_end",
+      "objects": 5,
+      "bounds_min": [
+        -0.06499999761581421,
+        -0.42500001192092896,
+        0.0
+      ],
+      "bounds_max": [
+        0.06499999761581421,
+        0.3199999928474426,
+        1.149999976158142
+      ],
+      "triangles": 596,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 5,
+        "MIRROR": 1
+      }
+    },
+    {
+      "asset": "pew_seat_1m",
+      "objects": 12,
+      "bounds_min": [
+        -0.5,
+        -0.40299999713897705,
+        0.0
+      ],
+      "bounds_max": [
+        0.5,
+        0.42500001192092896,
+        1.1375000476837158
+      ],
+      "triangles": 1176,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 12,
+        "ARRAY": 2,
+        "MIRROR": 5
+      }
+    },
+    {
+      "asset": "lectern",
+      "objects": 9,
+      "bounds_min": [
+        -0.4000000059604645,
+        -0.29764285683631897,
+        0.0
+      ],
+      "bounds_max": [
+        0.4000000059604645,
+        0.31296440958976746,
+        1.2476428747177124
+      ],
+      "triangles": 652,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 9,
+        "SOLIDIFY": 1
+      }
+    },
+    {
+      "asset": "altar_table",
+      "objects": 12,
+      "bounds_min": [
+        -1.100000023841858,
+        -0.44999998807907104,
+        0.0
+      ],
+      "bounds_max": [
+        1.100000023841858,
+        0.44999998807907104,
+        1.0499999523162842
+      ],
+      "triangles": 1264,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 10,
+        "MIRROR": 4,
+        "ARRAY": 1,
+        "CURVE_BEVEL": 2
+      }
+    },
+    {
+      "asset": "wood_dais_2m",
+      "objects": 5,
+      "bounds_min": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        1.0,
+        0.47999998927116394
+      ],
+      "triangles": 792,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 5,
+        "MIRROR": 2,
+        "ARRAY": 2
+      }
+    },
+    {
+      "asset": "wood_stairs",
+      "objects": 4,
+      "bounds_min": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        1.0499999523162842,
+        0.47999998927116394
+      ],
+      "triangles": 580,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 4,
+        "MIRROR": 1,
+        "ARRAY": 3
+      }
+    },
+    {
+      "asset": "altar_back_panel",
+      "objects": 9,
+      "bounds_min": [
+        -1.2000000476837158,
+        -0.20999999344348907,
+        0.0
+      ],
+      "bounds_max": [
+        1.2000000476837158,
+        0.20999999344348907,
+        2.799999952316284
+      ],
+      "triangles": 684,
+      "degenerate_triangles": 0,
+      "retained_modifiers": {
+        "BEVEL": 5,
+        "ARRAY": 1,
+        "CURVE_BEVEL": 3
+      }
+    }
+  ],
+  "recipes": {
+    "pew_2m": {
+      "bounds": [
+        [
+          -1,
+          -0.425,
+          0
+        ],
+        [
+          1,
+          0.425,
+          1.15
+        ]
+      ],
+      "seat_top": 0.48,
+      "kneeler_top": 0.16,
+      "front": "+Y",
+      "sockets": {
+        "row_next": [
+          0,
+          1.25,
+          0
+        ]
+      }
+    },
+    "pew_end": {
+      "overall_thickness": 0.13,
+      "carcass_thickness": 0.104,
+      "height": 1.15,
+      "sockets": {
+        "left_end_of_2m": [
+          -0.935,
+          0,
+          0
+        ],
+        "right_end_of_2m": [
+          0.935,
+          0,
+          0
+        ],
+        "left_end_of_4m_repeat_body": [
+          -2,
+          0,
+          0
+        ],
+        "right_end_of_4m_repeat_body": [
+          2,
+          0,
+          0
+        ]
+      },
+      "repeat_body_rule": "For N metre bays centred at i-(N-1)/2, place ends at \u00b1N/2. Overall length=N+.13."
+    },
+    "pew_seat_1m": {
+      "pitch_x": 1,
+      "seat_top": 0.48,
+      "sockets": {
+        "start": [
+          -0.5,
+          0,
+          0
+        ],
+        "end": [
+          0.5,
+          0,
+          0
+        ]
+      }
+    },
+    "lectern": {
+      "width": 0.8,
+      "height": 1.25,
+      "reader_side": "-Y"
+    },
+    "altar_table": {
+      "width": 2.2,
+      "depth": 0.9,
+      "table_top": 1.05
+    },
+    "wood_dais_2m": {
+      "bounds": [
+        [
+          -1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0.48
+        ]
+      ],
+      "tile_pitch": [
+        2,
+        2
+      ],
+      "sockets": {
+        "front_stair_upper": [
+          0,
+          1,
+          0.48
+        ]
+      }
+    },
+    "wood_stairs": {
+      "bounds": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          1.05,
+          0.48
+        ]
+      ],
+      "rise": 0.16,
+      "run": 0.35,
+      "count": 3,
+      "sockets": {
+        "upper_floor": [
+          0,
+          0,
+          0.48
+        ],
+        "lower_ground": [
+          0,
+          1.05,
+          0
+        ]
+      }
+    }
+  },
+  "repeat_bench": {
+    "asset": "4m_repeated_pew_with_end_panels",
+    "body_centres_x": [
+      -1.5,
+      -0.5,
+      0.5,
+      1.5
+    ],
+    "end_panel_centres_x": [
+      -2,
+      2
+    ],
+    "bounds_min": [
+      -2.065000057220459,
+      -0.42500001192092896,
+      0.0
+    ],
+    "bounds_max": [
+      2.065000057220459,
+      0.42500001192092896,
+      1.149999976158142
+    ],
+    "triangles": 5896,
+    "degenerate_triangles": 0,
+    "objects": 58,
+    "nominal_body_pitch_x": 1,
+    "overall_length": 4.130000114440918,
+    "fixed_coplanar_relation": "Former outer end carcass at x=2 shared the seat/apron end face. New carcass exterior x=2.052; foot exterior2.065; seat endpoint2 remains internal."
+  }
+}

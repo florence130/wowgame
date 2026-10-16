@@ -1,0 +1,20 @@
+{
+  "path": "E:\\wowgame\\docs\\city_v5\\晴岚港-主城漫游.html",
+  "bytes": 18622778,
+  "sourceDataBytes": 108604007,
+  "compression": "embedded gzip / native browser decompression",
+  "sha256": "b4001e30092efeb13badef8f01ec7ba07db388632232c725dc9a9d6bd68e6b87",
+  "embeddedSnapshotSha256": "b14d0de96d0b62e23d37099bda2fd4f34295259a79ed519721f487562c414035",
+  "sourceFileSha256": "6f36b7451388165a016762373ab050db6d2cd3af2e6eec2d7c6ea934df360358",
+  "bundleSha256": "e346c1497eb3f24b49498d4cb5311ef63259fe5b4455050d5271551ed952a668",
+  "baselineHash": "2a0e6cd462529a87ab156f850423739aa2ed60738ed1d08da4ee0d5ca725bdbf",
+  "sceneHash": "509939a5eaaaeb95ac77a708af3bb614fca957b20e939d6561409312dade7608",
+  "terrainHash": "e827a3367115e536d0570e8125708be69f1609e852e5c47c3bf26c3bd20cec97",
+  "layoutVersion": 5,
+  "objects": 1045,
+  "assets": 284,
+  "offline": true,
+  "scriptSyntaxVerified": true,
+  "externalRuntimeDependencies": [],
+  "browserVerification": "Actual localhost browser load is tracked separately; file:// automation is blocked by browser protocol policy."
+}

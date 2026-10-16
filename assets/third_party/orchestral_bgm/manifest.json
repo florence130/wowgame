@@ -1,0 +1,67 @@
+[
+  {
+    "role": "menu",
+    "title": "Moonlight",
+    "author": "Scott Buckley",
+    "license": "CC-BY-4.0",
+    "source": "https://www.scottbuckley.com.au/library/moonlight/",
+    "file": "assets\\audio\\orchestral\\menu.ogg",
+    "modifications": "constant gain and OGG encoding; complete composition preserved",
+    "duration_s": 254.334,
+    "peak_dbfs": -8.18,
+    "sha256": "ac3fa2be0e31a00e7e120e0a779ff3ef2efe665687d9d64a51431df1a2e9c408",
+    "aesthetic_acceptance": "not auditioned"
+  },
+  {
+    "role": "vale",
+    "title": "Childhood",
+    "author": "Scott Buckley",
+    "license": "CC-BY-4.0",
+    "source": "https://www.scottbuckley.com.au/library/childhood/",
+    "file": "assets\\audio\\orchestral\\vale.ogg",
+    "modifications": "constant gain and OGG encoding; complete composition preserved",
+    "duration_s": 137.079,
+    "peak_dbfs": -7.41,
+    "sha256": "1962441aeb79251de58ba856812131106bdfaa685f7d810e1589bf5ebf173469",
+    "aesthetic_acceptance": "not auditioned"
+  },
+  {
+    "role": "city",
+    "title": "Midsommar",
+    "author": "Scott Buckley",
+    "license": "CC-BY-4.0",
+    "source": "https://www.scottbuckley.com.au/library/midsommar/",
+    "file": "assets\\audio\\orchestral\\city.ogg",
+    "modifications": "constant gain and OGG encoding; complete composition preserved",
+    "duration_s": 234.004,
+    "peak_dbfs": -9.38,
+    "sha256": "f3ec6bc4c70ceaa553442d41e7aee9857d1e68ed509475e098df7369fc5c0511",
+    "aesthetic_acceptance": "not auditioned"
+  },
+  {
+    "role": "tidewind",
+    "title": "Snowfall",
+    "author": "Scott Buckley",
+    "license": "CC-BY-4.0",
+    "source": "https://www.scottbuckley.com.au/library/snowfall/",
+    "file": "assets\\audio\\orchestral\\tidewind.ogg",
+    "modifications": "constant gain and OGG encoding; complete composition preserved",
+    "duration_s": 248.407,
+    "peak_dbfs": -8.04,
+    "sha256": "d9cb0e48e3ea19412cd9b92f0ab5b232dbea2d855d36a25259ad964507ca760c",
+    "aesthetic_acceptance": "not auditioned"
+  },
+  {
+    "role": "sanctum",
+    "title": "Undertow",
+    "author": "Scott Buckley",
+    "license": "CC-BY-4.0",
+    "source": "https://www.scottbuckley.com.au/library/undertow/",
+    "file": "assets\\audio\\orchestral\\sanctum.ogg",
+    "modifications": "constant gain and OGG encoding; complete composition preserved",
+    "duration_s": 249.931,
+    "peak_dbfs": -9.34,
+    "sha256": "9a8d9e0835adf4ae96c440a3c9bf9ec15fb2abd5b837aae670323e5b8e1ee0b6",
+    "aesthetic_acceptance": "not auditioned"
+  }
+]

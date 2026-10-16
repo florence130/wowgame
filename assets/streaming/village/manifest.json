@@ -1,0 +1,104 @@
+[
+	{
+		"after_batches": 18,
+		"asset": "barn.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 19772
+	},
+	{
+		"after_batches": 25,
+		"asset": "farmhouse.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 34288
+	},
+	{
+		"after_batches": 19,
+		"asset": "guard.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 18508
+	},
+	{
+		"after_batches": 24,
+		"asset": "home_broad.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 48990
+	},
+	{
+		"after_batches": 24,
+		"asset": "home_cot.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 39484
+	},
+	{
+		"after_batches": 24,
+		"asset": "home_l.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 59952
+	},
+	{
+		"after_batches": 25,
+		"asset": "home_loft.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 45814
+	},
+	{
+		"after_batches": 23,
+		"asset": "home_long.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 51984
+	},
+	{
+		"after_batches": 22,
+		"asset": "home_mini.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 36690
+	},
+	{
+		"after_batches": 24,
+		"asset": "home_thatch.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 28030
+	},
+	{
+		"after_batches": 24,
+		"asset": "home_wing.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 53642
+	},
+	{
+		"after_batches": 30,
+		"asset": "smithy.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 57868
+	},
+	{
+		"after_batches": 20,
+		"asset": "stable.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 28488
+	},
+	{
+		"after_batches": 20,
+		"asset": "store.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 41922
+	},
+	{
+		"after_batches": 21,
+		"asset": "tailor.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 45562
+	},
+	{
+		"after_batches": 23,
+		"asset": "tavern.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 89430
+	},
+	{
+		"after_batches": 22,
+		"asset": "trainer.glb",
+		"before_meshes": 2,
+		"triangles_preserved": 55688
+	}
+]

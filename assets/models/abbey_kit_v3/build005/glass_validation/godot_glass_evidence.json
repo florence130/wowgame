@@ -1,0 +1,36 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "load_error": 0,
+  "passed": true,
+  "scope": "Actual Godot GLB import, alpha transparency, per-pixel lit material and shadow flags; not a headless raster visibility test",
+  "window_materials": [
+    {
+      "alpha": 0.280000001192093,
+      "name": "ABY2_glass",
+      "passed": true,
+      "shading_mode": 1,
+      "shadow_casting": 1,
+      "transparency": 4,
+      "transparency_name": "TRANSPARENCY_ALPHA_DEPTH_PRE_PASS"
+    },
+    {
+      "alpha": 0.280000001192093,
+      "name": "ABY2_window_glow",
+      "passed": true,
+      "shading_mode": 1,
+      "shadow_casting": 1,
+      "transparency": 4,
+      "transparency_name": "TRANSPARENCY_ALPHA_DEPTH_PRE_PASS"
+    }
+  ]
+}

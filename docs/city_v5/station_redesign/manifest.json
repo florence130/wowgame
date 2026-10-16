@@ -1,0 +1,462 @@
+{
+  "title": "晴岚中央车站 · 重设计与Tripo构件包",
+  "version": "station-concept-3",
+  "status": "设计视图，等待用户逐件Tripo生成；未替换游戏车站",
+  "units": "m",
+  "axes": "Godot X width / Y up / Z depth; front -Z. Blender Z up / +Y front.",
+  "overallViews": {
+    "hero": "views/hero.png",
+    "front": "views/front.png",
+    "right": "views/right.png",
+    "back": "views/back.png",
+    "top": "views/top.png",
+    "rear_hero": "views/rear_hero.png",
+    "exploded": "views/exploded.png"
+  },
+  "modules": [
+    {
+      "label": "中央到达大厅",
+      "dimensions": [
+        32,
+        27,
+        14
+      ],
+      "reuseCount": 1,
+      "interfaces": [
+        "左右侧面 x=±16 为翼楼拼接面",
+        "后侧 z=7 接候车厅；14m门洞保持贯通"
+      ],
+      "notes": "保留大拱门、上方采光窗和门廊；时钟冠饰另件，不把钟楼和大厅熔为一体。",
+      "id": "M01_entrance_pavilion",
+      "views": {
+        "hero": "modules/M01_entrance_pavilion/hero.png",
+        "front": "modules/M01_entrance_pavilion/front.png",
+        "right": "modules/M01_entrance_pavilion/right.png",
+        "back": "modules/M01_entrance_pavilion/back.png",
+        "top": "modules/M01_entrance_pavilion/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -16.5,
+          -1.2000000476837158,
+          -9.5
+        ],
+        "max": [
+          16.5,
+          26.600000381469727,
+          7.800000190734863
+        ]
+      },
+      "actualDimensions": [
+        33.0,
+        27.8,
+        17.3
+      ]
+    },
+    {
+      "label": "服务翼楼标准开间",
+      "dimensions": [
+        10,
+        20,
+        20
+      ],
+      "reuseCount": 4,
+      "interfaces": [
+        "左右 x=±5 是无外挑装饰的拼接面",
+        "正面 z=-10；每个10m开间包含完整门窗节奏"
+      ],
+      "notes": "票务、行李与旅客服务用同一标准开间复用；窗框随墙体整体生成。",
+      "id": "M02_wing_bay",
+      "views": {
+        "hero": "modules/M02_wing_bay/hero.png",
+        "front": "modules/M02_wing_bay/front.png",
+        "right": "modules/M02_wing_bay/right.png",
+        "back": "modules/M02_wing_bay/back.png",
+        "top": "modules/M02_wing_bay/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -5.0,
+          -1.2000000476837158,
+          -11.289999961853027
+        ],
+        "max": [
+          5.0,
+          19.190000534057617,
+          11.289999961853027
+        ]
+      },
+      "actualDimensions": [
+        10.0,
+        20.39,
+        22.58
+      ]
+    },
+    {
+      "label": "翼端转角亭楼",
+      "dimensions": [
+        16,
+        28,
+        22
+      ],
+      "reuseCount": 2,
+      "interfaces": [
+        "朝中央大厅的一侧与翼楼接合",
+        "正面 z=-11；右侧版本通过旋转/适当镜像组装"
+      ],
+      "notes": "带转角壁柱、陡屋面和小型采光冠；它是横向站房的收尾，不是独立高塔。",
+      "id": "M03_corner_pavilion",
+      "views": {
+        "hero": "modules/M03_corner_pavilion/hero.png",
+        "front": "modules/M03_corner_pavilion/front.png",
+        "right": "modules/M03_corner_pavilion/right.png",
+        "back": "modules/M03_corner_pavilion/back.png",
+        "top": "modules/M03_corner_pavilion/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -9.289999961853027,
+          -1.2000000476837158,
+          -12.505000114440918
+        ],
+        "max": [
+          9.289999961853027,
+          27.399999618530273,
+          12.289999961853027
+        ]
+      },
+      "actualDimensions": [
+        18.58,
+        28.6,
+        24.795
+      ]
+    },
+    {
+      "label": "候车厅拱顶标准段",
+      "dimensions": [
+        32,
+        9,
+        10
+      ],
+      "reuseCount": 4,
+      "interfaces": [
+        "前后 z=±5 都保持开口",
+        "拱脚 x=±16,y=0；按10m节距连续拼接"
+      ],
+      "notes": "包含完整钢拱、檩条和青色玻璃壳；禁止把端面封成实体墙。",
+      "id": "M04_vault_segment",
+      "views": {
+        "hero": "modules/M04_vault_segment/hero.png",
+        "front": "modules/M04_vault_segment/front.png",
+        "right": "modules/M04_vault_segment/right.png",
+        "back": "modules/M04_vault_segment/back.png",
+        "top": "modules/M04_vault_segment/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -16.399999618530273,
+          -0.6000000238418579,
+          -5.224999904632568
+        ],
+        "max": [
+          16.399999618530273,
+          8.189769744873047,
+          5.224999904632568
+        ]
+      },
+      "actualDimensions": [
+        32.8,
+        8.79,
+        10.45
+      ]
+    },
+    {
+      "label": "候车厅后端拱窗",
+      "dimensions": [
+        32,
+        17,
+        1.2
+      ],
+      "reuseCount": 1,
+      "interfaces": [
+        "顶部半椭圆拱与M04同宽32m",
+        "下部保留28m宽双股轨道通口，不得封堵",
+        "后端底面放在二层站台标高13.4m"
+      ],
+      "notes": "端墙与拱顶分件；玻璃区清晰分格，不要生成一整块不透明石墙。",
+      "id": "M05_vault_end",
+      "views": {
+        "hero": "modules/M05_vault_end/hero.png",
+        "front": "modules/M05_vault_end/front.png",
+        "right": "modules/M05_vault_end/right.png",
+        "back": "modules/M05_vault_end/back.png",
+        "top": "modules/M05_vault_end/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -16.0,
+          -0.23999999463558197,
+          -1.3899999856948853
+        ],
+        "max": [
+          16.0,
+          16.600000381469727,
+          0.6000000238418579
+        ]
+      },
+      "actualDimensions": [
+        32.0,
+        16.84,
+        1.99
+      ]
+    },
+    {
+      "label": "站台雨棚标准段",
+      "dimensions": [
+        14,
+        6.5,
+        10
+      ],
+      "reuseCount": 6,
+      "interfaces": [
+        "前后 z=±5 开放，可按10m重复",
+        "柱脚以模块底面y=0为基准"
+      ],
+      "notes": "整段生成柱、梁和折线屋盖，保持柱间可通行；不要自动加地面和列车。",
+      "id": "M06_platform_canopy",
+      "views": {
+        "hero": "modules/M06_platform_canopy/hero.png",
+        "front": "modules/M06_platform_canopy/front.png",
+        "right": "modules/M06_platform_canopy/right.png",
+        "back": "modules/M06_platform_canopy/back.png",
+        "top": "modules/M06_platform_canopy/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -7.099999904632568,
+          0.0,
+          -5.300000190734863
+        ],
+        "max": [
+          7.099999904632568,
+          6.5,
+          5.300000190734863
+        ]
+      },
+      "actualDimensions": [
+        14.2,
+        6.5,
+        10.6
+      ]
+    },
+    {
+      "label": "通往高架站台的双跑楼梯",
+      "dimensions": [
+        12,
+        15,
+        20
+      ],
+      "reuseCount": 2,
+      "interfaces": [
+        "下层入口楼面y=0，二层楼面y=13.4",
+        "上下出入口在前侧，两个楼梯方向相反"
+      ],
+      "notes": "以图保留双跑、平台和栏杆。Tripo外观件回收后须重新制作精确台阶/平滑碰撞。",
+      "id": "M07_stair_gallery",
+      "views": {
+        "hero": "modules/M07_stair_gallery/hero.png",
+        "front": "modules/M07_stair_gallery/front.png",
+        "right": "modules/M07_stair_gallery/right.png",
+        "back": "modules/M07_stair_gallery/back.png",
+        "top": "modules/M07_stair_gallery/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -6.0,
+          -0.36000001430511475,
+          -10.0
+        ],
+        "max": [
+          6.0,
+          14.45863151550293,
+          10.0
+        ]
+      },
+      "actualDimensions": [
+        12.0,
+        14.819,
+        20.0
+      ]
+    },
+    {
+      "label": "中央时钟与翼饰冠",
+      "dimensions": [
+        12,
+        11,
+        3
+      ],
+      "reuseCount": 1,
+      "interfaces": [
+        "下方平直底座，居中装在M01屋顶前缘",
+        "正面朝-Z，背面不添加支架以外的建筑"
+      ],
+      "notes": "重点精修模块：深浮雕表盘、金属指针、双翼与海港纹章；不要生成文字。",
+      "id": "M08_clock_crest",
+      "views": {
+        "hero": "modules/M08_clock_crest/hero.png",
+        "front": "modules/M08_clock_crest/front.png",
+        "right": "modules/M08_clock_crest/right.png",
+        "back": "modules/M08_clock_crest/back.png",
+        "top": "modules/M08_clock_crest/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -6.0,
+          0.0,
+          -1.5
+        ],
+        "max": [
+          6.0,
+          10.899999618530273,
+          1.5
+        ]
+      },
+      "actualDimensions": [
+        12.0,
+        10.9,
+        3.0
+      ]
+    },
+    {
+      "label": "正门台阶与中间缓坡",
+      "dimensions": [
+        24,
+        0.6,
+        5
+      ],
+      "reuseCount": 1,
+      "interfaces": [
+        "前缘y=-0.6；后缘y=0接大厅",
+        "中央4m净宽缓坡，两侧三级台阶"
+      ],
+      "notes": "精确土木件建议最终Blender重建，Tripo可用于石材表面参考；切勿把台阶熔成乱石。",
+      "id": "M09_entry_steps",
+      "views": {
+        "hero": "modules/M09_entry_steps/hero.png",
+        "front": "modules/M09_entry_steps/front.png",
+        "right": "modules/M09_entry_steps/right.png",
+        "back": "modules/M09_entry_steps/back.png",
+        "top": "modules/M09_entry_steps/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -12.0,
+          -0.6000000238418579,
+          -5.0
+        ],
+        "max": [
+          12.0,
+          0.0,
+          -0.0
+        ]
+      },
+      "actualDimensions": [
+        24.0,
+        0.6,
+        5.0
+      ]
+    },
+    {
+      "label": "站前成组双臂灯",
+      "dimensions": [
+        3.6,
+        6.2,
+        1.4
+      ],
+      "reuseCount": 8,
+      "interfaces": [
+        "底面中心为安装点",
+        "保留两灯的对称朝向与实体底座"
+      ],
+      "notes": "两盏灯与灯柱作为完整单件；生成时不带地面、不带其他建筑。",
+      "id": "M10_plaza_lamp",
+      "views": {
+        "hero": "modules/M10_plaza_lamp/hero.png",
+        "front": "modules/M10_plaza_lamp/front.png",
+        "right": "modules/M10_plaza_lamp/right.png",
+        "back": "modules/M10_plaza_lamp/back.png",
+        "top": "modules/M10_plaza_lamp/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -1.9299999475479126,
+          0.0,
+          -0.5299999713897705
+        ],
+        "max": [
+          1.9299999475479126,
+          6.199999809265137,
+          0.5299999713897705
+        ]
+      },
+      "actualDimensions": [
+        3.86,
+        6.2,
+        1.06
+      ]
+    },
+    {
+      "label": "海港铁路徽章浮雕",
+      "dimensions": [
+        3.2,
+        3.2,
+        0.5
+      ],
+      "reuseCount": 4,
+      "interfaces": [
+        "背面为平面，正面朝-Z",
+        "安装在门楣/翼端空白徽章位"
+      ],
+      "notes": "海翼与轮轨意象的浅浮雕，避免文字；与时钟冠分开，方便复用。",
+      "id": "M11_relief_roundel",
+      "views": {
+        "hero": "modules/M11_relief_roundel/hero.png",
+        "front": "modules/M11_relief_roundel/front.png",
+        "right": "modules/M11_relief_roundel/right.png",
+        "back": "modules/M11_relief_roundel/back.png",
+        "top": "modules/M11_relief_roundel/top.png"
+      },
+      "actualBounds": {
+        "min": [
+          -1.600000023841858,
+          0.0,
+          -0.7099999785423279
+        ],
+        "max": [
+          1.600000023841858,
+          3.200000047683716,
+          0.10999999940395355
+        ]
+      },
+      "actualDimensions": [
+        3.2,
+        3.2,
+        0.82
+      ]
+    }
+  ],
+  "recommendedOrder": [
+    "M01_entrance_pavilion",
+    "M02_wing_bay",
+    "M03_corner_pavilion",
+    "M04_vault_segment",
+    "M08_clock_crest",
+    "M06_platform_canopy",
+    "M05_vault_end",
+    "M07_stair_gallery",
+    "M09_entry_steps",
+    "M10_plaza_lamp",
+    "M11_relief_roundel"
+  ],
+  "pipelineNote": "All views are actual Blender renders of one new design. Tripo is performed by the user. Measured joints and collision geometry must be corrected after generation."
+}

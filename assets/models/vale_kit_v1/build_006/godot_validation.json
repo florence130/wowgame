@@ -1,0 +1,218 @@
+{
+  "checks": [
+    {
+      "file": "modules/V_barn_beam.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_barn_doorframe.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_barn_frame.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_barn_wall_door.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_barn_wall_solid.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_barn_wall_window.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_barrel.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_bracket.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_cargo_door.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_chimney.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_door.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_farm_beam.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_farm_doorframe.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_farm_frame.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_farm_wall_door.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_farm_wall_solid.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_farm_wall_window.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_fence_4m.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_fence_curved_12m.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_flowerbox.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_foundation.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_haybale.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_hayloft.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_course_0.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_course_1.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_course_2.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_course_3.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_hub.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_roof.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_mill_sail.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_porch.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_ridge_thatch.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_ridge_tile.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_roof_thatch_4m.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_roof_tile_4m.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_stone_SDF.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "modules/V_window_insert.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/VALE_barn.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/VALE_farm.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/VALE_fence_demo.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/VALE_rotor.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/VALE_windmill.glb",
+      "load_error": 0,
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "files": 42,
+  "passed": true,
+  "scope": "Actual GLTFDocument loading and instantiation with lit materials, isolated project; not live map integration"
+}

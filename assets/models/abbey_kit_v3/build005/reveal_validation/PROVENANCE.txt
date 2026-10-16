@@ -1,0 +1,14 @@
+返口诊断实渲证据 / Reveal diagnostic render provenance
+
+这两张图片不是 build004 主场景的渲染。
+来源为 build002/abbey_kit.blend 的只读快照，在独立后台 Blender 中追加与 build004 同源的 openings.py 返口模块后渲染。
+未改变 build002 原文件；未使用用户 live Blender。
+插入：8 个 window_reveal、1 个 portal_reveal、1 个 entry_reveal。
+检查：返口网格封闭流形、正体积、无零面积面；实际射线证明返口位于旧洞壁前 15 mm。
+图像：interior_reveals_after.png 是追加返口后的诊断室内视图；portal_reveal_close.png 是同一次诊断中的后殿拱口近景。
+opening_diagnosis.json 保留添加前后逐对象 BVH 命中证据。
+
+源场景快照 SHA256: 666BA571382C63BECBC5D2DADBDB17EE6A6A150E796E17240F24DB5446F7925A
+openings.py SHA256: E9EE890536C13BB66B83455F296D39445A847BF9EFBCCE87382A8263D80E7463
+诊断脚本: E:/wowgame/tools/blender/abbey_kit_v3/openings_probe.py
+同源返口脚本: E:/wowgame/tools/blender/abbey_kit_v3/openings.py

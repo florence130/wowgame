@@ -1,0 +1,15 @@
+{
+  "version": "2026-10-11",
+  "description": "Compressed source archive for the Stylarts market pack",
+  "archives": [
+    {
+      "source_path": "F:\\资源\\服装\\stylized-medieval-market-fatpack--stylarts-5.0+.rar",
+      "bundled_path": "res://assets/source_packs/archives/stylized-medieval-market-fatpack--stylarts-5.0+.rar",
+      "archive_type": "rar",
+      "bytes": 2791714959,
+      "sha256": "f7f1e87efa7189d3771511bbd85f30bce0f8f0825664f564aa03367f66d34b99",
+      "runtime_use": "external archive; convert selected assets to GLB before runtime use"
+    }
+  ],
+  "grass_density": "unchanged in this bundling pass"
+}

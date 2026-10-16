@@ -1,0 +1,1210 @@
+{
+  "checks": [
+    {
+      "check": "wall_plain_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 72,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "wall_plain_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_4_pitch",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_2_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 72,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "wall_plain_2_nonempty",
+      "passed": true
+    },
+    {
+      "check": "wall_plain_2_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "wall_door_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 132,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "wall_door_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "wall_door_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "wall_door_4_pitch",
+      "passed": true
+    },
+    {
+      "check": "wall_window_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.23999999463558197,
+        3.0199999809265137
+      ],
+      "triangles": 124,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "wall_window_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "wall_window_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "wall_window_4_pitch",
+      "passed": true
+    },
+    {
+      "check": "window_arch_frame_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.3199999928474426,
+        0.6200000047683716
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.3199999928474426,
+        2.930000066757202
+      ],
+      "triangles": 276,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "window_arch_frame_nonempty",
+      "passed": true
+    },
+    {
+      "check": "window_arch_frame_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "window_arch_glass_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.6800000071525574,
+        0.007499999832361937,
+        0.7799999713897705
+      ],
+      "bounds_max": [
+        0.6800000071525574,
+        0.10799999535083771,
+        2.7300000190734863
+      ],
+      "triangles": 92,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "window_arch_glass_nonempty",
+      "passed": true
+    },
+    {
+      "check": "window_arch_glass_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "door_arch_frame_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.25,
+        -0.30000001192092896,
+        0.0
+      ],
+      "bounds_max": [
+        1.25,
+        0.30000001192092896,
+        2.950000047683716
+      ],
+      "triangles": 232,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "door_arch_frame_nonempty",
+      "passed": true
+    },
+    {
+      "check": "door_arch_frame_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "door_wood_double_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.06499999761581421,
+        0.02500000037252903
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.16300000250339508,
+        2.6584203243255615
+      ],
+      "triangles": 504,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "door_wood_double_nonempty",
+      "passed": true
+    },
+    {
+      "check": "door_wood_double_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "door_wood_plain_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.06499999761581421,
+        0.02500000037252903
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.16300000250339508,
+        2.6600000858306885
+      ],
+      "triangles": 424,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "door_wood_plain_nonempty",
+      "passed": true
+    },
+    {
+      "check": "door_wood_plain_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "door_stone_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.9800000190734863,
+        -0.06499999761581421,
+        0.02500000037252903
+      ],
+      "bounds_max": [
+        0.9800000190734863,
+        0.16300000250339508,
+        2.6600000858306885
+      ],
+      "triangles": 436,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "door_stone_nonempty",
+      "passed": true
+    },
+    {
+      "check": "door_stone_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "rose_frame_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.1899999380111694,
+        -0.14000003039836884,
+        -1.1899999380111694
+      ],
+      "bounds_max": [
+        1.1899999380111694,
+        0.14000003039836884,
+        1.1899999380111694
+      ],
+      "triangles": 160,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "rose_frame_nonempty",
+      "passed": true
+    },
+    {
+      "check": "rose_frame_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "rose_glass_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.9399999976158142,
+        -0.017500000074505806,
+        -0.9399999976158142
+      ],
+      "bounds_max": [
+        0.9399999976158142,
+        0.10000000894069672,
+        0.9399999976158142
+      ],
+      "triangles": 540,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "rose_glass_nonempty",
+      "passed": true
+    },
+    {
+      "check": "rose_glass_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "column_3_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.4000000059604645,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        0.4000000059604645,
+        0.4000000059604645,
+        3.0
+      ],
+      "triangles": 232,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "column_3_nonempty",
+      "passed": true
+    },
+    {
+      "check": "column_3_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "railing_wood_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.75,
+        -0.09000000357627869,
+        0.07000000029802322
+      ],
+      "bounds_max": [
+        1.75,
+        0.09000000357627869,
+        1.1299999952316284
+      ],
+      "triangles": 352,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "railing_wood_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "railing_wood_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "railing_stone_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.75,
+        -0.10999999940395355,
+        0.07000000029802322
+      ],
+      "bounds_max": [
+        1.75,
+        0.10999999940395355,
+        1.1299999952316284
+      ],
+      "triangles": 648,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "railing_stone_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "railing_stone_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "fence_post_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.3199999928474426,
+        -0.3199999928474426,
+        0.0
+      ],
+      "bounds_max": [
+        0.3199999928474426,
+        0.3199999928474426,
+        1.2799999713897705
+      ],
+      "triangles": 88,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "fence_post_nonempty",
+      "passed": true
+    },
+    {
+      "check": "fence_post_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "arcade_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.32499998807907104,
+        1.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.32499998807907104,
+        3.0
+      ],
+      "triangles": 308,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "arcade_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "arcade_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "arcade_4_pitch",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_8x4_finite",
+      "passed": true,
+      "bounds_min": [
+        -4.539999961853027,
+        -2.0,
+        -0.1599999964237213
+      ],
+      "bounds_max": [
+        4.539999961853027,
+        2.0,
+        2.7200000286102295
+      ],
+      "triangles": 200,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "roof_gable_8x4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_8x4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_4x4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.5399999618530273,
+        -2.0,
+        -0.1599999964237213
+      ],
+      "bounds_max": [
+        2.5399999618530273,
+        2.0,
+        1.3600000143051147
+      ],
+      "triangles": 200,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "roof_gable_4x4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "roof_gable_4x4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "roof_ridge_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.23999999463558197,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.23999999463558197,
+        2.0,
+        0.28999999165534973
+      ],
+      "triangles": 16,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "roof_ridge_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "roof_ridge_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "gable_rose_8_finite",
+      "passed": true,
+      "bounds_min": [
+        -4.388077259063721,
+        -0.20000000298023224,
+        -0.2795618176460266
+      ],
+      "bounds_max": [
+        4.388077259063721,
+        0.330000102519989,
+        2.779561758041382
+      ],
+      "triangles": 196,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "gable_rose_8_nonempty",
+      "passed": true
+    },
+    {
+      "check": "gable_rose_8_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "gable_plain_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.3879408836364746,
+        -0.20000000298023224,
+        -0.2796941101551056
+      ],
+      "bounds_max": [
+        2.3879408836364746,
+        0.33000001311302185,
+        1.4196940660476685
+      ],
+      "triangles": 96,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "gable_plain_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "gable_plain_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "floor_stone_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.22499999403953552
+      ],
+      "triangles": 204,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "floor_stone_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "floor_stone_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "floor_wood_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.23999999463558197
+      ],
+      "triangles": 108,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "floor_wood_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "floor_wood_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "plinth_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.6000000238418579
+      ],
+      "triangles": 12,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "plinth_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "plinth_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.6000000834465027,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.6000000834465027,
+        0.8250000476837158
+      ],
+      "triangles": 84,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "stairs_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "chimney_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.5,
+        -0.5,
+        0.0
+      ],
+      "bounds_max": [
+        0.5,
+        0.5,
+        1.8799999952316284
+      ],
+      "triangles": 128,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "chimney_nonempty",
+      "passed": true
+    },
+    {
+      "check": "chimney_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "dome_frame_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.119999885559082,
+        -2.119999885559082,
+        -0.007178955711424351
+      ],
+      "bounds_max": [
+        2.119999885559082,
+        2.119999885559082,
+        2.0545294284820557
+      ],
+      "triangles": 544,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "dome_frame_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "dome_frame_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "dome_glass_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        -0.006692380644381046
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "triangles": 320,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "dome_glass_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "dome_glass_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "bridge_segment_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -1.559999942779541,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        1.559999942779541,
+        1.1200000047683716
+      ],
+      "triangles": 340,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "bridge_segment_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "bridge_segment_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "balcony_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.75,
+        -1.0746949911117554
+      ],
+      "bounds_max": [
+        2.0,
+        0.75,
+        0.20000000298023224
+      ],
+      "triangles": 100,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "balcony_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "balcony_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "sagging_beam_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.11999999731779099,
+        -0.11999999731779099
+      ],
+      "bounds_max": [
+        2.0053834915161133,
+        0.29396453499794006,
+        0.11999999731779099
+      ],
+      "triangles": 68,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "sagging_beam_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "sagging_beam_4_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "bell_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.6800000071525574,
+        -0.6800000071525574,
+        -0.18000000715255737
+      ],
+      "bounds_max": [
+        0.6800000071525574,
+        0.6800000071525574,
+        0.8199999928474426
+      ],
+      "triangles": 184,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "bell_nonempty",
+      "passed": true
+    },
+    {
+      "check": "bell_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "buttress_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.3499999940395355,
+        -0.5,
+        0.0
+      ],
+      "bounds_max": [
+        0.3499999940395355,
+        0.5,
+        2.9200000762939453
+      ],
+      "triangles": 64,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "buttress_nonempty",
+      "passed": true
+    },
+    {
+      "check": "buttress_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "sdf_stone_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.5076199173927307,
+        -0.3096891939640045,
+        5.908663069931208e-07
+      ],
+      "bounds_max": [
+        0.5122984647750854,
+        0.30966535210609436,
+        0.585598886013031
+      ],
+      "triangles": 1308,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "sdf_stone_nonempty",
+      "passed": true
+    },
+    {
+      "check": "sdf_stone_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "sdf_plinth_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.6499999761581421,
+        -0.6499999761581421,
+        0.0
+      ],
+      "bounds_max": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.5702083110809326
+      ],
+      "triangles": 2278,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "sdf_plinth_nonempty",
+      "passed": true
+    },
+    {
+      "check": "sdf_plinth_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "sdf_rock_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.8630971312522888,
+        -0.5835732221603394,
+        1.9333949239808135e-05
+      ],
+      "bounds_max": [
+        0.803820788860321,
+        0.5836307406425476,
+        0.9417957067489624
+      ],
+      "triangles": 2400,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "sdf_rock_nonempty",
+      "passed": true
+    },
+    {
+      "check": "sdf_rock_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_bench_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.100000023841858,
+        -0.32499998807907104,
+        0.0
+      ],
+      "bounds_max": [
+        1.100000023841858,
+        0.32499998807907104,
+        1.1299999952316284
+      ],
+      "triangles": 200,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_bench_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_bench_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_planter_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.5199999809265137,
+        -0.49454936385154724,
+        0.0
+      ],
+      "bounds_max": [
+        0.5199999809265137,
+        0.49454939365386963,
+        1.4500000476837158
+      ],
+      "triangles": 192,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_planter_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_planter_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_crate_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.5,
+        -0.5249999761581421,
+        -0.02500000037252903
+      ],
+      "bounds_max": [
+        0.5,
+        0.5249999761581421,
+        1.024999976158142
+      ],
+      "triangles": 68,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_crate_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_crate_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_barrel_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.49000000953674316,
+        -0.49000000953674316,
+        0.0
+      ],
+      "bounds_max": [
+        0.49000000953674316,
+        0.49000000953674316,
+        1.100000023841858
+      ],
+      "triangles": 308,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_barrel_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_barrel_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_grave_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.4000000059604645,
+        -0.2750000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        0.4000000059604645,
+        0.2750000059604645,
+        1.2949999570846558
+      ],
+      "triangles": 132,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_grave_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_grave_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_dummy_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.7250000238418579,
+        -0.4000000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        0.7250000238418579,
+        0.4000000059604645,
+        2.1500000953674316
+      ],
+      "triangles": 156,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_dummy_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_dummy_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_rack_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.0,
+        -0.25,
+        0.0
+      ],
+      "bounds_max": [
+        1.0,
+        0.25,
+        2.549999952316284
+      ],
+      "triangles": 186,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_rack_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_rack_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_altar_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.25,
+        -0.6800000071525574,
+        0.0
+      ],
+      "bounds_max": [
+        1.25,
+        0.6800000071525574,
+        1.2575000524520874
+      ],
+      "triangles": 144,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_altar_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_altar_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_lamp_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.36000001430511475,
+        -0.36000001430511475,
+        0.0
+      ],
+      "bounds_max": [
+        0.36000001430511475,
+        0.36000001430511475,
+        3.0999999046325684
+      ],
+      "triangles": 164,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_lamp_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_lamp_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_fountain_finite",
+      "passed": true,
+      "bounds_min": [
+        -1.600000023841858,
+        -1.600000023841858,
+        0.0
+      ],
+      "bounds_max": [
+        1.600000023841858,
+        1.600000023841858,
+        1.9800000190734863
+      ],
+      "triangles": 360,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_fountain_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_fountain_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_cypress_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.6306782364845276,
+        -0.6824495196342468,
+        0.0
+      ],
+      "bounds_max": [
+        0.699999988079071,
+        0.6824495196342468,
+        4.099999904632568
+      ],
+      "triangles": 184,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_cypress_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_cypress_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "prop_banner_finite",
+      "passed": true,
+      "bounds_min": [
+        -0.6499999761581421,
+        -0.05000002682209015,
+        0.75
+      ],
+      "bounds_max": [
+        0.6499999761581421,
+        0.05000002682209015,
+        2.450000047683716
+      ],
+      "triangles": 72,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "prop_banner_nonempty",
+      "passed": true
+    },
+    {
+      "check": "prop_banner_no_degenerate_triangles",
+      "passed": true
+    },
+    {
+      "check": "wall_door_4_opening_penetrates",
+      "passed": true,
+      "center_hit": false,
+      "solid_side_hit": true
+    },
+    {
+      "check": "wall_window_4_opening_penetrates",
+      "passed": true,
+      "center_hit": false,
+      "solid_side_hit": true
+    }
+  ],
+  "passed": true,
+  "scope": "evaluated component geometry, structural pitch and opening rays; game integration separate"
+}

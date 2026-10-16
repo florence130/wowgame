@@ -1,0 +1,8 @@
+{
+  "plaster": "plaster", "plaster_patch": "plaster_ochre", "timber": "timber", "wood": "wood",
+  "terracotta": "terracotta", "tile_dark": "terracotta_dark", "tile_light": "terracotta_light",
+  "barn": "wood_red", "barn_light": "terracotta", "barn_dark": "terracotta_dark", "ivory": "plaster_white",
+  "thatch": "thatch", "thatch_light": "wheat", "thatch_dark": "thatch_dark", "mill_roof": "terracotta_dark", "mill_light": "terracotta",
+  "sandstone": "stone", "stone_dark": "stone_dark", "stone_light": "stone_light", "iron": "iron",
+  "glass": "glass", "cloth": "linen", "leaf": "leaf_mid", "flower": "flower_pink", "flower_y": "flower_y", "flower_w": "flower_w"
+}

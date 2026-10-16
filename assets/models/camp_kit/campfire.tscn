@@ -1,0 +1,177 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/world/campfire_effect.gd" id="1_b1htv"]
+[ext_resource type="Texture2D" path="res://assets/textures/building/pt_bark.png" id="2_8x7i1"]
+[ext_resource type="Shader" path="res://assets/models/camp_kit/fire.gdshader" id="3_2fprp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgpd8"]
+albedo_color = Color(0.5294118, 0.5137255, 0.48235294, 1)
+roughness = 0.95
+
+[sub_resource type="SphereMesh" id="SphereMesh_70x0w"]
+radius = 0.22
+height = 0.44
+radial_segments = 9
+rings = 4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ing3"]
+albedo_color = Color(0.3882353, 0.2627451, 0.15294118, 1)
+albedo_texture = ExtResource("2_8x7i1")
+roughness = 0.95
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yrf5b"]
+top_radius = 0.1
+bottom_radius = 0.13
+height = 1.1
+radial_segments = 12
+rings = 1
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_7c40g"]
+frequency = 0.02
+fractal_octaves = 3
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_gf7bj"]
+width = 256
+height = 256
+noise = SubResource("FastNoiseLite_7c40g")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lm2ds"]
+render_priority = 0
+shader = ExtResource("3_2fprp")
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_gf7bj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_mpb4u"]
+size = Vector2(1.2, 1.65)
+
+[sub_resource type="QuadMesh" id="QuadMesh_08gqw"]
+size = Vector2(1.2, 1.65)
+
+[sub_resource type="QuadMesh" id="QuadMesh_k1tll"]
+size = Vector2(1.2, 1.65)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_is0jw"]
+height = 0.28
+radius = 0.9
+
+[node name="Campfire" type="Node3D" unique_id=1059360110]
+script = ExtResource("1_b1htv")
+
+[node name="HearthStone" type="MeshInstance3D" parent="." unique_id=1060850658]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, 0.75, 0.15, 0)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@10" type="MeshInstance3D" parent="." unique_id=1068665681]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, 0.649519, 0.15, 0.325)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@11" type="MeshInstance3D" parent="." unique_id=1965426943]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, 0.375, 0.15, 0.5629165)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@12" type="MeshInstance3D" parent="." unique_id=934427167]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, 4.5922738e-17, 0.15, 0.65)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@13" type="MeshInstance3D" parent="." unique_id=1594941171]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, -0.375, 0.15, 0.5629165)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@14" type="MeshInstance3D" parent="." unique_id=1196783407]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, -0.649519, 0.15, 0.325)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@15" type="MeshInstance3D" parent="." unique_id=366125563]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, -0.75, 0.15, 7.959941e-17)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@16" type="MeshInstance3D" parent="." unique_id=1230421533]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, -0.649519, 0.15, -0.325)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@17" type="MeshInstance3D" parent="." unique_id=1799020306]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, -0.375, 0.15, -0.5629165)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@18" type="MeshInstance3D" parent="." unique_id=1903467814]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, -1.3776821e-16, 0.15, -0.65)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@19" type="MeshInstance3D" parent="." unique_id=813634874]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, 0.375, 0.15, -0.5629165)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="@MeshInstance3D@20" type="MeshInstance3D" parent="." unique_id=975309326]
+transform = Transform3D(1.15, 0, 0, 0, 0.7, 0, 0, 0, 0.85, 0.649519, 0.15, -0.325)
+material_override = SubResource("StandardMaterial3D_vgpd8")
+mesh = SubResource("SphereMesh_70x0w")
+
+[node name="FuelLog" type="MeshInstance3D" parent="." unique_id=1685557120]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.18, 0)
+material_override = SubResource("StandardMaterial3D_2ing3")
+mesh = SubResource("CylinderMesh_yrf5b")
+
+[node name="@MeshInstance3D@21" type="MeshInstance3D" parent="." unique_id=1037908674]
+transform = Transform3D(0.30901697, 0.95105654, -4.1572e-08, 0, -4.371139e-08, -1, -0.95105654, 0.30901697, -1.3507561e-08, 0, 0.18, 0)
+material_override = SubResource("StandardMaterial3D_2ing3")
+mesh = SubResource("CylinderMesh_yrf5b")
+
+[node name="@MeshInstance3D@22" type="MeshInstance3D" parent="." unique_id=478436544]
+transform = Transform3D(-0.80901706, 0.5877852, -2.5692906e-08, 0, -4.371139e-08, -1, -0.5877852, -0.80901706, 3.5363257e-08, 0, 0.18, 0)
+material_override = SubResource("StandardMaterial3D_2ing3")
+mesh = SubResource("CylinderMesh_yrf5b")
+
+[node name="@MeshInstance3D@23" type="MeshInstance3D" parent="." unique_id=1368096726]
+transform = Transform3D(-0.80901694, -0.58778536, 2.5692914e-08, 0, -4.371139e-08, -1, 0.58778536, -0.80901694, 3.5363254e-08, 0, 0.18, 0)
+material_override = SubResource("StandardMaterial3D_2ing3")
+mesh = SubResource("CylinderMesh_yrf5b")
+
+[node name="@MeshInstance3D@24" type="MeshInstance3D" parent="." unique_id=1712207101]
+transform = Transform3D(0.30901712, -0.9510565, 4.1571997e-08, 0, -4.371139e-08, -1, 0.9510565, 0.30901712, -1.35075675e-08, 0, 0.18, 0)
+material_override = SubResource("StandardMaterial3D_2ing3")
+mesh = SubResource("CylinderMesh_yrf5b")
+
+[node name="Flames" type="Node3D" parent="." unique_id=2019475612]
+
+[node name="Flame" type="MeshInstance3D" parent="Flames" unique_id=1689707043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+material_override = SubResource("ShaderMaterial_lm2ds")
+cast_shadow = 0
+mesh = SubResource("QuadMesh_mpb4u")
+
+[node name="@MeshInstance3D@25" type="MeshInstance3D" parent="Flames" unique_id=1780074086]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, 0, 0.9, 0)
+material_override = SubResource("ShaderMaterial_lm2ds")
+cast_shadow = 0
+mesh = SubResource("QuadMesh_08gqw")
+
+[node name="@MeshInstance3D@26" type="MeshInstance3D" parent="Flames" unique_id=1114707685]
+transform = Transform3D(-0.50000006, 0, 0.8660254, 0, 1, 0, -0.8660254, 0, -0.50000006, 0, 0.9, 0)
+material_override = SubResource("ShaderMaterial_lm2ds")
+cast_shadow = 0
+mesh = SubResource("QuadMesh_k1tll")
+
+[node name="FireLight" type="OmniLight3D" parent="." unique_id=1777645732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+light_color = Color(1, 0.7058824, 0.3529412, 1)
+light_energy = 3.4
+shadow_enabled = true
+omni_range = 8.5
+
+[node name="HearthCollision" type="StaticBody3D" parent="." unique_id=759751290]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HearthCollision" unique_id=536783543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14, 0)
+shape = SubResource("CylinderShape3D_is0jw")

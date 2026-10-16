@@ -1,0 +1,31 @@
+{
+  "author": "Quaternius",
+  "pack": "Stylized Nature MegaKit Standard",
+  "url": "https://quaternius.com/packs/stylizednaturemegakit.html",
+  "download_page": "https://quaternius.itch.io/stylized-nature-megakit",
+  "license": "CC0-1.0",
+  "retrieved": "2026-10-06",
+  "files": {
+    "Bark_NormalTree.png": "f36e94fdd73255347325b998e02a0b2575fdf714b0315bfe5e8ff34bc8e13603",
+    "Bark_NormalTree_Normal.png": "852f6155404b8c39e100e41e26970e02a6a5c81b482d3726618dab28e3ad03a2",
+    "Bush_Common.bin": "a5e1a773c8ba78fd9c05a8b342131eba4879302a8fddd2c5186cab9ee1ef4966",
+    "Bush_Common.gltf": "77811fca92610cb254713d3d49d5029ab6cf13050c3afb61aa942786a7b2ca90",
+    "CommonTree_1.bin": "9dd689e84e1aa2f5b08db8def591254d582783c73737af54ba0d89b3e549c3ae",
+    "CommonTree_1.gltf": "b51cdea6545edb51d102dd6c27caafe62aa75e3c328ac8f9039f4e7bfd690bfa",
+    "CommonTree_2.bin": "a273d69de31a675a9d7e3eb3c43f804aef2d1b031692111b9e76eb3b0b686d0c",
+    "CommonTree_2.gltf": "67160975f0ac991b4a2ffb2add4ab4037b5e9c1bef9f66dac5235fcf0ba9bd52",
+    "CommonTree_3.bin": "24541f46fd9553e2389aba15575f2697009226e82118ed76868284114fd12b49",
+    "CommonTree_3.gltf": "17c6537aa8042bb7255fbb501bf7aeb2b6db87c16766f794f9c37be3ce70c976",
+    "Leaf_Pine_C.png": "86f7ff7a214f5424de48d269568f36a15485e61c80677e426c7be9f45181eef9",
+    "Leaves_NormalTree_C.png": "998612bdf0b76a22f5f54d65cd7a457815d2842d89653fa4348a4ebb42933ad3",
+    "Leaves_TwistedTree_C.png": "0e459b56b14c0e81b1b7cf3d1e8c6f0bb71790eb6c46bb02a76a922d8df646ea",
+    "Pine_1.bin": "0cc0900d156359cab7028d87cd5d8897fbcb0479ddf1ddf524d5462c11e17af2",
+    "Pine_1.gltf": "adc85a72e6f46f71317ca5f7630876bfb207f687427bc9e37cd97ec4af5f2cbc",
+    "Pine_2.bin": "5ba81ed2b131243bf02f5fb18e278083205ce16b0f30c364ccbe9355e7637c60",
+    "Pine_2.gltf": "57bd4732170b6c7e51bcf78fe5adaabf142f95a50378d8d3051d1f20a04d3c2f",
+    "CommonTree_5.gltf": "fb7061f2bf9fe850870b056431f8f66cd8fdeb443c90695c5efbcf1fe6876d53",
+    "CommonTree_5.bin": "0e617612d50e6bb2ca3c64338383f8938ce9e04d55b548ff11cec7a7b7d8f072",
+    "Pine_3.gltf": "54c72a4d614f053dd4b3d4404076a361de6085ec6a34560e42a76d7e79d89830",
+    "Pine_3.bin": "73edd69d7e789b12bfa32ab202c62d74ae98f0bba67975205211bf51906d8c82"
+  }
+}

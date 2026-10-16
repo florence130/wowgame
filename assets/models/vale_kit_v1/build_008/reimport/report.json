@@ -1,0 +1,10 @@
+{
+  "source": "actual assembly GLBs",
+  "rendered": [
+    "farm",
+    "barn",
+    "windmill"
+  ],
+  "external_texture_dependency": false,
+  "note": "GLBs imported into a fresh scene; texture is embedded in GLB buffers."
+}

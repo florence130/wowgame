@@ -1,0 +1,49 @@
+FREE AUDIO SOURCES AND MODIFICATIONS
+
+Music by Beau Buckley (OpenGameArt user Opus Magno):
+Plains 01, Plains 02, Castle 03, Cave 01, Battle 01, Opening 03.
+https://opengameart.org/content/plains-01
+https://opengameart.org/content/plains-02
+https://opengameart.org/content/castle-03
+https://opengameart.org/content/cave-01
+https://opengameart.org/content/battle-01
+https://opengameart.org/content/opening-03
+License: Creative Commons Attribution-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-sa/4.0/
+All modified music audio and arrangement MIDIs in this package remain under
+CC BY-SA 4.0. Credit Beau Buckley; indicate modifications and preserve this
+license for redistributed music adaptations. This notice applies to the music
+assets, not a claim that unrelated game code has the same license.
+Day modifications: level adjustment and 0.5-second loop crossfade.
+Night modifications: slower same source MIDI, unchanged first-voice pitches,
+piano and harp programs, reduced velocities, accompaniment thinning and
+percussion removal. Menu: two source voices arranged for piano and harp.
+Original and arrangement MIDI files are supplied alongside this notice.
+
+RPG Sound Pack by HaelDB: CC0 1.0 Universal.
+https://opengameart.org/content/rpg-sound-pack
+Interface Sounds and RPG Audio by Kenney: CC0 1.0 Universal.
+https://kenney.nl/assets/interface-sounds
+https://kenney.nl/assets/rpg-audio
+Forest Ambience by TinyWorlds: CC0 1.0 Universal.
+https://opengameart.org/content/forest-ambience
+Crickets Ambient Noise by Wolfgang_; optional credit Ted Kerr: CC0 1.0.
+https://opengameart.org/content/crickets-ambient-noise-loopable
+https://creativecommons.org/publicdomain/zero/1.0/
+SFX edits: level adjustment; several magic cues have pitch/length/fade edits.
+Ambience edits: level adjustment and loop crossfade. Village ambience currently
+uses outdoor nature textures, not a claim of recorded town crowds.
+
+Night/menu rendered using GeneralUser GS by S. Christian Collins.
+https://github.com/mrbumpy409/GeneralUser-GS
+The author's license permits private/commercial music recordings; full text
+is preserved in GeneralUser_GS_LICENSE.txt, including its sample-source caveat.
+SoundFont is a local build dependency, not distributed with the game.
+Renderer: FluidSynth (LGPL), a local build tool, not distributed with the game.
+
+See manifest.json for exact source members, modifications and output hashes.
+Saved source pages preserve the license and attribution claims observed when
+acquiring the assets. File availability is not treated as license permission.
+
+Combat SFX revision 2026-10-12: hit/critical hit use Kenney punch impacts; block uses plate impact; death uses soft heavy impact (neutral body fall, no voice). Kenney Impact Sounds: CC0. https://kenney.nl/assets/impact-sounds
+Shot: pistol.wav by Michel Baradari (apollo-music.de), submitted by qubodup, CC BY 3.0 https://creativecommons.org/licenses/by/3.0/ ; https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots . Modified volume and OGG encoding. Preserve author and license on distribution.

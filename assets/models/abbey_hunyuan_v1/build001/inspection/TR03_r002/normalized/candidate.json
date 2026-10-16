@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "status": "staging",
+  "production_ready": false,
+  "asset_id": "TR03",
+  "label_zh": "老虎窗山花上冠",
+  "created_utc": "2026-10-07T16:02:04.760994+00:00",
+  "blender_version": "5.2.2 LTS",
+  "source": {
+    "path": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\raw\\TR03.glb",
+    "sha256": "b320e8df85677723323a934b9c715197cf56ed43908d34d2710e9b602fa1802b",
+    "bytes": 36748
+  },
+  "source_image": {
+    "path_project_relative": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR03.png",
+    "exists_at_import": true,
+    "sha256_at_import": "b282a760e61bda2a31196e4bf087d9d3ddc355d897a53efa4c85b17a77e1a7ba",
+    "reference_provenance": {
+      "building_reference": "docs/abbey_tripo_20261007/references/townhall.png",
+      "decomposition_reference": "docs/abbey_tripo_20261007/references/legacy_breakdown.png",
+      "interpretation_zh": "用户提供的市政厅图片，仅作晨露谷修道院建筑语汇参考。独立部件图属于根据参考重绘的设计，不证明原建筑不可见面的形状。树木、旗帜、旗杆、灯具、园艺均不在本批。",
+      "part_image_status": "generated_and_visually_checked; see docs/abbey_tripo_20261007/REVIEW.md for scope",
+      "generation_record": "docs/abbey_tripo_20261007/GENERATION.md"
+    },
+    "image_is_design_interpretation": true
+  },
+  "asset_definition": {
+    "id": "TR03",
+    "name": "dormer_pediment",
+    "label_zh": "老虎窗山花上冠",
+    "dimensions_xyz_m": [
+      1.6,
+      0.35,
+      0.8
+    ],
+    "dimensions_status": "design_proposal",
+    "route": "hunyuan_optional",
+    "fallback_route": "blockout",
+    "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR03.png",
+    "scope_zh": "仅山花上冠和冠部侧卷饰；不含窗玻璃、竖直窗框、窗台或屋顶。",
+    "techniques": [
+      "mirror",
+      "profile_extrude",
+      "curve_bevel",
+      "bridge_loft",
+      "vertices"
+    ],
+    "origin": "back_bottom",
+    "target_socket_specification": {
+      "status": "design_proposal_requires_geometry_review",
+      "sockets": [
+        {
+          "name": "back",
+          "position_blender": [
+            0,
+            0,
+            0.4
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "dormer_crown_back"
+        },
+        {
+          "name": "bottom",
+          "position_blender": [
+            0,
+            0.175,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "dormer_crown_base"
+        }
+      ],
+      "review_zh": "仅上冠的范围、底边连续接口与对称性需核对；不得把完整老虎窗误当作该件。"
+    },
+    "default_route": "blender_native_H"
+  },
+  "axes": {
+    "x": "width",
+    "y": "depth; +Y faces out from building",
+    "z": "height; +Z up"
+  },
+  "units": "metres",
+  "orientation": {
+    "gltf_to_blender_conversion": "Blender importer applied first",
+    "additional_euler_xyz_degrees": [
+      0.0,
+      0.0,
+      180.0
+    ],
+    "front_is_verified": false
+  },
+  "normalization": {
+    "method": "uniform_by_rotated_height",
+    "uniform_scale": 1.6090971274156873,
+    "anisotropic_stretch_applied": false,
+    "source_hierarchy_and_proportions_preserved": true,
+    "anchor_before_scale_in_rotated_space": [
+      -0.027972042560577393,
+      -0.10048279166221619,
+      0.0
+    ],
+    "matrix_blender": [
+      [
+        -1.6090971231460571,
+        1.4067174447518482e-07,
+        0.0,
+        0.045009732246398926
+      ],
+      [
+        -1.4067174447518482e-07,
+        -1.6090971231460571,
+        0.0,
+        0.16168656945228577
+      ],
+      [
+        0.0,
+        0.0,
+        1.6090971231460571,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "origin": "back_bottom",
+    "origin_is_bounding_box_anchor_not_surface_repair": true
+  },
+  "bounds": {
+    "source_blender": {
+      "min": [
+        -0.5151110887527466,
+        -0.08199892938137054,
+        0.0
+      ],
+      "max": [
+        0.5710551738739014,
+        0.10048278421163559,
+        0.4971732199192047
+      ],
+      "dimensions_xyz": [
+        1.086166262626648,
+        0.18248171359300613,
+        0.4971732199192047
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    },
+    "source_after_rotation": {
+      "min": [
+        -0.5710551738739014,
+        -0.10048279166221619,
+        0.0
+      ],
+      "max": [
+        0.5151110887527466,
+        0.08199888467788696,
+        0.4971732199192047
+      ],
+      "dimensions_xyz": [
+        1.086166262626648,
+        0.18248167634010315,
+        0.4971732199192047
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    },
+    "candidate_metres": {
+      "min": [
+        -0.8738735318183899,
+        1.5407080056206723e-09,
+        0.0
+      ],
+      "max": [
+        0.8738735318183899,
+        0.2936306893825531,
+        0.800000011920929
+      ],
+      "dimensions_xyz": [
+        1.7477470636367798,
+        0.2936306878418451,
+        0.800000011920929
+      ],
+      "mesh_count": 1,
+      "evaluated_vertices": 1502,
+      "triangles": 3000
+    }
+  },
+  "proposed_dimensions_xyz_m": [
+    1.6,
+    0.35,
+    0.8
+  ],
+  "dimension_difference_xyz_m": [
+    0.1477470636367797,
+    -0.05636931215815488,
+    1.1920928910669204e-08
+  ],
+  "source_hierarchy": [
+    {
+      "name": "Mesh_0",
+      "type": "MESH",
+      "parent": null,
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "collection": "ABY_TR03",
+  "root": "TR03_ROOT",
+  "sockets": [
+    {
+      "name": "back",
+      "position_blender": [
+        0,
+        0,
+        0.4
+      ],
+      "normal_blender": [
+        0,
+        -1,
+        0
+      ],
+      "kind": "dormer_crown_back"
+    },
+    {
+      "name": "bottom",
+      "position_blender": [
+        0,
+        0.175,
+        0
+      ],
+      "normal_blender": [
+        0,
+        0,
+        -1
+      ],
+      "kind": "dormer_crown_base"
+    }
+  ],
+  "socket_status": "design_proposal_unverified",
+  "review_required": [
+    "Inspect front/back and requested part-only scope against the individual source image.",
+    "Review unknown rear/hidden geometry; generated image is a design interpretation.",
+    "Check silhouette, watertightness, normals, disconnected scraps, density and UV/material quality.",
+    "Cut/repair actual planar bearing and back interfaces; bounding-box alignment does not flatten surfaces.",
+    "Replace proposal sockets with measured contact positions and check matched pieces in assembly.",
+    "Review actual width/depth deviations; regenerate or rebuild geometry instead of anisotropic stretching.",
+    "Confirm polycount, collision, LOD, textures and game-engine import budget before promotion.",
+    "Reopen candidate blend and reimport GLB; approve only after visual and dimensional checks."
+  ],
+  "outputs": {
+    "blend": "abbey_kit.blend",
+    "glb": "glb/TR03.glb",
+    "blend_sha256": "564b0cc81c58d8318b5d758fd3e803c43a65f4b8d0b583107dbc4594629d00e4",
+    "glb_sha256": "18a2b6d4c144d4849f8b26fa7d307748643a32d3fe9a978481d303527ca96c4e"
+  },
+  "catalog_updated": false,
+  "pipeline_stage_completed": "optional_hunyuan_candidate_normalization_only",
+  "provider": "Tencent Hunyuan3D",
+  "normalization_engine": "abbey_tripo/import_tripo.py (shared offline implementation)",
+  "generation_request_expectation": {
+    "model": "3.0",
+    "generate_type": "Geometry",
+    "face_count": 3000,
+    "enable_pbr": false,
+    "request_execution_verified_by_this_tool": false
+  }
+}

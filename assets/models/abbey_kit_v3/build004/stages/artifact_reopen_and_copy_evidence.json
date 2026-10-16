@@ -1,0 +1,23 @@
+{
+  "stage_blend_reopened": true,
+  "scene": "ABY3_Inspectable_Pipeline_Stages",
+  "scene_objects": 374,
+  "stage_collections": 56,
+  "final_recipe_collections": 16,
+  "png_copy_integrity": [
+    {
+      "source": "E:\\wowgame\\tools\\blender\\abbey_kit_v3\\furniture_probe\\pew_4m_fixed.png",
+      "source_sha256": "FAAFF792A3084988D6B778BCC50D905B36D80763DB23107C7076506E8A55CCFB",
+      "target_sha256": "FAAFF792A3084988D6B778BCC50D905B36D80763DB23107C7076506E8A55CCFB",
+      "target": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build004\\renders\\pew_4m_detail.png",
+      "byte_identical": true
+    },
+    {
+      "source": "E:\\wowgame\\tools\\blender\\abbey_kit_v3\\pipeline_probe\\capital_detail.png",
+      "source_sha256": "14842AABFD300178608D610C59B092344527AD34E36D39E1AA516EFC4458433D",
+      "target_sha256": "14842AABFD300178608D610C59B092344527AD34E36D39E1AA516EFC4458433D",
+      "target": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build004\\renders\\capital_detail.png",
+      "byte_identical": true
+    }
+  ]
+}

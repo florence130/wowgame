@@ -1,0 +1,1402 @@
+{
+  "version": "5.0",
+  "authoring_units": "metres",
+  "godot_axes": {
+    "up": "+Y",
+    "front": "-Z"
+  },
+  "placement": "Place root at finished street grade + 0.6m. Rotation and translation only; preserve unit scale.",
+  "source": "tools/blender/city_v5/architecture.py",
+  "assets": [
+    {
+      "id": "corner_merchants_3",
+      "label": "商人街角公馆",
+      "path": "res://assets/models/city_v5/architecture/corner_merchants_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/corner_merchants_3.blend",
+      "footprint": [
+        32,
+        26
+      ],
+      "footprint_polygon": [
+        [
+          -16.0,
+          -13.0
+        ],
+        [
+          16.0,
+          -13.0
+        ],
+        [
+          16.0,
+          -1.0
+        ],
+        [
+          -4.0,
+          -1.0
+        ],
+        [
+          -4.0,
+          13.0
+        ],
+        [
+          -16.0,
+          13.0
+        ]
+      ],
+      "visible_height": 18.672,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 3.4,
+          "clear_height": 3.65,
+          "open": true,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "L",
+      "street_side": "-Z",
+      "corner_wing": "-X wing extends toward +Z",
+      "courtyard_open_side": "",
+      "use": "commercial_corner",
+      "enterable": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, open doorway shell",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 12,
+      "triangles": 17846,
+      "collision_triangles": 188,
+      "bounds_godot": {
+        "min": [
+          -16.74,
+          -1.2,
+          -14.28
+        ],
+        "max": [
+          17.075,
+          18.672,
+          13.74
+        ]
+      }
+    },
+    {
+      "id": "corner_copper_4",
+      "label": "铜绿街角住宅",
+      "path": "res://assets/models/city_v5/architecture/corner_copper_4.glb",
+      "source_blend": "assets/models/city_v5/architecture/corner_copper_4.blend",
+      "footprint": [
+        34,
+        26
+      ],
+      "footprint_polygon": [
+        [
+          -17.0,
+          -13.0
+        ],
+        [
+          17.0,
+          -13.0
+        ],
+        [
+          17.0,
+          -1.0
+        ],
+        [
+          -5.0,
+          -1.0
+        ],
+        [
+          -5.0,
+          13.0
+        ],
+        [
+          -17.0,
+          13.0
+        ]
+      ],
+      "visible_height": 21.68,
+      "wall_height": 16.2,
+      "floors": 4,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "L",
+      "street_side": "-Z",
+      "corner_wing": "-X wing extends toward +Z",
+      "courtyard_open_side": "",
+      "use": "residential_corner",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 24948,
+      "collision_triangles": 56,
+      "bounds_godot": {
+        "min": [
+          -17.74,
+          -1.2,
+          -14.28
+        ],
+        "max": [
+          18.075,
+          21.68,
+          13.74
+        ]
+      }
+    },
+    {
+      "id": "courtyard_college_3",
+      "label": "学院三面庭院",
+      "path": "res://assets/models/city_v5/architecture/courtyard_college_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/courtyard_college_3.blend",
+      "footprint": [
+        36,
+        26
+      ],
+      "footprint_polygon": [
+        [
+          -18.0,
+          -13.0
+        ],
+        [
+          18.0,
+          -13.0
+        ],
+        [
+          18.0,
+          13.0
+        ],
+        [
+          9.0,
+          13.0
+        ],
+        [
+          9.0,
+          -3.0
+        ],
+        [
+          -9.0,
+          -3.0
+        ],
+        [
+          -9.0,
+          13.0
+        ],
+        [
+          -18.0,
+          13.0
+        ]
+      ],
+      "visible_height": 17.88,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 3.4,
+          "clear_height": 3.65,
+          "open": true,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        },
+        {
+          "position": [
+            0.0,
+            0,
+            -3.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            1.0
+          ],
+          "clear_width": 3.4,
+          "clear_height": 3.65,
+          "open": true,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "U",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "+Z",
+      "use": "academy_courtyard",
+      "enterable": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, open doorway shell",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        },
+        {
+          "entry": [
+            0.0,
+            0,
+            -3.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 34078,
+      "collision_triangles": 268,
+      "bounds_godot": {
+        "min": [
+          -18.74,
+          -1.2,
+          -14.28
+        ],
+        "max": [
+          18.74,
+          17.88,
+          13.74
+        ]
+      }
+    },
+    {
+      "id": "courtyard_residence_3",
+      "label": "白石庭院住宅",
+      "path": "res://assets/models/city_v5/architecture/courtyard_residence_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/courtyard_residence_3.blend",
+      "footprint": [
+        36,
+        26
+      ],
+      "footprint_polygon": [
+        [
+          -18.0,
+          -13.0
+        ],
+        [
+          18.0,
+          -13.0
+        ],
+        [
+          18.0,
+          13.0
+        ],
+        [
+          9.0,
+          13.0
+        ],
+        [
+          9.0,
+          -3.0
+        ],
+        [
+          -9.0,
+          -3.0
+        ],
+        [
+          -9.0,
+          13.0
+        ],
+        [
+          -18.0,
+          13.0
+        ]
+      ],
+      "visible_height": 18.672,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "U",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "+Z",
+      "use": "residential_courtyard",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -13.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 25214,
+      "collision_triangles": 72,
+      "bounds_godot": {
+        "min": [
+          -18.74,
+          -1.2,
+          -14.28
+        ],
+        "max": [
+          18.74,
+          18.672,
+          13.74
+        ]
+      }
+    },
+    {
+      "id": "shop_arcade_3",
+      "label": "石廊商铺街屋",
+      "path": "res://assets/models/city_v5/architecture/shop_arcade_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/shop_arcade_3.blend",
+      "footprint": [
+        24,
+        20
+      ],
+      "footprint_polygon": [
+        [
+          -12.0,
+          -10.0
+        ],
+        [
+          12.0,
+          -10.0
+        ],
+        [
+          12.0,
+          10.0
+        ],
+        [
+          -12.0,
+          10.0
+        ]
+      ],
+      "visible_height": 18.672,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -10.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 3.4,
+          "clear_height": 3.65,
+          "open": true,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "commercial",
+      "enterable": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, open doorway shell",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -10.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": -0.0
+        }
+      ],
+      "appearance_meshes": 12,
+      "triangles": 12354,
+      "collision_triangles": 148,
+      "bounds_godot": {
+        "min": [
+          -12.74,
+          -1.2,
+          -11.28
+        ],
+        "max": [
+          12.74,
+          18.672,
+          10.74
+        ]
+      }
+    },
+    {
+      "id": "shop_rose_4",
+      "label": "玫石商铺街屋",
+      "path": "res://assets/models/city_v5/architecture/shop_rose_4.glb",
+      "source_blend": "assets/models/city_v5/architecture/shop_rose_4.blend",
+      "footprint": [
+        28,
+        22
+      ],
+      "footprint_polygon": [
+        [
+          -14.0,
+          -11.0
+        ],
+        [
+          14.0,
+          -11.0
+        ],
+        [
+          14.0,
+          11.0
+        ],
+        [
+          -14.0,
+          11.0
+        ]
+      ],
+      "visible_height": 22.472,
+      "wall_height": 16.2,
+      "floors": 4,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "commercial",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 15762,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -14.74,
+          -1.2,
+          -12.28
+        ],
+        "max": [
+          14.74,
+          22.472,
+          11.74
+        ]
+      }
+    },
+    {
+      "id": "residence_slate_3",
+      "label": "蓝灰屋顶住宅",
+      "path": "res://assets/models/city_v5/architecture/residence_slate_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/residence_slate_3.blend",
+      "footprint": [
+        22,
+        20
+      ],
+      "footprint_polygon": [
+        [
+          -11.0,
+          -10.0
+        ],
+        [
+          11.0,
+          -10.0
+        ],
+        [
+          11.0,
+          10.0
+        ],
+        [
+          -11.0,
+          10.0
+        ]
+      ],
+      "visible_height": 17.88,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -10.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "residential",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -10.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 13030,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -11.74,
+          -1.2,
+          -11.28
+        ],
+        "max": [
+          11.74,
+          17.88,
+          10.74
+        ]
+      }
+    },
+    {
+      "id": "residence_ochre_4",
+      "label": "赭石屋顶住宅",
+      "path": "res://assets/models/city_v5/architecture/residence_ochre_4.glb",
+      "source_blend": "assets/models/city_v5/architecture/residence_ochre_4.blend",
+      "footprint": [
+        26,
+        22
+      ],
+      "footprint_polygon": [
+        [
+          -13.0,
+          -11.0
+        ],
+        [
+          13.0,
+          -11.0
+        ],
+        [
+          13.0,
+          11.0
+        ],
+        [
+          -13.0,
+          11.0
+        ]
+      ],
+      "visible_height": 21.68,
+      "wall_height": 16.2,
+      "floors": 4,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "residential",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 18370,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -13.74,
+          -1.2,
+          -12.28
+        ],
+        "max": [
+          13.74,
+          21.68,
+          11.74
+        ]
+      }
+    },
+    {
+      "id": "academy_library_3",
+      "label": "学术街书屋",
+      "path": "res://assets/models/city_v5/architecture/academy_library_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/academy_library_3.blend",
+      "footprint": [
+        26,
+        22
+      ],
+      "footprint_polygon": [
+        [
+          -13.0,
+          -11.0
+        ],
+        [
+          13.0,
+          -11.0
+        ],
+        [
+          13.0,
+          11.0
+        ],
+        [
+          -13.0,
+          11.0
+        ]
+      ],
+      "visible_height": 18.672,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "academy",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 21546,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -13.74,
+          -1.2,
+          -12.28
+        ],
+        "max": [
+          13.74,
+          18.672,
+          11.74
+        ]
+      }
+    },
+    {
+      "id": "academy_lodgings_4",
+      "label": "学者宿舍",
+      "path": "res://assets/models/city_v5/architecture/academy_lodgings_4.glb",
+      "source_blend": "assets/models/city_v5/architecture/academy_lodgings_4.blend",
+      "footprint": [
+        28,
+        22
+      ],
+      "footprint_polygon": [
+        [
+          -14.0,
+          -11.0
+        ],
+        [
+          14.0,
+          -11.0
+        ],
+        [
+          14.0,
+          11.0
+        ],
+        [
+          -14.0,
+          11.0
+        ]
+      ],
+      "visible_height": 21.68,
+      "wall_height": 16.2,
+      "floors": 4,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "academy",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 26794,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -14.74,
+          -1.2,
+          -12.28
+        ],
+        "max": [
+          14.74,
+          21.68,
+          11.74
+        ]
+      }
+    },
+    {
+      "id": "inn_seafarer_3",
+      "label": "海风旅人客栈",
+      "path": "res://assets/models/city_v5/architecture/inn_seafarer_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/inn_seafarer_3.blend",
+      "footprint": [
+        28,
+        24
+      ],
+      "footprint_polygon": [
+        [
+          -14.0,
+          -12.0
+        ],
+        [
+          14.0,
+          -12.0
+        ],
+        [
+          14.0,
+          12.0
+        ],
+        [
+          -14.0,
+          12.0
+        ]
+      ],
+      "visible_height": 18.672,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 3.4,
+          "clear_height": 3.65,
+          "open": true,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "inn",
+      "enterable": true,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, open doorway shell",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "clear_at_player_height": true,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 12,
+      "triangles": 14502,
+      "collision_triangles": 148,
+      "bounds_godot": {
+        "min": [
+          -14.74,
+          -1.2,
+          -13.28
+        ],
+        "max": [
+          14.74,
+          18.672,
+          12.74
+        ]
+      }
+    },
+    {
+      "id": "mansion_garden_3",
+      "label": "花园大宅",
+      "path": "res://assets/models/city_v5/architecture/mansion_garden_3.glb",
+      "source_blend": "assets/models/city_v5/architecture/mansion_garden_3.blend",
+      "footprint": [
+        26,
+        22
+      ],
+      "footprint_polygon": [
+        [
+          -13.0,
+          -11.0
+        ],
+        [
+          13.0,
+          -11.0
+        ],
+        [
+          13.0,
+          11.0
+        ],
+        [
+          -13.0,
+          11.0
+        ]
+      ],
+      "visible_height": 17.88,
+      "wall_height": 12.4,
+      "floors": 3,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 2.4,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "mansion",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -11.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 21082,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -13.74,
+          -1.2,
+          -12.28
+        ],
+        "max": [
+          13.74,
+          17.88,
+          11.74
+        ]
+      }
+    },
+    {
+      "id": "warehouse_brick_2",
+      "label": "港区红砖仓库",
+      "path": "res://assets/models/city_v5/architecture/warehouse_brick_2.glb",
+      "source_blend": "assets/models/city_v5/architecture/warehouse_brick_2.blend",
+      "footprint": [
+        30,
+        24
+      ],
+      "footprint_polygon": [
+        [
+          -15.0,
+          -12.0
+        ],
+        [
+          15.0,
+          -12.0
+        ],
+        [
+          15.0,
+          12.0
+        ],
+        [
+          -15.0,
+          12.0
+        ]
+      ],
+      "visible_height": 14.872,
+      "wall_height": 8.6,
+      "floors": 2,
+      "first_floor_height": 4.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 5.8,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "warehouse",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 11748,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -15.74,
+          -1.2,
+          -13.28
+        ],
+        "max": [
+          15.74,
+          14.872,
+          12.74
+        ]
+      }
+    },
+    {
+      "id": "warehouse_stone_1",
+      "label": "港区低层货栈",
+      "path": "res://assets/models/city_v5/architecture/warehouse_stone_1.glb",
+      "source_blend": "assets/models/city_v5/architecture/warehouse_stone_1.blend",
+      "footprint": [
+        32,
+        24
+      ],
+      "footprint_polygon": [
+        [
+          -16.0,
+          -12.0
+        ],
+        [
+          16.0,
+          -12.0
+        ],
+        [
+          16.0,
+          12.0
+        ],
+        [
+          -16.0,
+          12.0
+        ]
+      ],
+      "visible_height": 12.072,
+      "wall_height": 5.8,
+      "floors": 1,
+      "first_floor_height": 5.8,
+      "upper_floor_height": 3.8,
+      "ground_floor_y": 0,
+      "street_y": -0.6,
+      "placement_lift": 0.6,
+      "foundation_bottom_y": -1.2,
+      "entry": [
+        {
+          "position": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "outward": [
+            -0.0,
+            0,
+            -1.0
+          ],
+          "clear_width": 5.8,
+          "clear_height": 3.65,
+          "open": false,
+          "approach_depth": 1.7,
+          "approach_ramp_degrees": 25.463
+        }
+      ],
+      "shape": "rect",
+      "street_side": "-Z",
+      "corner_wing": "",
+      "courtyard_open_side": "",
+      "use": "warehouse",
+      "enterable": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "Godot importer: one low-complexity -colonly mesh, solid residential body",
+      "collision_checks": [
+        {
+          "entry": [
+            0.0,
+            0,
+            -12.0
+          ],
+          "clear_at_player_height": false,
+          "floor_y": 0.0
+        }
+      ],
+      "appearance_meshes": 11,
+      "triangles": 8856,
+      "collision_triangles": 40,
+      "bounds_godot": {
+        "min": [
+          -16.74,
+          -1.2,
+          -13.28
+        ],
+        "max": [
+          16.74,
+          12.072,
+          12.74
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "provider": "Tencent Hunyuan3D",
+  "status": "staging_requires_visual_review",
+  "asset_id": "TR04",
+  "source": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\raw\\TR04.glb",
+  "source_sha256": "d9ffcddf50785d8c1126a7631f797881566f525cbd5c751cfa6bb7d8dbbae7a2",
+  "created_utc": "2026-10-07T16:02:42.134737+00:00",
+  "blender_version": "5.2.2 LTS",
+  "synthetic_fixture": false,
+  "production_ready": false,
+  "requested_budget": 3000,
+  "budget_unit": "triangles (conservative for game rendering)",
+  "actual_polygons": 3000,
+  "actual_triangles": 3000,
+  "within_triangle_budget": true,
+  "texture_audit_source": {
+    "images": 0,
+    "textures": 0,
+    "materials": 0,
+    "material_texture_references": [],
+    "material_texture_reference_count": 0,
+    "no_textures_passed": true,
+    "vertex_color_attribute_count": 0
+  },
+  "texture_audit_normalized": {
+    "images": 0,
+    "textures": 0,
+    "materials": 0,
+    "material_texture_references": [],
+    "material_texture_reference_count": 0,
+    "no_textures_passed": true,
+    "vertex_color_attribute_count": 0
+  },
+  "topology_imported": {
+    "vertices": 1502,
+    "edges": 4500,
+    "polygons": 3000,
+    "triangles": 3000,
+    "connected_components": 1,
+    "components_largest_first": [
+      {
+        "vertices": 1502,
+        "faces": 3000,
+        "bounds_min_m": [
+          -0.7545888423919678,
+          0.0,
+          0.0
+        ],
+        "bounds_max_m": [
+          0.7545888423919678,
+          0.3755429983139038,
+          1.399999976158142
+        ]
+      }
+    ],
+    "components_list_truncated": false,
+    "tiny_component_threshold_faces": 8,
+    "tiny_components": 0,
+    "boundary_edges": 0,
+    "non_manifold_edges_including_boundary": 0,
+    "edges_with_more_than_two_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "wire_edges": 0,
+    "isolated_vertices": 0,
+    "near_zero_length_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_or_invalid_faces_before_weld": 0,
+    "analysis_only_position_weld": false,
+    "weld_tolerance_m": null
+  },
+  "topology_position_welded_diagnostic_only": {
+    "vertices": 1502,
+    "edges": 4500,
+    "polygons": 3000,
+    "triangles": 3000,
+    "connected_components": 1,
+    "components_largest_first": [
+      {
+        "vertices": 1502,
+        "faces": 3000,
+        "bounds_min_m": [
+          -0.7545888423919678,
+          0.0,
+          0.0
+        ],
+        "bounds_max_m": [
+          0.7545888423919678,
+          0.3755429983139038,
+          1.399999976158142
+        ]
+      }
+    ],
+    "components_list_truncated": false,
+    "tiny_component_threshold_faces": 8,
+    "tiny_components": 0,
+    "boundary_edges": 0,
+    "non_manifold_edges_including_boundary": 0,
+    "edges_with_more_than_two_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "wire_edges": 0,
+    "isolated_vertices": 0,
+    "near_zero_length_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_or_invalid_faces_before_weld": 0,
+    "analysis_only_position_weld": true,
+    "weld_tolerance_m": 1.5091776847839354e-06
+  },
+  "topology_note": "glTF may split vertices for normals/UVs. Raw and position-welded statistics are both reported. Welding is performed only on a disposable analysis copy; it may join touching but separate shells.",
+  "mesh_objects": [
+    {
+      "object": "Mesh_0",
+      "vertices": 1502,
+      "polygons": 3000,
+      "triangles": 3000
+    }
+  ],
+  "orientation_and_openings": {
+    "front_assumption": "+Y looking toward -Y; additional rotation chosen by caller",
+    "orientation_verified": false,
+    "hole_verified": false,
+    "centerline_ray_samples": [
+      {
+        "height_fraction": 0.05,
+        "front_ray_blocked": true,
+        "hit_position_m": [
+          0.0,
+          0.35720527172088623,
+          0.07000000029802322
+        ]
+      },
+      {
+        "height_fraction": 0.15,
+        "front_ray_blocked": true,
+        "hit_position_m": [
+          0.0,
+          0.30285632610321045,
+          0.20999999344348907
+        ]
+      },
+      {
+        "height_fraction": 0.25,
+        "front_ray_blocked": true,
+        "hit_position_m": [
+          0.0,
+          0.3027770519256592,
+          0.3499999940395355
+        ]
+      },
+      {
+        "height_fraction": 0.35,
+        "front_ray_blocked": true,
+        "hit_position_m": [
+          0.0,
+          0.3381016254425049,
+          0.4899999797344208
+        ]
+      },
+      {
+        "height_fraction": 0.45,
+        "front_ray_blocked": true,
+        "hit_position_m": [
+          0.0,
+          0.3359215259552002,
+          0.6299999952316284
+        ]
+      },
+      {
+        "height_fraction": 0.6,
+        "front_ray_blocked": false,
+        "hit_position_m": null
+      },
+      {
+        "height_fraction": 0.8,
+        "front_ray_blocked": false,
+        "hit_position_m": null
+      }
+    ],
+    "manual_review_required": true,
+    "interpretation": "Compare silhouette and front/back against the source image. Samples do not certify shape or direction."
+  },
+  "candidate": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\inspection\\TR04_r001\\normalized\\candidate.json",
+  "candidate_dimensions_xyz_m": [
+    1.5091776847839355,
+    0.3755429983139038,
+    1.399999976158142
+  ],
+  "automatic_repairs": [],
+  "decimation_applied": false,
+  "raw_overwritten": false,
+  "not_tested": [
+    "self-intersections",
+    "minimum wall thickness",
+    "correct architectural profile",
+    "true back mounting plane",
+    "engine import/collision/LOD"
+  ],
+  "warnings": [],
+  "renders": {
+    "paths": {
+      "front": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\inspection\\TR04_r001\\views\\front.png",
+      "back": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\inspection\\TR04_r001\\views\\back.png",
+      "three_quarter": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\inspection\\TR04_r001\\views\\three_quarter.png"
+    },
+    "engine": "Blender Workbench",
+    "material": "neutral grey; visualization override only",
+    "resolution": 640,
+    "orthographic_scale_m": 1.8411967754364014,
+    "same_scale_across_views_of_this_piece": true,
+    "scale_varies_between_pieces_to_fit_frame": true
+  }
+}

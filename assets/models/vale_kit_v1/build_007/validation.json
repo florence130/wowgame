@@ -1,0 +1,1584 @@
+{
+  "passed": true,
+  "files": 45,
+  "checks": [
+    {
+      "name": "VALE_barn_mesh",
+      "passed": true,
+      "triangles": 86116
+    },
+    {
+      "name": "VALE_barn_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "VALE_barn_scene",
+      "passed": true
+    },
+    {
+      "name": "VALE_barn_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "VALE_barn_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "VALE_barn_embedded_images",
+      "passed": true
+    },
+    {
+      "name": "VALE_farm_mesh",
+      "passed": true,
+      "triangles": 23352
+    },
+    {
+      "name": "VALE_farm_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "VALE_farm_scene",
+      "passed": true
+    },
+    {
+      "name": "VALE_farm_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "VALE_farm_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "VALE_fence_demo_mesh",
+      "passed": true,
+      "triangles": 836
+    },
+    {
+      "name": "VALE_fence_demo_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "VALE_fence_demo_scene",
+      "passed": true
+    },
+    {
+      "name": "VALE_fence_demo_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "VALE_fence_demo_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "VALE_rotor_mesh",
+      "passed": true,
+      "triangles": 2148
+    },
+    {
+      "name": "VALE_rotor_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "VALE_rotor_scene",
+      "passed": true
+    },
+    {
+      "name": "VALE_rotor_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "VALE_rotor_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "VALE_windmill_mesh",
+      "passed": true,
+      "triangles": 28880
+    },
+    {
+      "name": "VALE_windmill_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "VALE_windmill_scene",
+      "passed": true
+    },
+    {
+      "name": "VALE_windmill_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "VALE_windmill_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barn_beam_mesh",
+      "passed": true,
+      "triangles": 72
+    },
+    {
+      "name": "V_barn_beam_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barn_beam_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barn_beam_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barn_beam_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barn_doorframe_mesh",
+      "passed": true,
+      "triangles": 232
+    },
+    {
+      "name": "V_barn_doorframe_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barn_doorframe_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barn_doorframe_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barn_doorframe_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barn_frame_mesh",
+      "passed": true,
+      "triangles": 220
+    },
+    {
+      "name": "V_barn_frame_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barn_frame_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barn_frame_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barn_frame_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barn_wall_door_mesh",
+      "passed": true,
+      "triangles": 580
+    },
+    {
+      "name": "V_barn_wall_door_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barn_wall_door_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barn_wall_door_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barn_wall_door_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barn_wall_solid_mesh",
+      "passed": true,
+      "triangles": 1272
+    },
+    {
+      "name": "V_barn_wall_solid_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barn_wall_solid_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barn_wall_solid_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barn_wall_solid_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barn_wall_window_mesh",
+      "passed": true,
+      "triangles": 928
+    },
+    {
+      "name": "V_barn_wall_window_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barn_wall_window_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barn_wall_window_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barn_wall_window_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_barrel_mesh",
+      "passed": true,
+      "triangles": 588
+    },
+    {
+      "name": "V_barrel_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_barrel_scene",
+      "passed": true
+    },
+    {
+      "name": "V_barrel_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_barrel_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_bracket_mesh",
+      "passed": true,
+      "triangles": 16
+    },
+    {
+      "name": "V_bracket_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_bracket_scene",
+      "passed": true
+    },
+    {
+      "name": "V_bracket_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_bracket_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_cargo_door_mesh",
+      "passed": true,
+      "triangles": 1156
+    },
+    {
+      "name": "V_cargo_door_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_cargo_door_scene",
+      "passed": true
+    },
+    {
+      "name": "V_cargo_door_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_cargo_door_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_chimney_mesh",
+      "passed": true,
+      "triangles": 1276
+    },
+    {
+      "name": "V_chimney_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_chimney_scene",
+      "passed": true
+    },
+    {
+      "name": "V_chimney_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_chimney_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_door_mesh",
+      "passed": true,
+      "triangles": 500
+    },
+    {
+      "name": "V_door_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_door_scene",
+      "passed": true
+    },
+    {
+      "name": "V_door_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_door_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_beam_mesh",
+      "passed": true,
+      "triangles": 72
+    },
+    {
+      "name": "V_farm_beam_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_farm_beam_scene",
+      "passed": true
+    },
+    {
+      "name": "V_farm_beam_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_farm_beam_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_doorframe_mesh",
+      "passed": true,
+      "triangles": 232
+    },
+    {
+      "name": "V_farm_doorframe_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_farm_doorframe_scene",
+      "passed": true
+    },
+    {
+      "name": "V_farm_doorframe_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_farm_doorframe_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_frame_mesh",
+      "passed": true,
+      "triangles": 220
+    },
+    {
+      "name": "V_farm_frame_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_farm_frame_scene",
+      "passed": true
+    },
+    {
+      "name": "V_farm_frame_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_farm_frame_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_door_mesh",
+      "passed": true,
+      "triangles": 84
+    },
+    {
+      "name": "V_farm_wall_door_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_farm_wall_door_scene",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_door_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_farm_wall_door_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_solid_mesh",
+      "passed": true,
+      "triangles": 36
+    },
+    {
+      "name": "V_farm_wall_solid_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_farm_wall_solid_scene",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_solid_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_farm_wall_solid_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_window_mesh",
+      "passed": true,
+      "triangles": 56
+    },
+    {
+      "name": "V_farm_wall_window_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_farm_wall_window_scene",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_window_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_farm_wall_window_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_fence_4m_mesh",
+      "passed": true,
+      "triangles": 264
+    },
+    {
+      "name": "V_fence_4m_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_fence_4m_scene",
+      "passed": true
+    },
+    {
+      "name": "V_fence_4m_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_fence_4m_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_fence_curved_12m_mesh",
+      "passed": true,
+      "triangles": 784
+    },
+    {
+      "name": "V_fence_curved_12m_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_fence_curved_12m_scene",
+      "passed": true
+    },
+    {
+      "name": "V_fence_curved_12m_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_fence_curved_12m_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_flowerbox_mesh",
+      "passed": true,
+      "triangles": 388
+    },
+    {
+      "name": "V_flowerbox_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_flowerbox_scene",
+      "passed": true
+    },
+    {
+      "name": "V_flowerbox_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_flowerbox_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_foundation_mesh",
+      "passed": true,
+      "triangles": 176
+    },
+    {
+      "name": "V_foundation_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_foundation_scene",
+      "passed": true
+    },
+    {
+      "name": "V_foundation_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_foundation_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_haybale_mesh",
+      "passed": true,
+      "triangles": 372
+    },
+    {
+      "name": "V_haybale_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_haybale_scene",
+      "passed": true
+    },
+    {
+      "name": "V_haybale_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_haybale_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_hayloft_mesh",
+      "passed": true,
+      "triangles": 1044
+    },
+    {
+      "name": "V_hayloft_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_hayloft_scene",
+      "passed": true
+    },
+    {
+      "name": "V_hayloft_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_hayloft_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_0_mesh",
+      "passed": true,
+      "triangles": 88
+    },
+    {
+      "name": "V_mill_course_0_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_course_0_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_0_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_course_0_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_1_mesh",
+      "passed": true,
+      "triangles": 44
+    },
+    {
+      "name": "V_mill_course_1_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_course_1_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_1_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_course_1_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_2_mesh",
+      "passed": true,
+      "triangles": 44
+    },
+    {
+      "name": "V_mill_course_2_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_course_2_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_2_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_course_2_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_3_mesh",
+      "passed": true,
+      "triangles": 28
+    },
+    {
+      "name": "V_mill_course_3_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_course_3_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_course_3_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_course_3_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_hub_mesh",
+      "passed": true,
+      "triangles": 180
+    },
+    {
+      "name": "V_mill_hub_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_hub_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_hub_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_hub_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_roof_mesh",
+      "passed": true,
+      "triangles": 1228
+    },
+    {
+      "name": "V_mill_roof_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_roof_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_roof_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_roof_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_mill_sail_mesh",
+      "passed": true,
+      "triangles": 492
+    },
+    {
+      "name": "V_mill_sail_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_mill_sail_scene",
+      "passed": true
+    },
+    {
+      "name": "V_mill_sail_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_mill_sail_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_porch_mesh",
+      "passed": true,
+      "triangles": 1800
+    },
+    {
+      "name": "V_porch_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_porch_scene",
+      "passed": true
+    },
+    {
+      "name": "V_porch_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_porch_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_ridge_thatch_mesh",
+      "passed": true,
+      "triangles": 596
+    },
+    {
+      "name": "V_ridge_thatch_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_ridge_thatch_scene",
+      "passed": true
+    },
+    {
+      "name": "V_ridge_thatch_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_ridge_thatch_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_ridge_thatch_embedded_images",
+      "passed": true
+    },
+    {
+      "name": "V_ridge_tile_mesh",
+      "passed": true,
+      "triangles": 100
+    },
+    {
+      "name": "V_ridge_tile_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_ridge_tile_scene",
+      "passed": true
+    },
+    {
+      "name": "V_ridge_tile_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_ridge_tile_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_roof_thatch_4m_mesh",
+      "passed": true,
+      "triangles": 7894
+    },
+    {
+      "name": "V_roof_thatch_4m_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_roof_thatch_4m_scene",
+      "passed": true
+    },
+    {
+      "name": "V_roof_thatch_4m_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_roof_thatch_4m_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_roof_thatch_4m_embedded_images",
+      "passed": true
+    },
+    {
+      "name": "V_roof_tile_4m_mesh",
+      "passed": true,
+      "triangles": 3300
+    },
+    {
+      "name": "V_roof_tile_4m_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_roof_tile_4m_scene",
+      "passed": true
+    },
+    {
+      "name": "V_roof_tile_4m_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_roof_tile_4m_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_stone_SDF_mesh",
+      "passed": true,
+      "triangles": 540
+    },
+    {
+      "name": "V_stone_SDF_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_stone_SDF_scene",
+      "passed": true
+    },
+    {
+      "name": "V_stone_SDF_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_stone_SDF_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_window_insert_mesh",
+      "passed": true,
+      "triangles": 100
+    },
+    {
+      "name": "V_window_insert_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "V_window_insert_scene",
+      "passed": true
+    },
+    {
+      "name": "V_window_insert_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "V_window_insert_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "STAGE_01_CSG_mesh",
+      "passed": true,
+      "triangles": 20
+    },
+    {
+      "name": "STAGE_01_CSG_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "STAGE_01_CSG_scene",
+      "passed": true
+    },
+    {
+      "name": "STAGE_01_CSG_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "STAGE_01_CSG_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "STAGE_02_SDF_initial_mesh",
+      "passed": true,
+      "triangles": 7050
+    },
+    {
+      "name": "STAGE_02_SDF_initial_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "STAGE_02_SDF_initial_scene",
+      "passed": true
+    },
+    {
+      "name": "STAGE_02_SDF_initial_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "STAGE_02_SDF_initial_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "STAGE_07_SDF_refined_batch_mesh",
+      "passed": true,
+      "triangles": 7432
+    },
+    {
+      "name": "STAGE_07_SDF_refined_batch_nondegenerate",
+      "passed": true,
+      "degenerates": 0
+    },
+    {
+      "name": "STAGE_07_SDF_refined_batch_scene",
+      "passed": true
+    },
+    {
+      "name": "STAGE_07_SDF_refined_batch_authoritative_palette",
+      "passed": true,
+      "bad_materials": []
+    },
+    {
+      "name": "STAGE_07_SDF_refined_batch_lit_materials",
+      "passed": true
+    },
+    {
+      "name": "V_farm_wall_solid_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_farm_wall_door_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_farm_wall_window_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_farm_frame_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_farm_doorframe_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_farm_beam_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barn_wall_solid_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barn_wall_door_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barn_wall_window_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barn_frame_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barn_doorframe_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barn_beam_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_window_insert_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_door_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_flowerbox_coordinate_conversion",
+      "passed": true,
+      "error_m": 2.9802322387695312e-08
+    },
+    {
+      "name": "V_foundation_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_stone_SDF_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_roof_tile_4m_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_roof_thatch_4m_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_ridge_tile_coordinate_conversion",
+      "passed": true,
+      "error_m": 6.876960320645331e-07
+    },
+    {
+      "name": "V_ridge_thatch_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_chimney_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_bracket_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_fence_4m_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_fence_curved_12m_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_course_0_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_course_1_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_course_2_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_course_3_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_roof_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_sail_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_mill_hub_coordinate_conversion",
+      "passed": true,
+      "error_m": 2.14974167578319e-07
+    },
+    {
+      "name": "V_porch_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_cargo_door_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_hayloft_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_barrel_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_haybale_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "VALE_farm_coordinate_conversion",
+      "passed": true,
+      "error_m": 4.76837158203125e-07
+    },
+    {
+      "name": "VALE_barn_coordinate_conversion",
+      "passed": true,
+      "error_m": 4.172325134277344e-07
+    },
+    {
+      "name": "VALE_windmill_coordinate_conversion",
+      "passed": true,
+      "error_m": 1.0164247497002066e-06
+    },
+    {
+      "name": "VALE_rotor_coordinate_conversion",
+      "passed": true,
+      "error_m": 1.0164247497002066e-06
+    },
+    {
+      "name": "VALE_fence_demo_coordinate_conversion",
+      "passed": true,
+      "error_m": 0.0
+    },
+    {
+      "name": "V_farm_wall_solid_actual_4m_interface",
+      "passed": true,
+      "gap_m": 0.0
+    },
+    {
+      "name": "V_barn_wall_solid_actual_4m_interface",
+      "passed": true,
+      "gap_m": 0.0
+    },
+    {
+      "name": "V_roof_tile_4m_actual_4m_interface",
+      "passed": true,
+      "gap_m": 0.0
+    },
+    {
+      "name": "V_roof_thatch_4m_actual_4m_interface",
+      "passed": true,
+      "gap_m": 8.227358587507192e-07
+    },
+    {
+      "name": "sails_clear_full_tower_rotation",
+      "passed": true,
+      "minimum_clearance_m": 0.23359562158584612
+    },
+    {
+      "name": "rotor_four_separate_sails",
+      "passed": true,
+      "count": 4
+    },
+    {
+      "name": "barn_rear_window_clear_-4.8",
+      "passed": true,
+      "blocking_bricks": []
+    },
+    {
+      "name": "barn_rear_window_clear_4.8",
+      "passed": true,
+      "blocking_bricks": []
+    },
+    {
+      "name": "all_ten_methods_recorded",
+      "passed": true
+    },
+    {
+      "name": "SDF_initial_and_refinement_present",
+      "passed": true
+    }
+  ],
+  "mesh_statistics": {
+    "VALE_barn": {
+      "triangles": 86116,
+      "primitives": 2326,
+      "degenerates": 0,
+      "uv": true
+    },
+    "VALE_farm": {
+      "triangles": 23352,
+      "primitives": 436,
+      "degenerates": 0,
+      "uv": true
+    },
+    "VALE_fence_demo": {
+      "triangles": 836,
+      "primitives": 19,
+      "degenerates": 0,
+      "uv": true
+    },
+    "VALE_rotor": {
+      "triangles": 2148,
+      "primitives": 64,
+      "degenerates": 0,
+      "uv": true
+    },
+    "VALE_windmill": {
+      "triangles": 28880,
+      "primitives": 349,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barn_beam": {
+      "triangles": 72,
+      "primitives": 2,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barn_doorframe": {
+      "triangles": 232,
+      "primitives": 14,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barn_frame": {
+      "triangles": 220,
+      "primitives": 5,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barn_wall_door": {
+      "triangles": 580,
+      "primitives": 19,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barn_wall_solid": {
+      "triangles": 1272,
+      "primitives": 46,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barn_wall_window": {
+      "triangles": 928,
+      "primitives": 33,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_barrel": {
+      "triangles": 588,
+      "primitives": 17,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_bracket": {
+      "triangles": 16,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_cargo_door": {
+      "triangles": 1156,
+      "primitives": 35,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_chimney": {
+      "triangles": 1276,
+      "primitives": 41,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_door": {
+      "triangles": 500,
+      "primitives": 15,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_farm_beam": {
+      "triangles": 72,
+      "primitives": 2,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_farm_doorframe": {
+      "triangles": 232,
+      "primitives": 14,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_farm_frame": {
+      "triangles": 220,
+      "primitives": 5,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_farm_wall_door": {
+      "triangles": 84,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_farm_wall_solid": {
+      "triangles": 36,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_farm_wall_window": {
+      "triangles": 56,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_fence_4m": {
+      "triangles": 264,
+      "primitives": 6,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_fence_curved_12m": {
+      "triangles": 784,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_flowerbox": {
+      "triangles": 388,
+      "primitives": 15,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_foundation": {
+      "triangles": 176,
+      "primitives": 4,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_haybale": {
+      "triangles": 372,
+      "primitives": 23,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_hayloft": {
+      "triangles": 1044,
+      "primitives": 47,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_course_0": {
+      "triangles": 88,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_course_1": {
+      "triangles": 44,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_course_2": {
+      "triangles": 44,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_course_3": {
+      "triangles": 28,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_hub": {
+      "triangles": 180,
+      "primitives": 4,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_roof": {
+      "triangles": 1228,
+      "primitives": 98,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_mill_sail": {
+      "triangles": 492,
+      "primitives": 15,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_porch": {
+      "triangles": 1800,
+      "primitives": 44,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_ridge_thatch": {
+      "triangles": 596,
+      "primitives": 7,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_ridge_tile": {
+      "triangles": 100,
+      "primitives": 1,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_roof_thatch_4m": {
+      "triangles": 7894,
+      "primitives": 125,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_roof_tile_4m": {
+      "triangles": 3300,
+      "primitives": 17,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_stone_SDF": {
+      "triangles": 540,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    },
+    "V_window_insert": {
+      "triangles": 100,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    },
+    "STAGE_01_CSG": {
+      "triangles": 20,
+      "primitives": 2,
+      "degenerates": 0,
+      "uv": true
+    },
+    "STAGE_02_SDF_initial": {
+      "triangles": 7050,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    },
+    "STAGE_07_SDF_refined_batch": {
+      "triangles": 7432,
+      "primitives": 3,
+      "degenerates": 0,
+      "uv": true
+    }
+  },
+  "boundary": "Palette/geometry/interfaces only; visual quality independently reviewed. Collision/navigation/live-map performance not tested."
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "stairs_4_single_scene",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_finite_uv_mesh",
+      "passed": true,
+      "triangles": 84,
+      "primitives": 2
+    },
+    {
+      "check": "stairs_4_no_degenerates",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "stairs_4_unlit",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_basis_bounds",
+      "passed": true,
+      "max_error_m": 3.2549007678017716e-07
+    },
+    {
+      "check": "stair_rises_towards_door",
+      "passed": true,
+      "tread_top_y_and_mean_z": [
+        [
+          0.225,
+          -0.45000001788139343
+        ],
+        [
+          0.425,
+          -0.15000000596046448
+        ],
+        [
+          0.625,
+          0.15000000596046448
+        ],
+        [
+          0.825,
+          0.45000001788139343
+        ]
+      ]
+    }
+  ],
+  "skipped_checks": [
+    {
+      "check": "stairs_meet_plinth_plus_floor",
+      "status": "not-applicable-to-selected-subset",
+      "reason": "Companion components were not selected for this build. Single stair direction is still measured.",
+      "requires": [
+        "floor_stone_4",
+        "plinth_4"
+      ]
+    }
+  ],
+  "basis": "parsed actual GLB mesh positions, node matrices, UV attributes and materials"
+}

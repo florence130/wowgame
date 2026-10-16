@@ -1,0 +1,348 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "material": "ABY2_bronze",
+      "palette_key": "bronze",
+      "expected_srgb": "B8873A",
+      "actual_srgb": "B8873A",
+      "principled": true,
+      "actual_socket_linear": [
+        0.4793201684951782,
+        0.24228112399578094,
+        0.0423114113509655
+      ],
+      "packed_png_mean_srgb": [
+        [
+          183.99879455566406,
+          135.0001220703125,
+          57.999908447265625
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_cobble_joint",
+      "palette_key": "cobble_joint",
+      "expected_srgb": "6F6A62",
+      "actual_srgb": "6F6A62",
+      "principled": true,
+      "actual_socket_linear": [
+        0.15896083414554596,
+        0.1441284716129303,
+        0.12213877588510513
+      ],
+      "packed_png_mean_srgb": [
+        [
+          110.99969482421875,
+          105.99917602539062,
+          97.99801635742188
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_glass",
+      "palette_key": "glass",
+      "expected_srgb": "3F5F86",
+      "actual_srgb": "3F5F86",
+      "principled": true,
+      "actual_socket_linear": [
+        0.04970656707882881,
+        0.11443537473678589,
+        0.23839756846427917
+      ],
+      "packed_png_mean_srgb": [],
+      "passed": true
+    },
+    {
+      "material": "ABY2_iron",
+      "palette_key": "iron",
+      "expected_srgb": "3C3A40",
+      "actual_srgb": "3C3A40",
+      "principled": true,
+      "actual_socket_linear": [
+        0.045186202973127365,
+        0.0423114113509655,
+        0.05126945674419403
+      ],
+      "packed_png_mean_srgb": [],
+      "passed": true
+    },
+    {
+      "material": "ABY2_plaster",
+      "palette_key": "plaster",
+      "expected_srgb": "EFE6D2",
+      "actual_srgb": "EFE6D2",
+      "principled": true,
+      "actual_socket_linear": [
+        0.8631572127342224,
+        0.7912979125976562,
+        0.6444796919822693
+      ],
+      "packed_png_mean_srgb": [
+        [
+          238.99960327148438,
+          229.9989471435547,
+          210.00083923339844
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_plaster_white",
+      "palette_key": "plaster_white",
+      "expected_srgb": "F4EEE2",
+      "actual_srgb": "F4EEE2",
+      "principled": true,
+      "actual_socket_linear": [
+        0.9046611785888672,
+        0.8549926280975342,
+        0.7605245113372803
+      ],
+      "packed_png_mean_srgb": [
+        [
+          243.99972534179688,
+          238.0005645751953,
+          226.002197265625
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_slate",
+      "palette_key": "slate",
+      "expected_srgb": "435A79",
+      "actual_srgb": "435A79",
+      "principled": true,
+      "actual_socket_linear": [
+        0.05612849071621895,
+        0.10224173218011856,
+        0.19120168685913086
+      ],
+      "packed_png_mean_srgb": [
+        [
+          67.00003051757812,
+          90.00013732910156,
+          121.00082397460938
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_slate_dark",
+      "palette_key": "slate_dark",
+      "expected_srgb": "2F4462",
+      "actual_srgb": "2F4462",
+      "principled": true,
+      "actual_socket_linear": [
+        0.028426039963960648,
+        0.05780543014407158,
+        0.12213877588510513
+      ],
+      "packed_png_mean_srgb": [
+        [
+          47.001190185546875,
+          67.99931335449219,
+          98.00015258789062
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_slate_light",
+      "palette_key": "slate_light",
+      "expected_srgb": "536E96",
+      "actual_srgb": "536E96",
+      "principled": true,
+      "actual_socket_linear": [
+        0.08650045841932297,
+        0.15592646598815918,
+        0.3049873113632202
+      ],
+      "packed_png_mean_srgb": [
+        [
+          82.99740600585938,
+          110.00068664550781,
+          149.9995880126953
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_stone",
+      "palette_key": "stone",
+      "expected_srgb": "B3ACA2",
+      "actual_srgb": "B3ACA2",
+      "principled": true,
+      "actual_socket_linear": [
+        0.4507857859134674,
+        0.4125426113605499,
+        0.3613067865371704
+      ],
+      "packed_png_mean_srgb": [
+        [
+          178.99969482421875,
+          172.00003051757812,
+          162.00064086914062
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_stone_dark",
+      "palette_key": "stone_dark",
+      "expected_srgb": "8E877A",
+      "actual_srgb": "8E877A",
+      "principled": true,
+      "actual_socket_linear": [
+        0.27049779891967773,
+        0.24228112399578094,
+        0.1946178376674652
+      ],
+      "packed_png_mean_srgb": [
+        [
+          142.00421142578125,
+          134.99996948242188,
+          121.99827575683594
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_stone_light",
+      "palette_key": "stone_light",
+      "expected_srgb": "CDC7C1",
+      "actual_srgb": "CDC7C1",
+      "principled": true,
+      "actual_socket_linear": [
+        0.6104955673217773,
+        0.5711248517036438,
+        0.533276379108429
+      ],
+      "packed_png_mean_srgb": [
+        [
+          205.001708984375,
+          198.99951171875,
+          192.9994659423828
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_stone_light.001",
+      "palette_key": "stone_light",
+      "expected_srgb": "CDC7C1",
+      "actual_srgb": "CDC7C1",
+      "principled": true,
+      "actual_socket_linear": [
+        0.6104955673217773,
+        0.5711248517036438,
+        0.533276379108429
+      ],
+      "packed_png_mean_srgb": [
+        [
+          204.9993133544922,
+          198.9987335205078,
+          192.9982452392578
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_timber",
+      "palette_key": "timber",
+      "expected_srgb": "4A3020",
+      "actual_srgb": "4A3020",
+      "principled": true,
+      "actual_socket_linear": [
+        0.06847816705703735,
+        0.02955683507025242,
+        0.014443843625485897
+      ],
+      "packed_png_mean_srgb": [
+        [
+          74.00004577636719,
+          48.001617431640625,
+          31.9990234375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_window_glow",
+      "palette_key": "window_glow",
+      "expected_srgb": "FFD98A",
+      "actual_srgb": "FFD98A",
+      "principled": true,
+      "actual_socket_linear": [
+        1.0,
+        0.6938717365264893,
+        0.2541520893573761
+      ],
+      "packed_png_mean_srgb": [],
+      "passed": true
+    },
+    {
+      "material": "ABY2_window_glow.001",
+      "palette_key": "window_glow",
+      "expected_srgb": "FFD98A",
+      "actual_srgb": "FFD98A",
+      "principled": true,
+      "actual_socket_linear": [
+        1.0,
+        0.6938717365264893,
+        0.2541520893573761
+      ],
+      "packed_png_mean_srgb": [
+        [
+          253.78570556640625,
+          216.99853515625,
+          137.99795532226562
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_wood",
+      "palette_key": "wood",
+      "expected_srgb": "856043",
+      "actual_srgb": "856043",
+      "principled": true,
+      "actual_socket_linear": [
+        0.2345505803823471,
+        0.11697066575288773,
+        0.05612849071621895
+      ],
+      "packed_png_mean_srgb": [
+        [
+          132.99960327148438,
+          95.99990844726562,
+          67.00117492675781
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "material": "ABY2_wood_dark",
+      "palette_key": "wood_dark",
+      "expected_srgb": "5A3A24",
+      "actual_srgb": "5A3A24",
+      "principled": true,
+      "actual_socket_linear": [
+        0.10224173218011856,
+        0.0423114113509655,
+        0.017641954123973846
+      ],
+      "packed_png_mean_srgb": [
+        [
+          89.999267578125,
+          57.99908447265625,
+          35.999237060546875
+        ]
+      ],
+      "passed": true
+    }
+  ],
+  "scope": "Saved material source nodes: actual linear Base Color sockets and packed PNG mean within 2/255 of authoritative swatch. Pigment and shaded pixel variation are not flat-color violations."
+}

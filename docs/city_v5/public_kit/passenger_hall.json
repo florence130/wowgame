@@ -1,0 +1,201 @@
+{
+  "label": "海运客运厅",
+  "footprint": [
+    44,
+    28
+  ],
+  "body_height": 12,
+  "max_height": 23,
+  "entry_width": 10,
+  "entries": [
+    [
+      0,
+      0,
+      -14
+    ]
+  ],
+  "concept": "Long glazed concourse, broad arched entrances and projecting quay canopy",
+  "id": "passenger_hall",
+  "aabb_min": [
+    -23.290000915527344,
+    -1.600000023841858,
+    -17.149999618530273
+  ],
+  "aabb_max": [
+    23.290000915527344,
+    21.5949649810791,
+    15.289999961853027
+  ],
+  "aabb_size": [
+    46.58000183105469,
+    23.19496500492096,
+    32.4399995803833
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.6,
+  "placement_lift": 0.6,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "front": "-Z",
+  "glb": "res://assets/models/city_v5/landmarks/passenger_hall.glb",
+  "blend": "assets/models/city_v5/landmarks/passenger_hall.blend",
+  "modules": [
+    {
+      "name": "01 Continuous ground and cut-stone footing",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "01 Continuous ground and cut-stone footing_rustic",
+        "01 Continuous ground and cut-stone footing_floor"
+      ]
+    },
+    {
+      "name": "Passenger concourse",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Passenger concourse_rustic",
+        "Passenger concourse_floor",
+        "Passenger concourse_ivory",
+        "Passenger concourse_trim",
+        "Passenger concourse_glass",
+        "Passenger concourse_bronze",
+        "Passenger concourse_stone"
+      ]
+    },
+    {
+      "name": "Long copper quay roof",
+      "methods": [
+        "loft",
+        "profile extrusion"
+      ],
+      "objects": [
+        "Long copper quay roof_copper",
+        "Long copper quay roof_bronze",
+        "Long copper quay roof_trim"
+      ]
+    },
+    {
+      "name": "Quay entrance canopy left",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Quay entrance canopy left"
+      ]
+    },
+    {
+      "name": "Quay entrance canopy left lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Quay entrance canopy left lintel_stone"
+      ]
+    },
+    {
+      "name": "Quay entrance canopy right",
+      "methods": [
+        "screw; array"
+      ],
+      "objects": [
+        "Quay entrance canopy right"
+      ]
+    },
+    {
+      "name": "Quay entrance canopy right lintel",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Quay entrance canopy right lintel_stone"
+      ]
+    },
+    {
+      "name": "Harbor-front canopy",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Harbor-front canopy_trim",
+        "Harbor-front canopy_floor",
+        "Harbor-front canopy_bronze"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone",
+        "Stone public bench_rustic"
+      ]
+    },
+    {
+      "name": "Stone public bench",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Stone public bench_stone.001",
+        "Stone public bench_rustic.001"
+      ]
+    },
+    {
+      "name": "Entry terrace, steps and accessible ramp",
+      "methods": [
+        "profile extrusion",
+        "geometric vertices"
+      ],
+      "objects": [
+        "Entry terrace, steps and accessible ramp_stone",
+        "Entry terrace, steps and accessible ramp_floor"
+      ]
+    }
+  ],
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -14
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      -5
+    ],
+    "size": [
+      8,
+      8
+    ]
+  },
+  "service_positions": [
+    [
+      0,
+      0,
+      -5
+    ]
+  ],
+  "visual_triangles": 26516,
+  "collision_triangles": 444
+}

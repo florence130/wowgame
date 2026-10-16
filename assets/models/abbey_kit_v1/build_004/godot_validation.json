@@ -1,0 +1,285 @@
+{
+  "checks": [
+    {
+      "file": "glb/arcade_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/balcony_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/bell.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/bridge_segment_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/buttress.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/chimney.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/column_3.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/dome_frame_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/dome_glass_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/door_arch_frame.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/door_stone.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/door_wood_double.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/door_wood_plain.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/fence_post.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/floor_stone_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/floor_wood_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/gable_plain_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/gable_rose_8.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/plinth_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_altar.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_banner.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_barrel.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_bench.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_crate.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_cypress.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_dummy.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_fountain.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_grave.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_lamp.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_planter.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/prop_rack.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/railing_stone_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/railing_wood_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/roof_gable_4x4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/roof_gable_8x4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/roof_ridge_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/rose_frame.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/rose_glass.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/sagging_beam_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/sdf_plinth.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/sdf_rock.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/sdf_stone.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/stairs_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/wall_door_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/wall_plain_2.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/wall_plain_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/wall_window_4.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/window_arch_frame.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "glb/window_arch_glass.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/bell_tower.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/bridge_curved.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/chapel.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/chapel_small.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/cloister.glb",
+      "load_error": 0,
+      "passed": true
+    },
+    {
+      "file": "assemblies/courtyard_gate.glb",
+      "load_error": 0,
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "files": 55,
+  "material_surfaces": 1663,
+  "mesh_instances": 1647,
+  "passed": true,
+  "scope": "Actual Godot GLTFDocument load, scene instantiation, unshaded material flags; no map gameplay/collision/performance test"
+}

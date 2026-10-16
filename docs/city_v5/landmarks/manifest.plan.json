@@ -1,0 +1,22 @@
+{
+  "status": "native body footprints; actual exported AABB includes cornices, porticos and entry ramps",
+  "units": "meters",
+  "front": "Godot -Z",
+  "floor_y": 0.0,
+  "street_y": -0.6,
+  "foundation_y": -1.2,
+  "placement_lift": 0.6,
+  "scale": [1,1,1],
+  "assets": [
+    {"id":"station","footprint":[100,56],"body_height":28,"max_height":46,"entries":[[0,0,-28],[0,0,28]],"entry_width":14,"usable_hall":{"center":[0,0,0],"size":[30,48]},"service_positions":[[-10,0,-12],[10,0,-12]],"rail_rear_axis":[0,0,28]},
+    {"id":"civic_hall","footprint":[88,40],"body_height":24,"max_height":44,"entries":[[0,0,-20]],"entry_width":10,"usable_hall":{"center":[0,0,-3],"size":[28,30]},"service_positions":[[-9,0,-2],[9,0,-2],[0,0,9]]},
+    {"id":"governor_palace","footprint":[100,70],"body_height":24,"max_height":38,"entries":[[0,0,13],[-40,0,-35],[40,0,-35]],"entry_width":10,"entry_widths":[10,4.6667,4.6667],"courtyard":{"center":[0,0,-11],"size":[60,48]},"usable_courtyard":{"center":[0,0,-11.25],"size":[59,47.5]},"service_positions":[[-7,0,23],[7,0,23]]},
+    {"id":"cathedral","footprint":[48,94],"body_height":26,"max_height":62,"entries":[[0,0,-47]],"entry_width":8,"gross_nave_floor":{"center":[0,0,0],"size":[19,82]},"usable_hall":{"center":[0,0,-7],"size":[19,64]},"service_positions":[[0,0,26],[-7,0,15]]},
+    {"id":"trade_hall","footprint":[70,38],"body_height":14,"max_height":24,"entries":[[0,0,-19],[0,0,19]],"entry_width":12,"usable_hall":{"center":[0,0,0],"size":[30,34]},"service_positions":[[-10,0,-6],[10,0,-6],[-10,0,8],[10,0,8]]},
+    {"id":"academy","footprint":[60,40],"body_height":22,"max_height":48,"entries":[[0,0,-20]],"entry_width":8,"usable_hall":{"center":[-4,0,-7],"size":[24,22]},"service_positions":[[-10,0,-1],[5,0,-1]]},
+    {"id":"opera","footprint":[64,40],"body_height":20,"max_height":28,"entries":[[0,0,-20]],"entry_width":10,"usable_hall":{"center":[0,0,-8],"size":[30,18]},"service_positions":[[-10,0,-9],[10,0,-9]]},
+    {"id":"public_house","footprint":[44,28],"body_height":18,"max_height":28,"entries":[[0,0,-14]],"entry_width":8,"usable_hall":{"center":[0,0,0],"size":[26,24]},"service_positions":[[-8,0,3],[8,0,3]]},
+    {"id":"magic_tower","footprint":[20,20],"body_height":54,"max_height":66,"entries":[[0,0,-10]],"entry_width":4.4,"usable_hall":{"center":[0,0,0],"diameter":16},"service_positions":[[-4,0,2],[4,0,2]]},
+    {"id":"guild_hall","footprint":[44,30],"body_height":18,"max_height":28,"entries":[[0,0,-15]],"entry_width":8,"usable_hall":{"center":[0,0,0],"size":[28,26]},"service_positions":[[-9,0,4],[9,0,4],[0,0,8]]}
+  ]
+}

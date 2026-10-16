@@ -1,0 +1,6274 @@
+{
+  "source_blend": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build004\\abbey_kit.blend",
+  "source_sha256": "52c03398a94f74c4fa232c75c6fe91dc7e1200295b555b129ed604558644e0b7",
+  "source_size": 2399621,
+  "scene": "ABY3_Courtyard",
+  "tolerance_metres": 0.003,
+  "evaluated_geometry_objects": 1500,
+  "method": "evaluated world meshes; five true bottom-surface samples; own asset excluded from vertical BVH rays",
+  "bases": [
+    {
+      "asset": "buttress_instance",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            0.34999990463256836,
+            8.40999984741211,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.0629999041557312,
+            7.993500232696533,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.6369999051094055,
+            7.993500232696533,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.6369999051094055,
+            8.826499938964844,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.0629999041557312,
+            8.826499938964844,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.001",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            7.65000057220459,
+            8.40999984741211,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.363000392913818,
+            7.993500232696533,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.937000274658203,
+            7.993500232696533,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.937000274658203,
+            8.826499938964844,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.363000392913818,
+            8.826499938964844,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.002",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -0.4099999964237213,
+            -8.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.004",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            -8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.004",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            -8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.004",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            -7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.004",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            -7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.004",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.003",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -0.4099999964237213,
+            -4.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Foundation continuous bearing below coping.002",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.7979999780654907,
+            "gap": 0.0020000338554382324,
+            "distance": 0.057000041007995605,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            -4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.001",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            -4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.001",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            -3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.002",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            -3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.002",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.004",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -0.4099999964237213,
+            -1.4901161193847656e-08,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Foundation continuous bearing below coping.002",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.7979999780654907,
+            "gap": 0.0020000338554382324,
+            "distance": 0.057000041007995605,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            -0.28700003027915955,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.002",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              4.658104302279753e-08,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            -0.28700003027915955,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.002",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            0.28700000047683716,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.003",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            0.28700000047683716,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.003",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              -4.658104302279753e-08,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.005",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -0.4099999964237213,
+            4.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Foundation continuous bearing below coping.004",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.7979999780654907,
+            "gap": 0.0020000338554382324,
+            "distance": 0.057000044733285904,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.003",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.003",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.004",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.004",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.006",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -0.4099999964237213,
+            8.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.005",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              1.3522220676520647e-08,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.006500015500932932,
+            8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.008",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -0.8264999985694885,
+            8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.005",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001460313797,
+            "normal": [
+              1.3522220676520647e-08,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.007",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            8.40999984741211,
+            -8.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.006",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            -8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.006",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            -8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.006",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            -7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.006",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            -7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.006",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.008",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            8.40999984741211,
+            -4.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Foundation continuous bearing below coping.006",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.7979999780654907,
+            "gap": 0.0020000338554382324,
+            "distance": 0.057000044733285904,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            -4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.005",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              -3.921358349145976e-09,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            -4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.005",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            -3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.006",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            -3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.006",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.009",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            8.40999984741211,
+            -1.4901161193847656e-08,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Foundation continuous bearing below coping.006",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.7979999780654907,
+            "gap": 0.0020000338554382324,
+            "distance": 0.057000044733285904,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            -0.28700003027915955,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.006",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            -0.28700003027915955,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.006",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              4.658103591737017e-08,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            0.28700000047683716,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.007",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              -4.658103591737017e-08,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            0.28700000047683716,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.007",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.010",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            8.40999984741211,
+            4.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Foundation continuous bearing below coping.008",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.7979999780654907,
+            "gap": 0.0020000338554382324,
+            "distance": 0.05700003728270531,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.007",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            3.7129998207092285,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.007",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Foundation_CopingSlab.008",
+            "asset_id": "foundation_strip_4m",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            4.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Platform upper rim.008",
+            "asset_id": "plinth_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              -3.954136129635799e-09,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "buttress_instance.011",
+      "asset_id": "buttress",
+      "bottom_z": 0.800000011920929,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            8.40999984741211,
+            8.0,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            7.713000297546387,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.007",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            8.826499938964844,
+            8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.007",
+            "asset_id": "corner_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.993500232696533,
+            8.286999702453613,
+            0.800000011920929
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.009",
+            "asset_id": "support_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.800000011920929,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            0.7000000476837158,
+            -6.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            -6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            -6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            -5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            -5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.001",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            0.7000000476837158,
+            -2.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            -2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            -2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            -1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            -1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.002",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            0.7000000476837158,
+            2.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.003",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            0.7000000476837158,
+            6.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.9415000677108765,
+            6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            0.45850005745887756,
+            6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.004",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            7.300000190734863,
+            -6.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            -6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            -6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            -5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            -5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.005",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            7.300000190734863,
+            -2.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            -2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            -2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            -1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            -1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.006",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            7.300000190734863,
+            2.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            1.7584999799728394,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            2.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "interior_column_instance.007",
+      "asset_id": "interior_column",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            7.300000190734863,
+            6.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            5.758500099182129,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.541500091552734,
+            6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            7.058500289916992,
+            6.241499900817871,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            1.3196667432785034,
+            4.742000102996826,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.280333399772644,
+            4.7779998779296875,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.619666814804077,
+            4.7779998779296875,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.865999937057495,
+            5.437333583831787,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.034000039100647,
+            5.437333583831787,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.001",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.4196672439575195,
+            4.742000102996826,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.38033390045166,
+            4.7779998779296875,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.719666957855225,
+            4.7779998779296875,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.966000556945801,
+            5.437333583831787,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.133999824523926,
+            5.437333583831787,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.002",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            1.3196667432785034,
+            3.0920000076293945,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.280333399772644,
+            3.128000259399414,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.619666814804077,
+            3.128000259399414,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.865999937057495,
+            3.7873334884643555,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.034000039100647,
+            3.7873332500457764,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.003",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.4196672439575195,
+            3.0920000076293945,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.38033390045166,
+            3.128000259399414,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.719666957855225,
+            3.128000259399414,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.966000556945801,
+            3.7873334884643555,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.133999824523926,
+            3.7873332500457764,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.004",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            2.5803334712982178,
+            1.442000150680542,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.280333399772644,
+            1.4779999256134033,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.619666814804077,
+            1.4780000448226929,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.865999937057495,
+            2.137333631515503,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            1.034000039100647,
+            2.137333393096924,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.005",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.4196672439575195,
+            1.441999912261963,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.38033390045166,
+            1.4779999256134033,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.719666957855225,
+            1.4780000448226929,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.966000556945801,
+            2.137333631515503,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            5.133999824523926,
+            2.137333393096924,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.006",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            1.3196667432785034,
+            -0.208000048995018,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            1.280333399772644,
+            -0.17200005054473877,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            2.619666814804077,
+            -0.17199993133544922,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            2.865999937057495,
+            0.4873334765434265,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            1.034000039100647,
+            0.4873332679271698,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.003",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.007",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.4196672439575195,
+            -0.208000048995018,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            5.38033390045166,
+            -0.17200005054473877,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            6.719666957855225,
+            -0.17199993133544922,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            6.966000556945801,
+            0.4873334765434265,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            5.133999824523926,
+            0.4873332679271698,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.007",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.008",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            2.5803334712982178,
+            -1.8580000400543213,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.280333399772644,
+            -1.8220000267028809,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.619666814804077,
+            -1.8220000267028809,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.865999937057495,
+            -1.16266667842865,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.034000039100647,
+            -1.1626667976379395,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.002",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "pew_2m_instance.009",
+      "asset_id": "pew_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.4196672439575195,
+            -1.8580001592636108,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.38033390045166,
+            -1.8220000267028809,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.719666957855225,
+            -1.8220000267028809,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.966000556945801,
+            -1.16266667842865,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.133999824523926,
+            -1.1626667976379395,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.006",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "wood_dais_2m_instance",
+      "asset_id": "wood_dais_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            3.2973334789276123,
+            -6.064000606536865,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.0360000133514404,
+            -7.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            3.9640002250671387,
+            -7.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            3.936000347137451,
+            -6.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.064000129699707,
+            -6.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "wood_dais_2m_instance.001",
+      "asset_id": "wood_dais_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            3.2973334789276123,
+            -4.064000129699707,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.0360000133514404,
+            -5.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            3.9640002250671387,
+            -5.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            3.936000347137451,
+            -4.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.064000129699707,
+            -4.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "wood_dais_2m_instance.002",
+      "asset_id": "wood_dais_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.297333717346191,
+            -6.064000606536865,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.0360002517700195,
+            -7.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.964000225067139,
+            -7.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.936000347137451,
+            -6.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.064000129699707,
+            -6.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "wood_dais_2m_instance.003",
+      "asset_id": "wood_dais_2m",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.297333717346191,
+            -4.064000129699707,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.0360002517700195,
+            -5.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.964000225067139,
+            -5.330667018890381,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.936000347137451,
+            -4.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.064000129699707,
+            -4.669333457946777,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "altar_table_instance",
+      "asset_id": "altar_table",
+      "bottom_z": 1.3799999952316284,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            3.1506667137145996,
+            -6.840666770935059,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.001",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            3.1506667137145996,
+            -7.359333038330078,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.001",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              0.9999999403953552
+            ]
+          }
+        },
+        {
+          "point": [
+            4.849333763122559,
+            -7.359333038330078,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.003",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.849333763122559,
+            -6.840666770935059,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.003",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.054999954998493195,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.9106669425964355,
+            -6.779333114624023,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.003",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "lectern_instance",
+      "asset_id": "lectern",
+      "bottom_z": 1.3799999952316284,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.150000095367432,
+            -5.599999904632568,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.004",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.921800136566162,
+            -5.782700061798096,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.004",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.378200054168701,
+            -5.782700061798096,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.004",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.378200054168701,
+            -5.417299747467041,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.004",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            4.921800136566162,
+            -5.417299747467041,
+            1.3799999952316284
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Dais floor plank editable ten array.004",
+            "asset_id": "wood_dais_2m",
+            "category": "foundation_or_floor",
+            "surface_z": 1.3799999952316284,
+            "gap": 0.0,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "altar_back_panel_instance",
+      "asset_id": "altar_back_panel",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            5.034333229064941,
+            -9.867334365844727,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Sanctuary semicircular floor.001",
+            "asset_id": "apse_floor",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              1.7434615973144219e-09,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.8943333625793457,
+            -9.867334365844727,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Sanctuary semicircular floor.001",
+            "asset_id": "apse_floor",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              1.7434615973144219e-09,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            5.105666637420654,
+            -9.732667922973633,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Sanctuary semicircular floor.001",
+            "asset_id": "apse_floor",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              1.7434615973144219e-09,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.9656665325164795,
+            -9.732667922973633,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Sanctuary semicircular floor.001",
+            "asset_id": "apse_floor",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              1.7434615973144219e-09,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            2.908599853515625,
+            -9.678801536560059,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Sanctuary semicircular floor.001",
+            "asset_id": "apse_floor",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              1.7434615973144219e-09,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "floor_lamp_instance",
+      "asset_id": "floor_lamp",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            1.2999999523162842,
+            -4.400000095367432,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.1319999694824219,
+            -4.567999839782715,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.4679999351501465,
+            -4.567999839782715,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.4679999351501465,
+            -4.232000350952148,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.1319999694824219,
+            -4.232000350952148,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.001",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "floor_lamp_instance.001",
+      "asset_id": "floor_lamp",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            1.2999999523162842,
+            7.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.1319999694824219,
+            6.832000255584717,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.4679999351501465,
+            6.832000255584717,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.4679999351501465,
+            7.167999744415283,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            1.1319999694824219,
+            7.167999744415283,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.004",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "floor_lamp_instance.002",
+      "asset_id": "floor_lamp",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            6.699999809265137,
+            -4.400000095367432,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.054999951273202896,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.5320000648498535,
+            -4.567999839782715,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.86799955368042,
+            -4.567999839782715,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.86799955368042,
+            -4.232000350952148,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.5320000648498535,
+            -4.232000350952148,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.005",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "floor_lamp_instance.003",
+      "asset_id": "floor_lamp",
+      "bottom_z": 0.8999999761581421,
+      "contact_surface_mode": "closed_bottom_faces",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            6.699999809265137,
+            7.0,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Continuous mortar bedding.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.8980000019073486,
+            "gap": 0.001999974250793457,
+            "distance": 0.05699998140335083,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.5320000648498535,
+            6.832000255584717,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.86799955368042,
+            6.832000255584717,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.86799955368042,
+            7.167999744415283,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999438226223,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            6.5320000648498535,
+            7.167999744415283,
+            0.8999999761581421
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "Paving 4m.008",
+            "asset_id": "floor_stone_4",
+            "category": "foundation_or_floor",
+            "surface_z": 0.9000000357627869,
+            "gap": -5.960464477539063e-08,
+            "distance": 0.0549999475479126,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -10.649999618530273,
+            -2.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.011",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            -2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.011",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            -2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.011",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            -1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.011",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            -1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.011",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.001",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -7.349999904632568,
+            -2.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.015",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            -2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.015",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            -2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.015",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            -1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.015",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            -1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.015",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.002",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -10.649999618530273,
+            2.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.012",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.012",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.012",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.012",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.012",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.003",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -7.349999904632568,
+            2.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.016",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.016",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            1.8042030334472656,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.016",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.016",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            2.1957969665527344,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.016",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.004",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -10.649999618530273,
+            6.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.013",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            5.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.013",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            5.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.013",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            6.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.013",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            6.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.013",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.005",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -7.349999904632568,
+            6.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.017",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            5.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.017",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            5.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.017",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            6.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.017",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            6.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.017",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.006",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -10.649999618530273,
+            10.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.014",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            9.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.014",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            9.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.014",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.454202651977539,
+            10.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.014",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -10.845797538757324,
+            10.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.014",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500000715255737,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asset": "column_instance.007",
+      "asset_id": "column",
+      "bottom_z": 0.30000001192092896,
+      "contact_surface_mode": "open_bottom_rim_footprint",
+      "sample_count": 5,
+      "pass_check": true,
+      "samples": [
+        {
+          "point": [
+            -7.349999904632568,
+            10.0,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.018",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            9.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.018",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            9.804203033447266,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.018",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.154202938079834,
+            10.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.018",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.05500001087784767,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "point": [
+            -7.545796871185303,
+            10.195796966552734,
+            0.30000001192092896
+          ],
+          "pass_check": true,
+          "reason": null,
+          "hit": {
+            "object": "ABY3_Pad_UpperDressedSlab.018",
+            "asset_id": "cloister_pad",
+            "category": "foundation_or_floor",
+            "surface_z": 0.30000001192092896,
+            "gap": 0.0,
+            "distance": 0.055000003427267075,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "truss_column_contacts": [
+    {
+      "truss": "roof_truss_8m_instance",
+      "column": "interior_column_instance",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance",
+      "column": "interior_column_instance.004",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance.001",
+      "column": "interior_column_instance.001",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance.001",
+      "column": "interior_column_instance.005",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance.002",
+      "column": "interior_column_instance.002",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance.002",
+      "column": "interior_column_instance.006",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance.003",
+      "column": "interior_column_instance.003",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    },
+    {
+      "truss": "roof_truss_8m_instance.003",
+      "column": "interior_column_instance.007",
+      "tie_bottom": 6.300000190734863,
+      "column_top": 6.299999713897705,
+      "gap": 4.76837158203125e-07,
+      "pass_check": true
+    }
+  ],
+  "beam_connections": [
+    {
+      "beam": "beam_4m_instance",
+      "end": -1,
+      "point": [
+        0.7000001072883606,
+        -6.0,
+        6.460000038146973
+      ],
+      "terminal_support": {
+        "point": [
+          0.7000001072883606,
+          -6.0,
+          6.300000190734863
+        ],
+        "pass_check": true,
+        "reason": null,
+        "hit": {
+          "object": "SDF refined carved stone capital.002",
+          "asset_id": "interior_column",
+          "category": "structure",
+          "surface_z": 6.299999713897705,
+          "gap": 4.76837158203125e-07,
+          "distance": 0.05500030517578125,
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance",
+      "end": 1,
+      "point": [
+        0.699999988079071,
+        -2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.001",
+      "distance": 1.1920928955078125e-07,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.001",
+      "end": -1,
+      "point": [
+        0.7000001072883606,
+        -2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance",
+      "distance": 1.1920928955078125e-07,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.001",
+      "end": 1,
+      "point": [
+        0.699999988079071,
+        2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.002",
+      "distance": 1.1920928955078125e-07,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.002",
+      "end": -1,
+      "point": [
+        0.7000001072883606,
+        2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.001",
+      "distance": 1.1920928955078125e-07,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.002",
+      "end": 1,
+      "point": [
+        0.699999988079071,
+        6.0,
+        6.460000038146973
+      ],
+      "terminal_support": {
+        "point": [
+          0.699999988079071,
+          6.0,
+          6.300000190734863
+        ],
+        "pass_check": true,
+        "reason": null,
+        "hit": {
+          "object": "SDF refined carved stone capital.005",
+          "asset_id": "interior_column",
+          "category": "structure",
+          "surface_z": 6.299999713897705,
+          "gap": 4.76837158203125e-07,
+          "distance": 0.05500031262636185,
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.003",
+      "end": -1,
+      "point": [
+        7.300000190734863,
+        -6.0,
+        6.460000038146973
+      ],
+      "terminal_support": {
+        "point": [
+          7.300000190734863,
+          -6.0,
+          6.300000190734863
+        ],
+        "pass_check": true,
+        "reason": null,
+        "hit": {
+          "object": "SDF refined carved stone capital.006",
+          "asset_id": "interior_column",
+          "category": "structure",
+          "surface_z": 6.299999713897705,
+          "gap": 4.76837158203125e-07,
+          "distance": 0.05500030517578125,
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.003",
+      "end": 1,
+      "point": [
+        7.300000190734863,
+        -2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.004",
+      "distance": 0.0,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.004",
+      "end": -1,
+      "point": [
+        7.300000190734863,
+        -2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.003",
+      "distance": 0.0,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.004",
+      "end": 1,
+      "point": [
+        7.300000190734863,
+        2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.005",
+      "distance": 0.0,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.005",
+      "end": -1,
+      "point": [
+        7.300000190734863,
+        2.0,
+        6.460000038146973
+      ],
+      "other_beam": "beam_4m_instance.004",
+      "distance": 0.0,
+      "pass_check": true
+    },
+    {
+      "beam": "beam_4m_instance.005",
+      "end": 1,
+      "point": [
+        7.300000190734863,
+        6.0,
+        6.460000038146973
+      ],
+      "terminal_support": {
+        "point": [
+          7.300000190734863,
+          6.0,
+          6.300000190734863
+        ],
+        "pass_check": true,
+        "reason": null,
+        "hit": {
+          "object": "SDF refined carved stone capital.009",
+          "asset_id": "interior_column",
+          "category": "structure",
+          "surface_z": 6.299999713897705,
+          "gap": 4.76837158203125e-07,
+          "distance": 0.05500030517578125,
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "pass_check": true
+    }
+  ],
+  "hanging_mounts": [
+    {
+      "asset": "chandelier_instance",
+      "actual_top": 6.300000190734863,
+      "mount": [
+        4.0,
+        -2.0,
+        6.300000190734863
+      ],
+      "point": [
+        4.0,
+        -2.0,
+        6.300000190734863
+      ],
+      "pass_check": true,
+      "reason": null,
+      "hit": {
+        "object": "ABY3_Truss_TieBeam.002",
+        "asset_id": "roof_truss_8m",
+        "category": "structure",
+        "surface_z": 6.300000190734863,
+        "gap": 0.0,
+        "distance": 0.034999847412109375,
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    },
+    {
+      "asset": "chandelier_instance.001",
+      "actual_top": 6.300000190734863,
+      "mount": [
+        4.0,
+        2.0,
+        6.300000190734863
+      ],
+      "point": [
+        4.0,
+        2.0,
+        6.300000190734863
+      ],
+      "pass_check": true,
+      "reason": null,
+      "hit": {
+        "object": "ABY3_Truss_TieBeam.003",
+        "asset_id": "roof_truss_8m",
+        "category": "structure",
+        "surface_z": 6.300000190734863,
+        "gap": 0.0,
+        "distance": 0.034999847412109375,
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    }
+  ],
+  "door_hinges": [
+    {
+      "asset": "door_hinged_instance",
+      "hinges": [
+        {
+          "hinge": "HINGE_Left.001",
+          "actual_degrees": 104.99999950679661,
+          "expected_degrees": 105.0,
+          "pass_check": true
+        },
+        {
+          "hinge": "HINGE_Right.001",
+          "actual_degrees": -104.99999950679661,
+          "expected_degrees": -105.0,
+          "pass_check": true
+        }
+      ],
+      "pass_check": true
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "base_assets": 49,
+    "base_points": 245,
+    "truss_column_contacts": 8,
+    "beam_ends": 12,
+    "hanging_mounts": 2,
+    "door_sets": 1,
+    "failures": 0
+  },
+  "pass_check": true
+}

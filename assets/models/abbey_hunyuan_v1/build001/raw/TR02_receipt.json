@@ -1,0 +1,14 @@
+{
+  "asset": "TR02",
+  "provider": "Tencent Hunyuan3D",
+  "JobId": "1499438999135068160",
+  "file": "E:\\wowgame\\assets\\models\\abbey_hunyuan_v1\\build001\\raw\\TR02.glb",
+  "bytes": 36748,
+  "sha256": "605c683523e095241927d762fdf022094a52347a51746d673e273e24aa67c662",
+  "requested_generate_type": "Geometry",
+  "requested_faces": 3000,
+  "requested_pbr": false,
+  "credits": 25,
+  "credit_details": "{\"FaceCount\":10,\"GenerateType-Geometry\":15}",
+  "geometry_and_texture_status": "not_yet_inspected"
+}

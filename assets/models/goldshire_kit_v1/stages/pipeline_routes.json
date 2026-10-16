@@ -1,0 +1,150 @@
+{
+  "scope": "Family-level genuine analytic prototypes, not falsely claiming every final detail is an SDF conversion",
+  "workflow": [
+    "pure CSG",
+    "pure SDF",
+    "split by joint precision",
+    "selected construction methods",
+    "CSG precision refinement in final recipes",
+    "batch SDF",
+    "refined SDF",
+    "corrected modules",
+    "assembly presets"
+  ],
+  "families": [
+    {
+      "family": "wall_door",
+      "csg_object": "01 Pure CSG wall",
+      "stages": [
+        {
+          "name": "02 Pure analytic SDF",
+          "sample_step_m": 0.14,
+          "vertices": 1208,
+          "triangles": 2412,
+          "object": "02 Pure analytic SDF wall_door"
+        },
+        {
+          "name": "06 Batch analytic SDF",
+          "sample_step_m": 0.1,
+          "vertices": 2580,
+          "triangles": 5156,
+          "object": "06 Batch analytic SDF wall_door"
+        },
+        {
+          "name": "07 Refined analytic SDF",
+          "sample_step_m": 0.075,
+          "vertices": 4768,
+          "triangles": 9532,
+          "object": "07 Refined analytic SDF wall_door"
+        }
+      ],
+      "selected_route": "dimension-controlled hard surface recipe: openings/joints/thin sections retain exact grid, SDF candidate rejected for mating interfaces",
+      "final_source": "tools/blender/goldshire_kit/build.py",
+      "methods": [
+        "profile extrusion",
+        "CSG",
+        "geometry vertices"
+      ]
+    },
+    {
+      "family": "roof_slab",
+      "csg_object": "01 Pure CSG roof slab",
+      "stages": [
+        {
+          "name": "02 Pure analytic SDF",
+          "sample_step_m": 0.14,
+          "vertices": 1268,
+          "triangles": 2528,
+          "object": "02 Pure analytic SDF roof_slab"
+        },
+        {
+          "name": "06 Batch analytic SDF",
+          "sample_step_m": 0.1,
+          "vertices": 2794,
+          "triangles": 5584,
+          "object": "06 Batch analytic SDF roof_slab"
+        },
+        {
+          "name": "07 Refined analytic SDF",
+          "sample_step_m": 0.075,
+          "vertices": 5504,
+          "triangles": 11004,
+          "object": "07 Refined analytic SDF roof_slab"
+        }
+      ],
+      "selected_route": "dimension-controlled hard surface recipe: openings/joints/thin sections retain exact grid, SDF candidate rejected for mating interfaces",
+      "final_source": "tools/blender/goldshire_kit/build.py",
+      "methods": [
+        "mirror",
+        "solidify",
+        "array"
+      ]
+    },
+    {
+      "family": "timber_post",
+      "csg_object": "01 Pure CSG timber post",
+      "stages": [
+        {
+          "name": "02 Pure analytic SDF",
+          "sample_step_m": 0.14,
+          "vertices": 360,
+          "triangles": 716,
+          "object": "02 Pure analytic SDF timber_post"
+        },
+        {
+          "name": "06 Batch analytic SDF",
+          "sample_step_m": 0.1,
+          "vertices": 832,
+          "triangles": 1660,
+          "object": "06 Batch analytic SDF timber_post"
+        },
+        {
+          "name": "07 Refined analytic SDF",
+          "sample_step_m": 0.075,
+          "vertices": 1706,
+          "triangles": 3408,
+          "object": "07 Refined analytic SDF timber_post"
+        }
+      ],
+      "selected_route": "dimension-controlled hard surface recipe: openings/joints/thin sections retain exact grid, SDF candidate rejected for mating interfaces",
+      "final_source": "tools/blender/goldshire_kit/build.py",
+      "methods": [
+        "spin",
+        "profile extrusion"
+      ]
+    },
+    {
+      "family": "stone",
+      "csg_object": "01 Pure CSG dressed stone",
+      "stages": [
+        {
+          "name": "02 Pure analytic SDF",
+          "sample_step_m": 0.14,
+          "vertices": 568,
+          "triangles": 1132,
+          "object": "02 Pure analytic SDF stone"
+        },
+        {
+          "name": "06 Batch analytic SDF",
+          "sample_step_m": 0.1,
+          "vertices": 1030,
+          "triangles": 2056,
+          "object": "06 Batch analytic SDF stone"
+        },
+        {
+          "name": "07 Refined analytic SDF",
+          "sample_step_m": 0.075,
+          "vertices": 2046,
+          "triangles": 4088,
+          "object": "07 Refined analytic SDF stone"
+        }
+      ],
+      "selected_route": "refined analytic SDF with decimation used as stone_sdf facing module",
+      "final_source": "tools/blender/goldshire_kit/build.py",
+      "methods": [
+        "SDF",
+        "decimate correction"
+      ]
+    }
+  ]
+}

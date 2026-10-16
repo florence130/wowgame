@@ -1,0 +1,35 @@
+{
+ "note": "草案。概念图通过审核后按实际设计修订；from 指向参考概念图所在目录。",
+ "parts": [
+  {
+   "id": "abbey_altarpiece",
+   "from": "abbey_chapel",
+   "size": "3 x 3.5 x 0.6",
+   "desc": "small dark wood gothic altarpiece with a pointed central gable, two side wings with tracery, small pinnacles and a brass cross"
+  },
+  {
+   "id": "abbey_gate_statue",
+   "from": "abbey_gatehouse",
+   "size": "1.0 x 2.2 x 0.7",
+   "desc": "standing stone statue of a hooded monk holding a lantern, for a wall niche"
+  },
+  {
+   "id": "abbey_angel_statue",
+   "from": "abbey_gatehouse",
+   "size": "1.4 x 2.0 x 1.0",
+   "desc": "kneeling stone angel with folded wings reading a book"
+  },
+  {
+   "id": "abbey_crest",
+   "from": "abbey_chapel",
+   "size": "1.2 x 1.4 x 0.2",
+   "desc": "carved stone heraldic shield with a bell and two crossed keys"
+  },
+  {
+   "id": "inn_sign",
+   "from": "vale_inn",
+   "size": "1.2 x 1.0 x 0.1",
+   "desc": "carved wooden hanging inn sign with a foaming tankard and wheat sheaf, on a curly black iron bracket"
+  }
+ ]
+}

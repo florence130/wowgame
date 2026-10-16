@@ -1,0 +1,1465 @@
+{
+  "as_backstab": {
+    "animation": "dual",
+    "effects": [
+      {
+        "bonus": 10.0,
+        "bonus_mul": 1.25,
+        "bonus_when": {
+          "behind_or_stealth": true
+        },
+        "pct": 0.8,
+        "type": "weapon"
+      },
+      {
+        "n": 2,
+        "type": "combo"
+      }
+    ],
+    "requires_spec": "assassin",
+    "school": "physical"
+  },
+  "as_death_mark": {
+    "animation": "dual",
+    "effects": [
+      {
+        "aura_base": {
+          "icon": "rupture",
+          "id": "as_bleed",
+          "tick": {
+            "dmg": 3,
+            "interval": 3.0,
+            "school": "physical"
+          },
+          "type": "debuff"
+        },
+        "damages": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "durations": [
+          9,
+          12,
+          15,
+          18,
+          21
+        ],
+        "type": "finisher_aura_scaled"
+      }
+    ],
+    "requires_spec": "assassin",
+    "school": "physical"
+  },
+  "as_envenom": {
+    "animation": "dual",
+    "effects": [
+      {
+        "ap_per_cp": 0.015,
+        "bonus_mul": 1.25,
+        "bonus_when": {
+          "target_aura": "as_poison"
+        },
+        "per_cp": [
+          [
+            8,
+            10
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            24,
+            30
+          ],
+          [
+            32,
+            40
+          ],
+          [
+            40,
+            50
+          ]
+        ],
+        "spell": true,
+        "type": "finisher_damage"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "as_edge",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "assassin",
+    "school": "nature"
+  },
+  "as_shadow_step": {
+    "effects": [
+      {
+        "max_distance": 6.0,
+        "type": "teleport_behind"
+      }
+    ],
+    "requires_spec": "assassin",
+    "school": "shadow"
+  },
+  "as_venomous_cut": {
+    "animation": "dual",
+    "effects": [
+      {
+        "bonus": 6.0,
+        "pct": 0.65,
+        "type": "weapon"
+      },
+      {
+        "n": 1,
+        "type": "combo"
+      },
+      {
+        "n": 1,
+        "type": "combo",
+        "when": {
+          "self_aura": "as_edge"
+        }
+      },
+      {
+        "aura": {
+          "dispel": true,
+          "dur": 12.0,
+          "icon": "poison",
+          "id": "as_poison",
+          "tick": {
+            "caster_energy": 5,
+            "dmg": 4,
+            "interval": 3.0,
+            "requires_aura": "as_bleed",
+            "school": "nature"
+          },
+          "type": "debuff"
+        },
+        "type": "aura"
+      },
+      {
+        "id": "as_edge",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "assassin",
+    "school": "physical"
+  },
+  "bk_bloodthirst": {
+    "animation": "heavy",
+    "effects": [
+      {
+        "bonus": 8.0,
+        "lifesteal": 0.18,
+        "pct": 0.54,
+        "type": "weapon"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "bk_flow",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "berserker",
+    "school": "physical"
+  },
+  "bk_execute": {
+    "animation": "heavy",
+    "effects": [
+      {
+        "bonus": 10.0,
+        "execute_bonus_threshold": 0.3,
+        "execute_multiplier": 1.3,
+        "lifesteal": 0.25,
+        "pct": 0.81,
+        "type": "weapon"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "bk_flow",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "berserker",
+    "school": "physical"
+  },
+  "bk_frenzy": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 8.0,
+          "icon": "arcane_intellect",
+          "id": "bk_frenzy",
+          "mods": {
+            "attack_speed": 0.2,
+            "dmg_taken": 0.1,
+            "skill_haste": 0.15
+          },
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "berserker",
+    "school": "physical"
+  },
+  "bk_iron_charge": {
+    "effects": [
+      {
+        "max_distance": 8.0,
+        "type": "charge"
+      }
+    ],
+    "requires_spec": "berserker",
+    "school": "physical"
+  },
+  "bk_rend_slash": {
+    "animation": "slash",
+    "effects": [
+      {
+        "bonus": 5.0,
+        "bonus_mul": 1.2,
+        "bonus_when": {
+          "self_aura": "bk_flow"
+        },
+        "pct": 0.29,
+        "type": "weapon"
+      },
+      {
+        "add": 12.0,
+        "gauge": "fury",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "add": 6.0,
+        "gauge": "fury",
+        "type": "gauge",
+        "when": {
+          "self_aura": "bk_flow"
+        }
+      },
+      {
+        "id": "bk_flow",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "berserker",
+    "school": "physical"
+  },
+  "cannon_barrage": {
+    "animation": "cannon",
+    "effects": [
+      {
+        "center": "target",
+        "max": 28,
+        "max_targets": 5,
+        "min": 22,
+        "radius": 4.0,
+        "rap_coef": 0.08,
+        "type": "aoe"
+      }
+    ],
+    "requires_spec": "marksman",
+    "school": "physical"
+  },
+  "cannon_burst": {
+    "animation": "cannon",
+    "effects": [
+      {
+        "bonus": 22,
+        "pct": 1.25,
+        "rap_coef": 0.12,
+        "type": "ranged"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "cannon_breach",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "marksman",
+    "school": "physical"
+  },
+  "cannon_recoil": {
+    "effects": [
+      {
+        "dist": 4.0,
+        "type": "leap_back"
+      }
+    ],
+    "requires_spec": "marksman",
+    "school": "physical"
+  },
+  "cannon_reload": {
+    "animation": "reload",
+    "effects": [
+      {
+        "add": 3.0,
+        "gauge": "ammo",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "marksman",
+    "school": "physical"
+  },
+  "cannon_shotgun": {
+    "animation": "shotgun",
+    "effects": [
+      {
+        "frontal": true,
+        "max": 18,
+        "max_targets": 4,
+        "min": 12,
+        "radius": 5.0,
+        "rap_coef": 0.05,
+        "type": "aoe"
+      },
+      {
+        "add": 1.0,
+        "gauge": "aim",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "marksman",
+    "school": "physical"
+  },
+  "cannon_steady": {
+    "animation": "rifle",
+    "effects": [
+      {
+        "bonus": 7,
+        "bonus_mul": 1.2,
+        "bonus_when": {
+          "self_aura": "cannon_breach"
+        },
+        "pct": 0.6,
+        "rap_coef": 0.06,
+        "type": "ranged"
+      },
+      {
+        "add": 1.0,
+        "gauge": "aim",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "id": "cannon_breach",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "marksman",
+    "school": "physical"
+  },
+  "cl_bolt_focus": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 6.0,
+          "gauge_bonus": {
+            "bolt": 6
+          },
+          "icon": "arcane_intellect",
+          "id": "cl_bolt_focus",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "lightning"
+  },
+  "cl_gauge_exchange": {
+    "effects": [
+      {
+        "a": "light",
+        "b": "bolt",
+        "pct": 0.5,
+        "type": "gauge_balance"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "light"
+  },
+  "cl_holy_mace": {
+    "animation": "hammer",
+    "effects": [
+      {
+        "bonus": 4.0,
+        "pct": 0.25,
+        "type": "weapon"
+      },
+      {
+        "add": 12.0,
+        "gauge": "light",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "add": 12.0,
+        "gauge": "bolt",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "physical"
+  },
+  "cl_light_focus": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 6.0,
+          "gauge_bonus": {
+            "light": 6
+          },
+          "icon": "arcane_intellect",
+          "id": "cl_light_focus",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "light"
+  },
+  "cl_light_guard": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 4.0,
+          "icon": "arcane_intellect",
+          "id": "cl_light_guard",
+          "mods": {
+            "dmg_taken": -0.15
+          },
+          "type": "buff"
+        },
+        "type": "self_aura"
+      },
+      {
+        "aura": {
+          "absorb_pct": 0.035,
+          "dur": 4.0,
+          "icon": "pwshield",
+          "id": "cl_party_guard",
+          "type": "buff"
+        },
+        "radius": 6.0,
+        "type": "party_aura"
+      },
+      {
+        "id": "cl_afterglow",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "light"
+  },
+  "cl_lightning_smash": {
+    "animation": "hammer",
+    "effects": [
+      {
+        "ap_coef": 0.2,
+        "coef": 0.0,
+        "max": 58.0,
+        "min": 48.0,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 6.0,
+          "icon": "arcane_intellect",
+          "id": "cl_afterglow",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      },
+      {
+        "id": "cl_thunder_brand",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "lightning"
+  },
+  "cl_provoke": {
+    "effects": [
+      {
+        "type": "taunt"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "light"
+  },
+  "cl_radiant_mend": {
+    "effects": [
+      {
+        "pct": 0.12,
+        "type": "heal_pct"
+      },
+      {
+        "id": "cl_afterglow",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "light"
+  },
+  "cl_thunder_brand": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 12.0,
+          "enchant": {
+            "ap_coef": 0.03,
+            "interval": 1.0,
+            "max": 5,
+            "min": 3,
+            "school": "lightning"
+          },
+          "icon": "arcane_intellect",
+          "id": "cl_thunder_brand",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "shadow_priest",
+    "school": "lightning"
+  },
+  "dm_firestorm": {
+    "effects": [
+      {
+        "center": "target",
+        "coef": 0.25,
+        "max": 30,
+        "max_targets": 5,
+        "min": 24,
+        "radius": 4.0,
+        "type": "aoe"
+      },
+      {
+        "add": 1.0,
+        "gauge": "ember",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "fire"
+  },
+  "dm_flame_bolt": {
+    "effects": [
+      {
+        "coef": 0.45,
+        "max": 56.0,
+        "min": 48.0,
+        "type": "damage"
+      },
+      {
+        "add": 1.0,
+        "gauge": "ember",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "fire"
+  },
+  "dm_frost_spike": {
+    "effects": [
+      {
+        "coef": 0.15,
+        "max": 17.0,
+        "min": 13.0,
+        "type": "damage"
+      },
+      {
+        "pct": 0.28,
+        "type": "energize"
+      },
+      {
+        "add": 2.0,
+        "gauge": "ice_mark",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "frost"
+  },
+  "dm_ice_lance": {
+    "effects": [
+      {
+        "coef": 0.1,
+        "max": 13.0,
+        "min": 9.0,
+        "type": "damage"
+      },
+      {
+        "pct": 0.08,
+        "type": "energize"
+      },
+      {
+        "add": 1.0,
+        "gauge": "ice_mark",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "frost"
+  },
+  "dm_pyroblast": {
+    "effects": [
+      {
+        "coef": 0.5,
+        "max": 84.0,
+        "min": 72.0,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 6.0,
+          "icon": "fireball",
+          "id": "dm_burn",
+          "tick": {
+            "dmg": 7,
+            "interval": 2.0,
+            "school": "fire"
+          },
+          "type": "debuff"
+        },
+        "type": "aura"
+      },
+      {
+        "add": 1.0,
+        "gauge": "ember",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "fire"
+  },
+  "dm_shadow_bolt": {
+    "effects": [
+      {
+        "coef": 0.2,
+        "max": 24.0,
+        "min": 18.0,
+        "type": "damage"
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "shadow"
+  },
+  "dm_soul_siphon": {
+    "effects": [
+      {
+        "coef": 0.08,
+        "max": 12.0,
+        "min": 8.0,
+        "type": "damage"
+      },
+      {
+        "pct": 0.07,
+        "type": "energize"
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "shadow"
+  },
+  "dm_void_pulse": {
+    "effects": [
+      {
+        "coef": 0.4,
+        "max": 60.0,
+        "min": 50.0,
+        "type": "damage"
+      },
+      {
+        "pct": 0.06,
+        "type": "energize"
+      }
+    ],
+    "requires_spec": "dark_mage",
+    "school": "shadow"
+  },
+  "el_chain_lightning": {
+    "effects": [
+      {
+        "bonus_mul": 1.25,
+        "bonus_when": {
+          "target_aura": "el_wet"
+        },
+        "coef": 0.3,
+        "max": 38.0,
+        "min": 30.0,
+        "type": "damage"
+      },
+      {
+        "coef": 0.2,
+        "falloff": 0.25,
+        "jumps": 3,
+        "max": 30,
+        "min": 24,
+        "radius": 6.0,
+        "type": "chain"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "el_return",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "lightning"
+  },
+  "el_cleanse": {
+    "effects": [
+      {
+        "count": 1,
+        "type": "dispel_debuff"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "light"
+  },
+  "el_holy_beam": {
+    "effects": [
+      {
+        "pct": 0.08,
+        "type": "heal_pct"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "light"
+  },
+  "el_lightning": {
+    "effects": [
+      {
+        "bonus_mul": 1.25,
+        "bonus_when": {
+          "target_aura": "el_wet"
+        },
+        "coef": 0.3,
+        "max": 38.0,
+        "min": 30.0,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "el_return",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "lightning"
+  },
+  "el_surge": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 8.0,
+          "icon": "renew",
+          "id": "el_wet",
+          "mods": {
+            "speed": -0.15
+          },
+          "type": "debuff"
+        },
+        "center": "target",
+        "coef": 0.15,
+        "max": 20,
+        "max_targets": 5,
+        "min": 14,
+        "radius": 4.5,
+        "type": "aoe"
+      },
+      {
+        "add": 1.0,
+        "gauge": "tide",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "water"
+  },
+  "el_thunderstorm": {
+    "effects": [
+      {
+        "center": "target",
+        "coef": 0.3,
+        "max": 46,
+        "max_targets": 5,
+        "min": 38,
+        "radius": 5.0,
+        "type": "aoe"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "el_return",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "lightning"
+  },
+  "el_tide_shield": {
+    "effects": [
+      {
+        "aura": {
+          "absorb_pct": 0.08,
+          "dur": 6.0,
+          "icon": "arcane_intellect",
+          "id": "el_tide_shield",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "water"
+  },
+  "el_water_bolt": {
+    "effects": [
+      {
+        "coef": 0.2,
+        "max": 20.0,
+        "min": 16.0,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 8.0,
+          "icon": "renew",
+          "id": "el_wet",
+          "mods": {
+            "speed": -0.15
+          },
+          "type": "debuff"
+        },
+        "type": "aura"
+      },
+      {
+        "add": 1.0,
+        "gauge": "tide",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "add": 1.0,
+        "gauge": "tide",
+        "type": "gauge",
+        "when": {
+          "self_aura": "el_return"
+        }
+      },
+      {
+        "pct": 0.06,
+        "type": "energize"
+      },
+      {
+        "id": "el_return",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "elementalist",
+    "school": "water"
+  },
+  "mech_armor": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 0.0,
+          "icon": "arcane_intellect",
+          "id": "mech_armor",
+          "mods": {
+            "dmg_taken": -0.06
+          },
+          "toggle": true,
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "gadgeteer",
+    "school": "neutral"
+  },
+  "mech_overdrive": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 6.0,
+          "icon": "arcane_intellect",
+          "id": "mech_overdrive",
+          "mods": {
+            "dmg_done": 0.15,
+            "dmg_taken": 0.08
+          },
+          "type": "buff"
+        },
+        "type": "self_aura"
+      },
+      {
+        "add": 15.0,
+        "gauge": "heat",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "gadgeteer",
+    "school": "neutral"
+  },
+  "mech_piston": {
+    "animation": "piston",
+    "effects": [
+      {
+        "ap_coef": 0.11,
+        "bonus_mul": 1.2,
+        "bonus_when": {
+          "gauge_min": {
+            "heat": 50
+          }
+        },
+        "coef": 0.0,
+        "max": 20.0,
+        "min": 16.0,
+        "type": "damage"
+      },
+      {
+        "add": 18.0,
+        "gauge": "heat",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "coef": 0.0,
+        "max": 8.0,
+        "min": 6.0,
+        "type": "damage",
+        "when": {
+          "self_aura": "mech_cooled"
+        }
+      },
+      {
+        "id": "mech_cooled",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "gadgeteer",
+    "school": "physical"
+  },
+  "mech_rail": {
+    "animation": "rail",
+    "effects": [
+      {
+        "coef": 0.0,
+        "max": 54.0,
+        "min": 44.0,
+        "rap_coef": 0.15,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "mech_cooled",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "gadgeteer",
+    "school": "neutral"
+  },
+  "mech_rocket": {
+    "animation": "rocket",
+    "effects": [
+      {
+        "bonus_mul": 1.2,
+        "bonus_when": {
+          "gauge_min": {
+            "heat": 50
+          }
+        },
+        "coef": 0.0,
+        "max": 28.0,
+        "min": 22.0,
+        "rap_coef": 0.09,
+        "type": "damage"
+      },
+      {
+        "add": 24.0,
+        "gauge": "heat",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "gadgeteer",
+    "school": "neutral"
+  },
+  "mech_vent": {
+    "effects": [
+      {
+        "add": -30.0,
+        "gauge": "heat",
+        "type": "gauge",
+        "when": {}
+      }
+    ],
+    "requires_spec": "gadgeteer",
+    "school": "neutral"
+  },
+  "ms_arcane_edge": {
+    "animation": "thrust",
+    "effects": [
+      {
+        "bonus": 4.0,
+        "bonus_mul": 1.35,
+        "bonus_when": {
+          "self_aura": "ms_shadow_edge"
+        },
+        "pct": 0.29,
+        "type": "weapon"
+      },
+      {
+        "add": 10.0,
+        "gauge": "resonance",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "slash",
+          "id": "ms_echo",
+          "type": "buff"
+        },
+        "type": "self_aura",
+        "when": {
+          "self_aura": "ms_shadow_edge"
+        }
+      },
+      {
+        "id": "ms_shadow_edge",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "duelist",
+    "school": "physical"
+  },
+  "ms_phase_lunge": {
+    "effects": [
+      {
+        "max_distance": 6.0,
+        "type": "charge"
+      }
+    ],
+    "requires_spec": "duelist",
+    "school": "neutral"
+  },
+  "ms_shadow_bolt": {
+    "effects": [
+      {
+        "ap_coef": 0.12,
+        "coef": 0.0,
+        "max": 22.0,
+        "min": 16.0,
+        "type": "damage"
+      },
+      {
+        "add": 20.0,
+        "gauge": "resonance",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "ms_shadow_edge",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      },
+      {
+        "id": "ms_echo",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "duelist",
+    "school": "shadow"
+  },
+  "ms_spellblade": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 6.0,
+          "enchant": {
+            "ap_coef": 0.025,
+            "interval": 0.85,
+            "max": 5,
+            "min": 3,
+            "school": "shadow"
+          },
+          "icon": "arcane_intellect",
+          "id": "ms_spellblade",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "duelist",
+    "school": "shadow"
+  },
+  "ms_unbound": {
+    "animation": "thrust",
+    "effects": [
+      {
+        "ap_coef": 0.18,
+        "coef": 0.0,
+        "max": 64.0,
+        "min": 54.0,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "ms_echo",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "duelist",
+    "school": "neutral"
+  },
+  "pd_guard": {
+    "effects": [
+      {
+        "dur": 6.0,
+        "pct": 0.25,
+        "range": 12.0,
+        "type": "guard"
+      }
+    ],
+    "requires_spec": "paladin",
+    "school": "light"
+  },
+  "pd_holy_bulwark": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "pd_holy_bulwark",
+          "mods": {
+            "dmg_taken": -0.3
+          },
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "paladin",
+    "school": "light"
+  },
+  "pd_oath_cut": {
+    "animation": "slash",
+    "effects": [
+      {
+        "bonus": 4.0,
+        "pct": 0.23,
+        "type": "weapon"
+      },
+      {
+        "add": 1.0,
+        "gauge": "holy_power",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "arcane_intellect",
+          "id": "pd_oath",
+          "mods": {},
+          "type": "buff"
+        },
+        "type": "self_aura"
+      }
+    ],
+    "requires_spec": "paladin",
+    "school": "physical"
+  },
+  "pd_radiant_strike": {
+    "animation": "shield",
+    "effects": [
+      {
+        "ap_coef": 0.16,
+        "bonus_mul": 1.3,
+        "bonus_when": {
+          "self_aura": "pd_counter"
+        },
+        "coef": 0.0,
+        "max": 44.0,
+        "min": 36.0,
+        "type": "damage"
+      },
+      {
+        "aura": {
+          "dur": 3.0,
+          "icon": "arcane_intellect",
+          "id": "pd_resolve",
+          "mods": {
+            "dmg_taken": -0.12
+          },
+          "type": "buff"
+        },
+        "type": "self_aura"
+      },
+      {
+        "id": "pd_counter",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "paladin",
+    "school": "light"
+  },
+  "pd_riposte": {
+    "effects": [
+      {
+        "gauge": "holy_power",
+        "gauge_add": 2,
+        "max": 28,
+        "min": 22,
+        "stun": 0.8,
+        "type": "riposte",
+        "window": 0.55
+      }
+    ],
+    "requires_spec": "paladin",
+    "school": "physical"
+  },
+  "pd_shield_bash": {
+    "animation": "shield",
+    "effects": [
+      {
+        "bonus": 5.0,
+        "pct": 0.29,
+        "type": "weapon"
+      },
+      {
+        "add": 1.0,
+        "gauge": "holy_power",
+        "type": "gauge",
+        "when": {}
+      },
+      {
+        "add": 1.0,
+        "gauge": "holy_power",
+        "type": "gauge",
+        "when": {
+          "self_aura": "pd_oath"
+        }
+      },
+      {
+        "id": "pd_oath",
+        "type": "consume_aura"
+      }
+    ],
+    "requires_spec": "paladin",
+    "school": "physical"
+  },
+  "wh_cleanse": {
+    "effects": [
+      {
+        "count": 1,
+        "type": "dispel_debuff"
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "water"
+  },
+  "wh_gale": {
+    "effects": [
+      {
+        "coef": 0.15,
+        "max": 18.0,
+        "min": 14.0,
+        "type": "damage"
+      },
+      {
+        "pct": 0.04,
+        "type": "energize"
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "wind"
+  },
+  "wh_luminous_wave": {
+    "effects": [
+      {
+        "pct": 0.04,
+        "type": "heal_pct"
+      },
+      {
+        "aura": {
+          "absorb_pct": 0.1,
+          "dur": 6.0,
+          "icon": "pwshield",
+          "id": "wh_luminous_wave",
+          "type": "buff"
+        },
+        "type": "aura"
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "light"
+  },
+  "wh_pure_light": {
+    "effects": [
+      {
+        "pct": 0.23,
+        "type": "heal_pct"
+      },
+      {
+        "add": -3.0,
+        "gauge": "bloom",
+        "type": "gauge",
+        "when": {
+          "gauge_min": {
+            "bloom": 3
+          }
+        }
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "light"
+  },
+  "wh_water_blessing": {
+    "effects": [
+      {
+        "add": 1.0,
+        "gauge": "bloom",
+        "type": "gauge",
+        "when": {
+          "no_target_aura": "wh_water_blessing"
+        }
+      },
+      {
+        "aura": {
+          "dur": 12.0,
+          "icon": "renew",
+          "id": "wh_water_blessing",
+          "tick": {
+            "caster_power_pct_on_heal": 0.008,
+            "heal_pct": 0.025,
+            "interval": 3.0
+          },
+          "type": "buff"
+        },
+        "type": "aura"
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "water"
+  },
+  "wh_wind_mend": {
+    "effects": [
+      {
+        "bonus_mul": 1.25,
+        "bonus_when": {
+          "target_aura": "wh_water_blessing"
+        },
+        "pct": 0.1,
+        "type": "heal_pct"
+      },
+      {
+        "add": 1.0,
+        "gauge": "bloom",
+        "type": "gauge",
+        "when": {
+          "effective_heal": true
+        }
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "wind"
+  },
+  "wh_wind_step": {
+    "effects": [
+      {
+        "aura": {
+          "dur": 5.0,
+          "icon": "sprint",
+          "id": "wh_wind_step",
+          "mods": {
+            "speed": 0.15
+          },
+          "type": "buff"
+        },
+        "radius": 12.0,
+        "type": "party_aura"
+      }
+    ],
+    "requires_spec": "radiant",
+    "school": "wind"
+  }
+}

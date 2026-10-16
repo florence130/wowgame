@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "generated_utc": "2026-10-05T07:27:32.645498+00:00",
+  "source_hashes": {
+    "blender_panel.py": "44ad22839792786475cce62f3e6c57d409ba07d8196d4a2e2636af5957bb69d2",
+    "build.py": "9931c2c1b1363a05a302732a2b20f853bfca84da1ee5871251f68a6f13c87f5b",
+    "catalog.py": "36f15c500491e288853e66653dcaff2a896df625563dec963fd245cdeb2874a4",
+    "components.py": "c01116d389e3b6ea2b1c037e1559c631f9a9d49202371a60c76b2efd2335cafa",
+    "geometry.py": "bf34e7147925b9e845b765ab0a174a0d3f1b5703be8dffd2af9a9c3e1dc3bcf9",
+    "inspect_references.py": "41713bbfe7f2e837bde2dd281aa51b32867f1ae71bee1236b6aa16c14308ad93",
+    "render_thumbnails.py": "0b5c9ec3930a4a86a54494531c77b2e7a3668487aec22f09b0aa19948dbf7588",
+    "roundtrip_check.py": "657d46e6e64e2387cbaf8419aca4d597a81b5f2ca09900448a209fd23e7c49f5",
+    "sdf.py": "6a788505e0994b3ede219ea403f3f02f63080710ab605d4429d78736d142c3ff",
+    "show_in_blender.py": "62bff767bbed7b508f0553a436c1edf742300f0dd5ca3733b1ca3924a1791b99",
+    "verify_exports.py": "a0929d63d6fd714923bcca5ef387466573fd2af603ad9ffab06c8b45a4019883"
+  },
+  "units": "metres",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "+Y"
+  },
+  "godot_axes": {
+    "up": "+Y",
+    "front": "-Z"
+  },
+  "basis_conversion": "(x,y,z)->(x,z,-y)",
+  "uv": "Box projection in metres; broad color-block materials. Not a baked atlas.",
+  "material_mode": "KHR_materials_unlit, opaque color glass stylization",
+  "config": {
+    "name": "晨钟修道院 · 暖陶瓦",
+    "palette": {},
+    "chapel_bays": 4,
+    "cloister_bays": 3,
+    "bridge_segments": 4,
+    "bridge_bend_m": 2.5,
+    "render_resolution": 1400
+  },
+  "assets": [
+    {
+      "id": "stairs_4",
+      "label_zh": "4级台阶",
+      "route": "CSG/mesh",
+      "techniques": [
+        "profile_extrude",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "origin",
+          "position_blender": [
+            0,
+            0,
+            0
+          ],
+          "normal_blender": [
+            0,
+            0,
+            -1
+          ],
+          "kind": "insertion"
+        }
+      ],
+      "file": "glb/stairs_4.glb",
+      "bounds_min": [
+        -2.0,
+        -0.6000000834465027,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.6000000834465027,
+        0.8250000476837158
+      ],
+      "triangles": 84,
+      "degenerate_triangles": 0
+    }
+  ],
+  "assemblies": [],
+  "placements": [],
+  "production_status": "source and model prototype; not installed into live map"
+}

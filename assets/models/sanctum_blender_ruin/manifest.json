@@ -1,0 +1,15 @@
+{
+  "tool": "5.2.2 LTS",
+  "whitebox_reference": "assets/models/sanctum_unity_v2/sanctum_architecture.glb",
+  "original_whitebox_sha256": "59eec0955fc5ee49d4359e30f63e5c5602f0a7983539a7e48458487a37b9e48f",
+  "source_objects": 5917,
+  "export_meshes": 35,
+  "triangles": 102623,
+  "bounds": "original footprints, routes and floor levels retained; nave/apse wall and solid roof height revised from y40 to y54.4",
+  "structure_changed_vertices": 1476,
+  "scope": "rebuilt tall nave and altar; consistent ruin finish in other rooms; not full dungeon art acceptance",
+  "lighting": "Blender review lamps are not exported; Godot owns real window lights",
+  "blend_sha256": "20d5a64d70610062fed36cb6f39d0f2bc475ac6d6205c99243e368c343043437",
+  "glb_sha256": "e9c755a5688aeaeef27af7341c9074df2f75d8c7e2287d5e43f205a80b673d30",
+  "structure_sha256": "7cc9b58ae849c9c5cdd388c6b4c2adf76a11d08f8118b279b542465ffdf03adc"
+}

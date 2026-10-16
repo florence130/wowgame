@@ -1,0 +1,9 @@
+{
+  "name": "晨钟修道院 · 暖陶瓦",
+  "palette": {},
+  "chapel_bays": 4,
+  "cloister_bays": 3,
+  "bridge_segments": 4,
+  "bridge_bend_m": 2.5,
+  "render_resolution": 1400
+}

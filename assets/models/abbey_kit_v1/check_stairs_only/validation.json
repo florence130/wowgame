@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "check": "stairs_4_finite",
+      "passed": true,
+      "bounds_min": [
+        -2.0,
+        -0.6000000834465027,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.6000000834465027,
+        0.8250000476837158
+      ],
+      "triangles": 84,
+      "degenerate_triangles": 0
+    },
+    {
+      "check": "stairs_4_nonempty",
+      "passed": true
+    },
+    {
+      "check": "stairs_4_no_degenerate_triangles",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "evaluated component geometry, structural pitch and opening rays; game integration separate"
+}

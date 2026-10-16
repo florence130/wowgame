@@ -1,0 +1,53 @@
+COMBAT AUDIO SOURCES - 2026-10-16
+All sources: CC0 1.0 Universal.
+Source pages and downloaded previews are archived here. Runtime files are in assets/audio/combat.
+Edits: selected transient, mono conversion, fades, DC and level adjustment.
+Public HQ preview MP3 was used; no claim of original uncompressed source quality.
+
+blade: Freesound - Hit Swing Sword Small 2 by CogFireStudios by CogFireStudios
+https://freesound.org/people/CogFireStudios/sounds/547040/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+fire: Freesound - Fire Magic Spell Sound Effect by qubodup by qubodup
+https://freesound.org/people/qubodup/sounds/159725/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+frost: Freesound - Foley_Natural_Ice_Breaking_Sequence_Stereo.wav by Nox_Sound by Nox_Sound
+https://freesound.org/people/Nox_Sound/sounds/625740/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+light: Freesound - cartoon_wink_magic_sparkle.wav by MLaudio by MattLeschuck
+https://freesound.org/people/MattLeschuck/sounds/511485/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+lightning: Freesound - Electrical Shock (Zap).wav by BigKahuna360 by BigKahuna360
+https://freesound.org/people/BigKahuna360/sounds/160421/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+metal: Freesound - Sword clash 1.wav by spycrah by spycrah
+https://freesound.org/people/spycrah/sounds/471095/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+shadow: Freesound - Misty Step.wav by LucasDuff by LucasDuff
+https://freesound.org/people/LucasDuff/sounds/516081/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+step_dirt: Freesound - FX_004_footstep_gravel_r.wav by d00121058 by d00121058
+https://freesound.org/people/d00121058/sounds/390757/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+step_stone_a: Freesound - Footstep on Stone by sgossner by sgossner
+https://freesound.org/people/sgossner/sounds/197778/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+step_stone_b: Freesound - Footstep on Stone 3 by sgossner by sgossner
+https://freesound.org/people/sgossner/sounds/197780/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+swing: Freesound - Swing Whoosh.wav by yutface by yutface
+https://freesound.org/people/yutface/sounds/257015/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+water: Freesound - Big Water Splash by qubodup by qubodup
+https://freesound.org/people/qubodup/sounds/442773/
+https://creativecommons.org/publicdomain/zero/1.0/

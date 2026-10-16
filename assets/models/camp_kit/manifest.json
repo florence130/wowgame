@@ -1,0 +1,10 @@
+{
+  "id": "camp_kit",
+  "version": 1,
+  "source": "Original Godot native geometry; existing game bark texture and art palette",
+  "units": "metres",
+  "assets": [
+    {"id": "fallen_log", "scene": "res://assets/models/camp_kit/fallen_log.tscn", "size": [5.04, 0.9, 0.8], "origin": "ground centre", "collision": true},
+    {"id": "campfire", "scene": "res://assets/models/camp_kit/campfire.tscn", "size": [1.95, 1.75, 1.75], "origin": "ground centre", "collision": true, "animation": "flame shader and flickering local light", "setting": "lit"}
+  ]
+}

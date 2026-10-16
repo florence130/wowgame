@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "source_actual_window": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build004\\glb\\window_clerestory.glb",
+  "source_actual_window_sha256": "2b1a7a603a3e275b49e690946b5d8d4b521ab26b36b3e257c8aa45e3627f4c70",
+  "same_shader_source": "E:\\wowgame\\tools\\blender\\abbey_kit_v3\\glass.py",
+  "shader_sha256": "f06ffad3f1166836d3a28da703928943dc33b4c78e1be0fa000d8756c789aacc",
+  "parameters": {
+    "alpha": 0.28,
+    "transmission": 0.72,
+    "roughness": 0.1,
+    "ior": 1.33
+  },
+  "build005_actual_window": "E:\\wowgame\\assets\\models\\abbey_kit_v3\\build005\\glb\\window_clerestory.glb",
+  "build005_actual_window_sha256": "02a400fcd7a59aebfc7141a9de055862e0c43dae1d3c126f20274c74efc819de",
+  "final_material_comparison": [
+    {
+      "recipe_key": "glass",
+      "matches_final_build005": true,
+      "baseColorFactor": [
+        0.04970656707882881,
+        0.11443537473678589,
+        0.23839756846427917,
+        0.2800000011920929
+      ],
+      "alphaMode": "BLEND",
+      "transmission": 0.7200000286102295,
+      "ior": 1.3300000429153442
+    },
+    {
+      "recipe_key": "glass_amber",
+      "matches_final_build005": true,
+      "baseColorFactor": [
+        1,
+        0.6938717365264893,
+        0.2541520893573761,
+        0.2800000011920929
+      ],
+      "alphaMode": "BLEND",
+      "transmission": 0.7200000286102295,
+      "ior": 1.3300000429153442
+    }
+  ],
+  "provenance": "Probe imports actual build004 window GLB geometry, applies the same glass.configure() source and parameters as build005. Final build005 window GLB material factors/extensions separately compared.",
+  "visual_review": "Transparent front render visibly shows physical checker and red/blue cubes behind glazing. Interior render visibly shows a window-shaped daylight footprint and mullion shadows; opaque same-sun control removes that footprint.",
+  "daylight_roi_xyxy": [
+    350,
+    620,
+    520,
+    760
+  ],
+  "daylight_pixel_measurement": {
+    "transparent": {
+      "mean_display_rgb": [
+        113.76420168067227,
+        114.64163865546219,
+        111.33789915966386
+      ],
+      "mean_display_luma_8bit": 114.2165655630252
+    },
+    "opaque_control": {
+      "mean_display_rgb": [
+        0.0838235294117647,
+        0.0838235294117647,
+        0.0838235294117647
+      ],
+      "mean_display_luma_8bit": 0.0838235294117647
+    }
+  },
+  "scope_limit": "Cycles renders prove actual visibility and daylight transmission. Godot headless check proves imported alpha mode, per-pixel PBR and shadow flags; it is not a Godot raster or light-transmission pixel test.",
+  "copied": [
+    {
+      "file": "transparent_window_daylight.png",
+      "bytes": 1050770,
+      "sha256": "b68081b0201dc61d51ea2655ee7ed6ec123ecdb20fb3ee18cd0b5e298728db36",
+      "byte_identical": true
+    },
+    {
+      "file": "opaque_control_same_sun.png",
+      "bytes": 1034128,
+      "sha256": "d593879c5f79dc36a05b109f4d3b538957c7324bc742332fa8b4230fa50cf4b4",
+      "byte_identical": true
+    },
+    {
+      "file": "daylight_floor_transparent.png",
+      "bytes": 894867,
+      "sha256": "27a6f0feae8bd8abdc4bdd1a5632765ac0f0f2b086ccd45bbab1c020e17ecae6",
+      "byte_identical": true
+    },
+    {
+      "file": "daylight_floor_opaque_control.png",
+      "bytes": 195528,
+      "sha256": "48967b3ef864f491eeeeffff48bcdd933ca7ac386d0914c58b64967af9a97574",
+      "byte_identical": true
+    },
+    {
+      "file": "glass_daylight_probe.blend",
+      "bytes": 246997,
+      "sha256": "d50eb90b602ab7f760b8ebb307e1c28c4abec961474510f555e0e689deebdb9f",
+      "byte_identical": true
+    },
+    {
+      "file": "glass_floor_daylight_probe.blend",
+      "bytes": 243404,
+      "sha256": "17adb3fecc562f0953c172d7835437f188785ad9d59a1480f023ab30507620f5",
+      "byte_identical": true
+    },
+    {
+      "file": "window_transparent.glb",
+      "bytes": 178484,
+      "sha256": "873a32161a66812f2b0ba0862765329c9e414cc9390edd08e6b646c0e24207e8",
+      "byte_identical": true
+    },
+    {
+      "file": "glass_blender_glb_evidence.json",
+      "bytes": 3172,
+      "sha256": "6a49a5a9f3dfc90ef890dcc4a7fac43223d9a7c6428fbba74962a4355e7ed4c6",
+      "byte_identical": true
+    },
+    {
+      "file": "godot_glass_evidence.json",
+      "bytes": 936,
+      "sha256": "57397ae4c7888147e76c0f82c99a95d7ebbdba262ffc94e80fb0247f92e22de6",
+      "byte_identical": true
+    },
+    {
+      "file": "daylight_floor_evidence.json",
+      "bytes": 427,
+      "sha256": "ea730c96f42d41ed39ae6e7c9088fa113931a6c38bf092bbc6c601c2c1326b83",
+      "byte_identical": true
+    },
+    {
+      "file": "probe.py",
+      "bytes": 7590,
+      "sha256": "cf8d8e3ae2cc3af258558b78dd41bb5c480760281bc817826e4741f53746b20d",
+      "byte_identical": true
+    },
+    {
+      "file": "light_probe.py",
+      "bytes": 2735,
+      "sha256": "e415fe66eb5c9c20b1ff39b65a7144645ebf5ac864d0aa1a89da20514fb7b7e5",
+      "byte_identical": true
+    },
+    {
+      "file": "godot_glass_check.gd",
+      "bytes": 2046,
+      "sha256": "3adb3eab4425635253a1f3b6548b5932f5f044119895a7a1183f40caa9d65062",
+      "byte_identical": true
+    }
+  ]
+}

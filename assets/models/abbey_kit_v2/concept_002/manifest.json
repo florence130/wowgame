@@ -1,0 +1,2805 @@
+{
+  "version": "abbey-v2",
+  "style": "concept",
+  "scope": "architecture, vegetation and ivy only",
+  "assets": [
+    {
+      "id": "plinth_4",
+      "label_zh": "4米石地台",
+      "methods": [
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            -2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "plinth_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "plinth_4"
+        }
+      ],
+      "bounds_min": [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        2.0,
+        0.800000011920929
+      ],
+      "triangles": 88,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "floor_stone_4",
+      "label_zh": "4米石地板",
+      "methods": [
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            -2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "floor_stone_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "floor_stone_4"
+        }
+      ],
+      "bounds_min": [
+        -1.993499994277954,
+        -1.993499994277954,
+        0.0
+      ],
+      "bounds_max": [
+        1.993499994277954,
+        1.993499994277954,
+        0.10000000149011612
+      ],
+      "triangles": 704,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "facade_8",
+      "label_zh": "礼拜堂开洞山墙",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -4.0,
+        -0.3149999976158142,
+        0.0
+      ],
+      "bounds_max": [
+        4.0,
+        0.36500000953674316,
+        10.47733211517334
+      ],
+      "triangles": 852,
+      "degenerate_triangles": 8
+    },
+    {
+      "id": "wall_clerestory_4",
+      "label_zh": "4米高窗侧墙",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            -2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "wall_clerestory_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "wall_clerestory_4"
+        }
+      ],
+      "bounds_min": [
+        -2.0,
+        -0.33000001311302185,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.33000001311302185,
+        7.099999904632568
+      ],
+      "triangles": 376,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "window_clerestory",
+      "label_zh": "尖拱彩窗",
+      "methods": [
+        "profile_extrude",
+        "curve_bevel"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.7599999904632568,
+        -0.10999999940395355,
+        4.828000068664551
+      ],
+      "bounds_max": [
+        0.7599999904632568,
+        0.3199999928474426,
+        6.835015296936035
+      ],
+      "triangles": 1068,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "door_arch",
+      "label_zh": "分块拱石门框",
+      "methods": [
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -1.6699999570846558,
+        -0.35499998927116394,
+        0.0
+      ],
+      "bounds_max": [
+        1.6699999570846558,
+        0.4050000011920929,
+        4.173778057098389
+      ],
+      "triangles": 1364,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "door_oak",
+      "label_zh": "分板木双门与铁件",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -1.2300000190734863,
+        -0.11400000005960464,
+        0.0
+      ],
+      "bounds_max": [
+        1.2300000190734863,
+        0.2590000033378601,
+        3.759999990463257
+      ],
+      "triangles": 1832,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "rose_window",
+      "label_zh": "花瓣圆花窗",
+      "methods": [
+        "profile_extrude",
+        "curve_bevel"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -1.2478936910629272,
+        -0.10000000149011612,
+        -1.2322899103164673
+      ],
+      "bounds_max": [
+        1.2478936910629272,
+        0.2199999988079071,
+        1.2322899103164673
+      ],
+      "triangles": 3376,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "quoin_6",
+      "label_zh": "6米转角石",
+      "methods": [
+        "array"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.4350000023841858,
+        -0.4350000023841858,
+        0.0
+      ],
+      "bounds_max": [
+        0.4350000023841858,
+        0.4350000023841858,
+        5.992000102996826
+      ],
+      "triangles": 704,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "buttress",
+      "label_zh": "阶梯石扶壁",
+      "methods": [
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.4000000059604645,
+        -0.32499998807907104,
+        0.0
+      ],
+      "bounds_max": [
+        0.4000000059604645,
+        0.5899999737739563,
+        5.650000095367432
+      ],
+      "triangles": 192,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "corbel",
+      "label_zh": "屋檐木托架",
+      "methods": [
+        "vertices"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.10499999672174454,
+        -0.08500000089406967,
+        -0.7300000190734863
+      ],
+      "bounds_max": [
+        0.10499999672174454,
+        0.7250000238418579,
+        0.05000000074505806
+      ],
+      "triangles": 220,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_nave_4",
+      "label_zh": "主屋顶4米叠瓦段",
+      "methods": [
+        "mirror",
+        "solidify",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            0,
+            -2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "roof_nave_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            0,
+            2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "roof_nave_4"
+        }
+      ],
+      "bounds_min": [
+        -4.560999870300293,
+        -2.0,
+        -0.20999999344348907
+      ],
+      "bounds_max": [
+        4.560999870300293,
+        2.0,
+        3.6182363033294678
+      ],
+      "triangles": 7052,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_end",
+      "label_zh": "主屋顶短檐",
+      "methods": [
+        "mirror",
+        "array"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -4.550000190734863,
+        -0.15000000596046448,
+        -0.20999999344348907
+      ],
+      "bounds_max": [
+        4.550000190734863,
+        0.15000000596046448,
+        3.6182363033294678
+      ],
+      "triangles": 1240,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_fascia",
+      "label_zh": "主山墙封檐",
+      "methods": [
+        "mirror",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -4.449999809265137,
+        -0.13700000941753387,
+        -0.3100000023841858
+      ],
+      "bounds_max": [
+        4.449999809265137,
+        0.11999999731779099,
+        3.380000114440918
+      ],
+      "triangles": 64,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_shed_4",
+      "label_zh": "4米侧廊披屋",
+      "methods": [
+        "solidify",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            0,
+            -2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "roof_shed_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            0,
+            2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "roof_shed_4"
+        }
+      ],
+      "bounds_min": [
+        -0.07999999821186066,
+        -2.0,
+        -0.1850000023841858
+      ],
+      "bounds_max": [
+        2.9000000953674316,
+        2.0,
+        1.4378306865692139
+      ],
+      "triangles": 2118,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_cloister_4",
+      "label_zh": "4米回廊屋顶",
+      "methods": [
+        "mirror",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            0,
+            -2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            -1,
+            0
+          ],
+          "kind": "roof_cloister_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            0,
+            2,
+            0
+          ],
+          "normal_blender": [
+            0,
+            1,
+            0
+          ],
+          "kind": "roof_cloister_4"
+        }
+      ],
+      "bounds_min": [
+        -2.260999917984009,
+        -2.0,
+        -0.20999999344348907
+      ],
+      "bounds_max": [
+        2.260999917984009,
+        2.0,
+        1.4682363271713257
+      ],
+      "triangles": 3560,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "roof_tower",
+      "label_zh": "钟楼塔顶",
+      "methods": [
+        "loft",
+        "array"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -2.565000057220459,
+        -2.565000057220459,
+        -0.19499999284744263
+      ],
+      "bounds_max": [
+        2.565000057220459,
+        2.565000057220459,
+        2.7699999809265137
+      ],
+      "triangles": 7700,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "dormer",
+      "label_zh": "三角老虎窗",
+      "methods": [
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.7110000252723694,
+        -0.4610000550746918,
+        -0.1850000023841858
+      ],
+      "bounds_max": [
+        0.7110000252723694,
+        0.4000000059604645,
+        1.034740686416626
+      ],
+      "triangles": 1156,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "chimney",
+      "label_zh": "分层烟囱",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.41499999165534973,
+        -0.32499998807907104,
+        0.0
+      ],
+      "bounds_max": [
+        0.41499999165534973,
+        0.32499998807907104,
+        1.4547405242919922
+      ],
+      "triangles": 788,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "ridge_cross",
+      "label_zh": "屋脊石十字",
+      "methods": [
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.2750000059604645,
+        -0.08449999988079071,
+        0.0
+      ],
+      "bounds_max": [
+        0.2750000059604645,
+        0.060499999672174454,
+        1.0
+      ],
+      "triangles": 132,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "stairs",
+      "label_zh": "5级石阶",
+      "methods": [
+        "array"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -2.0999999046325684,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.0999999046325684,
+        2.2200000286102295,
+        0.800000011920929
+      ],
+      "triangles": 220,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "column",
+      "label_zh": "回廊石柱",
+      "methods": [
+        "spin"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.4300000071525574,
+        -0.4300000071525574,
+        0.0
+      ],
+      "bounds_max": [
+        0.4300000071525574,
+        0.4300000071525574,
+        2.299999952316284
+      ],
+      "triangles": 212,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "arcade",
+      "label_zh": "回廊分块拱跨",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -2.0,
+        -0.32499998807907104,
+        2.1465001106262207
+      ],
+      "bounds_max": [
+        2.0,
+        0.375,
+        4.255000114440918
+      ],
+      "triangles": 1164,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "tower_wall",
+      "label_zh": "钟楼开窗墙",
+      "methods": [
+        "CSG"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -2.049999952316284,
+        -0.3499999940395355,
+        0.0
+      ],
+      "bounds_max": [
+        2.049999952316284,
+        0.3499999940395355,
+        6.0
+      ],
+      "triangles": 272,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "tower_window",
+      "label_zh": "钟楼窄窗",
+      "methods": [
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.5600000023841858,
+        -0.10999999940395355,
+        3.177999973297119
+      ],
+      "bounds_max": [
+        0.5600000023841858,
+        0.3199999928474426,
+        5.185818195343018
+      ],
+      "triangles": 1156,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "belfry",
+      "label_zh": "开放钟室拱墙",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -2.0,
+        -0.38499999046325684,
+        0.0
+      ],
+      "bounds_max": [
+        2.0,
+        0.4350000023841858,
+        3.0999999046325684
+      ],
+      "triangles": 1360,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "boundary_4",
+      "label_zh": "4米带瓦帽院墙",
+      "methods": [
+        "profile_extrude",
+        "array"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            -2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "boundary_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "boundary_4"
+        }
+      ],
+      "bounds_min": [
+        -2.000000238418579,
+        -0.9110000729560852,
+        0.0
+      ],
+      "bounds_max": [
+        2.000000238418579,
+        0.9110000133514404,
+        2.0497405529022217
+      ],
+      "triangles": 2852,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "gate",
+      "label_zh": "院墙门楼",
+      "methods": [
+        "CSG",
+        "profile_extrude"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -2.060999870300293,
+        -0.4749999940395355,
+        0.0
+      ],
+      "bounds_max": [
+        2.060999870300293,
+        0.5999999642372131,
+        4.01823616027832
+      ],
+      "triangles": 4060,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "ivy_2",
+      "label_zh": "2米攀墙藤蔓",
+      "methods": [
+        "curve_bevel",
+        "vertices"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.6842322945594788,
+        0.040001675486564636,
+        -0.06714022159576416
+      ],
+      "bounds_max": [
+        0.7357399463653564,
+        0.17228397727012634,
+        2.1272733211517334
+      ],
+      "triangles": 1568,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "ivy_4",
+      "label_zh": "4米攀墙藤蔓",
+      "methods": [
+        "curve_bevel",
+        "vertices"
+      ],
+      "sockets": [
+        {
+          "name": "start",
+          "position_blender": [
+            -2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            -1,
+            0,
+            0
+          ],
+          "kind": "ivy_4"
+        },
+        {
+          "name": "end",
+          "position_blender": [
+            2,
+            0,
+            0
+          ],
+          "normal_blender": [
+            1,
+            0,
+            0
+          ],
+          "kind": "ivy_4"
+        }
+      ],
+      "bounds_min": [
+        -0.8759334087371826,
+        0.04000098630785942,
+        -0.1207088828086853
+      ],
+      "bounds_max": [
+        0.8852016925811768,
+        0.17298397421836853,
+        4.095075607299805
+      ],
+      "triangles": 3656,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "shrub",
+      "label_zh": "庭院灌木",
+      "methods": [
+        "vertices"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.801486074924469,
+        -0.5467245578765869,
+        0.0
+      ],
+      "bounds_max": [
+        0.8793745040893555,
+        0.6113556623458862,
+        1.2499393224716187
+      ],
+      "triangles": 638,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "cypress",
+      "label_zh": "柏树",
+      "methods": [
+        "loft",
+        "vertices"
+      ],
+      "sockets": [],
+      "bounds_min": [
+        -0.7303024530410767,
+        -0.6231896281242371,
+        0.0
+      ],
+      "bounds_max": [
+        0.569370687007904,
+        0.6189950704574585,
+        4.047430515289307
+      ],
+      "triangles": 390,
+      "degenerate_triangles": 0
+    }
+  ],
+  "palette": {
+    "plaster": "E4C6A4",
+    "plaster_patch": "D6B695",
+    "timber": "533D2C",
+    "wood": "896243",
+    "terracotta": "B96643",
+    "tile_dark": "9E5038",
+    "tile_light": "CB7A50",
+    "tile_warm": "B9764E",
+    "sandstone": "C9B696",
+    "stone_dark": "AB9779",
+    "stone_light": "DFCEAE",
+    "stone_mid": "BDA987",
+    "iron": "494941",
+    "glass": "529C9D",
+    "glass_amber": "D8AF64",
+    "moss": "72814D",
+    "leaf": "637B43",
+    "leaf_light": "819055",
+    "leaf_dark": "4C6338",
+    "cloth": "A95137",
+    "flower": "D7A797",
+    "ground": "D8C8AA",
+    "grout": "AB9B80",
+    "interior": "796C57"
+  },
+  "placements": [
+    {
+      "asset": "plinth_4",
+      "position": [
+        -2,
+        -6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -2,
+        -6,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        -2,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -2,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        -2,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -2,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        -2,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -2,
+        6,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        2,
+        -6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        2,
+        -6,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        2,
+        -2,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        2,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        2,
+        2,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        2,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        2,
+        6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        2,
+        6,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "facade_8",
+      "position": [
+        0,
+        8,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "facade_8",
+      "position": [
+        0,
+        -8,
+        0.8
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "door_arch",
+      "position": [
+        0,
+        8.15,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "door_oak",
+      "position": [
+        0,
+        8.15,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "rose_window",
+      "position": [
+        0,
+        8.26,
+        7.45
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "stairs",
+      "position": [
+        0,
+        8.38,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        -4,
+        -6,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        -4,
+        -6,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        -7.75,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        -4.25,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        -4,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        -4,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        -3.75,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        -0.25,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        -4,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        -4,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        0.25,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        3.75,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        -4,
+        6,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        -4,
+        6,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        4.25,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        -4,
+        7.75,
+        7.9
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        -4,
+        -8,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        -4,
+        -4,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        -4,
+        0,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        -4,
+        4,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        -4,
+        8,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        -3.91,
+        -8,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        -3.91,
+        8,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        4,
+        -6,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        4,
+        -6,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        -7.75,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        -4.25,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        4,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        4,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        -3.75,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        -0.25,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        4,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        4,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        0.25,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        3.75,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "wall_clerestory_4",
+      "position": [
+        4,
+        6,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "window_clerestory",
+      "position": [
+        4,
+        6,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        4.25,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "corbel",
+      "position": [
+        4,
+        7.75,
+        7.9
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        4,
+        -8,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        4,
+        -4,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        4,
+        0,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        4,
+        4,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "buttress",
+      "position": [
+        4,
+        8,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        3.91,
+        -8,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        3.91,
+        8,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_nave_4",
+      "position": [
+        0,
+        -6,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_nave_4",
+      "position": [
+        0,
+        -2,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_nave_4",
+      "position": [
+        0,
+        2,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_nave_4",
+      "position": [
+        0,
+        6,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_end",
+      "position": [
+        0,
+        -8.15,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_fascia",
+      "position": [
+        0,
+        -8.29,
+        7.9
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "ridge_cross",
+      "position": [
+        0,
+        -8,
+        11.34
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_end",
+      "position": [
+        0,
+        8.15,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_fascia",
+      "position": [
+        0,
+        8.29,
+        7.9
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "ridge_cross",
+      "position": [
+        0,
+        8,
+        11.34
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "dormer",
+      "position": [
+        -2.75,
+        -4,
+        8.85
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "dormer",
+      "position": [
+        -2.75,
+        3.8,
+        8.85
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "dormer",
+      "position": [
+        2.75,
+        -4,
+        8.85
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "dormer",
+      "position": [
+        2.75,
+        3.8,
+        8.85
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "chimney",
+      "position": [
+        0.8,
+        -6.5,
+        10.39
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "chimney",
+      "position": [
+        0.8,
+        4.8,
+        10.39
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        -4,
+        -6,
+        4.37
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -6.4,
+        -6,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        -4,
+        -2,
+        4.37
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -6.4,
+        -2,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        -4,
+        2,
+        4.37
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -6.4,
+        2,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        -4,
+        6,
+        4.37
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -6.4,
+        6,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -6.4,
+        -8,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -6.4,
+        -4,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -6.4,
+        0,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -6.4,
+        4,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -6.4,
+        8,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        4,
+        -6,
+        4.37
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        6.4,
+        -6,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        4,
+        -2,
+        4.37
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        6.4,
+        -2,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        4,
+        2,
+        4.37
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        6.4,
+        2,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "roof_shed_4",
+      "position": [
+        4,
+        6,
+        4.37
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        6.4,
+        6,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        6.4,
+        -8,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        6.4,
+        -4,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        6.4,
+        0,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        6.4,
+        4,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "column",
+      "position": [
+        6.4,
+        8,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "ivy_4",
+      "position": [
+        -3.75,
+        8.43,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "ivy_4",
+      "position": [
+        3.65,
+        8.43,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "ivy_4",
+      "position": [
+        -4.41,
+        -5,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "ivy_4",
+      "position": [
+        -4.41,
+        4,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "Chapel"
+    },
+    {
+      "asset": "plinth_4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_wall",
+      "position": [
+        0,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_window",
+      "position": [
+        0,
+        2,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "belfry",
+      "position": [
+        0,
+        2,
+        6.85
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_wall",
+      "position": [
+        0,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_window",
+      "position": [
+        0,
+        -2,
+        0.8
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "belfry",
+      "position": [
+        0,
+        -2,
+        6.85
+      ],
+      "rotation_z_deg": 180,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_wall",
+      "position": [
+        2,
+        0,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_window",
+      "position": [
+        2,
+        0,
+        0.8
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "belfry",
+      "position": [
+        2,
+        0,
+        6.85
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_wall",
+      "position": [
+        -2,
+        0,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "tower_window",
+      "position": [
+        -2,
+        0,
+        0.8
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "belfry",
+      "position": [
+        -2,
+        0,
+        6.85
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        -1.9,
+        -1.9,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        -1.9,
+        1.9,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        1.9,
+        -1.9,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "quoin_6",
+      "position": [
+        1.9,
+        1.9,
+        0.8
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "roof_tower",
+      "position": [
+        0,
+        0,
+        9.98
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "ridge_cross",
+      "position": [
+        0,
+        0,
+        12.23
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "ivy_4",
+      "position": [
+        -1.25,
+        2.4,
+        0.5
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "BellTower"
+    },
+    {
+      "asset": "roof_cloister_4",
+      "position": [
+        -9,
+        0,
+        4.21
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -10.65,
+        0,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -7.35,
+        0,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "roof_cloister_4",
+      "position": [
+        -9,
+        4,
+        4.21
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -10.65,
+        4,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -7.35,
+        4,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "roof_cloister_4",
+      "position": [
+        -9,
+        8,
+        4.21
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -10.65,
+        8,
+        0.05
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "arcade",
+      "position": [
+        -7.35,
+        8,
+        0.05
+      ],
+      "rotation_z_deg": -90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -10.65,
+        -2,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -7.35,
+        -2,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -10.65,
+        2,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -7.35,
+        2,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -10.65,
+        6,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -7.35,
+        6,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -10.65,
+        10,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "column",
+      "position": [
+        -7.35,
+        10,
+        0.05
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -9.5,
+        11.0,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -1.5,
+        11.0,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "gate",
+      "position": [
+        -5.5,
+        11,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -11.5,
+        -4,
+        0
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -11.5,
+        0,
+        0
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -11.5,
+        4,
+        0
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -11.5,
+        8,
+        0
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -9.5,
+        -6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -5.5,
+        -6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "boundary_4",
+      "position": [
+        -1.5,
+        -6,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -9.5,
+        -4,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -9.5,
+        0,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -9.5,
+        4,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -9.5,
+        8,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -5.5,
+        -4,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -5.5,
+        0,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -5.5,
+        4,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -5.5,
+        8,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -1.5,
+        -4,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -1.5,
+        0,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -1.5,
+        4,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "floor_stone_4",
+      "position": [
+        -1.5,
+        8,
+        -0.08
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "ivy_2",
+      "position": [
+        -10.3,
+        11.36,
+        0.1
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "ivy_2",
+      "position": [
+        -3.3,
+        11.36,
+        0.1
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "ivy_2",
+      "position": [
+        -11.87,
+        2,
+        0.1
+      ],
+      "rotation_z_deg": 90,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "shrub",
+      "position": [
+        -7.1,
+        5,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "shrub",
+      "position": [
+        -1.1,
+        9.5,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "shrub",
+      "position": [
+        -11.2,
+        -5,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "shrub",
+      "position": [
+        8.5,
+        7.8,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "shrub",
+      "position": [
+        8.5,
+        -5,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "cypress",
+      "position": [
+        -0.7,
+        -7,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    },
+    {
+      "asset": "cypress",
+      "position": [
+        9.5,
+        -8.5,
+        0
+      ],
+      "rotation_z_deg": 0,
+      "assembly": "CourtyardArchitecture"
+    }
+  ],
+  "source_reference": "docs/abbey_kit_v1/concept_v1.png",
+  "assemblies": [
+    {
+      "id": "Chapel",
+      "bounds_min": [
+        -6.900000095367432,
+        -8.4350004196167,
+        0.0
+      ],
+      "bounds_max": [
+        6.900000095367432,
+        10.600000381469727,
+        12.34000015258789
+      ],
+      "triangles": 114920,
+      "degenerate_triangles": 16
+    },
+    {
+      "id": "BellTower",
+      "bounds_min": [
+        -2.565000057220459,
+        -2.565000057220459,
+        0.0
+      ],
+      "bounds_max": [
+        2.565000057220459,
+        2.572983980178833,
+        13.229999542236328
+      ],
+      "triangles": 25764,
+      "degenerate_triangles": 0
+    },
+    {
+      "id": "CourtyardArchitecture",
+      "bounds_min": [
+        -12.41100025177002,
+        -9.123189926147461,
+        -0.07999999821186066
+      ],
+      "bounds_max": [
+        10.06937026977539,
+        11.91100025177002,
+        5.678236484527588
+      ],
+      "triangles": 66562,
+      "degenerate_triangles": 0
+    }
+  ]
+}

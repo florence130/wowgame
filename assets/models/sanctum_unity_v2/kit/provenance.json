@@ -1,0 +1,40 @@
+{
+  "purpose": "Selected existing project abbey modules for sanctum; original ignored workshop retained.",
+  "assets": [
+    {
+      "name": "floor_lamp",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/floor_lamp.glb",
+      "sha256": "cc17d7d1a5612e62f8afb2b7edfb3a370ccbbaa5be1649844e3b60cfb509572b"
+    },
+    {
+      "name": "chandelier",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/chandelier.glb",
+      "sha256": "55713190a785b60cf32e23805bdc43768e1bfd64ca580e0c9d51ff4f49911a7d"
+    },
+    {
+      "name": "pew_2m",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/pew_2m.glb",
+      "sha256": "f01e8a2c77a94f9028c1f9fea27b2cf130a94422d55fce4647e4112c01e36bfe"
+    },
+    {
+      "name": "stone_capital_sdf",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/stone_capital_sdf.glb",
+      "sha256": "ad41b3440e3b36842f1be618f5c12827d620c5c7ac2e22a872480904a1ec0c49"
+    },
+    {
+      "name": "altar_table",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/altar_table.glb",
+      "sha256": "9d5b9e1f79fb16e199b93bc591893913e67052029bdd211bd0e01b754887f751"
+    },
+    {
+      "name": "altar_back_panel",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/altar_back_panel.glb",
+      "sha256": "aa26f7de33f4a460df5dbce15a19c437286c494e5de4ec29e883facc90e1c652"
+    },
+    {
+      "name": "lectern",
+      "source": "E:/wowgame/assets/models/abbey_kit_v3/build005/glb/lectern.glb",
+      "sha256": "22903b35effa550c12f752791a96023e96c768347cb027b250a69c05b29ec603"
+    }
+  ]
+}

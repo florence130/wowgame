@@ -1,0 +1,23 @@
+{
+  "urbanLandArea": 776772.44732,
+  "coveredArea": 776772.44718,
+  "missingArea": 0.00019812,
+  "overlapArea": 9.019e-05,
+  "waterIntrusionArea": 3.49e-06,
+  "parkCount": 2,
+  "parkArea": 11440.68564,
+  "faceCount": 398,
+  "vertices": 58572,
+  "triangles": 57956,
+  "coveragePassed": true,
+  "blocks": 30,
+  "parcels": 119,
+  "pedestrianPaths": 358,
+  "navigationIssues": [],
+  "implementationReady": false,
+  "pending": [
+    "Resolve stair candidates and floor/frontage transitions",
+    "Generate explicit boundary/connection meshes",
+    "Validate seam heights and pedestrian connectivity"
+  ]
+}

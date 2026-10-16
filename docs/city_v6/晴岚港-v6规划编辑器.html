@@ -1,0 +1,5371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>晴岚港 v6 规划编辑器</title>
+<style>
+  :root{
+    --bg:#171a1f;--panel:#1f232b;--panel2:#262b34;--line:#343a46;--txt:#d8dce3;
+    --dim:#8b93a1;--acc:#e0a458;--acc2:#7fb0d8;--red:#e06c5a;--green:#7fb87f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden;font:13px/1.5 "Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--txt)}
+  #wrap{display:flex;height:100%}
+  #map{flex:1;position:relative;cursor:grab}
+  #map.dragging{cursor:grabbing}
+  #map.placing{cursor:crosshair}
+  #hud{position:absolute;top:8px;left:8px;z-index:5;background:rgba(23,26,31,.85);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:12px;color:var(--dim);pointer-events:none}
+  #hud b{color:var(--txt);font-weight:600}
+  #scalebar{position:absolute;bottom:10px;left:12px;z-index:5;color:var(--dim);font-size:11px;pointer-events:none}
+  #scalebar .bar{height:4px;background:var(--dim);border-radius:2px;margin-top:2px}
+  #north{position:absolute;bottom:10px;right:14px;z-index:5;color:var(--dim);font-size:11px;pointer-events:none;text-align:center}
+  #toast{position:absolute;top:52px;left:50%;transform:translateX(-50%);z-index:9;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:6px 14px;font-size:12px;display:none;pointer-events:none}
+  #sidebar{width:340px;background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column}
+  #sidebar header{padding:10px 14px;border-bottom:1px solid var(--line)}
+  #sidebar header h1{font-size:15px;color:var(--acc);font-weight:700}
+  #sidebar header .sub{font-size:11px;color:var(--dim);margin-top:2px}
+  .tabs{display:flex;border-bottom:1px solid var(--line)}
+  .tabs button{flex:1;background:none;border:none;color:var(--dim);padding:8px 2px;cursor:pointer;font-size:12px;border-bottom:2px solid transparent}
+  .tabs button.on{color:var(--acc);border-bottom-color:var(--acc)}
+  .tabbody{flex:1;overflow-y:auto;padding:10px 12px 30px;display:none}
+  .tabbody.on{display:block}
+  fieldset{border:1px solid var(--line);border-radius:6px;margin-bottom:10px;padding:8px 10px}
+  legend{font-size:11px;color:var(--dim);padding:0 6px}
+  label.ck{display:flex;align-items:center;gap:6px;padding:3px 0;cursor:pointer;font-size:12px}
+  label.ck input{accent-color:var(--acc)}
+  .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+  .btn{display:inline-block;background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:5px;padding:5px 10px;cursor:pointer;font-size:12px;margin:2px 3px 2px 0}
+  .btn:hover{border-color:var(--acc);color:var(--acc)}
+  .btn.warn:hover{border-color:var(--red);color:var(--red)}
+  .btn.primary{background:var(--acc);border-color:var(--acc);color:#171a1f;font-weight:700}
+  select,input[type=text],input[type=number]{background:var(--bg);border:1px solid var(--line);color:var(--txt);border-radius:4px;padding:4px 6px;font-size:12px;width:100%}
+  .row{display:flex;gap:6px;margin:4px 0}
+  .row>*{flex:1}
+  .kv{display:flex;gap:6px;align-items:center;margin:3px 0;font-size:12px}
+  .kv .k{width:58px;color:var(--dim);flex:none}
+  .palette{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:4px}
+  .pal{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:4px 6px;cursor:pointer;font-size:11px}
+  .pal:hover{border-color:var(--acc)}
+  .pal.sel{border-color:var(--acc);color:var(--acc)}
+  .pal .en{color:var(--dim);font-size:10px;display:block}
+  .note{font-size:12px;color:var(--txt);margin:3px 0;padding-left:8px;border-left:2px solid var(--line)}
+  .note b{color:var(--acc2)}
+  .issue{font-size:12px;color:var(--red);margin:2px 0}
+  .ok{color:var(--green)}
+  .legendRow{display:flex;align-items:center;gap:6px;font-size:12px;padding:2px 0}
+  .lg{width:16px;height:12px;border-radius:3px;flex:none}
+  .help dt{color:var(--acc);font-size:12px;margin-top:6px}
+  .help dd{color:var(--dim);font-size:12px;margin-left:12px}
+  .conflict{outline:2px solid var(--red);outline-offset:1px}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="map">
+    <canvas id="cv"></canvas>
+    <div id="hud"><b id="hudInfo">就绪</b></div>
+    <div id="scalebar"><span id="sbTxt">100 m</span><div class="bar" id="sbBar" style="width:100px"></div></div>
+    <div id="north">▲ 北<br><span style="font-size:10px">x→东 z→南</span></div>
+    <div id="toast"></div>
+  </div>
+  <div id="sidebar">
+    <header>
+      <h1>晴岚港 v6 · 规划编辑器</h1>
+      <div class="sub">草案（不进游戏）· 双轴十字 / 路网分级 / 13 街坊 / 15 白盒</div>
+    </header>
+    <div class="tabs">
+      <button data-t="layers" class="on">图层</button>
+      <button data-t="add">添加</button>
+      <button data-t="prop">属性</button>
+      <button data-t="notes">方案说明</button>
+      <button data-t="help">帮助</button>
+    </div>
+
+    <div class="tabbody on" id="tab-layers">
+      <fieldset><legend>图层开关</legend><div id="layerCks"></div></fieldset>
+      <fieldset><legend>图例</legend><div id="legendBox"></div></fieldset>
+      <fieldset><legend>数据</legend>
+        <button class="btn primary" id="btnExport">导出 JSON</button>
+        <button class="btn" id="btnImport">导入 JSON</button>
+        <button class="btn warn" id="btnReset">恢复初始草案</button>
+        <button class="btn" id="btnPng">导出 PNG</button>
+        <input type="file" id="fileImp" accept=".json" style="display:none">
+        <div class="kv" style="margin-top:6px"><span class="k">统计</span><span id="statTxt" style="color:var(--dim)"></span></div>
+      </fieldset>
+    </div>
+
+    <div class="tabbody" id="tab-add">
+      <fieldset><legend>放置模式：选中类型后点击地图放置（Esc 取消）</legend>
+        <div id="palette"></div>
+      </fieldset>
+      <fieldset><legend>批量</legend>
+        <button class="btn" id="btnAutoBlock">沿矩形边缘补街坊建筑</button>
+        <div class="kv"><span class="k">矩形</span><span style="color:var(--dim);font-size:11px">先框选：按 B 进入框选，拖出矩形后自动填充</span></div>
+      </fieldset>
+    </div>
+
+    <div class="tabbody" id="tab-prop"><div id="propBody"></div></div>
+
+    <div class="tabbody" id="tab-notes">
+      <div id="notesBox"></div>
+      <fieldset><legend>自检</legend><div id="checkBox"></div></fieldset>
+    </div>
+
+    <div class="tabbody" id="tab-help">
+      <fieldset><legend>操作</legend>
+        <dl class="help">
+          <dt>平移 / 缩放</dt><dd>左键拖空白处平移；滚轮缩放（以鼠标为中心）</dd>
+          <dt>选择</dt><dd>点击建筑 / 道路 / 广场 / 庭园；选中后右侧"属性"可编辑</dd>
+          <dt>移动</dt><dd>拖动建筑本体；道路选中后拖动顶点</dd>
+          <dt>旋转</dt><dd>选中建筑按 Q / E 每次 ±15°（属性面板可输任意角度）</dd>
+          <dt>复制 / 删除</dt><dd>Ctrl+D 复制；Delete 删除（道路需确认）</dd>
+          <dt>道路加点</dt><dd>选中道路后双击线段中部插入顶点；Alt+点击顶点删除该点</dd>
+          <dt>添加建筑</dt><dd>"添加"页选类型 → 点地图；白盒类型在面板底部</dd>
+          <dt>框选填充</dt><dd>按 B 拖出矩形 → 自动沿四边补住宅（占用/压路自动跳过）</dd>
+          <dt>测距</dt><dd>按 M 点击两点，显示米距；Esc 退出</dd>
+          <dt>保存</dt><dd>自动存 localStorage；导出 JSON 可留档/回传给助手</dd>
+        </dl>
+      </fieldset>
+    </div>
+  </div>
+</div>
+<script>
+const INITIAL = {
+ "version": 6,
+ "water": 8,
+ "draft": true,
+ "coast_west": [
+  [
+   -930,
+   160
+  ],
+  [
+   -980,
+   250
+  ],
+  [
+   -965,
+   430
+  ],
+  [
+   -960,
+   630
+  ],
+  [
+   -940,
+   800
+  ],
+  [
+   -880,
+   940
+  ]
+ ],
+ "coast_south": [
+  [
+   -1040,
+   880
+  ],
+  [
+   -880,
+   940
+  ],
+  [
+   -720,
+   970
+  ],
+  [
+   -640,
+   930
+  ],
+  [
+   -620,
+   735
+  ],
+  [
+   -550,
+   650
+  ],
+  [
+   -270,
+   650
+  ],
+  [
+   -180,
+   735
+  ],
+  [
+   -180,
+   930
+  ],
+  [
+   80,
+   1030
+  ],
+  [
+   300,
+   1000
+  ],
+  [
+   520,
+   905
+  ]
+ ],
+ "river": [
+  [
+   360,
+   580
+  ],
+  [
+   160,
+   580
+  ],
+  [
+   -40,
+   580
+  ],
+  [
+   -185,
+   610
+  ],
+  [
+   -310,
+   670
+  ]
+ ],
+ "wall": [
+  [
+   -936,
+   220
+  ],
+  [
+   -700,
+   190
+  ],
+  [
+   -380,
+   195
+  ],
+  [
+   -70,
+   205
+  ],
+  [
+   225,
+   225
+  ],
+  [
+   292,
+   330
+  ],
+  [
+   292,
+   450
+  ],
+  [
+   292,
+   580
+  ],
+  [
+   270,
+   740
+  ],
+  [
+   258,
+   890
+  ],
+  [
+   230,
+   1000
+  ]
+ ],
+ "gates": [
+  [
+   "east",
+   292,
+   450,
+   90
+  ],
+  [
+   "north",
+   -70,
+   205,
+   0
+  ],
+  [
+   "southeast",
+   270,
+   740,
+   90
+  ]
+ ],
+ "terraces": [
+  {
+   "id": "governor",
+   "c": [
+    -790,
+    302
+   ],
+   "size": [
+    244,
+    200
+   ],
+   "y": 60
+  },
+  {
+   "id": "academy",
+   "c": [
+    -510,
+    302
+   ],
+   "size": [
+    238,
+    196
+   ],
+   "y": 44
+  },
+  {
+   "id": "civic",
+   "c": [
+    -75,
+    379
+   ],
+   "size": [
+    546,
+    300
+   ],
+   "y": 26
+  },
+  {
+   "id": "cathedral",
+   "c": [
+    -786,
+    754
+   ],
+   "size": [
+    230,
+    204
+   ],
+   "y": 38
+  },
+  {
+   "id": "station",
+   "c": [
+    50,
+    802
+   ],
+   "size": [
+    350,
+    236
+   ],
+   "y": 18
+  },
+  {
+   "id": "west_docks",
+   "c": [
+    -659,
+    788
+   ],
+   "size": [
+    40,
+    222
+   ],
+   "y": 13
+  },
+  {
+   "id": "harbor_offices",
+   "c": [
+    -465,
+    600
+   ],
+   "size": [
+    350,
+    80
+   ],
+   "y": 13
+  }
+ ],
+ "roads": [
+  {
+   "id": "crown_ave",
+   "cn": "王冠大道",
+   "cls": "arterial",
+   "width": 20,
+   "pts": [
+    [
+     292,
+     450
+    ],
+    [
+     140,
+     450
+    ],
+    [
+     45,
+     450
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": "东西主轴东段：东门→中央广场（广场内为石铺段，不设车行道）"
+  },
+  {
+   "id": "crown_west",
+   "cn": "王冠大道西段",
+   "cls": "arterial",
+   "width": 20,
+   "pts": [
+    [
+     -175,
+     450
+    ],
+    [
+     -365,
+     450
+    ],
+    [
+     -520,
+     450
+    ],
+    [
+     -660,
+     446
+    ],
+    [
+     -760,
+     438
+    ],
+    [
+     -790,
+     424
+    ],
+    [
+     -790,
+     362
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    60
+   ],
+   "note": "广场→爬坡（430m 升 34m≈8%）→官邸前庭；西端视线终点=总督宫"
+  },
+  {
+   "id": "north_ave",
+   "cn": "北门大道",
+   "cls": "arterial",
+   "width": 18,
+   "pts": [
+    [
+     -70,
+     205
+    ],
+    [
+     -70,
+     330
+    ]
+   ],
+   "walk": 4,
+   "elev": [
+    30,
+    26
+   ],
+   "note": "北门→中央广场；视线终点=市政厅立面"
+  },
+  {
+   "id": "station_ave",
+   "cn": "站南大道",
+   "cls": "arterial",
+   "width": 18,
+   "pts": [
+    [
+     -70,
+     515
+    ],
+    [
+     -70,
+     560
+    ],
+    [
+     -70,
+     610
+    ],
+    [
+     -70,
+     695
+    ],
+    [
+     -70,
+     755
+    ]
+   ],
+   "walk": 4,
+   "elev": [
+    26,
+    18
+   ],
+   "note": "广场→晴岚主桥（跨河 z≈588）→站前广场→车站"
+  },
+  {
+   "id": "ring_north",
+   "cn": "环城北街",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     -915,
+     245
+    ],
+    [
+     -700,
+     238
+    ],
+    [
+     -380,
+     232
+    ],
+    [
+     -70,
+     228
+    ],
+    [
+     185,
+     236
+    ],
+    [
+     258,
+     300
+    ],
+    [
+     264,
+     380
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": "沿城墙内侧，串联北门与各区北缘"
+  },
+  {
+   "id": "east_wall_rd",
+   "cn": "城东南街",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     264,
+     380
+    ],
+    [
+     268,
+     450
+    ],
+    [
+     270,
+     560
+    ],
+    [
+     268,
+     650
+    ],
+    [
+     270,
+     740
+    ],
+    [
+     262,
+     880
+    ],
+    [
+     242,
+     965
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    18
+   ],
+   "note": "东墙内侧南北向，接东南门"
+  },
+  {
+   "id": "port_ave",
+   "cn": "港湾大道",
+   "cls": "collector",
+   "width": 14,
+   "pts": [
+    [
+     -365,
+     450
+    ],
+    [
+     -365,
+     540
+    ],
+    [
+     -372,
+     600
+    ],
+    [
+     -385,
+     623
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    13
+   ],
+   "note": "市政核心→港务机构带的下坡主通道"
+  },
+  {
+   "id": "quay_north",
+   "cn": "北岸码头街",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     -640,
+     623
+    ],
+    [
+     -540,
+     623
+    ],
+    [
+     -450,
+     623
+    ],
+    [
+     -370,
+     623
+    ],
+    [
+     -300,
+     632
+    ],
+    [
+     -262,
+     650
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    13,
+    13
+   ],
+   "note": "港务机构带临水一线；临水侧为装卸广场（13m 台地）"
+  },
+  {
+   "id": "west_highstreet",
+   "cn": "西城高街",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     -912,
+     245
+    ],
+    [
+     -912,
+     330
+    ],
+    [
+     -910,
+     450
+    ],
+    [
+     -908,
+     560
+    ],
+    [
+     -906,
+     660
+    ],
+    [
+     -902,
+     770
+    ],
+    [
+     -878,
+     868
+    ],
+    [
+     -842,
+     905
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    55,
+    20
+   ],
+   "note": "西城南北骨架：公馆带→西城街坊→圣堂区→西南居住"
+  },
+  {
+   "id": "palace_court_rd",
+   "cn": "宫环路",
+   "cls": "local",
+   "width": 8,
+   "pts": [
+    [
+     -865,
+     356
+    ],
+    [
+     -865,
+     252
+    ],
+    [
+     -838,
+     242
+    ],
+    [
+     -790,
+     238
+    ],
+    [
+     -742,
+     242
+    ],
+    [
+     -715,
+     252
+    ],
+    [
+     -715,
+     356
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    60,
+    60
+   ],
+   "note": "总督宫 U 形礼仪环路"
+  },
+  {
+   "id": "academy_ave",
+   "cn": "学院大道",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     -510,
+     450
+    ],
+    [
+     -510,
+     405
+    ],
+    [
+     -510,
+     368
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    44
+   ],
+   "note": "王冠大道爬台地进学院前广场"
+  },
+  {
+   "id": "academy_west",
+   "cn": "学院西巷",
+   "cls": "local",
+   "width": 8,
+   "pts": [
+    [
+     -592,
+     280
+    ],
+    [
+     -592,
+     368
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    44,
+    44
+   ],
+   "note": ""
+  },
+  {
+   "id": "academy_east",
+   "cn": "学院东巷",
+   "cls": "local",
+   "width": 8,
+   "pts": [
+    [
+     -428,
+     286
+    ],
+    [
+     -428,
+     368
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    44,
+    44
+   ],
+   "note": ""
+  },
+  {
+   "id": "cathedral_ave",
+   "cn": "圣堂大道",
+   "cls": "local",
+   "width": 10,
+   "pts": [
+    [
+     -906,
+     655
+    ],
+    [
+     -840,
+     662
+    ],
+    [
+     -800,
+     668
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    24,
+    38
+   ],
+   "note": "西城高街→圣堂前广场"
+  },
+  {
+   "id": "riverside_n",
+   "cn": "河滨北街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     -365,
+     550
+    ],
+    [
+     -180,
+     550
+    ],
+    [
+     -40,
+     550
+    ],
+    [
+     40,
+     550
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    23,
+    23
+   ],
+   "note": "日常服务巷：锻铁/精工/旅店/浴池沿街北面朝街"
+  },
+  {
+   "id": "riverside_s",
+   "cn": "河滨南街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     -160,
+     608
+    ],
+    [
+     -40,
+     608
+    ],
+    [
+     40,
+     608
+    ],
+    [
+     160,
+     608
+    ],
+    [
+     200,
+     600
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    18,
+    18
+   ],
+   "note": "河湾街坊临河面"
+  },
+  {
+   "id": "east_embankment",
+   "cn": "东河沿街",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     268,
+     450
+    ],
+    [
+     268,
+     505
+    ],
+    [
+     252,
+     545
+    ],
+    [
+     238,
+     568
+    ],
+    [
+     230,
+     592
+    ],
+    [
+     218,
+     622
+    ],
+    [
+     206,
+     655
+    ],
+    [
+     198,
+     690
+    ],
+    [
+     194,
+     720
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    18
+   ],
+   "note": "跨东河桥（z≈580）下到车站区，接站前横街"
+  },
+  {
+   "id": "station_front",
+   "cn": "站前横街",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     -155,
+     735
+    ],
+    [
+     15,
+     735
+    ],
+    [
+     175,
+     735
+    ],
+    [
+     268,
+     742
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    18,
+    18
+   ],
+   "note": "站前广场南缘横街，连东南门方向"
+  },
+  {
+   "id": "station_east_v",
+   "cn": "车站东街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     55,
+     690
+    ],
+    [
+     55,
+     865
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    18,
+    18
+   ],
+   "note": ""
+  },
+  {
+   "id": "station_east_h1",
+   "cn": "站东一巷",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     55,
+     800
+    ],
+    [
+     225,
+     800
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    18,
+    18
+   ],
+   "note": ""
+  },
+  {
+   "id": "station_east_h2",
+   "cn": "站东二巷",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     55,
+     868
+    ],
+    [
+     230,
+     868
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    18,
+    18
+   ],
+   "note": ""
+  },
+  {
+   "id": "east_quay",
+   "cn": "湾东岸街",
+   "cls": "local",
+   "width": 10,
+   "pts": [
+    [
+     -152,
+     700
+    ],
+    [
+     -150,
+     780
+    ],
+    [
+     -142,
+     860
+    ],
+    [
+     -120,
+     920
+    ],
+    [
+     -90,
+     952
+    ],
+    [
+     0,
+     972
+    ],
+    [
+     160,
+     962
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    18,
+    15
+   ],
+   "note": "湾东滨水步道；南段接轮渡栈桥"
+  },
+  {
+   "id": "harbor_ramp",
+   "cn": "西埠坡道",
+   "cls": "collector",
+   "width": 12,
+   "pts": [
+    [
+     -662,
+     610
+    ],
+    [
+     -682,
+     648
+    ],
+    [
+     -716,
+     690
+    ],
+    [
+     -730,
+     740
+    ],
+    [
+     -730,
+     800
+    ],
+    [
+     -716,
+     850
+    ],
+    [
+     -700,
+     878
+    ],
+    [
+     -684,
+     892
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    13,
+    13
+   ],
+   "note": "港务带下到货栈/船坞的岸线通道（西侧走货、东侧卸货）"
+  },
+  {
+   "id": "west_mid_rd",
+   "cn": "西城中街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     -910,
+     460
+    ],
+    [
+     -590,
+     460
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    38,
+    30
+   ],
+   "note": "西城居住街坊北缘"
+  },
+  {
+   "id": "west_cross",
+   "cn": "西城横街",
+   "cls": "local",
+   "width": 10,
+   "pts": [
+    [
+     -908,
+     580
+    ],
+    [
+     -790,
+     580
+    ],
+    [
+     -690,
+     580
+    ],
+    [
+     -640,
+     598
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    28,
+    13
+   ],
+   "note": ""
+  },
+  {
+   "id": "terrace_lane",
+   "cn": "台地巷",
+   "cls": "local",
+   "width": 8,
+   "pts": [
+    [
+     -670,
+     245
+    ],
+    [
+     -670,
+     450
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    58,
+    30
+   ],
+   "note": "官邸台地与学院台地之间"
+  },
+  {
+   "id": "market_lane",
+   "cn": "商贸支巷",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     140,
+     232
+    ],
+    [
+     140,
+     450
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "east_rd",
+   "cn": "城东支街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     250,
+     232
+    ],
+    [
+     250,
+     450
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "north_h",
+   "cn": "北城横街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     -345,
+     320
+    ],
+    [
+     250,
+     320
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "civic_west_v",
+   "cn": "市政西街",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     -345,
+     232
+    ],
+    [
+     -345,
+     450
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "civic_mid_v",
+   "cn": "西城坊巷",
+   "cls": "local",
+   "width": 9,
+   "pts": [
+    [
+     -240,
+     232
+    ],
+    [
+     -240,
+     450
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "axis_lane_w",
+   "cn": "轴西巷",
+   "cls": "alley",
+   "width": 5,
+   "pts": [
+    [
+     -110,
+     232
+    ],
+    [
+     -110,
+     330
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "axis_lane_e",
+   "cn": "轴东巷",
+   "cls": "alley",
+   "width": 5,
+   "pts": [
+    [
+     -30,
+     232
+    ],
+    [
+     -30,
+     330
+    ]
+   ],
+   "walk": 3,
+   "elev": [
+    26,
+    26
+   ],
+   "note": ""
+  },
+  {
+   "id": "rail_corridor",
+   "cn": "铁路走廊（白盒）",
+   "cls": "rail",
+   "width": 12,
+   "pts": [
+    [
+     268,
+     885
+    ],
+    [
+     175,
+     878
+    ],
+    [
+     60,
+     878
+    ],
+    [
+     -30,
+     872
+    ]
+   ],
+   "walk": 3,
+   "elev": null,
+   "note": "站房后方；走向需与 goldenear 线及 v5 轨道几何核对"
+  },
+  {
+   "id": "pier_walk",
+   "cn": "轮渡栈桥（白盒）",
+   "cls": "path",
+   "width": 8,
+   "pts": [
+    [
+     -142,
+     862
+    ],
+    [
+     -172,
+     896
+    ]
+   ],
+   "walk": 3,
+   "elev": null,
+   "note": ""
+  },
+  {
+   "id": "breakwater",
+   "cn": "防波堤（白盒）",
+   "cls": "path",
+   "width": 7,
+   "pts": [
+    [
+     -372,
+     990
+    ],
+    [
+     -425,
+     1048
+    ]
+   ],
+   "walk": 3,
+   "elev": null,
+   "note": ""
+  }
+ ],
+ "buildings": [
+  {
+   "id": "civic",
+   "asset": "civic_hall",
+   "c": [
+    -65,
+    368
+   ],
+   "yaw": 0,
+   "size": [
+    88,
+    40
+   ],
+   "label": "市政厅（银行在开放首层）",
+   "y": 26
+  },
+  {
+   "id": "wb_fountain",
+   "asset": "wb_fountain",
+   "c": [
+    -65,
+    450
+   ],
+   "yaw": 0,
+   "size": [
+    14,
+    14
+   ],
+   "label": "广场喷泉（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "y": 26
+  },
+  {
+   "id": "archive",
+   "asset": "academy_library_3",
+   "c": [
+    -172,
+    372
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "城市档案馆",
+   "y": 26
+  },
+  {
+   "id": "court",
+   "asset": "public_house",
+   "c": [
+    -134,
+    372
+   ],
+   "yaw": 0,
+   "size": [
+    44,
+    28
+   ],
+   "label": "裁定厅",
+   "y": 26
+  },
+  {
+   "id": "welfare",
+   "asset": "shop_arcade_3",
+   "c": [
+    -6,
+    372
+   ],
+   "yaw": 0,
+   "size": [
+    24,
+    20
+   ],
+   "label": "社会保障局",
+   "y": 26
+  },
+  {
+   "id": "tax",
+   "asset": "shop_arcade_3",
+   "c": [
+    24,
+    372
+   ],
+   "yaw": 0,
+   "size": [
+    24,
+    20
+   ],
+   "label": "税务局",
+   "y": 26
+  },
+  {
+   "id": "exchange",
+   "asset": "public_house",
+   "c": [
+    -120,
+    527
+   ],
+   "yaw": 180,
+   "size": [
+    44,
+    28
+   ],
+   "label": "交易所（拍卖行）",
+   "y": 26
+  },
+  {
+   "id": "guild",
+   "asset": "guild_hall",
+   "c": [
+    -215,
+    519
+   ],
+   "yaw": 90,
+   "size": [
+    44,
+    30
+   ],
+   "label": "冒险者公会",
+   "y": 26
+  },
+  {
+   "id": "inn",
+   "asset": "inn_seafarer_3",
+   "c": [
+    -205,
+    578
+   ],
+   "yaw": 180,
+   "size": [
+    28,
+    24
+   ],
+   "label": "旅人之歌旅店",
+   "y": 23
+  },
+  {
+   "id": "artisan",
+   "asset": "shop_arcade_3",
+   "c": [
+    -163,
+    578
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "精工行会",
+   "y": 23
+  },
+  {
+   "id": "smith",
+   "asset": "shop_arcade_3",
+   "c": [
+    -121,
+    578
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "锻铁匠行会",
+   "y": 23
+  },
+  {
+   "id": "bath",
+   "asset": "public_house",
+   "c": [
+    -300,
+    578
+   ],
+   "yaw": 180,
+   "size": [
+    44,
+    28
+   ],
+   "label": "公共浴池",
+   "y": 23
+  },
+  {
+   "id": "stable",
+   "asset": "shop_arcade_3",
+   "c": [
+    15,
+    578
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "车马行",
+   "y": 23
+  },
+  {
+   "id": "market",
+   "asset": "trade_hall",
+   "c": [
+    80,
+    350
+   ],
+   "yaw": 180,
+   "size": [
+    70,
+    38
+   ],
+   "label": "万国博览集市",
+   "y": 26
+  },
+  {
+   "id": "merchant",
+   "asset": "courtyard_college_3",
+   "c": [
+    185,
+    290
+   ],
+   "yaw": 270,
+   "size": [
+    36,
+    26
+   ],
+   "label": "商会总部",
+   "y": 26
+  },
+  {
+   "id": "cook",
+   "asset": "shop_arcade_3",
+   "c": [
+    185,
+    368
+   ],
+   "yaw": 270,
+   "size": [
+    24,
+    20
+   ],
+   "label": "烹饪师行会",
+   "y": 26
+  },
+  {
+   "id": "weapon_shop",
+   "asset": "shop_arcade_3",
+   "c": [
+    90,
+    486
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "武器店",
+   "y": 26
+  },
+  {
+   "id": "armor_shop",
+   "asset": "shop_arcade_3",
+   "c": [
+    122,
+    486
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "防具店",
+   "y": 26
+  },
+  {
+   "id": "jeweler",
+   "asset": "shop_arcade_3",
+   "c": [
+    154,
+    486
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "珠宝店",
+   "y": 26
+  },
+  {
+   "id": "florist",
+   "asset": "shop_arcade_3",
+   "c": [
+    210,
+    486
+   ],
+   "yaw": 180,
+   "size": [
+    24,
+    20
+   ],
+   "label": "花店",
+   "y": 26
+  },
+  {
+   "id": "palace",
+   "asset": "governor_palace",
+   "c": [
+    -790,
+    300
+   ],
+   "yaw": 0,
+   "size": [
+    100,
+    70
+   ],
+   "label": "总督宫",
+   "y": 60
+  },
+  {
+   "id": "finance_minister",
+   "asset": "mansion_garden_3",
+   "c": [
+    -888,
+    305
+   ],
+   "yaw": 90,
+   "size": [
+    26,
+    22
+   ],
+   "label": "财政大臣公馆",
+   "y": 60
+  },
+  {
+   "id": "ambassador",
+   "asset": "mansion_garden_3",
+   "c": [
+    -888,
+    382
+   ],
+   "yaw": 90,
+   "size": [
+    26,
+    22
+   ],
+   "label": "外交使馆",
+   "y": 60
+  },
+  {
+   "id": "admiral",
+   "asset": "mansion_garden_3",
+   "c": [
+    -692,
+    302
+   ],
+   "yaw": 270,
+   "size": [
+    26,
+    22
+   ],
+   "label": "海军提督公馆",
+   "y": 60
+  },
+  {
+   "id": "airship_pad",
+   "asset": "wb_tower",
+   "c": [
+    -894,
+    228
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "飞艇坪塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 60
+  },
+  {
+   "id": "academy",
+   "asset": "academy",
+   "c": [
+    -510,
+    296
+   ],
+   "yaw": 0,
+   "size": [
+    60,
+    40
+   ],
+   "label": "皇家学院",
+   "y": 44
+  },
+  {
+   "id": "library",
+   "asset": "academy_library_3",
+   "c": [
+    -572,
+    300
+   ],
+   "yaw": 90,
+   "size": [
+    26,
+    22
+   ],
+   "label": "公共图书馆",
+   "y": 44
+  },
+  {
+   "id": "scholar",
+   "asset": "courtyard_college_3",
+   "c": [
+    -455,
+    300
+   ],
+   "yaw": 270,
+   "size": [
+    36,
+    26
+   ],
+   "label": "学者行会",
+   "y": 44
+  },
+  {
+   "id": "institute",
+   "asset": "courtyard_college_3",
+   "c": [
+    -462,
+    412
+   ],
+   "yaw": 270,
+   "size": [
+    36,
+    26
+   ],
+   "label": "魔导研究所",
+   "y": 40
+  },
+  {
+   "id": "mage",
+   "asset": "magic_tower",
+   "c": [
+    -480,
+    256
+   ],
+   "yaw": 0,
+   "size": [
+    20,
+    20
+   ],
+   "label": "魔法师行会",
+   "y": 44
+  },
+  {
+   "id": "lodg1",
+   "asset": "academy_lodgings_4",
+   "c": [
+    -580,
+    258
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    22
+   ],
+   "label": "学生宿舍",
+   "y": 44
+  },
+  {
+   "id": "lodg2",
+   "asset": "academy_lodgings_4",
+   "c": [
+    -548,
+    258
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    22
+   ],
+   "label": "学生宿舍",
+   "y": 44
+  },
+  {
+   "id": "customs",
+   "asset": "public_house",
+   "c": [
+    -570,
+    592
+   ],
+   "yaw": 0,
+   "size": [
+    44,
+    28
+   ],
+   "label": "海关",
+   "y": 13
+  },
+  {
+   "id": "terminal",
+   "asset": "public_house",
+   "c": [
+    -448,
+    592
+   ],
+   "yaw": 0,
+   "size": [
+    44,
+    28
+   ],
+   "label": "海运客运站",
+   "y": 13
+  },
+  {
+   "id": "canal",
+   "asset": "shop_arcade_3",
+   "c": [
+    -335,
+    592
+   ],
+   "yaw": 0,
+   "size": [
+    24,
+    20
+   ],
+   "label": "漕运局",
+   "y": 13
+  },
+  {
+   "id": "tavern",
+   "asset": "inn_seafarer_3",
+   "c": [
+    -620,
+    592
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    24
+   ],
+   "label": "海鸥酒馆",
+   "y": 13
+  },
+  {
+   "id": "blackmarket",
+   "asset": "shop_arcade_3",
+   "c": [
+    -679,
+    556
+   ],
+   "yaw": 0,
+   "size": [
+    24,
+    20
+   ],
+   "label": "旧巷货行",
+   "y": 20
+  },
+  {
+   "id": "wh0",
+   "asset": "warehouse_stone_1",
+   "c": [
+    -688,
+    715
+   ],
+   "yaw": 0,
+   "size": [
+    32,
+    24
+   ],
+   "label": "",
+   "y": 13
+  },
+  {
+   "id": "wh1",
+   "asset": "warehouse_brick_2",
+   "c": [
+    -688,
+    757
+   ],
+   "yaw": 0,
+   "size": [
+    30,
+    24
+   ],
+   "label": "",
+   "y": 13
+  },
+  {
+   "id": "wh2",
+   "asset": "wb_warehouse",
+   "c": [
+    -688,
+    800
+   ],
+   "yaw": 0,
+   "size": [
+    36,
+    22
+   ],
+   "label": "货栈",
+   "whitebox": true,
+   "h": 18,
+   "y": 13
+  },
+  {
+   "id": "wh3",
+   "asset": "wb_warehouse",
+   "c": [
+    -682,
+    843
+   ],
+   "yaw": 0,
+   "size": [
+    36,
+    22
+   ],
+   "label": "货栈",
+   "whitebox": true,
+   "h": 18,
+   "y": 13
+  },
+  {
+   "id": "shipyard",
+   "asset": "warehouse_stone_1",
+   "c": [
+    -733,
+    916
+   ],
+   "yaw": 0,
+   "size": [
+    32,
+    24
+   ],
+   "label": "海军船坞",
+   "y": 13
+  },
+  {
+   "id": "wb_crane1",
+   "asset": "wb_crane",
+   "c": [
+    -530,
+    638
+   ],
+   "yaw": 0,
+   "size": [
+    8,
+    8
+   ],
+   "label": "港吊（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "y": 13
+  },
+  {
+   "id": "wb_crane2",
+   "asset": "wb_crane",
+   "c": [
+    -358,
+    640
+   ],
+   "yaw": 0,
+   "size": [
+    8,
+    8
+   ],
+   "label": "港吊（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "y": 13
+  },
+  {
+   "id": "wb_pier_shed",
+   "asset": "wb_pier_shed",
+   "c": [
+    -660,
+    930
+   ],
+   "yaw": 0,
+   "size": [
+    24,
+    14
+   ],
+   "label": "埠头棚（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "y": 13
+  },
+  {
+   "id": "cathedral",
+   "asset": "cathedral",
+   "c": [
+    -785,
+    762
+   ],
+   "yaw": 180,
+   "size": [
+    48,
+    94
+   ],
+   "label": "晴岚大圣堂",
+   "y": 38
+  },
+  {
+   "id": "hospital",
+   "asset": "public_house",
+   "c": [
+    -845,
+    765
+   ],
+   "yaw": 0,
+   "size": [
+    44,
+    28
+   ],
+   "label": "圣堂医院",
+   "y": 38
+  },
+  {
+   "id": "clergy",
+   "asset": "courtyard_college_3",
+   "c": [
+    -856,
+    700
+   ],
+   "yaw": 0,
+   "size": [
+    36,
+    26
+   ],
+   "label": "修士院",
+   "y": 38
+  },
+  {
+   "id": "station",
+   "asset": "station",
+   "c": [
+    -70,
+    812
+   ],
+   "yaw": 180,
+   "size": [
+    100,
+    56
+   ],
+   "label": "晴岚中央车站",
+   "y": 18
+  },
+  {
+   "id": "opera",
+   "asset": "opera",
+   "c": [
+    0,
+    930
+   ],
+   "yaw": 0,
+   "size": [
+    64,
+    40
+   ],
+   "label": "晴岚歌剧院",
+   "y": 18
+  },
+  {
+   "id": "gate_n1",
+   "asset": "wb_tower",
+   "c": [
+    -88,
+    210
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "城门塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 30
+  },
+  {
+   "id": "gate_n2",
+   "asset": "wb_tower",
+   "c": [
+    -52,
+    210
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "城门塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 30
+  },
+  {
+   "id": "gate_e1",
+   "asset": "wb_tower",
+   "c": [
+    284,
+    425
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "城门塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 30
+  },
+  {
+   "id": "gate_e2",
+   "asset": "wb_tower",
+   "c": [
+    284,
+    475
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "城门塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 30
+  },
+  {
+   "id": "gate_s1",
+   "asset": "wb_tower",
+   "c": [
+    252,
+    722
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "城门塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 30
+  },
+  {
+   "id": "gate_s2",
+   "asset": "wb_tower",
+   "c": [
+    252,
+    758
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "城门塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "cat": "infra",
+   "y": 30
+  },
+  {
+   "id": "wb_arch",
+   "asset": "wb_clock_arch",
+   "c": [
+    -70,
+    330
+   ],
+   "yaw": 0,
+   "size": [
+    30,
+    10
+   ],
+   "label": "北门钟拱（白盒，跨北门大道）",
+   "whitebox": true,
+   "h": 18,
+   "y": 26
+  },
+  {
+   "id": "wb_lighthouse",
+   "asset": "wb_lighthouse",
+   "c": [
+    -425,
+    1048
+   ],
+   "yaw": 0,
+   "size": [
+    12,
+    12
+   ],
+   "label": "外港灯塔（白盒）",
+   "whitebox": true,
+   "h": 18,
+   "y": 13
+  },
+  {
+   "id": "N1_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -266.0,
+    251
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "N1_1",
+   "asset": "shop_rose_4",
+   "c": [
+    -319.5,
+    273.0
+   ],
+   "yaw": 270,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "W3_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -313.0,
+    339
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "W3_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    -311.0,
+    424
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "W3_2",
+   "asset": "shop_rose_4",
+   "c": [
+    -319.5,
+    384.5
+   ],
+   "yaw": 270,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "W4_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -218.0,
+    339
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "W4_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    -216.0,
+    424
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "E2_0",
+   "asset": "residence_slate_3",
+   "c": [
+    175.5,
+    339
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "E2_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    181.5,
+    424
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 26
+  },
+  {
+   "id": "RW1_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -143.0,
+    629
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW1_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    -35.0,
+    629
+   ],
+   "yaw": 180,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW1_2",
+   "asset": "residence_ochre_4",
+   "c": [
+    -141.0,
+    677
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW1_3",
+   "asset": "shop_rose_4",
+   "c": [
+    -24.0,
+    677
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW2_0",
+   "asset": "residence_slate_3",
+   "c": [
+    32.0,
+    629
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW2_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    85.0,
+    629
+   ],
+   "yaw": 180,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW2_2",
+   "asset": "shop_rose_4",
+   "c": [
+    143.0,
+    629
+   ],
+   "yaw": 180,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW2_3",
+   "asset": "residence_ochre_4",
+   "c": [
+    89.0,
+    677
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW2_4",
+   "asset": "shop_rose_4",
+   "c": [
+    147.0,
+    677
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "RW2_5",
+   "asset": "shop_rose_4",
+   "c": [
+    25.5,
+    674.5
+   ],
+   "yaw": 270,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "WM1_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -843.0,
+    481
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 32
+  },
+  {
+   "id": "WM1_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    -790.0,
+    481
+   ],
+   "yaw": 180,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 32
+  },
+  {
+   "id": "WM1_2",
+   "asset": "residence_ochre_4",
+   "c": [
+    -841.0,
+    544
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 32
+  },
+  {
+   "id": "WM1_3",
+   "asset": "shop_rose_4",
+   "c": [
+    -783.0,
+    544
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 32
+  },
+  {
+   "id": "WM1_4",
+   "asset": "corner_merchants_3",
+   "c": [
+    -755.5,
+    492.5
+   ],
+   "yaw": 90,
+   "size": [
+    32,
+    26
+   ],
+   "label": "",
+   "y": 32
+  },
+  {
+   "id": "WM2_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -718.0,
+    481
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 28
+  },
+  {
+   "id": "WM2_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    -665.0,
+    481
+   ],
+   "yaw": 180,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 28
+  },
+  {
+   "id": "WM2_2",
+   "asset": "shop_rose_4",
+   "c": [
+    -607.0,
+    481
+   ],
+   "yaw": 180,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 28
+  },
+  {
+   "id": "WM2_3",
+   "asset": "residence_ochre_4",
+   "c": [
+    -716.0,
+    544
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 28
+  },
+  {
+   "id": "WM2_4",
+   "asset": "shop_rose_4",
+   "c": [
+    -628.5,
+    544
+   ],
+   "yaw": 0,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 28
+  },
+  {
+   "id": "EB1_0",
+   "asset": "residence_slate_3",
+   "c": [
+    79.0,
+    701
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "EB1_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    132.0,
+    701
+   ],
+   "yaw": 180,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "EB2_0",
+   "asset": "residence_slate_3",
+   "c": [
+    79.0,
+    819
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "EB2_1",
+   "asset": "corner_merchants_3",
+   "c": [
+    154.5,
+    827.0
+   ],
+   "yaw": 90,
+   "size": [
+    32,
+    26
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "SW1_0",
+   "asset": "residence_slate_3",
+   "c": [
+    -208.0,
+    771
+   ],
+   "yaw": 180,
+   "size": [
+    22,
+    20
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "SW1_1",
+   "asset": "residence_ochre_4",
+   "c": [
+    -206.0,
+    851
+   ],
+   "yaw": 0,
+   "size": [
+    26,
+    22
+   ],
+   "label": "",
+   "y": 18
+  },
+  {
+   "id": "SW1_2",
+   "asset": "shop_rose_4",
+   "c": [
+    -214.5,
+    816.5
+   ],
+   "yaw": 270,
+   "size": [
+    28,
+    22
+   ],
+   "label": "",
+   "y": 18
+  }
+ ],
+ "gardens": [
+  {
+   "id": "palace_court",
+   "cn": "总督宫 U 形前庭",
+   "c": [
+    -790,
+    322
+   ],
+   "size": [
+    170,
+    76
+   ],
+   "y": 60,
+   "style": "court"
+  },
+  {
+   "id": "palace_axis",
+   "cn": "官邸轴线花园",
+   "c": [
+    -790,
+    408
+   ],
+   "size": [
+    120,
+    80
+   ],
+   "y": 60,
+   "style": "formal"
+  },
+  {
+   "id": "academy_garden",
+   "cn": "学院阅读园",
+   "c": [
+    -510,
+    330
+   ],
+   "size": [
+    96,
+    30
+   ],
+   "y": 44,
+   "style": "formal"
+  },
+  {
+   "id": "cathedral_south",
+   "cn": "圣堂南园",
+   "c": [
+    -785,
+    845
+   ],
+   "size": [
+    110,
+    48
+   ],
+   "y": 38,
+   "style": "formal"
+  },
+  {
+   "id": "seaside_park",
+   "cn": "海湾公园",
+   "c": [
+    113,
+    929
+   ],
+   "size": [
+    98,
+    48
+   ],
+   "y": 18,
+   "style": "park"
+  },
+  {
+   "id": "axis_lawn_w",
+   "cn": "北轴西草坪",
+   "c": [
+    -125,
+    285
+   ],
+   "size": [
+    26,
+    110
+   ],
+   "y": 26,
+   "style": "lawn"
+  },
+  {
+   "id": "axis_lawn_e",
+   "cn": "北轴东草坪",
+   "c": [
+    -8,
+    285
+   ],
+   "size": [
+    26,
+    110
+   ],
+   "y": 26,
+   "style": "lawn"
+  },
+  {
+   "id": "civic_green",
+   "cn": "市政北园",
+   "c": [
+    -180,
+    262
+   ],
+   "size": [
+    80,
+    24
+   ],
+   "y": 26,
+   "style": "park"
+  },
+  {
+   "id": "m1_gdn",
+   "cn": "财政大臣园",
+   "c": [
+    -888,
+    352
+   ],
+   "size": [
+    30,
+    24
+   ],
+   "y": 60,
+   "style": "formal"
+  },
+  {
+   "id": "m2_gdn",
+   "cn": "提督园",
+   "c": [
+    -692,
+    350
+   ],
+   "size": [
+    30,
+    24
+   ],
+   "y": 60,
+   "style": "formal"
+  }
+ ],
+ "squares": [
+  {
+   "id": "civic_square",
+   "cn": "中央十字广场",
+   "c": [
+    -65,
+    450
+   ],
+   "size": [
+    220,
+    130
+   ],
+   "y": 26,
+   "style": "plaza"
+  },
+  {
+   "id": "station_square",
+   "cn": "站前广场",
+   "c": [
+    -70,
+    725
+   ],
+   "size": [
+    170,
+    60
+   ],
+   "y": 18,
+   "style": "plaza"
+  },
+  {
+   "id": "academy_square",
+   "cn": "学院前广场",
+   "c": [
+    -510,
+    368
+   ],
+   "size": [
+    150,
+    56
+   ],
+   "y": 44,
+   "style": "plaza"
+  },
+  {
+   "id": "cathedral_square",
+   "cn": "圣堂前广场",
+   "c": [
+    -787,
+    672
+   ],
+   "size": [
+    90,
+    56
+   ],
+   "y": 38,
+   "style": "plaza"
+  },
+  {
+   "id": "dock_apron",
+   "cn": "港口装卸广场",
+   "c": [
+    -470,
+    640
+   ],
+   "size": [
+    190,
+    22
+   ],
+   "y": 13,
+   "style": "plaza"
+  }
+ ],
+ "districts": [
+  {
+   "id": "governor",
+   "cn": "官邸区",
+   "color": [
+    150,
+    186,
+    160
+   ],
+   "poly": [
+    [
+     -936,
+     215
+    ],
+    [
+     -668,
+     215
+    ],
+    [
+     -668,
+     300
+    ],
+    [
+     -660,
+     402
+    ],
+    [
+     -790,
+     470
+    ],
+    [
+     -936,
+     470
+    ]
+   ]
+  },
+  {
+   "id": "academy",
+   "cn": "学院区",
+   "color": [
+    176,
+    156,
+    214
+   ],
+   "poly": [
+    [
+     -668,
+     215
+    ],
+    [
+     -390,
+     215
+    ],
+    [
+     -390,
+     470
+    ],
+    [
+     -510,
+     470
+    ],
+    [
+     -620,
+     400
+    ],
+    [
+     -640,
+     300
+    ]
+   ]
+  },
+  {
+   "id": "civic",
+   "cn": "市政区",
+   "color": [
+    214,
+    190,
+    150
+   ],
+   "poly": [
+    [
+     -390,
+     215
+    ],
+    [
+     -115,
+     215
+    ],
+    [
+     -115,
+     385
+    ],
+    [
+     -175,
+     515
+    ],
+    [
+     -365,
+     515
+    ],
+    [
+     -390,
+     385
+    ]
+   ]
+  },
+  {
+   "id": "commerce",
+   "cn": "商贸区",
+   "color": [
+    224,
+    170,
+    120
+   ],
+   "poly": [
+    [
+     -115,
+     215
+    ],
+    [
+     230,
+     215
+    ],
+    [
+     265,
+     300
+    ],
+    [
+     268,
+     470
+    ],
+    [
+     45,
+     515
+    ],
+    [
+     45,
+     385
+    ],
+    [
+     -115,
+     385
+    ]
+   ]
+  },
+  {
+   "id": "port",
+   "cn": "港务区",
+   "color": [
+    150,
+    176,
+    200
+   ],
+   "poly": [
+    [
+     -660,
+     470
+    ],
+    [
+     -290,
+     470
+    ],
+    [
+     -262,
+     650
+    ],
+    [
+     -320,
+     660
+    ],
+    [
+     -470,
+     655
+    ],
+    [
+     -550,
+     660
+    ],
+    [
+     -620,
+     700
+    ],
+    [
+     -715,
+     720
+    ],
+    [
+     -715,
+     520
+    ]
+   ]
+  },
+  {
+   "id": "cathedral",
+   "cn": "圣堂区",
+   "color": [
+    196,
+    196,
+    210
+   ],
+   "poly": [
+    [
+     -936,
+     600
+    ],
+    [
+     -830,
+     600
+    ],
+    [
+     -760,
+     660
+    ],
+    [
+     -760,
+     800
+    ],
+    [
+     -830,
+     900
+    ],
+    [
+     -880,
+     930
+    ],
+    [
+     -936,
+     900
+    ]
+   ]
+  },
+  {
+   "id": "station",
+   "cn": "车站区（湾东）",
+   "color": [
+    200,
+    170,
+    170
+   ],
+   "poly": [
+    [
+     -180,
+     660
+    ],
+    [
+     -115,
+     660
+    ],
+    [
+     -115,
+     684
+    ],
+    [
+     235,
+     684
+    ],
+    [
+     268,
+     740
+    ],
+    [
+     262,
+     880
+    ],
+    [
+     242,
+     965
+    ],
+    [
+     150,
+     1000
+    ],
+    [
+     0,
+     990
+    ],
+    [
+     -120,
+     940
+    ],
+    [
+     -180,
+     860
+    ]
+   ]
+  },
+  {
+   "id": "riverward",
+   "cn": "河湾坊",
+   "color": [
+    190,
+    200,
+    170
+   ],
+   "poly": [
+    [
+     -185,
+     596
+    ],
+    [
+     45,
+     596
+    ],
+    [
+     45,
+     684
+    ],
+    [
+     -150,
+     684
+    ],
+    [
+     -185,
+     655
+    ]
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "id": "N1",
+   "cn": "市政北坊",
+   "buildingIds": [
+    "N1_0",
+    "N1_1"
+   ],
+   "rect": [
+    -330,
+    240,
+    -245,
+    312
+   ],
+   "court": [
+    -288,
+    276
+   ]
+  },
+  {
+   "id": "N2",
+   "cn": "学院东坊",
+   "buildingIds": [],
+   "rect": [
+    -235,
+    240,
+    -150,
+    312
+   ],
+   "court": [
+    -192,
+    276
+   ]
+  },
+  {
+   "id": "W3",
+   "cn": "西桥坊",
+   "buildingIds": [
+    "W3_0",
+    "W3_1",
+    "W3_2"
+   ],
+   "rect": [
+    -330,
+    328,
+    -245,
+    435
+   ],
+   "court": [
+    -288,
+    382
+   ]
+  },
+  {
+   "id": "W4",
+   "cn": "西坊南",
+   "buildingIds": [
+    "W4_0",
+    "W4_1"
+   ],
+   "rect": [
+    -235,
+    328,
+    -185,
+    435
+   ],
+   "court": [
+    -210,
+    382
+   ]
+  },
+  {
+   "id": "E1",
+   "cn": "城东上坊",
+   "buildingIds": [],
+   "rect": [
+    135,
+    240,
+    245,
+    312
+   ],
+   "court": [
+    190,
+    276
+   ]
+  },
+  {
+   "id": "E2",
+   "cn": "城东下坊",
+   "buildingIds": [
+    "E2_0",
+    "E2_1"
+   ],
+   "rect": [
+    135,
+    328,
+    245,
+    435
+   ],
+   "court": [
+    190,
+    382
+   ]
+  },
+  {
+   "id": "RW1",
+   "cn": "河湾西坊",
+   "buildingIds": [
+    "RW1_0",
+    "RW1_1",
+    "RW1_2",
+    "RW1_3"
+   ],
+   "rect": [
+    -160,
+    618,
+    -30,
+    688
+   ],
+   "court": [
+    -95,
+    653
+   ]
+  },
+  {
+   "id": "RW2",
+   "cn": "河湾东坊",
+   "buildingIds": [
+    "RW2_0",
+    "RW2_1",
+    "RW2_2",
+    "RW2_3",
+    "RW2_4",
+    "RW2_5"
+   ],
+   "rect": [
+    15,
+    618,
+    160,
+    688
+   ],
+   "court": [
+    88,
+    653
+   ]
+  },
+  {
+   "id": "WM1",
+   "cn": "西城中坊",
+   "buildingIds": [
+    "WM1_0",
+    "WM1_1",
+    "WM1_2",
+    "WM1_3",
+    "WM1_4"
+   ],
+   "rect": [
+    -860,
+    470,
+    -745,
+    555
+   ],
+   "court": [
+    -802,
+    512
+   ]
+  },
+  {
+   "id": "WM2",
+   "cn": "西城东坊",
+   "buildingIds": [
+    "WM2_0",
+    "WM2_1",
+    "WM2_2",
+    "WM2_3",
+    "WM2_4"
+   ],
+   "rect": [
+    -735,
+    470,
+    -600,
+    555
+   ],
+   "court": [
+    -668,
+    512
+   ]
+  },
+  {
+   "id": "EB1",
+   "cn": "站东上坊",
+   "buildingIds": [
+    "EB1_0",
+    "EB1_1"
+   ],
+   "rect": [
+    62,
+    690,
+    165,
+    792
+   ],
+   "court": [
+    114,
+    741
+   ]
+  },
+  {
+   "id": "EB2",
+   "cn": "站东下坊",
+   "buildingIds": [
+    "EB2_0",
+    "EB2_1"
+   ],
+   "rect": [
+    62,
+    808,
+    165,
+    862
+   ],
+   "court": [
+    114,
+    835
+   ]
+  },
+  {
+   "id": "SW1",
+   "cn": "站西坊",
+   "buildingIds": [
+    "SW1_0",
+    "SW1_1",
+    "SW1_2"
+   ],
+   "rect": [
+    -225,
+    760,
+    -130,
+    862
+   ],
+   "court": [
+    -178,
+    811
+   ]
+  }
+ ],
+ "npcs": [
+  {
+   "id": "mayor",
+   "p": [
+    -65,
+    394
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "banker",
+   "p": [
+    -85,
+    394
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "banker2",
+   "p": [
+    -45,
+    394
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "auctioneer",
+   "p": [
+    -120,
+    512
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "guild_master",
+   "p": [
+    -199,
+    512
+   ],
+   "yaw": 90,
+   "y": 26.6
+  },
+  {
+   "id": "guild_reg",
+   "p": [
+    -199,
+    532
+   ],
+   "yaw": 90,
+   "y": 26.6
+  },
+  {
+   "id": "t_warrior_3",
+   "p": [
+    -231,
+    512
+   ],
+   "yaw": 90,
+   "y": 26.6
+  },
+  {
+   "id": "t_rogue_3",
+   "p": [
+    -231,
+    532
+   ],
+   "yaw": 90,
+   "y": 26.6
+  },
+  {
+   "id": "judge",
+   "p": [
+    -134,
+    386
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "archivist",
+   "p": [
+    -172,
+    386
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "welfare_officer",
+   "p": [
+    -6,
+    386
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "tax_officer",
+   "p": [
+    24,
+    386
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "clock_keeper",
+   "p": [
+    -70,
+    342
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "inn_keeper2",
+   "p": [
+    -205,
+    562
+   ],
+   "yaw": 180,
+   "y": 23.6
+  },
+  {
+   "id": "artisan_master",
+   "p": [
+    -163,
+    562
+   ],
+   "yaw": 180,
+   "y": 23.6
+  },
+  {
+   "id": "smith_master",
+   "p": [
+    -121,
+    562
+   ],
+   "yaw": 180,
+   "y": 23.6
+  },
+  {
+   "id": "bath_attendant",
+   "p": [
+    -300,
+    562
+   ],
+   "yaw": 180,
+   "y": 23.6
+  },
+  {
+   "id": "stable_city",
+   "p": [
+    15,
+    562
+   ],
+   "yaw": 180,
+   "y": 23.6
+  },
+  {
+   "id": "expo_guide",
+   "p": [
+    80,
+    376
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "transmog",
+   "p": [
+    66,
+    358
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "rare_shop",
+   "p": [
+    94,
+    358
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "potion_shop",
+   "p": [
+    66,
+    342
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "item_shop",
+   "p": [
+    94,
+    342
+   ],
+   "yaw": 0,
+   "y": 26.6
+  },
+  {
+   "id": "merchant_head",
+   "p": [
+    168,
+    290
+   ],
+   "yaw": 270,
+   "y": 26.6
+  },
+  {
+   "id": "cook_master",
+   "p": [
+    168,
+    368
+   ],
+   "yaw": 270,
+   "y": 26.6
+  },
+  {
+   "id": "weapon_shop",
+   "p": [
+    90,
+    472
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "armor_shop",
+   "p": [
+    122,
+    472
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "jeweler",
+   "p": [
+    154,
+    472
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "florist",
+   "p": [
+    210,
+    472
+   ],
+   "yaw": 180,
+   "y": 26.6
+  },
+  {
+   "id": "governor",
+   "p": [
+    -790,
+    338
+   ],
+   "yaw": 0,
+   "y": 60.6
+  },
+  {
+   "id": "butler",
+   "p": [
+    -776,
+    338
+   ],
+   "yaw": 0,
+   "y": 60.6
+  },
+  {
+   "id": "finance_minister",
+   "p": [
+    -874,
+    305
+   ],
+   "yaw": 90,
+   "y": 60.6
+  },
+  {
+   "id": "ambassador",
+   "p": [
+    -874,
+    382
+   ],
+   "yaw": 90,
+   "y": 60.6
+  },
+  {
+   "id": "admiral",
+   "p": [
+    -706,
+    302
+   ],
+   "yaw": 270,
+   "y": 60.6
+  },
+  {
+   "id": "airship_captain",
+   "p": [
+    -886,
+    240
+   ],
+   "yaw": 0,
+   "y": 60.6
+  },
+  {
+   "id": "astronomer",
+   "p": [
+    -898,
+    240
+   ],
+   "yaw": 270,
+   "y": 60.6
+  },
+  {
+   "id": "lecturer",
+   "p": [
+    -522,
+    322
+   ],
+   "yaw": 0,
+   "y": 44.6
+  },
+  {
+   "id": "scholar_master",
+   "p": [
+    -498,
+    322
+   ],
+   "yaw": 0,
+   "y": 44.6
+  },
+  {
+   "id": "librarian",
+   "p": [
+    -561,
+    300
+   ],
+   "yaw": 90,
+   "y": 44.6
+  },
+  {
+   "id": "scholar",
+   "p": [
+    -469,
+    300
+   ],
+   "yaw": 270,
+   "y": 44.6
+  },
+  {
+   "id": "researcher",
+   "p": [
+    -476,
+    400
+   ],
+   "yaw": 270,
+   "y": 40.6
+  },
+  {
+   "id": "mage_master",
+   "p": [
+    -480,
+    268
+   ],
+   "yaw": 0,
+   "y": 44.6
+  },
+  {
+   "id": "t_mage_3",
+   "p": [
+    -498,
+    258
+   ],
+   "yaw": 180,
+   "y": 44.6
+  },
+  {
+   "id": "customs_officer",
+   "p": [
+    -570,
+    578
+   ],
+   "yaw": 0,
+   "y": 13.6
+  },
+  {
+   "id": "ferry_clerk",
+   "p": [
+    -448,
+    578
+   ],
+   "yaw": 0,
+   "y": 13.6
+  },
+  {
+   "id": "harbor_master",
+   "p": [
+    -430,
+    632
+   ],
+   "yaw": 180,
+   "y": 13.6
+  },
+  {
+   "id": "canal_officer",
+   "p": [
+    -335,
+    578
+   ],
+   "yaw": 0,
+   "y": 13.6
+  },
+  {
+   "id": "tavern_keeper",
+   "p": [
+    -620,
+    578
+   ],
+   "yaw": 0,
+   "y": 13.6
+  },
+  {
+   "id": "black_marketeer",
+   "p": [
+    -679,
+    568
+   ],
+   "yaw": 180,
+   "y": 20.6
+  },
+  {
+   "id": "warehouse_keeper",
+   "p": [
+    -688,
+    700
+   ],
+   "yaw": 180,
+   "y": 13.6
+  },
+  {
+   "id": "shipwright",
+   "p": [
+    -733,
+    900
+   ],
+   "yaw": 0,
+   "y": 13.6
+  },
+  {
+   "id": "dock_worker",
+   "p": [
+    -664,
+    700
+   ],
+   "yaw": 90,
+   "y": 13.6
+  },
+  {
+   "id": "dock_worker",
+   "p": [
+    -662,
+    830
+   ],
+   "yaw": 90,
+   "y": 13.6
+  },
+  {
+   "id": "sailor",
+   "p": [
+    -505,
+    634
+   ],
+   "yaw": 180,
+   "y": 13.6
+  },
+  {
+   "id": "sailor",
+   "p": [
+    -483,
+    634
+   ],
+   "yaw": 180,
+   "y": 13.6
+  },
+  {
+   "id": "merchant_captain",
+   "p": [
+    -452,
+    634
+   ],
+   "yaw": 180,
+   "y": 13.6
+  },
+  {
+   "id": "archbishop",
+   "p": [
+    -785,
+    712
+   ],
+   "yaw": 180,
+   "y": 38.6
+  },
+  {
+   "id": "clergy",
+   "p": [
+    -856,
+    716
+   ],
+   "yaw": 0,
+   "y": 38.6
+  },
+  {
+   "id": "doctor",
+   "p": [
+    -845,
+    751
+   ],
+   "yaw": 180,
+   "y": 38.6
+  },
+  {
+   "id": "nurse",
+   "p": [
+    -831,
+    751
+   ],
+   "yaw": 180,
+   "y": 38.6
+  },
+  {
+   "id": "station_master",
+   "p": [
+    -70,
+    782
+   ],
+   "yaw": 180,
+   "y": 18.6
+  },
+  {
+   "id": "opera_manager",
+   "p": [
+    0,
+    908
+   ],
+   "yaw": 0,
+   "y": 18.6
+  },
+  {
+   "id": "park_keeper",
+   "p": [
+    113,
+    912
+   ],
+   "yaw": 0,
+   "y": 18.6
+  },
+  {
+   "id": "lighthouse_keeper",
+   "p": [
+    -425,
+    1036
+   ],
+   "yaw": 180,
+   "y": 13.6
+  },
+  {
+   "id": "guard_city",
+   "p": [
+    282,
+    438
+   ],
+   "yaw": 90,
+   "y": 28
+  },
+  {
+   "id": "guard_city",
+   "p": [
+    282,
+    462
+   ],
+   "yaw": 90,
+   "y": 28
+  },
+  {
+   "id": "guard_city",
+   "p": [
+    -70,
+    216
+   ],
+   "yaw": 90,
+   "y": 28
+  },
+  {
+   "id": "guard_city",
+   "p": [
+    270,
+    752
+   ],
+   "yaw": 90,
+   "y": 28
+  },
+  {
+   "id": "guard_city_f",
+   "p": [
+    -65,
+    400
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "guard_city_f",
+   "p": [
+    -65,
+    500
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "guard_city_f",
+   "p": [
+    15,
+    430
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -160,
+    430
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "citizen",
+   "p": [
+    20,
+    430
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -100,
+    340
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "citizen",
+   "p": [
+    160,
+    340
+   ],
+   "yaw": 180,
+   "y": 26
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -505,
+    634
+   ],
+   "yaw": 180,
+   "y": 13
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -688,
+    730
+   ],
+   "yaw": 180,
+   "y": 13
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -70,
+    700
+   ],
+   "yaw": 180,
+   "y": 18
+  },
+  {
+   "id": "citizen",
+   "p": [
+    100,
+    750
+   ],
+   "yaw": 180,
+   "y": 18
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -850,
+    500
+   ],
+   "yaw": 180,
+   "y": 32
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -190,
+    660
+   ],
+   "yaw": 180,
+   "y": 18
+  },
+  {
+   "id": "citizen",
+   "p": [
+    100,
+    660
+   ],
+   "yaw": 180,
+   "y": 18
+  },
+  {
+   "id": "citizen",
+   "p": [
+    -785,
+    640
+   ],
+   "yaw": 180,
+   "y": 38
+  }
+ ],
+ "pois": [
+  {
+   "id": "poi_solenne",
+   "title": "晴岚港",
+   "p": [
+    -300,
+    440
+   ],
+   "radius": 780,
+   "priority": 1
+  },
+  {
+   "id": "poi_plaza",
+   "title": "中央十字广场",
+   "p": [
+    -65,
+    450
+   ],
+   "radius": 60,
+   "priority": 10
+  },
+  {
+   "id": "poi_market",
+   "title": "万国博览集市",
+   "p": [
+    80,
+    356
+   ],
+   "radius": 43,
+   "priority": 10
+  },
+  {
+   "id": "poi_governor",
+   "title": "总督宫",
+   "p": [
+    -790,
+    305
+   ],
+   "radius": 45,
+   "priority": 12
+  },
+  {
+   "id": "poi_academy",
+   "title": "皇家学院",
+   "p": [
+    -510,
+    302
+   ],
+   "radius": 40,
+   "priority": 12
+  },
+  {
+   "id": "poi_cathedral",
+   "title": "晴岚大圣堂",
+   "p": [
+    -785,
+    762
+   ],
+   "radius": 47,
+   "priority": 10
+  },
+  {
+   "id": "poi_station",
+   "title": "晴岚中央车站",
+   "p": [
+    -70,
+    812
+   ],
+   "radius": 52,
+   "priority": 10
+  },
+  {
+   "id": "poi_guild",
+   "title": "冒险者公会",
+   "p": [
+    -215,
+    522
+   ],
+   "radius": 23,
+   "priority": 12
+  },
+  {
+   "id": "poi_exchange",
+   "title": "交易所",
+   "p": [
+    -120,
+    530
+   ],
+   "radius": 23,
+   "priority": 12
+  },
+  {
+   "id": "poi_smith",
+   "title": "锻铁匠行会",
+   "p": [
+    -121,
+    578
+   ],
+   "radius": 13,
+   "priority": 14
+  },
+  {
+   "id": "poi_artisan",
+   "title": "精工行会",
+   "p": [
+    -163,
+    578
+   ],
+   "radius": 13,
+   "priority": 14
+  },
+  {
+   "id": "poi_city_inn",
+   "title": "旅人之歌旅店",
+   "p": [
+    -205,
+    578
+   ],
+   "radius": 17,
+   "priority": 20
+  },
+  {
+   "id": "poi_harbor",
+   "title": "晴岚港湾",
+   "p": [
+    -460,
+    660
+   ],
+   "radius": 60,
+   "priority": 8
+  },
+  {
+   "id": "poi_south_port",
+   "title": "南港埠头",
+   "p": [
+    -660,
+    900
+   ],
+   "radius": 25,
+   "priority": 9
+  },
+  {
+   "id": "poi_lighthouse",
+   "title": "外港灯塔",
+   "p": [
+    -425,
+    1048
+   ],
+   "radius": 24,
+   "priority": 12
+  },
+  {
+   "id": "poi_park",
+   "title": "海湾公园",
+   "p": [
+    113,
+    940
+   ],
+   "radius": 55,
+   "priority": 9
+  },
+  {
+   "id": "poi_airport",
+   "title": "海角飞艇坪",
+   "p": [
+    -894,
+    230
+   ],
+   "radius": 28,
+   "priority": 10
+  },
+  {
+   "id": "poi_citygate",
+   "title": "东门",
+   "p": [
+    292,
+    450
+   ],
+   "radius": 28,
+   "priority": 10
+  },
+  {
+   "id": "poi_citygate_n",
+   "title": "北门",
+   "p": [
+    -70,
+    205
+   ],
+   "radius": 26,
+   "priority": 10
+  },
+  {
+   "id": "poi_citygate_se",
+   "title": "东南门",
+   "p": [
+    270,
+    740
+   ],
+   "radius": 28,
+   "priority": 10
+  },
+  {
+   "id": "poi_canal",
+   "title": "晴岚运河",
+   "p": [
+    -50,
+    590
+   ],
+   "radius": 130,
+   "priority": 3
+  }
+ ],
+ "spawns": [
+  {
+   "id": "fp_solenne",
+   "p": [
+    -889,
+    235
+   ],
+   "yaw": 180
+  },
+  {
+   "id": "st_solenne",
+   "p": [
+    -70,
+    748
+   ],
+   "yaw": 0
+  },
+  {
+   "id": "gy_gate",
+   "p": [
+    300,
+    470
+   ],
+   "yaw": 270
+  },
+  {
+   "id": "gy_cathedral",
+   "p": [
+    -820,
+    800
+   ],
+   "yaw": 0
+  },
+  {
+   "id": "city_inn_safe",
+   "p": [
+    -205,
+    552
+   ],
+   "yaw": 180
+  }
+ ],
+ "bridges": [
+  {
+   "id": "main_bridge",
+   "cn": "晴岚主桥",
+   "at": [
+    -70,
+    588
+   ],
+   "span": 18,
+   "road": "station_ave"
+  },
+  {
+   "id": "east_bridge",
+   "cn": "东河桥",
+   "at": [
+    232,
+    580
+   ],
+   "span": 14,
+   "road": "east_embankment"
+  }
+ ],
+ "notes": [
+  [
+   "结构",
+   "双轴十字：王冠大道（东西）与北站轴系（北门大道+站南大道）交汇于中央十字广场；东望东门、西望总督宫、北望市政厅立面、南望车站，四向都有视线终点。北门大道在广场北缘结束，市政厅正立面成为轴线对景（经典做法：广场尽端主立面）。"
+  ],
+  [
+   "路网分级",
+   "主干道 20/18m（王冠大道、北门大道、站南大道）→ 次干道 12-14m（环城北街、港湾大道、码头街、西城高街、城东南街、东河沿街、站前横街）→ 支路 9m（坊间街）→ 后巷 5m。先网后坊，次街全部贯通接入主路，不再出现被剪断的断头路。"
+  ],
+  [
+   "日常服务环",
+   "银行（市政厅首层）、拍卖（交易所）、锻铁、精工、旅店、冒险者公会、浴池、车马行全部在中央广场 250m 半径内；从东门进城沿主轴约 360m 即达服务核。商店行（武器/防具/珠宝）沿王冠大道南缘排布，迎东门来向客流。"
+  ],
+  [
+   "港水关系",
+   "湾内不架低桥保通航；港务机构（海关/客运/漕运/酒馆）在 13m 北岸台地后退一线，面朝北岸码头街与装卸广场；货栈列+船坞经西埠坡道（西侧走货）下到埠头；东岸设滨水步道与轮渡栈桥（白盒）；外港灯塔由防波堤（白盒）接入。"
+  ],
+  [
+   "街坊制",
+   "13 个周边式街坊：建筑面朝四边街道、共享内院、转角让位 6m 形成自然出入口，替代 v5 的折线随机排房。街坊尺寸约 85-110 × 55-107m。"
+  ],
+  [
+   "地标场地",
+   "总督宫（U形前庭+轴线花园）、学院（前广场+阅读园）、圣堂（前广场+南园）、车站（站前广场）、博览集市（面向广场东北角）各有独立场地；中央广场四边：北=市政厅+机构排（档案/裁定/税务/保障），南=交易所+服务巷，东=商贸支巷口，西=公会+市政西街。"
+  ],
+  [
+   "高差",
+   "官邸 60m → 学院 44m → 市政 26m → 车站 18m → 埠头 13m → 水面 8m；王冠大道西段 430m 爬 34m≈8% 缓坡；港湾大道/西埠坡道承担 26→13m 降落。各地块整平+挡墙，不用房屋四角埋地。"
+  ],
+  [
+   "白盒清单",
+   "北门钟拱、广场喷泉、6 座城门塔、飞艇坪塔、2 台港吊、外港灯塔+防波堤、轮渡栈桥、埠头棚、2 栋货栈、铁路走廊——占位待建模。"
+  ],
+  [
+   "与 v5 契约",
+   "71 个 NPC ID、主要 POI ID、5 个出生点 ID 语义不变；车站西移 130m 移到南北轴上（原 60,805 → -70,812），铁路走廊随之平移，需与 goldenear 线核对；三座城门位置不动；东门公路边界 (430,420)→(288,450) 不受影响。"
+  ],
+  [
+   "待定问题",
+   "① 车站西移与 goldenear 铁路线的衔接；② 湾东岸街南端轮渡的开度；③ 圣堂大道 24→38m 接坡的坡道位置；④ 外城（下城区/篱田/河源）本轮未动；⑤ 街坊内院用途（市场/晾晒/花园）待逐坊指派。"
+  ]
+ ]
+};
+const ASSET_FP = {"civic_hall": [88, 40], "trade_hall": [70, 38], "governor_palace": [100, 70], "academy": [60, 40], "cathedral": [48, 94], "station": [100, 56], "guild_hall": [44, 30], "public_house": [44, 28], "shop_arcade_3": [24, 20], "inn_seafarer_3": [28, 24], "academy_library_3": [26, 22], "magic_tower": [20, 20], "courtyard_college_3": [36, 26], "opera": [64, 40], "warehouse_brick_2": [30, 24], "warehouse_stone_1": [32, 24], "mansion_garden_3": [26, 22], "residence_slate_3": [22, 20], "residence_ochre_4": [26, 22], "corner_merchants_3": [32, 26], "shop_rose_4": [28, 22], "academy_lodgings_4": [28, 22], "corner_copper_4": [34, 26], "wb_clock_arch": [30, 10], "wb_fountain": [14, 14], "wb_tower": [12, 12], "wb_crane": [8, 8], "wb_lighthouse": [12, 12], "wb_warehouse": [36, 22], "wb_hall": [60, 30], "wb_shophouse": [16, 14], "wb_pier_shed": [24, 14]};
+</script>
+<script>
+'use strict';
+/* ================= 基础状态 ================= */
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+const mapEl = document.getElementById('map');
+let D = JSON.parse(JSON.stringify(INITIAL));
+const saved = localStorage.getItem('city_v6_plan_v1');
+if (saved) { try { D = JSON.parse(saved); toast('已载入本地保存的编辑结果'); } catch(e){} }
+const view = { x: -1010, y: 115, s: 0.85 };   // 视口左上角世界坐标 + 缩放（初始正对全城）
+let sel = null;          // {type:'building'|'road'|'square'|'garden'|'district', id}
+let hoverVtx = null;     // 道路顶点索引
+let tool = 'select';     // select | add | measure | blocksel
+let addAsset = null, addY = 26;
+let drag = null;         // 拖拽状态
+let measure = null;      // [p1,p2]
+let blockRect = null;
+let showLayers = { district:true, terrace:true, water:true, wall:true, road:true,
+  block:true, green:true, building:true, npc:false, poi:true, label:true };
+const W2S = p => [(p[0]-view.x)*view.s, (p[1]-view.y)*view.s];
+const S2W = p => [p[0]/view.s+view.x, p[1]/view.s+view.y];
+
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.style.display='block';
+  clearTimeout(t._h); t._h=setTimeout(()=>t.style.display='none',2200); }
+function byId(list,id){ return list.find(a=>a.id===id); }
+
+/* ================= 资产表 ================= */
+const FP = Object.assign({}, ASSET_FP);
+D.buildings.forEach(b=>{ FP[b.asset]=b.size; });
+const CAT = b => {
+  if (b.whitebox) return 'wb';
+  const a=b.asset;
+  if (['civic_hall','trade_hall','governor_palace','academy','cathedral','station','guild_hall','opera'].includes(a)) return 'landmark';
+  if (a.startsWith('residence')||a.startsWith('academy_lodgings')||a.startsWith('mansion')) return 'res';
+  if (a.startsWith('shop')||a.startsWith('corner')) return 'shop';
+  if (a.startsWith('warehouse')) return 'port';
+  if (a.startsWith('inn')||a.startsWith('public')) return 'service';
+  return 'inst'; // academy_library / courtyard / magic_tower
+};
+const CATCOL = { landmark:'#8f6bb0', res:'#c8a878', shop:'#c07f6a', port:'#6f8ba3',
+  service:'#b09455', inst:'#8f8ab8', wb:'#7a8288' };
+const CATNAME = { landmark:'地标', res:'住宅', shop:'商铺', port:'港口',
+  service:'服务/旅店', inst:'机构', wb:'白盒（占位）' };
+const ROADCOL = { arterial:'#5c5148', collector:'#6e6355', local:'#8a7d6c',
+  alley:'#7a7062', rail:'#4a4f57', path:'#9a8c72' };
+
+/* ================= 画布尺寸 ================= */
+function resize(){ cv.width = mapEl.clientWidth*devicePixelRatio; cv.height = mapEl.clientHeight*devicePixelRatio;
+  cv.style.width=mapEl.clientWidth+'px'; cv.style.height=mapEl.clientHeight+'px'; requestAnimationFrame(draw); }
+window.addEventListener('resize',resize);
+
+/* ================= 冲突检测 ================= */
+function bboxOf(b,pad=0){ const [w,d]=b.size,a=b.yaw*Math.PI/180;
+  const wx=Math.abs(Math.cos(a))*w+Math.abs(Math.sin(a))*d, dz=Math.abs(Math.sin(a))*w+Math.abs(Math.cos(a))*d;
+  return [b.c[0]-wx/2-pad,b.c[1]-dz/2-pad,b.c[0]+wx/2+pad,b.c[1]+dz/2+pad]; }
+const ov=(a,b)=>a[0]<b[2]&&a[2]>b[0]&&a[1]<b[3]&&a[3]>b[1];
+function segdist(p,a,b){ const dx=b[0]-a[0],dz=b[1]-a[1];
+  const t=Math.max(0,Math.min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dz)/Math.max(dx*dx+dz*dz,1e-9)));
+  return Math.hypot(p[0]-a[0]-t*dx,p[1]-a[1]-t*dz); }
+function conflictsOf(b){
+  const out=[]; const me=bboxOf(b,0.5);
+  D.buildings.forEach(o=>{ if(o!==b && ov(me,bboxOf(o,0.5))) out.push('建筑重叠: '+oid(o)); });
+  D.roads.forEach(r=>{ if(r.cls==='rail'||r.cls==='path')return;
+    const lim=r.width/2+(r.walk||3);
+    for(let i=0;i<r.pts.length-1;i++)
+      for(const q of [[me[0],me[1]],[me[2],me[1]],[me[0],me[3]],[me[2],me[3]],[(me[0]+me[2])/2,(me[1]+me[3])/2]])
+        if(segdist(q,r.pts[i],r.pts[i+1])<lim) { out.push('压路: '+r.cn); i=1e9; break; }
+  });
+  return out;
+}
+function oid(b){ return b.label || b.id || b.asset; }
+
+/* ================= 绘制 ================= */
+let dirty=true;
+function draw(){
+  if(!dirty) return; dirty=false;
+  const W=cv.width,H=cv.height,dpr=devicePixelRatio;
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.fillStyle='#3d4a42'; ctx.fillRect(0,0,W,H);      // 画布外底色
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const w=W/dpr,h=H/dpr;
+  // 地面
+  ctx.fillStyle='#b8b09a'; ctx.fillRect(0,0,w,h);
+  // 分区底色
+  if(showLayers.district) for(const d of D.districts){
+    ctx.beginPath(); d.poly.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.closePath();
+    ctx.fillStyle=`rgba(${d.color[0]},${d.color[1]},${d.color[2]},.35)`; ctx.fill();
+    ctx.strokeStyle=`rgba(${d.color[0]},${d.color[1]},${d.color[2]},.8)`; ctx.setLineDash([5,4]); ctx.lineWidth=1; ctx.stroke(); ctx.setLineDash([]);
+    const c=polyCentroid(d.poly), [cx,cy]=W2S(c);
+    ctx.fillStyle='rgba(40,40,40,.75)'; ctx.font='700 13px sans-serif'; ctx.textAlign='center';
+    ctx.fillText(d.cn,cx,cy);
+  }
+  // 台地
+  if(showLayers.terrace) for(const t of D.terraces){
+    const [x,y]=W2S([t.c[0]-t.size[0]/2,t.c[1]-t.size[1]/2]);
+    ctx.fillStyle='rgba(255,255,255,.14)'; ctx.fillRect(x,y,t.size[0]*view.s,t.size[1]*view.s);
+    ctx.strokeStyle='rgba(90,80,60,.5)'; ctx.setLineDash([8,5]); ctx.strokeRect(x,y,t.size[0]*view.s,t.size[1]*view.s); ctx.setLineDash([]);
+    ctx.fillStyle='rgba(70,60,45,.85)'; ctx.font='11px sans-serif'; ctx.textAlign='left';
+    ctx.fillText(t.id+'台地 '+t.y+'m', x+4, y+13);
+  }
+  // 水系
+  if(showLayers.water){
+    const poly=[[-1600,160],...D.coast_west,...D.coast_south,[520,905],[520,1500],[-1600,1500]];
+    ctx.beginPath(); poly.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.closePath(); ctx.fillStyle='#5d87a8'; ctx.fill();
+    // 河
+    ctx.beginPath(); D.river.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.strokeStyle='#5d87a8'; ctx.lineWidth=Math.max(52*view.s,2); ctx.lineJoin='round'; ctx.lineCap='round'; ctx.stroke();
+    ctx.lineWidth=1;
+  }
+  // 城墙
+  if(showLayers.wall){
+    ctx.beginPath(); D.wall.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    ctx.strokeStyle='#4a4238'; ctx.lineWidth=Math.max(7*view.s,2.5); ctx.stroke(); ctx.lineWidth=1;
+    for(const [name,g] of Object.entries(D.gates)){
+      const [x,y]=W2S(g); ctx.fillStyle='#2e2a24';
+      ctx.beginPath(); ctx.arc(x,y,Math.max(6*view.s,3),0,7); ctx.fill();
+      if(showLayers.label){ ctx.fillStyle='#2e2a24'; ctx.font='700 11px sans-serif'; ctx.textAlign='center'; ctx.fillText(name,x,y-8); }
+    }
+  }
+  // 街坊
+  if(showLayers.block) for(const bk of D.blocks){
+    const [x0,z0,x1,z1]=bk.rect, [x,y]=W2S([x0,z0]);
+    ctx.strokeStyle='rgba(80,70,55,.55)'; ctx.setLineDash([4,3]);
+    ctx.strokeRect(x,y,(x1-x0)*view.s,(z1-z0)*view.s); ctx.setLineDash([]);
+    if(view.s>0.28){ ctx.fillStyle='rgba(80,70,55,.6)'; ctx.font='10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(bk.cn,(x0+x1)/2*view.s-view.x*view.s,(z0+z1)/2*view.s-view.y*view.s); }
+  }
+  // 广场 / 庭园
+  for(const s of [...D.squares,...D.gardens]){
+    const isG='style' in s;
+    if(isG&&!showLayers.green) continue;
+    const [x,y]=W2S([s.c[0]-s.size[0]/2,s.c[1]-s.size[1]/2]);
+    ctx.fillStyle=isG?'rgba(126,158,110,.55)':'rgba(200,190,160,.75)';
+    ctx.fillRect(x,y,s.size[0]*view.s,s.size[1]*view.s);
+    ctx.strokeStyle=isG?'rgba(90,120,70,.8)':'rgba(120,105,75,.8)'; ctx.strokeRect(x,y,s.size[0]*view.s,s.size[1]*view.s);
+    if(view.s>0.22){ ctx.fillStyle=isG?'#3d5233':'#5c4f38'; ctx.font='10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(s.cn||s.id,(s.c[0])*view.s-view.x*view.s,(s.c[1])*view.s-view.y*view.s); }
+  }
+  // 道路
+  if(showLayers.road) for(const r of D.roads){
+    const col=ROADCOL[r.cls]||'#777';
+    ctx.beginPath(); r.pts.forEach((p,i)=>{const [x,y]=W2S(p); i?ctx.lineTo(x,y):ctx.moveTo(x,y);});
+    const wpx=Math.max(r.width*view.s, r.cls==='alley'||r.cls==='path'?1:1.6);
+    ctx.strokeStyle=col; ctx.lineWidth=wpx;
+    if(r.cls==='alley'||r.cls==='path'||r.cls==='rail'){ ctx.setLineDash([6,4]); } 
+    if(r.cls==='rail'){ ctx.strokeStyle='#3c4048'; }
+    ctx.lineJoin='round'; ctx.lineCap='round'; ctx.stroke(); ctx.setLineDash([]);
+    // 路名
+    if(showLayers.label&&view.s>0.2&&r.cn){
+      const a=r.pts[0],b=r.pts[Math.min(1,r.pts.length-1)];
+      const [x,y]=W2S([(a[0]+b[0])/2,(a[1]+b[1])/2]);
+      ctx.save(); ctx.translate(x,y);
+      ctx.rotate(Math.atan2(b[1]-a[1],b[0]-a[0]));
+      ctx.fillStyle='rgba(35,30,25,.8)'; ctx.font=(r.cls==='arterial'?'700 ':'')+'10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(r.cn,0,-wpx/2-3); ctx.restore();
+    }
+    // 选中道路的顶点
+    if(sel&&sel.type==='road'&&sel.id===r.id){
+      r.pts.forEach((p,i)=>{ const [x,y]=W2S(p);
+        ctx.fillStyle=hoverVtx===i?'#e0a458':'#ffdf9e'; ctx.strokeStyle='#54452c';
+        ctx.beginPath(); ctx.arc(x,y,5,0,7); ctx.fill(); ctx.stroke(); });
+    }
+  }
+  // 桥
+  for(const br of (D.bridges||[])){
+    const [x,y]=W2S(br.at);
+    ctx.strokeStyle='#7a5a34'; ctx.lineWidth=Math.max(br.span*view.s,3);
+    ctx.beginPath(); ctx.moveTo(x-br.span*view.s*0.7,y); ctx.lineTo(x+br.span*view.s*0.7,y); ctx.stroke(); ctx.lineWidth=1;
+    if(view.s>0.25){ ctx.fillStyle='#6a4e2c'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText(br.cn,x,y-6); }
+  }
+  // 建筑
+  if(showLayers.building) for(const b of D.buildings){
+    const [x,y]=W2S(b.c);
+    ctx.save(); ctx.translate(x,y); ctx.rotate(-b.yaw*Math.PI/180);
+    const bw=b.size[0]*view.s, bd=b.size[1]*view.s;
+    const isSel=sel&&sel.type==='building'&&sel.id===b.id;
+    const conf=isSel?conflictsOf(b):[];
+    ctx.fillStyle=CATCOL[CAT(b)];
+    if(b.whitebox){ ctx.fillStyle='#838a90'; }
+    ctx.fillRect(-bw/2,-bd/2,bw,bd);
+    ctx.strokeStyle=isSel?(conf.length?'#e8493a':'#ffd75e'):'rgba(50,42,32,.75)';
+    ctx.lineWidth=isSel?2:1; ctx.strokeRect(-bw/2,-bd/2,bw,bd); ctx.lineWidth=1;
+    if(b.whitebox&&view.s>0.3){ ctx.strokeStyle='rgba(40,45,50,.35)';
+      for(let i=-bw/2;i<bw/2;i+=5){ctx.beginPath();ctx.moveTo(i,-bd/2);ctx.lineTo(i+4,bd/2);ctx.stroke();}}
+    ctx.restore();
+    // 标签
+    if(showLayers.label&&(view.s>0.34||isSel||CAT(b)==='landmark')&&b.label){
+      ctx.fillStyle=CAT(b)==='landmark'?'#3a2852':'rgba(45,38,28,.9)';
+      ctx.font=(CAT(b)==='landmark'?'700 ':'')+'10px sans-serif'; ctx.textAlign='center';
+      ctx.fillText(b.label,x,y+3);
+    }
+  }
+  // NPC
+  if(showLayers.npc) for(const n of D.npcs){
+    const [x,y]=W2S(n.p);
+    ctx.fillStyle='#3f6d8e'; ctx.beginPath(); ctx.arc(x,y,2.2,0,7); ctx.fill();
+  }
+  // POI
+  if(showLayers.poi) for(const p of D.pois){
+    const [x,y]=W2S(p.p);
+    ctx.strokeStyle='#7a4f9e'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(x,y-5); ctx.lineTo(x+5,y); ctx.lineTo(x,y+5); ctx.lineTo(x-5,y); ctx.closePath(); ctx.stroke(); ctx.lineWidth=1;
+    if(view.s>0.22){ ctx.fillStyle='#5c3a78'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText(p.title,x,y+14); }
+  }
+  // 出生点
+  for(const sp of D.spawns){
+    const [x,y]=W2S(sp.p);
+    ctx.strokeStyle='#2f7d4f'; ctx.lineWidth=1.5; ctx.beginPath(); ctx.arc(x,y,6,0,7); ctx.stroke(); ctx.lineWidth=1;
+    ctx.fillStyle='#2f7d4f'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText(sp.id,x,y-9);
+  }
+  // 框选矩形
+  if(blockRect&&blockRect.cur){
+    const [x,y]=W2S(blockRect.a), [x2,y2]=W2S(blockRect.cur);
+    ctx.strokeStyle='#e0a458'; ctx.setLineDash([5,4]); ctx.strokeRect(x,y,x2-x,y2-y); ctx.setLineDash([]);
+  }
+  // 测距
+  if(measure&&measure.length){
+    const [x1,y1]=W2S(measure[0]);
+    ctx.strokeStyle='#e05a5a'; ctx.setLineDash([4,3]);
+    ctx.beginPath(); ctx.moveTo(x1,y1);
+    if(measure[1]){ const [x2,y2]=W2S(measure[1]); ctx.lineTo(x2,y2);
+      const d=Math.hypot(measure[1][0]-measure[0][0],measure[1][1]-measure[0][1]);
+      ctx.fillStyle='#c23c3c'; ctx.font='700 12px sans-serif'; ctx.fillText(d.toFixed(0)+' m',(x1+x2)/2,(y1+y2)/2-6);
+    } else { const m=lastMouse; ctx.lineTo(m[0],m[1]); }
+    ctx.stroke(); ctx.setLineDash([]);
+  }
+  // 比例尺
+  const targets=[10,20,50,100,200,500,1000];
+  let t=targets.find(t=>t*view.s>70)||1000;
+  document.getElementById('sbTxt').textContent=t+' m';
+  document.getElementById('sbBar').style.width=(t*view.s)+'px';
+  // 统计
+  document.getElementById('statTxt').textContent=
+    `建筑 ${D.buildings.length}（白盒 ${D.buildings.filter(b=>b.whitebox).length}）· 道路 ${D.roads.length} · 街坊 ${D.blocks.length} · NPC ${D.npcs.length}`;
+}
+function polyCentroid(poly){
+  let x=0,z=0; poly.forEach(p=>{x+=p[0];z+=p[1];}); return [x/poly.length,z/poly.length];
+}
+function invalidate(){ dirty=true; requestAnimationFrame(draw); }
+
+/* ================= 命中检测 ================= */
+function hitBuilding(wp){
+  for(let i=D.buildings.length-1;i>=0;i--){ const b=D.buildings[i];
+    const a=-b.yaw*Math.PI/180, dx=wp[0]-b.c[0], dz=wp[1]-b.c[1];
+    const lx=dx*Math.cos(a)-dz*Math.sin(a), lz=dx*Math.sin(a)+dz*Math.cos(a);
+    if(Math.abs(lx)<=b.size[0]/2&&Math.abs(lz)<=b.size[1]/2) return b; }
+  return null;
+}
+function hitRoad(wp){
+  // 世界坐标下判定
+  for(const r of D.roads){
+    if(sel&&sel.type==='road'&&sel.id===r.id){
+      for(let i=0;i<r.pts.length;i++)
+        if(Math.hypot(r.pts[i][0]-wp[0],r.pts[i][1]-wp[1])<8/view.s) return {r,vtx:i};
+    }
+    const lim=Math.max(r.width/2, 7/view.s);
+    for(let i=0;i<r.pts.length-1;i++)
+      if(segdist(wp,r.pts[i],r.pts[i+1])<lim) return {r,vtx:-1};
+  }
+  return null;
+}
+function hitRect(list,wp){
+  for(let i=list.length-1;i>=0;i--){ const s=list[i];
+    if(Math.abs(wp[0]-s.c[0])<=s.size[0]/2&&Math.abs(wp[1]-s.c[1])<=s.size[1]/2) return s; }
+  return null;
+}
+
+/* ================= 交互 ================= */
+let lastMouse=[0,0], panning=false, panStart=null, moved=false;
+cv.addEventListener('wheel',e=>{
+  e.preventDefault();
+  const rect=cv.getBoundingClientRect();
+  const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  const before=S2W([mx,my]);
+  view.s*=Math.pow(1.0016,-e.deltaY);
+  view.s=Math.max(0.06,Math.min(4,view.s));
+  const after=S2W([mx,my]);
+  view.x+=before[0]-after[0]; view.y+=before[1]-after[1];
+  invalidate();
+},{passive:false});
+cv.addEventListener('mousedown',e=>{
+  const rect=cv.getBoundingClientRect();
+  const sp=[e.clientX-rect.left,e.clientY-rect.top], wp=S2W(sp);
+  moved=false; lastMouse=sp;
+  if(tool==='add'&&addAsset){
+    const id=autoId(addAsset);
+    const size=FP[addAsset]||[20,16];
+    const nb={id,asset:addAsset,c:[Math.round(wp[0]),Math.round(wp[1])],yaw:0,size:[...size],label:''};
+    if(addAsset.startsWith('wb_')){ nb.whitebox=true; nb.h=18; }
+    D.buildings.push(nb); sel={type:'building',id};
+    save(); renderProp(); invalidate(); return;
+  }
+  if(tool==='measure'){
+    if(!measure||measure.length>=2) measure=[wp];
+    else measure.push(wp);
+    invalidate(); return;
+  }
+  if(tool==='blocksel'){ blockRect={a:wp,cur:null}; return; }
+  // 道路顶点优先
+  if(sel&&sel.type==='road'){
+    const r=byId(D.roads,sel.id);
+    for(let i=0;i<r.pts.length;i++){
+      const [x,y]=W2S(r.pts[i]);
+      if(Math.hypot(sp[0]-x,sp[1]-y)<7){ drag={kind:'vtx',r,i,off:[0,0]}; return; }
+    }
+  }
+  const hb=hitBuilding(wp);
+  if(hb){ sel={type:'building',id:hb.id};
+    drag={kind:'bld',b:hb,off:[hb.c[0]-wp[0],hb.c[1]-wp[1]]};
+    renderProp(); invalidate(); return; }
+  const hr=hitRoad(wp);
+  if(hr){ sel={type:'road',id:hr.r.id}; hoverVtx=-1; renderProp(); invalidate(); return; }
+  const hsq=hitRect(D.squares,wp)||hitRect(D.gardens,wp);
+  if(hsq){ sel={type:D.squares.includes(hsq)?'square':'garden',id:hsq.id};
+    drag={kind:'rect',s:hsq,off:[hsq.c[0]-wp[0],hsq.c[1]-wp[1]]};
+    renderProp(); invalidate(); return; }
+  sel=null; hoverVtx=null; renderProp();
+  panning=true; panStart={sp:[...sp],vx:view.x,vy:view.y};
+  mapEl.classList.add('dragging'); invalidate();
+});
+window.addEventListener('mousemove',e=>{
+  const rect=cv.getBoundingClientRect();
+  const sp=[e.clientX-rect.left,e.clientY-rect.top], wp=S2W(sp);
+  lastMouse=sp;
+  document.getElementById('hudInfo').textContent=
+    `x ${wp[0].toFixed(0)} · z ${wp[1].toFixed(0)}　缩放 ${(view.s*100).toFixed(0)}%`+
+    (sel?`　选中: ${selDesc()}`:'');
+  if(blockRect&&blockRect.a){ blockRect.cur=wp; invalidate(); return; }
+  if(measure&&measure.length===1&&tool==='measure'){ invalidate(); }
+  if(panning){ view.x=panStart.vx-(sp[0]-panStart.sp[0])/view.s;
+    view.y=panStart.vy-(sp[1]-panStart.sp[1])/view.s; invalidate(); return; }
+  if(!drag) return;
+  moved=true;
+  if(drag.kind==='bld'){
+    drag.b.c=[Math.round(wp[0]+drag.off[0]),Math.round(wp[1]+drag.off[1])];
+    renderProp(true);
+  } else if(drag.kind==='vtx'){
+    drag.r.pts[drag.i]=[Math.round(wp[0]),Math.round(wp[1])];
+  } else if(drag.kind==='rect'){
+    drag.s.c=[Math.round(wp[0]+drag.off[0]),Math.round(wp[1]+drag.off[1])];
+    renderProp(true);
+  }
+  invalidate();
+});
+window.addEventListener('mouseup',()=>{
+  if(drag){ save(); }
+  drag=null; panning=false; mapEl.classList.remove('dragging');
+});
+cv.addEventListener('dblclick',e=>{
+  const rect=cv.getBoundingClientRect();
+  const wp=S2W([e.clientX-rect.left,e.clientY-rect.top]);
+  if(sel&&sel.type==='road'){
+    const r=byId(D.roads,sel.id);
+    for(let i=0;i<r.pts.length-1;i++){
+      // 插入到最近线段
+      const d=segdist(wp,r.pts[i],r.pts[i+1]);
+      if(d<12/view.s){ r.pts.splice(i+1,1,[Math.round(wp[0]),Math.round(wp[1])]); save(); invalidate(); toast('已插入顶点'); return; }
+    }
+  }
+});
+cv.addEventListener('contextmenu',e=>e.preventDefault());
+window.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
+  const k=e.key.toLowerCase();
+  if(k==='escape'){ tool='select'; addAsset=null; measure=null; blockRect=null; renderPalette(); mapEl.classList.remove('placing'); invalidate(); }
+  if(k==='m'){ tool='measure'; measure=null; toast('测距：点击两点'); }
+  if(k==='b'){ tool='blocksel'; blockRect=null; toast('框选填充：拖出矩形自动补街坊建筑'); }
+  if(sel&&sel.type==='building'){
+    const b=byId(D.buildings,sel.id);
+    if(k==='q'){ b.yaw=(b.yaw-15+360)%360; renderProp(true); invalidate(); }
+    if(k==='e'){ b.yaw=(b.yaw+15)%360; renderProp(true); invalidate(); }
+    if(k==='delete'){ delSelected(); }
+    if(k==='d'&&e.ctrlKey){ e.preventDefault();
+      const nb=JSON.parse(JSON.stringify(b)); nb.id=autoId(b.asset);
+      nb.c=[b.c[0]+15,b.c[1]+15]; D.buildings.push(nb); sel={type:'building',id:nb.id};
+      save(); renderProp(); invalidate(); }
+  } else if(k==='delete'&&(sel&&(sel.type==='road'))){ delSelected(); }
+});
+function selDesc(){ const s=sel;
+  if(s.type==='building'){ const b=byId(D.buildings,s.id); return (b.label||b.asset); }
+  if(s.type==='road'){ const r=byId(D.roads,s.id); return r.cn+'（'+r.pts.length+'点）'; }
+  if(s.type==='square'||s.type==='garden'){ const g=byId(s.type==='square'?D.squares:D.gardens,s.id); return g.cn; }
+  return '';
+}
+function autoId(asset){
+  let i=1; while(D.buildings.some(b=>b.id===asset+'_'+i)) i++;
+  return asset+'_'+i;
+}
+function delSelected(){
+  if(!sel) return;
+  if(sel.type==='building'){ D.buildings=D.buildings.filter(b=>b.id!==sel.id); }
+  else if(sel.type==='road'){ if(!confirm('删除整条道路？'))return; D.roads=D.roads.filter(r=>r.id!==sel.id); }
+  else if(sel.type==='square'){ D.squares=D.squares.filter(s=>s.id!==sel.id); }
+  else if(sel.type==='garden'){ D.gardens=D.gardens.filter(g=>g.id!==sel.id); }
+  sel=null; save(); renderProp(); invalidate();
+}
+
+/* ================= 框选填充 ================= */
+function fillBlockRect(x0,z0,x1,z1){
+  const types=['residence_slate_3','residence_ochre_4','shop_rose_4','corner_merchants_3'];
+  let n=0;
+  const occ=D.buildings.map(b=>bboxOf(b,1));
+  const okPlace=(x,z,yaw,aid)=>{
+    const size=FP[aid]; const a=yaw*Math.PI/180;
+    const wx=Math.abs(Math.cos(a))*size[0]+Math.abs(Math.sin(a))*size[1];
+    const dz=Math.abs(Math.sin(a))*size[0]+Math.abs(Math.cos(a))*size[1];
+    const bb=[x-wx/2-.6,z-dz/2-.6,x+wx/2+.6,z+dz/2+.6];
+    if(occ.some(o=>ov(bb,o))) return null;
+    for(const r of D.roads){ if(r.cls==='rail'||r.cls==='path')continue;
+      const lim=r.width/2+(r.walk||3);
+      for(let i=0;i<r.pts.length-1;i++)
+        for(const q of [[bb[0],bb[1]],[bb[2],bb[1]],[bb[0],bb[3]],[bb[2],bb[3]]])
+          if(segdist(q,r.pts[i],r.pts[i+1])<lim) return null; }
+    return bb;
+  };
+  const L=6, G=1.2;
+  const lx=Math.min(x0,x1),hx=Math.max(x0,x1),lz=Math.min(z0,z1),hz=Math.max(z0,z1);
+  const put=(x,z,yaw,aid,i)=>{
+    const bb=okPlace(x,z,yaw,aid);
+    if(!bb) return false;
+    occ.push(bb);
+    D.buildings.push({id:autoId(aid),asset:aid,c:[Math.round(x),Math.round(z)],yaw,size:[...FP[aid]],label:''});
+    n++; return true;
+  };
+  // 北边（面北） / 南边（面南）
+  for(const [lineZ,yaw] of [[lz+12,180],[hz-12,0]]){
+    let t=lx+L,i=0;
+    while(t<hx-L){
+      const aid=types[i%types.length], w=FP[aid][0], d=FP[aid][1];
+      const bz = yaw===180 ? lineZ+d/2 : lineZ-d/2;
+      if(put(t+w/2,bz,yaw,aid,i)) i++;
+      t+=w+G;
+    }
+  }
+  // 西边（面西） / 东边（面东）
+  for(const [xx,yaw] of [[lx+12,270],[hx-12,90]]){
+    let t=hz-L,i=1;
+    while(t>lz+L){
+      const aid=types[i%types.length], d=FP[aid][1];  // 纵向步进用深度 d
+      const cx = yaw===270 ? lx+12+FP[aid][0]/2 : hx-12-FP[aid][0]/2;
+      if(put(cx,t-d/2,yaw,aid,i)) i++;
+      t-=d+G;
+    }
+  }
+  return n;
+}
+
+/* ================= 属性面板 ================= */
+function renderProp(skipFocus){
+  const el=document.getElementById('propBody');
+  if(!sel){ el.innerHTML='<div class="note" style="color:var(--dim)">未选中对象。点击地图中的建筑 / 道路 / 广场 / 庭园。</div>'; return; }
+  if(skipFocus&&document.activeElement&&/INPUT|SELECT/.test(document.activeElement.tagName)) return;
+  if(sel.type==='building'){
+    const b=byId(D.buildings,sel.id); if(!b){sel=null;return renderProp();}
+    const conf=conflictsOf(b);
+    el.innerHTML=`
+      <fieldset><legend>建筑</legend>
+        <div class="kv"><span class="k">ID</span><span>${b.id}</span></div>
+        <div class="kv"><span class="k">资产</span><span>${b.asset}${b.whitebox?' <span class="sw" style="background:#838a90"></span>白盒':''}</span></div>
+        <div class="kv"><span class="k">尺寸</span><span>${b.size[0]} × ${b.size[1]} m</span></div>
+      </fieldset>
+      <fieldset><legend>编辑</legend>
+        <div class="kv"><span class="k">标签</span><input type="text" id="pLabel" value="${b.label||''}"></div>
+        <div class="row">
+          <input type="number" id="pX" value="${b.c[0]}" step="1" title="x"><input type="number" id="pZ" value="${b.c[1]}" step="1" title="z">
+        </div>
+        <div class="row">
+          <input type="number" id="pYaw" value="${b.yaw}" step="15" title="朝向°"><input type="number" id="pY" value="${b.y??''}" step="1" placeholder="标高 m">
+        </div>
+        <div class="row">
+          <input type="number" id="pW" value="${b.size[0]}" step="1" title="宽（白盒可改）" ${b.whitebox?'':'disabled'}><input type="number" id="pD" value="${b.size[1]}" step="1" title="深（白盒可改）" ${b.whitebox?'':'disabled'}>
+        </div>
+      </fieldset>
+      <fieldset><legend>状态</legend>
+        ${conf.length?conf.map(c=>`<div class="issue">✖ ${c}</div>`).join(''):'<div class="ok">✔ 无冲突</div>'}
+      </fieldset>
+      <button class="btn" onclick="rotSel(-15)">↺ 15°</button>
+      <button class="btn" onclick="rotSel(15)">↻ 15°</button>
+      <button class="btn" onclick="dupSel()">复制</button>
+      <button class="btn warn" onclick="delSelected()">删除</button>`;
+    const bind=(id,fn)=>{ const n=document.getElementById(id); if(!n)return;
+      n.onchange=()=>{ fn(n.value); save(); invalidate(); }; };
+    bind('pLabel',v=>b.label=v);
+    bind('pX',v=>b.c[0]=+v); bind('pZ',v=>b.c[1]=+v);
+    bind('pYaw',v=>b.yaw=((+v)%360+360)%360); bind('pY',v=>b.y=v===''?undefined:+v);
+    bind('pW',v=>b.size[0]=+v); bind('pD',v=>b.size[1]=+v);
+  } else if(sel.type==='road'){
+    const r=byId(D.roads,sel.id); if(!r){sel=null;return renderProp();}
+    el.innerHTML=`
+      <fieldset><legend>道路</legend>
+        <div class="kv"><span class="k">名称</span><input type="text" id="rCn" value="${r.cn}"></div>
+        <div class="kv"><span class="k">等级</span><span>${({arterial:'主干道',collector:'次干道',local:'支路',alley:'后巷',rail:'铁路',path:'步道/栈桥'})[r.cls]||r.cls}</span></div>
+        <div class="row"><input type="number" id="rW" value="${r.width}" step="1" title="宽度 m"><input type="number" id="rWalk" value="${r.walk??3}" step="1" title="步道 m"></div>
+        ${r.note?`<div class="note">${r.note}</div>`:''}
+        ${r.elev?`<div class="kv"><span class="k">标高</span><span>${r.elev[0]}m → ${r.elev[1]}m</span></div>`:''}
+        <div class="kv"><span class="k">顶点</span><span>${r.pts.length} 个（双击线段加点 / Alt+点顶点删点）</span></div>
+      </fieldset>
+      <button class="btn warn" onclick="delSelected()">删除道路</button>`;
+    document.getElementById('rCn').onchange=e=>{ r.cn=e.target.value; save(); invalidate(); };
+    document.getElementById('rW').onchange=e=>{ r.width=+e.target.value; save(); invalidate(); };
+    document.getElementById('rWalk').onchange=e=>{ r.walk=+e.target.value; save(); invalidate(); };
+  } else {
+    const list=sel.type==='square'?D.squares:D.gardens;
+    const g=byId(list,sel.id); if(!g){sel=null;return renderProp();}
+    el.innerHTML=`
+      <fieldset><legend>${sel.type==='square'?'广场':'庭园'}</legend>
+        <div class="kv"><span class="k">名称</span><input type="text" id="gCn" value="${g.cn||g.id}"></div>
+        <div class="row"><input type="number" id="gW" value="${g.size[0]}" step="2"><input type="number" id="gD" value="${g.size[1]}" step="2"></div>
+        <div class="row"><input type="number" id="gX" value="${g.c[0]}" step="1"><input type="number" id="gZ" value="${g.c[1]}" step="1"></div>
+      </fieldset>
+      <button class="btn warn" onclick="delSelected()">删除</button>`;
+    document.getElementById('gCn').onchange=e=>{g.cn=e.target.value;save();invalidate();};
+    document.getElementById('gW').onchange=e=>{g.size[0]=+e.target.value;save();invalidate();};
+    document.getElementById('gD').onchange=e=>{g.size[1]=+e.target.value;save();invalidate();};
+    document.getElementById('gX').onchange=e=>{g.c[0]=+e.target.value;save();invalidate();};
+    document.getElementById('gZ').onchange=e=>{g.c[1]=+e.target.value;save();invalidate();};
+  }
+}
+window.rotSel=d=>{ if(sel&&sel.type==='building'){ const b=byId(D.buildings,sel.id); b.yaw=((b.yaw+d)%360+360)%360; save(); renderProp(true); invalidate(); } };
+window.dupSel=()=>{ if(sel&&sel.type==='building'){ const b=byId(D.buildings,sel.id);
+  const nb=JSON.parse(JSON.stringify(b)); nb.id=autoId(b.asset); nb.c=[b.c[0]+15,b.c[1]+15];
+  D.buildings.push(nb); sel={type:'building',id:nb.id}; save(); renderProp(); invalidate(); } };
+window.delSelected=delSelected;
+
+/* ================= 图层/图例/调色板/说明 ================= */
+function renderLayers(){
+  const defs=[['district','分区底色'],['terrace','台地（标高）'],['water','水系'],['wall','城墙/城门'],
+    ['road','道路'],['block','街坊框'],['green','广场/庭园'],['building','建筑'],['npc','NPC 点位'],
+    ['poi','POI'],['label','文字标签']];
+  document.getElementById('layerCks').innerHTML=defs.map(([k,n])=>
+    `<label class="ck"><input type="checkbox" ${showLayers[k]?'checked':''} data-l="${k}">${n}</label>`).join('');
+  document.querySelectorAll('#layerCks input').forEach(c=>c.onchange=()=>{ showLayers[c.dataset.l]=c.checked; invalidate(); });
+}
+function renderLegend(){
+  const rows=Object.entries(CATNAME).map(([k,n])=>
+    `<div class="legendRow"><span class="lg" style="background:${CATCOL[k]}"></span>${n}</div>`).join('')
+    +['arterial 主干道 20m','collector 次干道 12-14m','local 支路 9m','alley 后巷 5m','rail 铁路走廊','path 栈桥/堤'].map(s=>{
+      const [k,n]=s.split(' ');
+      return `<div class="legendRow"><span class="lg" style="background:${ROADCOL[k]}"></span>${n}</div>`;}).join('');
+  document.getElementById('legendBox').innerHTML=rows;
+}
+const PAL_GROUPS=[['地标',['civic_hall','trade_hall','governor_palace','academy','cathedral','station','guild_hall','opera']],
+  ['住宅/公馆',['residence_slate_3','residence_ochre_4','corner_merchants_3','corner_copper_4','mansion_garden_3']],
+  ['商铺/服务',['shop_arcade_3','shop_rose_4','inn_seafarer_3','public_house']],
+  ['机构/学院',['academy_library_3','courtyard_college_3','magic_tower','academy_lodgings_4']],
+  ['港口',['warehouse_stone_1','warehouse_brick_2']],
+  ['白盒（占位）',['wb_hall','wb_shophouse','wb_warehouse','wb_tower','wb_clock_arch','wb_fountain','wb_crane','wb_lighthouse','wb_pier_shed']]];
+function renderPalette(){
+  const el=document.getElementById('palette');
+  el.innerHTML=PAL_GROUPS.map(([g,items])=>
+    `<div style="margin:6px 0 2px;color:var(--dim);font-size:11px">${g}</div>`+
+    items.map(a=>`<div class="pal ${addAsset===a?'sel':''}" data-a="${a}">${a}<span class="en">${FP[a]?FP[a][0]+'×'+FP[a][1]+' m':'新类型'}</span></div>`).join('')
+  ).join('');
+  el.querySelectorAll('.pal').forEach(p=>p.onclick=()=>{
+    addAsset=p.dataset.a; tool='add'; mapEl.classList.add('placing'); renderPalette(); toast('点击地图放置：'+addAsset); });
+}
+function renderNotes(){
+  document.getElementById('notesBox').innerHTML='<fieldset><legend>设计要点</legend>'+
+    D.notes.map(([t,c])=>`<div class="note"><b>${t}</b>　${c}</div>`).join('')+'</fieldset>';
+  runCheck();
+}
+function runCheck(){
+  const issues=[];
+  for(const a of D.buildings){ if(a.whitebox)continue;
+    for(const c of conflictsOf(a)) issues.push(a.id+': '+c); }
+  document.getElementById('checkBox').innerHTML=issues.length?
+    ('<div class="issue">'+issues.length+' 处冲突：</div>'+issues.slice(0,30).map(i=>`<div class="issue">${i}</div>`).join('')):
+    '<div class="ok">✔ 当前无冲突（白盒除外）</div>';
+}
+
+/* ================= 持久化/导入导出 ================= */
+let saveTimer=null;
+function save(){ clearTimeout(saveTimer); saveTimer=setTimeout(()=>{
+  try{ localStorage.setItem('city_v6_plan_v1',JSON.stringify(D)); }catch(e){}
+},300); }
+document.getElementById('btnExport').onclick=()=>{
+  const blob=new Blob([JSON.stringify(D,null,1)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='city_v6_plan.json'; a.click(); toast('已导出 city_v6_plan.json');
+};
+document.getElementById('btnImport').onclick=()=>document.getElementById('fileImp').click();
+document.getElementById('fileImp').onchange=e=>{
+  const f=e.target.files[0]; if(!f)return;
+  const rd=new FileReader();
+  rd.onload=()=>{ try{ D=JSON.parse(rd.result); sel=null; save(); renderAll(); toast('导入成功'); }
+    catch(err){ toast('导入失败：'+err.message); } };
+  rd.readAsText(f);
+};
+document.getElementById('btnReset').onclick=()=>{
+  if(!confirm('放弃全部编辑，恢复初始草案？'))return;
+  D=JSON.parse(JSON.stringify(INITIAL)); sel=null; localStorage.removeItem('city_v6_plan_v1');
+  renderAll(); toast('已恢复初始草案');
+};
+document.getElementById('btnPng').onclick=()=>{ dirty=true; draw();
+  cv.toBlob(b=>{ const a=document.createElement('a'); a.href=URL.createObjectURL(b);
+    a.download='city_v6_plan.png'; a.click(); }); };
+document.getElementById('btnAutoBlock').onclick=()=>{ tool='blocksel'; blockRect=null; toast('按住拖动…（先点地图起点）'); toast('框选填充：在地图上拖出矩形'); };
+
+/* ================= Tab 切换 ================= */
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.tabbody').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); document.getElementById('tab-'+b.dataset.t).classList.add('on');
+  if(b.dataset.t==='notes') runCheck();
+});
+
+/* ================= 鼠标事件补充：框选/测距/删点 ================= */
+mapEl.addEventListener('mouseup',()=>{
+  if(tool==='blocksel'&&blockRect&&blockRect.a&&blockRect.cur){
+    const n=fillBlockRect(blockRect.a[0],blockRect.a[1],blockRect.cur[0],blockRect.cur[1]);
+    toast(n?('已填充 '+n+' 栋街坊建筑'):'矩形太小或全被占用');
+    blockRect=null; tool='select'; save(); renderPalette(); invalidate(); runCheck();
+  }
+});
+window.addEventListener('keyup',e=>{ if(e.key==='Alt') altDown=false; });
+let altDown=false;
+window.addEventListener('keydown',e=>{ if(e.key==='Alt') altDown=true; });
+cv.addEventListener('mousedown',e=>{
+  if(altDown&&sel&&sel.type==='road'){
+    const rect=cv.getBoundingClientRect();
+    const wp=S2W([e.clientX-rect.left,e.clientY-rect.top]);
+    const r=byId(D.roads,sel.id);
+    for(let i=0;i<r.pts.length;i++)
+      if(Math.hypot(r.pts[i][0]-wp[0],r.pts[i][1]-wp[1])<8/view.s){
+        if(r.pts.length<=2){ toast('至少保留两个顶点'); return; }
+        r.pts.splice(i,1); save(); invalidate(); return;
+      }
+  }
+});
+
+/* ================= 启动 ================= */
+function renderAll(){ renderLayers(); renderLegend(); renderPalette(); renderNotes(); renderProp(); invalidate(); }
+resize(); renderAll();
+</script>
+</body>
+</html>

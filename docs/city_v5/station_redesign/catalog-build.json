@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-10-07T14:29:54.555Z",
+  "manifestSha256": "b07052366feb999e40b45f081cc69d9b7a771b59485f8fae03abe3c1c0ed0a7f",
+  "htmlSha256": "fd6ad6ec99a50334e5e03eafc43dd065a9160a097e1bc62a76901dada6f7d52a",
+  "moduleCount": 11,
+  "totalReuse": 34,
+  "overallViews": 6,
+  "missingImages": [],
+  "complete": true,
+  "scope": "Catalog and prompts only; no Tripo request, no generated model import, no game scene mutation."
+}

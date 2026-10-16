@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "kit": "dawnmist_abbey_tripo_staging",
+  "status": "design_proposal",
+  "units": "metres",
+  "axes": {
+    "x": "width",
+    "y": "depth; +Y faces out from building",
+    "z": "height; +Z up"
+  },
+  "dimensions_notice_zh": "尺寸是便于首轮拼装的设计提案，不是从参考图测量所得。默认导入仅按高度等比缩放；宽度、深度可能偏离提案，需复核接口，不得分轴拉伸凑尺寸。",
+  "source_provenance": {
+    "building_reference": "docs/abbey_tripo_20261007/references/townhall.png",
+    "decomposition_reference": "docs/abbey_tripo_20261007/references/legacy_breakdown.png",
+    "interpretation_zh": "用户提供的市政厅图片，仅作晨露谷修道院建筑语汇参考。独立部件图属于根据参考重绘的设计，不证明原建筑不可见面的形状。树木、旗帜、旗杆、灯具、园艺均不在本批。",
+    "part_image_status": "generated_and_visually_checked; see docs/abbey_tripo_20261007/REVIEW.md for scope",
+    "generation_record": "docs/abbey_tripo_20261007/GENERATION.md"
+  },
+  "technique_vocabulary": {
+    "mirror": "镜像",
+    "array": "阵列",
+    "profile_extrude": "轮廓/分层挤出",
+    "solidify": "实体化",
+    "curve_bevel": "曲线倒角",
+    "spin": "旋绕",
+    "curve_deform": "曲线变形",
+    "bridge_loft": "桥接/放样",
+    "simple_deform": "简单形变",
+    "vertices": "几何顶点"
+  },
+  "techniques_notice_zh": "下列手法是后续可编辑重建/修整的建议组合。导入 Tripo 网格不等于已执行十法，不强制每件用齐十种。",
+  "routing_notice_zh": "六件默认 H 原生 Blender 手法制作，T/Tripo 仅可选形状探索。尤其 TR01/TR05/TR06 优先原生参数化；route 字段标识本接收工具的可选分流，不代表必须生成。",
+  "pipeline_plan": [
+    "CSG blockout",
+    "pure SDF volume mesh",
+    "decompose and route",
+    "selected ten Blender techniques",
+    "CSG refinement",
+    "batch SDF models",
+    "SDF refinement",
+    "correction and complete components",
+    "structural assembly"
+  ],
+  "pipeline_status_zh": "本工具只处理可选 Tripo 输入的候选标准化与交接，不宣称上述全流程已完成。",
+  "assets": [
+    {
+      "id": "TR01",
+      "name": "stone_capital",
+      "label_zh": "石柱头",
+      "dimensions_xyz_m": [
+        1.0,
+        0.8,
+        0.55
+      ],
+      "dimensions_status": "design_proposal",
+      "route": "tripo_optional",
+      "fallback_route": "blockout",
+      "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR01.png",
+      "scope_zh": "仅柱头：承压顶板、分层过渡和短方颈；不含柱身、柱础或参考图没有的花叶雕刻。",
+      "techniques": [
+        "mirror",
+        "profile_extrude",
+        "spin",
+        "bridge_loft",
+        "vertices"
+      ],
+      "origin": "bottom_center",
+      "target_socket_specification": {
+        "status": "design_proposal_requires_geometry_review",
+        "sockets": [
+          {
+            "name": "bottom",
+            "position_blender": [
+              0,
+              0,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "capital"
+          },
+          {
+            "name": "top",
+            "position_blender": [
+              0,
+              0,
+              0.55
+            ],
+            "normal_blender": [
+              0,
+              0,
+              1
+            ],
+            "kind": "capital"
+          }
+        ],
+        "review_zh": "确认顶板与底部承压面真实平整，柱身尺寸匹配；端口 family 借用旧 capital 命名不代表与旧件已验收兼容。"
+      },
+      "default_route": "blender_native_H",
+      "tripo_route_status": "optional_shape_exploration_only"
+    },
+    {
+      "id": "TR02",
+      "name": "corbel",
+      "label_zh": "檐下石牛腿",
+      "dimensions_xyz_m": [
+        0.45,
+        0.6,
+        0.8
+      ],
+      "dimensions_status": "design_proposal",
+      "route": "tripo_optional",
+      "fallback_route": "blockout",
+      "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR02.png",
+      "scope_zh": "一只石牛腿，保留弧面/S形正面；不含墙、檐口、重复列或额外花叶雕刻。",
+      "techniques": [
+        "mirror",
+        "profile_extrude",
+        "curve_bevel",
+        "bridge_loft",
+        "vertices"
+      ],
+      "origin": "back_bottom",
+      "target_socket_specification": {
+        "status": "design_proposal_requires_geometry_review",
+        "sockets": [
+          {
+            "name": "back",
+            "position_blender": [
+              0,
+              0,
+              0.4
+            ],
+            "normal_blender": [
+              0,
+              -1,
+              0
+            ],
+            "kind": "corbel_wall"
+          },
+          {
+            "name": "top",
+            "position_blender": [
+              0,
+              0.3,
+              0.8
+            ],
+            "normal_blender": [
+              0,
+              0,
+              1
+            ],
+            "kind": "corbel_cornice"
+          }
+        ],
+        "review_zh": "背面安装平面提案为 Y=0，几何应向 +Y 突出。包围盒对齐不能保证背面已切平；需修整后再承接檐口。"
+      },
+      "default_route": "blender_native_H",
+      "tripo_route_status": "optional_shape_exploration_only"
+    },
+    {
+      "id": "TR03",
+      "name": "dormer_pediment",
+      "label_zh": "老虎窗山花上冠",
+      "dimensions_xyz_m": [
+        1.6,
+        0.35,
+        0.8
+      ],
+      "dimensions_status": "design_proposal",
+      "route": "tripo_optional",
+      "fallback_route": "blockout",
+      "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR03.png",
+      "scope_zh": "仅山花上冠和冠部侧卷饰；不含窗玻璃、竖直窗框、窗台或屋顶。",
+      "techniques": [
+        "mirror",
+        "profile_extrude",
+        "curve_bevel",
+        "bridge_loft",
+        "vertices"
+      ],
+      "origin": "back_bottom",
+      "target_socket_specification": {
+        "status": "design_proposal_requires_geometry_review",
+        "sockets": [
+          {
+            "name": "back",
+            "position_blender": [
+              0,
+              0,
+              0.4
+            ],
+            "normal_blender": [
+              0,
+              -1,
+              0
+            ],
+            "kind": "dormer_crown_back"
+          },
+          {
+            "name": "bottom",
+            "position_blender": [
+              0,
+              0.175,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "dormer_crown_base"
+          }
+        ],
+        "review_zh": "仅上冠的范围、底边连续接口与对称性需核对；不得把完整老虎窗误当作该件。"
+      },
+      "default_route": "blender_native_H",
+      "tripo_route_status": "optional_shape_exploration_only"
+    },
+    {
+      "id": "TR04",
+      "name": "gable_shoulder",
+      "label_zh": "中央山花单侧肩石",
+      "dimensions_xyz_m": [
+        0.8,
+        0.35,
+        1.4
+      ],
+      "dimensions_status": "design_proposal",
+      "route": "tripo_optional",
+      "fallback_route": "blockout",
+      "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR04.png",
+      "scope_zh": "一侧肩石，默认从正面看左侧：靠建筑中线的一边在 +X，较高；外侧在 -X。另一侧后续镜像生成，不带中央山花主体。",
+      "techniques": [
+        "profile_extrude",
+        "curve_bevel",
+        "bridge_loft",
+        "simple_deform",
+        "vertices",
+        "mirror"
+      ],
+      "origin": "back_bottom",
+      "target_socket_specification": {
+        "status": "design_proposal_requires_geometry_review",
+        "sockets": [
+          {
+            "name": "back",
+            "position_blender": [
+              0,
+              0,
+              0.7
+            ],
+            "normal_blender": [
+              0,
+              -1,
+              0
+            ],
+            "kind": "gable_shoulder_back"
+          },
+          {
+            "name": "bottom",
+            "position_blender": [
+              0,
+              0.175,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "gable_shoulder_base"
+          }
+        ],
+        "review_zh": "确认左右手性、内高外低、底面与中央山花相接轮廓；导入器不猜测正反面或左右，不自动镜像。"
+      },
+      "default_route": "blender_native_H",
+      "tripo_route_status": "optional_shape_exploration_only"
+    },
+    {
+      "id": "TR05",
+      "name": "belfry_arch_head",
+      "label_zh": "钟楼拱龛头石",
+      "dimensions_xyz_m": [
+        1.3,
+        0.4,
+        0.65
+      ],
+      "dimensions_status": "design_proposal",
+      "route": "tripo_optional",
+      "fallback_route": "blockout",
+      "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR05.png",
+      "scope_zh": "仅半圆拱上部石框和拱顶收口，拱下必须中空；不含两侧竖柱、钟、整座钟楼或窗板。",
+      "techniques": [
+        "mirror",
+        "profile_extrude",
+        "curve_bevel",
+        "bridge_loft",
+        "vertices"
+      ],
+      "origin": "back_bottom",
+      "target_socket_specification": {
+        "status": "design_proposal_requires_geometry_review",
+        "sockets": [
+          {
+            "name": "left_spring",
+            "position_blender": [
+              -0.55,
+              0.2,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "belfry_arch_spring"
+          },
+          {
+            "name": "right_spring",
+            "position_blender": [
+              0.55,
+              0.2,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "belfry_arch_spring"
+          },
+          {
+            "name": "back",
+            "position_blender": [
+              0,
+              0,
+              0.325
+            ],
+            "normal_blender": [
+              0,
+              -1,
+              0
+            ],
+            "kind": "belfry_arch_back"
+          }
+        ],
+        "review_zh": "起拱端口中心是提案，需按最终石厚和净开口重新测量；不能按外包围盒推断净空或承压接触。"
+      },
+      "default_route": "blender_native_H",
+      "tripo_route_status": "optional_shape_exploration_only"
+    },
+    {
+      "id": "TR06",
+      "name": "lancet_arch_head",
+      "label_zh": "主窗宽缓尖拱顶框",
+      "dimensions_xyz_m": [
+        1.5,
+        0.28,
+        0.9
+      ],
+      "dimensions_status": "design_proposal",
+      "route": "tripo_optional",
+      "fallback_route": "blockout",
+      "source_image": "output/imagegen/abbey_tripo_20261007/pack_v1/parts/TR06.png",
+      "scope_zh": "仅宽缓尖拱上部石框，保留参考图宽缓尖顶，不做过尖狭长的教堂窗；拱下保持中空，不含两侧竖直窗框、窗台、玻璃或整面墙。",
+      "techniques": [
+        "mirror",
+        "profile_extrude",
+        "curve_bevel",
+        "bridge_loft",
+        "vertices"
+      ],
+      "origin": "back_bottom",
+      "target_socket_specification": {
+        "status": "design_proposal_requires_geometry_review",
+        "sockets": [
+          {
+            "name": "left_spring",
+            "position_blender": [
+              -0.65,
+              0.14,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "lancet_arch_spring"
+          },
+          {
+            "name": "right_spring",
+            "position_blender": [
+              0.65,
+              0.14,
+              0
+            ],
+            "normal_blender": [
+              0,
+              0,
+              -1
+            ],
+            "kind": "lancet_arch_spring"
+          },
+          {
+            "name": "back",
+            "position_blender": [
+              0,
+              0,
+              0.45
+            ],
+            "normal_blender": [
+              0,
+              -1,
+              0
+            ],
+            "kind": "lancet_arch_back"
+          }
+        ],
+        "review_zh": "检查尖顶不是变圆、孔洞没有被自动填实；最终起拱位置与石框宽度需要复测。"
+      },
+      "default_route": "blender_native_H",
+      "tripo_route_status": "optional_shape_exploration_only"
+    }
+  ]
+}

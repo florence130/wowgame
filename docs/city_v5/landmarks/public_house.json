@@ -1,0 +1,97 @@
+{
+  "id": "public_house",
+  "footprint": [
+    44,
+    28
+  ],
+  "body_height": 18,
+  "max_height": 28,
+  "entries": [
+    [
+      0,
+      0,
+      -14
+    ]
+  ],
+  "entry_width": 8,
+  "usable_hall": {
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "size": [
+      26,
+      24
+    ]
+  },
+  "service_positions": [
+    [
+      -8,
+      0,
+      3
+    ],
+    [
+      8,
+      0,
+      3
+    ]
+  ],
+  "glb": "res://assets/models/city_v5/landmarks/public_house.glb",
+  "blend": "assets/models/city_v5/landmarks/public_house.blend",
+  "aabb_min": [
+    -23.290000000000003,
+    -1.2000000000000002,
+    -18.8
+  ],
+  "aabb_max": [
+    23.290000000000003,
+    28.0,
+    15.290000000000001
+  ],
+  "aabb_size": [
+    46.580000000000005,
+    29.2,
+    34.09
+  ],
+  "floor_y": 0,
+  "street_y": -0.6,
+  "foundation_y": -1.2,
+  "placement_lift": 0.6,
+  "materials": [
+    "K|2|b4a58c|st_masonry|3.5",
+    "K|2|c9bda4|st_masonry|5.0",
+    "K|0|eee1c7|st_plaster|3.0",
+    "K|9|f3e8d3||0",
+    "K|glass|739da8||0",
+    "K|7|574b39||0",
+    "K|2|d8c8a8|st_masonry|4.0",
+    "K|3|41546f|st_roof_scale|2.4",
+    "K|7|bca35e||0",
+    "K|7|508d89||0"
+  ],
+  "visual_meshes": 10,
+  "visual_vertices": 20624,
+  "visual_triangles": 33458,
+  "collision_meshes": 1,
+  "collision_vertices": 296,
+  "collision_triangles": 444,
+  "entry_checks": [
+    {
+      "entry": [
+        0,
+        0,
+        -14
+      ],
+      "approach_ray_clear": true,
+      "floor_hit_y": 0.0
+    }
+  ],
+  "front": "-Z",
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "notes": "Facade and roof meshes are new procedural native geometry; K materials are merged. Collision shell is independent of detail."
+}
