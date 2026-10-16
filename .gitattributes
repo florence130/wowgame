@@ -15,3 +15,13 @@ tools/city_web/city-data.json filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.ogg filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text
+
+# Keep source-hash based asset bake validation stable on Windows clones.
+*.gd text eol=lf
+*.gdshader text eol=lf
+*.gdshaderinc text eol=lf
+*.godot text eol=lf
+*.tscn text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.cmd text eol=crlf
